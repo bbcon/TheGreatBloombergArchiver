@@ -1,15 +1,11 @@
-# Global Daily Briefing — May 25, 2026
+**US-Iran Negotiations: Cautious Progress, Meaningful Uncertainty**
+The dominant market theme of the day is cautious optimism around a potential US-Iran agreement to reopen the Strait of Hormuz. Brent crude slid below $100 per barrel and WTI fell roughly 6%, while global equities climbed toward record levels. Secretary of State Rubio struck an upbeat tone from New Delhi, suggesting a deal could be close. However, Iran's Foreign Ministry pushed back on characterizations of imminent agreement, and Tehran's negotiating position — which includes demands for asset unfreezing that the US has resisted — remains a live obstacle. Trump has publicly said he will not rush, and any final approval may require several additional days.
 
-**Oil and the Hormuz Negotiations**
+**Hormuz: Physical Flows Resume Partially**
+Even amid the diplomatic uncertainty, some physical oil movement has resumed. An Iraqi crude supertanker crossed the US blockade line into the Arabian Sea, and Abu Dhabi National Oil Company has been quietly moving shipments through the Gulf using its own fleet, navigating both Iranian naval presence and US warships. The partial resumption provides modest relief but falls well short of normal throughput.
 
-Crude prices fell sharply as Washington signaled it was nearing an interim agreement with Tehran that would reopen the Strait of Hormuz in exchange for lifting the US naval blockade of Iranian ports. WTI fell roughly 6% to around $91, while Brent dropped below $100. Global equities rallied, with S&P 500 futures up 1.0% and Nasdaq futures up 1.5%, and the dollar weakened modestly. The optimism remains conditional: President Trump emphasized he would not "rush" a deal, Iran's foreign ministry cautioned that signing is not imminent, and Tasnim reported the draft could collapse over the US blocking Tehran's demand for unfrozen assets. Some pressure is already releasing at the margin — more than 30 vessels, including an Iraqi-loaded supertanker bound for China, transited the waterway in the past day, and Adnoc has been quietly moving cargoes through with apparent acquiescence from both Iranian and US forces.
+**Iran's Leadership Calculus**
+The strategic decision ultimately rests with Supreme Leader Mojtaba Khamenei, who assumed power in March following the death of his father in US-Israeli strikes. Khamenei faces a genuine dilemma: accepting a deal would unfreeze significant Iranian assets but may be seen domestically as capitulation; holding out preserves economic leverage through elevated energy prices but extends the toll of a war that has battered Iran's military and economy. The mistrust runs deep on both sides, and the risk of a deal collapse remains real.
 
-The decision now rests heavily with Supreme Leader Mojtaba Khamenei, who assumed the position in March after his father was killed in US-Israeli strikes. He faces a trade-off between sustaining economic pressure on the West through elevated energy prices and accepting an accord that would unfreeze substantial assets amid severe domestic economic strain from forced oil-production cuts.
-
-**Monetary Policy Divergence**
-
-The ECB is moving toward a June hike unless a durable Iran peace agreement materializes, according to two Governing Council members, with Lagarde signaling an upward revision to the inflation outlook. At the Fed, markets are positioning for Chair Warsh to prioritize inflation credibility over White House pressure to cut, though adviser Kevin Hassett argued lower oil prices post-deal would create room to ease. ING notes that rising real yields — not just war-related inflation premia — account for most of the move higher in US long rates, suggesting term rates may remain elevated even if Hormuz reopens.
-
-**Climate**
-
-A Bloomberg/BNEF investigation found carbon credits from Chinese projects across at least nine European countries appear to be partly fabricated, with some sites either non-existent or audited by developers themselves. The findings raise material questions about the integrity of the UN's incoming country-to-country trading framework and the EU's 90%-by-2040 emissions target.
+**Ebola Outbreak Escalates**
+The Ebola outbreak in eastern Democratic Republic of Congo has now claimed more than 200 lives, with flights to Bunia suspended and regional health ministers warning of cross-border transmission risk. Violence and overwhelmed surveillance infrastructure are severely hampering containment efforts — a humanitarian situation that warrants close monitoring given the region's historical difficulty in controlling outbreaks in conflict-affected areas.

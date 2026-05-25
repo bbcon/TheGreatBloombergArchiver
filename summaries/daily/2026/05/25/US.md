@@ -1,13 +1,13 @@
-# US Daily Briefing — May 25, 2026
+**Federal Reserve Under Competing Pressures**
+Fed Chair Kevin Warsh finds himself navigating a sharp tension between White House demands for rate cuts and the imperative to defend the central bank's inflation-fighting credibility. Markets appear to be betting Warsh will prioritize the latter. Kevin Hassett, the president's chief economic adviser, signaled confidence that a Hormuz deal would lower oil prices and thereby create space for easing — but that transmission remains contingent on a durable agreement that has yet to materialize.
 
-**Markets rally on prospective US-Iran deal; oil tumbles**
+**Real Yields and the Rates Outlook**
+Even if a US-Iran agreement is reached and energy prices ease, long-term US rates may not follow correspondingly lower. ING analysts note that rising real yields — rather than inflation expectations alone — account for much of the recent move higher in nominal yields, suggesting that term rates could remain elevated even after any geopolitical resolution. This structural dynamic complicates both the Fed's optionality and the fiscal calculus in Washington.
 
-US equity futures opened the week sharply higher, with S&P 500 contracts up 1.0% to 7,563 and Nasdaq 100 futures gaining 1.5%, as signs of progress toward a US-Iran agreement to reopen the Strait of Hormuz prompted a broad risk-on move. WTI crude fell 5.9% to roughly $91, while the Bloomberg Dollar Spot Index declined 0.3%. Secretary of State Marco Rubio, speaking in New Delhi, struck a cautiously constructive tone, though both sides cautioned against premature conclusions. President Trump said over the weekend that negotiations were proceeding "in an orderly and constructive manner" but that he would not rush, and the US blockade of Iranian ports would remain in place pending a final accord. Iran's foreign ministry confirmed consensus on several topics but said signing was not imminent. Several clauses — including Tehran's demand for the unfreezing of assets — reportedly remain contested, leaving meaningful execution risk.
+**Wind Energy Investment at Risk**
+Approximately $50 billion in onshore wind investments and an estimated 150,000 jobs are at risk following the Trump administration's effective halt on new project permit approvals, according to a wind industry trade group. The stall adds to broader questions about the trajectory of US clean energy deployment under the current administration, at a moment when the energy transition is already being tested by Middle East supply disruptions.
 
-**Fed positioning and the term-premium question**
+**Political Backdrop**
+Trump's upcoming medical examination ahead of his 80th birthday is drawing renewed scrutiny of his health, while a California chemical tank incident that prompted the evacuation of over 50,000 people in the Los Angeles suburbs appears to have eased somewhat after a potential crack in the tank may reduce explosion risk.
 
-Investors continue to bet that Chairman Kevin Warsh will prioritize inflation-fighting credibility over administration pressure for rate cuts. Kevin Hassett, the president's chief economic adviser, argued that lower oil prices following any Middle East deal would create room for the Fed to ease. However, the rates picture is more nuanced than the war-premium narrative suggests: ING notes that rising real yields, rather than inflation breakevens, account for most of the move higher in US Treasury yields. Even if Hormuz reopens, long-end rates may remain elevated as real yields stay sticky — a tension worth monitoring as the curve digests any peace dividend.
-
-**Corporate and policy notes**
-
-Uber offered €33 per share for Delivery Hero, valuing the German company at roughly €10 billion, building on its existing 20% stake. Separately, a wind-industry trade group warned that the administration's effective halt to onshore wind permitting puts approximately $50 billion of US investment and 150,000 jobs at risk. Trump's upcoming medical examination ahead of his 80th birthday is renewing health-related scrutiny.
+---
