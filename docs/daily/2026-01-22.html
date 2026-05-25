@@ -9,12 +9,12 @@
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: #f0f2f5;
-  color: #333;
+  color: #1a1a1a;
   min-height: 100vh;
 }
 a { color: inherit; text-decoration: none; }
 
-/* Nav */
+/* ── Nav ── */
 .nav {
   background: #040505;
   padding: 0 48px;
@@ -27,10 +27,10 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 .nav-logo {
-  font-size: 20px; font-weight: bold; color: #fff;
+  font-size: 17px; font-weight: bold; color: #fff;
   font-family: Georgia, serif;
   background: #1a1a2e;
-  width: 34px; height: 34px; border-radius: 50%;
+  width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   margin-right: 14px; flex-shrink: 0;
 }
@@ -47,113 +47,156 @@ a { color: inherit; text-decoration: none; }
 .nav-link:hover { color: #ccc; }
 .nav-link.active { color: #5597cb; }
 
-/* Page shell */
-.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
 
-/* Brief header (on individual brief pages) */
-.brief-hdr {
-  background: #040505;
-  padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
-.brief-hdr-inner {
-  display: flex; align-items: flex-start; gap: 16px;
-}
-.brief-logo {
-  font-size: 20px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
-  width: 40px; height: 40px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
-}
-.brief-hdr-text { flex: 1; }
-.brief-label {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 500; margin-bottom: 4px;
-}
-.brief-date {
-  font-size: 24px; font-weight: 300; color: #fff;
-  letter-spacing: -0.3px; line-height: 1.2;
-}
-.brief-hdr-meta { text-align: right; }
-.brief-meta-label {
-  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
-  color: #666; margin-bottom: 4px;
-}
-.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
-
-/* Accent bar */
-.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
-/* Card (wraps header + content) */
-.card {
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px;
-  overflow: hidden;
-}
-.card-body { padding: 36px 48px; }
-
-/* Region section */
-.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
 .region:last-child { margin-bottom: 0; }
 .region-name {
-  font-size: 12px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 2px; margin-bottom: 14px;
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
 }
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 1.2px; margin-bottom: 4px;
 }
 .para-body {
-  font-size: 15px; line-height: 1.75; color: #333;
-  margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
-/* Archive list page */
-.section-hdr {
-  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
-  color: #999; font-weight: 600; margin: 0 0 16px 0;
-}
-.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-.archive-item {
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+
+.accordion-item {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  transition: box-shadow 0.15s;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
 }
-.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
-.archive-link {
-  display: flex; align-items: center; gap: 16px;
-  padding: 14px 20px;
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-.archive-dot {
+
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left;
+  transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+
+.accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
 }
-.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
-.archive-regions { font-size: 11px; color: #999; }
-.archive-chevron { font-size: 14px; color: #ccc; }
-
-/* Landing page sections */
-.latest-label {
-  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
-  color: #999; font-weight: 600; margin-bottom: 16px;
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s;
+  line-height: 1;
 }
-.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
-.mode-tab {
-  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
-  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
-  color: #666; font-weight: 600;
-  transition: all 0.15s;
-}
-.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
-.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
 
-/* Back link */
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content {
+  padding: 28px 40px 32px;
+}
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+
+.empty-state {
+  color: #999; font-size: 14px;
+  background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505;
+  padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date {
+  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
+}
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+.landing-card {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px;
+  background: #fff; border-radius: 4px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr {
+  background: #040505; padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
 .back {
   font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
   color: #888; display: inline-flex; align-items: center; gap: 6px;
@@ -161,24 +204,27 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-/* Page title for archive pages */
-.page-title {
-  font-size: 28px; font-weight: 300; color: #111;
-  letter-spacing: -0.5px; margin-bottom: 28px;
+@media (max-width: 600px) {
+  .nav { padding: 0 16px; }
+  .nav-title { display: none; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .card-body { padding: 24px 20px; }
+  .brief-hdr { padding: 24px 20px; }
 }
 </style>
 </head>
 <body>
 
 <nav class="nav">
-  <div class="nav-logo">M</div>
+  <a href="../index.html" class="nav-logo">M</a>
   <span class="nav-title">The Macro Brief</span>
-  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
-
 <a class="back" href="../daily.html">‹ Daily archive</a>
-
 <div class="card">
   <div class="brief-hdr">
     <div class="brief-hdr-inner">
@@ -191,8 +237,7 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    
-<div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">Wall Street's posture toward the incoming Trump administration is crystallizing around a strategy of studied discretion rather than open analysis. At a private breakfast in Davos, senior executives from BlackRock, TPG, and Temasek gathered ahead of President Trump's arrival to assess the implications of rapidly shifting US policy. Notably, participants appear to have avoided naming Trump directly even while discussing potentially consequential developments — including the administration's stated interest in Greenland — suggesting a degree of reputational risk management that has begun to shape how institutional investors communicate with clients. The dynamic raises a substantive question for market functioning: if major asset managers are self-censoring their policy analysis to avoid political blowback, the quality and candor of client-facing research may be quietly degrading at precisely the moment when policy uncertainty is highest. This is not a trivial concern. The Trump administration's first weeks have generated a wide dispersion of potential outcomes across trade, fiscal, and foreign policy — all of which carry direct market implications. Investors who rely on sell-side and buy-side research for scenario framing may be receiving a filtered picture. The broader Wall Street calculus appears to involve weighing the reputational and potentially regulatory costs of public criticism against the obligation to provide frank analysis. For now, the evidence suggests the former is winning. How durable this posture proves — and whether it influences investment positioning in a material way — remains to be seen. In the near term, the practical effect may be wider dispersion in private versus public views on US policy risk, with the more candid assessments reserved for closed-door client conversations rather than published research.</p>
 </div>
@@ -210,7 +255,14 @@ a { color: inherit; text-decoration: none; }
 </div>
   </div>
 </div>
-
 </div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+</script>
 </body>
 </html>

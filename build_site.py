@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 """
-build_site.py — Generate a static GitHub Pages site from summary .md files.
+build_site.py — Static GitHub Pages site from Bloomberg summary .md files.
 
 Output: docs/
-  index.html          Landing page (latest daily brief + navigation)
-  daily.html          Archive list of all daily summaries
-  weekly.html         Archive list of all weekly summaries
-  monthly.html        Archive list of all monthly summaries
-  daily/YYYY-MM-DD.html
+  index.html           Landing: latest daily brief + archive navigation
+  daily.html           Accordion archive — all daily summaries expand inline
+  weekly.html          Accordion archive — all weekly summaries expand inline
+  monthly.html         Accordion archive — all monthly summaries expand inline
+  daily/YYYY-MM-DD.html    (permalink, also fixes nav depth for subdirectory pages)
   weekly/YYYY-Www.html
   monthly/YYYY-MM.html
-
-Usage:
-    python3 build_site.py
 """
 
 import re
@@ -35,7 +32,7 @@ REGION_COLORS = {
 SITE_TITLE = "The Macro Brief"
 
 
-# ── Markdown helpers (mirrors send_brief.py) ──────────────────────────────────
+# ── Markdown helpers ──────────────────────────────────────────────────────────
 
 def bold_to_strong(text: str) -> str:
     return re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', text)
@@ -77,19 +74,19 @@ def parse_paragraphs(text: str) -> list[tuple[str | None, str]]:
     return pairs
 
 
-# ── HTML components ───────────────────────────────────────────────────────────
+# ── CSS + JS ──────────────────────────────────────────────────────────────────
 
 CSS = """
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: #f0f2f5;
-  color: #333;
+  color: #1a1a1a;
   min-height: 100vh;
 }
 a { color: inherit; text-decoration: none; }
 
-/* Nav */
+/* ── Nav ── */
 .nav {
   background: #040505;
   padding: 0 48px;
@@ -102,10 +99,10 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 .nav-logo {
-  font-size: 20px; font-weight: bold; color: #fff;
+  font-size: 17px; font-weight: bold; color: #fff;
   font-family: Georgia, serif;
   background: #1a1a2e;
-  width: 34px; height: 34px; border-radius: 50%;
+  width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   margin-right: 14px; flex-shrink: 0;
 }
@@ -122,113 +119,156 @@ a { color: inherit; text-decoration: none; }
 .nav-link:hover { color: #ccc; }
 .nav-link.active { color: #5597cb; }
 
-/* Page shell */
-.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
 
-/* Brief header (on individual brief pages) */
-.brief-hdr {
-  background: #040505;
-  padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
-.brief-hdr-inner {
-  display: flex; align-items: flex-start; gap: 16px;
-}
-.brief-logo {
-  font-size: 20px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
-  width: 40px; height: 40px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
-}
-.brief-hdr-text { flex: 1; }
-.brief-label {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 500; margin-bottom: 4px;
-}
-.brief-date {
-  font-size: 24px; font-weight: 300; color: #fff;
-  letter-spacing: -0.3px; line-height: 1.2;
-}
-.brief-hdr-meta { text-align: right; }
-.brief-meta-label {
-  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
-  color: #666; margin-bottom: 4px;
-}
-.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
-
-/* Accent bar */
-.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
-/* Card (wraps header + content) */
-.card {
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px;
-  overflow: hidden;
-}
-.card-body { padding: 36px 48px; }
-
-/* Region section */
-.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
 .region:last-child { margin-bottom: 0; }
 .region-name {
-  font-size: 12px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 2px; margin-bottom: 14px;
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
 }
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 1.2px; margin-bottom: 4px;
 }
 .para-body {
-  font-size: 15px; line-height: 1.75; color: #333;
-  margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
-/* Archive list page */
-.section-hdr {
-  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
-  color: #999; font-weight: 600; margin: 0 0 16px 0;
-}
-.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-.archive-item {
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+
+.accordion-item {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  transition: box-shadow 0.15s;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
 }
-.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
-.archive-link {
-  display: flex; align-items: center; gap: 16px;
-  padding: 14px 20px;
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-.archive-dot {
+
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left;
+  transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+
+.accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
 }
-.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
-.archive-regions { font-size: 11px; color: #999; }
-.archive-chevron { font-size: 14px; color: #ccc; }
-
-/* Landing page sections */
-.latest-label {
-  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
-  color: #999; font-weight: 600; margin-bottom: 16px;
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s;
+  line-height: 1;
 }
-.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
-.mode-tab {
-  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
-  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
-  color: #666; font-weight: 600;
-  transition: all 0.15s;
-}
-.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
-.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
 
-/* Back link */
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content {
+  padding: 28px 40px 32px;
+}
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+
+.empty-state {
+  color: #999; font-size: 14px;
+  background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505;
+  padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date {
+  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
+}
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+.landing-card {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px;
+  background: #fff; border-radius: 4px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr {
+  background: #040505; padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
 .back {
   font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
   color: #888; display: inline-flex; align-items: center; gap: 6px;
@@ -236,34 +276,51 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-/* Page title for archive pages */
-.page-title {
-  font-size: 28px; font-weight: 300; color: #111;
-  letter-spacing: -0.5px; margin-bottom: 28px;
+@media (max-width: 600px) {
+  .nav { padding: 0 16px; }
+  .nav-title { display: none; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .card-body { padding: 24px 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+"""
+
+JS = """
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
 }
 """
 
 
-def nav_html(active: str = "") -> str:
+# ── HTML components ───────────────────────────────────────────────────────────
+
+def nav_html(active: str = "", prefix: str = "") -> str:
+    """prefix is '' for root pages, '../' for pages one level deep."""
     links = [
-        ("index", "Latest", "index.html"),
-        ("daily", "Daily", "daily.html"),
-        ("weekly", "Weekly", "weekly.html"),
-        ("monthly", "Monthly", "monthly.html"),
+        ("index",   "Latest",  f"{prefix}index.html"),
+        ("daily",   "Daily",   f"{prefix}daily.html"),
+        ("weekly",  "Weekly",  f"{prefix}weekly.html"),
+        ("monthly", "Monthly", f"{prefix}monthly.html"),
     ]
     items = "".join(
-        f'<a href="{href if active != key else "#"}" class="nav-link{"  active" if active == key else ""}">{label}</a>'
+        f'<a href="{href if active != key else "#"}" class="nav-link{" active" if active == key else ""}">{label}</a>'
         for key, label, href in links
     )
     return f"""
 <nav class="nav">
-  <div class="nav-logo">M</div>
+  <a href="{prefix}index.html" class="nav-logo">M</a>
   <span class="nav-title">{SITE_TITLE}</span>
   <div class="nav-links">{items}</div>
 </nav>"""
 
 
-def page_wrap(title: str, active: str, body: str, nav_href_base: str = "") -> str:
+def page_wrap(title: str, active: str, body: str, prefix: str = "") -> str:
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -273,10 +330,11 @@ def page_wrap(title: str, active: str, body: str, nav_href_base: str = "") -> st
 <style>{CSS}</style>
 </head>
 <body>
-{nav_html(active)}
+{nav_html(active, prefix)}
 <div class="page">
 {body}
 </div>
+<script>{JS}</script>
 </body>
 </html>"""
 
@@ -287,39 +345,17 @@ def region_section(region: str, text: str) -> str:
     parts = []
     for title, body in pairs:
         if title:
-            parts.append(
-                f'<p class="para-title" style="color:{color};">{title}</p>'
-            )
-        parts.append(
-            f'<p class="para-body">{bold_to_strong(body)}</p>'
-        )
+            parts.append(f'<p class="para-title" style="color:{color};">{title}</p>')
+        parts.append(f'<p class="para-body">{bold_to_strong(body)}</p>')
     inner = "\n".join(parts)
-    return f"""
-<div class="region" style="border-color:{color};">
+    return f"""<div class="region" style="border-color:{color};">
   <p class="region-name" style="color:{color};">{region}</p>
   {inner}
 </div>"""
 
 
-def brief_card(mode: str, label: str, subtitle: str, summaries: dict[str, str]) -> str:
-    regions = "".join(region_section(r, summaries[r]) for r in REGIONS if r in summaries)
-    mode_labels = {"daily": "Daily Brief", "weekly": "Weekly Brief", "monthly": "Monthly Brief"}
-    return f"""
-<div class="card">
-  <div class="brief-hdr">
-    <div class="brief-hdr-inner">
-      <div class="brief-logo">M</div>
-      <div class="brief-hdr-text">
-        <p class="brief-label">{mode_labels[mode]}</p>
-        <p class="brief-date">{subtitle}</p>
-      </div>
-    </div>
-  </div>
-  <div class="accent"></div>
-  <div class="card-body">
-    {regions}
-  </div>
-</div>"""
+def brief_regions_html(summaries: dict[str, str]) -> str:
+    return "\n".join(region_section(r, summaries[r]) for r in REGIONS if r in summaries)
 
 
 # ── Summary loading ───────────────────────────────────────────────────────────
@@ -336,173 +372,168 @@ def load_summaries(folder: Path) -> dict[str, str]:
 # ── Discovery ─────────────────────────────────────────────────────────────────
 
 def find_daily() -> list[tuple[str, Path]]:
-    """Return [(date_str, folder), ...] sorted newest first."""
     entries = []
-    daily_root = SUMMARIES_DIR / "daily"
-    if not daily_root.exists():
+    root = SUMMARIES_DIR / "daily"
+    if not root.exists():
         return entries
-    for y in sorted(daily_root.iterdir()):
+    for y in sorted(root.iterdir()):
         for m in sorted(y.iterdir()):
             for d in sorted(m.iterdir()):
                 date_str = f"{y.name}-{m.name}-{d.name}"
-                summaries = load_summaries(d)
-                if summaries:
+                if load_summaries(d):
                     entries.append((date_str, d))
     entries.sort(key=lambda x: x[0], reverse=True)
     return entries
 
 
 def find_weekly() -> list[tuple[str, str, Path]]:
-    """Return [(iso_week_key, label, folder), ...] sorted newest first."""
     entries = []
-    weekly_root = SUMMARIES_DIR / "weekly"
-    if not weekly_root.exists():
+    root = SUMMARIES_DIR / "weekly"
+    if not root.exists():
         return entries
-    for y in sorted(weekly_root.iterdir()):
+    for y in sorted(root.iterdir()):
         for w in sorted(y.iterdir()):
             key = f"{y.name}-{w.name}"
-            # Compute Monday date for label
             try:
-                year = int(y.name)
-                week = int(w.name[1:])
+                year, week = int(y.name), int(w.name[1:])
                 monday = datetime.fromisocalendar(year, week, 1)
                 sunday = monday + timedelta(days=6)
                 label = f"{monday.strftime('%b %d')} – {sunday.strftime('%b %d, %Y')}"
             except Exception:
                 label = key
-            summaries = load_summaries(w)
-            if summaries:
+            if load_summaries(w):
                 entries.append((key, label, w))
     entries.sort(key=lambda x: x[0], reverse=True)
     return entries
 
 
 def find_monthly() -> list[tuple[str, str, Path]]:
-    """Return [(YYYY-MM, label, folder), ...] sorted newest first."""
     entries = []
-    monthly_root = SUMMARIES_DIR / "monthly"
-    if not monthly_root.exists():
+    root = SUMMARIES_DIR / "monthly"
+    if not root.exists():
         return entries
-    for y in sorted(monthly_root.iterdir()):
+    for y in sorted(root.iterdir()):
         for m in sorted(y.iterdir()):
             key = f"{y.name}-{m.name}"
             try:
                 label = datetime(int(y.name), int(m.name), 1).strftime("%B %Y")
             except Exception:
                 label = key
-            summaries = load_summaries(m)
-            if summaries:
+            if load_summaries(m):
                 entries.append((key, label, m))
     entries.sort(key=lambda x: x[0], reverse=True)
     return entries
 
 
-# ── Page generators ───────────────────────────────────────────────────────────
+# ── Accordion builder ─────────────────────────────────────────────────────────
 
-def archive_list_html(entries: list[tuple], mode: str) -> str:
+def accordion_html(entries: list, mode: str) -> str:
     if not entries:
-        return '<p style="color:#999;font-size:14px;">No summaries yet.</p>'
+        return '<div class="empty-state">No summaries yet — check back after the next scheduled run.</div>'
+
     items = []
     for entry in entries:
         if mode == "daily":
             key, folder = entry
-            href = f"daily/{key}.html"
             label = datetime.strptime(key, "%Y-%m-%d").strftime("%A, %B %d, %Y")
-            summaries = load_summaries(folder)
-        elif mode == "weekly":
-            key, label, folder = entry
-            href = f"weekly/{key}.html"
-            summaries = load_summaries(folder)
         else:
             key, label, folder = entry
-            href = f"monthly/{key}.html"
-            summaries = load_summaries(folder)
+
+        summaries = load_summaries(folder)
         regions_str = " · ".join(summaries.keys())
-        items.append(
-            f'<li class="archive-item">'
-            f'<a class="archive-link" href="{href}">'
-            f'<span class="archive-dot" style="background:{REGION_COLORS["US"]};"></span>'
-            f'<span class="archive-date">{label}</span>'
-            f'<span class="archive-regions">{regions_str}</span>'
-            f'<span class="archive-chevron">›</span>'
-            f'</a></li>'
-        )
-    return f'<ul class="archive-list">{"".join(items)}</ul>'
+        content = brief_regions_html(summaries)
+
+        items.append(f"""
+<li class="accordion-item">
+  <button class="accordion-trigger" onclick="toggleAccordion(this)">
+    <span class="accordion-dot"></span>
+    <span class="accordion-date">{label}</span>
+    <span class="accordion-meta">{regions_str}</span>
+    <span class="accordion-chevron">›</span>
+  </button>
+  <div class="accordion-body">
+    <div class="accordion-content">
+      {content}
+    </div>
+  </div>
+</li>""")
+
+    return f'<ul class="accordion">{"".join(items)}</ul>'
+
+
+# ── Page generators ───────────────────────────────────────────────────────────
+
+def generate_archive_page(out_path: Path, mode: str, title: str, entries: list) -> None:
+    count = len(entries)
+    subtitle = f"{count} brief{'s' if count != 1 else ''}"
+    body = f"""<p class="page-title">{title}</p>
+<p class="page-subtitle">{subtitle}</p>
+{accordion_html(entries, mode)}"""
+    out_path.write_text(page_wrap(title, mode, body), encoding="utf-8")
 
 
 def generate_brief_page(out_path: Path, mode: str, label: str, summaries: dict) -> None:
-    back_labels = {"daily": "Daily archive", "weekly": "Weekly archive", "monthly": "Monthly archive"}
-    back_hrefs = {"daily": "../daily.html", "weekly": "../weekly.html", "monthly": "../monthly.html"}
-    body = f"""
-<a class="back" href="{back_hrefs[mode]}">‹ {back_labels[mode]}</a>
-{brief_card(mode, mode, label, summaries)}
-"""
-    html = page_wrap(label, mode, body)
+    """Permalink page for a single brief — nav links use ../ prefix to reach root pages."""
+    back_href = {"daily": "../daily.html", "weekly": "../weekly.html", "monthly": "../monthly.html"}[mode]
+    back_label = {"daily": "Daily archive", "weekly": "Weekly archive", "monthly": "Monthly archive"}[mode]
+    mode_label = {"daily": "Daily Brief", "weekly": "Weekly Brief", "monthly": "Monthly Brief"}[mode]
+    body = f"""<a class="back" href="{back_href}">‹ {back_label}</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">{mode_label}</p>
+        <p class="brief-date">{label}</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    {brief_regions_html(summaries)}
+  </div>
+</div>"""
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(html, encoding="utf-8")
-
-
-def generate_index_page(out_path: Path, mode: str, title: str, entries: list) -> None:
-    list_html = archive_list_html(entries, mode)
-    body = f"""
-<p class="page-title">{title}</p>
-{list_html}
-"""
-    html = page_wrap(title, mode, body)
-    out_path.write_text(html, encoding="utf-8")
+    out_path.write_text(page_wrap(label, mode, body, prefix="../"), encoding="utf-8")
 
 
 def generate_landing(out_path: Path, daily: list, weekly: list, monthly: list) -> None:
-    def latest_brief(entries, mode):
-        if not entries:
-            return '<p style="color:#999;font-size:14px;margin-bottom:32px;">No summaries yet.</p>'
-        entry = entries[0]
-        if mode == "daily":
-            key, folder = entry
-            label = datetime.strptime(key, "%Y-%m-%d").strftime("%A, %B %d, %Y")
-            href = f"daily/{key}.html"
-        elif mode == "weekly":
-            key, label, folder = entry
-            href = f"weekly/{key}.html"
-        else:
-            key, label, folder = entry
-            href = f"monthly/{key}.html"
+    if daily:
+        key, folder = daily[0]
+        label = datetime.strptime(key, "%Y-%m-%d").strftime("%A, %B %d, %Y")
         summaries = load_summaries(folder)
-        card = brief_card(mode, mode, label, summaries)
-        return f'{card}<p style="text-align:center;margin-top:-20px;margin-bottom:32px;"><a href="{href}" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#5597cb;">View full brief ›</a></p>'
-
-    daily_html = latest_brief(daily, "daily")
-    weekly_html = latest_brief(weekly, "weekly")
-    monthly_html = latest_brief(monthly, "monthly")
-
-    def tab(label, anchor, active=False):
-        cls = "mode-tab active" if active else "mode-tab"
-        return f'<a href="#{anchor}" class="{cls}">{label}</a>'
-
-    body = f"""
-<div class="mode-tabs">
-  {tab("Daily", "daily", True)}
-  {tab("Weekly", "weekly")}
-  {tab("Monthly", "monthly")}
+        regions_str = " · ".join(summaries.keys())
+        latest = f"""<div class="landing-hero">
+  <p class="landing-hero-label">Latest Daily Brief</p>
+  <p class="landing-hero-date">{label}</p>
+  <p class="landing-hero-regions">{regions_str}</p>
 </div>
+<div class="accent"></div>
+<div class="landing-card">
+  <div class="landing-card-body">
+    {brief_regions_html(summaries)}
+  </div>
+</div>"""
+    else:
+        latest = '<div class="empty-state">No briefs yet — check back after the first scheduled run.</div>'
 
-<div id="daily">
-  <p class="latest-label">Latest daily</p>
-  {daily_html}
-</div>
+    def nav_card(href, mode_label, entries):
+        count = len(entries)
+        subtitle = f"{count} brief{'s' if count != 1 else ''}" if count else "None yet"
+        return f"""<a href="{href}" class="archive-nav-card">
+  <span class="archive-nav-label">{mode_label}</span>
+  <span class="archive-nav-title">Archive</span>
+  <span class="archive-nav-count">{subtitle}</span>
+</a>"""
 
-<div id="weekly">
-  <p class="latest-label">Latest weekly</p>
-  {weekly_html}
-</div>
+    archive_nav = f"""<div class="archive-nav">
+  {nav_card("daily.html",   "Daily",   daily)}
+  {nav_card("weekly.html",  "Weekly",  weekly)}
+  {nav_card("monthly.html", "Monthly", monthly)}
+</div>"""
 
-<div id="monthly">
-  <p class="latest-label">Latest monthly</p>
-  {monthly_html}
-</div>
-"""
-    html = page_wrap(SITE_TITLE, "index", body)
-    out_path.write_text(html, encoding="utf-8")
+    body = latest + "\n" + archive_nav
+    out_path.write_text(page_wrap(SITE_TITLE, "index", body), encoding="utf-8")
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -523,7 +554,6 @@ def main():
     weekly = find_weekly()
     monthly = find_monthly()
 
-    # Individual brief pages
     for date_str, folder in daily:
         summaries = load_summaries(folder)
         label = datetime.strptime(date_str, "%Y-%m-%d").strftime("%A, %B %d, %Y")
@@ -540,12 +570,9 @@ def main():
         generate_brief_page(DOCS_DIR / "monthly" / f"{key}.html", "monthly", label, summaries)
     print(f"  {len(monthly)} monthly pages")
 
-    # Archive index pages
-    generate_index_page(DOCS_DIR / "daily.html",   "daily",   "Daily Briefs",   daily)
-    generate_index_page(DOCS_DIR / "weekly.html",  "weekly",  "Weekly Briefs",  weekly)
-    generate_index_page(DOCS_DIR / "monthly.html", "monthly", "Monthly Briefs", monthly)
-
-    # Landing page
+    generate_archive_page(DOCS_DIR / "daily.html",   "daily",   "Daily Briefs",   daily)
+    generate_archive_page(DOCS_DIR / "weekly.html",  "weekly",  "Weekly Briefs",  weekly)
+    generate_archive_page(DOCS_DIR / "monthly.html", "monthly", "Monthly Briefs", monthly)
     generate_landing(DOCS_DIR / "index.html", daily, weekly, monthly)
 
     total = len(daily) + len(weekly) + len(monthly) + 4
