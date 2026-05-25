@@ -1,55 +1,127 @@
 # TheGreatBloombergArchiver
 
 ## What this project does
-A Python script that automatically fetches Bloomberg emails from Gmail and saves them as `.txt` files, organized by date in a `Year/Month/Day` folder structure.
+A fully automated Bloomberg email archiver + summarizer + static website.
+
+1. **`fetch.py`** — Pulls Bloomberg emails from Gmail via OAuth2 and saves them as `.txt` files organized by `YYYY/MM/DD/`.
+2. **`summarize.py`** — Reads the archived emails and generates four regional macro briefings (US, Asia, Europe, Global) via the Claude API, written in Goldman Sachs institutional-research style.
+3. **`send_brief.py`** — Formats the summaries as HTML email and sends them via SMTP (Gmail).
+4. **`build_site.py`** — Builds a static GitHub Pages site from all summaries in `docs/`.
+5. **`run.sh`** — Local cron entry point (not used in production; GitHub Actions is the production runner).
+
+---
 
 ## Project structure
 ```
 TheGreatBloombergArchiver/
-├── fetch.py              # Main script
-├── credentials.json      # Google OAuth credentials (do not commit)
-├── token.json            # Auto-generated after first auth (do not commit)
-├── CLAUDE.md             # This file
-└── 2026/
-    └── 05/
-        └── 25/
-            └── <gmail_message_id>.txt
+├── fetch.py              # Gmail fetcher
+├── summarize.py          # Claude summarizer (daily / weekly / monthly)
+├── send_brief.py         # HTML email sender
+├── build_site.py         # Static site generator → docs/
+├── run.sh                # Local cron wrapper (dev only)
+├── credentials.json      # Google OAuth credentials (never commit)
+├── token.json            # Auto-generated after first auth (never commit)
+├── .env                  # API keys + SMTP config (never commit)
+├── saved_ids.txt         # De-dup index of fetched Gmail message IDs
+├── state/
+│   └── issue_number.txt  # Monotonically incrementing email issue number
+├── summaries/
+│   ├── daily/YYYY/MM/DD/{US,Asia,Europe,Global}.md
+│   ├── weekly/YYYY/Www/{US,Asia,Europe,Global}.md
+│   └── monthly/YYYY/MM/{US,Asia,Europe,Global}.md
+├── docs/                 # GitHub Pages output
+│   ├── index.html
+│   ├── daily.html
+│   ├── weekly.html
+│   ├── monthly.html
+│   ├── daily/YYYY-MM-DD.html
+│   ├── weekly/YYYY-Www.html
+│   └── monthly/YYYY-MM.html
+├── YYYY/MM/DD/           # Raw email .txt files (e.g. 2026/05/25/)
+└── .github/workflows/
+    └── daily_brief.yml   # Production runner (GitHub Actions)
 ```
 
-## How it works
-1. Authenticates with Gmail API via OAuth2 (credentials stored in `token.json` after first run)
-2. Queries Gmail for emails from `bloomberg.com`
-3. Saves each email as a `.txt` file named by Gmail message ID (prevents duplicates)
-4. Organizes files into `YYYY/MM/DD/` subfolders based on email date
-5. Skips emails already saved on previous runs
+---
+
+## GitHub Actions workflow (production)
+
+**File:** `.github/workflows/daily_brief.yml`
+
+**Schedule:**
+- Mon–Fri at 08:30 CET (06:30 UTC): fetch + daily summary + send
+- Saturday at 07:00 CET (05:00 UTC): fetch + daily + weekly summary + send; also monthly if last day
+
+**What runs each day:**
+1. Install deps, write secrets to disk
+2. `fetch.py` — pull new Gmail messages
+3. `summarize.py --mode daily` — generate daily regional summaries (`continue-on-error: true`)
+4. `send_brief.py --mode daily` — send if step 3 succeeded
+5. *(Saturday only)* `summarize.py --mode weekly --force` + send
+6. *(Last day of month, or Saturday when Sunday is last day)* `summarize.py --mode monthly --force` + send
+7. `build_site.py` — rebuild `docs/`
+8. `git commit` + `git push` — deploy to GitHub Pages
+
+**Key design notes:**
+- `--force` is required for weekly/monthly because `summarize.py` refuses to run on an incomplete period, and Saturday's week ends Sunday (period_end > today).
+- Monthly is generated on the last calendar day of the month. If that day is a Sunday (no workflow run), Saturday's run catches it by checking if tomorrow is the last day.
+- Each summary step has `continue-on-error: true` so a day with no Bloomberg emails doesn't abort the site build/push.
+
+**GitHub Pages setup (one-time):**
+Go to repo Settings → Pages → Source: "Deploy from a branch" → Branch: `main` → Folder: `/docs`.
+URL: `https://bbcon.github.io/TheGreatBloombergArchiver/`
+
+---
+
+## Required GitHub Secrets
+
+| Secret | Description |
+|--------|-------------|
+| `GMAIL_CREDENTIALS_JSON` | Contents of `credentials.json` (Google OAuth app credentials) |
+| `GMAIL_TOKEN_JSON` | Contents of `token.json` (OAuth refresh token — refresh manually if expired) |
+| `ANTHROPIC_API_KEY` | Claude API key |
+| `SMTP_USERNAME` | Gmail address used to send emails |
+| `SMTP_PASSWORD` | Gmail app password (not account password) |
+
+---
+
+## Local development
+
+```bash
+# Install deps
+python3 -m pip install google-auth google-auth-oauthlib google-api-python-client anthropic python-dotenv
+
+# Fetch emails (first run opens OAuth browser flow)
+python3 fetch.py
+
+# Generate today's daily summary
+python3 summarize.py --date 2026-05-25 --mode daily
+
+# Send daily email
+python3 send_brief.py --mode daily --date 2026-05-25
+
+# Preview email in browser (no send)
+python3 send_brief.py --mode daily --date 2026-05-25 --preview
+
+# Rebuild site
+python3 build_site.py
+```
+
+---
 
 ## Key design decisions
-- Files are named by Gmail message ID (not subject) to guarantee uniqueness
-- Duplicate check is a simple `os.path.exists()` on the filepath
-- Output is saved in the project directory itself (`BASE_DIR`), not `~/Bloomberg_Emails/`
-- `maxResults=100` per run — increase if Bloomberg sends more than 100 emails per day
-- Plain text body only (no HTML)
+- Email files are named by Gmail message ID (guarantees uniqueness; de-dup via `saved_ids.txt`)
+- `summarize.py` reads emails → daily; daily summaries → weekly; weekly summaries → monthly (hierarchical)
+- Plain text body only (no HTML parsing of emails)
+- `--force` flag overrides the period-completeness guard in weekly/monthly modes
+- Output committed to `docs/` on `main` branch drives GitHub Pages (branch-based, not Actions-based deployment)
+
+---
 
 ## Environment
-- Python 3 with virtualenv (`.venv`)
-- macOS (M1)
-- Dependencies: `google-auth`, `google-auth-oauthlib`, `google-api-python-client`
-
-## Install dependencies
-```bash
-python3 -m pip install google-auth google-auth-oauthlib google-api-python-client
-```
-
-## Run
-```bash
-python3 fetch.py
-```
-
-First run opens a browser for Google OAuth login. Subsequent runs are fully automatic.
-
-## Automation
-Intended to run daily via cron (not yet configured). Target: every morning at 7am.
+- Python 3.13
+- macOS (M1) for local dev; Ubuntu (GitHub Actions) for production
+- `.venv` virtualenv for local use
 
 ## Secrets
-- `credentials.json` and `token.json` must never be committed to git
-- Add both to `.gitignore`
+`credentials.json`, `token.json`, and `.env` must never be committed to git (covered by `.gitignore`).

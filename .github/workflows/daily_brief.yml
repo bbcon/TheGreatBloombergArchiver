@@ -1,10 +1,15 @@
-name: Bloomberg Daily Brief
+name: Bloomberg Brief
 
 on:
   schedule:
     - cron: '30 6 * * 1-5'  # Mon–Fri 08:30 CET (06:30 UTC)
     - cron: '0 5 * * 6'     # Saturday 07:00 CET (05:00 UTC)
-  workflow_dispatch:          # Manual trigger from GitHub UI
+  workflow_dispatch:
+
+# Prevent overlapping runs (queue, don't cancel)
+concurrency:
+  group: bloomberg-brief
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -35,48 +40,77 @@ jobs:
         run: |
           echo '${{ secrets.GMAIL_CREDENTIALS_JSON }}' > credentials.json
           echo '${{ secrets.GMAIL_TOKEN_JSON }}'       > token.json
-          cat > .env << 'EOF'
-          ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
-          SMTP_SERVER=smtp.gmail.com
-          SMTP_PORT=587
-          SMTP_USERNAME=${{ secrets.SMTP_USERNAME }}
-          SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }}
-          EMAIL_FROM=${{ secrets.SMTP_USERNAME }}
-          EMAIL_TO=${{ secrets.SMTP_USERNAME }}
-          EOF
+          printf 'ANTHROPIC_API_KEY=%s\nSMTP_SERVER=smtp.gmail.com\nSMTP_PORT=587\nSMTP_USERNAME=%s\nSMTP_PASSWORD=%s\nEMAIL_FROM=%s\nEMAIL_TO=%s\n' \
+            '${{ secrets.ANTHROPIC_API_KEY }}' \
+            '${{ secrets.SMTP_USERNAME }}' \
+            '${{ secrets.SMTP_PASSWORD }}' \
+            '${{ secrets.SMTP_USERNAME }}' \
+            '${{ secrets.SMTP_USERNAME }}' > .env
+
+      # Capture today's date in a dedicated step so all subsequent steps have it
+      # regardless of whether earlier steps succeed or fail.
+      - name: Set run date
+        id: date
+        run: echo "today=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
 
       - name: Fetch emails
         run: python3 fetch.py
 
+      # continue-on-error keeps the job alive even on days with no Bloomberg emails.
+      # Check steps.daily.outcome (not .conclusion) to skip the send step on failure.
       - name: Generate daily summary
         id: daily
-        run: |
-          TODAY=$(date +%Y-%m-%d)
-          echo "date=$TODAY" >> $GITHUB_OUTPUT
-          python3 summarize.py --date "$TODAY" --mode daily
+        continue-on-error: true
+        run: python3 summarize.py --date "${{ steps.date.outputs.today }}" --mode daily
 
       - name: Send daily email
-        run: python3 send_brief.py --mode daily --date ${{ steps.daily.outputs.date }}
+        if: steps.daily.outcome == 'success'
+        run: python3 send_brief.py --mode daily --date ${{ steps.date.outputs.today }}
 
-      - name: Generate + send weekly brief (Saturday only)
+      # Weekly: Saturday only. --force because the week ends on Sunday (period_end > today).
+      - name: Generate weekly summary
+        id: weekly
         if: github.event.schedule == '0 5 * * 6'
-        run: |
-          python3 summarize.py --date ${{ steps.daily.outputs.date }} --mode weekly
-          python3 send_brief.py --mode weekly --date ${{ steps.daily.outputs.date }}
+        continue-on-error: true
+        run: python3 summarize.py --date "${{ steps.date.outputs.today }}" --mode weekly --force
 
-      - name: Generate + send monthly brief (last day of month)
+      - name: Send weekly email
+        if: steps.weekly.outcome == 'success'
+        run: python3 send_brief.py --mode weekly --date ${{ steps.date.outputs.today }}
+
+      # Monthly: runs on last day of the month. --force because period_end == today (>= today check).
+      # Saturday edge case: if the last day of the month is a Sunday, trigger on Saturday instead.
+      - name: Generate monthly summary
+        id: monthly
+        continue-on-error: true
         run: |
-          TODAY=${{ steps.daily.outputs.date }}
+          TODAY="${{ steps.date.outputs.today }}"
           LAST=$(python3 -c "
           from datetime import datetime, timedelta
           d = datetime.strptime('$TODAY', '%Y-%m-%d').replace(day=28) + timedelta(days=4)
           print((d - timedelta(days=d.day)).strftime('%Y-%m-%d'))
           ")
+          DOW=$(python3 -c "from datetime import datetime; print(datetime.strptime('$TODAY', '%Y-%m-%d').weekday())")
+          TOMORROW=$(python3 -c "
+          from datetime import datetime, timedelta
+          print((datetime.strptime('$TODAY', '%Y-%m-%d') + timedelta(days=1)).strftime('%Y-%m-%d'))
+          ")
           if [ "$TODAY" = "$LAST" ]; then
-            python3 summarize.py --date "$TODAY" --mode monthly
-            python3 send_brief.py --mode monthly --date "$TODAY"
+            echo "target=$TODAY" >> $GITHUB_OUTPUT
+            python3 summarize.py --date "$TODAY" --mode monthly --force
+            echo "ran=true" >> $GITHUB_OUTPUT
+          elif [ "$DOW" = "5" ] && [ "$TOMORROW" = "$LAST" ]; then
+            echo "target=$LAST" >> $GITHUB_OUTPUT
+            python3 summarize.py --date "$LAST" --mode monthly --force
+            echo "ran=true" >> $GITHUB_OUTPUT
           fi
 
+      - name: Send monthly email
+        if: steps.monthly.outcome == 'success' && steps.monthly.outputs.ran == 'true'
+        run: python3 send_brief.py --mode monthly --date ${{ steps.monthly.outputs.target }}
+
+      # Rebuild the GitHub Pages site (docs/) from all summaries.
+      # The git push below deploys it — Pages is configured to serve from docs/ on main.
       - name: Build static site
         run: python3 build_site.py
 
@@ -85,5 +119,5 @@ jobs:
           git config user.name  "Bloomberg Bot"
           git config user.email "actions@github.com"
           git add 2026/ summaries/ saved_ids.txt state/ docs/ || true
-          git diff --staged --quiet || git commit -m "Brief: ${{ steps.daily.outputs.date }}"
+          git diff --staged --quiet || git commit -m "Brief: ${{ steps.date.outputs.today }}"
           git push
