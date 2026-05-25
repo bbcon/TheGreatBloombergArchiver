@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saturday, February 21, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Saturday, February 21, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">Federal climate and energy policy developments dominated the domestic agenda on February 21. The Environmental Protection Agency moved to roll back the Biden administration's 2024 strengthening of the Mercury and Air Toxics Standards for power plants, reversing rules requiring reduction of mercury, arsenic, and lead emissions from coal-fired facilities. EPA Administrator Lee Zeldin framed the action as relieving undue burden on the coal sector, consistent with the administration's broader posture of loosening environmental constraints in pursuit of baseload power expansion. The regulatory reversal is the latest in a sequence of actions benefiting coal producers, though the sector's structural economics — including cheap natural gas and declining capital investment — remain a headwind regardless of the regulatory environment. On the energy infrastructure front, a proposed 9.2-gigawatt gas-fired power plant in Ohio, envisaged as a SoftBank-led development with a reported cost of approximately $33 billion, continued to attract scrutiny for its potential emissions footprint. Analysts at BloombergNEF estimated the facility could emit roughly 19.4 million metric tons of CO₂ annually assuming a 65% capacity factor with combined-cycle gas turbine technology, which would make it among the largest single point sources of carbon emissions in the US electricity sector. The project, backed by the Trump administration's Commerce Department, highlights the tension between the administration's energy security objectives and its stated ambition to grow the economy while protecting public health — goals that, in this instance, pull in opposite directions. The US-Indonesia trade deal, described as lowering tariffs between the two economies, was reported as complete, adding a modest but symbolically notable win for the administration's bilateral trade agenda in Southeast Asia. Separately, reports indicated the administration is planning a revamp of the Peace Corps with an AI-competitiveness dimension, framing the initiative as a tool to extend US soft power and counter Chinese influence in developing markets.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">India occupied the foreground of Asia-Pacific developments this week, hosting two major international gatherings that together illustrated the country's growing ambitions — and the tensions embedded within them. The fourth annual global AI summit concluded in New Delhi, the first such event held in the Global South. With attendance from OpenAI's Sam Altman, DeepMind's Demis Hassabis, and French President Macron, among others, the summit underscored India's convening power and its attractiveness as a market, given that more than 100 million Indians use ChatGPT weekly, second only to the United States. Prior to the summit, India had secured approximately $5 billion in venture capital commitments and $140 billion in AI infrastructure pledges; by its conclusion, those figures had risen to at least $17 billion and $270 billion respectively — a material step toward the government's AI sovereignty agenda. India's AI sovereignty strategy, articulated by Electronics Minister Ashwini Vaishnaw, rests on several pillars: development of small language models calibrated to the Indian market, construction of shared compute facilities for startups and students, domestic semiconductor design and eventual manufacturing, and active attraction of foreign capital for data center infrastructure. The underlying concern driving these ambitions is strategic dependency — the risk that foreign control over cloud and AI infrastructure could be interrupted, whether by corporate decision or government directive. Separately, India held its first major national climate conference in Mumbai, where former US Secretary of State Hillary Clinton urged the country to assume greater global leadership on emissions reduction in the absence of US federal engagement under the Trump administration. The call comes at a moment of genuine ambiguity: India remains the world's third-largest emitter, coal accounts for nearly three-quarters of power generation, and the Modi government missed its 2025 UN deadline to submit updated emissions-cutting plans. Investment in renewables is accelerating, but policy clarity remains elusive, and proposals to sanction new coal plant construction through 2047 sit uneasily alongside the government's 2070 net-zero target.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">No significant coverage for this period.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The dominant cross-cutting theme this week was AI sovereignty — the question of whether nations outside the US and China can meaningfully insulate themselves from dependency on a small number of platforms and infrastructure providers. India's AI summit crystallized this concern, with delegates from across Asia, Africa, Europe, and Latin America confronting a common structural reality: the most consequential AI systems are controlled by US and Chinese entities, and access to them can, in principle, be withdrawn. The 2024 UniSuper incident — in which a Google cloud misconfiguration cut Australian pension fund members off from their accounts — served as a reference point for how technology dependency can manifest in practice. Rishi Sunak, now a Goldman Sachs adviser, offered a framework for sovereign resilience: secure a niche position in the AI supply chain, diversify providers to avoid vendor lock-in, and build switching capabilities through partnerships. These are practical, if difficult, prescriptions. India's approach — combining domestic small language models, shared compute, semiconductor ambitions, and capital attraction — reflects a more state-directed variant of the same logic. On climate and energy, the week produced a clear illustration of divergence between the US federal trajectory and the rest of the world. While the Trump administration rolled back EPA emissions standards and advanced plans for a large new gas plant, former US officials were in Mumbai urging developing nations to accelerate green transitions without waiting for Washington. Hillary Clinton's framing — that the Global South must lead because US policy change is "a few years off" — reflects a broader recalibration among climate advocates who are repositioning emerging economies as the primary site of ambition. Whether India can fulfill that role while simultaneously planning new coal capacity through mid-century remains an unresolved tension that no summit rhetoric has yet bridged.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

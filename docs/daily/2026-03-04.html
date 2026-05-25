@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, March 04, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, March 04, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets displayed notable divergence from global peers on Wednesday, with the S&P 500 futures pointing to a modest gain of roughly 0.3% even as Asian markets collapsed and European indices remained choppy. The benchmark has declined less than 1% since hostilities in Iran began — a resilience that Goldman Sachs chairman David Solomon, speaking at a conference in Sydney, described as "benign" and somewhat surprising. The structural explanation is straightforward: the US is a net energy exporter, making it substantially less exposed to a sustained Strait of Hormuz disruption than European or Asian economies. As Barclays' Ajay Rajadhyaksha noted, the strait's closure is a far more acute problem for large Asian importers than for the American economy. That insulation is not unlimited, however. Fed funds futures markets are pricing out rate cuts at an accelerating pace as traders weigh the inflationary implications of sustained high oil prices. Bloomberg Economics has modeled scenarios in which a prolonged Hormuz closure pushes Brent toward $108 per barrel — a level that would simultaneously push inflation higher and slow growth, placing the Federal Reserve in an awkward position between a president demanding lower rates and an economy facing a supply-side price shock. The 10-year Treasury yield edged up to 4.075%, a modest move that nonetheless reflects the repricing of the easing path. In corporate news, Blackstone came under scrutiny as more than 25 senior executives collectively contributed approximately $150 million to support redemption payments from the firm's flagship private credit fund amid a record withdrawal wave. Separately, executives at the Bloomberg Invest conference, including Apollo's Marc Rowan and Soros's Dawn Fitzpatrick, warned of "a painful 18 to 24 months" ahead for private credit and private equity as default risks rise and asset sales remain difficult. Moderna gained 5.8% after settling Covid delivery-technology litigation for $950 million, while cryptocurrency-linked equities rallied as Bitcoin recovered ground lost earlier in the week.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets suffered their most severe week in nearly a year, with the region bearing a disproportionate share of the global fallout from the US-Iran conflict. South Korea's Kospi index fell 12% on Wednesday — the largest single-day decline in the index's history — compounding a 7.2% drop the prior session. The severity reflects both fundamental vulnerability and the unwinding of an overleveraged rally: the Kospi had risen roughly 50% this year, fueled by AI-driven optimism around chipmakers, retail participation on margin, and active encouragement from President Lee Jae Myung's administration, which had made crossing the 5,000-point threshold a political objective. Samsung Electronics fell 12%, SK Hynix declined approximately 10%, and Hyundai Motor lost 16%. Bank of Korea Governor Rhee Chang Yong delayed travel to Bangkok to convene an emergency meeting, while President Lee, abroad in the Philippines, announced an extraordinary cabinet session. The political consequences for Lee appear significant — his identification with the rally has turned a market rout into a direct test of his credibility. Thailand's benchmark fell as much as 8.6%, and Taiwan's main index declined over 4%. The Indian rupee fell to a record low. Asia's vulnerability is structural: the region depends overwhelmingly on imported oil and gas, meaning a prolonged Hormuz disruption transmits directly into energy import bills, inflation, and current account deterioration. Capital is also flowing out of the region and into dollar assets, with the Bloomberg dollar index up 1.4% on the week. China's National People's Congress convenes Thursday, where Xi Jinping's government is expected to unveil the 15th Five-Year Plan. The plan is anticipated to include a commitment to raise household consumption from roughly 41% of GDP toward 46% by 2030 — a more explicit pivot than prior plans. Fixed-asset investment contracted in 2025 for the first time in over three decades, and official PMI data released Wednesday showed factory activity contracting more than forecast. Chinese financial institutions are meanwhile scaling back exposure to Middle Eastern debt at regulatory direction.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European equity markets offered a partial counterpoint to the global selloff, with the Stoxx Europe 600 rising 1.3% on Wednesday, partly on reports of indirect Iran-US contact toward a ceasefire. However, the underlying macro picture deteriorated sharply. European natural gas prices surged more than 50% on the week — their highest level since Russia's invasion of Ukraine — reflecting the continent's substantial reliance on Qatari LNG at a time when the Ras Laffan facility has been shuttered by drone attack and Hormuz transits remain effectively halted. Bloomberg Economics estimates that sustained high energy prices could push Europe to the brink of recession. The week's most politically consequential European story involved Spain. President Trump threatened to "cut off all trade" with Spain after Prime Minister Pedro Sánchez denied Washington access to Spanish military bases for its Iran bombing campaign. Sánchez declined to yield, stating Spain would not "be complicit in something harmful to the world." Spanish equities fell to their lowest in nearly three months. Trump's trade threat faces legal complications given that bilateral trade is governed by EU-level agreements, and Banco Santander executive chair Ana Botín sought to publicly downplay the rift. UK Chancellor Rachel Reeves stated Britain would not sacrifice its principles for favorable US trading terms, declining to endorse the American-Israeli operation. The Office for Budget Responsibility separately indicated that meeting Labour's commitment to raise defence spending to 3.5% of GDP by 2035 would require approximately £40 billion in additional outlays. In corporate news, Adidas fell 7.6% in Frankfurt after its profit forecast missed expectations due to US tariffs and currency headwinds, while Novo Nordisk rose 3.5% after US regulators moved against copycat GLP-1 drugs.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The dominant global development remains the US-Iran conflict, now entering its fifth day with no material sign of military de-escalation. Brent crude extended its gains to roughly 13% since hostilities began, settling above $82 per barrel after briefly reaching toward $84. European natural gas prices are up more than 50% on the week. The Strait of Hormuz — through which approximately one-fifth of global oil supply and a comparable share of LNG transits — remains effectively closed to commercial shipping, with Iraq already cutting output as onshore storage fills and Qatar's Ras Laffan LNG facility offline following drone strikes. Aluminum prices rose to their highest since 2022 after Aluminium Bahrain declared force majeure on some deliveries. Airlines have now canceled over 12,300 flights, stranding crews and equipment across the region. President Trump announced the US would provide naval escorts and insurance guarantees for tankers transiting the strait. The shipping industry regards this as a partial solution at best: ING analysts warned US Navy escorts risk becoming targets, Iran's Revolutionary Guards claim "complete control" of the waterway, and ultimately it is individual ship captains — not desk-bound executives — who determine whether to sail. Saudi Aramco is exploring rerouting cargoes through Yanbu on the Red Sea. A New York Times report that Iranian intelligence officials had made indirect contact with Washington to explore an end to the conflict prompted an equity rebound and modestly pared oil gains, though the situation remains unresolved. Bloomberg Economics has modeled a severe scenario in which prolonged closure lifts Brent to approximately $108 per barrel, generating a material inflation shock across all major economies. For the Federal Reserve and other central banks, the dynamic is particularly uncomfortable: an oil-price spike pushes inflation higher while simultaneously depressing growth, complicating any easing cycle. Russia's government, meanwhile, is reported to see potential benefit in Gulf states diverting air-defense missile procurement away from Ukraine.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

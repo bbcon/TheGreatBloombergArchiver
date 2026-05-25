@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>March 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="daily.html" class="nav-link">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="#" class="nav-link  active">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../monthly.html">‹ Monthly archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Monthly Brief</p>
+        <p class="brief-date">March 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Tariff Architecture in Transition</p>
+<p class="para-body">The defining US macro development across March was a wholesale restructuring of the trade policy framework. The Supreme Court's invalidation of IEEPA-based tariffs mid-month, followed by the administration's rapid pivot to a 10% global levy under Section 122 of the Trade Act of 1974, left an estimated $170 billion in contested duties the subject of more than 1,500 refund lawsuits filed by mid-month. Legal scholars broadly questioned whether the Section 122 threshold — requiring evidence of "fundamental international payments problems" — is met, though courts are unlikely to move within the 150-day expiry window. Treasury Secretary Bessent's characterization of refund claims as "corporate welfare" signaled the administration's combative posture. Separately, a fresh Section 301 investigation targeting over a dozen economies including China, the EU, Mexico, India, and Taiwan was filed late in the month, with a public hearing set for May 5. The Committee for a Responsible Federal Budget estimated the IEEPA invalidation reduces government revenue by $1.7 trillion through 2036, with the replacement levy recouping approximately $925 billion.</p>
+<p class="para-title" style="color:#5597cb;">Iran Conflict: Domestic Consequences</p>
+<p class="para-body">Saturday evening strikes on Iranian nuclear facilities at the end of the first week reframed every subsequent US macro variable. The US is a net energy exporter, providing relative insulation from Hormuz disruption that proved acutely damaging to Asian and European peers — a structural divergence Goldman Sachs chairman David Solomon described as "benign" and somewhat surprising. That insulation is partial, however. Average gasoline prices rose approximately 27% from hostilities' onset, reaching roughly $3.70 per gallon by the final week of the month — approaching levels that historical precedent associates with electoral consequences — while diesel surpassed $5 per gallon for the first time since December 2022. SMBC Nikko estimated the gasoline price increase could reduce the household savings rate by approximately 60 basis points to roughly 3.9%. The Pentagon disclosed the first six days of operations cost over $11.3 billion, and a supplemental funding request of $200 billion was submitted to Congress in the final week, with economists projecting the 2026 federal deficit could approach $2 trillion against Bessent's original 3%-of-GDP target.</p>
+<p class="para-title" style="color:#5597cb;">Federal Reserve: Stagflation Bind Deepens</p>
+<p class="para-body">The Federal Reserve's policy path became increasingly constrained as March progressed. At the March 19 FOMC meeting, the committee voted 11-1 to hold at 3.5%–3.75%. Chair Powell acknowledged "meaningful" internal movement toward fewer cuts and explicitly noted that colleagues had raised the possibility that the next move could be a hike — a statement that produced the S&P 500's largest Fed-day decline since 2024. Core PCE tracked approximately 3.1% annualized in January, with Barclays, Morgan Stanley, and Bank of America projecting core PCE goods prices advancing at least 0.8% in February alone. Core PPI rose to a three-year high, and the ISM prices-paid component for February surged to its highest since 2022, surprising to the upside by the widest margin on record. By month-end, futures markets had repriced from two cuts anticipated in January to zero, with brief periods in the final week pricing a non-trivial probability of a hike at the April meeting. Goldman Sachs pushed its first cut forecast to September and raised its 12-month recession probability to 30%.</p>
+<p class="para-title" style="color:#5597cb;">Institutional Uncertainty at the Fed</p>
+<p class="para-body">The succession question added a further layer of complexity. Kevin Warsh, the reported frontrunner for Fed chair, remained unconfirmed after a meeting with Senator Thom Tillis — who is blocking the confirmation vote pending resolution of a Justice Department investigation into Fed building renovation practices — produced no commitment. Powell confirmed he would remain pro tempore if Warsh is not confirmed by his May term expiry and stated he will not vacate his board seat until the probe concludes. Senior Justice Department officials supported a US attorney's challenge to Powell's authority, with the White House declining to oppose the effort — a development that raised market concern about central bank independence at an acutely sensitive juncture.</p>
+<p class="para-title" style="color:#5597cb;">Equity and Credit Markets</p>
+<p class="para-body">US equities declined across the month, with the S&P 500 posting its fifth consecutive weekly loss by the final week — the longest such streak since 2022 — and down roughly 3% in March through the final Friday. The Magnificent Seven gauge approached correction territory, falling nearly 10% from its peak. AI disruption anxiety remained a persistent sector headwind: IBM suffered its steepest single-day decline in 25 years early in the month following Anthropic's COBOL-modernization announcement, Salesforce fell roughly 4% on a weak outlook, C3.ai tumbled 24% on a revenue cut, and Trade Desk dropped 17%. Nvidia's Thursday earnings beat in the first week — a roughly $78 billion revenue forecast — produced a muted after-hours response, reflecting an increasingly demanding bar. Private credit stress intensified throughout the month: Apollo moved to cap redemptions from its $25 billion Debt Solutions vehicle after clients sought to withdraw 11.2%, JPMorgan restricted lending to certain private credit funds, and Fitch reported a trailing 12-month private credit default rate of 5.8% in January, the highest since tracking began. Unusual oil futures trading in the two minutes preceding a late-month Trump Truth Social post — approximately 6 million barrels against a five-day average of 700,000 — drew regulatory scrutiny. Bank of America's final-week fund manager survey recorded the largest jump in cash allocations since March 2020, reaching 4.3%.</p>
+<p class="para-title" style="color:#5597cb;">Macro Backdrop and Consumer</p>
+<p class="para-body">The macro context entering March was already mixed: 2025 GDP growth confirmed at 2.2%, the slowest since the post-COVID expansion, with core inflation ending 2025 at 3%. February payrolls, released at the start of the second week, recorded the first private-sector decline in five years, while February CPI printed a benign 2.5% year-on-year core — relief that proved short-lived given PCE dynamics. University of Michigan consumer sentiment fell to a three-month low in the preliminary March reading, January consumer spending was essentially flat, and KB Home lowered full-year guidance citing the conflict as a contributing factor. Goldman Sachs projected unemployment rising to 4.6% by year-end from 4.4% in February, and the OECD projected US inflation reaching 4.2% in 2026. What remains unresolved at month-end is whether the energy shock proves transitory — contingent on Hormuz reopening — or persistent enough to transform the current stagflation tension into a genuine contraction, a question the Fed cannot yet answer and on which the range of plausible outcomes remains unusually wide. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Regional Tariff Arithmetic and Early Trade Disruption</p>
+<p class="para-body">Asia's month opened with significant reconfiguration of its US trade exposure. The Supreme Court's early-month invalidation of IEEPA tariffs reduced average US levies on Chinese goods from 32% to approximately 24%, with the Asia-wide weighted average falling from roughly 20% to 17%, per Morgan Stanley estimates. Hong Kong's Hang Seng China Enterprises index rallied 2.65% on the first Monday of the month. The subsequent 10% global Section 122 tariff created a more complex winners-and-losers map, with India — which had been advancing toward an interim deal — postponing its trade mission citing uncertainty over the new framework's legal durability. By month-end, a pending $14 billion US arms package for Taiwan had emerged as a significant latent irritant, and a fresh Section 301 investigation targeting South Korea, India, Taiwan, and others added further trade complexity. Preparatory talks in Paris between Bessent, USTR Greer, and Vice Premier He Lifeng laid the ground for a Trump-Xi summit, originally planned for late March, then postponed to approximately May 14–15.</p>
+<p class="para-title" style="color:#e07b39;">China: Resilience With Structural Caveats</p>
+<p class="para-body">China's position across March was one of relative but qualified insulation from the Iran shock. January–February industrial production rose 6.3% year-on-year — the fastest pace since September — and retail sales and fixed-asset investment both exceeded forecasts. February trade data were striking: exports surged 21.9% year-on-year in the first two months, generating a record $214 billion surplus, though exports to the US fell 11% on tariff effects. Commercial oil inventories reached a record 851 million barrels, and Beijing instructed its largest oil refiners to suspend diesel and gasoline exports as a precautionary measure mid-month. The National People's Congress set the GDP growth target at 4.5%–5% — the lowest since 1991 — with Premier Li characterizing the transition as "formidable." The 15th Five-Year Plan prioritized AI, semiconductors, and advanced manufacturing, with defense spending rising 7%, the slowest since 2022. Officials made their strongest commitment yet to ending deflation in 2026, and Citigroup, Goldman Sachs, and Macquarie projected producer prices could turn positive as early as March — though the key uncertainty is whether this reflects genuine demand recovery or cost-push dynamics. The absence of meaningful household consumption stimulus disappointed investors. FGE NexantECA indicated Beijing is close to drawing on its estimated 1.4 billion barrels of commercial reserves as Hormuz disruption persists.</p>
+<p class="para-title" style="color:#e07b39;">China: Markets, Technology, and Geopolitics</p>
+<p class="para-body">Chinese equity markets were volatile across the month. Mainland investors sold a record HK$27.7 billion of Hong Kong shares in a single session in the second week. In the final week, Alibaba and Tencent combined lost approximately $66 billion in market capitalization over roughly 24 hours after results from both companies disappointed on AI monetization; Alibaba's quarterly net income fell 67%. Simultaneously, LLM providers MiniMax and Zhipu gained approximately 20% and 19% respectively following Nvidia CEO Jensen Huang's endorsement of the OpenClaw agentic AI platform — Nvidia confirmed it is ramping H200 production for Chinese customers following the administration's reversal on export controls. Chinese authorities restricted state enterprises from deploying OpenClaw on office computers citing cybersecurity concerns. A record $112 billion discrepancy between Chinese export figures and US Customs arrival data for 2025 suggests up to a quarter of China-origin shipments may have bypassed tariff controls. ChangXin Memory Technologies reportedly more than doubled revenue to approximately $8 billion in 2025, reflecting continued momentum in China's domestic semiconductor buildout.</p>
+<p class="para-title" style="color:#e07b39;">South Korea: Record Rally, Record Volatility</p>
+<p class="para-body">South Korea provided the month's most dramatic individual market narrative. The Kospi had risen nearly 50% year-to-date entering March, driven by Samsung Electronics up 70% and SK Hynix up 57% on AI infrastructure demand — the total equity market capitalization reached $3.76 trillion, surpassing France to rank ninth globally. That rally reversed violently in the second week: the Kospi fell 7.2% on Tuesday following a long weekend as catch-up selling accelerated, then collapsed a further 12% Wednesday in the index's largest single-day decline in its recorded history. President Lee Jae Myung, abroad in the Philippines, convened an emergency cabinet session and invoked the 100 trillion won market stabilization program; the Kospi rebounded 10% Thursday. Global funds sold a net $11 billion of emerging Asian equities excluding China in that week alone — the largest outflow since March 2022 — with South Korea absorbing $1.6 billion. South Korea's won traded near its lowest since 2009 by month-end, and parliament approved a $350 billion US investment pledge even as Washington simultaneously launched a trade investigation targeting Seoul. Export data for the first 20 days of March showed semiconductor shipments to China up 164%, illustrating the depth of supply-chain integration.</p>
+<p class="para-title" style="color:#e07b39;">Japan: Policy Constraints and Import Pressure</p>
+<p class="para-body">Japan's month was shaped by the intersection of political resistance to BOJ normalization and accelerating import costs. Early in the month, the yen fell approximately 1% to around 156 per dollar after Prime Minister Takaichi expressed apprehension over further rate increases at a meeting with Governor Ueda. Takaichi nominated two reflationist academics to forthcoming BOJ board openings, reinforcing dovish concerns — former Governor Kuroda publicly called for hikes and warned the yen may be "somewhat too weak," a striking inversion of roles. The yen weakened to approximately 159.5 per dollar by the final week, amplifying import cost burdens. Governor Ueda cited Middle East uncertainty as materially clouding the timing of any further adjustment. Japan launched its largest emergency oil stockpile release on record and the Finance Ministry made inquiries about potential intervention in crude oil futures markets. February export data showed shipments to the US falling 8% year-on-year and car exports by value down 14.8%. Toyota reached a landmark settlement with Elliott Investment Management over Toyota Industries at ¥20,600 per share — a 9.6% premium on a deal valued at approximately ¥6.7 trillion — a meaningful step in Japan's capital efficiency reform agenda.</p>
+<p class="para-title" style="color:#e07b39;">India and Southeast Asia</p>
+<p class="para-body">India's position grew increasingly complex. New Delhi had been reducing Russian oil purchases under US pressure, pivoting toward Gulf supply — precisely the channels most disrupted by the Hormuz closure. Washington's one-month sanctions waiver allowing Indian refiners to resume Russian crude purchases provided material relief, though it simultaneously illustrated India's acute energy exposure. The rupee weakened past 93 per dollar to a record low, with Nomura projecting 96 by end-June; over 330 million households relying on LPG saw delivery times stretch from five to 25 days in some regions. A US submarine attack on the Iranian frigate IRIS Dena off Sri Lanka mid-month — following the ship's participation in an Indian Navy-hosted fleet review — created a diplomatically fraught situation, forcing Prime Minister Modi to call for "dialog and diplomacy" while facing pointed questions about sovereignty in India's own maritime neighborhood. The Philippines declared a national energy emergency, warned of potential aviation grounding due to jet fuel shortages, and is reportedly considering setting aside South China Sea territorial disputes to explore cooperative oil exploration with Beijing — a geopolitically significant pivot. Southeast Asian governments imposed emergency conservation measures: Thailand ordered civil servants to work from home, the Philippines shifted to a four-day government work week, and Vietnam faces potential airfare increases of up to 70%. What remains unresolved across the region at month-end is whether the Hormuz disruption proves temporary — enabling a return to prior growth trajectories — or persistent enough to accelerate structural energy transitions and force durable geopolitical realignments. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Equity Markets: From Outperformance to Reversal</p>
+<p class="para-body">March opened with European equities completing what had been the dominant cross-regional theme of early 2026. The Stoxx Europe 600 closed February with an eighth consecutive monthly gain — its longest winning streak since 2013 — up 3.7% for the month, with European companies announcing €85.7 billion in share buybacks in the January–February period, the highest ever for that period per Barclays data. US borrowers simultaneously issued record volumes of euro-denominated reverse Yankee bonds, attracted by yields approximately 170 basis points below comparable US-denominated issuance. That picture reversed sharply from the second week onward as the Iran conflict's energy implications became clear. European natural gas futures surged as much as 52% in a single session in the second week — the largest intraday gain since the 2022 crisis — following Iranian drone attacks on Qatar's Ras Laffan LNG facility. By the final week, European gas prices had risen more than double pre-conflict levels. France's CAC declined 7.6% in March and Switzerland's SMI fell 8.1%, while the Stoxx 600 ended the month under sustained pressure. The iTraxx Europe investment-grade index reached its highest level since May, and the Crossover index crossed 300 basis points for the first time since June.</p>
+<p class="para-title" style="color:#4a9e6b;">Central Banks: From Easing to Tightening Bias</p>
+<p class="para-body">The most consequential monetary policy development in Europe across March was the near-complete reversal of the regional easing narrative. The ECB held its key rate at 2.0% in its March meeting, but dropped language describing policy as being in a "good place" and shifted guidance materially. By month-end, traders were fully pricing two ECB hikes in 2026 — a dramatic reversal from the trajectory prevailing at the start of the year. Bundesbank President Nagel stated in the second week that the inflation impact of the Iran conflict outweighs the growth drag, and in the final week stated that a hike as early as April is conceivable. President Lagarde signaled the bank will not act until it has "sufficient information on the size and persistence" of the shock, while Governing Council member Vujcic warned that stagflation risk is increasing and explicitly declined to provide rate guidance. Goldman Sachs Chief Economist Hatzius estimated that in a severely adverse oil scenario, euro area headline inflation could rise nearly 3 percentage points over the next year — the largest projected impact among major economies. The EU warned eurozone inflation could exceed 3% in 2026 if oil remains near $100 per barrel. For the Bank of England, money markets shifted from pricing cuts to a 70% probability of a hike by year-end in the second week, and by month-end ten-year gilt yields briefly breached 5% — levels not seen before the Global Financial Crisis and exceeding the Truss episode in duration if not initial velocity — before partially retracing on Trump's temporary pause on strikes against Iranian energy infrastructure. Governor Bailey attended an emergency cabinet meeting convened by Starmer, underscoring the severity of the dual stress.</p>
+<p class="para-title" style="color:#4a9e6b;">Growth Deterioration</p>
+<p class="para-body">The macro backdrop deteriorated concretely across the month. UK GDP was flat in January against expectations for a 0.2% gain — weaker than every analyst forecast — data predating any meaningful Middle East impact. The S&P Global Eurozone Composite PMI fell to 50.5 in March from 51.9 in February, the slowest expansion since May 2025, with input prices rising at the fastest pace since February 2023 and future output expectations posting their largest deterioration since Russia's invasion of Ukraine. Germany's industrial production and factory orders both declined at the start of the year. Italy is preparing to cut its 2026 GDP forecast to as low as 0.5%; the OECD assessed the UK as facing the largest output hit among G7 nations this year. February UK borrowing came in above forecast due to a surge in debt-interest costs. UK consumer sentiment fell to a four-month low in the March Barclays survey. Germany's chemical industry, already under pressure from elevated energy costs predating the conflict, faces an estimated €3 billion in additional annual gas costs if post-conflict prices persist, with the VCI warning of "a spiral spinning in the wrong direction."</p>
+<p class="para-title" style="color:#4a9e6b;">UK Politics</p>
+<p class="para-body">Prime Minister Starmer's Labour government faced political pressure on multiple fronts. The Green Party won the Gorton and Denton by-election early in the month with 40.7% of the vote, with Reform UK second at 28.7% and Labour trailing third at 25.4%. Starmer's refusal to allow US use of British military bases for Iran operations — he stated Britain does not support "regime change from the skies" — drew Trump's public criticism and bilateral friction, while simultaneously facing pressure from Labour's left flank. By month-end, prediction markets assigned a 68% probability that Starmer exits office before year-end. The OBR indicated meeting Labour's commitment to raise defence spending to 3.5% of GDP by 2035 would require approximately £40 billion in additional outlays. One constructive note: Chancellor Reeves's spring fiscal statement benefited from tax receipts approximately £22 billion ahead of OBR forecasts, reducing gilt issuance pressure — a development markets received constructively before the gilt selloff associated with the Iran shock overtook that signal.</p>
+<p class="para-title" style="color:#4a9e6b;">Industrial Policy and Corporate News</p>
+<p class="para-body">European industrial policy underwent a substantive shift. Brussels finalized a draft industrial act with strict local-content criteria favoring European firms in public procurement and requiring some foreign competitors to share technology and hire locally — a meaningful departure from the free-trade framework governing EU industrial policy for decades. The European Parliament trade chief moved to freeze ratification of the EU-US trade agreement pending clarification of Washington's revised policy framework. US warnings against "Made in Europe" content rules added bilateral friction. In corporate news, HSBC reported full-year pretax profit of $29.9 billion, surpassing expectations and sending shares up 5.4% in London; the bank is separately weighing cuts to approximately 20,000 roles as part of an AI-driven restructuring. UniCredit launched a $40 billion bid for Commerzbank, easing the path toward potential full acquisition. Unilever confirmed evaluation of a food asset separation with McCormick reportedly offering for the division — valued by Barclays at €28–31 billion, potentially the company's largest-ever restructuring. Adidas fell 7.6% in Frankfurt after a profit forecast that missed on tariff and currency headwinds. Novo Nordisk rose 3.5% after US regulators moved against copycat GLP-1 drugs. Germany's €600 billion defense spending program is generating tangible stimulus, with defense suppliers reporting record order books. What remains unresolved at month-end is whether Europe faces a rerun of 2022's energy-driven stagflation — with the ECB forced to choose between credibility and growth — or whether the conflict de-escalates quickly enough to contain the damage. The answer depends almost entirely on the Strait of Hormuz. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">The US-Iran Conflict: Scope and Trajectory</p>
+<p class="para-body">The defining event of March 2026 — and the organizing variable for virtually every global asset class by month-end — was the US-Israeli military campaign against Iran's nuclear infrastructure, which commenced over the final weekend of February. The conflict escalated rapidly and non-linearly: within the first week, satellite imagery had confirmed active Iranian efforts to conceal and harden nuclear sites, a NATO AWACS aircraft in Turkey shifted operational focus from Russia to Iran, and Trump's overnight video address acknowledged the possibility of US casualties. The killing of Ayatollah Ali Khamenei in a US-Israeli strike in the second week — the most direct US targeting of a foreign head of state in the modern era — triggered a succession to his son Mojtaba Khamenei, with deep IRGC ties, who vowed to keep Hormuz effectively closed. By the third week, the conflict had expanded geographically: Iranian missiles and drones struck Saudi Arabia, Kuwait, Bahrain, and UAE infrastructure; Israel struck Iran's South Pars gas field; a US submarine sank the Iranian frigate IRIS Dena off Sri Lanka in the first American submarine attack on a surface vessel since World War II; and Dubai International Airport briefly halted operations following drone strikes. Trump extended a 48-hour ultimatum on energy infrastructure strikes by five days in the final week, citing diplomatic contact, then extended it a further ten days to April 6. Iran publicly rejected US overtures, while Wall Street Journal and New York Times reports suggested back-channel Omani intermediation — a contradictory signaling environment that reflects genuine uncertainty about Iran's internal decision-making following the deaths of multiple senior officials. Prediction markets placed a 52% probability on the conflict extending beyond April 30.</p>
+<p class="para-title" style="color:#8b5cf6;">The Strait of Hormuz and Global Oil Markets</p>
+<p class="para-body">Brent crude entered March already up approximately 18–19% year-to-date above $70 per barrel. The conflict's progression drove a sequence of historic moves: Brent surged approximately 12.5% at Monday's open in the second week, settled above $82 by Thursday of that week — an approximately 18% weekly gain — then surged above $118 per barrel intraday in the third week before partially retracing, recording an intraday swing of approximately $36 that was the widest on record, surpassing moves at the Ukraine invasion's onset. By the final week, Brent held near $108–$113 and is on pace for its largest monthly gain since 1990. The Strait effectively ceased functioning as an oil transit corridor by the third week, with only two commercial vessel transits recorded in a 24-hour period and no oil shipments passing through on certain days. More than half the world's largest maritime insurance clubs withdrew war-risk coverage for Persian Gulf vessels; insurance premiums for Hormuz transit reached approximately 5% of hull value, roughly five times the conflict's outset level. Saudi Arabia suspended operations at its 550,000 barrel-per-day Ras Tanura refinery following a drone strike. The IEA announced a record emergency release of 400 million barrels in the third week — the largest in the agency's history — with Japan separately announcing a unilateral release of approximately 80 million barrels. The IEA characterized the cumulative supply disruption as equivalent to the combined effect of the two 1970s oil shocks and the 2022 European gas crisis. Goldman Sachs raised the plausibility of Brent crossing $100 per barrel if low flows persisted; BloombergNEF's base case for April averages $106.70, with a delayed reopening to mid-June pushing toward $154.40; and Macquarie warned of a path toward $200 in a prolonged closure scenario. Iran's military commander stated Tehran "does not believe in closing the Strait at all" — a signal worth monitoring carefully.</p>
+<p class="para-title" style="color:#8b5cf6;">Commodity Contagion and Supply Chain Disruption</p>
+<p class="para-body">The conflict's commodity footprint broadened materially as March progressed. Qatar's Ras Laffan LNG complex — producing roughly 20% of global LNG supply — sustained damage that analysts estimate could take years to repair, with two affected trains expected offline for up to five years. Iran stopped natural gas exports to Turkey following strikes on South Pars. European natural gas futures rose more than 60% from pre-conflict levels at the peak, breaching €50 per megawatt-hour. Urea prices rose 25% since hostilities began, reaching levels last seen during Russia's Ukraine invasion, with Iran accounting for approximately 5% and 11% of global urea and ammonia trade respectively. Aluminum briefly hit a near four-year high, coal prices reached their highest in over a year on gas substitution effects, and jet kerosene in Singapore surged more than 60%. Approximately one-fifth of global air freight was disrupted, over 46,000 flights were canceled in the third week alone, and economy-class Sydney-to-London fares increased more than 80%. Supertanker earnings reached levels not seen since early 2020, with VLCC day-rates on the Middle East-to-China route exceeding $200,000 — a gain of more than 600% year-to-date — with Sinokor Group assembling a concentrated market position. The fertilizer and food price impulses are expected to materialize with a lag, and the IMF urged policymakers to prepare for a prolonged conflict scenario.</p>
+<p class="para-title" style="color:#8b5cf6;">Global Monetary Policy: A Collective Pivot</p>
+<p class="para-body">The conflict triggered one of the more significant collective monetary policy pivots of the current cycle. Central banks globally had entered March on easing trajectories or holding patterns; by month-end, nearly all had shifted materially toward caution or tightening. The Reserve Bank of Australia was the first to move, hiking rates in the third week in response to the inflationary impulse. The ECB, Bank of England, Federal Reserve, and Bank of Japan all held at their March meetings but pivoted their communications toward tightening bias. Bloomberg Economics estimated March inflation across advanced economies was running approximately 0.4 percentage points above pre-conflict projections. IMF Managing Director Georgieva warned a sustained 10% energy price increase would push global inflation up 40 basis points and shave 0.1–0.2% from growth. The Dallas Fed modeled a Strait closure lasting through June as reducing global GDP growth by 2.9 percentage points next quarter, and the OECD raised its G20 average inflation projection to 4.0% from 2.8% in December. Pre-existing global debt vulnerabilities compound the challenge: global debt reached $348 trillion at end-2025, a fresh record driven by a $29 trillion annual increase — the fastest accumulation since the pandemic — and private credit stress deepened throughout the month, with Blue Owl's fund gating, UBS raising its worst-case default scenario to 15%, and private equity returning distributions equivalent to just 14% of net asset value in 2025.</p>
+<p class="para-title" style="color:#8b5cf6;">Dollar, Reserve Currencies, and Geopolitical Realignment</p>
+<p class="para-body">The Bloomberg Dollar Spot Index is on pace for its largest monthly gain since July, approximately 2%, reflecting haven demand and the repricing of Fed easing. JPMorgan strategists turned bullish on the dollar for the first time in a year; speculative positioning flipped from the most net-short in five years to net-long. Gold's trajectory was counterintuitive: after peaking intraday above $5,000 per ounce earlier in 2026, the metal fell approximately 27% from that peak through the worst weeks of March — its worst multi-week stretch in over a decade — posting its worst weekly decline since 1983 in the final week as the global monetary policy repricing eroded the appeal of non-yielding assets, dollar strength intensified, and Turkey sold approximately $8 billion in gold reserves to defend its currency. Reports that Iran is permitting Hormuz passage for vessels paying in yuan prompted Deutsche Bank to flag the conflict as a potential catalyst for petrodollar erosion — uncertain in magnitude but significant in long-run ramifications. The structural barriers facing dollar alternatives remain formidable: German Bund annual trading volumes of roughly €6.74 trillion amount to less than two weeks of US Treasury turnover, and foreign holdings of Chinese government bonds stand at just under $400 billion against $9.3 trillion in foreign-held Treasuries. Alliance architecture showed meaningful fractures: the UK, Japan, Germany, and South Korea all declined US requests to participate militarily, Trump publicly abandoned his request for allied warships after being rebuffed, and Russia emerged as a clear early beneficiary — receiving elevated energy revenues, reportedly providing Iran with satellite imagery and drone-targeting intelligence, while maintaining a communication channel with Trump on both Iran and Ukraine. European Commission Vice-President Ribera framed the disruption explicitly as a driver of accelerated energy transition, and early consumer data —</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

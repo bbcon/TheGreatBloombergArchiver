@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, April 08, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, April 08, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity futures staged a sharp rally on April 8 as markets responded to the US-Iran ceasefire announcement, with S&P 500 futures gaining 2.6% and Nasdaq 100 futures up 3.3% in early trading. The immediate beneficiaries were technology and semiconductor stocks — Micron rose nearly 10% and Western Digital gained 8.3% on expectations that ceasefire conditions would help unlock helium supplies critical to chip manufacturing — while energy names moved sharply in the opposite direction, with Exxon Mobil down 5.8% and Occidental Petroleum falling 8.1% in premarket. Fertilizer stocks, which had risen on supply disruption fears, also gave back gains. Levi Strauss provided a brighter note, with shares rallying 12% on better-than-expected results driven by direct-to-consumer strength. On the monetary policy front, Federal Reserve Vice Chair Philip Jefferson acknowledged that the Iran conflict will push near-term US inflation higher while characterizing current policy as appropriate. The Fed's March meeting minutes are due later Wednesday. The more pressing near-term data catalysts arrive Thursday and Friday, with PCE for February followed by the March CPI print. Both are expected to confirm headline inflation has risen materially, with gasoline's year-on-year increase moving from roughly zero to more than 25% in barely a month, likely pushing the headline rate back above 3%. The ISM non-manufacturing survey offered an additional caution signal: more than 70% of purchasing managers reported rising input prices, the largest monthly increase in 13 years, which some analysts characterize as increasingly consistent with stagflationary conditions, though strong new orders provide a partial offset. Falling oil prices have revived rate-cut expectations, with bond markets rallying and the 10-year Treasury yield declining to 4.24%. Longer-term inflation expectations remain relatively anchored — the five-year/five-year breakeven rate sits below 2.2% — suggesting markets are treating the energy shock as transitory. Kevin Warsh's confirmation as incoming Fed chair remains pending in the Senate, with an expected bias toward rate cuts if inflation data permit.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian markets registered broad gains following the ceasefire announcement, with the Topix recovering to its highest level since the war began on February 28 and the China CSI 300 Index advancing 3.5%. The relief rally reflected the unwinding of war-premium positioning rather than any fundamental improvement in regional economic conditions, which remain under strain from the energy shock. China has been one of the most consequential actors in managing the supply disruption. Beijing granted independent teapot refiners additional crude import quotas to allow them to maintain fuel production at mandated levels amid the Persian Gulf disruption — a practical measure that reveals the extent to which China's energy security was stretched. On the LNG side, however, the picture appears more structurally challenging. Hopes for a strong rebound in Chinese LNG demand are fading even with the ceasefire in place; BloombergNEF projects imports will fall to 62.3 million tons in 2026, down from 68.4 million tons last year — a rare decline in nearly two decades of near-uninterrupted growth. Supply risks and elevated prices are expected to persist regardless of ceasefire terms. The US-China relationship remained in focus as Trade Representative Jamieson Greer promoted the concept of a bilateral board of trade ahead of the anticipated Trump-Xi summit next month. Greer downplayed a parallel investment-focused group and indicated his pre-summit agenda would center on rare earths flows. Chinese Foreign Minister Wang Yi is scheduled to visit North Korea this week for the first time in over six years, a visit that underscores Beijing's effort to consolidate relationships amid shifting geopolitical alignments. The Reserve Bank of India held rates unchanged, with Governor Sanjay Malhotra acknowledging the ceasefire while cautioning that persistent supply chain disruptions continue to pose risks to growth and inflation. The rupee strengthened 0.5% following his remarks, partially reversing a roughly 7% decline over the past year. In Japan, real wages rose at the fastest pace since 2021, supporting the case for continued Bank of Japan normalization.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Europe's market reaction to the ceasefire was broadly positive, with equity futures and bond prices both rallying as WTI crude fell approximately 16% on the day. European natural gas and diesel prices briefly slumped around 20%, reflecting the intensity of the war premium that had built up over the prior six weeks. The relief, however, is tempered by genuine uncertainty about how quickly energy flows through the Strait of Hormuz will normalize, and European industry remains more directly exposed to the supply shock than its US counterpart. UK Prime Minister Keir Starmer traveled to the Gulf Wednesday for meetings with regional leaders, seeking to leverage Britain's role in organizing multilateral diplomatic efforts around Hormuz — the UK chaired a meeting of approximately 35 nations to coordinate pressure on Iran, notably in the absence of the US. Starmer has also used his government's early divergence from Washington's position on the war as a domestic political asset ahead of local elections, criticizing both Reform UK's Nigel Farage and Conservative leader Kemi Badenoch for their initial support of the US-Israeli campaign. Britain faces its own economic pressures: real wages are stagnating, consumer prices are elevated, unemployment appears set to rise, and the Bank of England's rate is expected to remain well above the fed funds rate by year-end as UK inflation stays comparatively sticky. In Germany, measures to alleviate surging fuel costs have centered on regulatory adjustments rather than fiscal outlays. European inflation dynamics differ somewhat from the US: the euro zone's five-year/five-year inflation breakeven has risen but remains below 2%, though the gap has widened relative to the US since the war began. France moved to fast-track emergency agricultural legislation to address a deteriorating food trade balance, while EDF pledged €240 million to accelerate heat pump and electric truck adoption as subdued electricity demand and continued renewable buildout have depressed power prices. Moody's cut the outlook on Blue Owl Capital's flagship fund to negative, adding to broader signals of stress in private capital markets.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The dominant development of April 8 is the agreement between the US and Iran on a two-week ceasefire, brokered with Pakistan serving as an intermediary. Under the terms as understood, the American-Israeli military campaign is to halt in exchange for Iran reopening the Strait of Hormuz to commercial shipping. The oil market's response was immediate: Brent crude fell as much as 16% to approximately $91.70 a barrel, and WTI tumbled nearly 19% — among the largest single-day declines in crude oil history, comparable only to the Covid demand collapse in 2020 and the allied entry into Kuwait in January 1991. The historical parallel to the Kuwait crisis is instructive: oil more than doubled during that conflict before returning to pre-crisis levels within twelve months. The current shock has traced a broadly similar arc, though it appears to be resolving more rapidly. Important caveats remain. Traffic through the Strait of Hormuz showed little immediate change on Wednesday, with more than 800 vessels still trapped in the Persian Gulf. Shipowners, insurers, and industry bodies including Bimco are awaiting technical clarity on transit procedures before committing vessels to re-enter. Iran's intent to levy fees on passing ships — a form of de facto toll on the waterway — introduces a novel geopolitical dynamic that Bloomberg Opinion's Javier Blas characterizes as transforming what was a free international waterway into a controlled one. Iran and the US are each characterizing the ceasefire as a victory, while analysts describe the arrangement as a fragile starting framework. Several Arab Gulf states reported continued Iranian missile attacks in the immediate aftermath of Trump's announcement, and both Kuwait and the UAE subsequently reported fresh strikes. Pakistan's emergence as the key mediating channel — leveraging ties with Saudi Arabia, Iran, the US, and China — reflects a meaningful realignment of diplomatic influence in the region. The broader geopolitical fallout for US alliances appears significant: not a single NATO member or Gulf ally directly joined the US-Israeli campaign, and French President Macron publicly called on medium powers to assert greater independence from Washington. The IMF is poised to cut its global growth forecasts as a result of the conflict, while the World Bank cautioned governments against worsening fiscal positions through poorly targeted stimulus, urging that any measures be transparent, temporary, and targeted.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

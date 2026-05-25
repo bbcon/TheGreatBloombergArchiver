@@ -1,0 +1,279 @@
+Subject: Tesla’s battery business is slipping
+Date: Wed, 22 Apr 2026 13:24:00 +0000
+
+What’s Happening With Tesla’s Battery Business
+Plus, CATL’s new foray into sodium-ion ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-04-22/what-s-happening-with-tesla-s-megapack-battery-business>
+ <https://www.bloomberg.com/green>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17806969&m=11b724c487f61753eb1a7a4a5f3ef261&p=04222026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17806969&m=11b724c487f61753eb1a7a4a5f3ef261&p=04222026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Today’s newsletter looks at two of the world’s biggest players.
+
+First, we examine Tesla’s energy storage business, which was flying high until 
+last quarter 
+<https://www.bloomberg.com/news/articles/2026-04-22/tesla-s-battery-business-a-quiet-moneymaker-suddenly-stalls?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+. Then, we take you to China, where CATL has announced charging speedsas quick 
+as six minutes 
+<https://www.bloomberg.com/news/articles/2026-04-21/china-s-catl-debuts-ev-battery-with-speedy-six-minute-recharge?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+, and will put cheap, powerful batteries thatdon’t use lithium 
+<https://www.bloomberg.com/news/articles/2026-04-21/lithium-rival-sodium-is-making-a-battery-breakthrough-for-evs-energy-storage?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+ into cars hitting the road this year.
+
+A reminder that at 10:30 am EDT, our reporters will be answering your 
+questions about how the Iran War will impact the energy transition. Send in 
+your question in advance toliveqa@bloomberg.net <mailto:liveqa@bloomberg.net>.
+
+Tesla’s wobble
+
+By Michelle Ma 
+<https://origin.www.bloomberg.com/authors/AWTYlfwjEUk/michelle-ma> and Kara 
+Carlson <https://origin.www.bloomberg.com/authors/AW1MPTNjbc8/kara-carlson>
+
+For years, one aspect of Tesla Inc.’s business has been growing outside the 
+public eye, its revenue soaring even as the company’s electric car sales 
+sputtered and stalled.
+
+Now analysts wonder if Tesla’s quiet money-maker faces problems of its own 
+<https://www.bloomberg.com/news/articles/2026-04-22/tesla-s-battery-business-a-quiet-moneymaker-suddenly-stalls?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+.
+
+The company’s Megapack batteries — powerful enough to keep factories, data 
+centers or the power grid itself humming — have given Tesla a badly needed 
+boost. Much smaller Powerwall units, meanwhile, supply individual homes. As the 
+company spends heavily to ramp up autonomous taxis, and its Optimus robots seem 
+forever a year away, batteries have become an important source of cash.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-04-22/tesla-s-battery-business-a-quiet-moneymaker-suddenly-stalls?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+CATL’s sodium breakthrough
+
+By Annie Lee <https://www.bloomberg.com/authors/ASUCXsQX63g/annie-lee>
+
+With a thick outdoor jacket to protect against -30C (-22F) temperatures and 
+bitter winds, Calvin Quek joined car and technology enthusiasts huddled by a 
+test track on the outskirts of a picturesque ski region in Inner Mongolia.
+
+They watched Chongqing Changan Automobile Co. electric SUVs and a sleek 
+battery-powered coupe effortlessly navigate icy roads and steep snow-dusted 
+slopes at the facility in Yakeshi, northeastern China. Yet for the crowd at the 
+February demonstration, the most impressive factor wasout of view 
+<https://www.bloomberg.com/news/articles/2026-04-21/lithium-rival-sodium-is-making-a-battery-breakthrough-for-evs-energy-storage?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+.
+A CATL sodium-ion battery model.Photographer: Qilai Shen/Bloomberg
+Batteries powering the vehicles used sodium as their key raw material 
+component, rather than lithium — the metal that’s become synonymous with 
+electrified transportation and the storage of renewable energy. The tests were 
+a showcase for one of the world’s first mass-production passenger EVs fitted 
+with the alternative technology — an innovation that’s long promised to deliver 
+safer and low-cost rechargeable cells.
+
+“I think this signaled a breakthrough moment for sodium-ion battery technology 
+in EVs,” said Quek, executive director for nature finance at the Oxford 
+Sustainable Finance Group, and a veteran observer of the energy transition.
+
+By the middle of this year, Changan — a state-owned Chinese automaker and a 
+local partner of Ford Motor Co. — will begin sales of models fitted with 
+sodium-ion technology from Contemporary Amperex Technology Co. Ltd., the 
+world’s dominant EV battery manufacturer.
+
+Innovations by CATL have increased the energy density of sodium batteries by 
+50%, overcome engineering challenges, and brought the products to a “milestone 
+stage,” Chief Technology Officer Gao Huan told reporters Tuesday at an event in 
+Beijing. “The era of sodium and lithium shining together has arrived” and the 
+supplier will begin mass-production in the fourth quarter of this year, he said.
+CATL’s Chief Technology Officer Gao Huan.Photographer: Qilai Shen/Bloomberg
+Yet even with recent advances, the sodium sector faces challenges. The 
+technology isn’t likely to compete against lithium on energy density — and 
+therefore on battery performance — and may only achieve cost parity with 
+traditional options around 2030, according to CRU Group, a consultancy. 
+Continued improvement in lithium iron phosphate, or LFP, batteries “poses a 
+moving target for sodium-ion,” said Sam Adham, head of battery materials at CRU.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-04-21/lithium-rival-sodium-is-making-a-battery-breakthrough-for-evs-energy-storage?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17806969&m=11b724c487f61753eb1a7a4a5f3ef261&p=04222026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17806969&m=11b724c487f61753eb1a7a4a5f3ef261&p=04222026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Live at 10:30am EDT
+ 
+<https://www.bloomberg.com/sessions/2026-04-22/live-q-amp-a-will-the-iran-war-boost-clean-energy-investments>
+Photographer: Angel Garcia/Bloomberg
+Clean tech stocks have outpaced the S&P 500 since last year, and public and 
+private investments in green startups have also surged, hitting $22.5 billion 
+in the first quarter of this year. All that was before the Iran war sent oil 
+prices spiraling. Where are investors and companies betting their money amid 
+Trump administration policies and stalled global climate progress?
+
+Join Bloomberg journalists Akshat Rathi, Alastair Marsh, Kyle Stock and Olivia 
+Rudgard to discuss what the rest of 2026 might hold for publicly traded green 
+companies, clean energy, and the adoption of clean tech from EVs to batteries. 
+While anyone can listen, Bloomberg digital subscribers and Terminal clients 
+have the exclusive opportunity to ask our team questions to answer in 
+real-time. This conversation will be recorded and made available.
+
+Watch: The battery race
+ 
+<https://www.bloomberg.com/news/videos/2026-04-22/the-global-race-to-crack-china-s-battery-dominance-video>
+Takeaways From Day One at BNEF New York
+
+By Will Wade <https://www.bloomberg.com/authors/AQKkcaEIb6M/will-wade>, Josh 
+Saul <https://www.bloomberg.com/authors/ATn-QRa9KAg/josh-saul>, Lauren Rosenthal
+ <https://www.bloomberg.com/authors/AXCV-bQx5Dk/lauren-rosenthal> and Michelle 
+Ma <https://www.bloomberg.com/authors/AWTYlfwjEUk/michelle-ma>
+
+The BloombergNEF <bbg://screens/BNEF> annual summit in New York kicked off on 
+Tuesday as the war in Iran fuels a resurgence of interest in fossil fuel 
+alternatives and the US sees a massive push for more electricity to feed data 
+centers.
+
+The confluence of those two themes reveals a key shift: Oil and gas are still 
+drivers of the global economy, but scaling electricity is quickly becoming just 
+as important. TheBNEF Summit New York 
+<https://about.bnef.com/events/summit-agenda-newyork-2026/> put these trends in 
+context. Here are some takeaways from day one.
+Toby Rice, right, and Karen Fang at the BNEF Summit New York on Tuesday.
+Electricity is the new oil
+Clean energy and batteries aren’t just tools to cut emissions anymore. They’re 
+key to ensuring energy security and powering the economy of the 21st century, 
+saidRebecca Kujawa <https://www.bloomberg.com/profile/person/5760427>, chief 
+executive officer of Zerra Partners. To ensure sustained economic growth, 
+countries can’t rely on fossil fuels as they have in the past. Renewable and 
+nuclear energy, as well as more battery storage, are needed to ensure there’s 
+enough electricity flowing across the grid, Kujawa said.
+
+“We’re going to start to look at electricity as critical to security and 
+geopolitical stability as we think about oil and gas today,” she said. “The 
+change has been dramatic.”
+
+AI needs a lot more power, and fast
+BNEF is forecasting 106 gigawatts of new demand in the next decade will be 
+needed for data centers, said Katrina White, a clean energy analyst, during an 
+afternoon presentation.
+
+Earlier in the day, Toby Rice 
+<https://www.bloomberg.com/profile/person/18495401>, the chief executive 
+officer of natural gas producerEQT Corp. <bbg://securities/EQT%20US%20Equity>, 
+also said as much as 100 gigawatts of additional power may be required for 
+artificial intelligence computing facilities and other large power users.
+
+“That’s the energy equivalent of adding over 20 New York Cities,” Rice said. 
+“And we need to add it quickly.”
+
+Flexible data centers get priority
+For decades, utilities have been slow to grant power connection requests from 
+large users like data centers. But the game is changing, according toVarun 
+Sivaram <https://www.bloomberg.com/profile/person/20201021>, chief executive 
+officer and founder of software companyEmerald AI 
+<https://www.bloomberg.com/quote/2579865D:US?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+. Data centers that can curtail power use on demand in response to signals from 
+the grid are getting prioritized.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-04-21/four-takeaways-from-day-one-of-the-bloombergnef-summit-new-york?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+Road to COP31
+
+By John Ainger <https://www.bloomberg.com/authors/AS5AOj_Ky2g/john-ainger>
+
+Turkey will use its role as host of this year’s COP31 climate summit 
+<https://www.bloomberg.com/news/articles/2026-04-15/turkey-demands-decisive-climate-action-ahead-of-new-global-talks?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+ to boost clean energy adoption, according to the event’s incoming president, 
+with the Iran war showing how important it is to diversify away from fossil 
+fuels.
+Demonstrators at COP30.Photographer: Marina Calderon/Bloomberg
+Murat Kurum, Turkey’s environment minister who will oversee the talks, said in 
+an interview that even countries whose economies rely on producing fossil fuels 
+will need to shift to greener technologies. That includes nations in the Middle 
+East that have historically blocked efforts to move away from emissions-heavy 
+energy sources, he said.
+
+“The world must transition away from fossil fuels, for sure,” Kurum told 
+Bloomberg on the sidelines of the Petersberg Climate Dialogue in Berlin. “The 
+recent crises have indeed showed us how crucial to have energy diversity. You 
+should not be dependent on one single energy source.”
+Read more 
+<https://www.bloomberg.com/news/articles/2026-04-22/turkey-says-cop31-climate-summit-to-focus-on-clean-energy-shift?cmpid=BBD042226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260422>
+More from Green
+
+EU proposes more energy measures
+
+It unveiled a plan to navigate the energy crisis caused by the Iran war, with 
+proposals including optimizing jet fuel distribution.
+ 
+<https://www.bloomberg.com/news/articles/2026-04-22/eu-proposes-further-energy-measures-to-mitigate-iran-war-crisis>
+China wind turbine Maker eyes Spain for factory
+
+Ming Yang Smart Energy Group is considering Spain after the UK blocked plans 
+for a facility in Scotland, citing risks to national security.
+ 
+<https://www.bloomberg.com/news/articles/2026-04-22/china-wind-turbine-maker-eyes-spain-for-factory-after-uk-snub>
+Coffee Giants Will Map World’s Farms to Fight Deforestation
+
+Some of the world’s top coffee traders and roasters are starting an initiative 
+to map farms around the globe, in a bid to help tackle deforestation and keep 
+the European market open for millions of growers.
+ 
+<https://www.bloomberg.com/news/articles/2026-04-22/coffee-giants-will-map-world-s-farms-to-fight-deforestation>
+HSBC Climate Data Triggers Investor Call for Regulatory Review
+
+A group of investors managing $400 billion is calling for HSBC Holdings Plc to 
+be subjected to a regulatory review, citing concerns the UK bank may be 
+misleading shareholders and creditors about its exposure to near-term climate 
+risks.
+ 
+<https://www.bloomberg.com/news/articles/2026-04-22/hsbc-climate-data-triggers-investor-call-for-regulatory-review>
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/p3ufDx3sMPJeZq8Ln-m5v2Z7FWV-n3qTveh5cnzi3cSZMQqEDxiVRn1wYIn32rak2eFYVGKYvdpmgRoq5nZZuNGLm6Rwh6Nsnxib1Wcq7Ckk8o8oByLKzj0oOC-lNJGwu1_wG_Yl70kmohY3CeAOF2UGs5RsOg-GBoR88iXk0JdKxvNBfFlK0FNuBeAqosv4722MkJeogmgJsOsxOa7oOhdXJKFbDqcsCdrY-uMcOkxhCYG1UhlODpx7fjjAMbrioXT9ySj3w1v-atRV4eDml9T-wfrlmVzBhS8QaUmL_JWY-zm2UQyy3pIds0OSblF-8_uC5C9AxQNFkjeB26EffEPPgapdis9n/xF5PoXomSvJ0Wz4wyjF4MqBmxX7nCy2S/20>

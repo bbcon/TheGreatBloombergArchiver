@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, February 12, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, February 12, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Labor Market Surprises, Complicating the Easing Path</p>
+<p class="para-body">January nonfarm payrolls expanded by 130,000 — the strongest monthly gain in over a year — while the unemployment rate ticked lower. The print upended expectations of continued labor market softening and prompted futures markets to push the next anticipated Fed cut to July from June. Treasury yields rose in response, though pricing still embeds two cuts for the full year. That conviction may prove optimistic: with prime-age employment ratios suggesting the economy is operating near full capacity and the available labor supply revised lower, additional stimulus risks feeding through to inflation rather than activity. The January CPI release, expected to show core inflation easing to a post-pandemic low of 2.5%, will be the next critical data point. Markets appear to be assuming Kevin Warsh, the president's nominee to chair the Fed beginning in May, will deliver the priced easing — an assumption that may face tests later in the year if inflation proves sticky.</p>
+<p class="para-title" style="color:#5597cb;">House Republicans Break with Trump on Canada Tariffs</p>
+<p class="para-body">In the most significant legislative pushback to the administration's trade agenda to date, the Republican-led House passed a bill terminating tariffs on Canadian imports, with six Republicans crossing the aisle. The measure is unlikely to survive a presidential veto, but the vote exposed GOP fissures heading into midterm primaries and reflects growing concern among swing-district members about affordability pressures. Trump's economic approval ratings have weakened as Democrats have outperformed in recent special elections.</p>
+<p class="para-title" style="color:#5597cb;">Equity Underperformance and Sector Rotation</p>
+<p class="para-body">The S&P 500 is up just 1.4% year-to-date, ranking 69th among 92 global indices tracked by Bloomberg and trailing world ex-US equities by roughly 7.7 points. Capital is rotating both abroad — EM portfolio inflows reached nearly $100 billion in January, the second-highest on record — and within US markets toward economically-sensitive names. The Dow Jones Transportation Average has outpaced the S&P 500 by 13 percentage points over the past six weeks. In single-stock news, Cisco fell roughly 8% premarket on a soft outlook tied to rising memory costs, while Nuveen agreed to acquire Schroders for $13.5 billion.</p>
+<p class="para-title" style="color:#5597cb;">EPA Rescinds Endangerment Finding</p>
+<p class="para-body">The administration moved to rescind the 2009 endangerment finding underpinning federal greenhouse gas regulation, setting up litigation likely to reach the Supreme Court and potentially constraining future climate rulemaking regardless of political control.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asia-Pacific Daily Briefing — February 12, 2026 Asian equities extended a powerful run, with the MSCI Asia Pacific Index closing at a record and posting its strongest start to a year versus the S&P 500 this century — up roughly 13% year-to-date against 1.4% for US stocks. South Korea's KOSPI led the move, gaining another 3.1% to bring year-to-date gains near 30%, supported by AI hardware exposure, shareholder-return reforms, and relatively cheaper valuations. January portfolio inflows into emerging markets approached $100 billion, the second-strongest reading in two decades per IIF data, with allocations broad-based across China and the rest of EM. Whether this rotation reflects a durable re-rating or a tactical underweight unwind remains to be seen — EM equities are no longer convincingly cheap on price-to-book terms. In China, regulators moved to end the prolonged auto price war, with the State Administration for Market Regulation banning below-cost sales and tightening oversight of rebate programs and digital platforms. The measures address Beijing's concerns over deflationary competition, though enforcement efficacy is uncertain given ongoing discounting. Separately, CREA analysis suggests China's CO2 emissions fell 0.3% in 2025 — the first non-Covid decline — as renewables absorbed all incremental power demand. Inbound tourism is on track to surpass 2019 levels, providing a modest offset to weak retail sales, which in December marked their softest reading since reopening. Japanese assets rallied as markets digested Prime Minister Takaichi's decisive election win. The yen strengthened to ¥153 from near ¥160 in January, 30-year JGB yields fell roughly 40bp from January highs, and the Topix advanced. Washington and Tokyo are reportedly narrowing the first projects under the $550 billion investment vehicle tied to last year's trade deal, with candidates spanning SoftBank-led data centers, a Gulf of Mexico oil terminal, and synthetic diamonds for semiconductors. SoftBank separately posted a profit on OpenAI valuation gains. In India, GQG is adding to a $24 billion position despite foreign outflows, while farmer protests against the US trade deal underscore domestic political constraints on Modi's tariff concessions. Singapore's Wong unveiled a budget framed around a "more dangerous" geopolitical backdrop.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Europe's competitiveness debate sharpens ahead of EU summit</p>
+<p class="para-body">French President Emmanuel Macron revived his "Made in Europe" agenda ahead of a key EU meeting, pressing for local-content priority in strategic sectors. Chancellor Friedrich Merz pushed back, warning against excessive protectionism, exposing a familiar Franco-German split over how to lift European productivity. UK Chancellor Rachel Reeves argued for the inclusion of partners such as the UK, Norway and Canada in any industrial framework. Separately, ECB Executive Board member Isabel Schnabel called for accelerated structural reforms, underscoring official concern that monetary policy alone cannot close the growth gap with the US.</p>
+<p class="para-title" style="color:#4a9e6b;">UK macro remains soft</p>
+<p class="para-body">Fourth-quarter GDP barely expanded, with services stagnating — adding to political pressure on Prime Minister Keir Starmer. A RICS survey nonetheless pointed to the first projected rise in London house prices in more than a year, though overall transaction activity remains subdued following tax uncertainty. The political tone hardened as Jim Ratcliffe told Sky News the UK has been "colonized" by immigrants, sharpening an already contentious debate over benefits and migration.</p>
+<p class="para-title" style="color:#4a9e6b;">European energy security back in focus</p>
+<p class="para-body">At the E-world conference in Essen, traders flagged that the continent will exit winter with gas inventories more depleted than in 2025, with German storage only roughly a quarter full. Summer-winter price spreads offer little incentive to refill, and Uniper and Bayernugs have already sought to close loss-making facilities. EU carbon prices fell sharply after Merz suggested the bloc should be open to revising or delaying its emissions market — the steepest drop since 2022.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate</p>
+<p class="para-body">Nuveen agreed to acquire Schroders for $13.5 billion in cash at a roughly 29% premium, ending more than two centuries of independence for the UK's largest standalone asset manager while preserving the brand and London headquarters. Sanofi fell 6% in Paris after abruptly replacing CEO Paul Hudson with Merck KGaA's Belén Garijo. Adyen sank 20% in Amsterdam on a softer revenue outlook, and Magnum Ice Cream dropped 16% on weak operating profit. The Stoxx Europe 600 nonetheless rose 0.4%, supported by a broadly constructive earnings tape.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Oil and Iran diplomacy in uneasy equilibrium</p>
+<p class="para-body">Crude edged higher as traders weighed President Trump's statement to Prime Minister Netanyahu that he will pursue talks with Iran and prefers a deal, even as Israel signaled discomfort with Washington's diplomatic opening. The market remains caught between a fundamental oversupply — which has kept a lid on prices and pressured upstream margins while delivering a windfall to US refiners — and tail risk around any disruption to Gulf flows. Traders also note that this year's price firmness has been aided by major refiners turning away barrels from sanctioned origins, a quieter but consequential structural shift. For now, the conflict premium remains contained; whether it stays that way depends on whether the diplomatic track holds.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary policy divergence widens</p>
+<p class="para-body">A stronger-than-expected US payrolls print (+130,000) and a falling unemployment rate pushed the projected timing of the next Fed cut from June to July, lifting Treasury yields and tempering the two-cut consensus for 2026 — though Kevin Warsh's anticipated May arrival as Fed chair complicates the picture. The dollar nonetheless slipped, supporting a broad rotation: the MSCI Asia Pacific Index hit a record and is outpacing the S&P 500 by roughly 12 percentage points year-to-date, with Latin American equities up 21% and Korea's KOSPI up 30%. Non-resident EM portfolio inflows reached nearly $100 billion in January, the second-highest monthly print in two decades. The rally appears broad-based across debt, equity, China and ex-China, though absolute EM valuations are no longer cheap on price-to-book.</p>
+<p class="para-title" style="color:#8b5cf6;">European gas and carbon signals diverge</p>
+<p class="para-body">Continental gas storage is heading into spring more depleted than a year ago, with little financial incentive to refill given summer prices trading above next winter's. Roughly 130 additional LNG cargoes may be needed to close the gap. Separately, EU carbon prices fell sharply after Chancellor Merz indicated openness to revising or delaying the bloc's emissions market — a notable softening of climate commitment from Europe's largest economy.</p>
+<p class="para-title" style="color:#8b5cf6;">China emissions inflect</p>
+<p class="para-body">CO2 emissions fell 0.3% in 2025, the first non-pandemic annual decline, as renewables covered all incremental power demand. Whether this marks a durable peak remains to be seen; March's five-year plan will be the key tell.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

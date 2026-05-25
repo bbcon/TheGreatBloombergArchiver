@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jan 05 – Jan 11, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="daily.html" class="nav-link">Daily</a><a href="#" class="nav-link  active">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Jan 05 – Jan 11, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Wall Street's 2026 Macro Framework</p>
+<p class="para-body">The week opened with sell-side institutions finalizing their 2026 outlooks, with more than 60 firms including Goldman Sachs, JPMorgan Wealth Management, and the BlackRock Investment Institute coalescing around a cautiously constructive base case. The dominant thread is that AI-related capital expenditure, combined with supportive fiscal policy, continues to extend the business cycle at a stage when growth would ordinarily be moderating. Equity views are constructive but conditioned on execution in the AI complex, where valuations leave limited margin for disappointment. The corollary of sustained capex and fiscal impulse, as most houses acknowledge, is that inflation is unlikely to return cleanly to target — implying that the Federal Reserve may have less room to deliver the easing currently embedded in front-end pricing. This sets up a recurring source of volatility through the year, with January CPI and the subsequent FOMC meeting representing the first meaningful test of whether the data validates the consensus or forces a repricing of accommodation expectations. The asymmetry favors caution on duration. On the dollar, the modal call leans toward continued depreciation, reflecting narrowing rate differentials and fiscal trajectory concerns, though this sits in some tension with the sticky-inflation narrative; if the Fed eases less than markets expect, the path lower becomes less straightforward. Private assets are expected to continue gaining share of institutional allocations, though liquidity, valuation marks, and exit-channel constraints remain unresolved.</p>
+<p class="para-title" style="color:#5597cb;">Venezuela: Distressed Reopening and Energy Implications</p>
+<p class="para-body">The week's most actionable US-specific development was the rapid repricing of Venezuelan exposure following Nicolás Maduro's ouster. Sovereign and PDVSA bondholders captured roughly $4 billion in single-day mark-to-market gains early in the week, with the move reflecting optionality on an eventual debt restructuring rather than near-term cash flows. President Trump signaled that Washington would commit billions to rehabilitating Venezuela's degraded oil infrastructure, drawing renewed engagement from Wall Street distressed desks, private capital sponsors, and energy majors — including Chevron, which has maintained a limited operational footprint — that had treated the credit as largely off-limits since sanctions tightened in 2017. For US energy markets, a credible multi-year path to restoring Venezuelan heavy crude output would benefit Gulf Coast refiners structurally configured for heavy-sour grades and could weigh modestly on the medium-term oil curve. For credit markets, the rally compresses the distressed-sovereign opportunity set while opening a potentially sizable restructuring mandate pipeline. Execution risk remains substantial: the political transition is not consolidated, sanctions relief mechanics have not been formalized, and the capital requirement to restore Venezuelan fields is large relative to realistic near-term production recovery timelines. Whether private capital can deploy at the pace Washington is signaling remains to be seen. No material Federal Reserve communications, Treasury auctions, or major corporate earnings developments were captured across the week. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Regional Overview and the Dollar-Depreciation Read-Through</p>
+<p class="para-body">Asia-Pacific coverage was thin across the week, with source material offering limited direct regional reporting. The cross-asset framework from sell-side 2026 outlooks, however, carries several relevant implications. The widely-held call for continued dollar depreciation — if realized — would be supportive of Asian FX broadly and could ease financial conditions across economies with dollar-denominated liabilities and import-sensitive inflation profiles, including India, Indonesia, and the Philippines. It would also reduce pressure on the PBOC to defend the yuan's reference rate and may facilitate portfolio inflows into Chinese assets, though structural concerns around China's growth model and the property sector remain unresolved and are unlikely to be addressed by currency dynamics alone. Conversely, the competing consensus view that inflation will prove stickier than markets expect — and that central banks have less room to ease than priced — is a constraint on regional monetary policy. A shallower Fed cutting cycle would limit the scope for emerging Asian central banks, many of which have been waiting on the Fed, to ease. The BOJ's normalization trajectory and the RBA's policy path face similar complications from a higher-for-longer US rates backdrop.</p>
+<p class="para-title" style="color:#e07b39;">North Asian Technology Supply Chains</p>
+<p class="para-body">The persistence of the AI capex theme remains directly consequential for North Asian technology supply chains. Taiwan, South Korea, and Japan — where semiconductor, equipment, and advanced packaging names have been principal beneficiaries of the US AI investment cycle — stand to see continued order flow provided the capex cycle sustains. Bloomberg also flags 2026 as likely another difficult year for global trade, a material concern for export-dependent Asian economies, though the source material does not offer granular regional detail. Positioning into the Lunar New Year window and ongoing US-China trade-policy uncertainty remain the dominant overhangs for the region.</p>
+<p class="para-title" style="color:#e07b39;">Venezuela's Indirect Asian Read-Through</p>
+<p class="para-body">The prospect of rehabilitated Venezuelan crude output carries a marginal but non-trivial implication for Asia's large crude importers. China, historically the largest taker of Venezuelan barrels under sanctions-era discounted arrangements, faces a more competitive landscape if US-aligned buyers and majors regain formal access. Incremental Venezuelan heavy-sour supply, if realized over the medium term, could modestly pressure Middle East official selling prices relevant to Asian buyers. The timeline remains highly uncertain given the degraded state of Venezuelan production capacity, and near-term effects on Asian crude import costs are unlikely to be material. Broader contagion into Asian risk premia from the Venezuelan bond rally appears unlikely given the trade's idiosyncratic character. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">ECB Policy and Inflation Risks</p>
+<p class="para-body">European coverage was thin across the week, with source material comprising primarily global outlook compilations rather than dedicated regional reporting. The most relevant strand for euro-area investors from the sell-side consensus is the prevailing view that inflation will prove stickier than current pricing implies, introducing meaningful two-way risk around the front end of the EUR curve. The ECB entered 2026 with markets pricing a continued, if shallow, easing path; if disinflation stalls amid AI-related capex impulses and fiscal support, Bund yields may struggle to rally despite softer growth signals, and peripheral spreads could face episodic widening should terminal rate expectations drift higher. The degree to which euro-area inflation dynamics decouple from the US — given Europe's weaker underlying demand and more advanced wage normalization — remains an open and important question, one that the January flash CPI releases will begin to illuminate. No material ECB Governing Council communications were captured across the period.</p>
+<p class="para-title" style="color:#4a9e6b;">Currency Headwinds and Equity Positioning</p>
+<p class="para-body">The widely-held call for continued dollar weakness is mechanically supportive of EUR/USD and, by extension, a structural headwind for euro-area exporters already contending with subdued external demand and persistent competitiveness concerns in autos and chemicals. A stronger euro would assist the ECB's disinflation objective at the margin, potentially complicating the stickier-inflation thesis for the bloc specifically — an internal tension worth monitoring. For European equities, the constructive global risk backdrop predicated on AI capex has historically benefited the region's cyclicals and financials, though the index composition remains considerably less exposed to the AI theme than US benchmarks, limiting the direct upside from that particular driver.</p>
+<p class="para-title" style="color:#4a9e6b;">Venezuela: Energy and Sanctions Dimensions</p>
+<p class="para-body">The potential rehabilitation of Venezuelan crude production carries specific relevance for European energy names. Repsol and Eni both retain legacy exposures to Venezuelan joint ventures and would be among the more directly affected European names should sanctions architecture be dismantled in an orderly fashion. The sequencing and legal treatment of prior claims — including expropriation arbitration awards and claims on defaulted PDVSA paper held by European investors — remain unresolved. More broadly, a Trump administration willing to commit US fiscal resources to overseas energy infrastructure signals an activist external economic posture that may carry consequences for transatlantic trade alignment and sanctions coordination in coming months. Whether Brussels aligns with or diverges from Washington on the eventual Venezuela sanctions framework is worth monitoring. UK-specific political and gilt market developments were not represented in this week's source material. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Wall Street's 2026 Consensus: Structural Tensions Beneath Constructive Surface</p>
+<p class="para-body">The sell-side's aggregated 2026 outlooks, synthesized across more than 60 institutions, establish a cautiously constructive baseline for global risk assets — but one containing genuine internal tensions that are likely to generate recurring volatility rather than a smooth directional trend. The analytical centerpiece across most house views is the unusual configuration of AI-driven secular investment and government fiscal support extending an aging expansion. This dynamic supplies growth impulse that, by conventional late-cycle metrics, should be moderating. The corollary is that disinflation stalls short of central bank targets, leaving monetary policy less accommodative than rates markets price. The dollar-bearish consensus — grounded in narrowing rate differentials and reserve diversification — sits in partial contradiction with this sticky-inflation view; if the Fed has less room to cut than expected, the case for rapid dollar depreciation becomes less clean. Investors should treat these narratives as competing rather than mutually reinforcing, with the data flow determining which dominates in any given quarter. Global trade is flagged as likely to remain difficult in 2026, with unresolved tariff regimes and supply-chain reconfiguration sustaining policy-shock risk alongside cyclical data.</p>
+<p class="para-title" style="color:#8b5cf6;">Venezuela: Energy Supply and EM Restructuring Dynamics</p>
+<p class="para-body">The most consequential cross-regional development of the week was Venezuela's abrupt return to investable status following Maduro's ouster. Sovereign and PDVSA bondholders captured roughly $4 billion in single-day mark-to-market gains, underpinned by restructuring expectations rather than near-term fundamentals. President Trump's pledge of US capital deployment into Venezuelan oil infrastructure — with energy majors and private capital beginning preliminary assessments — represents a potential multi-year supply-side development of modest but directional global significance. Venezuela holds the world's largest proved crude reserves, though current output is a fraction of its early-2000s peak. A credible reinvestment program would, over time, add incremental heavy-sour barrels, applying marginal pressure to the medium-term oil curve and benefiting refiners configured for that grade. The near-term price impact appears limited given the lead times involved. Material uncertainties include the political transition's durability, the mechanics of sanctions relief, layered creditor claims from defaulted sovereign and PDVSA debt, and the competing positions of Chinese and Russian creditors whose cooperation — or lack thereof — will shape any restructuring outcome. The interaction between a US-backed reconstruction framework and OPEC+ supply discipline is a dynamic worth monitoring as the year progresses. Coverage of US-Iran dynamics, Strait of Hormuz risk, and broader geopolitical developments was absent from this week's source material; we will resume coverage of those themes as inputs arrive.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

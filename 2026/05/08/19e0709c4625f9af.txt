@@ -1,0 +1,235 @@
+Subject: Power crunch
+Date: Fri, 08 May 2026 10:02:18 +0000
+
+The Power Needs of AI Are Becoming a Crunch Issue for Governments
+AI Demands an Ever-Growing Share of Energy ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-05-08/ai-power-use-risks-blowing-up-for-governments>
+ <https://www.bloomberg.com/politics>
+
+ 
+<https://sli.bloomberg.com/click?s=1149009&li=18036088&m=11b724c487f61753eb1a7a4a5f3ef261&p=05082026100217&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149009&li=18036088&m=11b724c487f61753eb1a7a4a5f3ef261&p=05082026100217&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Welcome to Balance of Power, bringing you the latest in global politics. If 
+you haven’t yet, sign uphere 
+<https://www.bloomberg.com/account/newsletters/politics>.
+
+For all the opportunities offered by artificial intelligence, from streamlined 
+healthcare to humanoid robots, some big questions over its downsides won’t go 
+away.
+
+Mounting evidence of entry-level roles being lost to AI 
+<https://www.bloomberg.com/news/articles/2026-04-19/half-of-uk-executives-think-ai-will-mean-fewer-jobs?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+. Rising concerns over data privacy and automated warfare. Widespread 
+plagiarism of artistic content that is rendered into AI slop.
+
+White House-generated images of President Donald Trump as Jesus 
+<https://www.bloomberg.com/news/articles/2026-04-13/trump-deletes-social-media-post-seemingly-depicting-him-as-jesus?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ are probably not the best advertisement for AI’s promise.
+
+Then there’s the phenomenal energy needs of the data centers that are being 
+rolled out to house the necessary computing power.
+A Microsoft data center in Aldie, Virginia.Photographer: Lexi 
+Critchett/Bloomberg
+In one of the most striking developments, Three Mile Island, the site of the 
+most famous US nuclear accident, iscoming back online <> to power chatbots and 
+other AI applications — now rechristened as the Crane Clean Energy Center.
+
+Microsoft, meanwhile, sees its ambitious renewable-energy targets as a hurdle 
+to its planned data-center buildout, so is weighing whether todelay or abandon 
+them 
+<https://www.bloomberg.com/news/newsletters/2026-05-06/microsoft-considers-dropping-100-100-0-clean-energy-target?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ altogether, sources say.
+
+The amount of power consumed by US data centers alone is likely to more than 
+double to 106 gigawatts through 2035, according to BloombergNEF, where a 
+gigawatt can feed around 750,000 homes.
+
+This massive demand is already worrying governments desperate not to fall 
+behind in the AI race, but just as anxious to keep voters onside.
+
+In Australia, the state of New South Wales — whose capital is Sydney — is 
+conducting an investigation into the impact of new data centers on power, water 
+and other resources.
+
+Britain’s AI minister hit out at OpenAI 
+<https://www.bloomberg.com/news/articles/2026-04-16/uk-ai-minister-hits-back-at-openai-for-pausing-stargate-project?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ for halting a UK data-center project and blaming the decision in part on 
+energy costs.
+
+Kenyan President William Ruto has suggested that the energy for a proposed 
+facility exceeded the nation’s available resources.
+
+It’s said that advocates of artificial intelligence are losing the PR battle. 
+
+The prospect of blackouts and higher bills doesn’t help AI’s cause. — Alan 
+Crawford <https://www.bloomberg.com/authors/AOTqYzZDKuY/alan-crawford>
+
+ 
+<https://sli.bloomberg.com/click?s=868567&stpe=default&li=18036088&m=11b724c487f61753eb1a7a4a5f3ef261&p=05082026100217&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868567&stpe=default&li=18036088&m=11b724c487f61753eb1a7a4a5f3ef261&p=05082026100217&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Global Must Reads
+
+Nigel Farage’s Reform UK racked up sweeping gains 
+<https://www.bloomberg.com/news/articles/2026-05-08/farage-racks-up-uk-election-gains-as-voters-punish-starmer?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ in the first counts in local elections as voters turned away from Prime 
+Minister Keir Starmer’s governing Labour Party. With results due in throughout 
+today, Starmer said he’d no plans to step aside as Labour leader. The outcome 
+so far indicates a splintering of traditional political loyalties, with the 
+Reform and Green parties making up ground on the right and left against the 
+Conservative-Labour duopoly that’s dominated British politics for more than a 
+century.
+
+Farage outside Havering Town Hall today.Photographer: Chris Ratcliffe/Bloomberg
+Trump said the ceasefire with Iran was holding after the two sides clashed 
+near the Strait of Hormuz,further straining 
+<https://www.bloomberg.com/news/articles/2026-05-08/us-iran-clash-near-hormuz-as-response-on-proposed-deal-awaited?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ efforts to being about a permanent end to the war. The strikes, and a threat 
+by Trump to intensify attacks if Tehran refuses his terms, risk undermining 
+talks over a US-proposed peace deal that Iran is expected to respond to via 
+Pakistan in the next two days.
+
+Russians are growing gloomier about their prospects with Ukrainian drone 
+attacks reaching deeper into the country and tighter restrictions on the 
+internet triggering aneruption of public anger 
+<https://www.bloomberg.com/news/articles/2026-05-08/russians-weary-of-war-and-repression-start-to-blame-the-kremlin?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+. So as Vladimir Putin prepares for his most downbeat Victory Day parade in 
+years, even previously loyal commentators are turning their criticism toward 
+the Kremlin. Meanwhile Kyiv’s chief negotiator, Rustem Umerov, is in the US for 
+meetings with Trump’s envoys toreinvigorate 
+<https://www.bloomberg.com/news/articles/2026-05-07/zelenskiy-s-top-envoy-arrives-in-us-to-renew-stalled-peace-talks?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ stalled peace talks with Russia.
+Security near Red Square yesterday ahead of the Victory Day parade in Moscow.
+Photographer: Alexander Zemlianichenko/AP Photo
+A landslide win by Prime Minister Narendra Modi’s party in a state election 
+this week has sparked debate over whethercontroversial changes 
+<https://www.bloomberg.com/news/articles/2026-05-08/modi-s-sweep-in-key-state-puts-spotlight-on-voter-roll-purge?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ to Indian voter rolls helped secure the surprise result. Meanwhile, read how 
+in the year since India and Pakistan came close to all-out war, officials in 
+New Delhi have becomeincreasingly worried 
+<https://www.bloomberg.com/news/articles/2026-05-08/one-year-after-pakistan-clash-trump-stokes-worries-in-india?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ about Islamabad’s cozy relations with Trump.
+
+Trump will become the first sitting US president to visit China in almost a 
+decade when his plane touches down in Beijing for a two-day summit with Xi 
+Jinping next week. They will seek tonavigate tensions 
+<https://www.bloomberg.com/news/articles/2026-05-07/world-s-most-important-bromance-revived-as-trump-heads-to-china?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ over trade and Taiwan at their summit, with expectations for a breakthrough 
+low, but up to three more meetings are tentatively planned this year.
+
+Trump and Brazilian President Luiz Inácio Lula da Silva expressed confidence 
+the two nations can resolve their trade issues in the coming weeks after a 
+meeting at the White House that bothcast as productive 
+<https://www.bloomberg.com/news/articles/2026-05-07/trump-praises-brazil-s-lula-after-meeting-on-tariffs-trade?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+.
+Lula during a news conference at the Brazilian embassy in Washington yesterday.
+Photographer: Aaron Schwartz/Bloomberg
+Schools in Mexico will end the academic year on June 5, about 40 days earlier 
+<https://www.bloomberg.com/news/articles/2026-05-08/mexico-to-end-school-40-days-earlier-because-of-heat-world-cup?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ than planned, because of a combination of extreme temperatures and the 
+football World Cup.
+
+South Africa’s top court rekindled the cash-in-a-sofa <> saga that threatened 
+Cyril Ramaphosa’s presidency more than three years ago.
+
+EU prosecutors are investigating possible misappropriation of funds 
+<https://www.bloomberg.com/news/articles/2026-05-07/french-far-right-s-bardella-linked-to-eu-funds-probe-afp-says?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ relating to media training for French far-right National Rally leader Jordan 
+Bardella and other party members, AFP reported. The party denied any wrongdoing.
+
+Don’t miss from Bloomberg Weekend: Mishal Husain speaks to former Trump aide 
+Anthony Scaramucci onregrets and what he got wrong 
+<https://www.bloomberg.com/features/2026-anthony-scaramucci-weekend-interview/?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+. Catherine Lucey writes abouta political Pope Leo <>, and Felix Salmon reviews 
+Nobel Prize winner Alvin Roth’s book,Moral Economics 
+<https://www.bloomberg.com/news/articles/2026-05-08/why-decriminalizing-sex-work-surrogacy-and-kidney-sales-makes-economic-sense?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+. Subscribe to the newsletterhere 
+<https://www.bloomberg.com/account/newsletters/weekend?sref=rChPnUxs>.
+
+Sign up for the Washington Edition newsletter 
+<https://www.bloomberg.com/account/newsletters/washington> for news from the US 
+capital and watch Balance of Power at 1 and 5 p.m. ET weekdays on Bloomberg 
+Television.
+
+Chart of the Day
+
+Iran is ramping up trade with China via rail in a bid to blunt the impact of a 
+US blockade of its ports andadapt to pressure 
+<https://www.bloomberg.com/news/articles/2026-05-08/iran-turns-to-china-rail-link-to-try-to-bypass-us-blockade?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+ designed to strangle its economy. The route, which runs through Kazakhstan and 
+Turkmenistan, can only go a small way toward making up for the US blockade and 
+adds to Iran’s reliance on China, with Beijing buying almost all Iran’s oil.
+
+And Finally
+
+The Venice Biennale opens to the public tomorrow with more than two dozen 
+national pavilions and a cacophony of controversy. Israel has been one focus, 
+with hundreds of artists and cultural leaders calling for the country to be 
+excluded. Russia is another, reopening its pavilion for the first time since 
+its 2022 invasion of Ukraine, prompting Finland to scale back its participation 
+and the EU to pull more than $2 million in funding. The Biennale is meant to 
+showcase the cream of the art world, but this year it’s insteaddisplaying the 
+world’s political fractures 
+<https://www.bloomberg.com/news/articles/2026-05-08/middle-east-conflicts-russia-ukraine-war-dominate-2026-venice-art-biennale?cmpid=BBD050826_politics&utm_campaign=bop&utm_medium=email&utm_source=newsletter&utm_term=260508&utm_content=4266>
+.
+The Japan pavilion, where visitors carry weighted baby dolls.Photographer: Uli 
+Holz
+Pop Quiz (no cheating!). The prime minister of which country gifted a record 
+cabinet stocked with vinyl to Australia’s Anthony Albanese this week? Send your 
+answers tobalancepower@bloomberg.net 
+<bbg://screens/MSG%20BALANCEPOWER@BLOOMBERG.NET>
+
+More from Bloomberg
+
+ * Check out our Bloomberg Investigates 
+<https://www.bloomberg.com/originals/series/bloomberg-investigates?sref=rChPnUxs>
+ film series about untold stories and unraveled mysteries
+ * Next China 
+<https://www.bloomberg.com/account/newsletters/next-china?sref=rChPnUxs> for 
+dispatches from Beijing on where China stands now — and where it’s going next
+ * Next Africa 
+<https://www.bloomberg.com/account/newsletters/next-africa?sref=rChPnUxs>, a 
+daily newsletter on where the continent stands now — and where it’s headed
+ * Economics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?utm_medium=email&utm_source=newsletter&utm_campaign=bop>
+ for what the changing landscape means for policymakers, investors and you
+ * Green Daily 
+<https://www.bloomberg.com/account/newsletters/green?utm_medium=email&utm_source=newsletter&utm_campaign=bop>
+ for the latest in climate news, zero-emission tech and green finance
+ * Explore more newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters>
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Balance of 
+Power newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/balance-of-power?source=NLshare> 
+to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/balance-of-power?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/xdsUm_eAqgmDtvOr7ZIYACNC3GAc_6NbeKHtR3krWJcpwQJKigbVTaXN4M-FrL8l5cCgzhAm1N85THraov1tdifuKLVamEBsFPbkSAhFWp0YBHz58EQAHr9rMogfuE3mdSpl4qQBg7k33hbht_mU7p1-GpVH0xkk6OLoYv06pAlwy-aIaU5lrrsshujzpYF1cG6J7RejV5M4GODfcgNWy-wfTlpQyMQPzQ3Of3VRGrs6Asnns0UWfZd2C6yfuaE0rNCiBGOFAavemZ67ouVdTzhWkh7Cdgce5uAVQ4y5NuZDgkiRmFuosYPukKY1cCuKhIQ9rosFJuNPniukKJ_AZBLHhHcKfNAN/lpkF6w8ELmJyVYUqBx9l0NDfHsSwDJM5/20>

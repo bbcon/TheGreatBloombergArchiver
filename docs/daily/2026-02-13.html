@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, February 13, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, February 13, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Markets: AI disruption trade broadens into a cross-sector repricing</p>
+<p class="para-body">US equities extended losses, with the S&P 500 down 1.6% on Thursday and futures off another 0.3% overnight, as fears that newly released models from Google and Anthropic threaten incumbents spread well beyond software. Commercial real estate stocks slid sharply on concerns AI-driven productivity gains will erode office demand, while insurance brokers, wealth managers, private credit firms and logistics names also came under pressure. The episode that crystallized the mood: Algorhythm Holdings, a $5 million micro-cap former karaoke importer, touted an AI freight platform — sending the Russell 3000 Trucking Index down 6.6%, with C.H. Robinson off 15% and Landstar 16%. Treasury volatility, by contrast, sits at a five-year low, suggesting the rotation remains an equity-market phenomenon rather than a broader risk-off event.</p>
+<p class="para-title" style="color:#5597cb;">Inflation print in focus; Fed policy debate widens</p>
+<p class="para-body">January CPI lands today against a backdrop of bond-market conviction that the Fed will resume cuts later this year. Some desks are pushing back: Citi recommends five-year, five-year inflation forwards near 2.5%, while JPMorgan suggests tactically shorting 2-year Treasuries on resilient growth. Separately, Judy Shelton — whose 2020 Fed nomination failed in the Senate — has re-emerged in policy discussions, meeting privately with Treasury Secretary Bessent on central bank reform, including a supply-side rate framework and redeployment of the $2.9 trillion in bank reserves parked at the Fed. Implementation would require buy-in well beyond the administration.</p>
+<p class="para-title" style="color:#5597cb;">Trade and corporates</p>
+<p class="para-body">The administration is working to narrow the 50% steel and aluminum tariffs, which have proven difficult for importers to calculate and remain a sticking point in EU negotiations. Washington also finalized a Taiwan trade deal featuring $44 billion in US LNG and crude purchases plus $15 billion in aircraft orders. In single names, Goldman Sachs general counsel Kathy Ruemmler will depart this summer following renewed scrutiny of her Epstein ties; Pinterest fell 20% premarket on a weak sales outlook, DraftKings declined 14%, while Applied Materials, Roku, Rivian and Airbnb rallied on results.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Markets: AI-driven selloff reaches Asia</p>
+<p class="para-body">Regional equities slipped roughly 1% from a record after Wall Street's tech-led decline, with the Hang Seng down 1.7% as concern spread that newly capable AI tools from Google, Anthropic and others threaten incumbents across software, logistics, insurance and commercial real estate. Asia has so far weathered the rotation better than US markets, but the MSCI All Country World Index is on track for back-to-back weekly losses. Separately, OpenAI told US lawmakers that DeepSeek has used increasingly sophisticated distillation techniques to extract output from leading American models — a claim that, if it gains traction in Washington, could harden the policy backdrop for Chinese AI champions just as Alibaba, Tencent, ByteDance and Baidu are collectively spending roughly $720 million on Lunar New Year red-packet promotions to seed their new AI shopping tools.</p>
+<p class="para-title" style="color:#e07b39;">China–Japan tensions deepen in consumer behavior</p>
+<p class="para-body">Following PM Takaichi's comments that a Taiwan contingency could trigger a Japanese military response, Beijing's travel advisory is translating into measurable economic effects: bookings to Sapporo are projected to fall 62% in January–February, while domestic resorts such as Jilin's Beidahu have seen reservations climb up to 70%. With Takaichi's mandate secure, a near-term détente appears unlikely.</p>
+<p class="para-title" style="color:#e07b39;">Capital flows and outbound M&A</p>
+<p class="para-body">Chinese regulators have instructed banks with concentrated US Treasury exposure to pare positions, framing the move as risk diversification rather than a geopolitical signal. The market response has been muted — Treasury volatility sits at a five-year low — and the guidance extends a multi-year trend rather than marking a rupture. Concurrently, Greater China outbound M&A approached $12 billion in January, the strongest start since 2017, with targets spanning Puma and Allied Gold. The pattern is consistent with Beijing's tacit blessing for strategic acquisitions amid soft domestic demand.</p>
+<p class="para-title" style="color:#e07b39;">Other developments</p>
+<p class="para-body">The US and Taiwan finalized a trade pact including $44 billion in LNG and crude purchases, $15 billion in civil aircraft, and roughly $25 billion in US power-generation equipment by 2029. Hong Kong is weighing expanded confidential IPO filings beyond tech and biotech. Sanrio surged 15% on raised guidance. A hawkish BOJ member signaled conditions for the next hike could align by spring.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">European Morning Briefing — February 13, 2026</p>
+<p class="para-body">European equities edged lower in early trade, with the Stoxx 600 down 0.35% as the AI-driven selloff that battered US megacaps overnight rippled across global markets. Sentiment remained fragile ahead of the US January CPI release, though by mid-morning the selloff was losing momentum. Treasury volatility has paradoxically fallen to a five-year low, suggesting the rotation reflects sector-specific repricing of AI exposure rather than broader macro stress.</p>
+<p class="para-title" style="color:#4a9e6b;">L'Oréal</p>
+<p class="para-body">led losers after the French beauty group reported disappointing sales growth, weighed down by its luxury division and continued softness in the Greater China region — a reminder that European consumer exposure to Chinese demand remains a meaningful drag even as broader trade flows stabilize. The print extends a run of mixed results from Europe's luxury complex and will reinforce questions about the timing of any China consumer recovery. On the policy front, the <strong>ECB</strong> fined Crédit Agricole €9 million for failing to adequately manage climate-related and environmental risks — a modest sum but a notable signal of supervisory follow-through on the ECB's climate framework, and one that peers will likely study closely. Separately, the EU continues to press Washington to narrow the scope of US steel and aluminium tariffs as part of pending trade negotiations; the USTR is reportedly working to address calculation complexities that have frustrated European exporters since the 50% levy took effect. In Hungary, opposition leader <strong>Péter Magyar</strong>, whose Tisza party leads in polls ahead of this year's election, disclosed that he was secretly recorded in 2024 in what he characterised as a "Russia-style" blackmail attempt. The pre-emptive disclosure appears designed to neutralise the material's political impact; whether it succeeds remains to be seen, but Tisza's polling lead over Fidesz makes the episode consequential for Hungarian political risk. Finally, at the Munich Security Conference, European officials are reportedly reassessing the continent's nuclear deterrent posture following what attendees described as a sobering recalibration of US security commitments — a discussion with potentially significant long-term implications for European defence spending trajectories.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Oil markets caught between glut narrative and geopolitical tail risks</p>
+<p class="para-body">Brent traded around $70 per barrel and headed for back-to-back weekly declines on broader risk-off sentiment, concerns over a global crude surplus, and the prospect of drawn-out US-Iran nuclear talks. At this week's London oil trading summit, sentiment was conflicted: bears point to current price levels as evidence of ample supply despite ongoing tensions, while bulls highlight the accumulation of sanctioned Russian and Iranian crude on tankers, arguing that unsanctioned barrels show little sign of the much-discussed surplus. Pimco's Greg Sharenow captured the prevailing mood: "The uncertainty band is wider than we would have thought six or 10 weeks ago." Cross-currents include US military activity near Venezuela and Iran, Kazakh supply disruptions, and a US-India trade arrangement that appears to be stranding Russian crude at sea. Separately, Reliance Industries received a US general license to purchase Venezuelan oil directly, a notable carve-out within the broader sanctions architecture.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary policy divergence broadens</p>
+<p class="para-body">Russia's central bank delivered an unexpected rate cut, while Peru held steady; economists now anticipate three further cuts from the South African Reserve Bank. A senior BOJ hawk signaled that conditions for the next rate hike could be in place by spring, while the PBOC's growing focus on the overnight rate is fueling speculation of a formal shift in its policy target. In the US, markets await January CPI for cues on the Fed's resumption of cuts, though Citi and JPMorgan strategists separately warn of complacency on the inflation trajectory.</p>
+<p class="para-title" style="color:#8b5cf6;">Climate-energy split-screen</p>
+<p class="para-body">Initial CREA analysis suggests Chinese carbon emissions fell 0.3% in 2025—the first non-pandemic decline—as EV sales and clean generation absorbed incremental power demand. The US moved in the opposite direction, with the EPA rescinding the 2009 endangerment finding that underpins federal greenhouse gas authority, alongside the repeal of Biden-era vehicle emissions standards. The policy divergence between the two largest emitters appears increasingly structural.</p>
+<p class="para-title" style="color:#8b5cf6;">Treasury stewardship</p>
+<p class="para-body">China's holdings fell to $683 billion in November, the lowest since 2008, with Beijing reportedly advising banks to trim US sovereign exposure on concentration grounds. European and EM official holders have also pared positions, though Treasury volatility sits at a five-year low—suggesting reallocation remains gradual rather than disorderly.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

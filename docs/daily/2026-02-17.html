@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, February 17, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, February 17, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Markets digest soft equity tape despite supportive macro</p>
+<p class="para-body">US technology shares were positioned for further declines as trading resumed after the Presidents' Day holiday, with Nasdaq 100 futures down 0.75%. The S&P 500's 14% gain since election day represents the weakest start to a presidential term in decades on a comparable basis, and the rotation underway — consumer discretionary lagging consumer staples — suggests a market reassessing AI infrastructure risks rather than embracing macro tailwinds. That weakness has come despite Q4 corporate earnings growth of 14.4% (the strongest in four years), Treasury yields running below Election Day 2024 levels, and inflation swaps little changed. Some strategists frame the AI-driven selloffs in adjacent sectors — logistics declined nearly 7% Thursday on disruption fears before partially retracing — as offering selective entry points, though the broader signal of markets shrugging off favorable data warrants caution.</p>
+<p class="para-title" style="color:#5597cb;">Inflation trajectory remains constructive heading into Friday's PCE</p>
+<p class="para-body">January CPI data showed continued disinflation across the Fed's preferred underlying measures: the trimmed mean and median CPI sit at their lowest since 2021, supercore services continues to decline, and the Atlanta Fed's sticky-price gauge fell to 3%. The market is pricing roughly two cuts in the back half of 2026, with little expectation of action at the March meeting. Friday's PCE release — delayed since November owing to last year's shutdown — carries unusual weight; PCE had been stuck near 3% and risen above core CPI. A failure to resume its descent would complicate the easing path. One caveat: new car prices posted their largest January jump in years, masked by falling used car prices, suggesting tariff pass-through to consumers may only now be materializing.</p>
+<p class="para-title" style="color:#5597cb;">Private equity strains</p>
+<p class="para-body">With roughly $7 trillion in AUM, holding periods at a 20-year high of 4.4 years, and LPs increasingly vocal about distribution shortfalls, the asset class faces mounting pressure. A pickup in IPOs and strategic deals through 2026 appears plausible but unlikely to clear the backlog quickly.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asia Daily Briefing — February 17, 2026 Trading across much of Asia remained subdued with several markets closed for the Lunar New Year holiday, leaving regional benchmarks thinly traded. The Nikkei 225 declined 0.42% to 56,566, and Nasdaq futures pointed lower, signaling continued pressure on technology names as the AI-related rotation that has gripped US markets bleeds into Asian sentiment. Indian IT stocks have been a notable casualty: an index of names including Tata Consultancy and Infosys has shed roughly $56 billion in market value since Anthropic released a tool perceived as encroaching on the sector's outsourcing business model. In Australia, BHP delivered earnings at the upper end of expectations, with copper contributing more than half of group profit for the first time, offsetting weakness in iron ore. Shares closed at a record in Sydney. Separately, an Australian court dismissed the long-running greenwashing case brought against Santos by the ACCR, removing — at least at first instance — a significant legal overhang for the energy producer, though written reasons are not due until February 23. The Reserve Bank of Australia's February minutes confirmed that this month's rate hike reflected a downgraded view of productivity and potential output rather than excess demand, making the RBA the first major central bank to tighten in 2026 and a potential outlier — or forerunner — among DM peers. In China, AI startup Moonshot is targeting a $10 billion valuation in a new funding round, more than doubling the $4.3 billion mark set only weeks ago in a round backed by Alibaba and Tencent — an indication that domestic AI capital formation remains robust despite the US tech selloff. On Taiwan, President Trump indicated future US weapons sales are under discussion with Xi Jinping, characterizing his recent call with the Chinese leader as "excellent"; Beijing's readout urged "prudence." Karishma Vaswani argues Belt and Road is not retrenching but evolving into a longer-horizon development partnership model, which may prove harder for Western initiatives to counter. In India, Modi used the AI summit, alongside Macron's fourth state visit, to press global ambitions; Adani announced a $100 billion data-center buildout through 2035. January's trade deficit widened ahead of an interim tariff pact with Washington. In Japan, JGBs extended their rally through a smooth auction, while Mizuho fell 3.8% in Tokyo after disclosing a regulatory probe into suspected insider trading at its brokerage unit.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Eurozone macro signals were mixed today. German investor optimism, as measured by the ZEW survey, unexpectedly declined, tempering hopes that Europe's largest economy is on the cusp of the strong recovery markets had begun to price in. Set against that, eurozone finance chiefs used the day to push for a larger global role for the euro — a theme gaining traction as US policy unpredictability weighs on dollar credibility, though concrete steps remain limited. Bloomberg Economics flagged a broader concern relevant to ECB watchers: Australia's surprise rate hike, premised on downgraded productivity and a higher neutral rate, may foreshadow a similar reassessment in Europe, where weak productivity has so far been acknowledged but not yet operationalized into policy. For now, the ECB's framing remains anchored on demand and disinflation. In the UK, the macro picture tilted decisively dovish. Unemployment rose to its highest level since the pandemic and wage growth eased further, prompting traders to fully price half a point of Bank of England rate cuts by year-end. BBVA's Roberto Cobo Garcia suggested a March cut now appears increasingly likely and that two cuts may prove insufficient given the deteriorating labour market. Politically, Prime Minister Keir Starmer reversed plans to cancel some May local elections following backlash, the latest U-turn under his premiership, and sought to steady his government after the Mandelson-Epstein scandal that briefly threatened his position. On the corporate side, Germany's Hapag-Lloyd agreed to acquire ZIM Integrated Shipping at a valuation of roughly $4.2 billion, sending ZIM shares up 35%. Qiagen fell nearly 5% in Frankfurt after reports that Danaher is nearing a roughly $10 billion deal for Masimo, reducing the probability of a Qiagen takeout. Novo Nordisk confirmed expanded investment at its Athlone, Ireland facility to produce Wegovy in oral form for non-US markets, reinforcing Ireland's pharmaceutical export base even as Trump continues to single out the country's $112 billion goods surplus with the US. In Denmark, Prime Minister Mette Frederiksen is weighing a snap election to capitalise on her recovered standing following the Greenland dispute with Washington. The Stoxx Europe 600 closed roughly flat.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">US-Iran talks reopen as Hormuz sees scheduled disruption</p>
+<p class="para-body">US Special Envoy Steve Witkoff and Iranian Foreign Minister Abbas Araghchi are holding indirect nuclear talks in Geneva, with President Trump saying Tehran "wants to make a deal" and that he will be involved indirectly. Secretary of State Marco Rubio struck a cautiously optimistic tone, expressing hope that years of hostility can be bridged. The diplomatic opening coincides, however, with Iranian naval exercises that will close parts of the Strait of Hormuz for "several hours" today, according to Iranian state media — a calibrated reminder of Tehran's leverage over the world's most important oil chokepoint. Crude prices initially declined before recovering as the drills drew attention, leaving the market to weigh the prospect of de-escalation against the continued risk premium embedded in any Hormuz disruption. The combination of talks and exercises suggests both sides are negotiating from positions they wish to reinforce militarily; an agreement remains far from assured.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary policy divergence sharpens</p>
+<p class="para-body">UK unemployment reached its highest level since the pandemic alongside easing wage growth, prompting traders to fully price half a point of Bank of England cuts by year-end. In contrast, the Reserve Bank of Australia's February minutes confirmed its rate hike was driven by a downgrade to productivity and potential output, with policymakers concluding the neutral rate is higher than previously assumed. The RBA's Andrew Hauser openly questioned whether Australia is a "first mover" on a constraint other advanced economies will face, or an idiosyncratic case. If productivity-constrained potential growth proves a broader phenomenon, markets pricing aggressive global easing may be underestimating where neutral now sits. US disinflation, by contrast, continues gradually, with markets discounting two Fed cuts in the second half of 2026.</p>
+<p class="para-title" style="color:#8b5cf6;">Russia's African pivot</p>
+<p class="para-body">Lacking the fiscal capacity of China or the US, Moscow is leveraging the Russian Orthodox Church, now present in at least 34 African countries, alongside cultural centers and scholarships. Reporting suggests the soft-power push is increasingly tied to military and industrial recruitment as Ukraine attrition continues — an inexpensive substitute for the economic statecraft Russia can no longer afford.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

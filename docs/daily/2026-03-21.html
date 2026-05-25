@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saturday, March 21, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Saturday, March 21, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">Federal Reserve communications remained a focal point this week as policymakers navigate the tension between still-elevated inflation and mounting signs of fiscal drag. No major policy decisions were announced, though the broader backdrop of persistent data-center-driven energy demand and Iran-war energy price pass-throughs continues to complicate the Fed's path to its 2% target. The interplay between energy prices and shelter inflation appears to be extending the timeline for any easing cycle, though the precise magnitude remains difficult to quantify. On the fiscal and policy front, New York Governor Kathy Hochul introduced a proposal to revise the state's Climate Leadership and Community Protection Act, seeking to push its 40% emissions reduction target back from 2030 to 2040. Hochul cited affordability pressures — specifically, rising energy bills linked to data-center demand growth and Iran-war-related fuel price increases — as the rationale for delay. The proposal also includes a provision to defer implementation of a cap-and-invest program to 2030. The political optics are notable: a Democratic governor in a reliably blue state moving to weaken climate legislation at the same moment the Trump administration is rolling back federal emissions rules. Whether the state legislature accepts the revisions ahead of the April 1 budget deadline remains uncertain. Critics, including Earthjustice and several state senators, argue the changes primarily benefit fossil-fuel incumbents rather than consumers. Separately, the robotaxi sector drew attention following Uber's announcement of an investment of up to $1.25 billion in Rivian's autonomous vehicle program. The deal reflects continued capital deployment into the AV space, though analysts have flagged the potential congestion externalities of large-scale AV deployment — particularly deadheading miles — as an underappreciated urban policy challenge. The absence of road-pricing frameworks in most US cities may amplify rather than resolve traffic dynamics as the technology scales. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Japan and South Korea appear to be consolidating a diplomatic and economic rapprochement that would have seemed implausible as recently as a few years ago. Current South Korean President Lee Jae Myung and Japanese Prime Minister Sanae Takaichi — the latter a conservative nationalist by background — have prioritized pragmatic cooperation over historical grievances, a posture that analysts describe as driven by a convergent set of external pressures. China's economic coercion, including restricted Japanese access to rare earths and other critical inputs, has reinforced the logic of bilateral solidarity. The growing China-Russia-North Korea military alignment poses overlapping security challenges for both capitals. The Trump administration has also served as an indirect catalyst. Washington's transactional posture — including tariffs on both allies, large investment pledge demands ($550 billion from Japan, $350 billion from South Korea), and public questioning of US security commitments — has, somewhat paradoxically, pushed Seoul and Tokyo closer together. As one analyst framed it, a more unpredictable United States in the Indo-Pacific has made an active Korea-Japan partnership a strategic necessity rather than a political choice. Last week, the two countries' finance ministers agreed to expand bilateral economic cooperation, including a review of their currency swap arrangement, currently sized at $10 billion. Public opinion appears to be supportive of the new trajectory. Korean favorability toward Japan recently surpassed 56%, described as a record high, while a majority of Japanese hold positive views of South Korea. That symmetry reduces the domestic political cost of sustained engagement for both governments. Separately, China began 2026 with its fastest pace of government spending growth since 2022, suggesting Beijing is leaning on fiscal stimulus to sustain economic momentum. Samsung meanwhile announced plans to deploy approximately $73 billion this year across chip capacity and research, underscoring continued investment intensity in the semiconductor sector even as the broader technology supply chain remains subject to geopolitical disruption. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Germany's ongoing military buildup is generating tangible economic reverberations across the domestic economy. While details in the available coverage remain limited, the scale of the fiscal reorientation — driven by NATO pressure and the changed European security environment — appears sufficient to reshape industrial demand patterns, labor markets in defense-adjacent sectors, and potentially medium-term fiscal trajectories. The Bundesbank and European fiscal authorities will need to assess how defense spending interacts with the ECB's policy stance, particularly if it proves inflationary at the margin. No significant ECB policy decisions were reported in this period, though the broader European energy cost environment — elevated in part due to the Iran conflict's effect on shipping fuel availability and crude markets — continues to bear on the inflation outlook. The spillover from African shipping fuel shortages, noted in context of the Iran war, may affect European supply chains that transit those routes, though the direct magnitude is unclear from available reporting. No major UK-specific developments or individual European corporate stories were prominent in the source material for this period. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The Iran war is emerging as a persistent cross-regional supply shock rather than a discrete geopolitical event. Shipping fuel shortages are now appearing in Africa, a consequence that illustrates how the conflict's disruptions are propagating beyond the immediate theater. Energy price pressures are being cited as contributing factors to consumer affordability stress in markets as disparate as New York and South Asian economies, while Pakistan's accelerated solar adoption is being interpreted partly as a coping mechanism for surging oil prices — an unintended demand-destruction dynamic for conventional fuels. The US-Iran conflict is also reshaping alliance behavior more broadly. Washington has reportedly pressed both Japan and South Korea to contribute to the Iran effort, adding another layer to an already complex alliance management picture. The transactional character of these asks — coming alongside tariffs and investment demands — has accelerated the formation of alternative bilateral and multilateral arrangements among US allies seeking to reduce dependency on American security guarantees. On the climate and energy transition front, the IPCC faces an institutional challenge following US withdrawal of funding for scientific participation. The body's ability to maintain credibility and completeness in future assessment reports is now an open question. Meanwhile, the policy environment for emissions reduction is softening even at the sub-federal level, with New York's proposed rollback of its 2030 climate targets illustrating the political difficulty of sustaining ambitious decarbonization commitments when energy affordability pressures are acute. EVs are estimated to be displacing approximately 2.3 million barrels per day of oil demand globally, a data point that contextualizes the structural headwinds facing crude markets even as near-term supply disruptions support prices. The interaction between long-run demand erosion and short-run geopolitical supply risk remains one of the more consequential tensions in global energy markets.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

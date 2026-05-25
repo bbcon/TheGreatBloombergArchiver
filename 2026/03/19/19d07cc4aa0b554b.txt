@@ -1,0 +1,216 @@
+Subject: Geothermal’s big IPO moment
+Date: Thu, 19 Mar 2026 20:31:58 +0000
+
+Fervo Plans IPO as Geothermal Escapes Trump’s Clean Energy Attacks
+Fervo prepares to go public
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-03-19/fervo-plans-ipo-as-geothermal-avoids-trump-attacks>
+ <https://www.bloomberg.com/green>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17354035&m=11b724c487f61753eb1a7a4a5f3ef261&p=03192026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17354035&m=11b724c487f61753eb1a7a4a5f3ef261&p=03192026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Geothermal energy is having a moment, and Fervo is poised to take advantage of 
+it. The company just pulled in $421 million in new debt financing, and an even 
+bigger sign of Fervo’s momentum is itsplan to go public 
+<https://www.bloomberg.com/news/features/2026-03-19/fervo-energy-set-to-go-public-as-ai-demand-trump-propel-geothermal?cmpid=BBD031926_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260319>
+.
+
+Today’s newsletter takes you to Utah, where the company is building a massive 
+geothermal power plant. We also bring you some data insights on theemissions 
+impact of chip manufacturing 
+<https://www.bloomberg.com/news/articles/2026-03-18/meeting-surging-demand-for-ai-memory-chips-has-a-climate-cost?cmpid=BBD031926_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260319>
+, and the latest Zero episode — an exclusive interview withIPCC boss Jim Skea 
+<https://omny.fm/shows/zero/the-future-of-climate-science-without-us-support>.
+
+Drilling down
+
+By Michelle Ma <https://bloomberg.com/authors/AWTYlfwjEUk/michelle-ma>
+
+When I first started writing about climate tech four years ago, g 
+<https://www.bloomberg.com/news/features/2026-03-19/fervo-energy-set-to-go-public-as-ai-demand-trump-propel-geothermal?cmpid=BBD031926_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260319>
+eothermal was barely a blip on the energy industry’s radar. Using the Earth’s 
+heat for energy is an expensive endeavor that’s only available in a few select 
+places with the right geology.
+
+Yet there was one company I kept hearing rumblings about: A startup called 
+Fervo Energy that was trying to appropriate oil and gas fracking techniques to 
+bring down costs and expand geothermal’s potential. Then, in 2023, Fervo proved 
+its approach could work commercially.
+Construction materials at Fervo’s Cape Station site.Photographer: Lindsay 
+D’Addato/Bloomberg
+The company’s fortunes have continued to rise since then. Fervo is getting 
+ready for a long-awaited IPO, and geothermal has become a rare bright spot for 
+a clean energy sector that the Trump administration has otherwise trampled on. 
+In fact, it’s due to the administration’s push for what it calls “energy 
+dominance” and the data center boom’s voracious electricity appetite.
+
+Still, it’s one thing to be lucky on timing, as Chief Executive Officer Tim 
+Latimer told me. It’s another to take full advantage of it and actually 
+succeed. Fervo still has to prove that its enhanced geothermal system can work 
+at a meaningful scale and that it can keep costs down as its ambitions grow. To 
+see how Fervo is trying to take advantage of the moment, I traveled to Utah 
+last year to tour the company’s new facility under construction.
+
+The site was frenetic. In trailers, scientists examined rock samples to help 
+track drilling progress. Outside, some of the roughly 400 workers switched out 
+a used drill bit on one of three well pads that will make up the plant’s first 
+phase. Each pad is intended to house eight wells.
+
+Along with borrowing fracking techniques, the site also mirrored the look of a 
+shale field, complete with a giant drilling rig and a billowing American flag.
+ 
+<https://www.bloomberg.com/news/features/2026-03-19/fervo-energy-set-to-go-public-as-ai-demand-trump-propel-geothermal>
+When fully operational, the Utah plant is expected to produce enough power for 
+400,000 homes annually. It could help unlock the immense potential of enhanced 
+geothermal: The Energy Department projects that in the US alone, it could 
+provide up to 120 gigawatts of energy — enough to power roughly 100 million 
+homes.
+
+While Fervo has benefited from a first-mover advantage, it will need to 
+continue raising capital to stay ahead of other startups. The company announced 
+Thursday that it secured a $421 million debt package to complete construction 
+of the first phase of its Utah plant, and it’s also planning its IPO.
+
+I get into those details, as well as what challenges the next generation of 
+geothermal technologies face, inmy new feature for Bloomberg News 
+<https://www.bloomberg.com/news/features/2026-03-19/fervo-energy-set-to-go-public-as-ai-demand-trump-propel-geothermal?cmpid=BBD031926_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260319>
+. For more reporting on the energy transition and the companies at the 
+forefront,please subscribe <https://www.bloomberg.com/subscriptions/>.
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17354035&m=11b724c487f61753eb1a7a4a5f3ef261&p=03192026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17354035&m=11b724c487f61753eb1a7a4a5f3ef261&p=03192026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Geothermal wildcatters
+
+282%
+
+The percentage by which the average price of a geothermal lease 
+<https://www.bloomberg.com/news/articles/2025-10-10/us-geothermal-lease-prices-soar-by-280-under-trump?cmpid=BBD031926_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260319>
+ in the US surged last year. Fervo used a large portion of its Series A funding 
+to make purchases before prices spiked.
+
+Need for speed
+
+“Geothermal will happen much faster 
+<https://www.bloomberg.com/news/articles/2025-10-28/in-oregon-khosla-backed-geothermal-startup-taps-superhot-rocks?cmpid=BBD031926_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260319>
+.”
+
+Vinod Khosla
+
+Founder, Khosla Ventures
+
+Khosla is bullish on both geothermal and fusion to meet burgeoning power 
+demand. But he sees geothermal as much closer to commercialization.
+
+Chip emissions on the rise
+
+By Aaron Clark <https://www.bloomberg.com/authors/APKMhwz5ox0/aaron-clark>
+
+The rush to boost production of memory chips to meet fast-accelerating demand 
+from artificial intelligence will add to the semiconductor sector’s climate 
+footprint and risks lifting costs of managing emissions.
+ 
+<https://www.bloomberg.com/news/articles/2026-03-18/meeting-surging-demand-for-ai-memory-chips-has-a-climate-cost>
+Higher manufacturing volumes, efforts to deliver more complex and 
+resource-intensive products, and additional production in nations with fossil 
+fuel-reliant power grids will combine to increase the industry’s pollution 
+profile, according to Ottawa-based research firm TechInsights Inc.
+
+Semiconductor manufacturing emissions will climb by about a third to 247 
+million metric tons of carbon dioxide equivalent by 2030, the researcher 
+forecasts. That’s higher than annual emissions of scores of countries and 
+roughly equivalent to the 2024 volume produced by Algeria.
+
+Read the full story 
+<https://www.bloomberg.com/news/articles/2026-03-18/meeting-surging-demand-for-ai-memory-chips-has-a-climate-cost?cmpid=BBD031926_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260319>
+.
+
+This week’s Zero
+ <https://omny.fm/shows/zero/the-future-of-climate-science-without-us-support>
+The United Nations Intergovernmental Panel on Climate Change is responsible 
+for collating our shared scientific understanding of how global warming is 
+impacting the planet. But the body now faces a challenge after the US withdrew 
+funding for its scientists to participate. Professor Jim Skea, who chairs the 
+IPCC, joins Akshat Rathi on Zero to talk about the body’s future, whether the 
+organization can survive the US pullback, and what questions the next set of 
+reports are going to answer.
+
+Listen now, and subscribe on Apple 
+<https://podcasts.apple.com/us/podcast/zero/id1621556928>, Spotify 
+<https://open.spotify.com/show/5rHwnJEjFRnivIdpWwnZyZ?si=985034d7e76a47a0> or 
+YouTube 
+<https://www.youtube.com/playlist?list=PLe4PRejZgr0MtnA98Xp8igGT9S3Na_zDD> to 
+get new episodes of Zero every Thursday.
+
+More from Green
+
+Consumers in Germany and the UK are becoming more curious about rooftop solar 
+<https://www.bloomberg.com/news/articles/2026-03-18/uk-german-consumers-seek-out-solar-evs-heat-pumps-due-to-iran-war?cmpid=BBD031926_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260319>
+ and electric vehicles as they seek to shield themselves from surging energy 
+prices resulting from the Iran War.
+
+ConocoPhillips and Exxon Mobil Corp. were among oil companies that snapped up 
+drilling leases 
+<https://www.bloomberg.com/news/articles/2026-03-18/oil-giants-bid-163-million-in-trump-s-record-alaska-lease-sale?cmpid=BBD031926_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260319>
+ in northern Alaska’s mammoth petroleum reserve in a record auction that drew 
+$163 million in high bids.
+
+Australia appointed former energy regulator Anthea Harris as a new fuel czar  
+<https://www.bloomberg.com/news/articles/2026-03-19/australia-appoints-fuel-czar-to-tackle-iran-war-disruptions?cmpid=BBD031926_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260319>
+to coordinate the response to price spikes and supply chain disruptions as a 
+result of the war in the Middle East.
+
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Hyperdrive 
+<https://www.bloomberg.com/account/newsletters/hyperdrive?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for expert insight into the future of cars
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+
+
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/v0lO2zhL2H5eDdqoWPKXYKvhYSsn_EP2BMl7K_DATKmB5-gWmt85vRJTrObOVkYzRujfPVJ5SDth1YW0U7AUnEhBRyaruMnt4l7wsBOoO0ceFcXYXL7Dsq4SAan2UceuqJBpxWONzIrk0wZ6CGJGMo3wGX8mzYvpKD60q1vhBRXRxrnYvupNQPI1mwf6YmtGQwD6MuPsRENgH757VLUXZu4OE7aWu1iy7Bc9H-BSOup99pdxJuZ8dkUF-VS897y99w4ZGyNOmJkSrnacpr8M1KRFUDRZKSiq7xpOIUZsmxwZ1MH8d6EBY0LdgbBr8HZJiRw_gAU8CJZV-o7IlcHOS0AMquj3GU20/D1qbzvx5vHkVGi0DN6hvMFNGjvB6pQeD/18>

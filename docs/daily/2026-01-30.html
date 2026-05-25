@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, January 30, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, January 30, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Trump Nominates Warsh to Chair the Fed</p>
+<p class="para-body">President Trump named Kevin Warsh as his nominee to succeed Jerome Powell when Powell's term concludes in May. Warsh, a former Fed governor passed over for the chairmanship in 2017, has publicly aligned himself with the president's views on monetary policy, though his policy record suggests a more orthodox stance than the dovish posture Trump has demanded. Initial Wall Street reaction characterized the pick as relatively hawkish — a notable tension given the administration's persistent pressure for lower rates. Confirmation by the Republican-controlled Senate appears likely but is not assured. The practical implications for the rate path remain uncertain: Warsh would inherit a committee whose median view he cannot unilaterally dictate, and his historical concerns about asset-price distortions and inflation credibility could constrain any rapid pivot toward easier policy. As Jonathan Levin observed in Bloomberg Opinion, Trump "demanded a dove [and] picked a hawk" — a characterization that, if it holds, complicates the narrative of imminent Fed capitulation to political pressure.</p>
+<p class="para-title" style="color:#5597cb;">Markets React to Fed News and Hotter PPI</p>
+<p class="para-body">US equities declined following the Warsh announcement, with the move compounded by a hotter-than-expected PPI print that reinforces concerns about sticky upstream inflation. The combination — a perceived hawkish nominee alongside firmer producer prices — pressured rate-sensitive sectors and contributed to a sharp reversal in precious metals, with gold and silver both falling sharply after recent record-setting moves. The metals decline marks a notable unwind of the safe-haven trade that had built through January amid geopolitical strains, including renewed friction over Trump's Greenland posture that had earlier revived "Sell America" flows.</p>
+<p class="para-title" style="color:#5597cb;">Positioning Backdrop</p>
+<p class="para-body">Wealth advisers surveyed by Bloomberg generally counsel against elevated cash allocations despite the risk-off tone, with several rotating toward value equities and selective international exposure, including Japan. The advice reflects a view that current volatility, while elevated, does not warrant defensive capitulation.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asia-Pacific Daily Briefing — January 30, 2026 Coverage of Asia-Pacific developments in today's source material is limited, with the news flow dominated by US-centric stories. We flag two items with meaningful regional implications. The most consequential development for Asian markets is President Trump's nomination of Kevin Warsh to succeed Jerome Powell as Federal Reserve Chair when Powell's term concludes in May. Wall Street's initial read characterizes Warsh as a relatively hawkish choice — a notable interpretation given Trump's repeated calls for lower rates. The announcement coincided with a hotter-than-expected PPI print, and US equities declined while gold and silver sold off sharply after recent record highs. For Asia, the implications are nuanced and the policy trajectory remains to be seen. A hawkish Fed chair, if confirmed, could sustain dollar strength and keep pressure on Asian currencies, complicating the Bank of Japan's normalization path, constraining the PBoC's room to ease further, and tightening financial conditions across emerging Asia. However, the tension between Trump's stated preference for easier policy and Warsh's historical leanings introduces meaningful uncertainty about how the Fed's reaction function evolves through 2026. The pullback in precious metals — which had been fueled by safe-haven demand amid geopolitical tensions including Trump's renewed Greenland rhetoric — may also dampen flows that had supported regional gold-linked equities. Separately, Japanese equities received favorable mentions in Bloomberg's wealth adviser survey on allocation preferences, with managers citing value characteristics amid a broader risk-off tilt. This is consistent with continued foreign interest in Japan as a relative value play versus stretched US mega-cap technology, though it does not constitute a material market-moving development on its own. Today's available material contains no substantive reporting on China economic data, PBoC actions, capital flows, Korean, Indian, Southeast Asian, or Australian developments. Readers should treat this briefing as a partial snapshot pending broader regional newsflow.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European Daily Briefing — January 30, 2026 Coverage of European-specific developments in today's source material is notably thin, with the news flow dominated by US-centric stories. We flag this candidly rather than overstate the European angle. The most consequential cross-Atlantic development for European markets is President Trump's nomination of Kevin Warsh to succeed Jerome Powell as Federal Reserve Chair when Powell's term expires in May. Initial Wall Street reaction characterizes Warsh as a relatively hawkish choice, a read that — if it holds — carries meaningful implications for the ECB and European rate-sensitive assets. A hawkish Fed transition would likely support the dollar against the euro and complicate the ECB's calculus should the Governing Council seek to extend its easing cycle without provoking unwanted euro weakness and imported disinflation reversal. Bund-Treasury spreads bear watching in the sessions ahead as the market digests Warsh's confirmation path through the Republican-controlled Senate. We would caution against premature conclusions: Warsh's stated alignment with Trump's policy views sits uneasily with his historically hawkish instincts, and how that tension resolves remains to be seen. Geopolitical noise around Trump's renewed demand for US control over Greenland has reignited "Sell America" positioning and contributed to gold's recent record run, though metals reversed sharply in today's session alongside the equity selloff that followed the Warsh announcement and a hotter-than-expected US PPI print. For European investors, the Greenland dispute carries direct relevance given Denmark's sovereignty and the broader question of transatlantic alliance cohesion, though today's sources offer no fresh detail on Copenhagen's response or wider EU positioning. On UK politics, eurozone macro data, ECB commentary, and European corporate news, today's material contains no substantive items worth synthesizing. We would note only the passing reference to rising "soak the rich" tax rhetoric spanning London to California, a theme worth monitoring as UK fiscal debate evolves but lacking actionable detail in today's flow.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Trump Names Warsh to Succeed Powell at the Fed</p>
+<p class="para-body">President Trump selected Kevin Warsh as his nominee to chair the Federal Reserve following the May expiration of Jerome Powell's term. The choice is notable for its tension with prior expectations: Trump has consistently pressed for lower rates, yet Warsh is broadly viewed on Wall Street as a relative hawk, having criticized accommodative policy during and after his prior tenure as a Fed governor. Warsh has publicly aligned himself with the President's monetary policy views, though institutional constraints and FOMC composition suggest any pivot would be gradual rather than immediate. Markets responded with a risk-off tone: US equities declined, gold and silver sold off sharply amid broader volatility in precious metals, and the reaction was compounded by a hotter-than-expected PPI print. The juxtaposition — a hawkish nominee against a White House demanding easier policy — leaves the trajectory of US monetary policy unusually difficult to forecast, with implications for global rate differentials, dollar positioning, and the relative attractiveness of duration outside the US. Senate confirmation is expected given the Republican majority, but the substantive question of how Warsh balances political pressure against the Fed's institutional preferences remains open.</p>
+<p class="para-title" style="color:#8b5cf6;">Geopolitical Risk Premium Persists</p>
+<p class="para-body">Renewed friction over Trump's demand for US control of Greenland has reactivated the "Sell America" trade that surfaced periodically through 2025, contributing to defensive positioning across portfolios. Gold's run to record levels earlier in the week reflected this safe-haven bid, though today's sharp reversal in metals illustrates how crowded the trade had become. Among wealth managers surveyed by Bloomberg, the response to the current environment has tilted toward value equities and selective international exposure, with Japanese equities cited favorably — consistent with a view that US exceptionalism is being repriced at the margin. Coverage of oil markets, the Strait of Hormuz, and the energy transition was absent from today's available material.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

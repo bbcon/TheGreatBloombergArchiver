@@ -1,0 +1,274 @@
+Subject: America’s AI boom hits a transformer crunch
+Date: Wed, 01 Apr 2026 15:09:17 +0000
+
+The US Data Center Boom Is Hitting a Transformer Crunch
+An equipment shortage could derail data center ambitions ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-04-01/us-data-center-boom-relies-on-hard-to-find-electrical-equipment>
+ <https://www.bloomberg.com/green>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17519149&m=11b724c487f61753eb1a7a4a5f3ef261&p=04012026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17519149&m=11b724c487f61753eb1a7a4a5f3ef261&p=04012026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+The US economy is increasingly tied to data centers and the AI boom. There’s 
+just one problem: The electrical equipment needed to bring facilities online is 
+hard to come by.
+
+It’s already creating delays and forcing developers to get creative 
+<https://www.bloomberg.com/news/features/2026-04-01/us-ai-data-center-expansion-relies-on-chinese-electrical-equipment-imports?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+ with how they source equipment. Today’s newsletter dives deep into one of the 
+most pressing issues facing data centers today. Plus, theGod Squad has passed 
+judgment 
+<https://www.bloomberg.com/news/articles/2026-03-31/trump-s-god-squad-exempts-gulf-oil-drilling-from-endangered-species-protections?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+ on the fate of endangered species in the Gulf of Mexico.
+
+‘A pretty wild puzzle’
+
+By Emily Forgash 
+<https://origin.www.bloomberg.com/authors/AW4BeVx3KeQ/emily-forgash> and Akshat 
+Rathi <https://origin.www.bloomberg.com/authors/AUdOobfNzkQ/akshat-rathi>
+
+In the red dirt of Abilene, Texas, more than 6,000 workers travel around on 
+electric buggies, spending day and night constructing amassive data center 
+<https://www.bloomberg.com/news/features/2025-05-20/inside-stargate-ai-data-center-from-openai-and-softbank?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+ that will feed the world’s growing artificial intelligence needs. When 
+completed this year, the eight sprawling buildings — which OpenAI will use — 
+will consume 1.2 gigawatts of power, or enough electricity for nearly 1 million 
+American households.
+
+As the global AI race heats up, there is a huge rush to build data centers 
+fast. There’s no lack of money chasing these projects, with tech giants 
+Alphabet Inc., Amazon.com, Meta Platforms Inc. and Microsoft Corp. committed to 
+spending more than $650 billion this year alone. Yet neither ambition nor 
+capital is enough to materialize all the necessary components.
+
+Almost half of the US data centers planned for this year are expected to be 
+delayed or canceled. One big reason is the shortage of electrical equipment, 
+such as transformers, switchgear and batteries. They are needed not just for 
+powering AI, but also for building out the grid that is seeing increased 
+consumption from electric cars and heat pumps. US manufacturing capacity for 
+these devices cannot keep up with demand, and the scarcity has caused data 
+center builders to rely on imports.
+ 
+<https://www.bloomberg.com/news/features/2026-04-01/us-ai-data-center-expansion-relies-on-chinese-electrical-equipment-imports>
+Electrification is a key solution 
+<https://www.bloomberg.com/features/2025-bottlenecks-engineering-jobs/?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+ to both tackling climate change and powering AI ambitions. But America’s AI 
+prowess on computer chips and cutting-edge software is being hamstrung by the 
+country’s inability to manufacture the electrical parts. “There’s not enough 
+domestic capacity to go around, so people are pretty much forced to go to the 
+export market,” says Benjamin Boucher, senior analyst with Wood Mackenzie.
+
+Crusoe Energy Systems won the contract to build the Texas data center campus 
+because it promised speed. The secret to achieving that was buying enough of 
+the right electrical equipment through early orders, securing some supplies 
+before export barriers were erected.
+ 
+<https://www.bloomberg.com/news/features/2026-04-01/us-ai-data-center-expansion-relies-on-chinese-electrical-equipment-imports>
+Spools of electrical wires outside a series of assembly tents at the Stargate 
+AI data center in Abilene, Texas.Photographer: Kyle Grillot/Bloomberg
+Electrical infrastructure adds up to less than 10% of the total cost of the 
+data center, but it’s impossible to build the operation without it. “If one 
+piece of your supply chain is delayed, then your whole project can’t deliver,” 
+says Andrew Likens, Crusoe’s energy and infrastructure lead. “It is a pretty 
+wild puzzle at the moment.”
+
+Over the past 10 years, the US government has tried a series of policies to 
+reshore manufacturing, but they haven’t yet yielded a significant boost to 
+domestic capacity, forcing businesses to look to China regardless of the 
+tariffs or the alleged national security risk. That means the US needs crucial 
+parts from China to dominate it in the AI race, while China needs advanced 
+chips from American companies to stay in the race.
+
+Data centers have rapidly grown in size and now consume more electricity than 
+their predecessors a decade ago. That demands bigger transformers, which safely 
+pull electricity from the high-voltage grid to feed to tiny computer chips. 
+Without the right transformers, there’s no way to make the data center work.
+ 
+<https://www.bloomberg.com/news/features/2026-04-01/us-ai-data-center-expansion-relies-on-chinese-electrical-equipment-imports>
+Without addressing electrical equipment shortages, many are worried that the 
+trillions of dollars of spending aimed at data centers won’t yield the decisive 
+steps the US must take to win the AI race.Photographer: Erik Isakson/Tetra 
+Images/Getty Images via Tetra images RF
+Before 2020, these high-power transformers typically arrived 24 to 30 months 
+after an order was placed. Those timelines were “totally manageable in the old 
+world” when data centers didn’t need such large transformers or at such short 
+timelines, says Philippe Piron, chief executive officer of GE Vernova’s 
+electrification division. But AI companies “want something typically in less 
+than 18 months.”
+
+The spike in demand from data centers and grid expansion have pushed up prices 
+and extended delivery times to as much as five years. That is why some, like 
+Crusoe, have even resorted to refurbishing old transformers from shuttered 
+power plants as a stopgap measure.
+
+Read the full story 
+<https://www.bloomberg.com/news/features/2026-04-01/us-ai-data-center-expansion-relies-on-chinese-electrical-equipment-imports?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+ to see how data centers are sourcing other equipment and the risks of severing 
+ties with Chinese manufacturers completely.
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17519149&m=11b724c487f61753eb1a7a4a5f3ef261&p=04012026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17519149&m=11b724c487f61753eb1a7a4a5f3ef261&p=04012026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Transformer troubles
+
+80 million
+
+The number of small power transformers in the US — one for every four residents
+ 
+<https://www.bloomberg.com/features/2025-bottlenecks-transformers/?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+. And data centers aren’t the only industries clamoring for them.
+
+Taking it slow
+
+“Both utilities and grid operators are essentially putting the brakes on and 
+making it more challenging 
+<https://www.bloomberg.com/news/articles/2026-03-16/us-data-center-boom-slows-due-to-power-grid-limits-wood-mackenzie-says?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+ to connect data centers.”
+
+Ben Hertz-Shargel
+
+Head of Grid Edge, Wood Mackenzie
+
+Playing God
+
+By Zahra Hirji <https://www.bloomberg.com/authors/AVypnhGtqak/zahra-hirji>
+
+The Endangered Species Committee, a little-used panel of US senior federal 
+agency leaders, on Tuesday exempted oil and gas drilling in the Gulf of Mexico 
+from sweeping endangered species protections, citing reasons of national 
+security.
+
+Dubbed the God Squad 
+<https://www.bloomberg.com/news/articles/2026-03-30/why-the-endangered-species-god-squad-is-meeting-after-35-years?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+, the committee has the power to effectively condemn a species to extinction by 
+revoking environmental protections. The group, which hadn’t met in more than 30 
+years, had only previously issued exemptions twice before and for specific 
+projects that threatened specific species: in 1979 for whooping cranes in 
+Wyoming and in 1992 for northern spotted owls in Oregon.
+ 
+<https://www.bloomberg.com/news/articles/2026-03-31/trump-s-god-squad-exempts-gulf-oil-drilling-from-endangered-species-protections>
+Rice’s whalePhotographer: NOAA Fisheries (Permit #14450)
+Tuesday’s decision goes much further than past cases. It applies an exemption 
+from Endangered Species Act protections broadly to oil and gas exploration, 
+development and production across the Gulf of Mexico, home to several 
+threatened animals, including the Rice’s whale. It’s also the first time the 
+committee has issued an exemption for reasons of national security, thrusting 
+the process into unprecedented territory.
+
+Read the full story 
+<https://www.bloomberg.com/news/articles/2026-03-31/trump-s-god-squad-exempts-gulf-oil-drilling-from-endangered-species-protections?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+.
+
+This week’s Zero episode
+ <https://www.youtube.com/watch?v=STXgaWdfWKs>
+Zack Polanski is challenging the notion that you can’t be Green and a popular 
+politician. Since he became the leader of the UK’s Green Party in September 
+2025, he has run a campaign that’s pushed his party ahead of the incumbent 
+Labour Party and opposition Conservative Party in some polls. It’s a remarkable 
+rise in a short span of time. How did he pull it off — and what will he do if 
+the Green Party gets into power?
+
+Listen now 
+<https://omny.fm/shows/zero/zack-polanskis-plan-to-tax-billionaires-make-energy-affordable>
+, and subscribe onApple 
+<https://podcasts.apple.com/us/podcast/zero/id1621556928>, Spotify 
+<https://open.spotify.com/show/5rHwnJEjFRnivIdpWwnZyZ?si=985034d7e76a47a0> or 
+YouTube 
+<https://www.youtube.com/playlist?list=PLe4PRejZgr0MtnA98Xp8igGT9S3Na_zDD> to 
+get new episodes of Zero every Thursday.
+
+More from Green
+Freight train wagons for oil near oil storage tanks in France.Photographer: 
+Jeremy Suyker/Bloomberg
+The EU proposed a limited adjustment 
+<https://www.bloomberg.com/news/articles/2026-04-01/eu-proposes-adjusting-carbon-reserve-to-limit-price-volatility?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+ to its carbon trading program to curb the impact of emissions costs on soaring 
+energy bills, and pledged flexibility to avoid placing an excessive burden on 
+industry during a transition to cleaner technologies.
+
+Energy prices are at the top of the bloc’s political agenda as concerns over 
+its declining competitiveness compared to China and the US have been 
+exacerbated by tensions in the Middle East. The European Commission offered to 
+make supply controls in the EU Emissions Trading System more flexible and 
+floated concessions on free carbon permits for heavy industry.
+
+Read the full story 
+<https://www.bloomberg.com/news/articles/2026-04-01/eu-proposes-adjusting-carbon-reserve-to-limit-price-volatility?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+ on the proposal on Bloomberg.
+
+Palmer Luckey-backed nuclear startup has raised fresh capital at a valuation 
+of $2 billion 
+<https://www.bloomberg.com/news/articles/2026-03-31/palmer-luckey-backed-nuclear-startup-valar-lands-2-billion-valuation?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+, according to people familiar with the matter. Valar Atomics brought in $110 
+million in debt and $340 million in equity.
+
+FirstRand sold a 2.5 billion rand ($149 million) bond that rewards investors 
+based on improvements in aCape Town water-catchment 
+<https://www.bloomberg.com/news/articles/2026-04-01/firstrand-issues-ecological-restoration-bond-in-global-first?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+ area, measured by the removal of invasive vegetation.
+
+Europe faces weeks of volatile spring weather, with competing atmospheric 
+factors raising therisk of cold spells 
+<https://www.bloomberg.com/news/articles/2026-04-01/europe-braces-for-wild-weather-and-cold-snaps-through-april?cmpid=BBD040126_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260401>
+, storms and late-season snow.
+
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Hyperdrive 
+<https://www.bloomberg.com/account/newsletters/hyperdrive?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for expert insight into the future of cars
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+
+
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/-_iav1JTCwIz5LYTadECuYMyerDNCqw6yKYrWC9AaTxiQatNd9gRjxPlyMm0jkeZbs4cHhBega7L10xSIjDAgicjXRWyUUEFAHWpsLFFGqCVTgNIgt91HfjhVNwY6Wa2afRBQWo2Yt4GHjIbVsb0EPYAdtP7SkUlC9flvcOM87EHaAheXoeujSj-HkSw1UmNsRWcX2KX5oiCeZ9AK7oBZbiOv0Bhx9Jhyy9H7VSbnGk1fsW_WId0KrIRKUihSJUo0WynI9yb5z6WFDGmviV8PNUj5JqKUgqwYhbd8ad8hRxZtBruMBjwiAtK9ifBUApNOSYeuG3tgTNm-dbvlKDIy26Ovrn_DFk-/29fcUWP4A5EQl9-h2YbvyfijbNyf5Yn5/19>

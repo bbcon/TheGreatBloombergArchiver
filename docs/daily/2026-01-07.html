@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, January 07, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, January 07, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">US Daily Briefing — January 7, 2026</p>
+<p class="para-body">Coverage in today's flow is thin on core US macro and rates developments, with the day's most actionable item centering on Venezuela and its implications for US capital markets, energy, and foreign policy.</p>
+<p class="para-title" style="color:#5597cb;">Venezuela Reopens to US Capital</p>
+<p class="para-body">The removal of Nicolás Maduro, who pleaded not guilty this week to US narco-terrorism charges, has triggered a rapid repricing of Venezuelan exposure across US-accessible markets. Sovereign and PDVSA bondholders captured roughly $4 billion in mark-to-market gains in a single session, with the move predicated on the prospect of an eventual debt restructuring rather than near-term cash flows. President Trump signaled that the US would commit billions to rehabilitating Venezuela's degraded oil infrastructure, a stance that appears designed to channel private capital and US energy majors into reconstruction. The combination of distressed-debt opportunities, upstream investment, and services contracts has drawn renewed engagement from Wall Street desks and private capital sponsors that had treated the credit as effectively untouchable since the 2017 sanctions regime tightened.</p>
+<p class="para-title" style="color:#5597cb;">Implications and Caveats</p>
+<p class="para-body">For US energy markets, a credible path to restoring Venezuelan heavy crude output — even on a multi-year horizon — could weigh on the long end of the oil curve and benefit Gulf Coast refiners configured for heavy grades. For credit, the rally compresses the distressed-sovereign opportunity set but opens a potentially sizable restructuring mandate pipeline. Execution risk remains substantial: the political transition is not consolidated, sanctions relief mechanics have not been formalized, and the scale of required capex on Venezuelan fields is large relative to realistic near-term production recovery. Whether private capital can deploy at the pace Washington is signaling remains to be seen.</p>
+<p class="para-title" style="color:#5597cb;">Other US Macro</p>
+<p class="para-body">No material Federal Reserve, Treasury, fiscal, or corporate earnings developments were captured in today's flow. We will resume standard coverage as inputs arrive.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Asia-Pacific Daily Briefing — January 7, 2026</p>
+<p class="para-body">Coverage in today's Bloomberg flow relevant to Asia-Pacific is thin. The principal story crossing the wires concerns Venezuela following the ouster of Nicolás Maduro, and its direct read-through to Asian markets is limited but worth flagging on two dimensions. First, on energy: President Trump's pledge to commit billions toward rehabilitating Venezuela's oil infrastructure, alongside renewed Wall Street and private capital interest, points to a gradual return of Venezuelan barrels to global markets over the medium term. For Asia's large crude importers — China, India, Japan, and South Korea — incremental Venezuelan supply, if realized, would marginally ease the heavy-sour crude balance and could pressure Middle East official selling prices over time. China, historically the largest taker of Venezuelan barrels under sanctions-era discounted arrangements through intermediaries, faces a more competitive landscape if US-aligned buyers and majors regain formal access. The timeline, however, remains highly uncertain given the degraded state of Venezuelan production capacity. Second, the roughly $4 billion one-day rally in Venezuelan bonds and the prospect of a sovereign restructuring is a reminder of the appetite for distressed EM exposure that has built up through 2025. Asian frontier and high-yield sovereign credit — including selected Southeast Asian and South Asian names — may see spillover demand at the margin as dedicated EM funds rotate, though the Venezuela trade is sufficiently idiosyncratic that broader contagion into Asian risk premia is unlikely to be material. Beyond this, today's flow did not surface meaningful new developments on China policy, PBOC operations, the yen, Korean export data, Indian markets, or regional geopolitics. We would caution against reading the absence of headlines as signal; positioning into the Lunar New Year window and ongoing US-China trade-policy uncertainty remain the dominant overhangs for the region, and we expect more substantive catalysts later in the week.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">European Daily Briefing — January 7, 2026</p>
+<p class="para-body">Coverage in today's wires skews heavily toward Latin America, with the principal story being the post-Maduro repricing of Venezuelan assets and the Trump administration's pledge to underwrite reconstruction of the country's oil infrastructure. Direct European read-throughs are limited but not negligible. For European energy markets, a credible path to rehabilitating Venezuelan crude production — even on a multi-year horizon — adds a bearish term-structure consideration for Brent, particularly relevant for refiners in Spain and Italy historically configured for heavier sour grades. Repsol and Eni, both of which retain legacy exposures to Venezuelan joint ventures, stand to be among the more directly affected European names should sanctions architecture be dismantled in an orderly fashion, though the sequencing and legal treatment of prior claims remain unresolved. We would caution against extrapolating quickly: the one-day $4 billion mark-to-market gain in Venezuelan bonds reflects optionality on restructuring rather than a defined timeline, and European holders of legacy PDVSA paper face the same ambiguity as US counterparts. On the eurozone macro and ECB policy front, today's available flow contains no material new data points or Governing Council communication. Similarly, UK political and gilt market developments, and individual sovereign stories across the periphery and core, are not represented in today's intake. We would flag this as a thin session for region-specific catalysts rather than attempt to manufacture signal from adjacent stories. The more durable implication for European investors from the Venezuela development is second-order: a Trump administration willing to commit US fiscal resources to overseas energy infrastructure reconstruction signals an activist external economic posture that may carry consequences for transatlantic trade and sanctions coordination in coming months. Whether Brussels aligns with or diverges from Washington on the eventual sanctions framework remains to be seen, and is worth monitoring as the policy contours become clearer.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Venezuela Re-Enters the Global Energy Map</p>
+<p class="para-body">The most consequential cross-regional development today centers on Venezuela's abrupt return to investable status following Nicolás Maduro's ouster and his not-guilty plea this week to US narco-terrorism charges. Venezuelan sovereign bondholders captured roughly $4 billion in single-day mark-to-market gains, with the rally underpinned by expectations of a sovereign restructuring and the prospect of meaningful US capital deployment into the country's degraded oil infrastructure. President Trump's pledge that Washington would spend billions to rehabilitate Venezuelan production has drawn private capital and energy majors into preliminary assessments of a market that has been effectively off-limits for the better part of a decade. The macro implications extend well beyond Caracas. Venezuela holds the world's largest proved crude reserves, though current output remains a fraction of its early-2000s peak. A credible, US-backed reinvestment program would, over a multi-year horizon, add incremental heavy-sour barrels to global supply — relevant for US Gulf refiners structurally configured for that grade, and potentially a marginal offset to OPEC+ supply discipline. The near-term price impact appears limited given the lead times involved in restoring damaged fields and infrastructure, but the directional signal is bearish for the medium-term oil curve if execution proceeds. Sanctions architecture, licensing frameworks for Chevron and other operators, and the still-unresolved question of political transition in Caracas all remain material uncertainties. It remains to be seen whether the restructuring path can be negotiated cleanly given the layered claims from defaulted sovereign and PDVSA debt, expropriation arbitration awards, and Chinese and Russian creditor positions.</p>
+<p class="para-title" style="color:#8b5cf6;">Other Themes</p>
+<p class="para-body">Coverage across the source material today is thin on other global cross-cutting themes — including US-Iran dynamics, Strait of Hormuz risk, and G10 monetary policy divergence — and we decline to pad. We will revisit these threads as fresh inputs arrive.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

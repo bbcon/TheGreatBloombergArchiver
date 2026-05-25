@@ -1,0 +1,277 @@
+Subject: Value is back in vogue, but don’t write tech off yet
+Date: Thu, 05 Feb 2026 05:10:24 +0000
+
+Points of Return 
+ To get John Authers’ newsletter delivered directly to your inbox, sign up 
+here. Software’s slide drives the biggest momentum reversal since 
+
+View in browser <https://bloom.bg/4bCclWI> 
+ <https://bloom.bg/4axv8RO> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=16768339&m=11b724c487f61753eb1a7a4a5f3ef261&p=02052026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=16768339&m=11b724c487f61753eb1a7a4a5f3ef261&p=02052026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/4cbzuzn> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ *  Software’s slide <https://bloom.bg/3M4fjJd> drives the biggest  momentum 
+reversal <https://bloom.bg/4thvbJ3> since the  2020 vaccine tests 
+<https://bloom.bg/49ZP2VE>; 
+ *  Alphabet <https://bloom.bg/4thvd3D> is spending even more on AI capex than 
+we thought; 
+ * Markets think  Takaichi <https://bloom.bg/4kdSG1m> will win  big in Japan 
+<https://bloom.bg/3LVhsXD>; 
+ * The  ECB <https://bloom.bg/3ZfepfZ> and  BOE <https://bloom.bg/4kjhncL> are 
+about to hold meetings (and hold interest rates); 
+ * AND: 
+
+
+
+Tech: It Turns Out It’s Complicated
+
+Investors are assessing tech companies with more nuance than ever — and that’s 
+creating a market reaction decidedly lacking in nuance. Last week’s divergent 
+responses to Meta Platforms Inc. and Microsoft Corp.'s earnings showed that 
+concern has moved beyond productivity to an attempt to identify whose profits 
+will be hurt by artificial intelligence. Hence this week’s titanic market 
+rotation.
+
+Traders want to see strong results and are prepared to tolerate huge 
+expenditures on AI if the bottom line is good. But if earnings disappoint, big 
+capex is assumed to have been wasted. Alphabet Inc.’s fourth-quarter report 
+followed a familiar script, with a slight twist. Revenue at Google’s parent 
+beat expectations, but plans to raise capital spending sent the shares sliding 
+in after-hours trading. They oscillated widely from there, but traders 
+ultimately didn’t find the numbers reassuring:
+
+Meanwhile, this is how the Nasdaq has performed in the past two months — there 
+is a clear ongoing rotation away from technology into other parts of the market:
+
+The downturn over the last few days for software stocks, however, is much more 
+pronounced. The sector is down by more than 17% year-to-date. It turns out that 
+AI can be bad even for software groups; the catalyst for Tuesday’s bloodbath 
+was Anthropic’s latest AI tool. Thomson Reuters Corp., one of the casualties, 
+plunged by as much as 20% — its biggest decline on record — on concern that the 
+AI tool would deprive it of its large business in software for legal workflow. 
+Any businesses at risk of being disrupted by AI can expect similar treatment. 
+This is how the S&P1500 Software index has performed relative to the S&P 1500 
+so far this decade:
+
+How long this malaise continues largely depends on the factors driving it. AJ 
+Bell’s Danni Hewson likens it to last year’s DeepSeek moment, and suggests the 
+effects could be far-reaching:
+
+Much emphasis has been placed on the frothy sums of money being circulated in 
+the AI industry and the high valuations placed on companies within it. Perhaps 
+less attention has been paid to which companies might find their business 
+models under threat from AI, partly because it’s such a new and evolving 
+technology with little visibility about the eventual winners and losers.
+
+Even for perpetual tech bulls like Louis Navellier of Navellier & Associates, 
+the rout signals something is amiss. The build-out demands of the massive data 
+centers have powered a rally in memory-chip makers, but have brought a 
+valuation hangover to earlier winners not doing so well in this boom. Advanced 
+Micro Devices Inc. led the Wednesday selloff with a post-earnings slide of 17%.
+
+If there is a danger of financial disruption, it comes from the effect on 
+quant investors’ portfolios. Many use factors to drive their investments, 
+particularly momentum — the tendency for winners to keep winning while losers 
+keep losing — and value. Looking at the Bloomberg Factors To Watch function, 
+value beat momentum by the biggest margin Wednesday sincethe day in November 
+2020 <https://bloom.bg/49ZP2VE> when spectacularly successful early pilot 
+results on the Covid vaccine convinced investors that the end of the pandemic 
+was in sight. A move on this scale without such an obvious catalyst is very, 
+very unusual, and some may have been caught out:
+
+With unease around AI still unresolved, investors are looking elsewhere for 
+value and finding it. Shares of companies with little direct tech exposure, 
+from consumer staples to energy producers, are enjoying a rare moment in the 
+sun. But it’s less a vote of no confidence in tech than a search for businesses 
+that stand to benefit from a firmer economy. The Russell 1000 Value Index has 
+advanced 8.6% since November, edging its growth counterpart by 14 percentage 
+points:
+
+Staples’ rebound, with Walmart Inc. topping $1 trillion for the first time 
+this week, has been even more spectacular:
+
+Confidence in the economy remains intact. Revisions to third-quarter GDP point 
+to robust growth, driven by consumer spending and AI investment. Bank of 
+America’s analysts, including Aditya Bhave, believe they will continue shaping 
+the first half:
+
+Consumers will soon benefit from One Big Beautiful Bill Act stimulus to the 
+tune of $135-140 billion (0.6% of disposable income). Last year's shutdown 
+should also boost first-quarter growth by 0.5-1 percentage point. All this sets 
+the stage for front-loaded GDP growth in 2026.
+
+But it appears that consensus forecasts are not accounting for these factors: 
+They are almost flat for this year:
+
+This is still very much a rotation, not a selloff. Roughly two-thirds of the 
+S&P 500’s members gained for the day, and the gauge’s equal-weighted version 
+hit an all-time high. But the money has been flowing into the stocks that have 
+borne the brunt of the rout, so someone is going to take big losses. And even 
+if the Magnificent Seven tech platforms are excluded, the US market is sharply 
+underperforming the rest of the world:
+
+Does tech’s sudden loss of momentum reflect more than a passing pause? As 
+Navellier rightly points out, this is a “fast-moving situation” and could yet 
+deliver meaningful gains in labor productivity and profit margins in the long 
+run. But investors will need more convincing evidence, starting with Nvidia 
+Corp.’s earnings later this month. The bar is being set high.
+
+-- Richard Abbey
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=16768339&m=11b724c487f61753eb1a7a4a5f3ef261&p=02052026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=16768339&m=11b724c487f61753eb1a7a4a5f3ef261&p=02052026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+Land of the Rising Earnings
+
+Japan has an election on Sunday <https://bloom.bg/4rwWNbq> and the market 
+excitement is already intense. Attention naturally focuses on the charismatic 
+new Prime Minister Sanae Takaichi, who looks likely to win a fresh mandate, and 
+whose words have sent the yen on a switchback journey over the last week. But 
+for investors, something even more exciting is going on in the stock market, 
+and it looks as though it can endure regardless of the result.
+
+Years of corporate governance reforms to jolt the country’s old-line 
+industries into life are suddenly having an effect. It’s even matching the 
+intense hype around some of the central players in the US technology boom. That 
+showed up on Tuesday ingood results 
+<https://links.message.bloomberg.com/s/c/sObSo0PAjFVSQyjMTu7uEnZBvxGhLRe7W1bD3b5lsVXJbb3NF_WBWVhiW93Y8d1jLvsydRqVbm9hR1z83PJ8MvrxQ2qA7NIy8bC2gDARJ-gWvQs0pLuKahCmgnsM7pw-nFTW0kObN0djJtYoqva-wqKJOX2kbsSG3Xr-73Ei_hxGY1OUtnH1ruRDOu_e_0M_orEUyiUdKsC6wfYFNgOwJGCHNzCtOOdWixpp-GQpCqEmsdj13A5kvCodW02maSVvyabZfL5C0JJlMpGwIKIG8Vs5Wj7oFGRn55mpevXV_861JF6T5VqVSeggKXI3rNzT3St4Q27rC3zJUPJyYVtCfxWnoRq3kYjd8_TWqNdIc9LMNgTXAYoGn10c0Bo/M94zmT48k0nBdF8dl-t69cMh1pQNPpyE/17>
+ from Palantir Technologies Inc., one of the most exciting and controversial 
+players in Silicon Valley, and Sumitomo Electric Industries Ltd., a rather dull 
+Japanese group that makes wires. Palantir gained 6.8%, but Sumitomo far 
+outstripped it, up 12%. Amazingly, these two disparate companies’ share prices 
+have both tripled since the US election:
+
+(On Wednesday, Palantir was caught in the US tech bloodbath while Sumitomo 
+gained some more.) There are many reasons for the sudden renaissance of a 
+Japanese metal-basher, but the main one is that investors are finally prepared 
+to trust the nation’s companies, and buy them because they’re cheap, rather 
+than shun them as perpetual value traps. The Topix non-ferrous metals index, 
+which includes Sumitomo, had been trading below book value for many years. 
+Suddenly, it has hit its highest multiple in almost two decades:
+
+Companies have aided this change of sentiment by at last heeding shareholders 
+and paying out cash rather than hoarding it. Dividends-per-share have been 
+rising sharply, as have stock buybacks. (If you are reading this on the 
+terminal, open this chart in GP and view on a log scale):
+
+Share prices remain vulnerable to moves in the yen. International investors 
+have long priced Corporate Japan as if it’s one big exporter that needs a cheap 
+currency. And indeed, a look at how this group’s revenues have grown over time, 
+in yen and in dollars, shows how important currency depreciation has been to 
+them:
+
+The yen has plainly been a driver of the massive moves in the last few day. 
+Weekendcomments from Takaichi 
+<https://links.message.bloomberg.com/s/c/vUFGAOjg3wWdsi6OA84MzOHwGfX6DLFeXFF6S67hIybUSomykTbrVGz22FwFLOa_wQEpWS8gYntehkYQr4oSIkqoIHoWmONTta1x-kujI5KJoYUKsApwUtbz683oObIA76C3919FLGrBkv-pmVHnmcP6bc7rtrX18VhU_k8hsQZXzulJ6AiriS1wK7c3erH9XD6asn1vy74JQJeUB3OkbMw-0fgFZSo3G2RCQXvlDDr_batstOI2hjwB_IzVECBZnHlg1wiM0VACyfb7EFDgV2mesy4Qbe8LSV8aWNlTmUkKyynDoXwjxnWkdSxB94ECW7hei64OLvwUiSuZEXfxDwCdfCx3eNQ7YCQDPvgLNttEzf23-tqdVEgnxRY/VZIzHYOm2VtHodIusvMPtujZIP6Gvcog/17>
+ that there were benefits from a weak yen sharply sent it lower. She haswalked 
+them back 
+<https://links.message.bloomberg.com/s/c/4Mg37THmZehZU0_45fNESBtst5m6HCXrJVi5-AxDJ5ZysZFdXPeS5nVtsMQZKw6nLn5F7miiLMtOKsM1prYH0PExR_KoeKYO_qIVmsERz-PU95gLtrAu3TuiNHZQ5saPFL2Px0IaDGepXPsUdAnzM14pPI17S2kB1PnYA5oAwo5WoMvCL8lERGlydCwSwKHxMVMRzZ0-y3X7tN6Os2EWjGKTutNvcHY3hjFuKQm-KT0NbrPd420r8Ezki0UbGUQnewOdtfcdWIktrKZu2z91u-9FXJ76_IG-HoYet0JqcDNRXSJSqfqDjlMvxYmoC2s8IRJpyQT5spEREzlNwNj12vtwYSVxH0pfMuLOk-pN_pJA_KYsDpOa9NrODWg/ASZRMk3JMQ_gwdEi5v_muKHtbU8i0xjY/17>
+ somewhat; if she gets the big mandate she hopes, she will need to say more. It 
+will be a big surprise if she doesn’t as the odds that her party wins at least 
+the 233 seats needed to control the lower house have surged in the last two 
+weeks:
+
+The bond market will also drive her agenda. Yields on longer-dated Japanese 
+Government Bonds have undergone a historic surge in recent weeks. As Japan has 
+massive debt outstanding, it’s possible to read this as an incipient fiscal 
+crisis, as Takaichi promises expansion. It can also be read as a belated 
+normalization. David Roberts, fixed-income strategist at Nedgroup, said:
+
+Much of what has been happening to Japanese bonds reflects catch-up to other 
+G7 markets. Bank of Japan action curbed yield increases until a couple of years 
+after other G7 Central Banks. Compared with say the US, most of the move could 
+be seen as ‘mean reversion’ and has happened.
+
+He added that the gap between Japanese 30-year and US 10-year bonds is “more 
+or less the same” as it was five years ago. Takaichi has warned that the rise 
+in yields won’t necessarily be capped, and the gap could narrow further, but an 
+LDP victory is surely now priced in, and “you get paid an extra 3% to own 
+30-year Japan when currency hedged into US.”
+
+Meanwhile, the biggest takeaway from Japanese markets so far this year should 
+be that the strength in stocks looks durable. This spasm of yen strength, like 
+the last one around Liberation Day last April, sparked a brief fall in stocks. 
+But the reaction in equities was far smaller this time and swiftly reversed:
+
+Political excitement shouldn’t obscure the change that has been wrought in 
+Corporate Japan — that will continue whatever the election result.
+
+
+
+ Survival Tips 
+
+
+
+My tip to any of you living in New York is to do an inverse Duke Ellington 
+<https://bloom.bg/4agkHkA>: Don't take the A-train <https://bloom.bg/4thEMQ5>. 
+Production of this newsletter was made harder by my decision to board an 
+A-train (as I and most people in my neighborhood do every day) at just the 
+wrong time. It came to a halt before it had fully left the platform, and stayed 
+there for an hour. Then all the passengers (New Yorkers are a morepatient bunch 
+than we're given credit for) <https://bloom.bg/4qhm1cE> had to troop to the 
+back to get out of the one open door that hadn't left the platform. Our train 
+was out of service. We were told to take the next one. The same thing happened. 
+What rankled was having to sit in a motionless train with the doors closed for 
+a total of close to two hours, without ever even leaving the station. Luckily, 
+the book I was reading was good — you might try theMaisie Dobbs 
+<https://bloom.bg/4ajU3Ht> novels by Jacqueline Winspear 
+<https://bloom.bg/4ajjKb3>. 
+
+More From Bloomberg Opinion:
+
+ * Warsh <https://bloom.bg/4avSvey>’s White House Honeymoon Will Be Brief: 
+Clive Crook 
+ * Get Ready for a More Pragmatic Latin America <https://bloom.bg/4rAX9xS>: 
+Juan Pablo Spinetto 
+ * Nvidia’s Doubts About OpenAI <https://bloom.bg/4ch25mO> Are a Warning for 
+Microsoft: Parmy Olson 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/NFD9OihUNm5J_0jleEErt2J0OkSInJrD1Qbzlcn860muLKPF0EMlP5LMnGIWch4xegtwHe74Kov_DKI-D3EaCj0Qq77uVfZcBqWNKRTF7u-NKZU3M3x_-7YZ48Sfi_e4qcLE-mUxNAHkHYECRTQvbee34e6FWYNyFq-kz-sxKMRGM4R7NoEQWR-ahMitgiWhQekYmdQZQT7Ldx_IBBKzmPYP2XCtKzD0CpZq-j8b_RGb9xhlNOC-ujmASPhqTU7GU9JQyQlbItqf499NasDU7uUY-7sqbZWAxwRkKV0dSjVLYMk8O0z17AgLXf3ab0qGFnlbHcVI8v2fqrnG4a-b42boHe1lndpE/aHSkoV94SdQU3dHge2VGszdE67yMgeOp/17>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, May 21, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, May 21, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">A new Fed era begins amid a hawkish pivot</p>
+<p class="para-body">Kevin Warsh will be sworn in as Federal Reserve Chair on Friday, inheriting an FOMC that has grown markedly more hawkish since the outbreak of the Iran war redrew the inflation landscape. Minutes from Jerome Powell's final meeting indicate "almost all participants" expect upward pressure on inflation from energy and supply-chain disruptions to persist, while "many" preferred dropping the easing bias from the statement altogether. A majority signaled some firming may be appropriate if inflation runs persistently above 2%. Markets have repriced accordingly: fed funds futures now imply rates topping 4% next summer, versus 2.8% priced in late February, with traders assigning roughly 70% odds to a quarter-point hike by December. Warsh, nominated as a dove, appears positioned to cap rates rather than cut them — Standard Chartered's Steve Englander notes he may lean on trimmed-mean inflation and unit labor costs to delay hikes, though a credible case for cuts remains elusive given the energy shock. Jamie Dimon, speaking to Bloomberg Television, warned rates "could be much higher than they are today."</p>
+<p class="para-title" style="color:#5597cb;">Nvidia delivers, but SpaceX steals the narrative</p>
+<p class="para-body">Nvidia reported 85% revenue growth, 62% gross margins, and authorized an additional $80 billion buyback — among the largest capital return commitments on record. The stock nonetheless dipped in extended trading as the forward guidance underwhelmed elevated expectations. Attention shifted to SpaceX's public IPO filing, targeting up to $75 billion in proceeds via Nasdaq under ticker SPCX. The prospectus disclosed $18.7 billion in 2025 revenue and a $4.94 billion loss, alongside a super-voting structure preserving Elon Musk's control and performance milestones tied to a Mars colony. OpenAI is reportedly preparing its own filing within weeks, with Anthropic potentially following in October. The 30-year Treasury yield touched levels last seen in 2007, and the 2-year reached its highest since February 2025, complicating the equity backdrop.</p>
+<p class="para-title" style="color:#5597cb;">Microeconomic strain from immigration enforcement</p>
+<p class="para-body">Brookings data show 82% of Los Angeles County businesses report negative impacts from ICE operations, with 44% losing more than half their revenue; in Chicago, 95% of businesses in affected corridors report declining sales. While the aggregate GDP effect remains modest, the concentrated damage to small firms may serve as an early indicator of broader policy-driven disruption. Separately, Moody's downgraded Mexico to one notch above junk, citing fiscal deterioration — a development with implications for North American credit and trade exposures.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">AI optimism drives historic Asian tech rally</p>
+<p class="para-body">Asian equities staged a powerful advance following Nvidia's earnings and SpaceX's IPO filing, with the gains concentrated in semiconductor and hardware supply chains where the region holds structural advantages. South Korea's Kospi surged 8.4%, while Taiwan's Taiex rose 3.4%. Samsung climbed 8% after reaching an eleventh-hour deal with its union — averting a potentially crippling strike at the world's largest memory-chip maker — that could distribute roughly ₩40 trillion ($26.6 billion) in AI-linked bonuses, averaging around $340,000 per chip employee. SK Hynix jumped nearly 8%, lifting its market capitalization to $910 billion. Samsung and TSMC have together added approximately $1.2 trillion in market value year-to-date. South Korean export data for May 1-20 reinforced the narrative, with working-day-adjusted shipments up 53% year-on-year and chip exports surging 202%. Japan posted a third consecutive trade surplus as semiconductor exports rose 44%, partly offset by a 64% collapse in crude imports reflecting Hormuz disruptions.</p>
+<p class="para-title" style="color:#e07b39;">Indonesia's policy turn unsettles markets</p>
+<p class="para-body">Bank Indonesia delivered a surprise 50bp hike as the rupiah traded near record lows and the Jakarta Composite extended its year-to-date decline to roughly 26% — the world's worst-performing major equity market. The move followed President Prabowo's announcement of a new Danantara-controlled state entity to oversee exports of palm oil, coal, and ferro-alloys (collectively over $65 billion in 2025 shipments), a step that reportedly blindsided senior officials. While Jakarta frames the overhaul as targeting under-invoicing, investors read it as deepening economic nationalism. The hike may provide only temporary relief absent a shift in policy direction.</p>
+<p class="para-title" style="color:#e07b39;">Regional pressures mount elsewhere</p>
+<p class="para-body">The Reserve Bank of India is reportedly weighing all options — including a rate hike, expanded FX swaps, and overseas dollar issuance — after the rupee touched nearly 97/USD. Trump's renewed suggestion of a direct call with Taiwan's Lai Ching-te introduces fresh tail risk to recently stabilized US-China ties. A BOJ official signaled support for a near-term hike, with June increasingly in play.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Eurozone activity contracts again under energy shock</p>
+<p class="para-body">The composite PMI fell to 47.5 in May from 48.8, holding below the 50-threshold for a second consecutive month and marking the sharpest contraction in two and a half years. The data confirm that the Iran war and accompanying surge in energy costs are weighing materially on activity. The divergence within the bloc is notable: Germany's composite reading was broadly stable, while France's plunged to its lowest level since 2020. The European Commission separately projected the fastest euro-area inflation since 2023, leaving the ECB in an increasingly uncomfortable position as it weighs further rate increases against deteriorating growth. French political risk eased somewhat with parliament's confirmation of Emmanuel Moulin as Bank of France governor, removing one source of uncertainty around the ECB's policy debate.</p>
+<p class="para-title" style="color:#4a9e6b;">UK fiscal response and Foreign Office retrenchment</p>
+<p class="para-body">Chancellor Rachel Reeves is preparing a package to ease cost-of-living pressures stemming from the Iran conflict, including free summer bus travel for children and potential cuts to food tariffs. The UK also concluded a long-awaited free-trade agreement with the Gulf Cooperation Council, deepening commercial ties with oil-rich states at a sensitive moment. Less constructively, the Foreign Office is undertaking job cuts that will roughly halve the team handling Iran-related fallout — a curious resource decision given the conflict's persistence. UK May PMI data also showed waning momentum and mounting price pressures.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate and political notes</p>
+<p class="para-body">Spanish construction group ACS, chaired by Florentino Pérez, has emerged as a significant beneficiary of the AI capex cycle through data-center contracts with Meta and a $2 billion partnership with BlackRock. Ubisoft fell 14% in Paris after guiding to declining sales on a thinner release slate. In Hungary, the ruling Tisza party plans to use its two-thirds majority to impose an eight-year prime ministerial term limit, effectively barring Viktor Orbán's return. Chancellor Merz proposed associate EU membership for Ukraine, though Kyiv has previously been cool to the formulation.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Oil, Hormuz, and the Diplomatic Track</p>
+<p class="para-body">Crude prices remained the central macro variable, with Brent trading near $106 after a 5.6% decline Wednesday on hints of progress in US-Iran talks. President Trump told reporters Washington was in the "final stages" with Tehran, and Iran's Foreign Ministry confirmed it was reviewing the US response to its 14-point proposal, which envisions a short-term arrangement reopening the Strait of Hormuz in exchange for lifting the blockade on Iranian ports, followed by deeper nuclear negotiations. The diplomatic signals, however, sit alongside continued physical disruption: Goldman Sachs estimates visible global crude and product inventories are drawing down at a record 8.7 million barrels per day in May, nearly double the conflict's running average. Bloomberg Intelligence's latest survey shows market participants increasingly converging on oil capped near $100 over the next year, implying demand destruction rather than supply restoration does the rebalancing work. A resolution remains far from certain, and reports that Iran's supreme leader directed retention of near-weapons-grade uranium underscore the gap still to bridge.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary Policy Divergence Widens</p>
+<p class="para-body">The Fed minutes revealed a markedly more hawkish FOMC than previously understood, with "almost all" participants expecting persistent inflation pressure from elevated energy prices and "many" preferring to drop the easing bias entirely. Futures now imply fed funds above 4% next summer, versus 2.8% pricing pre-conflict. Kevin Warsh, sworn in Friday as Fed Chair, inherits a committee whose consensus has shifted beneath him; the realistic ceiling on his dovishness appears to be holding rates rather than cutting. Bank Indonesia, by contrast, was forced into a surprise 50bp hike as the rupiah traded near record lows, compounded by President Prabowo's announcement that palm oil, coal, and nickel exports will be routed through a state entity under sovereign wealth fund Danantara — a move that blindsided even senior officials and sent the Jakarta Composite down 26% year-to-date. The Reserve Bank of India is reportedly weighing similar measures, including a rate hike, after the rupee touched nearly 97 per dollar.</p>
+<p class="para-title" style="color:#8b5cf6;">Asia's AI Cushion</p>
+<p class="para-body">Korean and Japanese trade data suggest the semiconductor complex is partially offsetting the energy shock for net importers, with Korean chip exports up 202% year-on-year in the first 20 days of May and Japan's trade balance holding in surplus despite a 64% collapse in crude import volumes. Oxford Economics frames the resulting external surpluses as a narrower echo of the 2000s Asian savings glut, with capital recycling indirectly supporting US asset prices even as Treasury yields press higher.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

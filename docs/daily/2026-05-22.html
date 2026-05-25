@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, May 22, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, May 22, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Markets: AI Concentration Sustains the Rally as Bond Markets Reprice Inflation Risk</p>
+<p class="para-body">US equity futures pointed modestly higher overnight, with the S&P 500 on track for an eighth consecutive weekly gain — the longest streak since 2023. The breadth picture, however, remains notably narrow: an equal-weighted version of the S&P 500 is unchanged since late February, while the cap-weighted benchmark has risen 8.2% since the start of the US-Israel war against Iran. Ten technology names — led by Nvidia, Amazon, Apple, Alphabet and Broadcom — account for the entirety of the index's gain over that period. Workday rose roughly 11% premarket on results that eased concerns about AI-driven disruption to enterprise software, while Take-Two and Zoom also gained. US-listed shares of Futu and Up Fintech fell more than 35% on China's cross-border brokerage crackdown. Behind the equity advance, the longer end of the Treasury curve continues to signal discomfort. G7 long yields touched a two-decade high this week as investors demand greater compensation for inflation risk tied to the Strait of Hormuz disruption. Pimco's Dan Ivascyn noted that prior energy shocks have historically preceded recessions, a view that, if it gains traction, points to lower equities, wider credit spreads and eventually lower yields. Rapidan warned that a Hormuz disruption persisting through August could push Brent toward $130 and produce a demand shock comparable to 2008.</p>
+<p class="para-title" style="color:#5597cb;">Fed: Warsh Sworn in as Chair</p>
+<p class="para-body">Kevin Warsh takes the Fed chair today, with markets focused less on imminent rate action than on potential changes to the communications framework. ABN Amro analysts suggest the SEP and press conference cadence could be scaled back within 6–12 months, and that Warsh may commission an external review of the Fed's framework — a step pointedly not taken after the post-Covid inflation overshoot.</p>
+<p class="para-title" style="color:#5597cb;">Fiscal and Political</p>
+<p class="para-body">Senate Republicans rebuffed Trump's $1.8 billion request for a "weaponization" account to compensate political allies, a notable intra-party setback. Separately, Trump reversed course and announced 5,000 additional US troops for Poland. US markets are closed Monday for Memorial Day.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">China retains structural leverage as Xi-Trump dynamic stabilizes</p>
+<p class="para-body">Following this week's Xi-Trump summit, both sides notably downplayed rare earths in their public remarks — a shift that itself signals where leverage now sits. Bloomberg Economics estimates roughly $1.2 trillion of US GDP touches rare-earth-dependent industries, and despite some $10 billion in global public capital flowing into alternative mines and refineries this year, even optimistic forecasts see Chinese dominance persisting through 2030. The next Xi-Trump meeting, likely at the White House in September, precedes the expiration of the current trade truce, which paused Beijing's threatened extraterritorial export controls. Separately, capital flows continue to favor China: domestic banks received $61.9 billion in net inflows on behalf of clients in April, the sixth month of inflows in seven, supporting both the yuan and equities. However, China's so-called "national team" is reportedly cutting ETF holdings by roughly 90% in H1, and exchanges are scrutinizing AI-fueled rallies — suggesting officials are managing froth rather than encouraging it.</p>
+<p class="para-title" style="color:#e07b39;">Japan faces a widening policy tension</p>
+<p class="para-body">Core inflation slowed to a four-year low, ostensibly giving the BOJ room to pause, yet PM Takaichi reversed course to unveil a roughly $19 billion stimulus package including renewed energy subsidies — a response to Hormuz-driven fuel costs and yen weakness. The combination complicates the BOJ's hiking path while adding pressure to already restive JGB markets.</p>
+<p class="para-title" style="color:#e07b39;">India's rupee approaches record lows near 97/USD,</p>
+<p class="para-body">with the RBI reportedly weighing measures echoing its 2013 taper-tantrum playbook, including rate hikes, FX swaps and steps to attract offshore dollars. With global yields elevated and outflows persistent, the efficacy of such measures remains to be seen.</p>
+<p class="para-title" style="color:#e07b39;">Southeast Asia bears collateral damage from the Iran conflict</p>
+<p class="para-body">Indonesia's plan to route coal, palm oil and nickel exports through a Danantara-controlled entity drew a Moody's warning over centralization risks. Thai and Philippine fishing fleets are idled by diesel costs, and DeepSeek is reportedly raising up to $10 billion at a $45 billion valuation, signaling continued investor appetite for Chinese AI despite commercialization risks the founder himself flagged.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Macro and inflation dynamics dominate as Iran-war energy shock filters through European economies</p>
+<p class="para-body">Brent climbed back above $104/bbl, reigniting concerns that the closure of the Strait of Hormuz — if sustained through August — could push crude toward $130 and deliver a stagflationary impulse comparable in scale to past oil-driven downturns, according to Rapidan Energy Group. ECB President Christine Lagarde maintained that medium-term inflation expectations remain anchored at target, though commentary from at least one Governing Council member kept the door open to a further rate hike, and the EU's economic affairs chief said the ECB "will have to respond." Long-end G7 sovereign yields touched two-decade highs this week as investors price in the risk that persistent supply shocks shift 2% targets from ceiling to floor. The tension between Lagarde's anchored-expectations message and bond-market positioning bears watching.</p>
+<p class="para-title" style="color:#4a9e6b;">UK data and politics weighed on sentiment</p>
+<p class="para-body">Retail sales fell at the sharpest pace in nearly a year, and a closely-watched survey showed consumer confidence among lower earners deteriorating markedly as the energy shock erodes household budgets. Chancellor Rachel Reeves moved to close a corporate tax loophole used by oil and gas producers, projecting roughly £300 million annually to fund cost-of-living measures — a modest sum relative to BP and Shell's combined $3.7 billion in UK tax payments last year, but one that risks compounding the post-2022 windfall-tax drag on North Sea investment. Poland is contemplating a similar windfall levy that could raise 6 billion zloty from Orlen, while France's budget minister flagged TotalEnergies' "exceptional profits" without committing to new taxation. <strong>On the data calendar</strong>, Germany released final Q1 GDP and France issued business confidence figures; the German Ifo print earlier in the week showed a first improvement in business sentiment since hostilities began, suggesting some resilience. <strong>In corporate news</strong>, the Estée Lauder–Puig tie-up around Charlotte Tilbury collapsed over compensation terms, sending Puig shares sharply lower. Shell faces Dutch supreme court arguments today from climate activists seeking court-mandated emissions cuts aligned with a 2050 net-zero pathway.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Iran-US Standoff Keeps Energy Markets on Edge</p>
+<p class="para-body">Iran said the latest US proposal "partly bridged the gap" in negotiations, but the diplomatic opening was immediately complicated by Supreme Leader comments insisting Tehran retain its uranium stockpile, and by a dispute over a proposed Iran-Oman permanent toll regime in the Strait of Hormuz. President Trump reiterated threats of renewed strikes if talks collapse. Brent rose 2.6% to above $105 a barrel, with WTI near $98, reflecting two-way risk pricing rather than directional conviction. Rapidan Energy warned that if Hormuz disruptions persist through August, Brent could approach $130, with macroeconomic consequences comparable to 2008. The conflict has also reportedly cost US forces more than two dozen MQ-9 Reaper drones — close to $1 billion in equipment — underscoring that escalation risk remains material.</p>
+<p class="para-title" style="color:#8b5cf6;">Inflation Risk Reprices the G7 Bond Complex</p>
+<p class="para-body">Long-dated yields across the $50 trillion-plus G7 sovereign market reached two-decade highs this week as investors demanded greater compensation for inflation persistence. Memories of the post-Covid "transitory" misjudgment are shaping central bank reaction functions: the RBA has already delivered three hikes this year, and ECB officials including Lagarde have signaled vigilance, with at least one policymaker leaning toward a hike. TS Lombard's Dario Perkins characterized the environment as potentially heralding "rate hikes everywhere," with 2% targets increasingly functioning as a floor rather than a ceiling. Pimco's Daniel Ivascyn cautioned that prior energy shocks have historically culminated in recession — a tension worth monitoring as tightening bias collides with demand destruction risk.</p>
+<p class="para-title" style="color:#8b5cf6;">Divergence and Second-Order Effects</p>
+<p class="para-body">Japan provides a counterpoint: core inflation slowed to a four-year low, complicating the BOJ's tightening path even as PM Takaichi announced a ~$19 billion stimulus package with revived energy subsidies. India's RBI is reportedly revisiting its 2013 taper-tantrum toolkit as the rupee nears 97/USD. The shock is rippling unevenly through real economies — Southeast Asian fishing fleets are idling on diesel costs, while European governments from the UK to Poland eye windfall taxes on oil majors' trading profits, a move that may further erode regional upstream investment.</p>
+<p class="para-title" style="color:#8b5cf6;">Rare Earths: A Slower-Moving Constraint</p>
+<p class="para-body">China's dominance over rare earth separation and magnet production — underpinning roughly $1.2 trillion of US GDP-linked activity — appears likely to persist well into the next decade despite roughly $10 billion in global public funding for alternatives this year. The asymmetry will continue to shape US-China engagement ahead of the September trade truce expiry.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, April 09, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, April 09, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">The dominant US market story on April 9 remains the aftermath of the US-Iran ceasefire, though the initial euphoria is already giving way to more measured assessment. Equities rallied sharply on Wednesday — S&P 500 futures have since eased, trading around 6,800 — while the rates market has not followed suit. Fed funds futures remain priced for zero cuts in 2026, a stark reversal from the two reductions that had been fully priced before hostilities began. Swaps markets now imply inflation above 3% over the next twelve months, against sub-2.25% at the start of the year, reflecting the accumulated energy shock rather than any geopolitical resolution. A growing number of Fed officials have reportedly flagged the risk that the Iran war stokes prices further, and with February core PCE data due, the inflation picture is unlikely to clarify in the near term. Earnings season arrives at an unusually fraught moment. FactSet projects S&P 500 earnings growth of roughly 13% year-on-year, which would mark a sixth consecutive quarter of double-digit gains, and Bloomberg Intelligence estimates full-year growth of approximately 16%. Energy and AI-linked technology are the principal contributors; the broader market's earnings trajectory has, if anything, deteriorated. Analysts at Morgan Stanley note the Magnificent Seven now trade at multiples comparable to consumer staples, a dislocation that has historically preceded multiple expansion, though the thesis requires confirmation that AI capital expenditure is translating into broad profitability — a question investors expect to dominate first-quarter conference calls. Separately, a Democratic congressman has written to the SEC and CFTC requesting an investigation into unusual trading activity in oil and equity futures markets prior to the postponement of US military strikes against Iran last month. Morgan Stanley launched a Bitcoin-tracking ETF under the ticker MSBT — the first such product from a traditional Wall Street investment bank — underscoring the asset class's institutional entrenchment even as Bitcoin has fallen roughly 40% from its October peak, trading near $71,000. On the corporate front, Constellation Brands guided below expectations on beer volume growth, while Marvell Technology and Texas Instruments gained on analyst upgrades.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets slipped modestly on Thursday as ceasefire optimism faded and oil prices partially rebounded, with WTI futures recovering toward $98-99 a barrel. The China CSI 300 fell 0.6%, while broader Asian sentiment remains fragile given the region's acute energy import dependence. China occupies a structurally ambiguous position in the current environment. While Bruegel warns that Beijing's reliance on Iranian crude represents a "severe test" for its energy strategy, Deutsche Bank's Jacky Tang argues China is the war's principal economic beneficiary given its status as the world's dominant clean-technology producer. As Japan, South Korea, and India accelerate energy diversification, the equipment required — solar panels, batteries, and associated infrastructure — will largely originate from Chinese manufacturers. Beijing is also weighing a substantial bailout for its state-run airlines, with options including subsidies, tax breaks, cheap state-backed loans, and potentially mergers, as elevated fuel costs push the "Big Three" carriers deeper into losses. Two fully laden Chinese supertankers are positioned at the mouth of the Strait of Hormuz, potentially among the first vessels to test the fragile transit arrangement. Japan's consumer confidence fell in March by the most since the early stages of the Covid pandemic, compounding concerns about a security vacuum in Asia as US military assets remain concentrated in the Persian Gulf. Seven & i Holdings delayed the planned US listing of its convenience store operations, sending shares down 4.6%, citing insufficient progress in turning around the business. Fast Retailing, by contrast, raised its outlook on strong Japan sales and global demand. In India, foreign investors have sold $17.8 billion in equities over 23 consecutive sessions — a record outflow pace — as higher crude prices fan inflation fears and squeeze margins in an import-dependent economy. State elections are running concurrently, functioning as a de facto referendum on Prime Minister Modi's handling of the energy crunch, with fuel shortages visible on the campaign trail. Sri Lanka, meanwhile, is nearing a $700 million IMF disbursement after clearing a program review, with growth and reserves tracking ahead of plan despite ongoing vulnerability to oil price volatility. TPG is exploring a sale or IPO of Asia OneHealthcare, with a potential valuation of up to $7.5 billion.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European markets opened with mixed futures on Thursday as ceasefire optimism gave way to renewed uncertainty over whether the Iran truce will hold. The Stoxx Europe 600 was down 0.7%, reflecting the broader retreat from Wednesday's risk-on surge. The EU's senior economy official warned that Europe remains at risk of stagflation despite the ceasefire, a concern reinforced by data showing German industrial production declined even before the outbreak of hostilities — suggesting structural weakness predates the energy shock. UK mortgage rates rose above 5% in March, according to RICS data, with homebuyer demand falling to its lowest since August 2023, demonstrating that the Middle East conflict is transmitting through borrowing costs into domestic property markets. Labour has slipped to fourth place in UK national polling ahead of May local elections, a notable deterioration in Prime Minister Starmer's political standing that may complicate the government's fiscal and policy choices. On geopolitics, the US has formally requested that European NATO allies submit concrete plans within days to help secure the Strait of Hormuz, marking a shift from rhetorical commitment to operational demand. Trump publicly berated the alliance again, raising the Greenland issue, after NATO members declined to participate in the Iran operation or offer basing rights. This friction is creating political space for alternative European alignments: former Italian Prime Minister Conte called for deeper engagement with China following repeated US tariff threats, while Hungary's Viktor Orbán faces the most serious electoral challenge of his sixteen-year tenure ahead of Sunday's vote — an outcome with ramifications extending from Brussels to Kyiv. Aldi and Lidl's expansion rivalry has become a minor illustration of continued UK consumer bifurcation, with both German discounters competing for a site in the affluent Norfolk town of Holt.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The central market event of the week remains the fragile US-Iran ceasefire announced Tuesday, which has delivered a sharp but already wavering relief rally. World equities gained 3.26% on Wednesday; oil fell 12.1% — its largest single-day decline since April 2020 — before rebounding approximately 4% on Thursday as Tehran alleged ceasefire violations and Israeli strikes in Lebanon intensified. Vice President Vance will lead US-Iran talks in Islamabad on Saturday, and Trump has pledged to keep US forces in the Persian Gulf pending a final agreement. The Strait of Hormuz remains functionally closed. Only three vessels transited on Wednesday following the ceasefire announcement. Physical crude markets remain acutely stressed: Dated Brent struck a record above $140 per barrel on Tuesday before falling to around $120, still commanding a spread of more than $20 above benchmark for North Sea grades. The EIA estimates the conflict has removed approximately 314 million barrels from global supply to date — roughly 80% of the IEA's record emergency reserve release. Goldman Sachs has flagged Brent averaging above $100 through 2026 if the Strait remains closed for another month. Japan is reportedly considering releasing the equivalent of twenty days of consumption from strategic reserves. The structural consequences of the episode are becoming clearer across several dimensions. First, the economics of modern warfare have shifted materially: cheap attritable drones costing $20,000 are being neutralized by $4 million interceptors, creating an unsustainable cost asymmetry that is drawing US missile inventories away from Indo-Pacific theaters and raising concerns about a security vacuum in Asia — a point explicitly raised by Japan's defense minister. Second, the energy transition is being accelerated by necessity rather than policy, with Asian economies now facing urgent pressure to reduce Middle East import dependence; China's position as the dominant clean-technology supplier makes it a structural beneficiary of this reorientation. Third, emerging market capital flows, which had reached near two-decade highs earlier in 2026, suffered approximately $60 billion in equity outflows during the crisis — a concentrated rather than systemic shock, differentiated primarily by energy import dependence. Wednesday's rally partially reversed those outflows, but the durability of the recovery hinges on whether the Strait reopens in practice, not merely in principle.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

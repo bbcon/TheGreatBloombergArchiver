@@ -1,0 +1,13 @@
+**Asia-Pacific Daily Briefing — February 7, 2026**
+
+Weekend flow is light, but several threads carry meaningful implications for the region.
+
+**China-Panama friction escalates.** Beijing is preparing retaliatory measures against Panama following the cancellation of the Canalport contract involving Chinese-linked operators. While details remain limited, the move underscores China's increasing willingness to deploy economic coercion in defense of overseas commercial interests, particularly those tied to strategic logistics infrastructure. The episode adds to the broader contest over global port concessions in which Chinese state-linked operators have come under pressure across multiple jurisdictions since the start of the Trump administration. For investors, it reinforces political risk around Chinese-operated maritime assets and may accelerate divestment discussions at COSCO and Hutchison-related entities.
+
+**US-India reset in view.** Reporting suggests a surprise Trump trade deal could materially reset bilateral ties after a fractious period marked by tariff disputes and friction over Russian oil purchases. The contours remain undisclosed, and execution risk is meaningful given the administration's track record of late-stage renegotiation. Still, a constructive outcome would be supportive of Indian equities, particularly export-sensitive IT and pharmaceutical names, and could ease pressure on the rupee. It would also have implications for Quad dynamics and India's positioning vis-à-vis China.
+
+**Indonesia sovereign tensions surface.** Following its recent downgrade, Jakarta publicly criticized a Citigroup economist, an unusually personal response that may signal heightened sensitivity to external commentary as the government navigates fiscal slippage concerns. The episode bears watching for any chilling effect on sell-side coverage and for what it implies about the Prabowo administration's market communication approach.
+
+**Gulf-Asia trade corridor deepens.** Standard Chartered projects Asia-Middle East trade reaching $1.5 trillion by 2030 from $905 billion in 2024. Chinese vehicle exports to the UAE reached roughly 560,000 units in 2025—the third-largest destination globally—though a substantial share is transshipped onward. The data reinforces the Gulf's emergence as a re-export hub for Chinese manufactured goods seeking to circumvent direct exposure to Western tariff regimes.
+
+Japan, Korea, and Australia coverage is thin in today's flow.

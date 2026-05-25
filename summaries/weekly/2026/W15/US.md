@@ -1,0 +1,21 @@
+**Labor Market Resilience, With Caveats**
+
+Friday's March payrolls print — released during the Good Friday holiday — offered a modestly constructive headline, with nonfarm employment rising 178,000, the strongest gain since 2024, and the Sahm Rule showing no current recessionary signal. The underlying detail warrants more caution, however: wage growth is decelerating across multiple measures, JOLTS data show hiring near post-GFC lows, quit rates are declining, and average unemployment duration has re-extended above six months. The picture appears consistent with a pre-recessionary plateau rather than genuine resilience.
+
+**Inflation and the Fed's Dilemma**
+
+The energy shock is transmitting rapidly into domestic prices. Retail diesel rose nearly 50% to $5.62 per gallon, gasoline crossed $4 for the first time since 2022, and the Logistics Managers' Index climbed to 65.7 in March — its highest since May 2022. Bloomberg Economics projected March CPI would show roughly a 0.9% month-on-month headline gain, the sharpest reading since June 2022, while more than 70% of ISM non-manufacturing purchasing managers reported rising input prices in March, the largest monthly increase in 13 years. February core PCE data, due Thursday, were expected to confirm year-on-year rates well above 3%. Fed funds futures remained priced for zero cuts in 2026 by week's end, a stark reversal from the two reductions that had been fully priced before hostilities began. Fed Vice Chair Jefferson acknowledged on Wednesday that the Iran conflict will push near-term inflation higher while characterizing current policy as appropriate; the March meeting minutes, released Wednesday, offered limited additional guidance on how policymakers are resolving the growth-inflation tradeoff.
+
+**Equity Markets and Ceasefire Rally**
+
+US equities staged a sharp recovery as the week progressed. S&P 500 futures gained 2.6% on Wednesday following the ceasefire announcement, extending into a seventh consecutive day of gains by Friday — the longest winning streak since October. The S&P 500 traded near 6,800 by mid-week. Health insurers rallied sharply Monday after CMS proposed a 2.5% increase in Medicare Advantage payment rates, with Humana gaining 11% and UnitedHealth rising 7%. Energy names moved in the opposite direction: Exxon Mobil fell 5.8% and Occidental Petroleum dropped 8.1% in premarket Wednesday. The Bloomberg US Corporate High Yield Index closed at a record high by Friday, with junk bond spreads returning to pre-war levels.
+
+**Corporate and Regulatory Developments**
+
+A Democratic congressman requested SEC and CFTC investigations into unusual trading in oil and equity futures ahead of the postponed US strike on Iran. Morgan Stanley launched a Bitcoin-tracking ETF under the ticker MSBT, the first such product from a major Wall Street bank, even as Bitcoin traded near $71,000, roughly 40% below its October peak. An index of SaaS stocks fell 4.8% Thursday to its lowest in over three years, as Anthropic's Claude Managed Agents release renewed fears that AI agents will erode incumbent software competitive moats. SpaceX began investor meetings for a potential IPO that could value the company above $2 trillion. The Supreme Court's earlier invalidation of emergency-powers tariffs, combined with a Court of International Trade order mandating $160 billion in refunds to importers, represents a substantive fiscal and legal development that received less attention than geopolitical headlines. Fed Chair Powell and Treasury Secretary Bessent jointly convened Wall Street bank CEOs over concerns that Anthropic's Mythos AI model could enable sophisticated cyberattacks — an indication that financial regulators are treating advanced AI as an emerging systemic risk.
+
+**Earnings Season Outlook**
+
+First-quarter S&P 500 earnings growth is estimated at approximately 12.5% year-on-year, up from 10.9% prior to the conflict, driven primarily by energy and AI-linked technology. Results from Goldman Sachs and JPMorgan Chase are due the following week and will set the tone for broader market assessment of how corporate America has navigated an unusually turbulent quarter.
+
+---

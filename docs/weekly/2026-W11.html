@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mar 09 – Mar 15, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="daily.html" class="nav-link">Daily</a><a href="#" class="nav-link  active">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Mar 09 – Mar 15, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Macro Backdrop and the Stagflation Tension</p>
+<p class="para-body">The week's central domestic challenge was the collision between a deteriorating labor market and an oil-driven inflation shock. February payrolls — released the prior Friday — recorded the first private-sector decline in five years, with unemployment rising, data that under ordinary conditions would reinforce the case for Federal Reserve easing. Instead, overnight index swap markets moved higher across the week, as energy price pressures overwhelmed the labor market signal. February CPI, released Wednesday, was broadly benign at 2.5% year-on-year core, with shelter costs rising just 0.1% month-on-month, the slowest in five years. The relief was short-lived: core PCE is tracking approximately 3.1% for January, the widest divergence between the two gauges in decades, and Barclays, Morgan Stanley, and Bank of America project core PCE goods prices advancing at least 0.8% in February alone. Citigroup concluded that PCE dynamics should keep the Fed on hold regardless of CPI optics.</p>
+<p class="para-title" style="color:#5597cb;">Federal Reserve and Monetary Policy</p>
+<p class="para-body">The Fed's pre-meeting quiet period added to uncertainty. Goldman Sachs pushed its forecast for the first rate cut to September, while TD Securities quantified the crude threshold at which demand destruction would likely force the Fed to ease aggressively at approximately $150 per barrel. With oil above $100 for portions of the week, the policy space available to respond to a growth slowdown is materially constrained. Kevin Warsh's path to confirmation as Fed chair remained unresolved after a meeting with Senator Thom Tillis produced no clear commitment, leaving the succession question open at a moment of acute institutional scrutiny. The ICE BofA MOVE Index climbed to its highest level since June as traders reduced 2026 rate-cut expectations materially, and Goldman raised its 12-month US recession probability by five percentage points to 25%.</p>
+<p class="para-title" style="color:#5597cb;">Fiscal Policy and the OBBB Trade-Off</p>
+<p class="para-body">The interaction between the Iran shock and Trump's fiscal agenda sharpened as the week progressed. Bloomberg Economics estimated average households stand to receive approximately $800 in additional tax refunds from the "One Big Beautiful Bill" this year — but crude near $83 per barrel is sufficient to neutralize that benefit entirely in higher energy costs, and at $110 per barrel the net household position turns negative by roughly $1,960. The distributional concern is compounded by the regressive nature of energy costs. The 30-year Treasury yield approached 4.90%, and the US disclosed the first six days of the Iran campaign cost over $11.3 billion, with the Financial Times reporting that the US has depleted years of critical munitions stockpiles without a discernible endgame. A fresh Section 301 trade investigation filed against more than a dozen economies — including China, the EU, Mexico, India, and Taiwan — added a second fiscal risk vector, with a public hearing set for May 5.</p>
+<p class="para-title" style="color:#5597cb;">Equity and Credit Markets</p>
+<p class="para-body">The S&P 500 declined roughly 3% in March through Friday, with futures settling near 6,686 on Friday. The Magnificent Seven gauge approached correction territory, down nearly 10% from its peak. Airline stocks fell more than 3% across American, Delta, and United on fuel cost exposure. The Bloomberg US Corporate Bond Index posted year-to-date returns barely above zero, with investment-grade yield-to-worst at 4.9%. JPMorgan moved to restrict lending to certain private credit funds after marking down software company loan values; Morgan Stanley and Cliffwater capped investor withdrawals from multi-billion-dollar private credit vehicles. On the positive side, Amazon raised $37 billion in the fourth-largest US corporate bond sale on record, Oracle surged approximately 10% on strong AI cloud demand, and Hims & Hers Health rose 49% after a Novo Nordisk distribution agreement. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">China: Resilience With Caveats</p>
+<p class="para-body">China's position across the week was one of relative but qualified insulation. Equities declined less than global peers, the yuan held broadly steady, and government bond yields barely moved. Beijing's years of investment in renewables, electric vehicles, and strategic oil stockpiling — with onshore commercial inventories reaching a record 851 million barrels — provided a tangible buffer against the Hormuz disruption. February trade data released Tuesday were striking: exports surged 21.9% year-on-year in the first two months of 2026, well above the 7.2% median estimate, generating a record $214 billion trade surplus for the period. The strength was geographically broad, though exports to the US fell 11% reflecting tariff effects. Bloomberg Economics cautions that China's primary vulnerability is an export demand shock rather than domestic inflation: a sustained oil price above approximately $108 per barrel is estimated to begin meaningfully pressuring external demand in ways that would subtract measurably from GDP growth.</p>
+<p class="para-title" style="color:#e07b39;">China: Policy and Geopolitics</p>
+<p class="para-body">The 15th Five-Year Plan (2026–2030), finalized through the National People's Congress, prioritized advanced manufacturing, semiconductors, and AI while maintaining the fiscal deficit at 4% of GDP. Analysts at Oxford Economics and Gavekal noted that the plan's twenty main indicators are largely unchanged from the prior cycle, and the absence of meaningful household consumption stimulus disappointed investors hoping for demand-side rebalancing. Separately, Beijing enacted legislation cementing Xi Jinping's assimilation policy for ethnic minorities, the PLA resumed aircraft incursions near Taiwan's sensitive airspace, and Chinese authorities moved to restrict state enterprises and government agencies from deploying OpenClaw AI on office computers, citing cybersecurity concerns — a decision that sent Minimax down 6.5% and Zhipu down 6.1% in Hong Kong on Thursday. Foreign Minister Wang Yi described 2026 as a potentially defining year for US-China relations, with the Trump-Xi summit framework for March 31–April 2 in Beijing taking shape through preparatory talks in Paris.</p>
+<p class="para-title" style="color:#e07b39;">Japan, South Korea, and Southeast Asia</p>
+<p class="para-body">Japan's Nikkei 225 fell 5.2% on Monday before rebounding 2.88% on Tuesday, but declined again 1.04% on Thursday as global risk appetite softened. The yen weakened to approximately 159.5 against the dollar by Friday, its softest level since 2024, amplifying Japan's import cost burden and raising stagflation concerns in an economy where activity was already sluggish. More than a third of surveyed economists now expect the Bank of Japan to raise rates in April. South Korea's won traded near its lowest level since 2009; President Lee Jae Myung called for fuel price caps, and parliament approved the $350 billion US investment pledge even as Washington simultaneously launched a trade investigation targeting Seoul. Southeast Asian governments imposed emergency conservation measures across the week: Thailand ordered civil servants to work from home full-time, the Philippines shifted to a four-day government work week, and Vietnam faces potential airfare increases of up to 70%.</p>
+<p class="para-title" style="color:#e07b39;">India</p>
+<p class="para-body">India's exposure to the crisis intensified across the week. New Delhi had been reducing Russian oil purchases under US pressure since December, pivoting toward Saudi and Iraqi supply — precisely the channels most disrupted by the Hormuz closure. Washington's announcement of a one-month sanctions waiver allowing India to resume Russian crude purchases provided material relief; Indian refiners immediately absorbed available Urals spot cargoes, with tankers carrying over 20 million barrels already within a week's sailing time of Indian ports. Nonetheless, the rupee came under sustained pressure, capital outflows accelerated, the Reserve Bank of India intervened in currency markets, and Indian carriers hiked long-haul ticket prices 15%. India is simultaneously in direct negotiations with Iran to secure safe passage for more than twenty tankers through the Strait of Hormuz — a transactional engagement with Tehran that reflects New Delhi's pragmatic approach to energy security. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">ECB and Monetary Policy Repricing</p>
+<p class="para-body">European interest rate markets underwent a substantial reassessment across the week. By Monday, swaps implied two full 25 basis point ECB rate hikes in 2026, compared with one priced the prior Friday, with the first fully priced by June. ECB Governing Council member Peter Kazimir stated explicitly by Wednesday that the war risks forcing the central bank to raise rates sooner than anticipated, while François Villeroy de Galhau struck a marginally more measured tone, noting that next week's meeting is not the moment for action but that the institution will not permit inflation to become entrenched. ECB President Christine Lagarde separately pledged that the bank would act to prevent the conflict inflicting the same inflationary damage as Russia's 2022 invasion of Ukraine. For the Bank of England, money markets shifted from pricing cuts to a 70% probability of a hike by year-end, with ING and RSM UK estimates suggesting UK inflation could exceed double the 2% target if current energy price levels persist. The ECB and BOE face a genuinely uncomfortable configuration: easing into an energy-driven inflation shock risks credibility loss, while tightening risks amplifying a growth slowdown that was already evident in incoming data.</p>
+<p class="para-title" style="color:#4a9e6b;">Growth Data Deteriorate</p>
+<p class="para-body">The macro backdrop deteriorated concretely across several economies. German industrial production and factory orders both declined at the start of the year, tempering expectations for a cyclical recovery in Europe's largest economy. UK GDP was flat in January against expectations for a 0.2% gain — weaker than every analyst forecast — data that predate any meaningful Middle East impact and suggest the economy was already losing momentum. UK consumer sentiment fell to a four-month low in March according to Barclays data. German bund futures slid to an almost 15-year low on Monday, and the EU warned that eurozone inflation could exceed 3% this year if oil remains near $100 per barrel and gas prices stay elevated. The Stoxx Europe 600 fell 1.13% on Wednesday and declined a further 0.22% on Friday, with Tuesday's 2.21% bounce proving short-lived.</p>
+<p class="para-title" style="color:#4a9e6b;">Industrial and Corporate Stress</p>
+<p class="para-body">Germany's chemical industry faces layered pressure: higher energy costs predating the Iran conflict have already forced plant closures, but the war has materially intensified the strain. European chemical producers are estimated to pay approximately €3 billion more annually in natural gas costs if the post-war price surge persists. The VCI described "a spiral spinning in the wrong direction" on Friday, warning that raw material shortages are compounding direct energy cost effects and raising the prospect of a fresh industrial slowdown. In credit markets, the iTraxx Europe investment-grade index reached its highest level since May, and the Crossover index crossed 300 basis points for the first time since June. Goldman Sachs analysis identified nearly 150 European companies that have already ceded control to direct-lending funds after failing to service debts. Rheinmetall shares declined 4.5% on Wednesday after guiding below analyst sales expectations for 2026.</p>
+<p class="para-title" style="color:#4a9e6b;">Politics and Policy</p>
+<p class="para-body">German Chancellor Friedrich Merz suffered a notable setback as the CDU lost the Baden-Württemberg regional election to the ruling Greens on Sunday — a state the CDU had been projected to reclaim after 15 years of Green governance. EU Commission President von der Leyen called nuclear energy abandonment a "strategic mistake," a pointed reference to Germany's reactor closures as energy security anxiety intensified. In France, Marine Le Pen's National Rally is contesting municipal elections in Marseille, with emerging internal friction between her new circle of establishment advisers and the working-class base that drove the party's rise. The Swiss franc continued appreciating as a safe-haven destination, placing the SNB in a difficult position between intervention risks and exporter pressure. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Oil Markets and the Hormuz Closure</p>
+<p class="para-body">The Strait of Hormuz remained effectively closed for a second consecutive week, with Iranian drone and missile activity continuing to interdict shipping. Brent crude's intraday range on Monday — a swing of approximately $36, from near $119.50 to below $90 — was the widest on record, surpassing moves seen at the onset of the Ukraine invasion, before partially settling near $104–105. Oil briefly traded above $100 again on Wednesday after UK naval forces reported three vessels struck in the Strait and Persian Gulf, and Dubai International Airport briefly halted operations following drone strikes. Brent held above $100 on Friday. The IEA announced a record emergency release of 400 million barrels from member-country stockpiles on Wednesday — the largest in the agency's history, exceeding the 2011 Libyan and 2022 Ukraine-related responses — with Japan separately announcing a unilateral release of approximately 80 million barrels beginning as early as March 16. The announcements temporarily capped prices, though analysts noted that execution pace and logistics will determine the ultimate market impact. Some traders remain skeptical that reserve releases can offset the roughly 7 million barrels per day of disrupted supply in a timely manner.</p>
+<p class="para-title" style="color:#8b5cf6;">Geopolitical Dynamics and Conflict Trajectory</p>
+<p class="para-body">Iran's new supreme leader Mojtaba Khamenei — the 56-year-old son of the assassinated Ayatollah Ali Khamenei, with deep IRGC ties — vowed explicitly to keep Hormuz effectively closed and threatened additional fronts if strikes continued. Prediction markets placed a 52% probability on the conflict extending beyond April 30. Iran's ceasefire conditions — permanent non-aggression pledges from both the US and Israel — appear incompatible with either government's stated positions, leaving the diplomatic path narrow. Russia's role is a compounding factor: President Putin has maintained a communication channel with Trump while reportedly providing Iran with satellite imagery and drone-targeting intelligence. The discount on Russian Urals crude has nearly eliminated relative to Brent, generating a financial windfall for Moscow comparable to its 2022 energy revenues. Putin simultaneously held what the Kremlin described as constructive discussions with Trump on both Iran and Ukraine, adding to European anxiety about Washington's priorities.</p>
+<p class="para-title" style="color:#8b5cf6;">Commodity Contagion and Supply Chain Disruption</p>
+<p class="para-body">The conflict's second-order effects are broad and accelerating. Iran accounts for approximately 5% and 11% of global urea and ammonia trade respectively; urea prices rose 25% since hostilities began, reaching levels last seen during Russia's Ukraine invasion, with crop prices rising in parallel. European natural gas futures jumped as much as 30% on Monday; QatarEnergy delayed a major LNG expansion project to at least 2027 following drone attacks on the Ras Laffan facility, which produces roughly 20% of global LNG supply. Aluminum briefly hit a near four-year high, and coal prices reached their highest level in over a year as gas substitution effects propagated through power markets. Approximately one-fifth of global air freight has been disrupted, over 46,000 flights were canceled across the week, and economy-class round-trip fares from Sydney to London increased more than 80%. Fertilizer and food price impulses are expected to materialize with a lag, and the IMF urged policymakers to prepare for a prolonged conflict scenario.</p>
+<p class="para-title" style="color:#8b5cf6;">GCC Economies and Environmental Damage</p>
+<p class="para-body">The Gulf Cooperation Council economies face what may prove to be a structural setback to their diversification ambitions. Saudi Arabia, the UAE, Qatar, and Kuwait each absorbed Iranian drone and missile strikes on oil and gas infrastructure during the period — the first such attacks in their histories — while energy revenue has been curtailed by Hormuz interdiction. The implicit bargain underpinning the GCC's relationship with Washington has effectively collapsed, making it unlikely that the headline investment figures announced during Trump's May 2025 Gulf tour will be realized. The UAE and Saudi Arabia's ambitions to serve as global AI infrastructure hubs appear particularly vulnerable after Iranian strikes targeted AWS facilities in the UAE and Bahrain, exposing physical security assumptions that had underpinned the entire partnership. Separately, Israeli drone strikes on refineries near Tehran on March 8 triggered large-scale fires, releasing toxic particulates that mixed with rainfall to produce contaminated black rain over a metropolitan area of approximately 18.5 million people. Environmental analysts identify over 300 incidents carrying environmental risk from the conflict to date, with health legacies from heavy metals and hydrocarbons potentially extending for decades.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

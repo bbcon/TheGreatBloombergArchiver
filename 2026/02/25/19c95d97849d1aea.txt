@@ -1,0 +1,284 @@
+Subject: Connecticut’s flood risk experiment
+Date: Wed, 25 Feb 2026 17:29:40 +0000
+
+How Connecticut Is Trying to Fix Flood Risk Maps
+The state has a new risk-mapping tool
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-02-25/how-connecticut-is-trying-to-fix-flood-risk-maps>
+ <https://www.bloomberg.com/green>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17046187&m=11b724c487f61753eb1a7a4a5f3ef261&p=02252026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17046187&m=11b724c487f61753eb1a7a4a5f3ef261&p=02252026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+US flood maps were created for a different climate, a move that masks the real 
+risk for many communities today. To help residents get a grip on how exposed 
+their properties are, Connecticut is serving up a risk-mapping tool for floods 
+and other calamities.
+
+Today’s newsletter looks at how Connecticut’s experiment 
+<https://www.bloomberg.com/news/features/2026-02-25/what-is-my-flood-risk-connecticut-updates-homeowners-on-climate-exposure?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+ is being received. Plus,China is tightening its air pollution rules 
+<https://www.bloomberg.com/news/articles/2026-02-25/china-to-tighten-air-quality-rules-that-have-helped-slash-smog?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+, and whyAI weather models 
+<https://www.bloomberg.com/news/articles/2026-02-24/ai-predictions-were-little-help-for-massive-nyc-blizzard?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+ weren’t better at predicting New York’s biggest snowstorm in a decade.
+
+Someone forward you this newsletter? You can subscribe to the Green Daily 
+<https://www.bloomberg.com/account/newsletters/green-daily> for free climate 
+and energy news six days a week.
+
+Real estate underwater
+
+By Leslie Kaufman 
+<https://origin.www.bloomberg.com/authors/AUZ8izNmriE/leslie-kaufman> and 
+Prashant Gopal 
+<https://origin.www.bloomberg.com/authors/APy9hargB6M/prashant-gopal>
+
+Connecticut is taking an unusual step to confront a growing national problem: 
+flood maps that lag reality. The state has launched a public climate-risk 
+mapping tool whereresidents can see the estimated flood exposure of their 
+property 
+<https://www.bloomberg.com/news/features/2026-02-25/what-is-my-flood-risk-connecticut-updates-homeowners-on-climate-exposure?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+ — along with wildfire, wind and other climate risks.
+
+The tool, which is accessible through the insurance department’s website, is 
+powered by the same type of private risk-modeling firm that insurers turn to 
+for setting rates.
+
+Severe flooding in western Connecticut in 2024, in which three people died and 
+thousands of properties were destroyed or damaged, underscored for state 
+officials just how wide the gap can be between mapped risk and lived experience.
+
+Interim Insurance Commissioner Josh Hershman emphasizes that the portal is 
+informational only; it does not change insurance requirements or zoning rules. 
+The goal, he said, is to close information gaps before the next disaster 
+strikes.
+
+“If you don’t see water, you might not think you have a flood risk,” he said. 
+“This is about giving consumers as many tools as possible so they can make an 
+educated decision.”
+A bridge washed out in Oxford, Connecticut, after torrential rains in August 
+2024Photographer: Dave Collins/AP
+The initiative has ignited a familiar debate over the unintended consequences 
+of risk disclosure. A lot of wealth is tied up in home values, and homeowners 
+and some in the real estate industry complain that the models aren’t 
+transparent or regulated; they worry about devaluation.
+
+Alexander Chingas, an agent with the Bross Chingas Bross Team at Coldwell 
+Banker Realty in Westport, said that the models have led buyers to rule out 
+homes that are perfectly good. “The problem is some people don’t look at the 
+tools as a starting point but rather view them as final and absolute,” Chingas 
+said.
+
+Only people seeking federally-backed mortgages for homes in a zone that the 
+Federal Emergency Management Agency designates as a severe risk are required to 
+get flood insurance. On its website, FEMA says that on average, 40% of the 
+flood insurance claims it gets for the National Flood Insurance Program are 
+outside of these zones. And the actual number of people experiencing flooding 
+is likely greater than that, because that figure doesn’t represent those 
+without flood insurance.
+
+Connecticut decided to partner with hazard risk modeler First Street 
+Technologies Inc. — which rates risk on a scale of one to 10 — in large part to 
+have people re-examine whether they need flood insurance. Before launching the 
+portal, the department asked First Street to compare its projections with the 
+August 2024 flood footprint. The state found the modeled maps closely aligned 
+with properties that experienced flooding.
+
+First Street said their model identifies approximately 81,000 more properties 
+(all types, not just residential structures) facing severe flood risk than FEMA 
+does. That difference, they said, is largely because FEMA maps do not include 
+localized flooding from heavy rainfall.
+
+There is debate about which of the many private risk models is more accurate. 
+A recentpaper <https://journalofcrr.com/research/04-01-dusseau-et-al/> 
+published in the Journal of Catastrophe Risk and Resilience analyzed the 
+performance of seven of the most widely used private risk models against actual 
+NFIP claims data and found that while three — Verisk, KatRisk and Moody’s 
+R.M.S. — represent historical flood losses within a 4 % differential of actual 
+NFIP claims, First Street reports flood damage estimates “nearly twice as high.”
+
+Read the full story 
+<https://www.bloomberg.com/news/features/2026-02-25/what-is-my-flood-risk-connecticut-updates-homeowners-on-climate-exposure?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+ to see how the real estate industry is responding.
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17046187&m=11b724c487f61753eb1a7a4a5f3ef261&p=02252026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17046187&m=11b724c487f61753eb1a7a4a5f3ef261&p=02252026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Policy problems
+
+13%
+
+The percentage of homeowners with the highest premium hikes who dropped their 
+flood insurance policies 
+<https://www.bloomberg.com/news/articles/2025-12-17/low-income-homeowners-dropped-flood-coverage-when-fema-raised-rates?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+ after FEMA revised its rates in 2021.
+
+Safety first
+
+“You have to be careful 
+<https://www.bloomberg.com/graphics/2024-flood-fire-climate-risk-analytics/?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+ how you convey the information.”
+
+Mark Pestrella
+
+Director, Los Angeles County Public Works
+
+Using risk models requires a high degree of care given the impact any 
+proclamations can have on property values and neighborhood perceptions.
+
+China tackles air pollution
+
+By Lili Pike <https://www.bloomberg.com/authors/AXt16hTqABg/lili-pike>
+
+China is planning its first major tightening of national air quality standards 
+<https://www.bloomberg.com/news/articles/2026-02-25/china-to-tighten-air-quality-rules-that-have-helped-slash-smog?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+ since 2012, as it seeks to extend a largely successful anti-pollution campaign 
+that’s reshaped parts of its economy.
+
+New limits on a range of pollutants will be phased in from March and 
+strengthened further in 2031, according todocuments posted online 
+<https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202602/W020260224700452407278.pdf> 
+by the country’s Ministry of Ecology and Environment. The stricter rules are 
+intended to reduce health risks, support the ambition of “building a beautiful 
+China” and align the nation with international best practice, the ministry said 
+in a Tuesdaystatement <https://www.ideacarbon.org/news_free/67222/?pc=pc>.
+The Forbidden City shrouded in smog in Beijing in 2024.Bloomberg
+President Xi Jinping has frequently emphasized efforts to keep China’s “skies 
+blue, waters clear and lands pollution-free 
+<https://english.www.gov.cn/news/202308/16/content_WS64dc0655c6d0868f4e8de947.html>
+,” and supported previous air pollution targets credited withdramatically 
+curbing pollution 
+<https://epic.uchicago.edu/insights/chinas-air-quality-policies-have-swifty-reduced-pollution-improved-life-expectancy/#:~:text=Particulate%20pollution%20in%20China%20declined,provided%20the%20reductions%20are%20sustained.>
+, particularly in the nation’s largest cities.
+
+Energy-intensive sectors like the coal-to-chemicals industry and aluminum have 
+seen some production shift from coastal areas to less densely populated regions 
+in recent years under the environmental campaign, and also to take advantage of 
+cheaper power and resources. While that’s delivered benefits in megacities, 
+parts of western China have experienced worsening air quality.
+
+China’s move contrasts with action in the US to roll back pollution controls 
+and to rescind theEnvironmental Protection Agency 
+<https://www.bloomberg.com/quote/0219210Z:US>’s crucial “endangerment finding” 
+that underpinned key regulations.
+
+Still, China’s new limits remain weaker than guidance issued in 2021 by the 
+World Health Organization, which recommends an annual average PM2.5 limit of 5 
+micrograms and a 24-hour limit of 15 micrograms.
+
+Read the full story 
+<https://www.bloomberg.com/news/articles/2026-02-25/china-to-tighten-air-quality-rules-that-have-helped-slash-smog?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+
+This week’s Zero
+ <https://omny.fm/shows/zero/ethiopias-electric-car-boom-shames-rich-countries>
+In 2024, Ethiopia did something revolutionary. It banned the import of fossil 
+fuel cars and cut tariffs on electric vehicles. This week on Zero, Akshat Rathi 
+talks with producer Oscar Boyd and Ethiopia-based EV entrepreneur Yuma Sasaki 
+about theEV boom 
+<https://www.bloomberg.com/news/features/2026-02-18/ethiopia-ev-boom-sparked-by-ice-car-import-ban?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+ that ensued and what that tells us about the growth of EVs in rapidly 
+developing countries like Ethiopia.
+
+Listen now, and subscribe on Apple 
+<https://podcasts.apple.com/us/podcast/zero/id1621556928>, Spotify 
+<https://open.spotify.com/show/5rHwnJEjFRnivIdpWwnZyZ?si=985034d7e76a47a0> or 
+YouTube 
+<https://www.youtube.com/playlist?list=PLe4PRejZgr0MtnA98Xp8igGT9S3Na_zDD> to 
+get new episodes of Zero every Thursday.
+
+More from Green
+
+Two days before New York’s biggest snowstorm in a decade began, forecasters 
+were stillunsure how much snow would fall 
+<https://www.bloomberg.com/news/articles/2026-02-24/ai-predictions-were-little-help-for-massive-nyc-blizzard?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+. One traditional US model had consistently predicted a major hit, while newer 
+artificial intelligence systems weren’t so certain.
+
+The long-running Global Forecast System, or GFS, signaled the storm would be a 
+whopper for much of the Northeast. Because of lingering skepticism about the 
+GFS’ past performance — and the fact that it stood alone in predicting massive 
+impacts — many forecasters waited until Friday afternoon before declaring the 
+possibility of more than a foot of snow for parts of New York.
+
+Providing advance warning for this week’s storm meant forecasting where 
+incoming waves of cold air and moisture would land and interact with a streak 
+of low pressure in the jet stream, days in advance.
+
+So far, AI models haven’t made that task much easier, said Bob Oravec, a 
+senior branch forecaster for the US Weather Prediction Center in Maryland.
+
+“There’s no perfect model yet,” Oravec said. “That’s the problem.”
+
+Read the full story about how well the models forecast the blizzard 
+<https://www.bloomberg.com/news/articles/2026-02-24/ai-predictions-were-little-help-for-massive-nyc-blizzard?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+.
+Snow plows in New York on Monday.Photographer: Michael Nagle/Bloomberg
+The Supreme Court tariff decision is impacting a wide array of imports, 
+including climate tech 
+<https://www.bloomberg.com/news/articles/2026-02-24/china-climate-tech-wins-from-us-supreme-court-tariff-ruling?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+. With the court knocking down tariffs and Trump raising at least some of them 
+back up, here are the technologies and countries that have won a reprieve and 
+the ones that will feel the squeeze as new levies go into effect.
+
+Speaking of feeling the squeeze, the Trump administration set preliminary 
+duties of 126% 
+<https://www.bloomberg.com/news/articles/2026-02-24/us-finds-that-india-indonesia-laos-unfairly-subsidized-solar?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+ on solar imports from India after determining the country unfairly subsidized 
+manufacturing. The administration also hit solar equipment from Indonesia and 
+Laos with duties.
+
+After a massive sewage spill in the Potomac River outside Washington, DC, 
+attracted the ire of President Donald Trump, federal officials are taking on a 
+larger role in the disaster response —a job that could last months 
+<https://www.bloomberg.com/news/articles/2026-02-25/cleaning-up-potomac-river-sewer-spill-could-take-months?cmpid=BBD022526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260225>
+.
+
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Hyperdrive 
+<https://www.bloomberg.com/account/newsletters/hyperdrive?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for expert insight into the future of cars
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+.
+
+
+
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/QhcjC8aKhP1oCQgblnzjmxDA7aIFmfbiRvkkyLc_wMAyU2683U1uguzjQyyOD73JgMNdWCNEb2v4glHXllCUGFbzWNbGUNm8xqnR_XQTHOWMYU5VIlOdkvHbdO3pp_98wndieZkTfHo6xOkyoGdF-bwinbThlpCkk4DTRCXvEsR2rSK0ECuPQLcQ0CMjrm3t2uOxyaAqiloUJ_4g4iUxiZF56QegYDm0LlVAx3oCAzBt9qJ4EkIrcP0VEiRMzhbGjWibCKrhPzFRpqGp-7WEUDfYIRdGoNlrrwb1ZymIKyZ20fglgxZ8gLI2iVPCbrhhzHlYRogA3WbiwLE-SalPwdP-KhIgIssD/N3RvW1I5eSmHHEQMtHCsLvzEl2TvjYLi/18>

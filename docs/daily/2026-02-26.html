@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, February 26, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, February 26, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">Nvidia's earnings release dominated pre-market attention, with the chipmaker delivering a revenue forecast of approximately $78 billion that beat consensus expectations yet failed to ignite a sustained rally. Shares slid as much as 1.5% in after-hours trading before recovering marginally, a reaction that encapsulates the increasingly demanding bar set by AI-adjacent equities. The muted response extends a pattern visible across the software sector: Salesforce fell roughly 4% after its full-year outlook was judged underwhelming, while C3.ai tumbled 24% following a revenue guidance cut, and Trade Desk dropped 17% in pre-market on a weak forecast. The common thread is investor anxiety that AI infrastructure spending may crowd out legacy software revenues rather than lifting all boats — a tension that remains unresolved. The broader S&P 500 has been range-bound for four months. Options market structure is now reflecting elevated caution, with the put-call skew on the index rising to a two-year high last week and normalized two-month skew approaching the upper end of its five-year range. Some strategists interpret extreme positioning as a contrarian setup, though the fundamental picture — tariff uncertainty, the aftermath of the Supreme Court ruling on global levies, and a Fed leadership transition — provides ample reason for the hedging. On monetary policy, discussions at the National Association for Business Economics conference centered almost entirely on AI's labor market implications. Fed Governor Lisa Cook offered a sober assessment, suggesting the economy may be approaching the most significant reorganization of work in generations, and that the Fed may lack the usual tools to offset AI-driven unemployment since elevated joblessness would not necessarily signal conventional economic slack. Richmond Fed President Tom Barkin echoed similar caution, noting that benchmark rate policy cannot resolve the structural adjustments AI will impose. Separately, Deutsche Bank analysts sketched potential reforms under incoming Fed Chair nominee Kevin Warsh, including revisions to the dot plot framework and a possible shift toward rolling 12- and 24-month rate horizons rather than year-end projections.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's trade posture hardened ahead of a planned Trump-Xi summit, with Beijing warning against further tariff increases even as Washington reaffirmed its commitment to maintaining elevated levies on Chinese goods. Trump's State of the Union address notably omitted any direct mention of China — the first such omission by a US president in two decades — leaving the bilateral relationship in an ambiguous posture: confrontational on trade, yet diplomatically active at the leadership level. German Chancellor Friedrich Merz's concurrent visit to Beijing with a delegation of German business leaders underscores how other major economies continue to engage China commercially even as Western political rhetoric remains cautious. Japan's corporate governance reform narrative advanced with Reuters reporting that Toyota is preparing to unwind approximately ¥3 trillion ($19 billion) in cross-shareholdings with banks and financial institutions, potentially as early as this year. The move would represent a meaningful step in Japan's multi-year effort to improve capital efficiency and shareholder returns. Separately, the Bank of Japan's most hawkish board member renewed his call for higher interest rates, a signal consistent with the yen outperforming G10 peers following reports that sustain rate hike expectations. South Korea's central bank held its benchmark rate at 2.5%, upgrading both growth and inflation forecasts while publishing new dot-plot projections. India presented a more nuanced picture. Prominent investor Raamdeo Agrawal cautioned that the post-pandemic equity rally has largely bypassed the broader population, with financial asset ownership concentrated in just 5% to 7% of households, raising questions about the sustainability of consumer demand. Indian regulators simultaneously tightened bank lending to brokers and raised margin requirements on derivatives in an explicit effort to reduce systemic risk, pressuring exchange and brokerage stocks. On the corporate side, Apple is in discussions with major Indian lenders and card networks for a potential mid-2026 Apple Pay launch integrating with the Unified Payments Interface — a strategically significant move given UPI's dominance. In Hong Kong, Jimmy Lai's 2022 fraud conviction was overturned by the Court of Appeal, a narrow legal reprieve that leaves his 20-year national security sentence intact.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Two UK parliamentary by-elections in Gorton and Denton drew significant attention as a test of Prime Minister Keir Starmer's Labour government. What might otherwise have been a safe Labour hold appears to have become a three-way contest among Labour, Reform UK, and the Greens — a result that, if confirmed, would expose the breadth of political dissatisfaction with the governing party from both its right and left flanks. With November's general election still distant, the immediate consequence is reputational rather than structural, but the signal for Labour's governing coalition is uncomfortable. European credit markets presented a more constructive picture. US borrowers have been issuing record volumes of "reverse Yankee" bonds denominated in euros, attracted by yields approximately 170 basis points below comparable US-denominated issuance. The spread differential reflects both the ECB's more accommodative stance relative to the Fed and residual demand for euro-denominated paper, and represents a tangible capital flow toward European debt markets. The ECB itself reported another operating loss, though President Christine Lagarde noted the institution is monitoring for productivity gains from AI while remaining attentive to any associated job displacement. Italy's industry minister escalated pressure on the EU's Emissions Trading System, calling it "ineffective and harmful" and urging the European Commission to suspend the program pending a thorough overhaul. The intervention follows an 8% decline in European carbon prices after Chancellor Merz indicated openness to revising or delaying the program, and aligns with French President Macron's acknowledgment that the ETS "is not functioning well for some countries." The Commission is due next week to unveil a "Made in Europe" industrial act, with the latest draft setting strict criteria favoring European firms in public procurement while requiring some foreign competitors to share technology and hire locally — a meaningful shift from the free-trade framework that has governed EU industrial policy for decades.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The dominant global risk theme remains the US-Iran nuclear standoff. A third round of Geneva talks began on February 26, with President Trump's March 1-6 diplomatic window — and his threat of military action — framing the negotiations. Trump's assertion that the US would "easily" prevail in any armed confrontation sits in tension with satellite imagery showing Iranian engineers actively reinforcing and concealing nuclear and missile sites damaged during last June's conflict, hardening tunnels and burying facilities against future strikes. The IAEA reports Iran has accumulated enough highly enriched uranium for roughly a dozen nuclear devices, though its precise whereabouts have not been independently verified in over eight months. Critically, US air power can destroy physical infrastructure but cannot eliminate scientific knowledge, stockpiled material, or political will — a constraint that military planners and energy markets are pricing accordingly. Oil supertanker rates have surged to levels not seen since early 2020, with very large crude carrier day-rates on the Middle East-to-China benchmark route exceeding $200,000 — a rise of more than 600% year-to-date. Two factors are driving the spike: elevated volumes of oil at sea, partly reflecting sanctioned Russian crude struggling to find buyers alongside increased Saudi exports, and a highly concentrated market position being built by South Korean shipowner Sinokor Group, which is acquiring enough tonnage to potentially control roughly 40% of the global VLCC fleet. The resulting cost pressure is already affecting crude price differentials, with West African barrels being offered at deeper discounts to Asian buyers. Any Strait of Hormuz disruption — through which approximately 20% of global oil flows — would layer a supply shock onto an already tight tanker market. Global debt reached $348 trillion at end-2025 per the Institute of International Finance, a fresh record driven by a $29 trillion annual increase — the fastest accumulation since the pandemic. The figure underscores the fiscal vulnerability of sovereign borrowers in an environment of persistently elevated interest rates. Russia's war in Ukraine entered its fifth year with the battlefield broadly stalemated, Putin facing growing economic strain, and US diplomacy increasingly focused on arranging a leaders-level summit between Trump and Zelenskyy, with Geneva talks between US and Ukrainian officials on February 26 representing the next procedural step.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

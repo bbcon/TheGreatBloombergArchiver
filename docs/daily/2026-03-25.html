@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, March 25, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, March 25, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity futures climbed Wednesday, with S&P 500 futures up roughly 0.9% and Nasdaq 100 futures gaining 1.1%, as diplomatic signals around a potential US-Iran ceasefire allowed markets to partially unwind recent risk-off positioning. The rally followed news that the Trump administration has drafted a 15-point peace plan, delivered to Tehran via Pakistan, though Iran's armed forces publicly dismissed the overture and continued missile and drone attacks on Gulf states and Israel. The market's relief trade remains conditional and fragile. The Federal Reserve remains caught in a genuinely difficult position. Fed funds futures have briefly reflected a non-trivial probability of a rate hike at the April meeting — the first time since 2023 that a hike was priced as more likely than a cut at the next meeting. However, most economists close to the Fed, including Citigroup's Veronica Clark, characterize a near-term hike as highly unlikely. Chair Powell has made clear that the Fed will not even fully engage the question of whether to "look through" the energy inflation shock until the tariff impact has been separately assessed. The dual headwinds of an oil-driven inflation surge and a prospective growth slowdown leave the committee in a holding pattern. Fed Governor Michael Barr signaled rates may need to remain steady "for some time." Adding a further layer of complexity, the anticipated arrival of Kevin Warsh as the next Fed chair is beginning to influence market pricing. New Fed chairs are typically tested for hawkish resolve, which arguably tempers the "debasement" narrative that had underpinned gold's January surge. Retail investor fatigue is also becoming apparent: Vanda Research data show Monday marked the first net selling day for individual stock buyers since 2023, with Citadel Securities' gauge of retail risk appetite declining sharply from February highs — a notable development given retail's stabilizing role through this bull market cycle. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Xi Jinping's studied silence on the Iran conflict, now nearly a month old, is becoming a substantive strategic posture rather than mere diplomatic reticence. China's relative insulation from the energy shock — rooted in an accelerating renewables buildout, electric vehicles comprising roughly half of new car sales, and continued access to discounted Russian and Iranian crude as US sanctions ease — means Beijing faces fewer immediate economic pressures than its regional peers. Chinese port throughput through the first three weeks of March ran more than 6% ahead of year-ago levels, with AI-driven electronics exports sustaining momentum even as oil-related supply chain disruptions mount. South Korea's exports to China surged 69% in the first 20 days of March, with semiconductor shipments abroad up 164%, reflecting the deep integration of regional supply chains around AI infrastructure demand. The picture is considerably less benign elsewhere in Asia. South Korea has stood up an emergency economic task force and its prime minister is pushing for a supplementary budget to cushion the energy shock. The Philippines has declared a national energy emergency, with Philippine Airlines warning of potential jet fuel rationing, and Vietnam's aviation authority is cutting flights ahead of anticipated shortages from early April. Japan has begun its largest emergency oil stockpile release on record. Signs of fuel hoarding are proliferating across the region, with China, South Korea, and Thailand all restricting some fuel exports — a dynamic that risks deepening market dislocations rather than alleviating them. India faces a distinct diplomatic dilemma. As current chair of BRICS, New Delhi is under mounting pressure to steer the bloc toward a firmer collective position on the conflict, a task complicated by the group's membership spanning multiple sides of the dispute. BRICS has so far failed to adopt any unified stance. Prime Minister Modi discussed the Strait of Hormuz in a call with President Trump, underlining the degree to which the conflict is forcing India to navigate between its strategic partnerships and its energy vulnerabilities. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">UK gilt markets remain the most acute stress point among developed-economy sovereign bond markets. Ten-year gilt yields briefly breached 5% earlier this week before partially retracing following Trump's temporary delay of strikes on Iranian energy infrastructure. Yields have now returned to levels last seen before the Global Financial Crisis, exceeding even the extremes of the Liz Truss episode in 2022 in duration if not in the immediate velocity of the move. The driver this cycle is less directly fiscal and more about the Bank of England's constrained policy options: markets have pivoted from pricing at least two 25 basis-point cuts by year-end to pricing at least two hikes, as inflation expectations — already elevated relative to European peers — have surged further in response to the oil shock. UK inflation break-even spreads over US equivalents, which had narrowed as the Labour government stabilized its market credibility, have reversed sharply. Politically, Prime Minister Starmer's position is deteriorating. Prediction markets currently assign a 68% probability that he exits office before year-end, with his most likely successors positioned to his left — a configuration unlikely to reassure gilt investors. The party retains a substantial parliamentary majority, precluding any near-term electoral test, but the political and market pressures are feeding on each other. The ECB, by contrast, is moving more deliberately. President Lagarde used the ECB Watchers Conference in Frankfurt to signal that the bank will not act until it has "sufficient information on the size and persistence" of the energy shock, while also making clear it will not be "paralyzed by hesitation" if a broader inflationary spiral materializes. The contrast with the Bank of England's position is meaningful: the ECB retains more credibility cushion and faces less acute sovereign spread pressure, though vigilance is explicitly warranted. Germany's business outlook deteriorated as higher energy prices threaten what had been a nascent industrial recovery. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The dominant macro theme of March 25 is the tension between a diplomatic opening on Iran and the continued prosecution of the war. The US 15-point ceasefire plan, delivered via Pakistan, has been met publicly by Tehran with dismissal and continued missile strikes on Gulf Arab states and Israel. Brent crude fell more than 6% toward $97 a barrel on the diplomatic headlines, but the move appears to reflect relief at reduced tail risk rather than conviction that an end to the conflict is imminent. Iran's statement that foreign ships may transit the Strait of Hormuz provided they comply with Tehran's regulations — including, reportedly, transit fees on some commercial vessels — stops well short of a full reopening and amounts to a form of de facto toll extraction on global shipping. The commodity spillovers are broadening. Urea, the world's most widely used nitrogen fertilizer, has risen to its highest level in more than three years as energy-linked production costs surge and export restrictions proliferate. The risk of a feedback loop from energy into food prices is real, with governments across Asia restricting fuel and fertilizer exports in ways that may deepen rather than resolve shortages — a dynamic with precedent in the 2008 rice price crisis. Gold's behavior continues to challenge conventional safe-haven narratives. The metal fell 27% from its January intraday peak to its trough earlier this week — its worst multi-week stretch in over a decade — before recovering modestly on ceasefire hopes. The selloff appears to reflect a confluence of factors: the asset was heavily overbought entering the conflict, the dollar has strengthened as an alternative haven, and the shift in rate expectations has undermined the "debasement" trade thesis. The correlation between gold and real yields that anchored its valuation framework through the post-GFC era has broken down; whether this is a structural regime change or a temporary dislocation remains genuinely uncertain.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

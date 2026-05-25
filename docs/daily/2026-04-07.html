@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, April 07, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, April 07, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">Financial conditions in the United States remain taut ahead of President Trump's 8 p.m. Eastern Time deadline for Iran to agree to a ceasefire and reopen the Strait of Hormuz, with S&P 500 futures oscillating in a narrow range—erasing overnight losses before settling near flat—as traders weigh the possibility of resolution against the risk of further escalation. Oil's 50% surge since the conflict began in late February is now transmitting clearly into the domestic economy: retail diesel prices have risen nearly 50% to $5.62 per gallon, gasoline has crossed $4 per gallon for the first time since 2022, and the Logistics Manager's Index climbed to 65.7 in March—its highest reading since May 2022—as transportation costs surge and inventories remain lean relative to the prior shock cycle. Bloomberg Economics projects March CPI will show the largest month-over-month headline increase since June 2022, penciling in a 0.9% gain, while core PCE for February—due Thursday—is seen rising 0.4%, keeping the year-over-year rate above 3%. The parallels with 2022 are becoming difficult to dismiss, though Bloomberg Economics does not currently project a recession absent a significant further widening in credit spreads. In markets, health insurers rallied sharply after CMS proposed a 2.5% increase in Medicare Advantage payment rates for 2027, with Humana gaining 11% and UnitedHealth rising 7%. Broadcom advanced 3.6% in premarket trading following a chip development agreement with Google. Private credit continues to draw attention after JPMorgan CEO Jamie Dimon's annual shareholder letter reiterated concerns about weakening credit standards across leveraged lending, while stopping short of declaring systemic risk—though Blue Owl Capital shares have now retraced to their 2020 IPO price. SpaceX has begun investor meetings for a potential IPO that could value the company above $2 trillion. The Supreme Court's earlier ruling invalidating emergency-powers tariffs and a subsequent Court of International Trade order mandating $160 billion in refunds to importers represent a meaningful fiscal and legal development that has received less attention than geopolitical headlines.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian markets displayed tentative resilience on Tuesday, with the MSCI Asia index gaining close to 1% overnight as investors assigned some probability to a diplomatic outcome before Trump's deadline, though conditions remained fragile given Iran's continued strikes across the Gulf in the hours preceding the cutoff. Samsung Electronics reported a striking eightfold increase in quarterly profit, driven by robust AI memory chip demand that has thus far defied the market disruption generated by the war; shares rose as much as 4.9% in Seoul. The result underscores the degree to which AI-related semiconductor demand has become a stabilizing force for the Korean technology complex even as broader market sentiment deteriorates. India's macro position warrants close attention. The Reserve Bank of India is expected to hold rates at its Wednesday meeting, caught between the need to support slowing growth and the currency pressure generated by India's acute dependence on Middle Eastern energy—the country sources roughly half its crude and most of its cooking gas from that region. The rupee has declined more than 3% year-to-date, prompting what the RBI describes as some of its most aggressive intervention steps in over a decade. State Bank of India separately disclosed approximately $5 billion in positions against the rupee that were caught by the regulator's crackdown on currency speculators, with estimated losses of around $32 million from forced unwinds. China's housing stress deepened in focus, with lenders increasingly confronting underwater mortgages as property values continue to fall, raising the risk of borrower defaults and complicating banks' efforts to preserve asset quality without triggering a broader credit deterioration. Separately, China's central bank purchased the most gold in more than a year in March, a signal of continued reserve diversification. In Taiwan, the Kuomintang's chair began a six-day visit to Beijing—the first by a sitting KMT leader in a decade—raising cross-strait engagement questions at a sensitive geopolitical moment.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European equity markets showed modest gains on Tuesday, with the Stoxx Europe 600 rising 0.7%, though the region faces a more challenging medium-term backdrop than the headline number suggests. Earnings estimate revisions have turned negative for European equities even as US estimates hold in positive territory—a reversal from the earlier-year narrative in which European stocks were outperforming on the back of fiscal stimulus expectations and ECB easing. The European Central Bank's next policy move now appears likely to be a rate increase rather than a cut, potentially as early as this month, as energy-driven inflation reasserts itself. Britain and France are identified by BloombergNEF as the most exposed European markets to diesel and kerosene supply disruption, given their reliance on refined product imports from Kuwait and Saudi Arabia respectively. Several Italian airports have already issued limited fuel supply advisories. ASML declined 4.7% in Amsterdam after US lawmakers introduced legislation to tighten chip tool export restrictions to China, a move with significant implications for one of Europe's most strategically important technology companies. Universal Music Group shares surged 11% in Amsterdam after Bill Ackman proposed a deal valuing the company at approximately $65 billion. H&M remains under pressure, with the retailer's CEO facing investor skepticism over a turnaround strategy squeezed between Inditex at the premium end and Shein and Primark at the value end—a credibility problem compounded by broader consumer confidence concerns as the conflict sustains elevated fuel costs. Hungary's election on Sunday carries outsize geopolitical weight for the EU: polls suggest Viktor Orbán's grip may be loosening, with JD Vance campaigning alongside him in Budapest and the outcome carrying direct implications for EU Ukraine policy and the bloc's Russia sanctions architecture.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The defining macro variable of April 2026 remains the Strait of Hormuz, effectively closed since the US-Israeli offensive against Iran began on February 27. The waterway normally channels approximately one-fifth of global oil and LNG supply; its sustained blockage has driven Brent crude up roughly 50% since the conflict began, with WTI prompt spreads trading near record backwardation levels—close to $15.50 per barrel at one point Monday—signaling acute near-term supply anxiety. Trump's 8 p.m. Tuesday deadline for Iran to agree to a deal including Hormuz reopening represents the latest in a series of ultimatums that have each produced market volatility without resolution; Iran continued missile and drone attacks across the Gulf in the hours before the deadline, clouding the outlook. The secondary effects are now widespread. The Fed Reserve Bank of New York's Global Supply Chain Pressure Index rose in March to its highest since January 2023. Asia is bearing the greatest burden: multiple countries have reported fuel shortages, and some have implemented four-day working weeks. The conflict is accelerating a coal renaissance in Asia as LNG alternatives become unavailable, while simultaneously generating a meaningful uplift in EV demand—UK registrations hit a record 86,120 units in March, and similar trends are visible in Thailand and the US used-car market. The IEA has described the supply disruption as the largest in market history, and OPEC+ has warned of prolonged output impacts even after hostilities end. The dollar has risen roughly 2.2% since hostilities began, partially reversing an 8%-plus decline in 2025, though analysts including Robin Brooks of Brookings argue the move reflects safe-haven flows rather than a structural shift and project a further 10% trade-weighted decline this year driven by political pressure on the Fed to cut rates despite elevated inflation. Foreign central bank holdings at the Federal Reserve Bank of New York have fallen approximately $82 billion since late February to $2.7 trillion—the lowest since 2012—as Gulf producers liquidate Treasuries to defend their currencies and fund wartime expenditures, a structural erosion of the petrodollar recycling mechanism. The UN Security Council was due to vote on a softened Hormuz resolution hours before Trump's deadline, with Russian and Chinese vetoes remaining possible.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, March 12, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, March 12, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US February CPI data arrived broadly benign, with core inflation holding at 2.5% year-on-year — the lowest since the 2021 inflation breakout — as shelter costs rose just 0.1% from January, the slowest pace in five years, and used-car prices continued declining. The data would ordinarily support a more accommodative Federal Reserve posture, but it is being overshadowed by a more concerning divergence: the core PCE is on track to print at approximately 3.1% for January, which would represent the widest gap between the two inflation gauges in decades. Economists at Barclays, Morgan Stanley, and Bank of America project core PCE goods prices advancing at least 0.8% in February alone. The implication, as Citigroup noted, is that PCE data should keep Fed officials cautious and on hold, even as the Trump administration cites CPI prints to argue rates should be cut. Fiscal pressures are mounting independently of the monetary debate. The 30-year Treasury yield approached 4.90%, its highest level in a month, as investors price in the cost of military operations and potential household energy subsidies. The US budget deficit narrowed in February but at a slower pace than the prior month as tariff revenue continued to decelerate from late-2025 peaks. Morgan Stanley and Cliffwater LLC separately capped investor withdrawals from multi-billion-dollar private credit funds after redemption requests materially exceeded permitted limits — a reminder that liquidity mismatches in private markets become visible precisely when macro stress is elevated. On trade policy, the US Trade Representative's office filed sweeping Section 301 investigations against more than a dozen economies — including China, the EU, Mexico, India, and Taiwan — marking the first formal step to reconstruct a tariff wall following last month's Supreme Court ruling that struck down prior levies estimated at $170 billion. A public hearing is set for May 5th. The move risks complicating a planned Trump-Xi summit and further straining USMCA renegotiation efforts with Mexico.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's footprint across the current crisis is expanding on multiple dimensions simultaneously. Beijing has adopted legislation cementing Xi Jinping's push to assimilate ethnic minorities, a further departure from Beijing's long-standing practice of affording such groups nominal autonomy. Separately, Chinese oil refiners have begun canceling agreed refined-fuel export cargoes — including gasoline and diesel — as Beijing tightens controls to manage the domestic impact of the Iran conflict. The People's Liberation Army resumed aircraft incursions into sensitive airspace near Taiwan following a brief unexplained pause, with Xi having told Trump that Beijing would never permit Taiwan's separation. The combination of economic self-insulation, military signaling, and diplomatic positioning reflects a posture of strategic opportunism. Hong Kong regulators raided the offices of two leading Chinese brokerages and arrested eight individuals on allegations of insider dealing and corruption — a notable enforcement action in a market already navigating external capital-flow pressures. Japan's Nikkei 225 declined 1.04% as global risk sentiment deteriorated, and more than a third of surveyed economists now expect the Bank of Japan to raise rates in April, a view reinforced by the global bond selloff that is pushing yields higher across the Asia-Pacific. Australian officials are seen potentially hiking rates next week. Turkey's central bank paused its rate-cutting cycle. India is in direct negotiations with Iran to secure safe passage for more than twenty tankers through the Strait of Hormuz, an attempt to protect energy supply that also illustrates New Delhi's continued transactional engagement with Tehran. South Korea's parliament approved the special legislation required to implement its $350 billion US investment pledge, even as Washington simultaneously launched a trade investigation targeting Seoul. The juxtaposition captures the difficulty of navigating the current US policy environment, where bilateral deal-making and adversarial trade actions can proceed on parallel tracks.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European bond markets are absorbing overlapping pressures. Yields have risen across the UK, Germany, and Australia as investors price in both the fiscal cost of military spending increases and the probable need to shield households from an energy shock. The European Union has warned that inflation could exceed 3% this year if oil remains near $100 per barrel and gas prices stay elevated — a scenario that would substantially complicate ECB rate decisions in an environment where the central bank had been cautiously easing. The EU's inflation warning is particularly resonant given that Qatar's Ras Laffan LNG complex, which produces roughly 20% of global LNG supply, has been affected by the regional conflict, driving European and Asian gas prices to their highest levels since early 2023. The Iran war is creating political fractures within the bloc. EU officials have acknowledged fears that economic pressure from elevated fuel prices may deepen disagreements between member states, potentially giving Moscow leverage to erode European solidarity over Ukraine. Kremlin envoy Kirill Dmitriev met senior Trump officials in Florida to discuss the energy crisis and prospective US-Russia economic cooperation — a development that adds to European anxiety about the durability of Washington's NATO commitments. In France, Marine Le Pen's National Rally is contesting municipal elections in Marseille, testing whether the party's appeal can extend beyond its provincial base into a cosmopolitan urban setting. Polls indicate crime ranks among voters' top concerns in the port city. Meanwhile, the Swiss franc has continued appreciating as a safe-haven destination, placing the SNB in a difficult position: intervention risks US accusations of currency manipulation, yet inaction compounds pressure on Swiss exporters. Analysts suggest the SNB may be forced to revisit negative interest rates despite significant domestic opposition.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The central dynamic in global markets on March 12 is an oil shock of a scale that stress-tests existing crisis management tools. Brent crude briefly exceeded $100 per barrel again in London after Iran escalated attacks on parts of Dubai and struck two oil tankers in Iraqi waters. Oman evacuated ships from one of the last viable regional export ports, and Iraq halted terminal operations. The IEA announced a record 400-million-barrel release from emergency stockpiles — exceeding any prior intervention, including during the 2011 Libyan war and the 2022 Ukraine invasion — yet the announcement provided only temporary relief. The IEA itself estimates the Strait of Hormuz closure has cut the 20 million barrels per day normally transiting the corridor by approximately 90%, forcing Gulf producers to shut in 10 million barrels per day of output. At the higher end of disruption estimates cited by analysts, the released reserves cover roughly 25 days of the supply shortfall, while prediction markets now assign a 52% probability that the conflict extends beyond April 30. Iran's ceasefire conditions — a permanent pledge from both the US and Israel never to strike again — appear incompatible with either government's stated positions, leaving the diplomatic path narrow. Russia is exploiting the impasse adeptly: Putin has maintained a communication channel with Trump while simultaneously, according to reporting, providing intelligence to Iran to help target US forces. The fiscal windfall from elevated oil and gas prices is providing meaningful relief to Russia's war budget, while the diversion of US political attention reduces pressure on the Ukraine front. The global aviation network has absorbed one of its largest shocks since the pandemic, with over 46,000 flights canceled as Asia-Europe routes are severely disrupted. Economy-class round-trip fares from Sydney to London have increased more than 80%. Bond markets globally have surrendered their year-to-date gains, and the selloff is explicitly being described by investors as a fiscal credibility story rather than a purely inflation-driven one — reflecting the intersection of war financing costs, energy subsidies, and already-elevated sovereign debt levels across major economies.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

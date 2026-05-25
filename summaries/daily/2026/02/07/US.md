@@ -1,0 +1,11 @@
+**US Daily Briefing — February 7, 2026**
+
+Weekend coverage of US-specific developments is limited, with most syndicated content focused on global trade dynamics and climate-related operational risks. The most consequential US threads warrant brief treatment.
+
+**Trade policy and the tariff regime.** The Trump administration's tariff architecture continues to reshape global commodity and capital flows, though Saturday brought no new policy announcements. Notable adjacent developments include "Project Vault," a planned US strategic stockpile in key minerals, which extends the administration's industrial policy footprint into critical-materials security and may have downstream implications for domestic mining equities and processing capacity. Separately, a reported surprise US-India trade framework could mark a partial reset of bilateral ties that had frayed under earlier tariff actions, though terms and durability remain to be seen. The broader pattern—major economies diversifying trade relationships in response to US tariffs, with Gulf-Asia corridors expanding at 15% annually—suggests US exporters may face structurally tougher competition in third markets even as bilateral deals are negotiated.
+
+**Corporate capex and the AI cycle.** Big Tech capital expenditure is tracking toward $650 billion in 2026, an escalation that continues to underpin the equity rally in hyperscaler-adjacent names and power infrastructure. The figure, if realized, reinforces concerns about concentration risk in the S&P 500 and raises questions about return-on-invested-capital trajectories that have yet to be tested through a full cycle. The associated power-demand intensity also intersects with grid-reliability concerns flagged this week.
+
+**Utility sector and wildfire risk.** Western US utilities—PG&E, Edison International, and Xcel Energy—remain in focus as an unusually warm, arid La Niña winter elevates fire risk across Texas, New Mexico, and Colorado. Xcel executed multiple preventative shutoffs in Colorado affecting more than 50,000 customers. Edison faces hundreds of lawsuits tied to last year's Eaton fire. The pattern reinforces a familiar tail-risk overhang for Western utility credit and equity, with implications for ratepayer dynamics and state regulatory posture heading into spring.
+
+No material Fed or fiscal developments crossed the wires today.

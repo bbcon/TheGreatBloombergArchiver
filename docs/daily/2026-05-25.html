@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, May 25, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, May 25, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Markets rally on prospective US-Iran deal; oil tumbles</p>
+<p class="para-body">US equity futures opened the week sharply higher, with S&P 500 contracts up 1.0% to 7,563 and Nasdaq 100 futures gaining 1.5%, as signs of progress toward a US-Iran agreement to reopen the Strait of Hormuz prompted a broad risk-on move. WTI crude fell 5.9% to roughly $91, while the Bloomberg Dollar Spot Index declined 0.3%. Secretary of State Marco Rubio, speaking in New Delhi, struck a cautiously constructive tone, though both sides cautioned against premature conclusions. President Trump said over the weekend that negotiations were proceeding "in an orderly and constructive manner" but that he would not rush, and the US blockade of Iranian ports would remain in place pending a final accord. Iran's foreign ministry confirmed consensus on several topics but said signing was not imminent. Several clauses — including Tehran's demand for the unfreezing of assets — reportedly remain contested, leaving meaningful execution risk.</p>
+<p class="para-title" style="color:#5597cb;">Fed positioning and the term-premium question</p>
+<p class="para-body">Investors continue to bet that Chairman Kevin Warsh will prioritize inflation-fighting credibility over administration pressure for rate cuts. Kevin Hassett, the president's chief economic adviser, argued that lower oil prices following any Middle East deal would create room for the Fed to ease. However, the rates picture is more nuanced than the war-premium narrative suggests: ING notes that rising real yields, rather than inflation breakevens, account for most of the move higher in US Treasury yields. Even if Hormuz reopens, long-end rates may remain elevated as real yields stay sticky — a tension worth monitoring as the curve digests any peace dividend.</p>
+<p class="para-title" style="color:#5597cb;">Corporate and policy notes</p>
+<p class="para-body">Uber offered €33 per share for Delivery Hero, valuing the German company at roughly €10 billion, building on its existing 20% stake. Separately, a wind-industry trade group warned that the administration's effective halt to onshore wind permitting puts approximately $50 billion of US investment and 150,000 jobs at risk. Trump's upcoming medical examination ahead of his 80th birthday is renewing health-related scrutiny.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Risk-on tone as Hormuz diplomacy advances</p>
+<p class="para-body">Asian markets opened the week firmer alongside a sharp decline in crude, with Brent slipping below $100 and WTI down nearly 6% to roughly $91, as Washington signaled progress toward an interim agreement with Tehran that would reopen the Strait of Hormuz in exchange for lifting the US blockade of Iranian ports. Secretary of State Rubio, speaking in New Delhi, struck a cautiously upbeat tone, though both sides cautioned against assuming imminent closure. JGBs rallied and the dollar softened. A supertanker carrying Iraqi crude bound for China cleared the US blockade line into the Arabian Sea, providing the first tangible signs of restored flows, though the durability of any de-escalation remains contingent on decisions by Iran's new supreme leader Mojtaba Khamenei and final terms still under negotiation.</p>
+<p class="para-title" style="color:#e07b39;">Beijing intensifies capital-outflow controls</p>
+<p class="para-body">China's most forceful crackdown to date on illicit cross-border equity trading is reshaping flows, with onshore investors scrambling for alternative routes to access overseas markets. Futu founder Leaf Li's net worth fell $1.7 billion in a single session to $4.7 billion, less than half its late-October peak, underscoring the immediate hit to the offshore brokerage channel. The crackdown follows an estimated $1 trillion in hot-money outflows last year, the largest since records began in 2006, and signals authorities' prioritization of capital-account control over financial market liberalization.</p>
+<p class="para-title" style="color:#e07b39;">Regional spillovers from the Iran war persist despite the diplomatic opening</p>
+<p class="para-body">Singapore downgraded its 2026 outlook, citing energy-supply disruption, tariff risks, and potential AI capex pullback, even as Q1 GDP rose 1% q/q, well above consensus. Malaysia reported industrial fallout, and India raised retail fuel prices for the fourth time this month. RBI Governor Malhotra's unusual public remark that the rupee "may now be undervalued" — ahead of the June 5 rate decision — suggests heightened official discomfort with currency weakness amid balance-of-payments strain.</p>
+<p class="para-title" style="color:#e07b39;">Other notable items</p>
+<p class="para-body">The Shanxi coal-mine explosion, China's deadliest since 2009, killed 82 and lifted domestic coal prices; Xi reportedly grew agitated criticizing PM Takaichi's defense posture during his Beijing summit with Trump (FT); Huawei's chip chief outlined a pathway to narrow the gap with TSMC without leading-edge equipment; and SoftBank shares hit a record on OpenAI IPO speculation.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">ECB tilts hawkish as Iran diplomacy hangs in balance</p>
+<p class="para-body">Two ECB Governing Council members indicated the central bank is moving toward a rate hike at its June meeting unless a durable US-Iran peace agreement materializes, with President Lagarde signaling an upward revision to the inflation outlook. The hawkish lean reflects the pass-through from elevated crude prices stemming from the Hormuz blockade, though the calculus could shift quickly: Brent fell below $100 and WTI dropped nearly 6% to around $91 after Washington indicated it was closing in on an interim deal with Tehran that would reopen the strait in exchange for lifting the US port blockade and potentially unfreezing Iranian assets. Both President Trump and Iranian officials cautioned against assuming an imminent signing, and Iran's new Supreme Leader Mojtaba Khamenei — not seen publicly since the strikes that killed his father — must weigh whether sustained energy-price pressure on the West outweighs the economic toll of the blockade on Iran. The two-way risk for European rates is material: a deal removes the principal upside inflation impulse, while a breakdown likely cements a June hike.</p>
+<p class="para-title" style="color:#4a9e6b;">UK politics drifts into paralysis</p>
+<p class="para-body">The leadership crisis surrounding Keir Starmer has slowed the machinery of government, with confirmation of a successor potentially weeks or months away. The vacuum has reopened debate over fiscal strategy, emboldening Labour's left flank to push wealth taxes. Bloomberg Opinion's Martin Ivens argues markets may be underestimating Andy Burnham, while gilt investors face genuine uncertainty over the direction of revenue policy.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate</p>
+<p class="para-body">Uber offered €33 per share for Delivery Hero, valuing the German group at roughly €10 billion and building on Uber's existing 20% stake — a meaningful consolidation move in European food delivery. Separately, Mango co-owner Jonathan Andic was bailed after questioning over his father Isak Andic's 2024 death, with a judge citing indications of "non-accidental" circumstances; Andic denies wrongdoing, but the case has renewed scrutiny of succession at one of Spain's flagship retailers.</p>
+<p class="para-title" style="color:#4a9e6b;">Carbon-market integrity</p>
+<p class="para-body">A Bloomberg investigation found buyers across at least nine European countries — including BP, Shell, TotalEnergies, EDF and OMV — purchased credits from Chinese projects that, in some cases, appear not to exist. German authorities have voided credits from roughly two-thirds of 45 "suspicious" projects, raising governance questions ahead of the EU's 2040 climate framework.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Oil and the Hormuz Negotiations</p>
+<p class="para-body">Crude prices fell sharply as Washington signaled it was nearing an interim agreement with Tehran that would reopen the Strait of Hormuz in exchange for lifting the US naval blockade of Iranian ports. WTI fell roughly 6% to around $91, while Brent dropped below $100. Global equities rallied, with S&P 500 futures up 1.0% and Nasdaq futures up 1.5%, and the dollar weakened modestly. The optimism remains conditional: President Trump emphasized he would not "rush" a deal, Iran's foreign ministry cautioned that signing is not imminent, and Tasnim reported the draft could collapse over the US blocking Tehran's demand for unfrozen assets. Some pressure is already releasing at the margin — more than 30 vessels, including an Iraqi-loaded supertanker bound for China, transited the waterway in the past day, and Adnoc has been quietly moving cargoes through with apparent acquiescence from both Iranian and US forces. The decision now rests heavily with Supreme Leader Mojtaba Khamenei, who assumed the position in March after his father was killed in US-Israeli strikes. He faces a trade-off between sustaining economic pressure on the West through elevated energy prices and accepting an accord that would unfreeze substantial assets amid severe domestic economic strain from forced oil-production cuts.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary Policy Divergence</p>
+<p class="para-body">The ECB is moving toward a June hike unless a durable Iran peace agreement materializes, according to two Governing Council members, with Lagarde signaling an upward revision to the inflation outlook. At the Fed, markets are positioning for Chair Warsh to prioritize inflation credibility over White House pressure to cut, though adviser Kevin Hassett argued lower oil prices post-deal would create room to ease. ING notes that rising real yields — not just war-related inflation premia — account for most of the move higher in US long rates, suggesting term rates may remain elevated even if Hormuz reopens.</p>
+<p class="para-title" style="color:#8b5cf6;">Climate</p>
+<p class="para-body">A Bloomberg/BNEF investigation found carbon credits from Chinese projects across at least nine European countries appear to be partly fabricated, with some sites either non-existent or audited by developers themselves. The findings raise material questions about the integrity of the UN's incoming country-to-country trading framework and the EU's 90%-by-2040 emissions target.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

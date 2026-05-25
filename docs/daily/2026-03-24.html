@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, March 24, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, March 24, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets ended Monday modestly higher but well below their intraday peaks, as investors quickly tempered their initial enthusiasm following President Trump's Truth Social post claiming "productive conversations" with Iran had produced progress toward a resolution. The Nasdaq 100 closed roughly flat relative to where it stood Friday morning, an outcome that itself signals something important: the market's ability to respond to presidential jawboning on geopolitical risk appears to be diminishing. As Brad Conger of Hirtle Callaghan observed, investor faith in Trump's capacity to end the conflict the way he might reverse a tariff is likely misplaced — the war involves a motivated adversary with independent agency. The fiscal outlook continued to deteriorate in the background. The Pentagon has requested $200 billion in supplemental funding for the Iran conflict, which economists warn could push the 2026 federal deficit toward $2 trillion, roughly double Treasury Secretary Bessent's original 3%-of-GDP target. The Supreme Court's earlier invalidation of most of Trump's tariff regime has further reduced anticipated revenue, while the oil-driven inflation shock is suppressing the probability of Federal Reserve rate cuts that might otherwise have relieved interest costs. The Treasury paid approximately $970 billion in net interest on federal debt last year; Goldman Sachs economists project the deficit will exceed 6% of GDP through 2029. On the corporate side, Apollo Global Management moved to cap redemptions from its $25 billion Apollo Debt Solutions vehicle at 5% of outstanding shares after clients sought to withdraw 11.2%, highlighting mounting stress in private credit markets as the conflict and rate expectations tighten. Meanwhile, unusual trading patterns prior to Trump's Monday post — with roughly 6 million barrels of oil futures changing hands in the two minutes before publication, against a five-day average of 700,000 — drew regulatory scrutiny and commentary from market participants concerned about information leakage around presidential communications. Airline sector stress is also crystallizing domestically. Bloomberg Intelligence estimates sustained elevated jet fuel prices would raise US carriers' costs by 15–23%, with budget operators most exposed. Delta and Southwest are relatively better positioned given stronger balance sheets, while Frontier and JetBlue face greater vulnerability.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asia-Pacific markets opened Tuesday to a deteriorating security picture that undermined Monday's brief optimism. Overnight, Iran launched missile and drone strikes on the Israeli cities of Eilat, Dimona, and Tel Aviv, as well as US bases across the Middle East. Saudi Arabia intercepted a drone in its eastern region, Kuwait reported power line disruptions following an Iranian attack, and sirens sounded in Bahrain. Counter-strikes attributed to the US-Israeli alliance damaged a gas pressure-regulation facility and struck a pipeline supplying the Khorramshahr power plant in southwestern Iran. S&P 500 futures fell 0.4% in choppy trade; Brent crude rose approximately 2% to $102 per barrel. The conflict's economic footprint in the region is widening rapidly. South Korea's Prime Minister Kim Min-seok cancelled a planned visit to China to manage domestic energy and economic disruption, with Seoul announcing vehicle-usage restrictions in the public sector — a step that may extend to private motorists. South Korean government bond yields rose in tandem with a broader global move higher in short-duration debt spanning Canada, Brazil, and the UK. Meanwhile, the Iran crisis is opening an unexpected commercial opportunity for South Korea's defense industry, with Middle Eastern countries increasingly attracted to its lower-cost air-defense systems. Aviation stress is intensifying across Southeast Asia. Philippine President Ferdinand Marcos Jr. warned that grounding planes due to jet fuel shortages remains a "distinct possibility," while Vietnam Airlines has suspended select domestic routes and VietJet has reduced flight frequencies. Qantas subsidiary Jetstar has cut roughly 17.5% of intra-New Zealand services in May as demand softens under higher fares. In a separate development, Japan's Finance Ministry is reported to have made inquiries with market participants about potential intervention in crude oil futures markets, reflecting Tokyo's growing anxiety over energy costs and yen pressure. In corporate news, Sumitomo Mitsui Financial Group is reportedly developing contingency plans for a potential takeover of Jefferies Financial, with a small internal team monitoring the US bank's declining share price for an opportunistic entry. Nintendo reduced Switch 2 production guidance by more than 30%, citing weaker-than-expected holiday demand in the US and rising memory chip costs, with the reduced output rate expected to persist through April.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Eurozone economic data released Tuesday provided the first systematic evidence of the Iran war's impact on European activity. The S&P Global Composite PMI fell to 50.5 in March from 51.9 in February — the slowest expansion since May 2025 — as energy-driven cost pressures and supply chain disruption weighed on both manufacturing and services. Input prices rose at the fastest pace since February 2023. Germany's composite reading declined more than expected, while France recorded a third consecutive month of contraction in the PMI services component. The data also showed the largest deterioration in future output expectations since Russia's invasion of Ukraine four years ago — a signal that corporate confidence is weakening ahead of any potential resolution. The United Kingdom fared similarly. British businesses recorded near-stagnation in March, with factory input costs rising at the fastest pace in more than three decades as the conflict disrupted energy and supply chains. The Bank of England faces a familiar dilemma: deteriorating growth alongside a renewed inflation impulse driven by external commodity shocks. ECB Governing Council member Boris Vujcic — set to become ECB vice president in June — struck a notably cautious tone, warning that the risk of stagflation is increasing and that the Bank must remain "very agile and vigilant." He declined to provide definitive guidance on rates, acknowledging that "how far we'll get in that direction is very difficult to predict." On the political front, Italian Prime Minister Giorgia Meloni suffered a referendum defeat on judicial reform — a self-inflicted setback that has damaged her aura of invincibility ahead of a general election roughly a year away. Simultaneously, Denmark held a general election shaped heavily by concerns over Trump's Greenland threats, with polling pointing toward a vote for stability. The EU and Australia concluded a long-pending free trade agreement, with European Commission President von der Leyen taking a pointed implicit swipe at US tariff policy and Chinese critical minerals restrictions in her remarks.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The central tension shaping global markets remains unresolved: whether a diplomatic off-ramp to the US-Iran conflict exists, and if so, how quickly it can materialize. Trump's Monday Truth Social post claiming "productive conversations" briefly sent Brent crude down approximately $17 per barrel to as low as $96 before prices rebounded toward $100–$102 as Iran's denial of any negotiations, combined with continued overnight missile exchanges, reasserted themselves. The episode illustrates a structural vulnerability: markets are now dependent on presidential social media for price discovery in one of the world's most systemically important commodity markets, a dynamic that carries obvious risks of manipulation and error. The Strait of Hormuz question remains unresolved in a way that extends beyond any ceasefire. Roughly a fifth of global oil and LNG transits the waterway; a CBS report on Monday indicated approximately a dozen Iranian mines are now present in the strait, raising questions about the timeline and logistics of any reopening even in a post-ceasefire scenario. Control of Hormuz gives Iran a structural lever over global energy prices that will persist regardless of near-term political outcomes. Saudi tanker freight rates from Yanbu — the Red Sea alternative routing — have eased somewhat as capacity arrives, but remain well above pre-conflict levels. Saudi Arabia and the UAE have reportedly taken concrete steps toward joining the conflict on the US-Israeli side, including Riyadh granting US military access to King Fahd Air Base — a reversal of its earlier position. Pakistan's army chief is simultaneously engaged in mediation efforts. The convergence of these dynamics suggests the conflict is at a genuinely uncertain inflection point: both escalation and de-escalation pathways remain live. Iran stopped natural gas exports to Turkey following an Israeli strike on the South Pars gas field, removing another supply route from global markets. The macroeconomic transmission mechanism is broadening. Oil-driven inflation is now arriving in consumer prices, airline costs, food logistics, and industrial inputs across geographies from Italy to India to South Korea. The IEA has reported record stockpile withdrawals; the US is considering further SPR releases. Central banks globally face a stagflationary configuration — the ECB's Vujcic encapsulated it directly — that limits their conventional toolkit precisely when fiscal positions are also under stress.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

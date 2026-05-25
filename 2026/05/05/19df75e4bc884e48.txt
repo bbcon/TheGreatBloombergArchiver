@@ -1,0 +1,282 @@
+Subject: Apple’s moves
+Date: Tue, 05 May 2026 09:00:44 +0000
+
+More Signs of Change at Apple as it Explores Using Intel, Samsung for Processors
+Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-05-05/more-signs-of-change-at-apple-as-it-explores-using-intel-samsung-for-processors>
+ <https://www.bloomberg.com/asia>
+
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=17981933&m=11b724c487f61753eb1a7a4a5f3ef261&p=05052026090044&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=17981933&m=11b724c487f61753eb1a7a4a5f3ef261&p=05052026090044&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Change is in the air at the company that Steve Jobs built. For more than a 
+decade, Apple has designed the main processors that power its devices (known as 
+systems-on-a-chip) and relied on TSMC to build them using the most advanced 
+production processes in Taiwan. So, it’s quite significant that the iPhone and 
+iPad maker has heldexploratory discussions 
+<https://www.bloomberg.com/news/articles/2026-05-05/apple-explores-using-intel-and-samsung-to-build-main-device-chips-in-the-us?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ about using Intel and Samsung Electronics to produce said processors in the US.
+
+Apple has had early-stage talks 
+<https://www.bloomberg.com/news/videos/2026-05-05/apple-explores-using-intel-samsung-chipmaking-services-video?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ with Intel about enlisting the company’s chipmaking services, according to 
+people familiar with the deliberations. Meanwhile, its executives have made 
+visits to a Samsung plant under development in Texas that will also make 
+advanced chips. Neither effort has resulted in any orders so far, and the work 
+with both suppliers remains preliminary. Plus, Apple has concerns about using 
+non-TSMC technology and may not ultimately move forward with another partner, 
+the people added.
+
+But the development shows that not even Apple, one of the largest purchasers 
+of silicon, is immune to supply-chain disruptions. Recent shortages have been 
+driven by the massive build-out of AI data centers and higher-than-anticipated 
+demand for Macs suitable for running AI models locally. That, in part, 
+highlights the need for Apple to consider additional suppliers.
+
+
+Bloomberg Tech
+
+Apple Sees Growth Amid Memory Crunch
+ 
+<https://www.bloomberg.com/news/audio/2026-05-01/bloomberg-tech-apple-sees-growth-amid-memory-crunch-podcast>
+There’s been a steady whiff of evolution at this most fabled of tech giants 
+recently. Apple is also preparing a new “Create a Pass 
+<https://www.bloomberg.com/news/articles/2026-05-04/ios-27-features-apple-plans-to-let-users-build-their-own-passes-in-wallet-app?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+” feature for its next major iPhone software update. And our Apple expert Mark 
+Gurman says the company hasdropped some hints 
+<https://www.bloomberg.com/news/newsletters/2026-05-03/how-will-john-ternus-run-apple-as-ceo-with-more-investments-fewer-buybacks?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ at how John Ternus will manage its finances (differently) after hetakes the 
+reins 
+<https://www.bloomberg.com/news/articles/2026-04-21/apple-ceo-ternus-confronts-test-of-retaining-company-s-top-talent?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ from Tim Cook.
+
+—Stephanie Phang 
+<https://www.bloomberg.com/authors/AEu_HIqQe4U/stephanie-phang>
+
+What You Need to Know Today
+
+Stocks pulled back from record highs and the dollar strengthened 
+<https://www.bloomberg.com/news/articles/2026-05-04/asian-stocks-set-to-fall-as-gulf-tensions-lift-oil-markets-wrap?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ after the US and Iran exchanged fire,escalating Middle East tensions 
+<https://www.bloomberg.com/news/articles/2026-05-04/uae-issues-missile-warning-as-rising-tensions-risk-us-iran-truce?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ and fueling inflation concerns. Some relief came withoil easing 
+<https://www.bloomberg.com/news/articles/2026-05-04/latest-oil-market-news-and-analysis-for-may-5?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ during the Asian session, but the actual fallout is clear beyond markets.
+Hundreds of vessels 
+<https://www.bloomberg.com/news/articles/2026-05-05/ships-cluster-further-from-hormuz-strait-as-iran-widens-control?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ were seen clustering near Dubai on Tuesday, as more ships moved away from a 
+still-empty Strait of Hormuz in response to Iran’s efforts to widen its area of 
+control. Meanwhile,Iraq is offering 
+<https://www.bloomberg.com/news/articles/2026-05-05/iraq-slashes-oil-prices-for-buyers-willing-to-transit-hormuz?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ its term buyers huge discounts for crude loaded this month, but tankers will 
+have to transit the vital strait to collect the barrels deep inside the Persian 
+Gulf just as hostilities flare in the region.
+
+Keep track of the twists and turns — and the global fallout — of the war with 
+Iran here <https://www.bloomberg.com/latest/war-with-iran>.
+
+ 
+<https://www.bloomberg.com/graphics/2025-india-digital-arrest-by-phone-graphic-novel/?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+
+In the silver linings bucket, Indonesia’s economic growth accelerated to a 
+three-year high in the first quarter, as a record increase in government 
+spending helped support consumers in the face of a global energy crisis. Gross 
+domestic product rose 5.61% in the January-March period from a year earlier, 
+putting Indonesiaamong Asia’s fastest-growing 
+<https://www.bloomberg.com/news/articles/2026-05-05/indonesian-gdp-growth-jumps-to-5-6-beats-estimates-despite-war?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ economies in the first quarter, surpassed only by Taiwan’s stellar, AI 
+boom-driven 13.7% performance.
+
+That said, the nation’s central bank intervened in the foreign-exchange 
+markets as therupiah set a new record low 
+<https://www.bloomberg.com/news/articles/2026-05-05/idr-usd-indonesia-intervenes-in-markets-as-rupiah-sets-new-record-low?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+. Investors are dumping assets of nations which are most impacted by the surge 
+in oil prices following the Iran war, with theIndian rupee also falling 
+<https://www.bloomberg.com/news/articles/2026-05-05/rupee-at-record-low-as-analysts-dust-off-2013-rbi-playbook?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ to a new record low and the Philippine peso close to an all-time low.
+
+India iPhone Hub Stunned by Film Star Vijay’s Political Rise
+
+In most of his films, Tamil superstar C. Joseph Vijay has saved the nation and 
+its poor from powerful forces. He used that same script in politics this week 
+to emerge as the unlikely winner in elections in one of India’s most 
+economically important states.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-05-05/india-s-iphone-hub-stunned-by-movie-star-vijay-s-political-rise>
+More on India’s dramatic state elections: Opposition parties are alleging 
+large-scaleviolations in counting of votes 
+<https://www.bloomberg.com/news/articles/2026-05-05/modi-opponents-allege-vote-count-violations-after-key-state-loss?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ that led to Bharatiya Janata Party’slandslide victory 
+<https://www.bloomberg.com/news/articles/2026-05-04/modi-proves-unstoppable-as-key-opponents-ousted-in-state-polls?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ in West Bengal, ousting Mamata Banerjee’s Trinamool Congress. And economists 
+warn that implementing populist promises that featured prominently in election 
+wins in key Indian states this week riskstraining their finances 
+<https://www.bloomberg.com/news/articles/2026-05-05/election-pledges-in-india-risk-wider-deficits-economists-warn?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ and wider fiscal deficits.
+
+HSBC reported profit that missed estimates, weighed down by an unexpected UK 
+fraud-related charge 
+<https://www.bloomberg.com/news/articles/2026-05-05/hsbc-profit-misses-on-charges-related-to-the-uk-middle-east?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ and rising economic risks stemming from the conflict in the Middle East. Those 
+results were partially offset by a resilient performance within the lender’s 
+wealth and Hong Kong units, as well as an upgrade to its net interest income 
+outlook.
+
+New World Weighs Sale of Stake in $2 Billion HK Hotel Portfolio
+
+New World, the cash-strapped property developer, is in talks to sell its 50% 
+stake in a portfolio of three Hong Kong hotels valued at a total of $2 billion, 
+people familiar with the matter said.
+Keep reading 
+<https://www.bloomberg.com/news/articles/2026-05-05/new-world-weighs-sale-of-stake-in-2-billion-hk-hotel-portfolio>
+Thailand’s government plans to raise 400 billion baht ($12 billion) in new 
+debt to support farmers, low-income households, and small businesses affected 
+by the fallout from the Middle East conflict, while accelerating the country’s 
+shift away from fossil fuels. The cabinet approved the issuance of anemergency 
+decree 
+<https://www.bloomberg.com/news/articles/2026-05-05/thailand-eyes-12-billion-in-new-debt-to-cushion-mideast-crisis?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260505&utm_content=4143>
+ to pave the way for the borrowing, Prime Minister Anutin Charnvirakul said.
+
+Coming soon: Get the AI Today newsletter 
+<https://www.bloomberg.com/account/newsletters/ai-today> — chronicling the 
+disruptions and threats of AI on businesses, workers, governments and economies 
+with analysis from Bloomberg’s global newsroom.
+
+
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=17981933&m=11b724c487f61753eb1a7a4a5f3ef261&p=05052026090044&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=17981933&m=11b724c487f61753eb1a7a4a5f3ef261&p=05052026090044&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+What You’ll Need to Know Tomorrow
+
+Opinion
+
+The Risk of the Iran War Restarting Is Irrationally High
+ 
+<https://www.bloomberg.com/opinion/articles/2026-05-05/iran-war-the-risk-of-the-conflict-restarting-is-now-irrationally-high>
+Airlines
+
+Qantas CEO More Optimistic on Fuel With Supplies to Mid-June
+ 
+<https://www.bloomberg.com/news/articles/2026-05-05/qantas-chief-turns-more-upbeat-with-fuel-supplies-to-mid-june>
+Markets
+
+AI’s Hottest Private Companies Have Booming Crypto Shadow Market
+ 
+<https://www.bloomberg.com/news/articles/2026-05-05/ai-s-hottest-private-companies-have-booming-crypto-shadow-market>
+Technology
+
+Alphabet Returns to Euro Debt Market for AI Megabond Deal
+ 
+<https://www.bloomberg.com/news/articles/2026-05-05/alphabet-kicks-off-six-tranche-euro-debt-offering>
+Economics
+
+RBA Signals Pause After Delivering Third Straight Rate Hike
+ 
+<https://www.bloomberg.com/news/articles/2026-05-05/rba-delivers-third-straight-rate-hike-cementing-outlier-status>
+Politics
+
+Trump Says He Will Bring Up Hong Kong’s Jimmy Lai in Xi Summit
+ 
+<https://www.bloomberg.com/news/articles/2026-05-05/trump-says-he-will-bring-up-hong-kong-s-jimmy-lai-in-xi-summit>
+US
+
+Secret Service Officers Shoot Gunman Near the White House
+ 
+<https://www.bloomberg.com/news/articles/2026-05-05/secret-service-officers-shoot-gunman-near-the-white-house>
+For Your Commute
+
+Pulitzer Winner
+
+Arrested by Phone: A Graphic Novel
+
+No visitors. No texting. No escape. For eight days, Ruchika Tandon was 
+“arrested by phone.” Bloomberg News has won the 2026 Pulitzer Prize for 
+Illustrated Reporting and Commentary for “trAPPed,” a graphic investigation 
+into India’s wave of “digital arrests.” Read the graphic novel by our colleague 
+Natalie Obiko Pearson, Eisner Award-winning comic artist Anand RK and 
+contributor Suparna Sharma.
+Read the exclusive 
+<https://www.bloomberg.com/graphics/2025-india-digital-arrest-by-phone-graphic-novel/>
+Bloomberg.com subscribers are invited to nominate candidates for the inaugural 
+VivaTech x Bloomberg Rising Star Award, to be presented in Paris on June 18. 
+Chosen by the Bloomberg subscriber community, the Rising Star Award honors an 
+emerging founder, technologist, academic or creator whose work is already 
+demonstrating meaningful early impact. It celebrates individuals whose ideas, 
+innovation and leadership are helping shape the future of technology.Submit a 
+nomination here 
+<https://events.bloombergevents.com/event/VivaTech_Bloomberg_Awards/summary>.
+
+More from Bloomberg
+
+Enjoying Evening Briefing? Check out these newsletters:
+
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india> for key 
+news before the trading day starts there
+ * Singapore Edition 
+<https://www.bloomberg.com/account/newsletters/singapore-edition>, India Edition
+ 
+<https://www.bloomberg.com/account/newsletters/india-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+ andHong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+ for insights into some of Asia’s most dynamic economies
+ * Next China 
+<https://www.bloomberg.com/account/newsletters/next-china?utm_medium=email&utm_source=newsletter&utm_campaign=singaporeedition>
+ for dispatches from within the world’s second-largest economy on where China 
+stands now — and where it’s going next
+ * Breaking News Alerts 
+<https://www.bloomberg.com/account/newsletters/breaking-news-alerts?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+ for the biggest stories from around the world, delivered to your inbox as they 
+happen
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+ for the latest political news and analysis from around the globe
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+.
+ * MORE: Explore live streaming news and interviews, documentaries, reporter 
+analysis and more, all in one place. Check outBloomberg.com/videos 
+<https://www.bloomberg.com/videos>.
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://bsky.app/profile/bloomberg.com> <https://x.com/business> 
+<https://www.instagram.com/bloombergbusiness/> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+
+
+You received this message because you are subscribed to Bloomberg’s Evening 
+Briefing Asia newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/wSfFd0gJQaTDmERLd1bpvL4hngI2B4Bpr9RI0zp3O5TbOo5STkbVsFBVsqT6Z7Am5bE88BsIsqE3yneWWP4rr4AnR6O8Dd4FMc7QuY3G5tW3YOo4VPhruT_g9Y_vAhSFm2v7N0XdMxo0q_J-s5G_5Jt2h7ys7O_qrtNoGlRkDTXgPX3WCHESvy4wxyCmRSHOyuWU4NnOSbyGe611fl7XdEtwGlJ-D_O51TD79WWB2eaW3DjyXdiK5T4RiUtfylt4pae6_or6VMFurPL-_91bmfTkzA4EnLV4H6otAWjvl5aVoC0ru_sB6mMUG2Qviq6tTp7H9iyvP1rtsbSD_5VtRFSPQAl4UqeF/OgexLjD0sXhcF_EnnH15rlmgiEN79nnm/20>

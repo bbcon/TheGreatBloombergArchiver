@@ -1,0 +1,14 @@
+# Daily Briefing: Global Cross-Cutting Themes
+**February 9, 2026**
+
+## US-Iran Talks Lower Geopolitical Premium, But Not by Much
+
+The first round of US-Iran nuclear negotiations in Oman concluded on a constructive note, with President Trump describing the talks as "very good" and Iranian President Pezeshkian calling them "a step forward." A second round is scheduled this week. Brent crude opened lower in response, but remains up more than 10% year-to-date, suggesting traders are unwilling to fully discount the geopolitical premium. As SEB's Bjarne Schieldrop noted, "the Iranian risk premium cannot be fully defused as long as US warships are located where they are." Meaningful divergence persists between the two sides: Iran insists negotiations remain confined to its nuclear program, while Secretary of State Rubio has signaled Washington wants a broader framework covering ballistic missiles and proxy financing. Trump has indicated he could accept a narrower deal, which would offer a politically expedient win ahead of midterms — though prior negotiations with Tehran ended with US participation in Israel's 12-day strike campaign, a reminder that the path is not linear. Netanyahu travels to Washington Wednesday to press for tighter constraints on Tehran.
+
+## Monetary Policy Divergence: Japan Takes Center Stage
+
+PM Takaichi's two-thirds lower-house supermajority — the LDP's largest postwar single-party mandate — reshapes the global fiscal-monetary backdrop. The Nikkei rallied nearly 4% to record highs, while the yen and JGBs held steadier than feared after Finance Minister Katayama clarified that a proposed two-year food consumption tax cut would not require additional debt issuance. The tension remains structural: planned fiscal expansion against a 230% debt-to-GDP backdrop, combined with implicit pressure on the BOJ to delay further hikes, sits awkwardly with a yen trading near 157 and approaching levels markets associate with intervention. Evercore ISI flags a "fat right tail" risk of a Truss-style bond episode should fiscal restraint erode.
+
+## Cross-Currents: China Trims Treasuries, Gold Rebounds
+
+Chinese regulators have verbally instructed banks to reduce US Treasury holdings on concentration and volatility concerns. Market reaction was muted — 10-year yields rose only two basis points — reflecting that Chinese diversification has been underway for a decade. Gold reclaimed $5,000/oz, recovering roughly half its late-January drawdown, with Bessent attributing recent volatility partly to Chinese trading activity. Separately, Trump removed the 25% tariff surcharge on Indian goods tied to Russian oil purchases, a step that may halve India's Russian crude imports and redirect flows toward US and Venezuelan barrels.

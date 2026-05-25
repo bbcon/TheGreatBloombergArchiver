@@ -1,0 +1,11 @@
+**European Daily Briefing — February 7, 2026**
+
+Coverage from today's wires offers limited Europe-specific content, with the principal regional threads emerging at the margins of broader global stories. We summarize the most relevant developments below.
+
+**UK trade policy: GCC deal reportedly near.** The British government indicated this week that a trade agreement with the Gulf Cooperation Council is "imminent," according to officials cited in coverage of Middle Eastern trade dynamics. If concluded, the deal would mark a notable post-Brexit win for Whitehall and align with broader UK efforts to deepen commercial ties beyond traditional European partners. The GCC bloc — anchored by Saudi Arabia and the UAE — has seen trade expand at a 15% annual clip from 2021-24, materially outpacing the 9% global rate per Standard Chartered data, making it an increasingly consequential counterparty. Concrete terms and timing remain to be disclosed, and the deal's macro impact will depend on the scope of services access and investment provisions, which have historically been the sticking points in GCC negotiations with Western partners.
+
+**European shipping and ports.** France's CMA CGM has recently joined MSC of Switzerland-Italy as joint-venture partners at Abu Dhabi's Khalifa Port, operated by AD Ports. The arrangement reflects continued strategic positioning by European container lines in Gulf logistics infrastructure, where competition between DP World and AD Ports is intensifying. For European carriers, deeper Gulf terminal integration supports the Asia-Europe trade corridor at a time when Red Sea routing remains a consideration for fleet economics.
+
+**Cortina Winter Olympics underway.** The 2026 Winter Games opened Friday in Cortina d'Ampezzo. Regional snowfall this week improved conditions, though the event has drawn renewed attention to the structural challenges facing Alpine tourism economies as warming trends pressure lower-elevation resorts — a slow-moving but material consideration for Italian, French, Swiss and Austrian tourism-dependent regions.
+
+No material eurozone macro data, ECB commentary, or UK gilt market developments appeared in today's wires.

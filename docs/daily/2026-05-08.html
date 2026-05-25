@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, May 08, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, May 08, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">The dominant financial news of the day centers on growing anxiety over US sovereign debt sustainability. DoubleLine Capital's Jeffrey Gundlach disclosed he is repositioning portfolios for an extreme scenario in which Washington restructures its obligations — potentially cutting coupons to as low as 1% — though he places the probability below 30%. The disclosure is notable less for its immediacy than for its direction: Gundlach joins Apollo's Marc Rowan and Bridgewater's Ray Dalio in issuing unusually direct warnings about the trajectory of US fiscal and financial conditions. US public debt held by the public has now surpassed $31 trillion, exceeding annual GDP, though five-year CDS-implied default probabilities remain below 1%, underscoring the gap between market pricing and investor rhetoric. On trade and fiscal policy, a US federal trade court declared Trump's 10% global tariffs unlawful in a fresh legal setback, following the Supreme Court's earlier vacating of prior levies. The administration has given the EU until July 4 to ratify a trade deal or face higher duties, signaling continued assertiveness despite the judicial headwinds. The April non-farm payrolls report, expected to show a solid 65,000 increase, will be closely watched for signs of labor market resilience. In equity markets, S&P 500 futures edged higher on a technology-led rally, with Nasdaq 100 futures up 0.7%. Cloudflare fell as much as 17% in premarket trading after announcing job cuts alongside a disappointing revenue forecast, while Trade Desk sank 15% on a guidance miss. Block advanced 7.3% after AI-driven cost restructuring improved its profit outlook. Consumer stress remains a subtext: Kraft Heinz's CEO warned that lower-income shoppers are "literally running out of money at the end of the month," with elevated gasoline prices — a direct consequence of the Iran conflict — compounding pressure on household budgets. New York Governor Kathy Hochul moved to soften the state's landmark climate law, pushing the emissions-enforcement deadline to 2028 from an immediate court-ordered timeline, citing energy affordability concerns. The decision reflects a broader pattern across US states where Iran war-induced fuel price increases are weakening political support for near-term climate mandates.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets recorded one of their strongest weekly performances since late 2024, with the MSCI Asia gauge rising 5.6%. South Korea's Kospi led globally with a 14% weekly gain, driven by a surge in semiconductor names — SK Hynix rose 30%, Samsung 18% — as easing Middle East tensions and AI optimism redirected investor attention toward regional growth assets. Goldman Sachs raised its Kospi target for the fourth time this year, projecting an additional 20% gain and citing forecast earnings growth of 300% for 2026, a figure the bank describes as the strongest for any Asian market since the 1999 post-crisis recovery. Taiwan's benchmark gained approximately 7% and Japan's Nikkei 225 rose 5.8%. Gains were partially checked on Friday as renewed US-Iran clashes near the Strait of Hormuz reintroduced energy risk. Toyota issued a notably cautious earnings outlook, projecting ¥3 trillion in operating income for fiscal 2027 against a consensus of ¥4.6 trillion, citing elevated raw material costs stemming from the Iran conflict. The stock fell as much as 3.5%, illustrating how the energy disruption continues to weigh on Japan's industrial exporters even as equity indices broadly recover. The yen remains under pressure despite apparent Bank of Japan interventions that moved the exchange rate from roughly ¥160 to below ¥157 per dollar; Vanguard remains bearish on the currency, arguing that higher oil prices are eroding Japan's terms of trade and that intervention has limited medium-term efficacy. Asian governments are actively intervening in energy markets to cushion the oil shock. Japan committed $10 billion to assist regional nations with procurement and stockpiling. Australia provided A$30 million to Fiji for fuel purchases and repurposed export financing to support domestic importers, where March import costs for diesel and aviation fuel ran more than 40% above February levels. Separately, a Bangkok-based company — OBON — has been identified in US prosecutorial filings as the suspected conduit for smuggling Super Micro servers containing Nvidia chips to China, with Alibaba named as a potential end customer. China's labor market showed continued deterioration in early-career cohorts, with the jobless rate for workers aged 25-29 rising to 7.7% in March, the highest since data revisions two years ago. Chinese courts have begun siding with workers displaced by AI automation, signaling that authorities are attempting to manage social tensions arising from rapid AI adoption — even as Beijing pursues AI development as a strategic priority.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Reform UK's performance in English local elections emerged as the day's defining political development in the region. With counts approaching completion in a third of councils, Reform had secured a net gain of 275 seats while Labour's tally fell by 204 — Labour losing roughly half of the seats it was defending. Prime Minister Keir Starmer ruled out stepping aside despite the results. The outcome suggests a meaningful fragmentation of Britain's traditional two-party political structure, with both Reform on the right and the Greens on the left gaining ground at the expense of Labour and the Conservatives simultaneously. The degree to which this represents durable realignment rather than a mid-term protest vote remains to be seen, but the breadth of Reform's gains gives Nigel Farage a credible platform heading into the national electoral cycle. On energy security, European utilities and governments are accelerating hardening of electricity network infrastructure. Poland's grid operator PSE has deployed helicopter-mounted sensor arrays to monitor for tampering with transmission lines, with similar steps being replicated across Central and Eastern Europe's eastern flank. The shift reflects a recognition that power infrastructure was not designed to withstand the range of threats — missile strikes, cyberattacks, drone assaults — that have become operationally relevant since Russia's invasion of Ukraine. Transmission operators are already facing funding shortfalls, making the additional capital requirements politically and financially difficult. In climate policy, the ECB's Christine Lagarde cautioned that even euro-denominated stablecoins would create risks to financial stability. In France, EU prosecutors are investigating possible misappropriation of funds linked to media training for National Rally figures including Jordan Bardella, a development the party denied. The Venice Biennale opened amid political controversy over the participation of both Israel and Russia, with Finland scaling back its presence and the EU withdrawing more than $2 million in funding from the Russian pavilion — now reopening for the first time since 2022.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The most consequential cross-cutting development remains the US-Iran conflict and its implications for global energy markets. US forces struck Iranian missile and drone launch sites near the Strait of Hormuz after Iran attacked three American warships transiting the strait — a significant escalation even as President Trump maintained that the broader ceasefire remains in effect. WTI crude moved higher on the clash but retreated intraday, reflecting market uncertainty about whether the engagement represents a contained incident or the beginning of a new escalation cycle. Iran is expected to respond to a US-proposed peace framework via Pakistan within two days; Trump has threatened intensified strikes if Tehran refuses terms. China's role in the energy disruption is multifaceted and worth disaggregating. Beijing slashed April oil imports by approximately one quarter from pre-war levels, with state-owned companies reselling cargoes to European and Asian buyers — a dynamic that has helped rebalance global supply despite the Hormuz closure. Simultaneously, China's top diplomat Wang Yi urged Iran to reopen the Strait of Hormuz quickly, driven both by Beijing's dependence on Middle Eastern oil (approximately two-fifths of its imports) and the desire to position Xi Jinping as a peacemaker ahead of his summit with Trump. Iran, meanwhile, is expanding rail trade through Kazakhstan and Turkmenistan to China as a partial workaround to the US port blockade, deepening its economic dependence on Beijing. The Trump-Xi Beijing summit, scheduled for next week, will be the first visit by a sitting US president to China since 2017. Senior business figures from Blackstone, Citigroup, Nvidia, Apple, Exxon, and Boeing are expected to accompany Trump, signaling a commercial dimension to the visit. Expectations for substantive deliverables are low — Taiwan, tech curbs, and Hong Kong remain areas of significant divergence — but both sides appear to have strategic incentives to maintain a stable bilateral appearance. On artificial intelligence and energy infrastructure, the power demands of data centers are increasingly a government-level concern across Australia, the UK, Kenya, and the United States, with BloombergNEF projecting US data center power consumption to exceed 106 gigawatts by 2035, more than double current levels.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

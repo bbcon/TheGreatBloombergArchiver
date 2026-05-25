@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mar 30 – Apr 05, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="daily.html" class="nav-link">Daily</a><a href="#" class="nav-link  active">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Mar 30 – Apr 05, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Equity Market Trajectory</p>
+<p class="para-body">US equity markets spent the week oscillating between geopolitical hope and renewed anxiety, tracing a pattern that has become characteristic of the conflict period. S&P 500 futures opened Monday modestly higher after an earlier selloff, with the index sitting roughly 8% below its pre-war peak and the Nasdaq 100 approximately 11.5% below its October all-time high. The index's intraweek dynamics were telling: cumulative gains over the first three days of each week have repeatedly been erased on Thursdays and Fridays, with the index posting net losses of approximately 9% on those two sessions alone since hostilities began five weeks ago. S&P 500 futures fell roughly 1.1% Thursday morning as investors reduced risk ahead of a long weekend. For March as a whole, the S&P 500 declined approximately 5–7.8%, its worst monthly performance in roughly a year, though forward earnings estimates for the broad market outside the Magnificent Seven actually rose through the month, providing some offset to multiple compression.</p>
+<p class="para-title" style="color:#5597cb;">Monetary Policy and Fixed Income</p>
+<p class="para-body">Federal Reserve Chair Powell spoke Monday, noting that longer-term inflation expectations appear to be in check, while New York Fed President Williams described policy as well positioned. Bond managers at Pimco, JPMorgan Asset Management, and Columbia Threadneedle have shifted their analytical focus from the inflationary impulse of higher crude toward the growth-shock scenario, arguing the surge in yields has run its course. Two- and five-year Treasury yields rose more than half a percentage point since the conflict began; the 10-year briefly traded above 4.4% before firming early in the week. By Thursday, yields rose again as oil surged, with markets rapidly paring Fed rate-cut expectations. The manufacturing ISM for March showed the sharpest expansion since 2022, but the prices-paid subindex climbed to 78.3 — its highest since mid-2022 — underscoring the Fed's uncomfortable configuration of energy-driven inflation against decelerating growth. The monthly nonfarm payrolls report, expected to show approximately 60,000 jobs added after a 92,000 decline in February, was due Friday with equity markets closed.</p>
+<p class="para-title" style="color:#5597cb;">Geopolitics and Consumer Stress</p>
+<p class="para-body">The conflict's domestic costs became more visible during the week. Average gasoline prices crossed $4 per gallon for the first time since 2022, prompting Georgia to implement a 60-day gas tax holiday, with other states exploring similar measures. While fuel expenditure as a share of disposable income remains near historic lows at 1.6%, the household savings rate has declined to 4.5% from 6.4% in January 2024. Corporate equities now represent over a quarter of household net worth — a record in eight decades of Fed data — making equity market performance a potentially more potent consumer spending channel than pump prices. Public transit agencies reported early signs of a ridership uptick consistent with prior oil shock patterns.</p>
+<p class="para-title" style="color:#5597cb;">Trade Policy and Corporate News</p>
+<p class="para-body">The week marked the one-year anniversary of Liberation Day tariffs. The administration is preparing a tiered system shifting steel and aluminum tariffs from metal content to full product value, and 100% tariffs on pharmaceutical imports are reportedly imminent. Foreign direct investment into the US totaled $288.4 billion in 2025, the lowest of the Biden era, complicating the administration's manufacturing investment narrative. Aluminum producers Alcoa and Century Aluminum rose 8.7% and 8.5% respectively Monday following Iranian strikes on Gulf production facilities. Nike shares fell nearly 10% after issuing a weaker-than-expected full-year outlook, complicating CEO Elliott Hill's turnaround. SpaceX filed confidentially for an IPO that would rank among the largest in history. The administration proposed allowing 401(k) plans to hold private assets. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Regional Market Performance</p>
+<p class="para-body">Asian equity markets closed March under severe pressure, with the region's benchmark indices declining approximately 13% over the month — the steepest monthly decline since October 2008. South Korea, which had been the world's best-performing market entering 2026 on AI optimism, approached bear market territory. Japan's Nikkei fell as much as 4.5% at Monday's open before recovering, and India recorded approximately $12 billion in equity outflows since the conflict began alongside a record $1.6 billion in bond outflows in March alone. The picture shifted materially midweek: the Nikkei surged approximately 5% Wednesday and South Korean stocks posted their strongest single session since 2001, driven by Trump's comments signaling a potential exit from the Iran conflict. The rally proved fragile, however, with markets resuming a defensive posture as the week progressed and the Strait of Hormuz remained largely closed.</p>
+<p class="para-title" style="color:#e07b39;">China's Relative Resilience</p>
+<p class="para-body">China emerged as a relative outperformer, with Chinese equities declining approximately 5.5% since hostilities began — meaningfully less than the roughly 10% drawdowns in Korea, Japan, and India. Factory activity returned to expansion in March for the first time in 2026, supported by fiscal spending and AI infrastructure demand. BYD reported overseas sales of 120,083 vehicles in March, a three-month high, and raised its 2026 export target to 1.5 million units from 1.3 million as elevated fuel prices accelerated EV adoption globally. TCL Electronics announced it would acquire a 51% stake absorbing Sony's home entertainment business for approximately $475 million, positioning the combined entity above Samsung in global TV market share. Alibaba released its Qwen3.5-Omni multimodal model on a closed-source basis — a departure from prior practice that may signal a pivot toward commercialization. The People's Bank of China withdrew cash from its financial system for the first time in approximately a year, keeping policy options open without signaling a directional shift. Separately, Chinese officials intensified scrutiny of offshore trusts used by ultra-high-net-worth individuals to hold Hong Kong-listed shares.</p>
+<p class="para-title" style="color:#e07b39;">India and South Korea Under Acute Pressure</p>
+<p class="para-body">India remained among the most exposed regional economies. The RBI's cap on lenders' open foreign-exchange positions at $100 million per day delivered only a fleeting rupee lift before the currency weakened to fresh lows. India was forced to reverse a near-doubling of domestic jet fuel prices within hours of implementation — State-owned Indian Oil initially raised prices to 207,341 rupees per kiloliter before revising back to approximately 104,927 rupees. LPG shortages rippled through the food service sector, with restaurants substituting kerosene or wood-fired stoves. Later in the week, the rupee staged its largest single-day gain in over a decade after the RBI banned key offshore derivatives and forced the unwind of tens of billions in speculative positions, though structural energy import pressure persists. South Korea announced a supplementary budget to cushion households, with President Lee Jae Myung deploying a $17 billion support package and considering extending driving restrictions to the general public should Brent breach $120 per barrel.</p>
+<p class="para-title" style="color:#e07b39;">Japan, Southeast Asia, and Geopolitics</p>
+<p class="para-body">Japan's top currency official delivered his strongest warning yet against yen weakness early in the week, helping stabilize the currency. The BOJ's quarterly Tankan showed large manufacturers remaining confident for a fourth consecutive quarter, though that data largely predates the conflict's escalation. Japan's Shunto spring negotiations secured average wage increases exceeding 5% for a third consecutive year, with base pay recording its largest year-on-year gain in more than 33 years. A Japanese bond auction underperformed Thursday, adding to the global fixed-income selloff. ASEAN manufacturing PMIs fell to their weakest since September, with Vietnam, Indonesia, and the broader bloc bearing asymmetric impact. President Xi Jinping invited Kuomintang Chairwoman Cheng Li-wun to visit China from April 7–12, the first such visit by a sitting KMT leader in a decade, one month before Trump's scheduled Beijing summit. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Inflation and ECB Calibration</p>
+<p class="para-body">Euro-area inflation jumped to 2.5% in March — the steepest monthly acceleration since March 2022 when Russia's Ukraine invasion drove a comparable energy shock — though the reading came in below consensus at 2.6%, providing modest relief. Critically, core and services inflation actually softened relative to February, suggesting that the energy pass-through remains the primary driver rather than a broadening of underlying price pressure. ECB Governing Council members offered a range of signals during the week: Villeroy de Galhau indicated the central bank stands ready to act against unanchored inflation expectations, while Panetta emphasized proportionality and warned that the war's economic impact will persist even if hostilities conclude relatively soon. Bloomberg Economics assessed that April rate hike odds remain low given the slight undershoot, providing cover for doves. The ECB's structural dilemma — energy inflation colliding with downside growth risks — is genuine, and the institution appears determined to project vigilance without committing to premature action.</p>
+<p class="para-title" style="color:#4a9e6b;">Energy Supply Stress</p>
+<p class="para-body">Europe's energy position deteriorated on multiple fronts simultaneously. Diesel futures for the ICE Gasoil benchmark broke above $200 per barrel on Thursday — the highest since 2022 — as Hormuz disruptions compressed refined product flows. Tankers that loaded diesel in UK waters are diverting cargoes as far as Australia, while vessels originally heading toward Europe have turned toward Africa, as Asian buyers outbid European counterparts. Compounding the imported shock, Norway is emerging from its driest winter in decades, with snow reserves at their lowest in two decades and an estimated 25 terawatt-hour energy deficit equivalent to nearly a fifth of the country's total hydropower output last year. Norwegian electricity exports to the UK fell approximately 50% year-on-year and to Germany by around 40%, while Nordic prices surged to more than four times 2025 levels in parts of the region. EU officials in Brussels urged residents to work from home and reduce driving; the European Commission proposed limited adjustments to the EU Emissions Trading System to cushion industrial competitiveness.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate and Market Developments</p>
+<p class="para-body">European equity markets fell 7.6% in March — the worst monthly performance in nearly four years — with LVMH, SAP, and Novo Nordisk collectively accounting for more than half of the €420 billion in market capitalization erased this quarter. LVMH shares fell 28% in the first quarter alone, the worst start to a year in the company's history, with the luxury conglomerate serving increasingly as a proxy for global confidence. European equities recovered approximately 2% Wednesday on Trump's Iran comments, though the bounce proved fragile. Meg O'Neill assumed the CEO role at BP on Wednesday, becoming the first woman to lead a major oil company, inheriting a business under strategic pressure now operating in a war-driven price environment. Unilever announced advanced talks to sell most of its food business to McCormick. Germany's leading economic institutes cut their 2026 growth forecast to less than half their prior projection, warning that potential growth may approach zero in the medium term. Greece received an MSCI upgrade to developed-market status, effective May 2027.</p>
+<p class="para-title" style="color:#4a9e6b;">UK and Political Pressures</p>
+<p class="para-body">The UK faces a distinct set of vulnerabilities. Structural rigidities — regulated energy pricing and inflation-linked wages — leave it comparatively exposed to energy shocks relative to euro-area peers. UK businesses are planning larger-than-normal price increases, according to a Bank of England survey, while UK factories reported their most intense supply chain strain and sharpest input price pressures since the immediate aftermath of Russia's Ukraine invasion. London's youth unemployment reached approximately one in four 16-to-24 year-olds, with graduate job postings falling from roughly 13,000 in 2019 to just over 2,000 at the start of 2026 — a dynamic attributed to AI-driven hiring retrenchment — posing political risk for Keir Starmer's Labour government ahead of municipal elections. House prices unexpectedly rose according to a major mortgage lender, suggesting consumer demand held up at the onset of the conflict, though the durability of that reading is uncertain. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Strait of Hormuz: Strategic and Market Implications</p>
+<p class="para-body">The defining variable across all asset classes and regional economies this week remained the Strait of Hormuz. Under normal conditions, approximately 135 vessels transited daily; that figure has fallen to fewer than six per day on average. Brent crude broke above $107 per barrel following Trump's Thursday address and has risen more than 40% since the conflict began approximately five weeks ago. WTI closed above $100 per barrel for the first time since hostilities began, representing a monthly gain of more than 50% — the largest since May 2020. Jet fuel in Europe surged to all-time highs equivalent to over $215 per barrel, while benchmark crude has yet to fully price the physical disruption, a divergence that reflects record IEA emergency reserve releases and trader reluctance to hold leveraged positions into weekends. Energy consultancy FGE NexantECA warned that if the near-closure persists for six to eight weeks, Brent could reach $150–$200. The IRGC's management of the waterway has taken on commercial characteristics, with tanker operators reportedly receiving safe-passage offers contingent on re-flagging under friendly-nation registries, with payments demanded in yuan or cryptocurrency.</p>
+<p class="para-title" style="color:#8b5cf6;">Diplomatic Signals and Strategic Uncertainty</p>
+<p class="para-body">The prospective end-state of the conflict is generating as much market anxiety as its continuation. Iranian President Pezeshkian signaled to EU officials that Tehran was "willing to end the war" but required guarantees — a statement that catalyzed the S&P 500's best session in nearly a year on Tuesday, amplified by heavily bearish quarter-end positioning and short covering. Trump subsequently told reporters he expected to exit the conflict within two to three weeks without necessarily requiring the Strait to fully reopen — a meaningful departure from the administration's own foreign policy document, which listed an open Strait as a core US interest. Pezeshkian published an open letter addressed directly to the American public on Thursday, a move that appears calibrated to exploit divisions within Trump's political base rather than to advance formal channels. The IRGC, which retains effective operational control, has shown no inclination toward ceasefire discussions. Polymarket probabilities assign a 60% chance the war concludes in April, but the conditions Iran is understood to require — including regime survival guarantees and continued Hormuz influence — may prove difficult to formalize.</p>
+<p class="para-title" style="color:#8b5cf6;">Second-Order Commodity and Trade Effects</p>
+<p class="para-body">The energy shock is transmitting into adjacent commodity markets in consequential ways. Aluminum prices rose as much as 6% Monday after Iranian strikes on UAE and Bahraini facilities; Emirates Global Aluminium halted operations at its Al Taweelah smelter. Fertilizer prices — urea and ammonia particularly — are rising sharply, with nearly half of global urea supply originating in the Persian Gulf, raising food security concerns in sub-Saharan Africa and parts of South Asia. US naphtha exports reached a single-month record of approximately 15 million barrels in March as Japanese buyers substituted US Gulf Coast supply for unavailable Middle Eastern cargoes. UNCTAD now projects global merchandise trade growth of 1.5–2.5% for 2026, a sharp deceleration from 4.7% last year. Fuel shortages are spreading across Sub-Saharan Africa — Kenya, Ethiopia, and Zambia are reporting station outages, with prices in some markets set to rise as much as 50%.</p>
+<p class="para-title" style="color:#8b5cf6;">Geopolitical Architecture Under Strain</p>
+<p class="para-body">The conflict is accelerating structural shifts in the geopolitical order that may outlast the hostilities themselves. Secretary of State Rubio declared NATO's response "very disappointing," calling out allies for denying base access — remarks that may presage a formal reassessment of the US-NATO relationship. European allies are exploring deeper integration with France's nuclear umbrella; public support for nuclear deterrence is rising in South Korea and Japan; and the Trump administration is reportedly considering resuming nuclear testing and potentially sharing enrichment technology with Saudi Arabia. The WTO's failure to renew its 28-year e-commerce tariff moratorium prompted the US Trade Representative to declare the organization's role in global trade "limited." China and Pakistan issued a five-point joint peace proposal calling for restoration of Hormuz shipping, signaling Beijing's shift from passive beneficiary toward active mediator as the economic costs of prolonged conflict accumulate. The Trump-Xi summit, now targeted for mid-May, remains on track according to USTR Greer, who characterized the bilateral relationship as stable for the near term.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

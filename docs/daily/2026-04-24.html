@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, April 24, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, April 24, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets maintained a broadly constructive tone on Friday, led by technology. Intel surged approximately 20% in premarket trading after delivering a blockbuster revenue forecast driven by AI infrastructure demand, with the stock on course to surpass its year-2000 record high. The Nasdaq 100 was on track for a fourth consecutive weekly gain. Semiconductor names benefited broadly, with AMD rising 7.2% and Arm up 6.8%. SAP's better-than-expected cloud revenue also lifted sentiment, reinforcing the narrative that AI spending is generating measurable earnings power across the technology supply chain. The macro backdrop, however, carries meaningful tension. Economists raised their US inflation forecasts and now pencil in just one Federal Reserve rate cut this year, citing elevated energy costs stemming from the Iran conflict. The Fed meets next week, and the Dallas Federal Reserve's survey of oil-and-gas firms — released Thursday as a special supplement — adds nuance to the growth picture. A majority of energy companies do not anticipate meaningful hiring or production increases despite crude prices trading above $90 per barrel for nearly a month. Executives cited extreme policy uncertainty, price volatility linked to administration social media posts, and an inability to plan capital budgets as reasons for restraint. The implication for the broader labor market is meaningful: if the energy sector fails to expand even as oil prices remain elevated, and non-energy sectors face headwinds from those same high prices, the net employment effect could be negative. Meta and Microsoft announced workforce reductions totaling as many as 23,000 positions, framed by markets as discipline around AI cost management rather than a demand signal. A US Army soldier was criminally charged with using classified intelligence on the timing of Nicolás Maduro's capture to trade on prediction markets, the first application of the so-called Eddie Murphy Rule by the CFTC. Goldman Sachs separately estimated US potential GDP growth at approximately 2.3% annually through 2028, driven by AI-related productivity gains of around 2% per year.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">DeepSeek, the Hangzhou-based AI startup that triggered a significant market repricing in early 2025, unveiled preview versions of its V4 flagship model on Friday, introducing the V4 Flash and V4 Pro series. The company cited advances in coding benchmarks, reasoning, agentic capabilities, and a 1 million-token context window. Chinese chipmaker stocks rallied on expectations that the new model will support domestic semiconductor demand, a dynamic consistent with Beijing's broader push toward AI self-sufficiency. The announcement arrives roughly a year after DeepSeek's R1 model contributed to a sharp selloff in US technology stocks. Chinese regulators separately announced plans to restrict technology companies from accepting US capital without government approval, framed as a response to Meta's acquisition of startup Manus. The move reinforces a pattern of Beijing tightening control over strategic technology flows in both directions. On climate policy, the State Council published rules holding provincial officials directly accountable for meeting Xi Jinping's emissions targets, including carbon peaking before 2030 and clean energy consumption benchmarks. Authorities rated unsatisfactory face formal disciplinary processes; clean energy equities advanced on the news, with Huadian Energy gaining as much as 10%. TSMC shares rose as much as 5.1% to a record after Taiwan's Financial Supervisory Commission moved to relax a rule capping single-stock fund holdings at 10% of net asset value, a change JPMorgan estimated could draw more than $6 billion in inflows to the chipmaker. Tim Cook's announced departure as Apple CEO generated notable discussion on Chinese social media, reflecting his significant role in building China's technology supply chain and managing Sino-American commercial tensions. Indonesia's sovereign wealth fund Danantara confirmed it is in early-stage talks to acquire France's Eramet's 38.7% stake in PT Weda Bay Nickel, the world's largest nickel mine, as President Prabowo moves to consolidate natural resource assets under state control.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European equity markets edged lower, with the Stoxx Europe 600 down 0.8% even as technology-driven gains in the US provided some offset. The ECB is expected to hold policy steady until June, with Germany's business outlook deteriorating more than expected and the war-driven energy crisis complicating any straightforward easing trajectory. Forward electricity prices for the summer in major EU markets remain elevated year-on-year despite strong solar output and improved nuclear availability, as high natural gas costs keep a floor under power prices. Europe's airline sector faces a particularly acute challenge. Jet fuel equivalent to $196 per barrel has prompted Lufthansa to cancel 20,000 short-haul flights, KLM to eliminate 80 return services from Amsterdam, and EasyJet to warn of a potential first-half loss. Persian Gulf refineries that normally supply roughly 20% of EU jet fuel remain effectively cut off behind the Strait of Hormuz, and Asian refineries — constrained by reduced crude supply — have their own product shortages. India's Reliance has prioritized domestic LPG output over jet fuel exports, removing one alternative source. Shell's Pernis refinery in the Netherlands is maximizing jet fuel production, and Nigeria's Dangote refinery has raised shipments to Europe to record levels, but these measures appear insufficient to offset summer demand. The EU finalized disbursement of its €90 billion loan to Ukraine after Hungary lifted its veto, and European leaders signaled preliminary conditions are in place to begin Ukraine's formal EU membership process, though a committed timeline remains absent. Europe's ban on Russian LNG imports took effect Saturday, a poorly timed development given current energy market stress. SAP reported strong cloud revenue growth, gaining 7.3% in Frankfurt, while Siemens Energy rose 4.9% after raising its annual outlook on demand for gas turbines and grid infrastructure.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The Strait of Hormuz remains effectively closed, with oil rising for a fifth consecutive day as no meaningful progress toward US-Iran de-escalation was apparent. A US-sanctioned supertanker, the Yuri, carrying 2 million barrels of Iranian crude from Kharg Island, was tracked sailing toward the strait on Friday, apparently testing Washington's resolve to maintain its naval blockade. Goldman Sachs estimated Persian Gulf oil output is running 14.5 million barrels per day below pre-war levels this month — roughly 57% below pre-conflict volumes — and assessed that any restoration would likely require several months following a full reopening of the strait and an absence of renewed strikes. President Trump announced a three-week extension of the Israel-Lebanon ceasefire, which creates some space for diplomatic activity but falls well short of a broader resolution. Iranian negotiators, according to officials familiar with the matter, have grown less willing to engage in direct talks, citing Trump's social media posts as intended to humiliate Tehran's leadership rather than facilitate a deal. Pimco has privately extended more than $10 billion in loans to Gulf state-linked borrowers since the war began, a signal of the scale of wartime capital reallocation. Energy trader Pierre Andurand's largest hedge fund fell approximately 52% in the first half of April after bullish oil bets placed at the conflict's outset reversed. On the defense and technology dimensions of the broader geopolitical shift, Chinese defense contractors made their largest-ever showing at the Defence Services Asia exhibition in Kuala Lumpur, with 192 firms attending and drone and counter-drone technologies prominently featured. The event coincided with Japan lifting most restrictions on lethal weapons exports for the first time since World War II. The US unveiled measures targeting the practice of AI model distillation by Chinese developers. Xi Jinping's government also moved to exclude Taiwan's president from African airspace by pressuring island nations to revoke overflight permits. The US-China summit, tentatively planned for mid-May, is framed by Beijing as occurring on terms increasingly favorable to China, given Washington's perceived missteps in both the Iran conflict and the trade confrontation.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saturday, May 16, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Saturday, May 16, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">No significant coverage for this period.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's posture toward global supply chains has shifted meaningfully, from defensive adjustment to proactive coercion. A report commissioned by the US Chamber of Commerce and prepared by Rhodium Group, released this week, characterized Beijing's recent regulatory moves as a transition from "reactive to proactive, future-looking economic coercion strategies." New regulations unveiled over the past several weeks allow China to retaliate against foreign governments or firms that assist in actions deemed to harm Chinese industrial and supply chain security — a legal architecture constructed explicitly to deter the kind of sourcing diversification that Washington and Brussels have been encouraging. Natixis chief Asia Pacific economist Alicia Garcia Herrero framed the implication bluntly: foreign governments seeking to coax companies out of Chinese supply relationships now face a Beijing that can characterize such interference as a violation of Chinese law. The strategic intent appears clearly articulated at the highest levels of party leadership. Xi Jinping's latest Five-Year Plan, released in March, replaced the long-standing framing of "peace and development" as the defining feature of the global environment with language centered on geopolitical rivalry as the primary driver of an uncertain and unstable future — a wording shift that JPMorgan economists Jahangir Aziz and Tingting Ge describe as elevating national security to a "central and over-arching principle for economic policies." Consistent with that framing, Beijing is also screening outbound investment to ensure Chinese firms' overseas operations serve to enhance exports rather than displace domestic production, which may increasingly discourage the offshoring of higher-value manufacturing. The Rhodium report warns of a potential self-reinforcing dynamic: as China's share of global manufacturing continues to rise, eroding margins for competitors in developed economies, the capacity of Western firms to reinvest in R&D diminishes, and private capital increasingly avoids sectors where Chinese state-backed competition is entrenched. For industrial communities in Germany, Japan, and Italy, the adjustment pressure is structural rather than cyclical. Separately, Trump confirmed following his May 13–15 visit to Beijing that China has not approved purchases of Nvidia H200 AI chips, with the president noting that China intends to develop its own alternatives — consistent with a broader strategy of reducing dependence on the US technology stack.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">The EU's industrial policy ambitions are coming into direct conflict with Beijing's regulatory counter-offensive. China's new supply chain coercion framework appears calibrated in part as a warning to Brussels, which has been advancing the Industrial Accelerator Act — the so-called "Made in Europe" proposal — that would mandate preference for domestic suppliers in public procurement and target 20% of GDP from manufacturing by 2035. Separately, Chinese authorities warned the EU this week that countermeasures would follow if Brussels proceeds with its probe into Nuctech, the Chinese security-devices manufacturer whose state subsidies the European Commission is investigating for providing an unfair competitive advantage over local firms. The pairing of these moves suggests Beijing is prepared to use both regulatory and diplomatic levers to resist European supply chain reorientation. The broader structural concern for Europe — particularly for manufacturing-intensive economies such as Germany — is that China's industrial dominance is no longer merely a competitive challenge but an actively managed strategic position. Rhodium Group's analysis highlights specific vulnerabilities for German automotive communities, Italian machinery districts, and Japanese electronics cities, where prolonged margin compression and revenue erosion may prove difficult to reverse without coordinated policy responses across advanced economies. Whether the EU can maintain the political cohesion required for such coordination, given member-state divergence on China exposure, remains an open question. Turkey's decision to scrap its inflation target in the face of an energy-price shock points to additional stress within emerging European economies, though details remain limited from available coverage.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The Iran conflict is reshaping infrastructure risk calculus well beyond the immediate theater of operations. The vulnerability of centralized desalination infrastructure — plants supplying water to tens of millions across the Middle East — has been exposed by the conflict, according to Atoco CEO Samer Taha, accelerating interest in decentralized atmospheric water harvesting technology. Atoco, founded by 2025 Nobel chemistry laureate Omar Yaghi, is preparing to bring to market a shipping container-sized unit capable of producing 4,000 liters daily using metal-organic frameworks, with applications ranging from data centers and hospitals to off-grid communities. The commercial logic is straightforward: centralized water systems, like centralized energy infrastructure, carry concentration risk that conflict and climate stress are making increasingly apparent. The water scarcity dimension extends well beyond the Middle East. In the American West, record-low Rocky Mountain snowpack — described by experts as potentially signaling a more permanent aridification — is prompting a measured revival of large-scale water storage infrastructure. The Chimney Hollow Dam, the largest built in the US in twenty-five years, began filling in April, with several additional reservoir projects underway in Colorado and California. Meanwhile, some 500,000 residents of Corpus Christi face potential water shortfalls within a year. The intersection of these trends with AI infrastructure is notable: data centers are placing significant new demand on already-stressed aquifers, creating a tension between the energy transition's digital requirements and the physical resource constraints of water-scarce regions. Separately, China's green technology firms — battery, solar, and EV suppliers — are reported to be positioning to capture demand generated by the energy shock flowing from the Iran conflict, illustrating how geopolitical disruption continues to create asymmetric commercial opportunities across regions.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

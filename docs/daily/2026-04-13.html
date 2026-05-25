@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, April 13, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, April 13, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">Goldman Sachs kicks off the first-quarter US reporting season on Monday against a backdrop of deteriorating macro conditions. Analysts still project approximately 12% earnings growth for S&P 500 companies, though that estimate faces meaningful headwinds: March CPI printed at its highest level in more than two years, briefly pushing the headline rate back above the Fed's effective upper-range target of 3%. Core CPI and the trimmed mean remained below that threshold, and goods prices have not yet reflected the tariff shock as severely as many anticipated. However, the Fed's "supercore" services inflation ex-shelter ticked higher, and all four main CPI components are now rising — a configuration that appears to preclude near-term rate cuts. The Federal Reserve, which is due to install a new chairman next month pending Senate confirmation, appears firmly on hold. Bond markets have absorbed the inflation data poorly, with yields drifting higher and mortgage rates remaining elevated. Mortgage applications fell more than 10% through March, and existing home sales appear set to hold near 4.1 million annualized — roughly flat with last year. The pent-up demand that might have driven a housing recovery remains sidelined by financing costs. Consumer sentiment warrants attention in its own right. The University of Michigan's preliminary April index fell to 47.6, the weakest reading in the survey's history dating to 1978 — surpassing troughs reached during the 1980 hostage crisis, the 1990 Gulf War, and the Covid pandemic. Year-ahead inflation expectations rose a full percentage point to 4.8%. The political polarization embedded in sentiment data provides some analytical comfort, but even Republican respondents now report conditions worse than at any point during the Biden years. For an administration sensitive to the political costs of energy-driven inflation, the imperative to resolve the Hormuz situation quickly is substantial. S&P 500 futures were down roughly 0.6-0.7% as markets reopened Monday.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian markets absorbed the collapse of US-Iran talks and the subsequent US blockade announcement with moderate rather than acute selling pressure. A gauge of Asian equities fell around 0.8%, while Japan's Topix and South Korea's Kospi pared intraday losses; Taiwan's Taiex notably ended the session higher, supported by Taiwan's export data, which surged to an all-time high as global AI chip demand more than offset supply chain disruptions from the Strait closure. The more consequential dynamic may involve China. Iran is a major oil supplier to China, and Saudi Arabia's crude shipments to Chinese customers are reportedly set to halve in May — to approximately 20 million barrels from roughly 40 million in April — as Aramco raised official selling prices to a record. The US blockade raises a direct question about whether US warships will interdict vessels carrying Iranian oil to China, which would constitute a significant escalation in US-China tensions. Former US Ambassador to Saudi Arabia Michael Ratney flagged this risk explicitly. China has thus far condemned the US-Israeli strikes on Iran as "unacceptable" but President Xi has not publicly commented on the blockade. Spain's Prime Minister Sánchez, speaking at Tsinghua University during a Beijing visit, called on China to leverage its influence to end the Iran and Ukraine conflicts. Xi is scheduled to host Trump next month. In Japan, BOJ Governor Kazuo Ueda signaled a more cautious stance on rate hikes ahead of the next policy meeting, a notable pullback given that markets had anticipated tightening as recently as this month. Japan's 10-year government bond yield climbed to 2.49%, its highest level since 1997, as global bonds sold off on inflation concerns. Supply chain effects are becoming visible in the real economy: toilet manufacturer Toto suspended new prefabricated bathroom orders citing naphtha shortages, joining a growing list of Japanese manufacturers cutting production or raising prices as Persian Gulf oil feedstock supplies tighten.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Viktor Orbán's 16-year tenure as Hungarian Prime Minister ended Sunday when opposition leader Péter Magyar's Tisza party secured a supermajority in parliament, representing the most significant shift in Hungarian politics in over a generation. Magyar's victory carries immediate European implications: the incoming prime minister has pledged to dismantle Orbán's "illiberal" governance structures, reorient Hungary toward the EU and NATO, and unlock approximately €90 billion in EU funding that Orbán had blocked, including funds critical to Ukraine's defense. Leaders across Europe, including Starmer and Macron, offered congratulations. The forint surged to a four-year high following the result. The transition is not without complication — Magyar inherits real economic challenges that contributed to Orbán's political vulnerability — but the geopolitical dividend for Kyiv, Brussels, and the broader EU project appears substantial. The result is simultaneously a setback for both Trump, who had endorsed Orbán, and Putin, who had relied on Budapest to fracture EU sanctions consensus. Elsewhere in Europe, the macro environment is deteriorating under energy price pressure. UK household energy costs are tracking roughly £500 higher for a typical household, and the RICS homebuyer appetite gauge fell to its lowest since August 2023. Germany's coalition agreed on €1.6 billion in fuel-price relief measures for consumers; the EU is separately preparing a recommendation to lower energy taxes across member states. Ireland announced a fuel price relief package following public protests. Moody's warned that French elections risk stalling budget consolidation. Lufthansa shares fell 4.4% after pilots announced a two-day strike over pensions. LVMH reports quarterly sales after the Paris close Monday, serving as the first read on European luxury demand amid deteriorating consumer confidence.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The collapse of 21 hours of US-Iran talks in Islamabad over the weekend and President Trump's subsequent announcement of a full naval blockade of the Strait of Hormuz represent a meaningful escalation of the conflict that has disrupted global energy markets since the US and Israeli strikes on Iran on February 28. Brent crude rose as much as 9.1% to approach $104 a barrel on Monday's Asian open, with European natural gas futures spiking nearly 18% at one point. Aluminum reached a four-year high on concerns about long-run supply disruption from Persian Gulf producers. The strategic logic of the blockade, as articulated by advisers close to the situation, is to close Iran's toll-booth system while simultaneously working to reopen the mined half of the Strait through demining, escorts, and insurance backstops — thereby pressuring Tehran to concede politically. This is not an incoherent strategy, but it carries substantial execution risk: US warships would operate in closer proximity to Iranian drone and missile capabilities, and any vessel hit could trigger a rapid escalation cycle. Iran responded Monday by threatening that "no port in the Persian Gulf and Sea of Oman will be safe" if its own facilities are targeted. The UK government confirmed it will not participate in the blockade. The broader economic consequences are coming into sharper focus. Bloomberg Economics' base case now projects global growth of 2.9% in 2026 — the weakest since 2020 — with a downside scenario of 2.2% if oil averages $170 a barrel. The IMF will publish its downgraded World Economic Outlook on Tuesday, the fourth consecutive year its Spring Meetings have opened under conditions of acute global stress. Economist Carmen Reinhart argues the world is less prepared to respond to a crisis than at any point in the past two decades, constrained by a $348 trillion global debt burden, central banks still contending with inflation, and a fragmented multilateral order. Coordinated policy response appears unlikely. For now, the singular variable dominating the global outlook remains the duration and severity of the Hormuz disruption.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

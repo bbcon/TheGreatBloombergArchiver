@@ -1,0 +1,207 @@
+Subject: Economics Daily: Warsh’s inflation project
+Date: Thu, 23 Apr 2026 11:00:20 +0000
+
+Kevin Warsh Triggers Debate Over Measures of US Inflation
+The nominee to chair the Fed says data that’s being used to judge consumer 
+prices is imperfect. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-04-23/fed-latest-warsh-wants-to-better-understand-us-inflation>
+ <https://bloomberg.com/economics>
+
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=17820972&m=11b724c487f61753eb1a7a4a5f3ef261&p=04232026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=17820972&m=11b724c487f61753eb1a7a4a5f3ef261&p=04232026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+I’m Chris Anstey <https://bloomberg.com/authors/AF7uNtxCFaA/chris-anstey>, a 
+senior economics editor in Boston, and today we’re looking at debate over how 
+best to measure US inflation. Send us feedback and tips toecodaily@bloomberg.net
+ <mailto:ecodaily@bloomberg.net>. And if you aren’t yet signed up to receive 
+this newsletter, you can do sohere 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=ecointro>
+.
+
+Top Stories
+
+ * The US military said it intercepted 
+<https://www.bloomberg.com/news/articles/2026-04-23/us-intercepts-iran-oil-supertankers-as-tehran-keeps-hormuz-shut?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ two Iranian oil supertankers that tried to evade its blockade as Washington
+continues 
+<https://www.bloomberg.com/news/articles/2026-04-22/us-and-iran-deadlocked-over-hormuz-after-trump-extends-truce?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ to stymie the Islamic Republic’s shipping and Tehran threatens vessels in the 
+Strait of Hormuz.
+ * The global economy 
+<https://www.bloomberg.com/news/articles/2026-04-23/war-shock-to-global-economy-ripples-unevenly-as-euro-zone-reels?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ just endured a second month of renewed price pressures but withmore uneven 
+fallout 
+<https://www.bloomberg.com/news/articles/2026-04-23/euro-zone-private-sector-unexpectedly-shrinks-as-services-slump?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ on growth, PMI surveys show.
+ * Persian Gulf allies along with a number of Asian nations have requested 
+currency swap lines 
+<https://www.bloomberg.com/news/articles/2026-04-22/bessent-says-many-us-allies-in-gulf-asia-requested-swap-lines?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ with the US, Treasury Secretary Scott Bessent said.
+US Inflation Overhaul?
+
+Current Federal Reserve policymakers have sometimes highlighted challenges 
+with regard to the main measures of US inflation. One is that it takes a long 
+lag before changes in home leases get reflected in the CPI gauge. Another, for 
+a time, was the anomaly of “imputed 
+<https://www.bloomberg.com/news/newsletters/2025-12-17/should-the-fed-be-spooked-by-phantom-inflation?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+” prices pushing up PCE inflation while “market-based” price estimates looked 
+softer.
+
+Kevin Warsh, the nominee to succeed Jerome Powell as Fed chair, made clear 
+Tuesday thathe’s not happy either 
+<https://www.bloomberg.com/news/articles/2026-04-21/warsh-says-fed-needs-a-new-framework-for-dealing-with-inflation?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+. “The data that’s being used to judge inflation is quite imperfect,” he said 
+at his Senate confirmation hearing. If confirmed, he said he’d seek out “new 
+understanding and new data sources to see what’s really the inflation rate in 
+the economy.”
+
+This project would be “one of the first reforms at the Fed” Warsh hopes to 
+undertake. Working with other public agencies and the private sector, he 
+envisions a survey of “a billion prices.”
+
+“What I’m most interested in is what’s the underlying inflation rate 
+<https://www.bloomberg.com/news/articles/2026-04-09/us-consumer-spending-barely-rose-as-inflation-lingered-pre-war?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ — not what’s the one-time change in prices because of a change in geopolitics 
+or a change in beef,” Warsh said. “The measures I prefer looking at things that 
+are called trimmed averages.”
+
+Trimmed-mean gauges take out the biggest increases and the largest declines 
+(or smallest gains) in prices. The Dallas Fed produces one of those, and its 
+latest year-on-year reading was 2.33%, compared with the 3% increase in the 
+core PCE that Fed policymakers use in their forecasts.
+
+“Hypothetically, switching the Fed’s preferred measure of inflation to this 
+metric would bring inflation 70 basis points closer to the Fed’s 2.0% goal,” 
+BMO Capital Markets strategists including Ian Lyngen wrote in a note Wednesday. 
+That’s notable in the context of Fed officials citing the persistence of
+above-target inflation 
+<https://www.bloomberg.com/news/articles/2026-04-10/us-consumer-sentiment-drops-to-record-low-on-inflation-concerns?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ in foregoing interest-rate cuts this year, they said.
+
+A separate Cleveland Fed trimmed-mean gauge that keys off the CPI indicator 
+<https://www.bloomberg.com/news/articles/2026-04-10/us-cpi-surges-0-9-in-largest-monthly-jump-since-2022-on-gas?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ isn’t quite as tame, at 2.7% for February. Still, “the alternative metrics 
+provide some support for Warsh’s judgment that (underlying) inflation is moving 
+in the right direction even though year on year core PCE has been going up,” 
+Evercore ISI economists including Krishna Guha wrote in a note Wednesday.
+
+Not so fast, Wells Fargo economists said: Over time, the trimmed measure 
+“usually does not paint a meaningfully different picture of inflation.” Over 
+the past decade, the Dallas Fed’s trimmed PCE “has spent 65 months above 
+target, barely different than the traditional core at 62 months.”
+
+“In our minds, if Warsh is really willing to tinker with inflation guideposts, 
+a more material (and dare we say useful?) change on the inflation front would 
+be if Warsh were to push for targeting an inflationrange, rather than a point 
+estimate,” Wells Fargo economists including Tom Porcelli wrote. TheAustralians 
+<https://www.rba.gov.au/inflation-overview.html> are among those that have such 
+a range target.
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=17820972&m=11b724c487f61753eb1a7a4a5f3ef261&p=04232026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=17820972&m=11b724c487f61753eb1a7a4a5f3ef261&p=04232026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+The Best of Bloomberg Economics
+
+ * Surging global demand for artificial intelligence technology fueled a 
+first-quarter rebound 
+<https://www.bloomberg.com/news/articles/2026-04-22/south-korea-s-economy-rebounds-in-first-quarter-on-solid-exports?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ for South Korea’s export-dependent economy.
+ * An unexpected deterioration 
+<https://www.bloomberg.com/news/articles/2026-04-22/unemployment-spikes-for-key-chinese-age-group-as-ai-use-spreads?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ in China’s jobs market reached the key demographic of early-career workers, 
+and AI use is part of the picture.
+ * UK government borrowing dropped to the lowest in three years 
+<https://www.bloomberg.com/news/articles/2026-04-23/uk-budget-deficit-at-three-year-low-but-war-headwinds-build?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+, a boost for Chancellor Rachel Reeves that the Iran war could make short-lived.
+ * Peru’s government 
+<https://www.bloomberg.com/news/articles/2026-04-22/peru-agrees-to-proceed-with-f-16-contract-following-us-pressure?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ moved forward with a contract to buy new fighter jets, reversing course after 
+two ministers quit and heavy pressure from the US.
+ * South Africa is increasing US oil-product imports 
+<https://www.bloomberg.com/news/articles/2026-04-23/south-africa-ramps-up-fuel-imports-from-us-as-war-jolts-trade?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+. Meanwhile Kenya isbetting $39 billion 
+<https://www.bloomberg.com/news/articles/2026-04-23/kenya-s-ruto-bets-39-billion-on-trains-and-highways?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ to boost the country’s infrastructure.
+ * Mercosur is set to discuss Venezuela’s return 
+<https://www.bloomberg.com/news/articles/2026-04-23/mercosur-to-reconsider-venezuela-s-membership-brazil-says?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ to the South American trade bloc as countries warm to Caracas after the US 
+ouster of Nicolas Maduro.
+Need-to-Know Research
+
+The European Central Bank’s key challenge this year will be avoiding a 
+“Trichet 2.0,” according to David Oneglia at TS Lombard. The economist alludes 
+to the Jean-Claude Trichet-led ECB’s 2011 error in raising rates at a time when 
+the euro economy had yet to shake off the region’s debt crisis.
+
+The ECB was forced to reverse its move within months back then. Today, there’s 
+a risk outgoing ECB President Christine Lagarde makes the same mistake, Oneglia 
+said. “Lagarde canstay pragmatic 
+<https://www.bloomberg.com/news/articles/2026-04-20/lagarde-says-war-s-double-uncertainty-means-more-data-needed?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+ or… end her term Trichet-style,” he wrote. “It’s not hard to see how, faced 
+with a longer deadlock in negotiations while Hormuz stays closed, ECB 
+pragmatists can quickly revert to overreaction as inflation grinds higher.”
+
+Oneglia said there are a number of factors arguing against doing more than 
+“1-2 ‘recalibration’ hikes this year.” China’s exports and a relatively strong 
+euro are putting downward pressure on core goods prices. “Payroll expectations 
+show job markets skating on thin ice.” And household financial buffers and 
+corporate margins are thinner now than in 2022. It all means “risks of high 
+inflation in the medium run are already smaller than those of low growth.”
+
+More from Bloomberg
+
+Enjoy Economics Daily?
+
+ * Read more economic stories 
+<https://www.bloomberg.com/markets/economics?cmpid=BBD042326_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260423>
+Plus, here are some newsletters we think you might like
+
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for daily insights into supply chains and global trade
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for the latest in politics from around the globe
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+.
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Economics 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=NLshare>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/K769SYXhXq5VrymWCYynLmTSmkDUo43n-FB86iGVLmfBNXXXafTeZTUgRF3gl0ciUcU1N4mtVC6UFpeMdQUNhi7ukggp8R2V9jsvI0ya-GvIZU6InwANyH8qCb3mVst_X1k5Tr0Hl8QPeolp1JlTRfXniRq9qMi0e3E-5NPv7AkS8fqP579lPRaOK6PXD3YGe4dYqW0XsJXKne5PRbZY255WHte1MMZy5W_ATqfquNjosvaNKNpEq_vvz6nWXnMLvZFjfkUbVDJwmzW6qx8R4L-awcxK_sllueZPj3rKxsLzhHVlotruUKVFMted3J57vd5yW62yOUHC8ob9pLPZDMv19PvgkqQK/hDs5twpCO1TwphN8u6xZhei2H-p0W2ch/20>

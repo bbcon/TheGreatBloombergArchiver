@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feb 02 – Feb 08, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="daily.html" class="nav-link">Daily</a><a href="#" class="nav-link  active">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Feb 02 – Feb 08, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Equity Markets and the AI Rotation</p>
+<p class="para-body">US equities experienced a pronounced factor rotation during the week, with the S&P 1500 Software index declining more than 17% year-to-date as concerns mounted that AI tools are disrupting rather than augmenting incumbent software business models. The term "SaaSpocalypse" entered market parlance. AMD fell 7.3% in pre-market Monday before closing down 17% post-earnings, while Thomson Reuters dropped as much as 20% on concerns over Anthropic's legal workflow tool. Alphabet beat Q4 revenue estimates but guided 2026 capital expenditure to as much as $185 billion against a consensus near $120 billion, with shares falling 3.3% pre-market Wednesday. Qualcomm declined 9% and Arm 6.6% on softer outlooks. Amazon tumbled approximately 8% Thursday after disclosing $200 billion in planned 2026 AI-related capex. The aggregate implied spend from Alphabet, Amazon, Meta, and Microsoft now approaches $650 billion — a scale with few historical analogs. On the upside, Silicon Labs surged 33% on reports of a $7 billion Texas Instruments acquisition approach, and Enphase rallied 21% on a revenue beat. Breadth remained constructive: roughly two-thirds of S&P 500 constituents advanced Wednesday, the equal-weighted index hit a record, and Value outperformed Momentum by the widest margin since the November 2020 vaccine data. Nvidia's earnings later this month loom as a critical test of whether the software selloff represents rational repricing or overreaction.</p>
+<p class="para-title" style="color:#5597cb;">Fed Transition and Fiscal Developments</p>
+<p class="para-body">The partial government shutdown ended after President Trump signed a funding deal negotiated with Senate Democrats. Treasury Secretary Scott Bessent testified before the House Tuesday and the Senate Wednesday in contentious sessions. President Trump indicated he would not have nominated Kevin Warsh to the Fed chair role had Warsh signaled a preference for rate hikes — a comment that drew public pushback on institutional independence grounds, with Governor Lisa Cook reiterating the importance of central bank credibility. Senate Republicans separately raised concerns about the Justice Department's investigation into incumbent Chair Jerome Powell. Former Vice Chair Richard Clarida also weighed in publicly on the Warsh nomination. The succession dynamic, combined with questions about institutional independence, has been cited as a contributing factor in this year's demand for gold and dollar-diversification vehicles.</p>
+<p class="para-title" style="color:#5597cb;">Macro Backdrop and Affordability</p>
+<p class="para-body">Q3 GDP was revised to a 4.4% annualized pace, the strongest in two years. Bank of America projects front-loaded 2026 growth, citing roughly $135–140 billion in fiscal stimulus equivalent to approximately 0.6% of disposable income, plus a 0.5–1 percentage point boost from post-shutdown normalization in Q1. AEI and Brookings researchers estimate the US may have experienced net negative immigration in 2025, with 2026 projections ranging from a 185,000 gain to a 925,000 decline — a development with potential labor-supply and trend-growth implications. Consumer confidence registered its weakest reading in over a decade despite real wage gains of 3.8% year-on-year in December. Goldman research highlights housing as the binding constraint: the bottom income quintile now spends 55% of income on rent, and combined down payment plus first-year mortgage costs in major metros have risen to 160–200% of annual income from 90–120% in 2000. Separately, the administration set aside $12 billion to establish a critical-minerals strategic stockpile, extending its industrial policy footprint into materials security and carrying downstream implications for domestic mining and processing equities. Western utilities — PG&E, Edison International, and Xcel Energy — remained in focus as a La Niña-driven warm, dry winter elevated wildfire risk; Xcel executed preventative shutoffs in Colorado affecting more than 50,000 customers, and Edison faces hundreds of lawsuits tied to last year's Eaton fire. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Technology Selloff Spreads to the Region</p>
+<p class="para-body">The global technology rout that erased close to $1 trillion from an iShares software ETF over seven sessions extended into Asian trading early in the week, with Samsung Electronics tumbling and a Hang Seng gauge of Chinese technology shares approaching bear-market territory. The Nasdaq 100 fell roughly 4.6% over three sessions — its worst run since April — driven by concern over hyperscaler capex and AI disruption of incumbent software models. AMD's 17% post-earnings decline, combined with cautious guidance from Qualcomm and Arm citing potential memory-component shortages, weighed on regional chipmakers. By Friday, Asian equities had steadied, with Bitcoin recovering more than 3% from a low near $60,000 in Asian hours, and precious and base metals finding tentative footing. Against the risk-off backdrop, Baidu's announcement of its first-ever dividend alongside a $5 billion buyback represented a notable shift in capital-return posture from Chinese large-cap internet names.</p>
+<p class="para-title" style="color:#e07b39;">China: Growth Targets, Metals Speculation, and Geopolitical Friction</p>
+<p class="para-body">More than a dozen Chinese provinces lowered their 2026 growth targets during the week, with consensus coalescing around a national target of 4.5%–5% at next month's National People's Congress — the first downward revision in three years. Citi now treats its previously baseline stimulus package (approximately 1 trillion yuan fiscal, 20 basis points of rate cuts, 50 basis points of RRR reduction) as a ceiling rather than a base case. On the geopolitical front, a Panama court decision voiding a CK Hutchison port contract drew a sharp response from Beijing, which instructed state firms to halt new project discussions in Panama and intensified customs inspections on Panamanian goods. Trump and Xi spoke by phone covering trade and Taiwan; tone appeared constructive, though substantive commitments remain opaque. Domestically, mainland retail flows into gold, silver, copper, and tin — driven by limited domestic investment alternatives — meaningfully amplified the metals cycle's recent volatility. China's top four gold ETFs recorded nearly $1 billion of outflows on Tuesday, and Shanghai copper futures registered record January volumes. Near-term positioning has clearly overextended, though structural drivers — central-bank gold accumulation, dollar diversification, and strategic metals demand tied to AI and grid infrastructure — appear intact.</p>
+<p class="para-title" style="color:#e07b39;">Japan and Southeast Asian Political Risk</p>
+<p class="para-body">Prime Minister Sanae Takaichi's LDP-led coalition was projected to comfortably clear the 233 seats required for a majority in Sunday's lower-house election, though the result itself constitutes event risk for regional rates and yen positioning given her expansionary fiscal instincts and comments on currency weakness, which she partially walked back. The Topix rally has increasingly been underpinned by governance reform — rising dividends, accelerating buybacks, and re-rating of long-discounted sectors. Elsewhere in the region, Moody's cut Indonesia's outlook to negative, citing fiscal risks, prompting an unusually pointed public rebuke of Citi economists by Jakarta's finance ministry. The Philippines posted its weakest non-pandemic growth in 15 years. India's RBI held rates, citing improved visibility from a developing US trade framework; Indian exporters face an 18% tariff rate once a joint statement is finalized, though a constructive outcome would benefit IT and pharmaceutical names. BYD's Hong Kong shares extended a selloff that has erased over $60 billion in market value since May. Australia's Reserve Bank delivered the first rate hike among major central banks in 2026, with markets pricing a further increase as services inflation proved more persistent than anticipated. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Monetary Policy: ECB Holds, BOE Divided</p>
+<p class="para-body">The week's most consequential policy development was the Bank of England's Thursday decision to hold rates on a notably close 5-4 vote, signaling a more divided committee than consensus had anticipated and leaving open the possibility of a resumption of easing in coming meetings — only one of 32 economists surveyed had expected a cut. Governor Andrew Bailey subsequently appeared to endorse market pricing of a roughly 50% probability of a March cut, shifting policy risk toward the labour market where softening signs have accumulated. Sterling and short sterling will remain sensitive to incoming wage and employment data. The ECB held rates as expected and Governing Council member Yannis Stournaras downplayed concerns about the euro's recent appreciation, characterizing the move as one being monitored rather than warranting alarm. Euro-area inflation continued to run below the ECB's 2% target, sharpening the policy debate; if the undershoot persists into the spring projection round, markets will likely lean toward pricing additional accommodation. This sits in some tension with firmer activity signals: German factory orders unexpectedly rose at their fastest pace in two years, reinforcing tentative signs of manufacturing recovery in an economy that closed 2025 with stronger-than-expected growth.</p>
+<p class="para-title" style="color:#4a9e6b;">UK Political Risk</p>
+<p class="para-body">Prime Minister Keir Starmer's position deteriorated materially during the week, with Labour MPs describing a "febrile, mutinous mood" within the parliamentary party over his association with Peter Mandelson. Parliament voted to compel disclosure of documents related to Mandelson's appointment as US ambassador given his links to Jeffrey Epstein. The political strain began to register in markets, with sterling under pressure and gilt yields reflecting a renewed political risk premium, though no credible challenger has yet emerged. How long Starmer can persist absent a formal leadership challenge remains an open question that may increasingly weigh on UK asset sentiment.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate Developments</p>
+<p class="para-body">Novo Nordisk plunged as much as 20% in Copenhagen Monday — among the largest single-day declines in the company's history — after forecasting a steep decline in sales, providing concrete evidence that competitive dynamics in GLP-1 obesity drugs are deteriorating faster than the sell-side had modeled. The move carries outsized implications for Denmark's equity index given Novo's index weight. Stellantis fell as much as 24% in Milan Thursday — a record intraday decline — after announcing €22 billion in charges tied to unwinding its EV strategy, including model cancellations and supplier compensation; the writedown joins similar moves at Ford, GM, and Porsche. Shell missed Q4 expectations with adjusted net income of $3.26 billion, down 11% year-on-year, though it maintained its $3.5 billion quarterly buyback. UBS announced a $3 billion buyback alongside an earnings beat, reinforcing the constructive narrative around large-cap European banks. Thomson Reuters fell as much as 20% during the week on AI disruption concerns. The proposed Rio Tinto–Glencore tie-up collapsed within 24 hours, reportedly over price, with Glencore shares falling roughly 11%. French customs data showed Q4 2025 US tariffs weighing materially on exports: spirits shipments fell 47%, wine 39%, and perfumes and cosmetics 25%. Chancellor Merz courted Middle Eastern energy suppliers to diversify German dependence on US LNG, a notable strategic pivot. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Risk Asset Unwind: Rotation or Correction?</p>
+<p class="para-body">The week's defining market dynamic was a synchronized retreat from crowded trades spanning US equities, precious metals, base metals, and crypto — yet underlying breadth suggested rotation rather than wholesale capitulation. Silver fell as much as 17% intraday Tuesday to around $74/oz, extending a five-day decline approaching 40% that unwound speculative excess built on Citigroup's earlier call for $150 silver. Gold declined as much as 3.5% Wednesday before stabilizing. Bitcoin slid below $70,000 mid-week, reaching $60,033 briefly in Asian trading Thursday — down more than 42% from its October peak — before recovering toward $66,000. Michael Burry warned of a self-reinforcing "death spiral" risk in Bitcoin. Gold's relative resilience versus crypto reinforced the thesis that bullion is absorbing safe-haven flows tied to deficit and policy concerns rather than digital assets. The metals complex's structural drivers — central-bank accumulation, dollar diversification, and strategic demand for copper, rare earths, and other inputs tied to grid and AI infrastructure — appear intact beneath the speculative froth; Shanghai copper futures recorded their highest-ever monthly volumes in January. Asian sessions showed tentative stabilization on Friday, though characterizing the move as a durable bottom would be premature.</p>
+<p class="para-title" style="color:#8b5cf6;">US-Iran Tensions and Energy Markets</p>
+<p class="para-body">Brent advanced to around $68 a barrel Wednesday for a second consecutive session after the US Navy shot down an Iranian drone heading toward an American aircraft carrier in the Arabian Sea. Oil subsequently declined for the first time in three days after Iran confirmed nuclear talks with the US are scheduled in Muscat, even as President Trump issued warnings and an American military build-up in the region continued. Notably, Bloomberg Opinion's John Authers argued that markets are under-pricing the probability of a major oil shock — a view that sits uncomfortably with current term-structure pricing and implies asymmetric risk should hostilities escalate toward the Strait of Hormuz. Some VLCC operators reportedly accelerated transits through the chokepoint during the week. Separately, cracks have emerged in the sanctioned-crude black market: Iranian and Russian barrels are accumulating unsold, attributable less to enforcement than to ample legitimate alternatives at competitive prices. Russian Urals discounts to Indian refiners widened to more than $10 below Brent over 10 days, testing New Delhi's commitment to a trade arrangement with Washington predicated on reduced Russian purchases; in practice, flows appear likely to taper toward 800,000–1 million barrels per day rather than halt entirely.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary Policy Divergence and Geopolitical Realignment</p>
+<p class="para-body">The Reserve Bank of Australia's rate hike — the first among major central banks in 2026 — stands in marked contrast to the ECB's disinflation undershoot and the Fed's unresolved succession dynamics. The splintering policy backdrop argues for sustained FX volatility and continued cross-market dispersion. NBER research by Alfaro and Chor found China's share of US imports has fallen to roughly 9%, back to pre-WTO levels, with Vietnam, Mexico, and Taiwan the principal beneficiaries — a reshuffling among existing partners rather than genuine deglobalization, a meaningful nuance for Southeast Asian exporters. Meanwhile, Gulf Cooperation Council economies expanded trade at a 15% annual clip from 2021–24, with the Asia-Middle East corridor projected to reach $1.5 trillion by 2030; the UAE's emergence as a transshipment hub for Chinese manufactured goods seeking to circumvent Western tariffs illustrates how quickly new logistics architectures form in response to policy shifts. The Trump administration's $12 billion critical-minerals stockpile and Australia's proposed rare-earth price floor both reflect the same structural response to China's demonstrated supply-chain leverage, and the collapse of the Rio Tinto–Glencore tie-up leaves strategic consolidation in the sector unresolved. China's 543 GW of power capacity additions in 2025 alone increasingly appears as a durable competitive advantage in AI infrastructure, a point both Musk and Huang flagged publicly — a contrast with the US data-center grid-connection backlog stretching to seven years in parts of Virginia.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, March 11, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, March 11, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity futures erased early gains on Wednesday as oil prices climbed anew after UK naval authorities reported three vessels struck in the Strait of Hormuz and the Persian Gulf, underscoring the fragility of any market optimism around a near-term resolution to the US-Iran conflict. S&P 500 futures settled around 6,775, down modestly on the session, while Treasuries held broadly steady ahead of February CPI data — a release that retains significance even as the oil shock increasingly dominates the inflation conversation. On the policy front, Kevin Warsh met with Senator Thom Tillis to discuss his Federal Reserve chair nomination but failed to secure a clear path forward, leaving the succession question unresolved at a moment when the central bank's credibility and independence are under considerable scrutiny. A separate Bloomberg Opinion piece warned that a compromised Fed risks precipitating a fiscal crisis — a concern that may gain traction should energy-driven inflation force difficult monetary decisions in the months ahead. In corporate news, Amazon raised $37 billion in what ranks as the fourth-largest US corporate bond sale on record, with a further $11.6 billion sought in European markets, as the company funds accelerating AI infrastructure investment. Oracle shares surged approximately 10% in extended trading after reporting strong AI cloud demand, reinforcing the thesis that hyperscaler capital expenditure remains robust. On the credit side, JPMorgan Chase moved to restrict lending to certain private credit funds after marking down the value of loans to software companies — a development PIMCO's Christian Stracke described plainly as "a crisis of really bad underwriting." The $1.8 trillion private credit market is showing mounting stress as high-profile corporate blowups surface. Pre-conflict consumer data offered a counterpoint to the gathering macro gloom: Bank of America card data showed spending rose 3.3% in February year-on-year, the strongest growth in over three years, with tax refunds providing a visible boost across income cohorts, though the K-shaped divergence between higher and lower earners remains pronounced.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's National People's Congress concluded its annual budget deliberations this week with the 15th Five-Year Plan (2026–2030) signaling policy continuity rather than transformation. The 2026 draft budget prioritizes advanced manufacturing, semiconductor development, and artificial intelligence — the so-called "new-productive forces" — while keeping the fiscal deficit at 4% of GDP. Analysts at Oxford Economics and Gavekal Research noted that the plan's twenty main indicators are broadly unchanged from those of the 14th Plan, and the absence of meaningful household consumption stimulus disappointed investors hoping for a demand-side rebalancing. Whether perpetuating the investment-heavy model will prove sustainable in a structurally weaker global trade environment remains an open question. China's resilience amid the oil shock has drawn notice. Chinese equities have declined less than global peers since the conflict began, the yuan has held broadly steady against the dollar, and government bond yields have barely moved. Beijing's years of investment in renewables, electric vehicles, and strategic oil stockpiling — now at a record 851 million barrels in onshore commercial inventories — have provided a tangible buffer. However, Bloomberg Economics cautions that the primary risk for China is not domestic inflation but an export demand shock: a 5% decline in external demand would subtract 0.16 percentage points from GDP growth, while a 10% drop would widen the drag to 0.31 percentage points. With oil briefly clearing $100 per barrel during the week, the threshold at which secondary global demand effects meaningfully pressure Chinese exports — estimated by Bloomberg Economics at a sustained $108/bbl — appears less remote than it did two weeks ago. Separately, Chinese authorities moved to restrict state enterprises and government agencies from deploying OpenClaw AI applications on office computers, citing cybersecurity concerns over the platform's unusually broad data access requirements. The move caused immediate market reaction: Minimax fell 6.5% in Hong Kong and Zhipu dropped 6.1%. India's situation deteriorated further amid the Gulf crisis, with the rupee under pressure, capital outflows accelerating, and the Reserve Bank of India intervening in currency markets. Indian equities have underperformed EM peers significantly since Modi's 2024 coalition government took office, even as real GDP expanded 7.8% last year and inflation remains within target.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">The European Central Bank moved to the forefront of the monetary policy debate as the Iran conflict reshapes the eurozone's inflation and growth calculus. ECB Governing Council member Peter Kazimir stated explicitly that the war risks forcing the central bank to raise rates sooner than previously anticipated, while colleague François Villeroy de Galhau struck a slightly more measured tone, noting that next week's meeting is not the right moment for action but that policymakers will not permit inflation to become entrenched. ECB President Christine Lagarde separately pledged that the bank would act to prevent the conflict from inflicting the same inflationary pain on the eurozone as Russia's 2022 invasion of Ukraine — a signal that the institution is monitoring energy pass-through effects closely, even as the precise monetary response remains undetermined. The Stoxx Europe 600 fell 1.13% as markets processed renewed disruptions to Middle Eastern shipping. Rheinmetall shares declined 4.5% after the German defense contractor guided below analyst sales expectations for 2026, a notable miss given the broader European defense spending cycle. In the automotive sector, Porsche rose 2.1% after incoming CEO Michael Leiters outlined plans to introduce models above the 911 to support margins — though the broader picture for German automakers in China remains challenging, with Porsche's China sales slumping as domestic electric vehicle manufacturers capture an increasing share of the premium segment. Mercedes-Benz separately unveiled a luxury electric van targeting Chinese consumers, illustrating the competitive pressure incumbents face in their most important growth market. In the UK, London Underground commuters face twelve days of strike action beginning later this month, with the RMT union opposing Transport for London's proposal to allow drivers to volunteer for a four-day working week. Chancellor Rachel Reeves declined to speculate on the fiscal implications of the Iran war, while the Bank of England confirmed that historical figures on banknotes — including Winston Churchill and Jane Austen — will be replaced by native British wildlife.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The defining development of March 11 in global markets was the IEA's announcement of an emergency release of 400 million barrels of oil from member-country reserves — the largest such action in the agency's history. Executive Director Fatih Birol characterized it as "an emergency collective action of unprecedented size," and the decision was unanimous. Japan separately announced a unilateral release of approximately 80 million barrels, beginning as early as March 16. The announcement temporarily capped Brent crude below $90 per barrel, though analysts were quick to note that execution details — pace, duration, and logistics — will determine market impact. Some traders remain skeptical that reserves can be deployed rapidly enough to meaningfully offset the roughly 7 million barrels per day of supply disrupted by the effective closure of the Strait of Hormuz. The geopolitical picture remains fluid and the risk of a prolonged closure is arguably underpriced. UK naval forces reported three vessels struck in the Strait of Hormuz and the Persian Gulf on Wednesday, and Dubai International Airport briefly halted operations following drone strikes that injured four people. Analysts at BCA Research raise the uncomfortable possibility that even a ceasefire may not reopen Hormuz, as remnants of Iran's regime — or factions beyond Tehran's control — could sustain drone harassment of shipping indefinitely. Oil briefly traded above $100 during the week, and at $88 Brent, the market appears to embed a meaningful probability of conflict resolution that the military and diplomatic evidence does not yet support. The dollar has strengthened since hostilities commenced, driven by the US's position as the world's largest crude producer and the currency's role in global oil trade — a dynamic that partially reverses the roughly 6% decline in the Bloomberg dollar index over the past year. LNG supply flows are also shifting, with at least nine Europe-bound cargoes diverting to Asia, tightening availability in both regions simultaneously. Pakistan is navigating acute pressure, having raised fuel prices by a record 21% and suspended gas supplies to fertilizer companies following the suspension of Qatari gas flows, while trying to balance obligations to Saudi Arabia against domestic Shia sympathies and historic ties with Iran.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

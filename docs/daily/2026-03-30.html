@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, March 30, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, March 30, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity futures recovered partial ground in early Monday trade, with S&P 500 futures rising 0.3% after an earlier selloff, while the Nasdaq 100 sits roughly 11.5% below its October all-time high and remains under sustained pressure. The slow-moving nature of this correction — quite unlike the sharp sell-off that followed Liberation Day tariffs a year ago — reflects lingering market conviction that either a rapid diplomatic resolution or a decisive US military outcome remains plausible. That conviction is fraying. On the monetary policy front, Federal Reserve Chair Powell is scheduled to speak Monday, with markets attentive to any signal on how the Fed is calibrating the competing risks of oil-driven inflation and decelerating growth. Bond managers at Pimco, JPMorgan Asset Management, and Columbia Threadneedle have begun shifting their focus from the inflationary impulse of higher crude to the growth-shock scenario, arguing the surge in yields has run its course. Two- and five-year Treasury yields have risen by more than half a percentage point since the Iran conflict began; the 10-year briefly traded above 4.4% before firming on Monday. The employment report on Friday — with consensus expecting 60,000 jobs added after a 92,000 decline in February — will provide the first clean read on how the real economy is absorbing the shock. On fiscal and trade policy, this week marks the one-year anniversary of Liberation Day tariffs. The US Supreme Court in February ruled those tariffs illegal, triggering a $170 billion refund process. Bloomberg Economics estimates that 43% of US imports — roughly $1.4 trillion in goods — currently remain tariff-free, a figure frequently lost in the broader narrative. Foreign direct investment into the US totaled $288.4 billion in 2025, a modest decline from 2024 and the lowest of the Biden era, undermining the administration's argument that tariffs are catalyzing a manufacturing investment surge. Aluminum producers Alcoa and Century Aluminum rose 8.7% and 8.5% respectively in premarket trade, following Iran's weekend strikes on Gulf production facilities.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets opened the week sharply lower. Japan's Nikkei fell as much as 4.5% at the open, prompting Japan's top currency official to deliver his strongest warning yet against yen weakness and signal potential bold intervention — remarks that helped stabilize the currency. The broader MSCI Asia gauge declined as investors absorbed the entry of Houthi forces into the conflict and digested the prospect of a prolonged Strait of Hormuz disruption. India remains among the most acutely exposed economies in the region. The Reserve Bank of India's move to cap lenders' open foreign-exchange positions at $100 million per day delivered only a fleeting lift to the rupee, which subsequently weakened to fresh lows. Global funds have withdrawn approximately $12 billion from Indian equities since the conflict began, while index-eligible bonds recorded $1.6 billion in outflows in March alone, a record. India's combination of heavy energy import dependence and proximity to the war zone leaves it with limited natural buffers. South Korea signaled it is considering extending driving restrictions to the general public should Brent crude breach $120 per barrel — a threshold nearly reached on Monday at $117 — the first such potential measure since the 1991 Gulf War. The government has already asked citizens to reduce power consumption and favor public transport. Australia announced a temporary halving of fuel taxes at an estimated cost of A$2.55 billion. BYD offered a more constructive datapoint: management told analysts the company is confident 2026 exports will reach 1.5 million vehicles, 15% above its prior guidance, providing some relief after a disappointing earnings release. On the geopolitical side, President Xi Jinping invited Kuomintang Chairwoman Cheng Li-wun — leader of Taiwan's largest opposition party — to visit China from April 7-12, the first such visit by a sitting KMT leader in a decade. The invitation comes one month before Trump's scheduled summit in Beijing and gives Xi a platform to discuss Taiwan's US weapons purchases directly with a Taiwanese political figure who has publicly questioned the scale of her island's defense spending.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European equity markets showed limited movement, with the Stoxx Europe 600 broadly flat on Monday. The more consequential European developments this week concern the intersection of energy policy, monetary policy, and domestic politics rather than markets per se. UK Chancellor Rachel Reeves is scheduled to address G7 partners, urging them to coordinate on boosting domestic energy supplies and warning that the oil and gas price surge is directly benefiting Vladimir Putin — a framing that seeks to link the Middle East crisis to the ongoing Russia-Ukraine dynamic. On monetary policy, the ECB, Bank of England, and Swiss National Bank all held rates at their most recent meetings, each acting unanimously in response to geopolitical uncertainty. ECB Governing Council member Francois Villeroy de Galhau signaled the central bank stands ready to act against rising inflation expectations should they become unanchored. Euro-area CPI data is due Tuesday, alongside German inflation figures on Monday, which may show a notable jump reflecting fuel costs. The ECB's Cipollone is scheduled to speak Wednesday. The UK faces a separate set of pressures. London's youth unemployment has reached a rate of approximately one in four 16-to-24 year-olds actively seeking work, the highest in the country. Graduate job postings in London fell from roughly 13,000 in 2019 to just over 2,000 at the start of 2026, according to Adzuna — a decline attributed to AI-driven hiring retrenchment compounded by broader economic uncertainty. The trend poses a political risk for Keir Starmer's Labour government ahead of municipal elections in just over a month. In Paris, French authorities detained two additional suspects linked to a foiled bomb plot near a Bank of America office, an incident officials believe is connected to the Middle East conflict.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The dominant global theme is whether the Iran-US war, now in its second month, will prove more enduring and economically destructive than financial markets have priced. Brent crude extended its advance above $116 per barrel on Monday — heading for its largest-ever monthly gain — after Houthi forces formally entered the conflict over the weekend and Iran struck aluminum production facilities in the UAE and Bahrain. The latter sent aluminum prices up as much as 6%, highlighting how the energy shock is beginning to transmit into industrial metals and broader supply chains. The strategic picture has shifted materially. President Trump's earlier five-day and ten-day extensions of his ultimatum on Iranian energy infrastructure — both of which prompted no discernible Iranian concession — appear to have revealed the limits of rhetorical escalation as a market management tool. Iran's new leadership, having already absorbed significant military damage, retains low incentive to capitulate: the ability to selectively restrict tanker passage through the Strait of Hormuz imposes severe costs on others while leaving Iranian exports less impaired than an outright mining campaign would. Approximately 20,000 seafarers remain stranded in and around the Strait. The nuclear proliferation implications deserve attention. From Germany and Poland exploring deeper integration with France's nuclear umbrella, to rising public support in South Korea and renewed debate in Japan, US allies are reassessing deterrence postures in ways that may prove structurally significant regardless of how the current conflict concludes. The Trump administration is simultaneously considering resuming nuclear testing after more than three decades and potentially sharing enrichment technology with Saudi Arabia, according to documents reviewed by Bloomberg. On the anniversary of Liberation Day tariffs, the global trading system remains in flux. China has initiated two fresh investigations into US trade practices ahead of an expected May presidential summit. The WTO failed to extend its 28-year moratorium on e-commerce tariffs. Fertilizer prices are rising sharply — urea and ammonia particularly — with near half of global urea supply originating in the Persian Gulf region, raising concerns about food security in sub-Saharan Africa and parts of South Asia.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, February 05, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, February 05, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Tech Rotation Deepens; Software Bears the Brunt</p>
+<p class="para-body">US equities are in the midst of a sharp factor rotation rather than a broad selloff. Value outperformed momentum on Wednesday by the largest margin since November 2020, when initial vaccine efficacy data triggered a comparable reversal — a move all the more notable for occurring without a singular catalyst. The S&P 1500 Software index has declined more than 17% year-to-date, with Anthropic's latest tool intensifying concerns that AI is now disrupting, not merely augmenting, incumbent software business models. Thomson Reuters fell as much as 20% on the week, its largest decline on record. AMD slid 17% post-earnings, and an iShares software ETF has shed nearly $1 trillion in market value over seven sessions. Alphabet beat Q4 revenue estimates but guided 2026 capex to as much as $185 billion versus consensus near $120 billion; shares fell 3.3% premarket. Qualcomm declined 9% and Arm 6.6% on softer outlooks. Notably, breadth remains constructive: roughly two-thirds of S&P 500 constituents advanced Wednesday, and the equal-weighted index closed at a record. Nvidia's CEO Jensen Huang called the software selloff "illogical," though investors appear unlikely to take comfort absent stronger evidence — Nvidia's earnings later this month loom as the key test.</p>
+<p class="para-title" style="color:#5597cb;">Macro Backdrop Remains Supportive</p>
+<p class="para-body">Q3 GDP was revised to a 4.4% annualized pace, the strongest in two years. Bank of America expects front-loaded 2026 growth, citing roughly $135–140 billion in OBBBA stimulus (about 0.6% of disposable income) and a 0.5–1pp boost from post-shutdown normalization in Q1 — factors not yet reflected in consensus forecasts. Separately, AEI/Brookings researchers estimate the US may have experienced net negative immigration in 2025, with 2026 projections ranging from a 185,000 gain to a 925,000 decline, a development with potential implications for labor supply and trend growth.</p>
+<p class="para-title" style="color:#5597cb;">Crypto and Fed</p>
+<p class="para-body">Bitcoin fell below $70,000, down more than 42% from its October peak, with Strategy expected to report a multibillion-dollar Q4 loss. On policy, President Trump indicated he would not have nominated Kevin Warsh to the Fed had Warsh signaled a preference for hikes; Governor Lisa Cook reiterated the importance of central bank credibility. Treasury Secretary Bessent testifies before the Senate today following a contentious House appearance.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Global tech rout reaches Asia; software, chip names lead declines</p>
+<p class="para-body">The selloff that erased close to $1 trillion from an iShares software ETF over seven days extended into Asian trading, with Samsung Electronics tumbling and a Hang Seng gauge of Chinese technology shares approaching bear-market territory. The proximate catalyst — concern that AI tools may disrupt incumbent software business models — has now broadened to chipmakers, with AMD down 17% post-earnings and Qualcomm and Arm guiding cautiously, citing potential memory-component shortages. Against this, Baidu announced its first-ever dividend alongside a buyback of up to $5 billion, a notable shift in capital-return posture from China's large-cap internet names. Alphabet's capex guidance of up to $185 billion (versus $119.5 billion consensus) will be read in Asia as supportive for memory and AI infrastructure suppliers, though the broader rotation away from momentum names complicates that read.</p>
+<p class="para-title" style="color:#e07b39;">Japan: Takaichi looks set to consolidate her mandate</p>
+<p class="para-body">Polling ahead of Sunday's lower-house election suggests Prime Minister Sanae Takaichi's LDP-led coalition will comfortably clear the 233 seats needed for a majority. The yen has whipsawed on her comments regarding a weaker currency, which she has partially walked back. More structurally, the Topix rally appears increasingly underpinned by genuine governance reform — rising dividends, accelerating buybacks, and a re-rating of long-discounted sectors such as non-ferrous metals (Sumitomo Electric has tripled since the US election). The 30-year JGB yield surge is best characterized as catch-up to G7 peers rather than incipient fiscal crisis, though Takaichi's expansionary instincts warrant continued monitoring.</p>
+<p class="para-title" style="color:#e07b39;">China policy and geopolitics</p>
+<p class="para-body">More than a dozen Chinese provinces have lowered 2026 growth targets, and consensus is coalescing around a national target of 4.5%–5% at next month's NPC — the first downward revision in three years. Citi now treats its previously baseline stimulus package (≈1 trillion yuan fiscal, 20bp rate cut, 50bp RRR cut) as a ceiling rather than a baseline. Separately, Beijing has instructed state firms to halt new project discussions in Panama and is intensifying customs inspections on Panamanian goods, retaliating against the voiding of a Hong Kong company's port contract. Trump and Xi spoke by phone, covering trade and Taiwan; tone appears constructive, though substance remains opaque.</p>
+<p class="para-title" style="color:#e07b39;">India and Australia</p>
+<p class="para-body">India's exports to the US will face an 18% tariff rate once a joint statement is finalized. Indian refiners are seeking clarity on Trump's claim that Modi pledged to halt Russian crude purchases; in practice, flows are likely to taper toward 800k–1mb/d rather than zero, given freight economics, refinery configurations, and persistent discounts. Australia's Treasurer is on the def</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Central banks hold the line</p>
+<p class="para-body">The European Central Bank is expected to leave policy rates unchanged today, with the Bank of England following suit. The BOE decision came down to a 5-4 vote in favor of holding, signaling a more divided committee than the consensus framing implies and leaving open the possibility that the easing cycle could resume in coming meetings. Only one of 32 economists surveyed had expected a cut. The ECB's hold reflects continued patience as policymakers assess whether disinflation is durable enough to justify further accommodation.</p>
+<p class="para-title" style="color:#4a9e6b;">UK political risk reasserts itself</p>
+<p class="para-body">Prime Minister Keir Starmer's position has deteriorated materially over his ties to Peter Mandelson, with Labour MPs describing a "febrile, mutinous mood" within the parliamentary party. Parliament voted to compel disclosure of documents related to Mandelson's appointment as US ambassador, given his longstanding association with Jeffrey Epstein. The political strain has begun to spill into markets, with sterling under pressure and gilt yields reflecting renewed political risk premium, though rivals have so far refrained from a formal leadership challenge. How long Starmer can persist absent a credible challenger remains an open question.</p>
+<p class="para-title" style="color:#4a9e6b;">Macro backdrop remains constructive</p>
+<p class="para-body">German factory orders unexpectedly rose at their fastest pace in two years, reinforcing tentative signs of a manufacturing recovery in the euro area's largest economy, which closed 2025 with stronger-than-expected growth. The UK government separately indicated that a free-trade agreement with the Gulf Cooperation Council is "imminent." Beneath the political noise, there are early signs of a long-anticipated UK productivity resurgence, though this remains to be confirmed in the data.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate</p>
+<p class="para-body">Shell missed fourth-quarter expectations with adjusted net income of $3.26 billion, down 11% year-on-year, weighed by softer crude prices, weak oil trading and chemicals losses; the $3.5 billion quarterly buyback was maintained. HSBC is preparing minimal or zero bonuses for underperformers across investment banking and wealth as it adopts a more Wall Street-style compensation model. BNP Paribas's CFO described the bank as "strongly delivering" on growth targets. European software names were caught in the broader AI-driven tech rotation, with Thomson Reuters down as much as 20% earlier in the week on concerns Anthropic's new tool threatens its legal workflow franchise.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Cross-Asset Volatility Eclipses Geopolitical Headlines</p>
+<p class="para-body">A pronounced de-risking episode swept across asset classes overnight, with the most dramatic moves concentrated in precious metals and technology. Silver fell as much as 17% intraday to roughly $74/oz, taking its five-day decline to nearly 40% and erasing a brief rebound from last week's rout. Gold declined as much as 3.5%. The unwind exposes the speculative excess that built up after Citigroup's recent call for $150 silver; Chinese trader Bian Ximing, having previously profited from the gold rally, now sits on roughly $300 million in paper gains from the largest net-short silver position on the Shanghai Futures Exchange. Bitcoin slid below $70,000, down more than 42% from its October peak, undermining the safe-haven thesis its proponents had advanced.</p>
+<p class="para-title" style="color:#8b5cf6;">AI-Driven Rotation, Not Wholesale Selloff</p>
+<p class="para-body">The global technology selloff that began with concerns about AI disrupting incumbent software business models extended into Asia, with Samsung weaker and Hong Kong-listed Chinese tech approaching bear-market territory. An iShares software ETF has shed close to $1 trillion in seven sessions. The dynamic appears to be rotation rather than capitulation: roughly two-thirds of S&P 500 constituents gained Wednesday and the equal-weighted index hit a record. Value beat momentum by the widest margin since the November 2020 vaccine results — a factor move unusual in the absence of a discrete catalyst.</p>
+<p class="para-title" style="color:#8b5cf6;">Central Banks Hold; Iran Diplomacy Resumes</p>
+<p class="para-body">The BOE held rates with a notably close 5-4 split, and the ECB is expected to stand pat. Both remain in wait-and-see mode on inflation. Oil declined for the first time in three days after Iran confirmed nuclear talks with the US are scheduled in Muscat, even as President Trump warned Tehran amid a continued American military build-up in the region. Separately, Javier Blas notes cracks emerging in the sanctioned-crude black market: Iranian and Russian barrels are accumulating unsold, less from enforcement than from ample availability of legitimate alternatives at competitive prices — a development worth monitoring for its implications on the marginal price of oil.</p>
+<p class="para-title" style="color:#8b5cf6;">Structural Note</p>
+<p class="para-body">China's power capacity additions — 543 GW in 2025 alone — increasingly look like a durable competitive advantage in AI infrastructure, a point both Musk and Huang have flagged. The US data-center grid-connection backlog stretches to seven years in parts of Virginia.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

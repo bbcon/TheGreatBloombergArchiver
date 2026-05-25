@@ -1,0 +1,366 @@
+Subject: Next China: Gripped by OpenClaw
+Date: Fri, 13 Mar 2026 04:36:38 +0000
+
+China’s OpenClaw Obsession Is a Risky Gamble on Experimental AI.
+Overworked people are flocking to OpenClaw to help them with small tasks, 
+despite the security risks
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-03-13/gripped-by-openclaw-china-runs-massive-risky-ai-experiment>
+ <https://www.bloomberg.com/asia>
+
+ 
+<https://sli.bloomberg.com/click?s=1149229&li=17262555&m=11b724c487f61753eb1a7a4a5f3ef261&p=03132026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149229&li=17262555&m=11b724c487f61753eb1a7a4a5f3ef261&p=03132026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Hi, this is Allen Wan in Shanghai.
+
+As I sit around in my man cave wondering if I should grant OpenClaw access to 
+my personal laptop, I am intrigued by the potential for this open-source AI 
+platform to do all the boring tasks that worker ants like me have to do.
+
+I’m equally concerned about the security risks and my own job security.
+
+That’s the same conundrum the Chinese government is facing as it considers 
+whether to allow OpenClaw, an AI agent that requires unusually broad access to 
+private data, to thrive as it did with DeepSeek just a year ago, or squash it 
+as itpretty much did with Bitcoin 
+<https://www.bloomberg.com/news/newsletters/2026-02-10/crypto-winter-grows-progressively-colder-in-china?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+.
+
+The stakes are high. China is in a race with the US for AI supremacy 
+<https://www.bloomberg.com/news/videos/2026-03-12/the-us-china-race-for-ai-dominance-video?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+, and is pinning its hopes for growth on advanced tech and the ability of its 
+private companies to lead it into the future, whether with humanoid robots, 
+robotaxis or AI agents.
+
+It is incredible how OpenClaw, developed by OpenAI’s Peter Steinberger, has 
+garnered such a huge following in China in such a short time — more so than in 
+the US, where the tech giants have largely roped it off from joining their 
+lucrative ecosystems. Read moreabout the enthusiasm in China here 
+<https://www.bloomberg.com/news/articles/2026-03-12/openclaw-frenzy-drives-china-s-agentic-ai-adoption-raises-security-concerns?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+.
+
+Since launching in November last year, there have been well-attended 
+gatherings in cities like Beijing, Shanghai and Shenzhen so geeks and office 
+workers could meet to share tips on how to improve the open-source model, whose 
+symbol is a lobster.
+
+Some of the nation’s most valuable tech and ecommerce firms, like Tencent and 
+JD.com, have rolled out OpenClaw apps, while local governments have made 
+millions of yuan in subsidies available for companies that develop atop the 
+platform.
+
+A big moment occurred this month in Shenzhen, when hundreds of people gathered 
+outside Tencent’s headquarters to watch a free demonstration of OpenClaw and 
+get help from the firm’s engineers installing the software on laptops. Read an 
+opinion pieceabout the lobster craze here 
+<https://www.bloomberg.com/opinion/articles/2026-03-11/openclaw-ai-agent-china-s-ai-lobster-craze-comes-with-claws?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+.
+ 
+<https://www.bloomberg.com/news/videos/2026-03-11/why-is-china-embracing-openclaw-video>
+WATCH: Why is China embracing OpenClaw so enthusiastically?
+OpenClaw has suddenly become a massive growth opportunity for an economy that 
+is expected to slow this year. It is refueling animal spirits in the tech world 
+anda stock market rally led by big gains 
+<https://www.bloomberg.com/news/articles/2026-03-10/tencent-zhipu-shares-jump-on-launches-of-ai-agents-tapping-into-openclaw?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ for companies like Hong Kong-listed Zhipu and MiniMax, which are developing 
+tools off of OpenClaw.
+
+It is easy to see why people in China are intrigued 
+<https://www.bloomberg.com/news/newsletters/2026-03-10/openclaw-in-china-has-users-and-tech-companies-buzzing-for-open-source-ai-agents?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+. OpenClaw is a way to connect with the popular trends of the wider world, 
+while remaining compatible with domestic social media platforms like WeChat and 
+performing tasks as varied as booking travel and drafting emails.
+
+“In China, we are undergoing a cognitive shift from chat-only AI to productive 
+AI,” said Chance Peng, a tech entrepreneur in Shanghai. “For Chinese people who 
+deal with heavy workloads on a daily basis, OpenClaw offers a much-needed tool 
+to ease their workload. For the time being, the value of the application 
+outweighs the risks.”
+
+Nevertheless, all of the excitement may go up in smoke, if the government gets 
+too worried. In an echo of China’s earliercurbs on iPhones 
+<https://www.bloomberg.com/news/articles/2023-12-15/china-s-apple-iphone-ban-accelerates-across-state-firms-government?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ and Teslas for some individuals and entities due to security concerns, 
+authorities have moved to restrict state-owned and government agencies, 
+including the largest banks, from running OpenClaw AI apps on office computers. 
+Read moreabout those restrictions here 
+<https://www.bloomberg.com/news/articles/2026-03-11/china-moves-to-limit-use-of-openclaw-ai-at-banks-government-agencies?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ and about the new techtesting the government’s approach to regulating AI here. 
+<https://www.bloomberg.com/news/articles/2026-03-12/china-s-openclaw-frenzy-tests-xi-s-approach-to-regulate-ai?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+
+Besides President Xi Jinping’s push to prevent Chinese data from getting into 
+foreign hands due to national security worries, there are other reasons why 
+Beijing is suddenly taking a deeper look at OpenClaw. One of them has to do 
+with hackers.
+
+One critical flaw, known as ClawJacked, allowed intruders to take control of a 
+user’s OpenClaw agent by getting them to visit a malicious website. That defect 
+was fixed but researchers found thousands of vulnerabilities in the software. 
+Read an explainer that digs intothe pros and cons of OpenClaw here 
+<https://www.bloomberg.com/news/articles/2026-03-11/what-is-the-openclaw-ai-agent-and-why-is-it-popular-in-china?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+.
+OpenClaw can book a flight, schedule meetings and deal with an email inbox.
+Visual China Group
+Ultimately, it is hard to see the Chinese government crushing OpenClaw without 
+a backlash from companies trying to profit from it and people keen to use it. 
+After all, it took years for the nation’s tech firms to regain their footing 
+aftera government crackdown on the industry 
+<https://www.bloomberg.com/news/articles/2025-02-17/china-investors-are-starting-to-believe-xi-tech-crackdown-is-over?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+, one that dented economic growth.
+
+Instead, authorities will probably seek to tame OpenClaw some or support the 
+development of a Chinese alternative likethey did with Huawei’s HarmonyOS 
+operating system 
+<https://www.bloomberg.com/news/features/2025-01-28/huawei-harmonyos-next-review-new-phone-seeks-to-break-apple-google-dominance?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ over foreign alternatives. That’ll take time, though.
+
+In the meantime, the rest of the world should pay attention to what’s 
+happening with OpenClaw in this country, writes Bloomberg Opinion columnist 
+Catherine Thorbecke.
+
+“China is now running the world’s biggest real-world trial of AI agents, with 
+ordinary people as the beta testers and their money and livelihoods on the 
+line,” she said. “In the rush to automate everything, China will be the first 
+to show where this experiment snaps.”
+ 
+<https://www.bloomberg.com/news/audio/2026-03-10/big-take-asia-the-fall-of-an-alleged-scam-mastermind-podcast>
+What We’re Reading, Listening to and Watching:
+
+ * Read a Big Take <https://www.bloomberg.com/bigtake> on Iran’s cheap but 
+plentiful weaponrystraining the US military 
+<https://www.bloomberg.com/news/features/2026-03-10/iran-s-attack-drones-and-missiles-put-us-military-under-unexpected-strain?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ ... and one about America’s decade-long AI war effortsgetting a trial by fire 
+in Iran 
+<https://www.bloomberg.com/news/features/2026-03-12/iran-war-tests-project-maven-us-ai-war-strategy?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ * Here’s a story about China passing a law 
+<https://www.bloomberg.com/news/articles/2026-03-12/china-passes-ethnic-unity-law-to-advance-xi-s-assimilation-push?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ to advance Xi’s assimilation push ... and one about a train to North Korea
+lacking passengers on its maiden voyage 
+<https://www.bloomberg.com/news/articles/2026-03-13/china-s-train-to-north-korea-lacks-passengers-on-maiden-voyage?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ * Watch a Weekly Documentary <https://www.bloomberg.com/weekly-docs> on the 
+future of Hollywood 
+<https://www.bloomberg.com/news/videos/2026-03-12/hollywood-s-unhappy-ending-video?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ ... and here’s aPursuits <https://www.bloomberg.com/pursuits> story about the 
+last gasp of HBO 
+<https://www.bloomberg.com/news/newsletters/2026-03-07/how-hbo-s-relevance-will-diminish-post-merger?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ * Listen to a podcast about the fall of an alleged scam mastermind 
+<https://www.bloomberg.com/news/audio/2026-03-10/big-take-asia-the-fall-of-an-alleged-scam-mastermind-podcast?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ * Read about Hong Kong arresting some hedge fund and brokerage staff 
+<https://www.bloomberg.com/news/articles/2026-03-12/hong-kong-probes-insider-trading-at-two-brokers-hedge-fund-firm?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ * Here’s an Opinion 
+<https://www.bloomberg.com/opinion?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ piece aboutthe collision of war and the economy 
+<https://www.bloomberg.com/opinion/newsletters/2026-03-11/oil-shock-war-and-the-global-economy-are-colliding?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ ... and one about a baseball game in Japanthrowing China a curveball on Taiwan 
+<https://www.bloomberg.com/opinion/articles/2026-03-11/how-a-baseball-game-in-japan-is-testing-china-on-taiwan?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ * And for the weekend, read about the doctors telling patients to skip the 
+two aspirin and just go fishing 
+<https://www.bloomberg.com/news/features/2026-03-12/what-is-social-medicine-doctors-prescribe-friendship-group-activities?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ 
+<https://sli.bloomberg.com/click?s=868642&stpe=default&li=17262555&m=11b724c487f61753eb1a7a4a5f3ef261&p=03132026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868642&stpe=default&li=17262555&m=11b724c487f61753eb1a7a4a5f3ef261&p=03132026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Left-Behind Workers
+
+Hi, this is Colum Murphy in Beijing.
+
+On a recent trip to the southern province of Guangdong, I met a garment worker 
+named Chen Meifeng, 42. She was looking at her phone during a break from the 
+night shift making clothes for a supplier tothe e-commerce giant Shein 
+<https://www.bloomberg.com/news/articles/2026-03-09/china-apparel-makers-brace-for-price-hikes-as-oil-surges?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+.
+
+Chen works 12-hour shifts, gets one day off a month and earns around 6,000 
+yuan (around $870) for her labors. That isn’t a lot but it is down a quarter 
+from 2024.
+
+She’s not alone in her plight. Many of the people I spoke with told similar 
+stories. For ordinary workers in China’s traditional industries like 
+construction materials and apparel, wages are declining, jobs harder to come by 
+and living standards are slipping. Read moreabout these folks here 
+<https://www.bloomberg.com/news/features/2026-03-09/china-s-tariff-defying-export-boom-leaves-its-factory-workers-behind?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+.
+
+While China clocked a roughly $1.2 trillion trade surplus last year, many of 
+its factory-floor workers are not feeling the benefits. (Read aboutexports 
+soaring in the first two months of 2026 here 
+<https://www.bloomberg.com/news/articles/2026-03-10/china-s-exports-surge-tops-forecasts-as-iran-war-threatens-trade?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+.)
+
+“It was easier to make money in the past,” Chen said.
+Day laborers and recruiters for garment workshops in Datang, Guangzhou, in 
+February.Photographer: Qilai Shen/Bloomberg
+In line with national policy to shift toward higher value-added manufacturing 
+<https://www.bloomberg.com/news/newsletters/2025-11-29/china-wants-to-dominate-high-and-low-tech-industries-new-economy?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+, Chinese companies are upgrading their output — think chips and electric cars. 
+Yet many of these industries have less need for workers than traditional ones, 
+hence fewer job opportunities.
+
+Beijing’s push to embrace industrial automation and humanoid robots 
+<https://www.bloomberg.com/news/articles/2026-03-05/china-prioritizes-rare-earths-robotics-in-manufacturing-agenda?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ will make this even more pronounced in years to come.
+
+China’s yearslong property downturn 
+<https://www.bloomberg.com/latest/china-s-property-crisis> is also behind the 
+problems faced by people like Chen. That’s because the economic boom in 
+Guangdong, and many other places around China in recent decades, was tied to 
+massive building projects, like apartment complexes.
+
+When I visited a formerly bustling ceramics market, the streets were empty and 
+the shops were shuttered. Nearby hotels and restaurants sat vacant. One big 
+reason for that is the real estate slump means fewer homes are being built so 
+the need for tiling, toilets and bathroom cabinets is much diminished.
+
+The gig economy offers something of a buffer for workers 
+<https://www.bloomberg.com/news/articles/2025-10-31/china-s-gig-economy-shows-why-quitting-the-corporate-grind-isn-t-so-simple?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+, accounting for roughly 40% of urban employment. But those jobs typically lack 
+benefits, and the industry faces broad disruption from robots or AI. Anxiety 
+over driverless taxis replacing human drivers is already surfacing across the 
+nation.
+
+Guangdong was once the very picture of China’s economic boom. If the province 
+was a country, it would rank sixth globally by exports. Yet its GDP growth has 
+lagged the national pace for four years now, and it now highlightsthe economic 
+challenges the Asian nation is facing 
+<https://www.bloomberg.com/news/articles/2026-03-03/china-economy-6-charts-explain-why-how-economic-growth-is-slowing-down?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+.
+
+China’s embrace of “new productive forces” — fine jargon for tech goods — 
+risks leaving low-skilled workers in the province and elsewhere behind — and 
+possibly disgruntled.
+
+While China’s vast censorship apparatus makes nationwide demonstrations rare, 
+the country did witness a 44% jump in protest activity led by workers last 
+year, according to Freedom House’s China Dissent Monitor. Guangdong was the top 
+hotspot for the unhappiness.
+
+Chen, the garment factory worker, hopes the future for her two teenage 
+children will be brighter than hers “as long as they don’t go into making 
+clothes,” she said.
+
+Half the Funds
+
+$1 trillion
+
+That’s nearly the value of assets that female fund managers in China oversaw 
+<https://www.bloomberg.com/news/articles/2026-03-08/china-female-fund-managers-aum-almost-1-trillion-report-says?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ as of earlier this month, according to the media outlet Cailian. The public 
+fund industry employed 1,100 female fund managers, accounting for some 27% of 
+the total. Including co-management, assets run by women reached 18.95 trillion 
+yuan, about 51% of total funds under management.
+
+Behind the Great Firewall
+
+A weekly look at the big water cooler news in China.
+
+China has been careful in choosing its official words 
+<https://www.bloomberg.com/news/articles/2026-03-08/china-eyes-landmark-year-for-us-ties-urges-end-to-iran-war?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ about the Iran War. Its public has been somewhat less diplomatic, calling 
+America a “warmonger,” “disgrace” and more for the deadly strikes across Iran.
+
+Beijing’s balancing act has to do with the fact that it doesn’t want anything 
+to undermine Xi’s big summit with Donald Trump later this month in China. Read 
+about howplanning for the sitdown seems to have some issues here 
+<https://www.bloomberg.com/news/articles/2026-03-10/china-frustrated-by-last-minute-scramble-to-plan-xi-trump-summit?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ and about China’s neighborsworried about the US moving weapons here 
+<https://www.bloomberg.com/news/articles/2026-03-12/us-allies-near-china-on-edge-as-weapons-shift-from-asia-to-iran?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+.
+Smoke and flames rise from an oil depot in Tehran hit by airstrikes on March 7.
+Photographer: Sasan/Middle East Images/AFP/Getty Images
+Most people on Chinese social media discussing the war voiced support for 
+Iran. They also flooded the Iranian embassy’s website with armchair warfighting 
+advice.
+
+The pundits referred to themselves as “online military advisers,” and their 
+suggestions included ideas like deploying drone swarms andstriking desalination 
+plants 
+<https://www.bloomberg.com/news/articles/2026-03-12/iran-war-why-desalination-plants-are-key-vulnerability-for-gulf-states?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ and oil facilities.
+
+“The US sends missiles, we send the Art of War,” one person wrote on Weibo, 
+getting some 128,000 likes. “They fight with firepower. We fight with brains. 
+We don’t send weapons, we send strategies.”
+ <https://www.bloomberg.com/games/pointed>
+There are also voices of moderation calling for a peaceful end to the 
+conflict, which tracks with what the Foreign Ministry in Beijing has been 
+saying since combat started. A few have been more hawkish, supporting the joint 
+attacks by the US and Israel, partly because ofIran’s links to terrorism 
+<https://www.bloomberg.com/news/articles/2026-01-29/eu-poised-to-list-iran-s-revolutionary-guard-as-terrorist-group?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+.
+
+Others see the war as an opportunity for China. They argue that the longer the 
+conflict lasts, the moreAmerica’s battered friends in the Middle East 
+<https://www.bloomberg.com/news/articles/2026-03-12/strait-of-hormuz-how-is-iran-war-disrupting-oil-trade-can-naval-escorts-help?cmpid=BBD031326_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260313>
+ will be distrustful of the world’s preeminent power for its handling of the 
+situation.
+
+“Maybe this Iran War will rewrite the world’s power structure,” said a Weibo 
+user with 300,000 followers, adding that would “accelerate the world’s power 
+transfer from the old America to China.”
+
+Well, as a wise man once said, “We’ll see. 
+<https://www.youtube.com/watch?v=e2cjVhUrmII>”
+
+More From Bloomberg
+
+Enjoying Next China? Check out these newsletters:
+
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=nextchina>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india> for key 
+news and movers before the trading day starts in that fast-growing economy
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=nextchina>
+ for the latest political news and analysis from around the globe
+ * Markets Daily China 
+<https://www.bloomberg.com/account/newsletters/china-markets?utm_medium=email&utm_source=newsletter&utm_campaign=nextchina>
+ for a daily Chinese-language briefing and audio broadcast of what’s moving 
+markets
+ * Hong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=nextchina>
+ for what you need to know from the Asian finance hub
+ * Breaking News Alerts 
+<https://www.bloomberg.com/account/newsletters/breaking-news-alerts?utm_medium=email&utm_source=newsletter&utm_campaign=nextchina>
+ for the biggest stories from around the world, delivered to your inbox as they 
+happen
+ * Get weekly updates on these industries with our new Retail Monitor 
+<https://www.bloomberg.com/account/newsletters/retail-industry>, Auto Monitor 
+<https://www.bloomberg.com/account/newsletters/auto-industry>, Defense Monitor 
+<https://www.bloomberg.com/account/newsletters/defense-industry>, Real Estate 
+Monitor <https://www.bloomberg.com/account/newsletters/real-estate-industry>, 
+andBanking Monitor 
+<https://www.bloomberg.com/account/newsletters/banking-industry>
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=nextchina>
+ to get the most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Next China 
+newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/next-china?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/next-china?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/zbm7E3K_XhU3161gk8cvuw562iYBffPxI_JPs-iEJuc4pINNRtOQrateGqw5dhGy9P3LBY34tado5dn020yl8RxD0qsGzXxo1ahg_tLxK_2yJ_4OYqqt1z-I_l0r9kzopw9z-ScoCw3KDWLScx894TvgFzelNY2EOXdWRuBpJt1v4fo__cpez-uXPeUakFcGoUy_P0htXcc8-Icfzmm-kHCjkxCnNWdvmMs_-WY7mD3qkm-FmMb_QK0aHiE8LkNR-txrZkvlU5zU8czI3xtHQgmNi3ehfe9LtlrZg6LKduk_7MmV4IzIYyzW0nDPuQbuM4eNPUAmtD0rogLazCpvI8lUFnVE1VT_/7pzqse9C-qnFxIlv6EPGS4KDkff8nCgn/18>

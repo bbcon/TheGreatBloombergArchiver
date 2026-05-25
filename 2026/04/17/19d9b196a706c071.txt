@@ -1,0 +1,199 @@
+Subject: Economics Daily: Mythos risks
+Date: Fri, 17 Apr 2026 11:00:23 +0000
+
+Anthropic’s Mythos Gatecrashes IMF Meetings
+Anthropic’s latest AI tool looms large in meetings of financial chiefs in DC. 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-04-17/anthropic-s-mythos-gatecrashes-imf-meetings>
+ <https://www.bloomberg.com/economics>
+
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=17741130&m=11b724c487f61753eb1a7a4a5f3ef261&p=04172026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=17741130&m=11b724c487f61753eb1a7a4a5f3ef261&p=04172026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+I’m Cécile Daurat <https://www.bloomberg.com/authors/ADE1TT_en1A/cecile-daurat>
+, a senior economics editor visiting Washington this week for the IMF-World 
+Bank spring meetings. Today we’re looking at how the new AI tool Mythos has 
+become the talk of the town. Send us feedback and tips toecodaily@bloomberg.net 
+<mailto:ecodaily@bloomberg.net>. And if you aren’t yet signed up to receive 
+this newsletter, you can do sohere 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=ecointro>
+.
+
+Top Stories
+
+ * US President Donald Trump claimed Iran made key concessions 
+<https://www.bloomberg.com/news/articles/2026-04-17/trump-says-iran-s-concessions-pave-way-for-deal-to-end-war?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ in talks, while a ceasefire in Lebanon raised the prospect of broader peace.
+ * Meanwhile Trump sought to assuage voters’ fears 
+<https://www.bloomberg.com/news/articles/2026-04-17/trump-seeks-to-sell-midterm-voters-on-economy-despite-iran-diverson?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ about the cost of living despitehigher energy prices 
+<https://www.bloomberg.com/news/articles/2026-04-17/where-are-us-gas-prices-hurting-most-nashville-raleigh-top-list?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ stemming from his Middle East war.
+ * Historically when the job market is bad, people turn to grad school  
+<https://www.bloomberg.com/news/articles/2026-04-17/grad-school-loan-caps-strand-class-of-2026-in-bad-job-market?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+— but for many in the class of 2026, that may not be a feasible alternative.
+Mythos Risks
+
+It seems like every time finance chiefs gather in DC for their bi-annual 
+IMF-World Bank meetings, a new threat to the global financial stability emerges 
+and becomes the talk of the town.
+
+Back in October, Jamie Dimon’s now oft-quoted “cockroach 
+<https://www.bloomberg.com/news/articles/2025-10-14/dimon-s-cockroach-fear-revives-threat-of-growing-credit-cracks?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+” sparked concerns about private credit. This week, Anthropic’s new AI model 
+Mythosgatecrashed 
+<https://www.bloomberg.com/news/articles/2026-04-16/mythos-ai-sparks-fear-and-confusion-among-global-finance-elite?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ meetings.
+
+Little is known about the tool — except that it’s highly adept at finding 
+vulnerabilities in computer systems and could power cyberattacks. The US 
+Treasury Department has beenseeking access 
+<https://www.bloomberg.com/news/articles/2026-04-14/us-treasury-seeking-access-to-anthropic-s-mythos-to-find-flaws?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ to Mythos to uncover its own software vulnerabilities, and other government 
+officials areeager 
+<https://www.bloomberg.com/news/articles/2026-04-15/canada-s-champagne-to-discuss-anthropic-at-meeting-with-bessent?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ to learn more about the model.
+Anthropic’s new artificial intelligence model, called Mythos, is capable of 
+infiltrating systems used around the world.Photo Illustration: Jakub 
+Porzycki/NurPhoto/AP Photo
+No one had heard about Mythos 
+<https://www.bloomberg.com/news/features/2026-04-16/how-anthropic-discovered-mythos-ai-was-too-dangerous-for-release?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ until last week, when Anthropic revealed its existence and said it was too 
+much of a risk to release generally.
+
+Yet within the past four days, top central bankers including the European 
+Central Bank’sChristine Lagarde 
+<https://www.bloomberg.com/news/articles/2026-04-14/lagarde-worried-about-ai-lauds-anthropic-s-approach-on-mythos?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+, Bank of England’sAndrew Bailey 
+<https://www.bloomberg.com/news/articles/2026-04-14/boe-s-bailey-urges-regulators-to-assess-ai-cyber-risk-to-banks?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ and New York Fed’sJohn Williams 
+<https://www.bloomberg.com/news/articles/2026-04-16/fed-s-williams-signals-steady-rates-in-face-of-war-s-risks?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ have all brought it up in interviews or at events.
+
+“It would be reasonable to think that the events in the Gulf are the most 
+recent challenge to us in this world,” Bailey said at an event at Columbia 
+University in New York early this week before heading to DC. That is, until 
+“you wake up to find that Anthropic may have found a way to crack the whole 
+cyber risk world open and you think, what did I do wrong in a past life.”
+
+The potential threat presented by Mythos, which orchestrated the digital 
+equivalent of abank robbery 
+<https://www.bloomberg.com/news/features/2026-04-16/how-anthropic-discovered-mythos-ai-was-too-dangerous-for-release?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ in stress-tests, is particularly alarming at a time when the world is dealing 
+with major oil and supply shocks as a result of the conflict in Iran. It’s a 
+threat that would require collaboration among countries — the kind of 
+international coordination that is lacking at the moment.
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=17741130&m=11b724c487f61753eb1a7a4a5f3ef261&p=04172026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=17741130&m=11b724c487f61753eb1a7a4a5f3ef261&p=04172026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+The Best of Bloomberg Economics
+
+ * Governor Kazuo Ueda stressed challenges for the Bank of Japan 
+<https://www.bloomberg.com/news/articles/2026-04-17/boj-s-ueda-sees-upside-risks-to-prices-downside-economic-risks?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+, while Japanese wage growthheld momentum 
+<https://www.bloomberg.com/news/articles/2026-04-17/japan-s-wage-growth-holds-momentum-after-small-firms-reach-deals?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+.
+ * The ECB must be “vigilant 
+<https://www.bloomberg.com/news/articles/2026-04-17/ecb-must-be-vigilant-without-rushing-rate-hikes-muller-says?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+” to inflation risks, policymaker Madis Muller said. But economists reckon it 
+will waituntil June 
+<https://www.bloomberg.com/news/articles/2026-04-17/ecb-to-hike-rates-in-june-as-2026-inflation-jumps-survey-shows?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ to hike.
+ * Australian Treasurer Jim Chalmers warned the global economy faces a “really 
+dangerous 
+<https://www.bloomberg.com/news/articles/2026-04-17/australia-s-treasurer-flags-war-led-inflation-risk-before-budget?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ moment 
+<https://www.bloomberg.com/news/articles/2026-04-17/australia-s-treasurer-flags-war-led-inflation-risk-before-budget?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+” due to the Middle East conflict.
+ * IMF formal contact with Venezuela will resume, maybe opening the door 
+<https://www.bloomberg.com/news/articles/2026-04-16/imf-said-to-engage-formally-with-venezuelan-government?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ to financing. Meanwhile Kenya is inemergency talks 
+<https://www.bloomberg.com/news/articles/2026-04-17/kenya-seeks-emergency-world-bank-funds-to-absorb-iran-war-impact?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ with the World Bank.
+ * China’s central bank 
+<https://www.bloomberg.com/news/articles/2026-04-17/china-moves-to-slow-yuan-rally-by-cooling-fixing-volatility?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ is using its daily reference rate to temper the yuan’s rally as its war-fueled 
+outperformance drives further bullish sentiment.
+ * South African central bank chief Lesetja Kganyago said the war’s impact on 
+oil prices hasvalidated wariness 
+<https://www.bloomberg.com/news/articles/2026-04-17/south-africa-s-kganyago-says-war-inflation-risks-are-playing-out?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+ over inflation.
+Need-to-Know Research
+
+The Japan Center for Economic Research this week took a look at how that 
+nation weathered the two oil crises of the 1970s to surface potential lessons 
+for policymakers today. Senior research fellow Jun Saitohighlights 
+<https://www.jcer.or.jp/english/japanese-economy-update-april-2026> that 
+Japan’s experience was quite different comparing the 1973 shock to the 1979 one.
+
+In the first one, the BOJ mounted limited interest-rate hikes, leaving their 
+setting deeply negative in real terms, price controls were introduced and 
+workers were given big raises — over and above the pace of inflation. In the 
+second, the BOJ lifted borrowing costs to maintain at least 0% real rate, price 
+controls were limited and wage increases were restrained.
+
+The result of the latter experience was that the burden of the oil shock was 
+shared more broadly across the economy, Saito wrote. In the first go round, 
+companies were especially hit by the wage increases plus price controls, 
+causing them to rein in investment plans. GDP saw its biggest contraction since 
+postwar records began in 1955. But in 1979-80 not a single quarter saw a 
+decline in GDP.
+
+More from Bloomberg
+
+Enjoy Economics Daily?
+
+ * Read more economic stories 
+<https://www.bloomberg.com/markets/economics?cmpid=BBD041726_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260417>
+Plus, here are some newsletters we think you might like
+
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for daily insights into supply chains and global trade
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for the latest in politics from around the globe
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+.
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Economics 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=NLshare>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/VN2LB63BGd9xRHzbk520wgX6e9A5gTfEXZShWCw2gEPwq89jaseEV2D3Pq7REH_QxVGucioxzLy1chJre63L2mFCdS4Brf9Z7o2zAN9clT1MOkI-rvv0648tve-AWmHo86WV-Y_oucVS_mO7cZZP-z32ga6cHGao-HK5mvOafmtNrg5530fMcwRxJitWd4W2ayAigGjNxXD1ybPCkcpoZ6iFNrrTX53arAy1hLw5Gp2HJOvnk3luB84vZ1ciRmn47cOwkpf2kAK8MAXi9ViqGs3Llr1AljbG6hGU7zcEyJG7_zwc6XzfeorL93hKhcbFoTbUV-AAifUDo4gKx9FwwGGMjRB7AinO/VO9Qjz7lmzoFwoOrD8eGraNF8zOwCMOP/19>

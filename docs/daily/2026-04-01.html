@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, April 01, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, April 01, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets posted their best session in nearly a year on Tuesday, with the S&P 500 surging sharply after Iranian President Masoud Pezeshkian indicated to EU officials that Tehran was "willing to end the war" but required guarantees — the clearest signal from the Iranian side of any appetite for negotiation. The rally was amplified by heavily bearish end-of-quarter positioning rather than a wholesale shift in investor conviction; Wall Street trading desks noted that the magnitude of the move reflected a short squeeze as much as a fundamental reassessment. The S&P 500 still closed March down 5%, its worst monthly performance in a year, and remains roughly 8% below its pre-war peak. President Trump subsequently told reporters he foresaw ending the conflict within two to three weeks, adding that a formal agreement with Tehran was not a prerequisite for US withdrawal and that the administration had "largely accomplished its military goals." He is scheduled to address the nation Wednesday evening. The statement raises significant strategic questions: the administration's own foreign policy document, published four months ago, listed keeping the Strait of Hormuz open as a core US interest. Trump's apparent willingness to leave that issue to other nations represents a meaningful departure from stated policy. The consumer backdrop is becoming a more pressing concern for macro forecasters. Average US gasoline prices crossed $4 per gallon for the first time since the early months of the Ukraine war, following a 30%-plus surge in March. While fuel expenditure as a share of disposable income remains near historic lows at 1.6%, the household savings rate has declined to 4.5% from 6.4% in January 2024, narrowing the buffer. More consequentially, corporate equities now represent over a quarter of household net worth — a record in eight decades of Fed data — meaning that equity market performance may prove a more potent channel for consumer spending than pump prices. February retail sales data due Wednesday will offer a pre-war baseline. Nike shares fell nearly 10% in premarket trading after issuing a weaker-than-expected full-year outlook, complicating CEO Elliott Hill's turnaround effort.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets surged Wednesday, with the Nikkei 225 rising approximately 5% and South Korean stocks posting their strongest session since 2001, driven by a rebound in Samsung and SK Hynix on revived semiconductor demand sentiment. The gains followed Tuesday's Wall Street rally and Trump's comments signaling a potential exit from the Iran conflict within weeks. Brent crude fell below $100 per barrel for the first time in a week on the news, offering some relief to the region's most oil-dependent economies, though the Strait of Hormuz remains largely closed to commercial shipping. The divergence in economic resilience across Asia is sharpening. China's official manufacturing PMI returned to expansionary territory in March, and the country's vast strategic oil reserves and diversified energy sources appear to be providing meaningful insulation. However, a private Caixin survey showed factory activity slipping for export-oriented firms as input costs surged, and Alibaba released its new Qwen3.5-Omni multimodal model on a closed-source basis — a departure from its usual practice that may reflect a shift toward commercialization. South Korea's exports continued to expand at a strong pace, with record AI-linked semiconductor shipments providing a buffer against the external shock. The picture deteriorates sharply elsewhere. India was forced to reverse a near-doubling of domestic jet fuel prices within hours of implementation, after State-owned Indian Oil initially raised prices to 207,341 rupees per kiloliter before revising them back to approximately 104,927 rupees. LPG shortages are rippling through India's food service sector, with restaurants from Delhi to Bangalore substituting kerosene or wood-fired stoves. The Philippines has declared a national emergency. Vietnam, Indonesia and the broader ASEAN manufacturing bloc saw PMI readings fall to their weakest since September, underscoring the asymmetric regional impact. The BOJ's quarterly Tankan survey showed large Japanese manufacturers remaining confident for a fourth consecutive quarter, though that data largely predates the conflict's escalation. US Trade Representative Greer said the Trump-Xi summit, delayed from its earlier date, remains on track for mid-May.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European equity futures and the Stoxx Europe 600 rose approximately 2% Wednesday as risk appetite recovered on Trump's Iran comments, though underlying anxiety over the regional energy outlook persists. The EU is actively considering reactivating emergency energy measures last used after Russia's 2022 invasion of Ukraine, while the European Commission has proposed limited adjustments to the EU Emissions Trading System to cushion the impact of elevated energy costs on industry competitiveness — a modest concession that stops well short of structural reform. Aviation is emerging as an acute pressure point. Lufthansa is preparing contingency plans to ground aircraft if demand deteriorates, with teams assigned to develop crisis scenarios of varying severity. Europe is expected to avoid jet fuel shortages in April, but market participants directly involved in aviation fuel supply warn the situation could deteriorate in May. UK factories are experiencing their most intense supply chain strain and sharpest input price pressures since the immediate aftermath of Russia's Ukraine invasion, according to the latest PMI survey. On the corporate side, Meg O'Neill assumes the role of CEO at BP on Wednesday, becoming the first woman to lead a major oil company. She inherits a business already under strategic pressure, now operating in an environment of war-driven price elevation that provides near-term revenue support but deepens long-term questions about capital allocation and transition strategy. LVMH shares fell 28% in the first quarter — the worst start to a year in the company's history — with the luxury conglomerate increasingly serving as a proxy for global confidence. Germany's leading economic institutes cut their 2026 growth forecast to less than half their prior projection, and warned that potential growth may approach zero in the medium term due to demographic decline and falling hours worked, raising questions about whether the government's debt-financed stimulus program can prevent structural stagnation. Greece received a notable upgrade from MSCI to developed-market status, effective during the May 2027 index review — a milestone in the country's recovery from its sovereign debt crisis, during which it was demoted in 2013.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The prospective end-state of the US-Iran conflict is generating as much market anxiety as its continuation. Trump's Tuesday comments that the US would exit within two to three weeks, without necessarily reopening the Strait of Hormuz, represent a significant strategic shift. If Iran retains effective control over the Strait as a condition of any peace settlement, it acquires a structural chokehold over global energy flows that no prior adversary has held — functioning, as one analyst noted, less like an oil producer and more like an involuntary central bank for global energy pricing. Brent crude, which reflects non-US supply dynamics, barely moved in response to Iran's peace overture, even as WTI fell sharply, illustrating the divergent exposure. The market's deep contango — futures pricing implies oil will revert significantly from current spot levels — reflects a belief that the supply shock is transitory, but that assumption may prove fragile if the Strait remains restricted post-conflict. Polymarket probabilities now assign a 60% chance that the war concludes in April and only 20% that it extends beyond June, a sharp shift following Pezeshkian's remarks. However, the conditions Iran is understood to require for any settlement — including guarantees of regime survival and continued Hormuz influence — may prove difficult to formalize. Meanwhile, attacks continued across the region even as diplomatic signals multiplied, and US troop deployments to the area are ongoing. Asia continues to scramble for alternative crude sources, with Russian oil seeing increased demand from war-affected regional buyers. Myanmar, operating under a military junta and experiencing civil war, is among the hardest-hit economies as gasoline supplies disappear. Oil futures curve dynamics and the asymmetric regional impact of the Hormuz closure are increasingly defining the macro divergence between the US and the rest of the world. The Russia-Ukraine conflict is also re-intensifying as spring conditions return to the battlefield, with diplomatic attention consumed by the Gulf crisis reducing pressure on Moscow. The Trump-Xi summit, postponed from an earlier date, is now targeted for mid-May; US Trade Representative Greer characterized the bilateral relationship as stable for the near term.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

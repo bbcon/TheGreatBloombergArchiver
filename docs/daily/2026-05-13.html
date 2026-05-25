@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, May 13, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, May 13, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US inflation data for April delivered an uncomfortable surprise, with headline CPI rising to 3.8% year-on-year — the highest reading in three years and meaningfully above the Federal Reserve's upper tolerance band of 3%. While the Strait of Hormuz closure remains the primary driver through elevated energy prices, the picture beneath the surface is more troubling: core inflation excluding energy ran at 2.8%, median and trimmed-mean measures are turning upward, sticky prices have re-crossed 3%, and the Fed's "supercore" services measure — services inflation minus shelter — rose sharply in the month. The breadth of the acceleration suggests the oil shock is generating second-order effects rather than remaining purely a relative-price disturbance. The affordability dimension compounds the political difficulty. Consumer prices rose faster than average hourly earnings in April, the first such occurrence since 2022 and a dynamic that did not materialise during Trump's first term. The Atlanta Fed's wage tracker recorded 3.9% wage growth through March, leaving real compensation in marginally negative territory on the latest reading. Markets adjusted quickly to the new information. Two-year Treasury yields touched 4%, their highest since June 2025, as the probability distribution for the fed funds rate shifted decisively: the next move is now priced more likely to be a hike than a cut. The S&P 500 dipped only 0.16% before recovering, with semiconductor names initially falling sharply before regaining much of the intraday loss — a sign that AI-driven earnings momentum continues to provide a partial buffer against the rate repricing. Kevin Warsh was confirmed as a Federal Reserve governor on the same day, with his elevation to chair expected to follow. The timing is notable: he inherits an institution where the easing cycle that markets anticipated at the start of the year has effectively been suspended, and where the risk profile is shifting from a familiar dilemma of slow growth versus sticky inflation toward a harder stagflationary configuration if the energy shock persists. The Trump administration separately faces a significant fiscal development, processing more than $35.5 billion in tariff refunds following the Supreme Court ruling that struck down the president's broad tariff authority. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">The Trump-Xi summit in Beijing dominates the regional agenda. Trump arrived Wednesday evening for a 36-hour meeting that encompasses trade, tariffs, critical minerals, Taiwan, and the Iran war. The delegation's composition is itself a signal: Jensen Huang of Nvidia was a last-minute addition to a group that already included Apple's Tim Cook, Tesla's Elon Musk, Boeing's Kelly Ortberg, and Goldman Sachs' David Solomon. Huang's presence thrusts AI and semiconductor access into the heart of the agenda — he has characterised the Chinese market as a $50 billion opportunity. Pre-summit working-level talks between Treasury Secretary Bessent and Vice Premier He Lifeng began in Seoul, the first face-to-face contact since Paris two months ago. One structural outcome receiving attention ahead of the meeting is the possibility of a currency accord — what TS Lombard characterises as a "Beijing Accord" under which the yuan would be allowed to appreciate. Goldman Sachs estimates the yuan is more than 20% undervalued; a stronger currency would serve China's domestic demand agenda while satisfying Washington's manufacturing competitiveness objectives. The question is whether either side has sufficient trust to formalise such an arrangement. China's economic data continue to present a contradictory picture. April exports rose 14% year-on-year, well above the 8% consensus, with technology the primary driver. At the same time, the bond market reflects subdued domestic growth and inflation expectations, with 10-year yields below 2% — now below Japanese government bond yields, a striking inversion. One analyst estimates hidden non-performing loans in the banking system at roughly 10% of total credit, implying approximately $3 trillion in under-classified bad debt. Elsewhere in the region, India more than doubled gold and silver import tariffs to approximately 15%, pairing Prime Minister Modi's appeal for citizens to curb bullion purchases with formal policy tightening in an attempt to defend the rupee and shore up foreign exchange reserves. The move adds to pressure on already weak Indian equity markets. In Japan, 20-year JGB yields touched their highest level since 1997, driven by elevated energy import costs feeding domestic inflation. SoftBank reported a surprise jump in quarterly profit, largely attributable to valuation gains on its OpenAI stake. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">UK Prime Minister Keir Starmer survived another day under intense pressure, though his political position remains precarious. Four junior ministers have resigned in an attempt to force his departure, and market pricing implies roughly a one-in-five chance he remains in office through year-end. Traders are at their most bearish on sterling in five weeks. The King's Speech, scheduled to lay out a packed legislative agenda, provides a near-term test of whether Starmer can project governing authority while managing internal Labour dissent. The constitutional and procedural difficulty of removing a sitting Labour leader has so far protected him, but the parliamentary arithmetic and cabinet cohesion continue to deteriorate. UK government bond markets reflected the political and fiscal anxiety. Thirty-year gilt yields hit a 28-year high, a move that underscores investor concerns about fiscal credibility at a moment when the prime minister's ability to deliver on spending commitments is in question. Jamie Dimon added an external dimension, warning that any post-Starmer government that raises taxes on banks would cause JPMorgan to abandon plans for a multi-billion-pound new headquarters at Canary Wharf. In Germany, Chancellor Friedrich Merz's coalition held a six-hour working session aimed at narrowing policy rifts and restoring public confidence, but produced few concrete agreements. A year into office, Merz's approval ratings have fallen to historic lows, and the AfD has extended its polling lead. The absence of coalition cohesion at a moment requiring fiscal and industrial policy decisions carries macro consequences for the eurozone's largest economy. ECB policy is shifting in tone. Bundesbank President Nagel told Handelsblatt that rate hikes are increasingly likely — a notable pivot given that rate cuts had been the dominant expectation for the eurozone earlier this year. France provided additional cause for concern, with unemployment unexpectedly rising to its highest level in five years, adding to evidence that the euro area's second-largest economy was already losing momentum before the Iran war began. The EU is also working to join a US-led initiative to secure AI and semiconductor supply chains, signalling Brussels' recognition that industrial and geopolitical alignment with Washington may be necessary regardless of ongoing trade tensions. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">Oil markets remain the principal transmission mechanism for the Iran conflict. WTI crude traded above $100 per barrel during the session, having gained approximately 8% over the prior three days, before pulling back roughly 1% on the day. The IEA reported that global inventories are falling at a record pace and will continue declining for months. Satellite imagery suggests Iranian crude exports from the Kharg Island terminal have halted entirely over the past several days — the first sign of a prolonged stoppage since the conflict began — while a Chinese supertanker operated by Cosco units was tracked traversing the Strait of Hormuz, a rare attempted crossing that attracted immediate attention given the waterway's contested status. The conflict's global economic fallout is becoming more visible across multiple dimensions. Hapag-Lloyd reported approximately $250 million in additional monthly operating costs since the war began on February 28, though its CEO noted that demand outside the Persian Gulf has been "surprisingly" resilient, with Asian export volumes holding firm through April and into the near term. The IEA's inventory assessment implies continued upward pressure on prices absent a resolution, while US crude export capacity — currently elevated by strategic reserve drawdowns — faces finite limits. The asymmetric warfare dynamic is increasingly relevant to geopolitical risk pricing. Iran has deployed midget submarines to maintain partial Hormuz control despite significant US naval superiority, a tactical approach that has sustained the stalemate now entering its eleventh week. Trump dismissed Iran's most recent peace proposal as "garbage," a development that pushed Brent December futures back above $90 and further compressed expectations for near-term resolution. The summit's energy dimension extends to Beijing's own exposure. China depends on Hormuz for a substantial share of its energy imports, and the prolonged closure is disrupting chipmaker supply chains at TSMC and Samsung. Whether Xi is willing to use Chinese influence on Tehran — and at what price — may be the summit's most consequential undisclosed negotiation. India's currency defence measures, Japan's bond yield spike, and Malawi's fertiliser access crisis each represent distinct manifestations of the same underlying shock propagating through the global economy.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

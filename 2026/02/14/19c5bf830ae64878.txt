@@ -1,0 +1,163 @@
+Subject: New Economy: The AI power problem
+Date: Sat, 14 Feb 2026 11:45:15 +0000
+
+Global AI Battle Turbocharged by 50% Power Demand Surge
+New Economy Saturday
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-02-14/ai-battle-turbocharged-by-50-power-demand-surge-new-economy>
+ <https://bloomberg.com/economics>
+
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=16904170&m=11b724c487f61753eb1a7a4a5f3ef261&p=02142026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=16904170&m=11b724c487f61753eb1a7a4a5f3ef261&p=02142026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+A famous diagram <https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs> 
+shows human needs as a pyramid, with the most important ones like food and 
+shelter at its foundation. Jensen Huang has now come up with something similar 
+to “Maslow’s hierarchy,” but for AI. And it all rests on electricity.
+
+In a Davos presentation last month, the Nvidia Corp. boss unveiled his vision 
+of the artificial intelligence buildout in the form of a “five-layer cake 
+<https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/>
+.” Near the top is where economic value is created, via the models that drive 
+AI and the applications that make it work for businesses. But the base layer – 
+the sponge in the cake — is energy.
+
+Right now that means electricity, with power-hungry data centers 
+<https://www.bloomberg.com/news/articles/2026-01-12/data-centers-will-need-3-trillion-through-2030-moody-s-says?cmpid=BBD021426_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260214>
+ springing up around the world to drive the new technology. Those centers are 
+effectively competing with humans, who of course rely on electric power to heat 
+and cool their homes and increasingly to get around in cars or trains. The 
+obvious conclusion is, we’re going to need a lot more of it.
+
+That’s also the key finding of the new annual report on power production and 
+markets by the International Energy Agency – which heralds the dawning of an “
+Age of Electricity <https://www.iea.org/reports/electricity-2026>.” In the 
+coming five years, the IEA predicts global demand for power is set to grow 
+roughly 50% faster than it did during the previous decade – and more than twice 
+as fast as energy demand overall.
+
+It’s also set to outpace gross domestic product, marking “a fundamental shift 
+in the longstanding relationship between electricity demand and economic 
+activity.” Governments around the world have only begun to grasp this 
+realization, spurred in part by voter concerns. It all augurs major shifts in 
+policies, and potentiallyelectoral politics 
+<https://www.bloomberg.com/news/newsletters/2026-01-26/us-power-electricity-is-becoming-a-big-deal-in-politics?cmpid=BBD021426_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260214>
+.
+Jensen Huang, chief executive of Nvidia Corp., during the World Economic Forum 
+in Davos, Switzerland, on Jan. 21.Photographer: Krisztian Bocsi/Bloomberg
+This week in the New Economy
+
+ * Miami elites who dreamed of a Cuba rebuild 
+<https://www.bloomberg.com/news/features/2026-02-09/trump-s-cuba-turnaround-plans-have-miami-s-business-elites-and-exiles-wary?cmpid=BBD021426_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260214>
+ fear it’s too far gone.
+ * US alters statement on India trade deal, sparking confusion 
+<https://www.bloomberg.com/news/articles/2026-02-11/white-house-amends-us-india-trade-factsheet-to-remove-pulses?cmpid=BBD021426_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260214>
+.
+ * Trump’s gunboat diplomacy <> hands China a $55 trillion economic edge.
+ * Foreign investors are piling into Zambia’s bond market 
+<https://www.bloomberg.com/news/articles/2026-02-12/zambia-kwacha-s-rally-gets-lift-from-foreigners-piling-into-local-bonds?cmpid=BBD021426_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260214>
+.
+ * “Relentless” AI demand spurred huge upgrade for Taiwan’s economy <>.
+Put simply, economies are becoming more electrified. AI is a big part of the 
+story, but not all of it. Electric cars and buses are a fast-growing share of 
+the global fleet. Countries like the UK that have environmental targets are 
+encouraging its use in home-heating.China <> — which is adding generating 
+capacity at a breakneck pace — is the pioneer when it comes to electric-powered 
+industrial machines.
+
+All of this creates opportunities to lower both carbon emissions and costs – 
+but also huge challenges for governments, which in most countries play at least 
+a significant regulatory role in power production and distribution. Sometimes 
+they outright control it.
+
+Those economic challenges can involve both international politics and the 
+domestic kind. In Europe, both have been on display of late.
+
+Germany appears to be regretting its environmentalist-driven shift away from 
+nuclear power in recent decades. Amid growing concern about the competitiveness 
+of the country’s once-powerhouse industries, Chancellor Friedrich Merz this 
+week sounded amore pragmatic note 
+<https://www.bloomberg.com/news/articles/2026-02-11/merz-says-eu-should-be-open-to-revising-carbon-market?cmpid=BBD021426_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260214>
+ on climate politics. He said the European Union should be ready to rework its 
+flagship carbon-market plan if it begins to weigh on business.
+
+Elevated power prices are seen as a key reason why Germany has been losing its 
+industrial edge. One contributing factor was Russia’s full-scale invasion of 
+Ukraine, and the resulting Europe-wide shunning of cheap Russian gas. A key 
+replacement has been American LNG. But since the US is no longer the most 
+reliable partner in European eyes, there’s a risk that one kind of geopolitical 
+leverage has merely been exchanged for another.
+
+In this respect, if no other, Europe’s status as an also-ran in the AI race 
+has some kind of silver lining. Had it been keeping pace with the US and China 
+in the data-center buildout, instead offalling well behind 
+<https://think.ing.com/articles/data-centre-divide-why-europes-shortfall-threatens-future-economic-growth/>
+, there would be even more strain on its power system.
+
+Over in the US, meanwhile, there’s a different kind of electrical problem.
+
+President Donald Trump has made AI a priority, insisting the US will win the 
+race against China to develop the strategically crucial technology. And in some 
+areas of Huang’s five-layer cake (besides energy it includes semiconductors, 
+cloud infrastructure, AI models and applications) American competitiveness is 
+strong.
+
+But at the bottom of the cake, China definitely has an advantage. It’s 
+electricity output build-out is going much faster than America’s. Onetime-Trump 
+lieutenant Elon Musk has been among thoseworrying aloud 
+<https://www.bloomberg.com/news/articles/2026-02-04/china-ramps-up-energy-boom-flagged-by-musk-as-key-to-ai-race?cmpid=BBD021426_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260214>
+ about it.
+
+The US also faces political constraints. The cost of living is shaping up as a 
+key issue in November’s midterm elections, as voters struggle withsurging 
+electricity bills 
+<https://www.bloomberg.com/news/newsletters/2026-01-07/us-affordability-americans-enjoy-cheaper-gas-but-utility-bills-are-climbing?cmpid=BBD021426_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260214>
+. The data center boom is one reason they’re soaring.
+
+And that’s not likely to change anytime soon, according to a study this week 
+by Goldman Sachs Group Inc. economists Manuel Abecasis and Hongcen Wei. They 
+predict data centers will account for 40% of new power demand over the next 
+five years, and expect electricity-price inflation to hold around 6% through 
+2027 – likely high enough to cause headaches for Trump and the GOP.
+
+Trump has sought to demonstrate he’s on top of the problem 
+<https://www.politico.com/news/2026/02/09/trump-administration-eyes-data-center-agreements-amid-energy-price-spikes-00772024>
+, with an initiative to ensure that rich tech companies building the data 
+centers are also investing to produce the electricity they’ll need. And that 
+may prove a key measure: the Goldman economists warned that, if non-AI 
+customers end up bearing a bigger share of those power capex costs, electricity 
+inflation will be even higher.
+
+To put it in terms of Huang’s cake: those looking forward to eating the upper 
+layers had better help pay for the flour.—Ben Holland 
+<https://www.bloomberg.com/authors/AExYCI7r_48/ben-holland>
+
+
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=16904170&m=11b724c487f61753eb1a7a4a5f3ef261&p=02142026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=16904170&m=11b724c487f61753eb1a7a4a5f3ef261&p=02142026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Economics 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=NLshare>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/x_QIaRSvOcZN12-RC71DqkfZQwaP3hl-2fmQ8hFGXZvyX8-uvI2g7uT5xIWcjPxVHp8VYEBnITI5LKENagTD6Feul9_XdAqXImqxU9S0H5I4U0_cRaIiDtCrTqpVh0OTtohzVXfjsFTwu4t1coBAiNOCZatAIU3djWGRLPoe4-1cMRMslIKZh22LqW--eiimkJUAtKfazcOZ2NQYIuuZ1qDTK7U_w8TFxSn3LUuzNqBJiIViUEREJEwwVCSvYRtwVdgdkEc7w0d2lUFRTxDx_nm-_Vfg8TI4UB0l7ZwXBISBpRepuZ_MR7TTrbA1GzQzkKJxnwLEnkniEpdAFWeCecRAV9AtySU5/rKQyIgkfLWoC84Baz2Vpl1jKWbAJUBRv/17>

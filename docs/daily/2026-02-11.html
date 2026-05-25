@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, February 11, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, February 11, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Macro and the Fed</p>
+<p class="para-body">The delayed January employment report, postponed by the recent brief shutdown, arrives this morning against a backdrop of softening data. Consensus looks for roughly 65,000 jobs added, with the unemployment rate holding at 4.4%. December retail sales unexpectedly stalled, the Q4 employment cost index posted its smallest gain since 2021, and the NFIB survey showed the share of small firms reporting hard-to-fill openings at a post-pandemic low. Markets have re-priced accordingly: traders now lean toward two Fed cuts this year under incoming Chair Kevin Warsh, partially reversing the hawkish drift that followed his January 30 nomination. The 10-year Treasury yield fell six basis points to back below its 200-day moving average, and the MOVE index continues its steady decline from last April's Liberation Day peak. Powell's framing of a possible "zero job growth, stable unemployment" equilibrium — a function of restricted immigration flows — complicates how a soft headline print should be read. A weak number that depresses consumption is a different signal than one driven by labor-supply contraction.</p>
+<p class="para-title" style="color:#5597cb;">Equities and the AI rotation</p>
+<p class="para-body">With roughly 75% of S&P 500 names reported, Q4 blended earnings growth has reached a four-year high of about 14.5%, with eight of eleven sectors positive. The Russell 1000 Value has opened a meaningful lead over Growth since mid-December, consistent with a broadening that the extreme concentration of recent years — the top 10 names now 39% of the S&P 500 — had set up. At the same time, a more uncomfortable subplot is developing: investors are pre-emptively selling firms perceived as vulnerable to AI displacement. An Altruist tax-strategy tool drove Schwab, Raymond James and LPL down 7%+ Tuesday, the sharpest declines since April. Software, insurance brokers, and legal/financial information providers have all been hit in recent sessions. JPMorgan strategists view the software reaction as overblown; the dispersion bears watching.</p>
+<p class="para-title" style="color:#5597cb;">Corporate</p>
+<p class="para-body">Ford guided to higher 2026 profit despite a $900 million Q4 tariff charge. Mattel (-32% premarket) and Lyft (-17%) disappointed on guidance; Cloudflare rose 14% on a strong outlook.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Regional equities extend outperformance</p>
+<p class="para-body">The MSCI Asia Pacific Index rose 1% to a fresh record, widening its lead over US and European benchmarks as a softening dollar and rising conviction in Fed easing drew flows toward tech-heavy markets including Taiwan and South Korea. The regional gauge is now up 39% since the start of 2025. A weak US December retail sales print and a cooling employment cost index have shifted rate-cut expectations back toward two reductions this year under Fed chair-designate Kevin Warsh, supporting risk appetite across the region ahead of the delayed US payrolls release.</p>
+<p class="para-title" style="color:#e07b39;">China — disinflation easing, but recovery uneven</p>
+<p class="para-body">January factory-gate deflation moderated more than expected, though the improvement leaned heavily on the global metals rally rather than a durable pickup in domestic demand. Morgan Stanley's Robin Xing cautioned there is "no decisive reflation yet." Consumption fragility was underscored by the abrupt closure of all Shanghai outlets of premium chain Xiaonanguo days before Lunar New Year. Separately, SMIC warned that the breakneck pace of AI chip spending may be pulling forward years of demand, raising the prospect of underutilized data center capacity — a notable caution from inside the supply chain. Beijing's reported guidance to domestic banks to limit Treasury purchases briefly weighed on US bonds but appears consistent with a decade-long, gradual reduction in holdings rather than a fresh inflection.</p>
+<p class="para-title" style="color:#e07b39;">India — trade-deal ambiguity, capital markets maturing</p>
+<p class="para-body">The White House revised its US-India trade fact sheet, removing references to pulses and softening language on Indian commitments to American goods, compounding confusion already flagged by Indian farmer groups. Separately, Goldman Sachs vaulted to fourth in Indian equity underwriting and fifth in M&A league tables in 2025, overtaking Morgan Stanley in stock sales for the first time in a decade.</p>
+<p class="para-title" style="color:#e07b39;">Commodities and policy</p>
+<p class="para-body">Indonesia cut the production quota at Weda Bay — the world's largest nickel mine — to 12 million tons from 42 million, an aggressive supply curb aimed at lifting prices. The RBA's Deputy Governor Hauser reiterated inflation remains "too high," reinforcing the recent hawkish tilt. Singapore's PM Wong is preparing a budget centered on AI adaptation and trade fragmentation.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">UK politics and markets</p>
+<p class="para-body">Prime Minister Keir Starmer secured a temporary reprieve from the most acute pressure on his leadership, winning public backing from his full cabinet — including Wes Streeting and Ed Miliband, both viewed as potential successors. The dynamic appears to have strengthened Deputy Prime Minister Angela Rayner's position within Labour's internal hierarchy. However, the relief is likely to prove short-lived: pressures linked to the Epstein files, which reference a key Starmer appointee extensively, continue to weigh, and would-be challengers are widely understood to be biding their time rather than abandoning their ambitions. Separately, Elliott Investment Management has built a stake in <strong>London Stock Exchange Group</strong>, according to a person familiar with the matter, as the exchange contends with AI-related disruption and a sustained decline in listings — a development that may catalyse strategic pressure on management.</p>
+<p class="para-title" style="color:#4a9e6b;">European corporates</p>
+<p class="para-body"><strong>BP</strong> extended yesterday's slump, falling as much as 7.7% after executives offered no timeline for restoring share buybacks, leaving the UK major increasingly isolated from peers. TotalEnergies trimmed but maintained its buyback, while Chevron, Exxon and Shell held theirs steady. The buyback question will be among the first challenges for incoming CEO Meg O'Neill, who inherits roughly $60 billion in total debt and financial obligations. <strong>Heineken</strong> rose 3.6% in Amsterdam after announcing a roughly 7% reduction in its global workforce in response to softening beer demand. <strong>Dassault Systèmes</strong> fell around 20% in Paris following disappointing results, becoming the latest European software name caught in the broader AI-displacement selloff. <strong>Ford</strong> flagged a $900 million tariff charge but guided to higher 2026 profits.</p>
+<p class="para-title" style="color:#4a9e6b;">Macro and policy</p>
+<p class="para-body">Norwegian January CPI surprised sharply to the upside, driving 10-year yields to levels last seen in early 2009 and shifting OIS pricing toward a March hike from Norges Bank — a notable divergence from the broader DM easing trajectory. Eurozone yields fell on the day, suggesting markets view the Norwegian print as idiosyncratic rather than a regional signal. The European Parliament moved closer to ratifying the US trade deal, agreeing a 2028 sunset clause that gives Washington six months to reduce steel and aluminium tariffs from 50% to 15%. European Council President António Costa said EU leaders are finally prepared to unify capital markets to compete globally, though execution risks remain considerable.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Cross-currents in monetary policy divergence sharpen</p>
+<p class="para-body">Norway delivered the day's most striking macro signal, with January CPI printing well above expectations and triggering a steep selloff in NOK government bonds. Ten-year yields climbed to levels not seen since early 2009, and markets now price a March hike from Norges Bank — joining the RBA, whose Deputy Governor Hauser reiterated that Australian inflation remains "too high." The divergence is becoming material: Norwegian-Swedish yield spreads have widened sharply even as euro-area yields drifted lower on the same session. Norway's energy-heavy economy and historically erratic inflation prints argue against extrapolating globally, but the episode underscores how country-specific dynamics are reasserting themselves as the post-Covid synchronization fades. In the US, by contrast, soft December retail sales and a benign employment cost index pushed traders to price two Fed cuts under incoming Chair Warsh, with the 10-year Treasury yield falling six basis points back below its 200-day moving average. The MOVE index continues its steady decline from last April's Liberation Day shock — a notable disconnect given the geopolitical backdrop.</p>
+<p class="para-title" style="color:#8b5cf6;">Iran diplomacy enters a delicate phase</p>
+<p class="para-body">Netanyahu travels to Washington today to meet Trump, with the explicit aim of pressing for tougher concessions from Tehran. Recent US-Iran exchanges have struck a constructive tone on preliminary talks, though analysts remain skeptical that a substantive agreement is within reach. Oil gained on the session as Middle East tensions outweighed mounting evidence of a building supply glut — a tension that will resolve one way or the other in coming weeks.</p>
+<p class="para-title" style="color:#8b5cf6;">Energy transition and commodity policy</p>
+<p class="para-body">Indonesia ordered Weda Bay Nickel — the world's largest nickel mine — to cut permitted output to 12 million tons from 42 million, an aggressive supply-side intervention aimed at supporting global prices. Separately, the Trump administration is expected to unveil federal support for coal-fired generation, while the EPA moves to repeal the 2009 endangerment finding underpinning US greenhouse gas regulation. BP halted buybacks to address roughly $60 billion in debt and obligations, diverging from peers Chevron, Exxon, Shell and TotalEnergies, all of which maintained shareholder returns.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

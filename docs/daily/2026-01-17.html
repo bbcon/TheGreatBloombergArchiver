@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saturday, January 17, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Saturday, January 17, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">US Daily Briefing — January 17, 2026</p>
+<p class="para-body">Coverage in today's available source material is unusually thin, with the principal Bloomberg dispatch consisting largely of weekend feature content rather than market-moving news. We flag the limited US-relevant threads below and caution that the signal-to-noise ratio is low.</p>
+<p class="para-title" style="color:#5597cb;">Fed dynamics</p>
+<p class="para-body">Bloomberg references "turbulent forces reshaping the Fed" in 2026, though without accompanying detail in today's material. The framing is consistent with the ongoing institutional pressures we have been tracking — questions around the Chair succession, the composition of the Board, and the degree of executive branch influence over monetary policy formulation. We would not over-read a headline reference, but the durability of this narrative through January suggests Fed governance risk remains a live consideration for rates and dollar positioning into the spring.</p>
+<p class="para-title" style="color:#5597cb;">Fiscal and regulatory</p>
+<p class="para-body">The Trump administration is reportedly moving to shift the cost of surging electricity demand onto large technology firms, a development with potential implications for hyperscaler capex trajectories and, by extension, for the AI-related equity complex that has carried index performance. The mechanism and legal vehicle remain unclear from the available material; whether this materializes as tariff-style cost allocation, FERC-mediated rate structures, or tax treatment will determine the earnings impact. We would expect affected names — the large cloud and data center operators — to trade with elevated headline sensitivity until details emerge.</p>
+<p class="para-title" style="color:#5597cb;">Labor and corporate</p>
+<p class="para-body">Reporting on hiring practices in an AI-saturated environment continues to suggest that firms are raising the bar for headcount additions, with each posting effectively stress-tested against automation alternatives. This is directionally consistent with the soft hiring prints we have seen and reinforces our view that payroll growth deceleration reflects structural substitution alongside cyclical caution, complicating the Fed's read on labor market slack.</p>
+<p class="para-title" style="color:#5597cb;">Markets</p>
+<p class="para-body">No material US equity, credit, or rates content in today's source set. We will resume standard market coverage with Tuesday's open following the MLK holiday.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Asia-Pacific Daily Briefing — January 17, 2026</p>
+<p class="para-body">Weekend news flow for the Asia-Pacific region is unusually light, with the available material offering only one item of direct relevance: continued attention to the spillover effects of China's accumulating external surplus into global asset markets. Reporting highlights that a roughly $1.2 trillion windfall — reflecting the cumulative trade surplus China has generated over recent quarters — has been quietly recycling into global markets rather than returning home through conventional channels. The phenomenon warrants close monitoring on several fronts. First, the gap between recorded export proceeds and onshore FX settlement suggests Chinese exporters and corporates continue to park dollar receipts offshore, a pattern consistent with persistently soft expectations for the renminbi and with PBoC tolerance for a managed, gradual currency adjustment. Second, the redirection of these flows into offshore deposits, gold, and foreign securities has likely contributed at the margin to compressed term premia in developed-market sovereigns and to the resilience of risk assets despite tighter real rates. Third, the dynamic has policy implications: the longer surpluses remain unconverted, the weaker the domestic liquidity impulse from external trade, reinforcing the case for additional onshore easing or fiscal support. The durability of this channel remains to be seen, and would likely reverse should CNY expectations shift or capital account controls tighten. Beyond this, the weekend cycle produced little incremental signal on Japan, South Korea, India, Southeast Asia, or Australia. There were no material updates on BoJ policy trajectory, China's Q4 activity follow-through, regional trade data, or geopolitical developments across the Taiwan Strait, the Korean Peninsula, or the South China Sea in today's flow. Investors should treat today's briefing as a placeholder ahead of a heavier data and policy calendar next week, which is expected to include further Chinese activity indicators and central bank communications across the region. Positioning into Monday's open should reflect the thin information environment rather than any directional shift in the regional macro narrative.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">European Daily Briefing — January 17, 2026</p>
+<p class="para-body">Weekend news flow into Europe was unusually thin, with limited primary macro or policy developments to report. We highlight the few items of regional relevance below and flag the absence of substantive ECB, UK political, or eurozone data catalysts in today's coverage. The most directly Europe-relevant story concerns Aldi, the German discount grocer, which continues to expand its US footprint and consolidate share among American shoppers. While framed as a consumer feature, the underlying commercial story is material for the Schwarz/Aldi competitive complex and, by extension, for European grocery incumbents whose international growth narratives increasingly depend on US penetration. The discounter model's traction in an inflation-fatigued US consumer environment may also inform read-throughs for European listed grocers facing their own margin pressures, though we would caution against overinterpreting a single qualitative data point. Tangentially relevant to European markets is the ongoing discussion around US power costs and the Trump administration's moves to shift more of that burden onto hyperscalers. The implications for European utilities, grid operators, and data center developers — particularly in Ireland, the Nordics, and the Frankfurt corridor — are worth monitoring, as US policy shifts could redirect hyperscaler capex toward European jurisdictions with more accommodative cost structures. This remains speculative pending greater clarity on the US regulatory mechanism. We would also flag the broader theme of locked-up real estate fund redemptions, currently surfacing in Canada but with clear parallels to the gating episodes seen across European open-ended property funds in 2023–24. Whether this signals renewed stress in illiquid retail vehicles globally remains to be seen. Otherwise, today's flow contains no material updates on ECB policy guidance, UK fiscal or political developments, eurozone data, or individual European corporate news. We expect a more substantive agenda to resume with the new week.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Global Macro Briefing — Saturday, January 17, 2026</p>
+<p class="para-body">Weekend flow is light, with Bloomberg's Saturday edition leaning toward features rather than market-moving news. That said, several threads warrant attention for the cross-regional themes shaping positioning into next week.</p>
+<p class="para-title" style="color:#8b5cf6;">Iran: regime trajectory remains the dominant geopolitical variable</p>
+<p class="para-body">Bloomberg's lead question — whether Iran's next phase brings a strongman, coup, or state collapse — captures the unresolved nature of the post-conflict landscape. Each scenario carries materially different implications for Strait of Hormuz transit risk, regional proxy dynamics, and the Gulf crude complex. A consolidated successor regime would likely allow risk premia to compress further; a fragmented or contested transition would sustain elevated tanker insurance costs and keep Brent term structure in backwardation. Markets appear to be pricing a muddle-through outcome, but conviction is low and positioning remains light heading into the weekend — a configuration that historically amplifies gap risk on Sunday futures opens.</p>
+<p class="para-title" style="color:#8b5cf6;">US energy-AI nexus</p>
+<p class="para-body">Reporting that the Trump administration is moving to shift surging power costs onto large technology firms represents a potentially significant reallocation of the AI buildout's externalities. If formalized, the mechanism would compress hyperscaler margins at the margin while easing the political economy around utility rate cases — relevant for both the megacap complex and regulated utilities exposed to data center load growth. Execution details and legal durability remain to be seen.</p>
+<p class="para-title" style="color:#8b5cf6;">China liquidity spillovers</p>
+<p class="para-body">Bloomberg flags an estimated $1.2 trillion in Chinese capital quietly flowing into global markets, a theme consistent with persistent onshore deflationary pressures and household preference for offshore stores of value. The flow has plausible implications for gold, Hong Kong-listed equities, and selected DM credit, though attribution at this scale is inherently imprecise.</p>
+<p class="para-title" style="color:#8b5cf6;">Fed</p>
+<p class="para-body">Bloomberg references "turbulent forces reshaping the Fed this year" without new substantive detail — a watching item rather than an actionable development. Coverage relevant to other cross-cutting themes was thin today.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

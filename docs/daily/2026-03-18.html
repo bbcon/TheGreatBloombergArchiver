@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, March 18, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, March 18, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">The Federal Reserve's policy decision dominated market attention on March 18, with the FOMC widely expected to hold rates steady for a second consecutive meeting. Chair Powell's press conference carried unusual weight given the conflicting signals the central bank must now navigate: energy prices rising sharply on the back of the Iran conflict, a softening consumer backdrop, and an administration publicly at war with itself over the economic response. President Trump called for an emergency rate cut — a move associated historically with acute crises — while National Economic Council Director Kevin Hassett struck a notably more sanguine tone on CNBC, saying a prolonged war's impact on consumers was "really the last of our concerns right now." A survey of 28 former Fed policymakers and staff, conducted ahead of Wednesday's meeting, projected PCE inflation of 3% for 2026 and year-end unemployment of 4.6%, with a majority expecting rates to remain on hold throughout the year. The consumer outlook continues to deteriorate at the margin. Average gasoline prices have risen roughly 27% since hostilities began on February 28, reaching levels last seen in 2023, while diesel surpassed $5 per gallon for the first time since 2022. The mechanism differs from the post-Ukraine shock: households no longer hold pandemic-era savings buffers, and January consumer spending was essentially flat even before the energy spike hit. SMBC Nikko Securities estimates the current gasoline price increase could reduce the savings rate by 60 basis points to approximately 3.9%. University of Michigan consumer sentiment fell to a three-month low in the March preliminary reading. On corporate news, Lululemon fell approximately 2% in premarket trading after forecasting a second consecutive year of profit declines, while DocuSign rose after beating earnings expectations. General Mills was set to report before the open, with Micron Technology scheduled after the close — the latter carrying particular macro relevance given its memory chip exposure and a market capitalization that has risen from roughly $100 billion at end-2024 to approximately $520 billion. Pending home sales rose 1.8% in the latest reading, partially reversing a prior decline, though Oxford Economics cautioned that higher energy costs threaten to suppress household spending decisions in the months ahead.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets extended their rally on March 18, with the MSCI Asia-Pacific index rising approximately 2%, led by memory-chip names perceived as relatively insulated from the Middle East conflict. The standout performance came from South Korea, where the Kospi surged 5% after authorities moved to restrict publicly listed companies from listing certain subsidiaries — a practice long associated with shareholder value dilution and the so-called "Korea discount." Samsung Electronics rose 7% after signaling it is exploring a shift toward multi-year memory chip contracts, a structural change that could help stabilize supply dynamics. The Kospi now trades above 5,900, and the governance reform agenda under President Lee Jae Myung appears to be regaining momentum following a brief interruption caused by the Iran conflict. In Japan, Prime Minister Sanae Takaichi characterized her upcoming White House meeting with President Trump as "extremely difficult." Japan's pacifist constitution constrains overseas military deployment, making Trump's earlier request for warship contributions to Strait of Hormuz operations untenable. Though Trump has since withdrawn the demand, the encounter carries considerable stakes: Japan is seeking US support in its standoff with China, and was hoping to position Takaichi's visit ahead of a planned Trump-Xi summit in Beijing — a trip now postponed by five to six weeks. Japan's February export data added to the complex backdrop, with shipments to the US falling 8% year-on-year and car exports by value down 14.8%, though overall exports beat expectations at +4.2%. Takaichi is expected to offer pledges of additional US investment, potentially in nuclear energy, as a diplomatic offset. China faces mounting energy pressure, with industry consultant FGE NexantECA indicating Beijing is close to drawing on its estimated 1.4 billion barrels of commercial oil reserves as Strait of Hormuz disruptions persist. Alibaba raised AI computing and storage prices by as much as 34%, reflecting surging demand. The AI theme also drove significant market moves in Hong Kong, where LLM providers MiniMax and Zhipu gained approximately 20% and 19% respectively following Nvidia CEO Jensen Huang's endorsement of OpenClaw, an agentic AI platform. Goldman Sachs projected the Indian rupee could slide to 95 against the dollar over the next year due to Iran conflict fallout, with pressure on the Reserve Bank of India to respond if inflation accelerates. Separately, Pakistan's airstrikes on Kabul prompted global alarm from the EU and China, raising concerns about a second concurrent conflict igniting alongside the Gulf war.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European markets were constructive on March 18, with the Stoxx Europe 600 gaining 0.6% as oil prices eased and investor sentiment stabilized ahead of a week dense with central bank decisions. Iraq's agreement to resume pipeline exports via Turkey — bypassing the Strait of Hormuz — contributed to the softer oil tone, though the underlying supply disruption remains unresolved. Germany took targeted domestic action in response to war-driven fuel price increases, restricting petrol stations to one price hike per day and tightening antitrust oversight — a measure reflecting political sensitivity to consumer cost pressures rather than a substantive market intervention. The Bank of England's positioning is drawing increasing scrutiny. According to Bloomberg Economics analysis, the BoE's internal models may lead it to respond more aggressively than markets currently expect to the energy price shock, given assumptions about the large and persistent inflationary pass-through from oil. UK Prime Minister Keir Starmer navigated continued diplomatic pressure, with Irish Taoiseach Micheál Martin defending him after Trump criticized the UK for declining to join the war effort. Commentary from Rosa Prince in Bloomberg Opinion argued Starmer's refusal was justified but that the harder challenge will be managing the economic damage attributable to the conflict — a framing likely to define UK political discourse through the autumn. On the corporate side, Unilever confirmed it is in the early stages of evaluating a separation of its food assets, a move consistent with the ongoing portfolio simplification strategy the company has pursued since divesting its tea business. Prudential Plc reported an increase in new business profit and announced an additional $1.2 billion share buyback. Logitech fell 5.7% in Zurich after UBS downgraded the stock on weaker gaming market signals, while HelloFresh dropped 9.6% in Frankfurt after issuing guidance materially below analyst expectations. Bundesbank President Joachim Nagel offered a relatively sanguine view on AI's labor market implications, suggesting the technology may prove beneficial for European companies rather than destructive for employment.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The central macro reality on March 18 remains the Strait of Hormuz, now effectively shut for three weeks since the US-Israeli strikes on Iran began February 28. Iran continued missile and drone attacks across Israel and Gulf states following the killing of senior security figure Ali Larijani — a pragmatist whose death leaves Iran's wartime leadership increasingly concentrated among hardliners, materially reducing the probability of a negotiated off-ramp in the near term. The USS Gerald R. Ford aircraft carrier withdrew from operations after an onboard fire, a logistical complication for US force projection. Trump, who called the war's end imminent, simultaneously requested NATO allied military support and was rebuffed — a sequence that led him to publicly abandon the request and criticize allies. The episode has exposed meaningful fissures in the Western alliance architecture. Oil markets are beginning to show modest differentiation. Brent edged toward $100 on the session, easing slightly from recent highs, as Iraq's Turkey pipeline deal offered one workaround to Hormuz closure. Notably, Iran itself has been transiting its own crude through the strait at broadly pre-war volumes, exploiting its control of the waterway. BofA's global fund manager survey found institutional investors rotating overweight commodities — the biggest such shift since the 2022 Ukraine invasion — while projecting Brent at approximately $76 by year-end, close to futures pricing of just over $80 nine months out. The implied scenario is a meaningful but not catastrophic supply disruption: inflation modestly higher, growth modestly lower, with full-scale stagflation not yet the base case though increasingly prominent as a tail risk. The Reserve Bank of Australia became the first of eighteen central banks meeting this week to move, hiking rates in response to the inflationary impulse from energy prices — a signal that at least some inflation-targeting frameworks are treating the oil shock as a demand-side tightening event rather than a supply disruption to be looked through. The Fed and Bank of Japan decisions follow, with markets watching closely for any shift in forward guidance. Meanwhile, BloombergNEF data showed oil and gas majors cut low-carbon energy investment by 33% in 2025 to just over $25 billion, the lowest since 2020 — a retrenchment that preceded the current crisis but may complicate medium-term energy transition trajectories if elevated oil prices simultaneously incentivize fossil fuel investment and depress clean energy capital allocation.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

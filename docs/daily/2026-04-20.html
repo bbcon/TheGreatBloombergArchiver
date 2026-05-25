@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, April 20, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, April 20, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity futures pulled back modestly on Monday, with S&P 500 futures off approximately 0.5% as a turbulent weekend in the Strait of Hormuz undercut the assumptions underpinning the market's recent historic rally. The S&P 500 had risen 12.33% in just 14 trading days following Iran's initial signals of willingness to negotiate, a pace of appreciation seen only four times this century — and the first such episode to bring the index to an all-time high rather than merely recovering from deeply oversold levels. Whether Monday marks the start of a reversal or another false alarm, as last Monday proved, remains to be seen. The more consequential near-term catalyst for markets may arrive Tuesday, when Kevin Warsh appears before the Senate Banking Committee for his Fed chair confirmation hearing. Bond markets have been partially buoyed by the expectation that Warsh would favor looser monetary policy; any signal that he intends to look through the war-driven energy shock would likely reinforce wagers on rate cuts and support the short end of the Treasury curve. Any hawkish pivot on inflation, however, could trigger a reversal. Separately, Republican Senator Thom Tillis has pledged to block Warsh's confirmation until the Justice Department concludes its investigation into Jerome Powell, creating the possibility that Powell remains in his post beyond his May 15 term expiry. On the corporate front, American Airlines explicitly rejected merger interest from United Airlines, dampening speculation of a transformative combination in the industry. QXO, the Brad Jacobs vehicle, announced a roughly $17 billion acquisition of insulation company TopBuild. Energy Secretary Chris Wright contradicted Treasury Secretary Bessent by stating US gasoline prices are unlikely to fall below $3 per gallon until next year, a notable divergence within the administration that may complicate the political narrative around energy relief. The SaaS sector remains under structural pressure, with the S&P Composite 1500 Software index having shed approximately 35% over the prior six months amid AI disruption fears, though some analysts argue the selloff overstates the near-term risk to incumbent business models.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets were largely muted Monday, with the CSI 300 edging up 0.6% even as oil prices surged, reflecting a degree of investor compartmentalization between energy market disruption and Chinese domestic equity sentiment. The divergence is notable given China's acute exposure to the Strait of Hormuz closure: roughly 20% of the world's oil transits the waterway, and tanker flows had fallen to near-zero in the weeks following the outbreak of conflict. China is responding at the margin by pivoting to alternative feedstocks — US ethane imports are expected to hit a record 800,000 tons in April, approximately 60% above the monthly average — while clean technology exports surged in March, with lithium-ion battery shipments up 34% year-on-year and electric vehicles up 53%, benefiting from heightened global demand for non-fossil alternatives. At the IMF spring meetings in Washington last week, China's delegation mounted a robust defense of its record trade surpluses, arguing that imbalances reflect cultural savings preferences rather than policy distortions and pointing to rising imports as evidence of an improving trajectory. The argument drew skepticism from other delegations, including Japan's finance minister, who described the presentation as ultimately unconvincing. The episode signals a more assertive posture from Beijing on external criticism of its economic model. Elsewhere in the region, North Korea conducted a series of five tactical ballistic missile tests, variants of the Hwasong-11, which Kim Jong Un praised effusively. The launches come amid ongoing concern about Pyongyang accumulating real combat experience through its troop deployments supporting Russia in Ukraine. Japan meanwhile participated for the first time in major naval exercises with the US and the Philippines, even as China's navy conducted drills in the western Pacific — a parallel display of posturing that underscores the widening military competition west of the First Island Chain. Singapore is procuring additional LNG supplies as the Hormuz disruption curtails flows from Qatar and the UAE.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European equities fell approximately 1% on Monday as the weekend's events in the Strait of Hormuz rekindled concerns about the durability of any near-term ceasefire. European natural gas prices climbed as much as 11%, compounding the energy cost pressures that have already weighed heavily on the continent's industrial base. The EU is preparing measures to optimize jet fuel distribution among member states and source alternative supplies, reflecting the practical strain that seven weeks of Hormuz disruption is placing on aviation and broader energy infrastructure. In Germany, Chancellor Friedrich Merz faces an increasingly difficult political environment. His approval rating has fallen to deeply negative territory, with 80% of respondents in a recent poll expressing disapproval of his performance. Measures announced last week to cushion the blow of rising energy prices — including a €1,000 worker payment intended to be voluntarily funded by employers — were widely criticized as inadequate, with the federal government itself declining to participate. Merz has called crisis talks to address energy price impacts on German industry, but his coalition appears beset by the same infighting that characterized its predecessor, providing oxygen to the AfD, which leads in polls ahead of state elections in eastern Germany in September. UniCredit CEO Andrea Orcel pressed his case for acquiring Commerzbank, arguing the German bank requires deep structural change. In the UK, Prime Minister Keir Starmer faces a significant domestic political test, making a statement to the House of Commons on Monday over the controversy surrounding Peter Mandelson's security vetting clearance as US ambassador. Calls for Starmer to resign are growing ahead of local elections next month, which are predicted to be damaging for Labour. Separately, Bulgaria's presidential election produced a decisive victory for former President Rumen Radev, who opposes sanctions on Russia and military aid for Ukraine, adding a complicating element to European political cohesion on the war in the east.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The central development across global markets remains the unresolved status of the Strait of Hormuz, through which approximately 20% of global oil supply ordinarily flows. A chaotic weekend saw Iranian foreign minister declare the strait "completely open" on Friday, only for Tehran to reverse course within 24 hours after the US refused to lift its own blockade of Iran-linked vessels. The US Navy then fired upon and boarded an Iranian-flagged cargo ship in the Gulf of Oman — the first such seizure since the blockade began — prompting Iranian authorities to reimpose controls. Brent crude surged as much as 7.9% to near $95 per barrel in Asian trading, while European gas rose as much as 11%. The ceasefire is due to expire Tuesday, and the prospects for US-Iran talks in Islamabad appear uncertain. Vice President Vance, special envoy Witkoff, and Jared Kushner were scheduled to depart for Pakistan Monday evening, but Iran's Foreign Ministry stated no decision had been made on attendance, with a spokesman citing a lack of "seriousness" on the US side. The gap between the two parties' stated positions remains wide: the US claims Iran has agreed to surrender enriched uranium and end its nuclear program; Iranian officials deny both. Polymarket bettors place only approximately a one-in-five probability on tanker traffic returning to normal by the end of April. The economic effects are beginning to propagate more broadly: tankers face 3.5-day delays at the Panama Canal as diverted traffic surges, Pakistan is experiencing severe power and gas outages, Colombia is reckoning with energy demand disruptions, and Singapore is scrambling to secure alternative LNG supplies. The war is simultaneously accelerating the energy storage boom, with battery installations expected to jump roughly a third this year as economies seek to reduce fossil fuel dependence. China's clean tech export surge — with solar cells up 80% year-on-year in March — reflects both this structural demand shift and Beijing's ability to capitalize on a crisis not of its making.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

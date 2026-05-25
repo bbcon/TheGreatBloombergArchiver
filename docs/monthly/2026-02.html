@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>February 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="daily.html" class="nav-link">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="#" class="nav-link  active">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../monthly.html">‹ Monthly archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Monthly Brief</p>
+        <p class="brief-date">February 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Monetary Policy in Transition</p>
+<p class="para-body">The dominant theme across February was the Federal Reserve's succession dynamic and its interaction with increasingly complex inflation data. President Trump's nomination of Kevin Warsh on the final Friday of January set the tone for the month: Wall Street's initial characterization of Warsh as a relative hawk sat in direct tension with Trump's persistent demand for lower rates, and Warsh's subsequent public alignment with the president provided only partial reassurance given his institutional record. Senate confirmation appears probable, but the operative question — how Warsh balances political pressure against the Fed's credibility — remained unresolved through month-end. The FOMC minutes released in the final week of February came in more hawkish than the market had anticipated, with several members suggesting rates may need to rise if inflation remains elevated. This tone sat awkwardly against constructive disinflation signals: the trimmed mean and median CPI reached their lowest readings since 2021, and January CPI averaged 2.16% across the twelve large metros tracked by the BLS. Futures markets pushed the next anticipated cut to July following the stronger-than-expected January payrolls print released in the second week of the month, though two cuts remain priced for the full year — an assumption that may face further tests. The delayed PCE release on the final Friday of February carried unusual weight given that core PCE had been running near 3%.</p>
+<p class="para-title" style="color:#5597cb;">Equity Markets and the AI Rotation</p>
+<p class="para-body">US equity markets spent February rotating beneath a relatively calm headline index level. The S&P 500 sat near all-time highs in mid-month but trailed world ex-US equities by roughly 7.7 percentage points year-to-date and ranked 69th among 92 global indices tracked by Bloomberg — a stark illustration of the divergence between index-level calm and underlying factor stress. The iShares Expanded Tech-Software ETF fell more than 17% year-to-date as the market priced AI disruption of incumbent software business models, a dynamic the term "SaaSpocalypse" briefly captured in financial media. AMD fell 17% post-earnings early in the month, Alphabet guided 2026 capital expenditure to as much as $185 billion against a consensus near $120 billion, and Amazon disclosed $200 billion in planned AI-related capex — driving its shares down approximately 8% on the announcement. The aggregate implied spend from the four major hyperscalers approached $650 billion, a scale with few historical analogs that a growing number of fund managers are beginning to characterize as potential overinvestment rather than rational capital allocation. Breadth, however, remained broadly constructive: the equal-weighted index hit a record mid-month, value outperformed momentum by the widest margin since November 2020, and Q4 blended earnings growth reached a four-year high near 14.5%.</p>
+<p class="para-title" style="color:#5597cb;">The Supreme Court's Tariff Ruling</p>
+<p class="para-body">The week's most consequential domestic policy development arrived in the final days of February, when the Supreme Court struck down in a 6-3 decision the administration's reciprocal tariffs imposed under emergency powers, potentially cutting the US average effective tariff rate by more than half. The court left unresolved whether importers are entitled to refunds — Bloomberg Economics estimates the total could reach $170 billion — remanding that question to lower courts. The White House signaled it would reconstruct its trade architecture under alternative statutory authorities. Separately, the Republican-led House passed a bill terminating tariffs on Canadian imports mid-month, with six Republicans crossing the aisle — the most significant legislative pushback to the administration's trade agenda to date, though the measure is unlikely to survive a presidential veto.</p>
+<p class="para-title" style="color:#5597cb;">Fiscal and Labor Dynamics</p>
+<p class="para-body">New CBO projections showed net interest payments rising from $1 trillion in 2026 to $2.1 trillion by 2036, reaching 4.6% of GDP — a figure that alone exceeds Treasury Secretary Bessent's 3% total deficit target for 2029. Q3 GDP was revised to a 4.4% annualized pace, and Bank of America projected front-loaded 2026 growth, citing approximately $135–140 billion in fiscal stimulus and post-shutdown normalization tailwinds. Against this, consumer confidence registered its weakest reading in over a decade despite real wage gains of 3.8% year-on-year in December — a disconnect the Goldman Sachs housing analysis helps contextualize: the bottom income quintile now spends 55% of income on rent, and combined down payment plus first-year mortgage costs in major metros have risen to 160–200% of annual income from 90–120% in 2000. The partial government shutdown that ended in early February added noise to the labor data; the January payrolls print of 130,000 jobs added — released with a delay — was the strongest monthly gain in over a year. AEI and Brookings researchers separately estimated the US may have experienced net negative immigration in 2025, a potential labor-supply headwind whose full implications for trend growth remain to be seen. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Japan: Political Tailwinds and Structural Tension</p>
+<p class="para-body">Prime Minister Sanae Takaichi's snap election victory early in the month delivered the LDP's largest postwar single-party mandate and set the dominant regional narrative for February. The Nikkei 225 surged nearly 4% on the Monday following the result and added a further 2.8% the following session, with the yen strengthening to ¥153 from near ¥160 in January and 30-year JGB yields falling roughly 40 basis points from their January highs by mid-month — a rare equity-up, bond-stable combination the new prime minister requires to validate her fiscal expansion agenda. Takaichi's formal re-election in parliament came with pledges of strategic investment and active fiscal policy, and Tokyo announced it would invest up to $36 billion in US oil, gas, and critical minerals projects as the first concrete tranche of the $550 billion framework agreed with the Trump administration. The structural tension, however, is unresolved: planned fiscal expansion against a 230% debt-to-GDP backdrop, combined with implicit pressure on the Bank of Japan to delay further rate normalization, draws uncomfortable comparisons to the UK's 2022 Truss episode in some analyst framing. A hawkish BOJ board member nonetheless signaled by late month that conditions for the next hike could align by spring, and Takaichi's forthcoming nominations of two BOJ board members — filling the seats of dovish members — will be closely parsed by bond and currency markets.</p>
+<p class="para-title" style="color:#e07b39;">China: Cautious Sentiment Inflection</p>
+<p class="para-body">Foreign positioning toward Chinese equities gathered pace through February. Eight Roads shelved plans to offload stakes in approximately 40 Chinese tech companies, Goldman Sachs and BNP Paribas surveys pointed to accelerating allocations, and MSCI Asia Pacific January portfolio inflows approached $100 billion — the second-strongest reading in two decades per IIF data. At the same time, more than a dozen provinces lowered their 2026 growth targets, with consensus coalescing around a national figure of 4.5%–5% ahead of March's National People's Congress — the first downward revision in three years. Citi moved its previously baseline stimulus package to a ceiling rather than a base case. Xi Jinping's call to anchor growth around domestic demand as the "main driver" reinforced Beijing's consumption-led rebalancing rhetoric, though the IMF's Article IV assessment noted that Chinese household consumption at roughly 40% of GDP is essentially unchanged since 2005. On geopolitics, a Panama court decision voiding a CK Hutchison port contract drew a sharp response from Beijing, which instructed state firms to halt new project discussions in Panama, while Trump and Xi spoke by phone on trade and Taiwan with tone described as constructive but substantive commitments remaining opaque. A Pentagon episode in which Alibaba, BYD, and Baidu were briefly added to a military-adjacency list before the designation was withdrawn triggered a more than 3% slide in Alibaba in Hong Kong before partial recovery — illustrating the hair-trigger sensitivity of Chinese large-caps to US regulatory action.</p>
+<p class="para-title" style="color:#e07b39;">Regional Divergence: Indonesia, India, and Southeast Asia</p>
+<p class="para-body">Indonesia presented the starkest cautionary signal in the region. MSCI placed the country's emerging-market classification under review and FTSE Russell followed suit, citing governance deterioration under President Prabowo. The rupiah weakened to levels last seen nearly three decades ago, Moody's cut the credit outlook to negative, and market capitalization fell nearly $80 billion from peak levels following the dismissal of financial regulatory heads and the appointment of a family member as Bank Indonesia deputy governor. A subsequently finalized US-Indonesia trade agreement provided some diplomatic offset but did not materially alter the institutional concerns. India's trajectory was considerably more constructive: the AI Impact Summit in New Delhi concluded with AI infrastructure pledges reaching at least $270 billion across the week, anchored by Ambani's commitment of up to 10 trillion rupees through Reliance and Jio and a $100 billion data-center buildout through 2035 from Adani. The RBI held rates at 5.25%, citing improved visibility from the US trade framework. South Korea's KOSPI led regional gains by mid-month, up nearly 30% year-to-date, supported by AI hardware exposure and shareholder-return reforms.</p>
+<p class="para-title" style="color:#e07b39;">The Australia Outlier and Regional Policy Divergence</p>
+<p class="para-body">The Reserve Bank of Australia delivered the first rate hike among major central banks in 2026, with services inflation proving more persistent than anticipated and the RBA's deputy governor reiterating late in the month that Australian inflation remains "too high." The decision stands in marked contrast to the ECB's disinflation undershoot and the Fed's unresolved succession dynamics, underscoring how post-Covid synchronization is fading across the region. Japan's manufacturing PMI remained in expansionary territory for a third consecutive month, though Q4 GDP had expanded just 0.2% annualized, complicating the BOJ's normalization path. Mainland Chinese retail flows into gold, silver, copper, and tin — driven by limited domestic investment alternatives — meaningfully amplified the metals cycle's volatility through the month; China's top four gold ETFs recorded nearly $1 billion of outflows on a single Tuesday early in the month, and Shanghai copper futures registered record January volumes. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">UK Political Crisis: Deterioration and Partial Stabilization</p>
+<p class="para-body">The United Kingdom's political trajectory was the most volatile in the region through February. Prime Minister Keir Starmer entered the month already under pressure from within his parliamentary party over his association with Peter Mandelson, whose appointment as US ambassador has been complicated by documented links to Jeffrey Epstein. Parliament voted to compel disclosure of related documents in the opening weeks. The crisis intensified in mid-month when Starmer's chief of staff and communications head resigned and Scottish Labour leader Anas Sarwar publicly called for Starmer to stand down — a statement that drove gilt yields higher, though the market reaction remained an order of magnitude below the 2022 Truss episode, with sterling holding up and the curve avoiding dislocation. By mid-month Starmer had secured temporary reprieve through cabinet backing, and prediction markets priced his departure by end-June rather than imminently. The successor question may prove more consequential for fixed income than the current leadership itself: the most plausible candidates sit to Starmer's left and are perceived as more fiscally expansive. Macro data compounded the pressure: fourth-quarter GDP barely expanded, UK unemployment rose to its highest level since the pandemic, and wage growth eased — collectively prompting traders to fully price half a point of Bank of England rate cuts by year-end, with March increasingly discussed as a live meeting. Against this, the UK recorded its largest budget surplus on record late in the month, boosted by surging capital gains tax receipts — a brief fiscal reprieve that does not resolve the underlying structural constraints Chancellor Reeves faces.</p>
+<p class="para-title" style="color:#4a9e6b;">ECB and Eurozone: Divergent Signals</p>
+<p class="para-body">The ECB held rates as expected through February, and Governing Council member Stournaras downplayed concerns about the euro's recent appreciation. Euro-area inflation continued to run below the ECB's 2% target, sharpening the policy debate; if the undershoot persists into the spring projection round, additional accommodation may be priced more aggressively. This sits in tension with firmer activity signals: German factory orders rose at their fastest pace in two years mid-month, and the euro-area flash PMI surprised to the upside late in the month, with manufacturers recording their best performance since 2022. Q4 negotiated wages rose 3%, a figure the Governing Council will monitor carefully against residual services-price pressures. The Stoxx Europe 600 touched an all-time high of 630 in the final week of the month before settling near 628, though strategists are flagging caution: eight consecutive months of gains and valuations at five-year highs leave limited room for further multiple expansion. The most significant European institutional development was the reported likelihood that ECB President Lagarde will depart ahead of her October 2027 mandate expiry, with timing calibrated around the French presidential election. An ECB spokesperson preserved optionality, but the succession debate — with Dutch governor Knot appearing the most plausible consensus choice — has begun to register in rate markets.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate Developments: Stress and Selective Strength</p>
+<p class="para-body">The month produced some of the sharpest single-name moves in recent European corporate history. Novo Nordisk plunged as much as 20% early in the month — among the largest single-day declines in the company's history — after forecasting a steep sales decline, providing concrete evidence that competitive dynamics in GLP-1 obesity drugs are deteriorating faster than the sell-side modeled; approximately 5,000 job cuts announced late in the month represent among the largest layoffs in Danish history. Stellantis fell as much as 24% in Milan — a record intraday decline — after announcing €22 billion in charges tied to unwinding its EV strategy. BP suspended its $750 million quarterly buyback and extended declines as much as 7.7% the following session after offering no timeline for restoration. Dassault Systèmes fell approximately 20% in Paris, the latest European software name caught in the AI-displacement selloff. Nuveen agreed to acquire Schroders for $13.5 billion in cash at a roughly 29% premium, ending more than two centuries of independence for the UK's largest standalone asset manager. On the upside, Kering rose 10% on a smaller-than-expected Gucci sales decline, Moncler rallied 13% on results described as significantly ahead of estimates, and UBS announced a $3 billion buyback alongside an earnings beat.</p>
+<p class="para-title" style="color:#4a9e6b;">Geopolitical and Energy Risks</p>
+<p class="para-body">Gas inventories are on track to exit winter more depleted than in 2025, with German storage roughly a quarter full and little financial incentive via summer-winter price spreads to incentivize refilling. Chancellor Merz courted Middle Eastern energy suppliers to diversify German dependence on US LNG — a notable strategic pivot — and simultaneously indicated openness to revising or delaying the EU's carbon market, driving the steepest drop in EU carbon prices since 2022. French customs data showed Q4 2025 US tariffs weighing materially on exports: spirits shipments fell 47%, wine 39%, and perfumes and cosmetics 25%. At the Munich Security Conference late in the month, European officials were reportedly reassessing the continent's nuclear deterrent posture following what attendees described as a sobering recalibration of US security commitments — a geopolitical undercurrent whose market implications remain, at this stage, difficult to quantify. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">US-Iran: The Month's Most Consequential Unresolved Risk</p>
+<p class="para-body">The US-Iran confrontation dominated global risk sentiment through February, moving through several distinct phases without resolution. The month opened with the US Navy shooting down an Iranian drone heading toward an American aircraft carrier in the Arabian Sea, driving Brent toward $68 per barrel in the first week. Iran subsequently confirmed nuclear talks scheduled in Muscat, and Brent declined — briefly — as diplomatic signals provided partial offset to the military posturing. Indirect talks in Geneva in the final week concluded on a cautiously constructive note, with Iran's delegation expected to return with detailed proposals within two weeks; President Trump nonetheless stated Iran has ten to fifteen days at most to reach an agreement. Brent surged 4.3% mid-final-week to re-cross $70 per barrel, with WTI trading near $66 — close to a six-month high — as military optionality remained explicitly on the table and a second aircraft carrier was deployed to the region. Iran's calibrated scheduling of Strait of Hormuz naval exercises even as talks were underway in Geneva illustrated the deliberate two-track strategy both sides appear to be running. South Korea's Sinokor group accumulated roughly 120 VLCCs over the month, pushing benchmark VLCC earnings above $120,000 per day — a more than fourfold increase — a market signal that traders are positioning for a potential regime change in tanker dynamics regardless of the diplomatic outcome. Whether diplomacy retains genuine viability remains the single most consequential near-term variable for global energy and risk markets.</p>
+<p class="para-title" style="color:#8b5cf6;">Precious Metals and Commodity Volatility</p>
+<p class="para-body">Gold peaked mid-month before pulling back sharply on the combination of the Warsh nomination and a hotter-than-expected PPI print, unwinding a significant portion of the safe-haven accumulation built through January. Silver's moves were more extreme: the metal fell as much as 17% intraday on a Tuesday in the second week, extending a five-day decline approaching 40% that unwound speculative excess built on Citigroup's earlier call for $150 silver. Bitcoin slid below $70,000 mid-month, reaching $60,033 briefly in Asian trading Thursday of the second week — down more than 42% from its October peak — before recovering toward $66,000 by Friday. Gold's relative resilience versus crypto through the volatility reinforced the thesis that bullion was absorbing structural safe-haven flows tied to deficit and dollar-diversification concerns rather than speculative digital-asset appetite. The structural drivers beneath the speculative froth — central-bank gold accumulation, dollar diversification, and strategic metals demand tied to AI and grid infrastructure — appear intact. Shanghai copper futures recorded their highest-ever monthly volumes in January, and mainland Chinese retail flows into gold, silver, copper, and tin meaningfully amplified the cycle's volatility.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary Policy Divergence and Institutional Stress</p>
+<p class="para-body">February provided a clear illustration of how post-Covid monetary policy synchronization is fracturing. The Reserve Bank of Australia delivered the first rate hike among major central banks in 2026, with services inflation more persistent than anticipated. Norway's January CPI surprised sharply higher early in the month, driving 10-year yields to levels last seen in early 2009 and shifting OIS pricing toward a March Norges Bank hike. A hawkish Bank of Japan board member signaled conditions for the next hike could align by spring. Russia's central bank delivered an unexpected rate cut. In the US, the stronger-than-expected January payrolls print pushed the next anticipated Fed cut to July, while the FOMC minutes released in the final week came in more hawkish than anticipated. The ECB held rates with disinflation running below target. Simultaneous political pressure on central banks across major economies represents a shared institutional stress: Trump's claim that Warsh could deliver 15% GDP growth, the premature departure of Bank of France Governor Villeroy — handing Macron a six-year appointment ahead of presidential elections in which Le Pen or Bardella poll competitively — and the BOJ's implicit political constraints all illustrate how the framework for monetary independence is under concurrent pressure across G7 economies.</p>
+<p class="para-title" style="color:#8b5cf6;">AI Sovereignty and the IEA Fracture</p>
+<p class="para-body">Two structural themes crystallized during the month with implications extending well beyond any single region. First, AI sovereignty emerged as a coherent geopolitical concern: India's AI Impact Summit attracted at least $270 billion in infrastructure pledges and approximately $17 billion in venture commitments, reflecting a state-directed response to dependency on a small number of US and Chinese AI providers — a logic other governments are independently reaching. OpenAI's concurrent funding round exceeding $100 billion at a valuation above $850 billion, anchored by Amazon, SoftBank, Nvidia, and Microsoft, illustrates the scale of capital concentration at stake. Goldman Sachs economists projected data centers will account for 40% of incremental US power demand through 2030, with electricity-price inflation near 6% through 2027. Second, the IEA ministerial summit in Paris ended without the customary joint communiqué — an outcome without modern precedent — after US Energy Secretary Wright assailed the agency's climate focus and threatened withdrawal unless it abandons net zero framing. Simultaneously, the EPA moved to rescind the 2009 endangerment finding underpinning federal greenhouse gas authority, while EU carbon prices fell sharply after Chancellor Merz indicated openness to revising the bloc's emissions market. Against this simultaneous softening of ambition from Washington and Berlin, initial CREA analysis suggested China's CO2 emissions fell 0.3% in 2025 — the first non-pandemic annual decline — as renewables absorbed all incremental power demand. The policy divergence between the two largest emitters appears increasingly structural, with implications for where the marginal data center, power facility, and capital allocation are ultimately sited.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

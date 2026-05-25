@@ -1,0 +1,11 @@
+# US Daily Briefing — February 16, 2026
+
+**Markets closed for Presidents' Day.** With cash equity and Treasury markets shut, today's briefing focuses on positioning into the week ahead and weekend developments.
+
+**Rates and Inflation.** Treasuries posted their best week in months as benign January CPI data reinforced expectations that the Fed will deliver rate cuts this year. Granular detail from Bloomberg Economics underscores the disinflation: across the 12 large US metros tracked by the BLS, January CPI averaged 2.16%, below the national print. Annual inflation has dropped below 1% in the West South Central region, with Dallas registering its first deflationary reading since the pandemic. Chicago, Boston, and Minneapolis all printed sub-2%. Whether this geographic breadth persists into the PCE release on Friday — alongside Q4 GDP and personal income — will shape the March FOMC debate.
+
+**Equities and the AI Contradiction.** A tension at the heart of US equity positioning is becoming harder to reconcile: bearish AI-disruption narratives have driven punishing selloffs in real estate services, wealth management, insurance, and logistics, even as Microsoft and Amazon shares have been hit on capex concerns suggesting an AI bubble. Both views cannot fully hold. Hyperscaler capex from Microsoft, Amazon, Meta, and Alphabet is projected to exceed $600 billion in 2026, transforming cash-rich balance sheets into more leveraged ones — a shift now visible in credit derivatives, where single-name CDS on Meta and Alphabet have become actively traded contracts. Goldman has rolled out a software pair-trade basket favoring infrastructure names (Cloudflare, CrowdStrike, Oracle) against application software shorts (Salesforce, Monday.com, DocuSign).
+
+**Memory Chip Squeeze.** DRAM prices rose 75% from December to January as AI accelerator demand crowds out conventional buyers. Cisco's weak guidance last week — and its worst share loss in nearly four years — was attributed partly to the memory squeeze; Qualcomm and Arm have flagged similar pressure. The pass-through to broader tech margins remains to be seen.
+
+**Week Ahead.** Q4 GDP, PCE, housing starts, and Walmart earnings headline. Friday brings a potential Supreme Court ruling on Trump's tariffs.

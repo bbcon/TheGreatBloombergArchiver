@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saturday, January 24, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Saturday, January 24, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">Coverage for the US macro and policy complex in today's source material is exceptionally thin. The only Bloomberg dispatch available is a weekend lifestyle compilation from the Pursuits desk, focused on consumer trends in wellness (the growth of bathhouse and sauna venues as substitutes for traditional happy-hour socializing), family-oriented luxury travel offerings, wearable health-tracking devices including Oura and Apple Watch, overtourism policy debates in global destinations, and longevity-focused wellness retreats. None of this material bears materially on Federal Reserve policy, fiscal developments, equity or credit market conditions, or US corporate newsflow. To the extent any thread is tangentially relevant to the US consumer discretionary complex, the continued expansion of premium experiential spending — wellness venues, high-end family travel, and connected health hardware — is consistent with the bifurcated consumption pattern that has characterized the post-pandemic cycle, in which upper-income households continue to support services inflation even as lower-quintile cohorts retrench. Apple's wearables franchise and the broader connected-health category remain a structural growth vector within large-cap tech, though today's source provides no incremental data points on unit economics or penetration. No new information is available in today's inputs regarding the FOMC's January meeting trajectory, Treasury issuance, the labor market, earnings season progression, credit spreads, or Washington fiscal negotiations. Readers should treat this briefing as a placeholder; substantive analysis will resume when primary macro and market source material is available. Given that January 24 falls on a Saturday, the absence of hard newsflow is not unusual, and positioning ahead of next week's economic calendar — which typically includes the advance Q4 GDP print and PCE inflation data in this part of the cycle — should be informed by Friday's closing levels and any weekend developments captured in subsequent dispatches.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Coverage for the Asia-Pacific region in today's available source material is effectively nil. The single Bloomberg dispatch received covers lifestyle and consumer culture features — bathhouse trends, family travel, sleep tracking, overtourism, and longevity retreats — with no bearing on macro, policy, market, or geopolitical developments in China, Japan, Korea, India, ASEAN, or Australia. As a result, we are unable to provide a substantive regional briefing for today. Rather than pad with stale context or speculation, we flag the gap explicitly. Items we would ordinarily be tracking into next week, and which warrant attention once primary sources resume, include: any follow-through from recent PBoC liquidity operations and the trajectory of the yuan's reference rate; onshore equity flows following the latest "national team" intervention signals; Bank of Japan communication ahead of its next policy meeting and the implications for JGB yields and USD/JPY positioning; Korean export data and semiconductor demand signals from the major Korean and Taiwanese fabricators; India's pre-budget positioning and FII flows; and Australian Q4 CPI, which remains the proximate driver of RBA expectations. On the geopolitical side, we would flag US-China trade and technology friction, cross-Strait military activity, and any North Korean developments as standing items, but have no new information to report in today's flow. Normal regional coverage will resume when source material permits.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">European Daily Briefing — January 24, 2026</p>
+<p class="para-body">Coverage in today's available source material is thin and pertains primarily to lifestyle and consumer trends rather than macro, policy, or corporate developments relevant to European institutional investors. There is no substantive content on eurozone macro data, ECB policy signaling, UK political developments, gilt or bund markets, peripheral spreads, FX, or individual European corporate news to synthesize. The only Europe-adjacent observations worth flagging — and these are tangential to investment decision-making — concern continued strength in European wellness and hospitality consumer spending, with bathhouse and sauna concepts gaining share against traditional on-premise alcohol consumption, and luxury family travel segments expanding product offerings. To the extent these trends persist, they may have marginal implications for European hospitality operators, premium consumer brands, and on-trade beverage volumes, but the signal is qualitative and not actionable at the index or single-name level based on the material reviewed. We would flag for readers that the absence of flow on ECB commentary, eurozone PMI prints, UK fiscal developments, or corporate earnings in today's source set should not be read as an absence of market-moving activity — rather, it reflects the limited scope of the inputs available for this briefing. Clients seeking actionable European macro and corporate coverage should refer to our standard weekday research products, where coverage of euro-area inflation dynamics, Bank of England guidance, and Stoxx 600 earnings season will resume. We will return with a fuller European briefing when primary source flow normalizes. In the interim, positioning into next week should account for the scheduled euro-area data calendar and any weekend political developments out of the UK, France, and Germany that may surface through other channels.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">Coverage in today's available source material is exceptionally thin. The only Bloomberg dispatch on hand is a weekend lifestyle digest from Bloomberg Pursuits covering bathhouse culture, family luxury travel, wearable sleep trackers, overtourism, and longevity retreats. None of this material bears on the cross-cutting macro themes that would typically anchor a global briefing — oil markets, the US-Iran confrontation and Strait of Hormuz transit risk, monetary policy divergence across major central banks, geopolitical realignment, or the energy transition. In the absence of substantive newsflow, we would flag only that the macro setup heading into the final week of January remains defined by tensions we have discussed previously: the durability of any risk premium in Brent following recent Gulf developments, the degree to which the Fed, ECB, and BOJ policy paths continue to diverge into the spring meeting cycle, and the read-through from Chinese activity data to industrial commodity demand. Each of these warrants close monitoring, but today's source set offers no incremental information on which to base a view. One tangential observation from the lifestyle coverage may be worth noting for consumer-sector analysts: the continued migration of discretionary spending toward wellness, experiential travel, and health-tracking technology is consistent with the post-pandemic pattern of services outperforming goods in advanced-economy consumption baskets. Whether this composition shift persists as labor markets soften remains to be seen, and the signal from a single weekend feature is obviously limited. We would expect more substantive flow to resume with the Monday session, including positioning ahead of the FOMC meeting later in the week and any weekend developments out of the Gulf. Readers seeking actionable color on energy, rates, or geopolitics should treat today's note as a placeholder rather than a considered view.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

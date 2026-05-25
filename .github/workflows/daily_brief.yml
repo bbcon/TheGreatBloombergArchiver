@@ -1,0 +1,89 @@
+name: Bloomberg Daily Brief
+
+on:
+  schedule:
+    - cron: '30 6 * * 1-5'  # Mon–Fri 08:30 CET (06:30 UTC)
+    - cron: '0 5 * * 6'     # Saturday 07:00 CET (05:00 UTC)
+  workflow_dispatch:          # Manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install \
+            google-auth google-auth-oauthlib google-api-python-client \
+            anthropic python-dotenv
+
+      - name: Write secrets to disk
+        run: |
+          echo '${{ secrets.GMAIL_CREDENTIALS_JSON }}' > credentials.json
+          echo '${{ secrets.GMAIL_TOKEN_JSON }}'       > token.json
+          cat > .env << 'EOF'
+          ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
+          SMTP_SERVER=smtp.gmail.com
+          SMTP_PORT=587
+          SMTP_USERNAME=${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }}
+          EMAIL_FROM=${{ secrets.SMTP_USERNAME }}
+          EMAIL_TO=${{ secrets.SMTP_USERNAME }}
+          EOF
+
+      - name: Fetch emails
+        run: python3 fetch.py
+
+      - name: Generate daily summary
+        id: daily
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          echo "date=$TODAY" >> $GITHUB_OUTPUT
+          python3 summarize.py --date "$TODAY" --mode daily
+
+      - name: Send daily email
+        run: python3 send_brief.py --mode daily --date ${{ steps.daily.outputs.date }}
+
+      - name: Generate + send weekly brief (Saturday only)
+        if: github.event.schedule == '0 5 * * 6'
+        run: |
+          python3 summarize.py --date ${{ steps.daily.outputs.date }} --mode weekly
+          python3 send_brief.py --mode weekly --date ${{ steps.daily.outputs.date }}
+
+      - name: Generate + send monthly brief (last day of month)
+        run: |
+          TODAY=${{ steps.daily.outputs.date }}
+          LAST=$(python3 -c "
+          from datetime import datetime, timedelta
+          d = datetime.strptime('$TODAY', '%Y-%m-%d').replace(day=28) + timedelta(days=4)
+          print((d - timedelta(days=d.day)).strftime('%Y-%m-%d'))
+          ")
+          if [ "$TODAY" = "$LAST" ]; then
+            python3 summarize.py --date "$TODAY" --mode monthly
+            python3 send_brief.py --mode monthly --date "$TODAY"
+          fi
+
+      - name: Build static site
+        run: python3 build_site.py
+
+      - name: Commit new emails, summaries and site
+        run: |
+          git config user.name  "Bloomberg Bot"
+          git config user.email "actions@github.com"
+          git add 2026/ summaries/ saved_ids.txt state/ docs/ || true
+          git diff --staged --quiet || git commit -m "Brief: ${{ steps.daily.outputs.date }}"
+          git push

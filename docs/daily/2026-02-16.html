@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, February 16, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, February 16, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Markets closed for Presidents' Day</p>
+<p class="para-body">With cash equity and Treasury markets shut, today's briefing focuses on positioning into the week ahead and weekend developments.</p>
+<p class="para-title" style="color:#5597cb;">Rates and Inflation</p>
+<p class="para-body">Treasuries posted their best week in months as benign January CPI data reinforced expectations that the Fed will deliver rate cuts this year. Granular detail from Bloomberg Economics underscores the disinflation: across the 12 large US metros tracked by the BLS, January CPI averaged 2.16%, below the national print. Annual inflation has dropped below 1% in the West South Central region, with Dallas registering its first deflationary reading since the pandemic. Chicago, Boston, and Minneapolis all printed sub-2%. Whether this geographic breadth persists into the PCE release on Friday — alongside Q4 GDP and personal income — will shape the March FOMC debate.</p>
+<p class="para-title" style="color:#5597cb;">Equities and the AI Contradiction</p>
+<p class="para-body">A tension at the heart of US equity positioning is becoming harder to reconcile: bearish AI-disruption narratives have driven punishing selloffs in real estate services, wealth management, insurance, and logistics, even as Microsoft and Amazon shares have been hit on capex concerns suggesting an AI bubble. Both views cannot fully hold. Hyperscaler capex from Microsoft, Amazon, Meta, and Alphabet is projected to exceed $600 billion in 2026, transforming cash-rich balance sheets into more leveraged ones — a shift now visible in credit derivatives, where single-name CDS on Meta and Alphabet have become actively traded contracts. Goldman has rolled out a software pair-trade basket favoring infrastructure names (Cloudflare, CrowdStrike, Oracle) against application software shorts (Salesforce, Monday.com, DocuSign).</p>
+<p class="para-title" style="color:#5597cb;">Memory Chip Squeeze</p>
+<p class="para-body">DRAM prices rose 75% from December to January as AI accelerator demand crowds out conventional buyers. Cisco's weak guidance last week — and its worst share loss in nearly four years — was attributed partly to the memory squeeze; Qualcomm and Arm have flagged similar pressure. The pass-through to broader tech margins remains to be seen.</p>
+<p class="para-title" style="color:#5597cb;">Week Ahead</p>
+<p class="para-body">Q4 GDP, PCE, housing starts, and Walmart earnings headline. Friday brings a potential Supreme Court ruling on Trump's tariffs.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Coverage across the region was constrained by Lunar New Year holidays, with mainland China, Hong Kong, Taiwan, South Korea and several Southeast Asian markets either closed or operating on shortened sessions. Activity nonetheless centered on a handful of consequential developments.</p>
+<p class="para-title" style="color:#e07b39;">China policy and US tech tensions</p>
+<p class="para-body">Xi Jinping called for anchoring China's economic growth around domestic demand as the "main driver" — a notable rhetorical pivot that reinforces Beijing's pivot toward consumption-led rebalancing, though concrete fiscal follow-through remains the test. Separately, the Pentagon briefly added Alibaba, BYD and Baidu to its list of companies deemed to be aiding the Chinese military, only to withdraw the designation minutes later without explanation. The episode triggered modest selling — Alibaba slid more than 3% in Hong Kong, BYD and Baidu fell roughly 1% — and underscores the unpredictability of US-China tech friction even absent formal policy shifts. Alibaba simultaneously unveiled a major upgrade to its flagship AI model, positioning ahead of DeepSeek's anticipated next release. Chinese equities' bull run has, however, begun to falter as the earnings season approaches with subdued expectations.</p>
+<p class="para-title" style="color:#e07b39;">Japan: weak growth complicates BOJ path</p>
+<p class="para-body">Fourth-quarter real GDP expanded just 0.2% annualized, far below the 1.6% consensus, with consumer spending up only 0.1%. The print strengthens the case for Prime Minister Takaichi's expansionary fiscal stance, and a former currency chief argued the BOJ is "behind the curve." Separately, Mizuho Financial shares fell about 5% after reports that employees are under investigation for suspected insider trading.</p>
+<p class="para-title" style="color:#e07b39;">Southeast Asia and Australia</p>
+<p class="para-body">Thailand's Q4 GDP rose 2.5% year-on-year, exceeding all forecasts and prompting an upward revision to 2026 growth projections on stronger exports and tourism. Malaysia's king publicly placed the MACC anti-graft agency on his "radar" following allegations against its leadership, with street protests in Kuala Lumpur. In Australia, a Macquarie-led consortium's A$11.7 billion bid for Qube revived dealmaking momentum after a thin 2025. India tightened equity trading curbs amid ongoing efforts to cool speculative activity.</p>
+<p class="para-title" style="color:#e07b39;">Memory chips</p>
+<p class="para-body">DRAM prices rose 75% from December to January, with Asian suppliers Samsung and SK Hynix among the principal beneficiaries.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">ECB signals global euro ambitions amid succession questions</p>
+<p class="para-body">The European Central Bank said it stands ready to provide euro liquidity to monetary authorities globally, an attempt to forestall market stress and broaden international use of the single currency. The move fits a wider European push to assert monetary autonomy as the transatlantic relationship is recalibrated — US Secretary of State Marco Rubio said over the weekend that the US-Europe alliance "has to change." Separately, succession planning at the ECB is gaining urgency. François Villeroy de Galhau's surprise resignation from the Bank of France hands the appointment to outgoing President Macron rather than a potential National Rally successor, and with Christine Lagarde's term expiring end-2027, Philip Lane departing in May 2027, and Isabel Schnabel's board seat opening in December 2027, governments may pursue a package deal. Whether Macron's preference for an accelerated, bundled appointment finds support among other capitals remains to be seen.</p>
+<p class="para-title" style="color:#4a9e6b;">EU carbon market faces political stress test</p>
+<p class="para-body">EU carbon permits fell to their lowest since July as governments openly debate weakening the Emissions Trading System. Slovakia's Fico has called for suspension, Germany's Merz floated revision before softening his stance, while Macron defended the program. Commission President von der Leyen pledged a reform proposal for Q3. JPMorgan analysts noted the lack of visibility is impeding long-term green capex planning — a tension worth monitoring given Europe's broader industrial competitiveness debate.</p>
+<p class="para-title" style="color:#4a9e6b;">UK: BOE in data-dependent mode; Starmer turns to AI</p>
+<p class="para-body">A heavy UK data week — labor market Tuesday, CPI Wednesday, retail sales and public finances Friday — follows a 5-4 BOE hold this month, with rates tied with the Fed's upper bound at the G-7's highest. UK house prices stalled in February with buyers enjoying the widest choice in a decade, consistent with a softening demand backdrop. Prime Minister Starmer is set to outline regulation requiring AI chatbots to comply with child online safety laws.</p>
+<p class="para-title" style="color:#4a9e6b;">Periphery and corporates</p>
+<p class="para-body">Sweden's establishment is tentatively reopening the euro adoption debate, framed increasingly through geopolitical rather than purely economic lenses. Switzerland's economy rebounded in Q4 despite outsized US tariffs. The Stoxx 600 rose 0.32% in quiet trade with US markets closed. Notable single-name moves: Norsk Hydro fell 4.4% on downgrades from Goldman and RBC following Friday's weak guidance; Pinewood Technologies tumbled 32% after Apax abandoned its bid citing market conditions; KGHM declined 3.3% on a Citi downgrade.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Oil markets in suspended animation ahead of US-Iran talks</p>
+<p class="para-body">WTI traded narrowly around $63 as participants awaited the resumption of US-Iran negotiations Tuesday, with directional conviction notably absent. Javier Blas characterized last week's International Energy Week debate as a narrow win for bears, though "whispers about an actual surplus are getting louder." More striking was activity in tanker markets: South Korea's Sinokor group has accumulated roughly 120 VLCCs over the past two months, helping push benchmark VLCC earnings above $120,000 per day—a more than fourfold increase in a month. Separately, the US military boarded a tanker in the Indian Ocean over the weekend, alleging it sought to evade Trump's Caribbean energy blockade against sanctioned vessels, while Netanyahu reiterated that any Iran deal must strip nuclear capabilities—a maximalist position that may complicate the diplomatic track.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary policy divergence widens, with the ECB making a strategic move</p>
+<p class="para-body">The European Central Bank announced it stands ready to provide euro liquidity to monetary authorities globally, an effort to mitigate market stress and expand the single currency's international role. The initiative fits a broader European recalibration in response to a shifting US posture. Sweden's tentative reopening of the euro debate—unthinkable a few years ago—reflects the same dynamic, with geopolitical exposure rather than monetary mechanics now driving the conversation. Speculation has also intensified around an accelerated, package appointment of Lagarde's successor at the ECB, partly to insulate the choice from a possible National Rally victory in France in April 2027.</p>
+<p class="para-title" style="color:#8b5cf6;">Europe's carbon market faces its sternest political test in years</p>
+<p class="para-body">EU allowances fell to their lowest since July as leaders openly clashed over ETS reform at last week's summit. Slovakia's Fico called for suspension; Merz floated revision before walking it back; Macron defended the system. The Commission has committed to a reform proposal in Q3, but JPMorgan notes the uncertainty is already impairing corporate green capex planning—a tension that may persist regardless of where reforms ultimately land.</p>
+<p class="para-title" style="color:#8b5cf6;">Climate tools under pressure elsewhere</p>
+<p class="para-body">The collapse of Kenya's Koko Networks, after authorities delayed compliance-market authorization, has damaged Kenya's standing as an offsets destination and may trigger a World Bank insurance payout near $180 million.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, April 06, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, April 06, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity futures edged higher early Monday, gaining around 0.4% on the S&P 500, lifted by an Axios report that the US, Iran, and regional mediators are exploring terms for a potential 45-day ceasefire. Trading remained thin, with European and several Asian markets closed for Easter Monday, and the durability of the move appeared contingent on news flow ahead of a Trump press conference scheduled for 1 p.m. Washington time. The geopolitical backdrop remained deeply unsettled. Over the weekend, President Trump posted an explicit ultimatum demanding Iran "Open the Strait" by Tuesday or face attacks on power plants and bridges — following the destruction of Iran's largest bridge and the rescue of an F-15E weapons officer after two days of special forces operations. Prediction markets on Polymarket marked down the probability of a ceasefire by end-June to roughly 50/50, a significant deterioration from last week's more optimistic positioning. Against this backdrop, Friday's non-farm payrolls print — released during the Good Friday holiday — offered a modestly constructive data point. March payrolls rose 178,000, the strongest gain since 2024, and the Sahm Rule shows no current recessionary signal. However, the report warrants caution: wage growth is slowing across multiple measures, JOLTS data show hiring near post-GFC lows, quit rates are declining, and average unemployment duration has re-extended above six months. The picture is one of a labor market that is softening gradually rather than collapsing — consistent with a pre-recessionary plateau rather than clear resilience. The Federal Reserve's March meeting minutes, due Wednesday, may offer insight into how policymakers are weighing the Iran-driven inflation shock against these mixed labor signals. Economists expect March CPI — also due this week — to show a roughly 1% month-on-month increase, the sharpest reading since 2022, driven primarily by the approximately $1-per-gallon surge in gasoline prices. That combination of slowing labor markets and accelerating inflation creates a genuinely uncomfortable policy dilemma for the Fed, with rate cuts harder to justify and rate hikes difficult to defend absent clearer demand-side inflationary pressure.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Several major Asian markets remained closed Monday for Easter, limiting price discovery, though Nikkei 225 futures indicated modest gains of around 0.5% in early trading. The session's dominant themes were energy market stress and geopolitical uncertainty emanating from Iran. Saudi Arabia raised the official selling price of its main crude grade to Asia to a record high premium, though the magnitude came in at roughly half what surveyed analysts had anticipated — a reflection of the acute difficulty in gauging near-term demand given war-related volatility. The adjustment nonetheless underscores the structural repricing of energy costs being absorbed by Asian importers, most of whom lack the domestic production buffers of Western economies. Japan is among the most exposed, given its near-total dependence on imported energy. Japan's Prime Minister Sanae Takaichi marks six months in office this week, a tenure that has delivered meaningful policy shifts — most notably a credible pivot away from deflation and a sustained move higher in JGB yields. Yet the galvanizing effect her election had on Japanese equities has been largely offset by the Iran war shock. The yen continues to weaken despite significantly higher domestic yields, a divergence that appears increasingly unstable and will likely require either policy intervention or a forced adjustment in positioning. Takaichi's political capital remains intact for now, but the energy import burden represents a mounting structural headwind. The Indian rupee extended what the central bank described as its largest rally in 12 years, following the Reserve Bank of India's reinforced stance against speculative positioning. India's equity markets, however, have fared poorly in the year since Liberation Day tariffs and the onset of the Iran conflict, with the "Chindia" trade — once a consensus long for emerging market allocations — having underperformed sharply. The combination of tariff disruption and energy cost inflation has weighed particularly heavily on both China and India. Whether a durable re-entry point is approaching remains to be seen, likely contingent on clarity around the Iran conflict's trajectory.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European markets were closed Monday for Easter Monday, leaving price discovery to thin futures markets. The week ahead carries several significant data releases and policy decisions for the region. Eurozone services PMI data are due Tuesday, euro-area retail sales and PPI figures follow Wednesday, and Germany's industrial production print arrives Thursday — all of which will be read in the context of Iran-driven energy inflation that is already reshaping the political economy across the continent. The most substantive European story of the moment is unfolding at the state level rather than in Brussels. Soaring energy prices are generating meaningful political pressure on climate regulation across both sides of the Atlantic. In Europe, the Iran war is accelerating what was already a visible tension between the energy transition agenda and near-term affordability constraints. The broader debate — whether the Iran conflict ultimately accelerates the shift to renewables by demonstrating fossil fuel vulnerability, or temporarily weakens it by making affordability the dominant political priority — remains genuinely unresolved and is being contested in real time across multiple European capitals. On the corporate side, Unilever's €44.8 billion sale of its food business to McCormick & Co. was among the headline transactions contributing to a record global M&A first quarter. European dealmaking has benefited from the same strategic logic driving activity globally — portfolio transformation and long-term positioning — though the war-related deterioration in earnings multiples over the past month has complicated valuations and may weigh on second-quarter activity. The ECB's path remains contingent on how durably the energy shock passes through to core inflation; rate decisions in Romania this week and New Zealand and India on Wednesday offer secondary reads on how emerging market central banks are navigating the same dilemma.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The defining macro development of the moment remains the Iran war and its cascading effects on energy markets. Brent crude's prompt spread — the difference between its two nearest futures contracts — widened above $10 per barrel in backwardation over the past week, the most acute reading since the conflict began and surpassing peaks reached following Russia's invasion of Ukraine in 2022. Dated Brent, the benchmark for physical market transactions, briefly surged above $140 per barrel ahead of Easter, the highest level since 2008. OPEC+ warned Sunday that damage to Middle Eastern energy infrastructure will produce prolonged supply disruption extending well beyond any eventual ceasefire, a supply-side assessment that should be taken seriously given the group's direct visibility into regional production capacity. The geopolitical situation deteriorated meaningfully over the Easter weekend. Iran downed two US warplanes; US forces rescued the surviving aircrew after a two-day operation; the US destroyed Iran's largest bridge; and Iranian forces escalated attacks on Gulf energy facilities. President Trump's ultimatum — demanding the Strait of Hormuz reopen by Tuesday or face strikes on Iranian power plants — did little to suggest imminent de-escalation. Prediction markets assign roughly even odds to a ceasefire by end-June; a protracted conflict beyond that horizon would present a more severe challenge to global growth and financial stability. Global M&A recorded its strongest first quarter on record at approximately $1.3 trillion in transaction value, roughly 20% above the prior year, suggesting corporate strategic agendas remained intact through the conflict's early weeks. However, deal values have declined around 15% since the war began, indicating a meaningful frontloading effect and growing caution. Goldman Sachs CEO David Solomon characterized the outlook as cautiously constructive but explicitly flagged that a protracted war or additional exogenous shock could alter sentiment materially. Private credit markets — a critical funding source for leveraged transactions — are showing signs of stress, adding a further constraint on deal financing conditions if inflation forces the Fed toward tightening. The war's ultimate impact on the global dealmaking cycle, as with so much else, remains contingent on developments in Iran.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

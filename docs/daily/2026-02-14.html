@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saturday, February 14, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Saturday, February 14, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Power Costs Emerge as Midterm Liability for GOP</p>
+<p class="para-body">A Goldman Sachs study released this week by economists Manuel Abecasis and Hongcen Wei projects that data centers will account for roughly 40% of new US power demand over the next five years, with electricity-price inflation holding near 6% through 2027. The analysis points to a politically sensitive dynamic heading into November's midterms: cost of living, and electricity bills specifically, are shaping up as a defining voter concern. The administration has responded with an initiative pressing hyperscalers to fund the generation capacity their facilities require — a structure the Goldman authors flag as material, warning that if non-AI ratepayers absorb a disproportionate share of capex, headline electricity inflation could run higher still. The IEA's latest outlook reinforces the demand picture, projecting global power consumption growth roughly 50% faster over the next five years than the prior decade, decoupling from GDP in a manner that marks a structural break.</p>
+<p class="para-title" style="color:#5597cb;">AI Competitive Position vs. China</p>
+<p class="para-body">The power constraint is increasingly framed as the binding variable in US-China AI competition. While US firms retain leadership across semiconductors, cloud, models, and applications, Chinese generation capacity additions are outpacing the US by a wide margin — a concern voiced publicly by Elon Musk and consistent with Jensen Huang's Davos framing of electricity as the foundational layer of the AI stack. The implication for investors: utility capex, grid interconnection timelines, and behind-the-meter generation deals warrant closer attention as gating factors for hyperscaler buildouts.</p>
+<p class="para-title" style="color:#5597cb;">Used EV Market Diverges from New</p>
+<p class="para-body">Cox Automotive data show used EV sales rose 13.5% year-over-year in Q4 2025 to nearly 89,000 units, with inventory turning in roughly 50 days. New EV sales fell 36% over the same period following the expiration of federal purchase incentives — a bifurcation relevant to OEM residual value assumptions and dealer floor-plan economics. Coverage of Fed policy, fiscal developments, and credit markets was thin in today's source material.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Asia-Pacific Daily Briefing — February 14, 2026</p>
+<p class="para-body">Coverage relevant to the region today is relatively thin, with the day's Bloomberg dispatches focused largely on global thematic pieces. The most consequential threads for Asia-Pacific investors center on electricity demand, AI competitiveness, and India's deepening air pollution crisis.</p>
+<p class="para-title" style="color:#e07b39;">China's structural edge in the AI power race</p>
+<p class="para-body">The International Energy Agency's annual outlook, released this week, projects global electricity demand will grow roughly 50% faster over the next five years than in the prior decade — outpacing GDP growth in what the agency terms an emerging "Age of Electricity." China remains the clear pacesetter, adding generation capacity at a rate well beyond US build-out and leading globally in electrification of industrial machinery. This positions Chinese AI infrastructure on a more favorable cost curve than US peers, where Goldman Sachs economists Manuel Abecasis and Hongcen Wei this week forecast data centers will drive 40% of incremental US power demand through 2030 and keep electricity-price inflation near 6% through 2027. The implication for capital allocation is meaningful: power-cost differentials may increasingly shape where the marginal data center is sited, though US export controls on advanced chips continue to constrain China's position higher up Jensen Huang's "five-layer cake."</p>
+<p class="para-title" style="color:#e07b39;">Taiwan upgrade</p>
+<p class="para-body">Bloomberg references a substantial upward revision to Taiwan's growth outlook tied to what is described as "relentless" AI-related demand, reinforcing the island's centrality to the global semiconductor supply chain and supporting the case for continued strength in TWD-denominated tech exporters.</p>
+<p class="para-title" style="color:#e07b39;">India — US trade signals and pollution politics</p>
+<p class="para-body">The US has altered its public statement on the India trade deal, generating confusion over the terms — a development worth monitoring for INR and Indian equity sentiment, though specifics remain unclear. Separately, public anger in New Delhi over hazardous winter air quality (AQI averaging 307–349 in December and January) appears to have reached a tipping point following November protests, raising the prospect of more assertive regulatory intervention on emissions, construction and crop burning. No material flow from Japan, Korea, Australia or ASEAN in today's dispatches.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Coverage note</p>
+<p class="para-body">Today's source material is thin on Europe-specific news, with most content focused on global thematic stories (AI power demand, climate, EV markets). The most relevant European threads are extracted below.</p>
+<p class="para-title" style="color:#4a9e6b;">Germany signals pragmatic shift on EU climate policy</p>
+<p class="para-body">Chancellor Friedrich Merz this week indicated the European Union should be prepared to rework its flagship carbon-market plan if compliance costs begin to weigh materially on business competitiveness. The remarks reflect mounting concern in Berlin about the erosion of Germany's industrial base, with elevated power prices identified as a central factor. Merz's tone marks a notable departure from the environmentalist orthodoxy that drove Germany's nuclear exit — a decision that, in retrospect, appears increasingly to be viewed within the governing coalition as a strategic miscalculation. Any meaningful revision to the EU Emissions Trading System would carry significant implications for European industrials, utilities, and carbon-price trajectories, though the political pathway to such reform remains uncertain given likely resistance from other member states.</p>
+<p class="para-title" style="color:#4a9e6b;">European energy security calculus continues to evolve</p>
+<p class="para-body">The post-2022 substitution of Russian pipeline gas with American LNG has left Europe exposed to a different form of geopolitical leverage, with US reliability now viewed with greater skepticism in European capitals. This dynamic intersects with the broader competitiveness debate and may sustain political momentum behind both domestic generation buildout and renewed engagement with nuclear power across the continent.</p>
+<p class="para-title" style="color:#4a9e6b;">Europe's AI lag carries an inadvertent benefit</p>
+<p class="para-body">Europe's position well behind the US and China in data-center buildout — generally regarded as a strategic weakness — has at least spared the continent from the acute incremental power-demand pressures now confronting US grids, where the IEA projects global electricity demand growth roughly 50% faster over the next five years than the prior decade. Whether this translates into durable industrial advantage or simply compounds Europe's technology gap remains to be seen. No material UK political, eurozone macro, ECB, or single-name European corporate developments featured in today's source set.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">The Electricity Constraint Tightens</p>
+<p class="para-body">The IEA's latest annual power report frames the coming half-decade as the "Age of Electricity," forecasting global electricity demand growth roughly 50% faster than the prior decade and more than double the pace of overall energy demand. Critically, electricity consumption is now expected to outpace GDP growth — a structural break from the historical relationship that carries meaningful implications for capex cycles, utility regulation, and inflation dynamics. Goldman Sachs economists Manuel Abecasis and Hongcen Wei project data centers will account for 40% of incremental US power demand through 2030, with electricity-price inflation holding near 6% through 2027. That print, if realized, would complicate the Fed's disinflation narrative and sits awkwardly against the cost-of-living politics shaping November's US midterms.</p>
+<p class="para-title" style="color:#8b5cf6;">Divergent National Responses</p>
+<p class="para-body">China continues to add generating capacity at a pace that materially exceeds the US build-out, reinforcing what Elon Musk and others have flagged as a structural disadvantage in the AI infrastructure race. The Trump administration's response — pushing hyperscalers to internalize power-generation capex alongside data-center investment — addresses the optics but, per the Goldman analysis, the inflation outcome hinges critically on cost allocation between commercial and residential ratepayers. In Europe, Chancellor Merz signaled openness this week to reworking the EU's flagship carbon-market framework if it continues to weigh on industrial competitiveness, a notable softening reflecting persistent concerns over German deindustrialization. Europe's lag in the AI buildout, while a competitive liability, has incidentally reduced strain on its grid — a modest offset to an otherwise unfavorable position. The substitution of US LNG for Russian gas, meanwhile, has traded one form of geopolitical energy dependence for another, with reliability concerns around Washington now part of the European calculus.</p>
+<p class="para-title" style="color:#8b5cf6;">Coverage Note</p>
+<p class="para-body">Today's source material is thin on US-Iran developments, Strait of Hormuz dynamics, and oil-market specifics; we would not infer quiescence from absence of reporting.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

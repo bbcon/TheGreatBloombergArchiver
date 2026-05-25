@@ -1,0 +1,11 @@
+**European Daily Briefing — February 14, 2026**
+
+**Coverage note:** Today's source material is thin on Europe-specific news, with most content focused on global thematic stories (AI power demand, climate, EV markets). The most relevant European threads are extracted below.
+
+**Germany signals pragmatic shift on EU climate policy.** Chancellor Friedrich Merz this week indicated the European Union should be prepared to rework its flagship carbon-market plan if compliance costs begin to weigh materially on business competitiveness. The remarks reflect mounting concern in Berlin about the erosion of Germany's industrial base, with elevated power prices identified as a central factor. Merz's tone marks a notable departure from the environmentalist orthodoxy that drove Germany's nuclear exit — a decision that, in retrospect, appears increasingly to be viewed within the governing coalition as a strategic miscalculation. Any meaningful revision to the EU Emissions Trading System would carry significant implications for European industrials, utilities, and carbon-price trajectories, though the political pathway to such reform remains uncertain given likely resistance from other member states.
+
+**European energy security calculus continues to evolve.** The post-2022 substitution of Russian pipeline gas with American LNG has left Europe exposed to a different form of geopolitical leverage, with US reliability now viewed with greater skepticism in European capitals. This dynamic intersects with the broader competitiveness debate and may sustain political momentum behind both domestic generation buildout and renewed engagement with nuclear power across the continent.
+
+**Europe's AI lag carries an inadvertent benefit.** Europe's position well behind the US and China in data-center buildout — generally regarded as a strategic weakness — has at least spared the continent from the acute incremental power-demand pressures now confronting US grids, where the IEA projects global electricity demand growth roughly 50% faster over the next five years than the prior decade. Whether this translates into durable industrial advantage or simply compounds Europe's technology gap remains to be seen.
+
+No material UK political, eurozone macro, ECB, or single-name European corporate developments featured in today's source set.

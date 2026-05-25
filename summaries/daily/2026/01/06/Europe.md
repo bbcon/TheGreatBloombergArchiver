@@ -1,0 +1,11 @@
+**European Macro & Markets Briefing — January 6, 2026**
+
+Today's available source material is thin on Europe-specific content, comprising primarily a global 2026 outlook compilation rather than dedicated regional reporting. With that caveat, several cross-asset themes from consensus Wall Street views carry direct implications for European markets and policymakers.
+
+The most relevant strand for euro-area investors is the prevailing house view that inflation will prove stickier than current pricing implies, constraining central bank flexibility. For the ECB, which entered 2026 with markets pricing a continued — if shallow — easing path, this introduces meaningful two-way risk around the front end of the EUR curve. If the consensus is correct that disinflation stalls amid AI-related capex and fiscal impulses, Bund yields may struggle to rally despite softer growth signals, and peripheral spreads could face episodic widening should terminal rate expectations drift higher. The degree to which euro-area inflation dynamics decouple from the US — given Europe's weaker underlying demand and more advanced wage normalization — remains an open question worth monitoring through the January flash CPI releases.
+
+The widely-held call for continued dollar weakness is mechanically supportive of EUR/USD and, by extension, a headwind for euro-area exporters already contending with subdued external demand and persistent competitiveness concerns in autos and chemicals. A stronger euro would also assist the ECB's disinflation objective at the margin, potentially complicating the stickier-inflation thesis for the bloc specifically.
+
+For European equities, the constructive global risk backdrop — predicated on AI capex and accommodative policy — has historically benefited the region's cyclicals and financials, though the index composition remains less exposed to the AI theme than US benchmarks. Whether 2026 delivers the earnings catch-up that European multiples have long anticipated remains to be seen.
+
+UK-specific political and market developments are not addressed in today's source material.

@@ -1,0 +1,11 @@
+**Global Macro Briefing — Saturday, January 17, 2026**
+
+Weekend flow is light, with Bloomberg's Saturday edition leaning toward features rather than market-moving news. That said, several threads warrant attention for the cross-regional themes shaping positioning into next week.
+
+**Iran: regime trajectory remains the dominant geopolitical variable.** Bloomberg's lead question — whether Iran's next phase brings a strongman, coup, or state collapse — captures the unresolved nature of the post-conflict landscape. Each scenario carries materially different implications for Strait of Hormuz transit risk, regional proxy dynamics, and the Gulf crude complex. A consolidated successor regime would likely allow risk premia to compress further; a fragmented or contested transition would sustain elevated tanker insurance costs and keep Brent term structure in backwardation. Markets appear to be pricing a muddle-through outcome, but conviction is low and positioning remains light heading into the weekend — a configuration that historically amplifies gap risk on Sunday futures opens.
+
+**US energy-AI nexus.** Reporting that the Trump administration is moving to shift surging power costs onto large technology firms represents a potentially significant reallocation of the AI buildout's externalities. If formalized, the mechanism would compress hyperscaler margins at the margin while easing the political economy around utility rate cases — relevant for both the megacap complex and regulated utilities exposed to data center load growth. Execution details and legal durability remain to be seen.
+
+**China liquidity spillovers.** Bloomberg flags an estimated $1.2 trillion in Chinese capital quietly flowing into global markets, a theme consistent with persistent onshore deflationary pressures and household preference for offshore stores of value. The flow has plausible implications for gold, Hong Kong-listed equities, and selected DM credit, though attribution at this scale is inherently imprecise.
+
+**Fed.** Bloomberg references "turbulent forces reshaping the Fed this year" without new substantive detail — a watching item rather than an actionable development. Coverage relevant to other cross-cutting themes was thin today.

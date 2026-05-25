@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, May 11, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, May 11, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets continue to trade at all-time highs, with the S&P 500 blowing through first-quarter earnings estimates in a fashion that appears qualitatively different from typical beat-and-raise cycles. The semiconductor sector is the primary driver: demand from AI-related data center buildout is surging while supply remains tighter than anticipated. Brokers now forecast that next year's earnings for the SOX semiconductor index will approach double last year's levels. The broader market concentration story has intensified alongside this rally — the cap-weighted S&P 500 is widening its gap over the equal-weighted version, and the SOX index has now outperformed the Magnificent Seven since the ChatGPT launch. Alphabet, meanwhile, is closing on Nvidia as the world's largest company by market cap, with a market capitalization of $4.8 trillion against Nvidia's $5.2 trillion following a 34% gain in Alphabet shares in April alone. The macroeconomic backdrop is more complicated. April non-farm payrolls rose 115,000 and the unemployment rate held steady, a reading that most analysts characterized as Goldilocks-adjacent but consistent with a labor market entering what Macquarie's Viktor Shvets described as an "unstable equilibrium" — no hiring but also no firing. The more pressing concern is inflation. Tuesday's CPI print is expected to show headline inflation approaching 4%, driven by elevated oil prices stemming from the Hormuz closure. Oxford Economics pushed its next Fed cut forecast from June to December, and futures markets price the Fed on hold into the second half of 2026 at the earliest. The combination of strong earnings and restrictive-for-longer monetary policy represents an awkward but, for now, equity-supportive equilibrium. Separately, a federal trade court declared Trump's 10% global tariffs unlawful, a fresh legal setback for the administration's trade agenda, though the practical market implications remain to be seen given ongoing appeals.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's inflation data for April provided a significant data point: producer prices rose 2.8% year-on-year, the fastest pace since July 2022 and well above consensus, while consumer inflation climbed unexpectedly to 1.2%. Several analysts declared that China has formally exited its deflationary spiral, though the drivers are partly imported — higher energy and raw material costs resulting from the Iran war and the Hormuz closure. The yuan has strengthened to a more than three-year high on the back of these dynamics, with Goldman Sachs estimating the currency remains over 20% undervalued against the dollar and projecting a move to 6.50 within twelve months. Chinese crude imports fell 20% year-on-year in April to their lowest since July 2022, a reflection of the supply disruption rather than weakening demand. The geopolitical calendar is heavily loaded. A Trump-Xi summit in Beijing is scheduled for Thursday and Friday, the first US presidential visit to China in nearly a decade. Senior US officials indicate Trump intends to press Xi on Beijing's economic relationship with Iran, including revenue flows and potential weapons exports. Pre-summit talks between Treasury Secretary Bessent and Vice Premier He Lifeng are set for Seoul on Wednesday. In Tokyo on Monday, Bessent meets Prime Minister Takaichi and Finance Minister Katayama amid continuing tensions over yen intervention and Japan's monetary policy trajectory; US Treasury yields have on more than one occasion seen spillover from Japanese bond selloffs. Goldman economists separately flagged that AI-driven chip booms in South Korea and Taiwan are on track to push both economies' current-account surpluses to record levels, likely pressuring their central banks toward rate increases later this year. In India, Prime Minister Modi appealed to citizens to conserve fuel and avoid gold purchases as the rupee trades near record lows.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">UK Prime Minister Keir Starmer faced the most acute political pressure of his tenure as he delivered a speech aimed at resetting his government following Labour's sweeping defeat in local elections. Deputy Prime Minister Angela Rayner publicly called for an urgent change in direction, and Reform UK's Nigel Farage — who polled as the biggest winner from last week's voting — is consolidating his position as a serious political force, though his path to power remains uncertain given his divisiveness and the prospect of opponents coalescing against him. Labour's predicament reflects a broader public frustration with the government's economic management against the backdrop of Iran-war-induced inflation pressures. On the economic front, German industrial production unexpectedly fell in March for a second consecutive month, reinforcing concerns about the eurozone's largest economy amid rising energy costs. A Bloomberg survey of economists showed the ECB is expected to hike rates twice in 2026 as inflation accelerates, a marked shift in the policy outlook. Separately, demand for affordable electric vehicles is rising sharply across Europe: inquiries for EVs priced below €30,000 on Germany's Mobile.de surged 87% since early March, with Renault's Zoe among the leading models. This reflects a meaningful consumer behavioral response to the fuel price shock. British employers meanwhile continued shifting toward temporary hiring in April, with permanent-role hiring falling at its fastest pace in three months, extending a downturn that began in 2022, according to the Recruitment and Employment Confederation. US troop drawdowns from Europe remain a live concern among European defense planners, with allies anticipating further announcements potentially including reductions in Italy and the cancellation of plans to station long-range missiles in Germany.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The central tension in global markets remains the Iran conflict and the sustained closure of the Strait of Hormuz, now entering its tenth week. Donald Trump rejected Iran's latest peace proposal, sending Brent crude up as much as 4.6% toward $106 a barrel before settling above $103. Bond yields rose globally on renewed inflation fears, though equity markets showed limited reaction to the diplomatic impasse. Morgan Stanley warned that the oil market is in "a race against time" — the buffers that contained prices through the initial weeks of the conflict, including elevated US crude exports and a demand slowdown in China, may not hold if the strait remains closed into June. In a counterintuitive development, physical oil cargo prices fell sharply as buyers retreated from last month's bidding frenzy, though traders cautioned this calm may be short-lived. The Hormuz disruption is reshaping trade and energy flows in structural ways. Iran is boosting rail freight to China via Kazakhstan and Turkmenistan, with train frequency rising from roughly one per week to one every three to four days and container rates along the route climbing 40% above typical levels. A Qatari LNG tanker made a rare passage through Hormuz to Pakistan — the result of Islamabad's mediation between Washington and Tehran — but this remains an exception rather than a trend, with Qatari export volumes still far below pre-conflict levels. China's clean technology manufacturers are explicitly leveraging the global energy shock as an export opportunity: EV exports rose 112% year-on-year in April, solar panel shipments doubled month-on-month in March to a record, and battery exports climbed over a third. Chinese firms are actively targeting new markets in Europe, Africa, and Southeast Asia. Against this backdrop, more than 40 nations were convening Monday to plan a European-led naval escort mission for ships transiting Hormuz once a ceasefire is established.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

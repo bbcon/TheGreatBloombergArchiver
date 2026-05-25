@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, February 06, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, February 06, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Markets: Risk Unwind Extends, With Tentative Stabilization</p>
+<p class="para-body">US equity futures pointed to a modest recovery Friday morning, with S&P 500 futures up 0.55% and Nasdaq 100 futures gaining 0.71%, following a sharp three-day decline that marked the Nasdaq 100's worst stretch since April. The selloff has been broad rather than catalyzed by a single trigger, reflecting an unwind of crowded positioning across megacap tech, precious metals, and crypto. Bitcoin recovered toward $66,000 after touching $60,033 in Asian trading — still roughly half its October peak. Software stocks have been particularly weak, with traders coining the term "SaaSpocalypse" as investors reassess the threat AI poses to incumbent business models. The 10-year Treasury yield was little changed at 4.20%.</p>
+<p class="para-title" style="color:#5597cb;">The AI Capex Question Intensifies</p>
+<p class="para-body">Amazon shares tumbled approximately 8% in premarket trading after the company guided to $200 billion in 2026 AI-related capital expenditure. Aggregate planned spending from Alphabet, Amazon, Meta, and Microsoft now approaches $650 billion for 2026 — a scale of investment with few historical analogs outside the late-1990s telecom buildout. The disclosures are sharpening investor scrutiny of return timelines, and Blackstone-backed Liftoff Mobile postponed its IPO citing the deteriorating tape. Whether this represents healthy repricing or the early stages of a more material correction remains to be seen.</p>
+<p class="para-title" style="color:#5597cb;">Fed Politics</p>
+<p class="para-body">Senate Republicans have raised concerns about the Justice Department's investigation into Fed Chair Jerome Powell, while former Vice Chair Richard Clarida weighed in publicly on Kevin Warsh, whom President Trump has tapped to lead the Fed. The succession dynamic, combined with ongoing questions about institutional independence, has been one factor cited in this year's earlier bid for gold and dollar-diversification trades.</p>
+<p class="para-title" style="color:#5597cb;">Corporates and Trade</p>
+<p class="para-body">Stellantis took $26 billion in charges tied to walking back its EV strategy, with shares down as much as 24% in Milan. Molina Healthcare plunged 33% premarket after guiding 2026 profit to less than half consensus, dragging Centene and Oscar Health lower. French customs data showed US tariffs weighing on European exports: Q4 spirits shipments to the US fell 47%, wine 39%, and cosmetics 25%. Separately, the administration set aside $12 billion to seed a critical-minerals stockpile aimed at reducing reliance on Chinese supply.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Markets stabilize after risk-off rout</p>
+<p class="para-body">Asian equities steadied Friday as the heavy selling that battered global risk assets earlier in the week showed signs of abating. The recovery followed a punishing three-day stretch in which the Nasdaq 100 fell roughly 4.6%—its worst run since April—on concerns about stretched valuations and the scale of hyperscaler AI capex, which for the four largest US tech names is forecast to approach $650 billion in 2026. Bitcoin, which briefly traded near $60,000 in Asian hours, rebounded more than 3%. Precious and base metals also found a footing after volatile sessions, though direction remains unsettled.</p>
+<p class="para-title" style="color:#e07b39;">Chinese hot money amplified the metals cycle</p>
+<p class="para-body">Last month's surge and subsequent reversal across gold, silver and copper was meaningfully driven by mainland retail flows, with Shanghai copper futures registering record January volumes and China's top four gold ETFs seeing nearly $1 billion of outflows on Tuesday. The episode underscores a persistent challenge for Beijing: with property and equity returns subdued, surplus household savings continue to chase speculative outlets rather than productive investment. Structural drivers—central bank gold buying, dollar diversification, and strategic demand for industrial metals—appear intact, but near-term positioning has clearly overextended.</p>
+<p class="para-title" style="color:#e07b39;">EV sector under pressure</p>
+<p class="para-body">BYD's Hong Kong shares extended a selloff that has erased over $60 billion in market value since May, weighed by softer domestic sales and rising input costs. Separately, Beijing's ban on concealed door handles—effective 2027—will require redesigns across much of the premium EV lineup, with per-model costs reportedly exceeding 100 million yuan. The rule signals China's growing willingness to set global automotive safety standards unilaterally.</p>
+<p class="para-title" style="color:#e07b39;">Southeast Asia headwinds; Japan and Thailand vote Sunday</p>
+<p class="para-body">Moody's cut Indonesia's outlook to negative, citing fiscal risks; Jakarta's finance ministry pushed back. The Philippines posted its weakest non-pandemic growth in 15 years amid a deepening corruption scandal. India's RBI held rates, citing improved visibility from the US trade deal. Thailand's three-way election and Japan's lower house vote—where PM Takaichi's majority is in question—pose meaningful event risk for regional rates and FX into next week.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Markets and macro</p>
+<p class="para-body">European markets open against a backdrop of a sharp global retreat from risk that has dominated the week, though selling pressure showed signs of easing in Asian trading. The Nasdaq 100 has fallen roughly 4.6% over three sessions in its worst stretch since April, with software ("SaaSpocalypse"), crypto and precious metals all caught in the unwind. Silver swung nearly 10% intraday before stabilizing, and bitcoin briefly traded below $61,000. European equities will likely take direction from whether this stabilization holds into the US open.</p>
+<p class="para-title" style="color:#4a9e6b;">Bank of England</p>
+<p class="para-body">Governor Andrew Bailey appeared to endorse market pricing of a roughly 50% probability of a March rate cut, following this week's more dovish-than-expected hold. The MPC's growing confidence that UK inflation has been contained now shifts the policy risk toward the labour market, where signs of softening have accumulated. Sterling and short sterling will remain sensitive to incoming wage and employment data.</p>
+<p class="para-title" style="color:#4a9e6b;">ECB and the euro</p>
+<p class="para-body">ECB Governing Council member Yannis Stournaras downplayed concerns about the euro's recent appreciation, saying the move is being monitored but does not warrant alarm. The comments are consistent with a Governing Council comfortable holding policy steady, though a sustained currency rally would tighten financial conditions at the margin.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate</p>
+<p class="para-body">Stellantis fell as much as 24% in Milan — a record intraday decline — after announcing €22 billion (~$26 billion) in charges tied to unwinding its EV strategy, including model cancellations and supplier compensation. The writedown exceeds analyst expectations and follows similar, smaller moves at Ford, GM and Porsche, underscoring the broader recalibration of European auto EV ambitions. Separately, the proposed Rio Tinto–Glencore tie-up collapsed within 24 hours, reportedly over price; Glencore shares fell roughly 11%, leaving questions about strategic direction with Ivan Glasenberg still a key shareholder.</p>
+<p class="para-title" style="color:#4a9e6b;">Trade</p>
+<p class="para-body">French customs data showed Q4 2025 spirits exports to the US down 47%, wine down 39% and perfumes/cosmetics down 25%, evidence that US tariffs are now materially affecting French luxury and consumer export categories.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Global Cross-Currents: Risk Unwind, Energy Geopolitics, and Strategic Materials</p>
+<p class="para-body"><strong>A synchronized retreat from crowded trades dominated global markets this week</strong>, with the unwind extending across US equities, precious metals, base metals, and crypto. The Nasdaq 100 logged its worst three-day decline since April, Bitcoin briefly traded below $61,000 — roughly half its October peak — and silver swung nearly 10% intraday amid thin liquidity. The trigger was less a single catalyst than an accumulation of valuation concerns, headlined by hyperscaler capex disclosures: Alphabet, Amazon, Meta, and Microsoft together now guide to roughly $650 billion in 2026 AI-related spending, with Amazon alone at $200 billion. Whether returns justify outlays remains an open question, and the resulting cash-flow implications appear to be reshaping risk appetite across asset classes. Asian sessions showed tentative stabilization on Friday, though it is too early to characterize the move as a durable bottom.</p>
+<p class="para-title" style="color:#8b5cf6;">The metals complex reflects more than speculative excess</p>
+<p class="para-body">While Chinese retail flows — channeled into gold, silver, copper and tin amid limited domestic investment alternatives — clearly amplified recent volatility, the underlying drivers are structural: continued central-bank gold accumulation, dollar diversification, and the strategic repricing of copper and other inputs tied to grid, renewables, and AI infrastructure. Shanghai copper futures recorded their highest-ever monthly volumes in January. Separately, the Trump administration is establishing a $12 billion critical-minerals stockpile, an explicit response to last year's demonstration of China's rare-earth leverage.</p>
+<p class="para-title" style="color:#8b5cf6;">In energy, Strait of Hormuz risk is back in focus</p>
+<p class="para-body">Some VLCC operators are reportedly accelerating transits through the chokepoint amid renewed US-Iran tensions, with Tehran signaling that Friday's talks are unlikely to yield rapid resolution. Concurrently, more than a dozen tankers carrying Russian Urals are repositioning toward Asia, as India appears to retreat from the trade following its US arrangement — a meaningful shift in crude flows that should tighten the discount structure for remaining buyers, principally China.</p>
+<p class="para-title" style="color:#8b5cf6;">Corporate strategy is realigning around the energy transition's slower-than-expected pace</p>
+<p class="para-body">Stellantis took €22 billion in charges unwinding its EV strategy, joining Ford, GM and Porsche in scaling back electrification timelines — a notable counterpoint to Tesla's reported plans to build domestic solar-cell capacity of up to 10 GW to feed AI power demand.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

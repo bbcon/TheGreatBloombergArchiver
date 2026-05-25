@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, January 06, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, January 06, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Wall Street's 2026 Outlook: Growth With Caveats</p>
+<p class="para-body">The consensus emerging from sell-side and asset manager outlooks for 2026 — synthesized across more than 60 institutions including Goldman Sachs, JPMorgan Wealth Management, and the BlackRock Investment Institute — points to modest optimism tempered by an unusual set of macro tensions. The dominant theme is that continued AI-related capital expenditure, combined with supportive government policy, is extending the cycle at a stage when growth would typically be moderating. This dynamic underpins constructive equity views, though forecasters broadly caution that valuations leave limited margin for execution missteps in the AI complex. The corollary, however, is that inflation is unlikely to return cleanly to target. A sustained capex impulse, fiscal support, and tight labor conditions are expected to keep price pressures sticky through the year, which in turn implies that the Federal Reserve may have less scope to deliver the easing currently embedded in front-end pricing. This sets up a recurring source of volatility: if growth and inflation data continue to surprise to the upside, market expectations for policy accommodation will likely need to be repriced. The asymmetry favors caution on duration positioning. On the dollar, the consensus leans toward continued depreciation, reflecting a combination of narrowing rate differentials, fiscal trajectory concerns, and ongoing reserve diversification. The view is not uniform, and the path will depend heavily on the relative pace of Fed easing versus other G10 central banks. Private assets, meanwhile, are expected to continue gaining share of institutional allocations, though questions around liquidity, valuation marks, and vintage performance remain unresolved.</p>
+<p class="para-title" style="color:#5597cb;">Assessment</p>
+<p class="para-body">The setup for 2026 contains genuine internal tensions — AI-driven growth optimism sitting alongside sticky inflation and a softer dollar call. Investors should expect these narratives to compete for primacy depending on the data flow, with the first major test arriving with January CPI and the next FOMC meeting. Otherwise, US-specific newsflow today is light.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Asia-Pacific Daily Briefing — January 6, 2026</p>
+<p class="para-body">Coverage in today's source material is notably thin for the Asia-Pacific region. The single available item is Bloomberg's annual compilation of 2026 Wall Street outlooks, which offers limited but relevant read-throughs for Asian markets and capital flows. The consensus across more than 60 institutions — including Goldman Sachs, JPMorgan Wealth Management, and the BlackRock Investment Institute — points to modest optimism for global risk assets, supported by continued AI-related capital expenditure and accommodative government policy. For Asia, this framework carries several implications worth flagging, though none are addressed directly in the source material and should be treated as inference rather than reported view. First, the widely held call for further dollar depreciation, if realized, would be supportive for Asian FX and could ease financial conditions across the region, particularly for economies with dollar-denominated liabilities and import-sensitive inflation profiles such as India, Indonesia, and the Philippines. It would also reduce pressure on the PBOC to defend the yuan's reference rate and may facilitate portfolio inflows into Chinese assets, though structural concerns around China's growth model and property sector remain unresolved. Second, the view that inflation will prove stickier than markets expect — and that central banks may have less room to ease than priced — is relevant for the BOJ's normalization trajectory, the RBA's policy path, and emerging Asian central banks that have generally been waiting on the Fed. A shallower Fed cutting cycle would constrain regional easing. Third, the persistence of the AI capex theme remains directly consequential for North Asian technology supply chains, particularly Taiwan, South Korea, and Japan, where semiconductor and equipment names have been the principal beneficiaries. Bloomberg also flags 2026 as likely another difficult year for global trade — a material concern for export-dependent Asian economies, though specifics are not provided in today's material. We will revisit these themes as more granular regional reporting becomes available.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">European Macro & Markets Briefing — January 6, 2026</p>
+<p class="para-body">Today's available source material is thin on Europe-specific content, comprising primarily a global 2026 outlook compilation rather than dedicated regional reporting. With that caveat, several cross-asset themes from consensus Wall Street views carry direct implications for European markets and policymakers. The most relevant strand for euro-area investors is the prevailing house view that inflation will prove stickier than current pricing implies, constraining central bank flexibility. For the ECB, which entered 2026 with markets pricing a continued — if shallow — easing path, this introduces meaningful two-way risk around the front end of the EUR curve. If the consensus is correct that disinflation stalls amid AI-related capex and fiscal impulses, Bund yields may struggle to rally despite softer growth signals, and peripheral spreads could face episodic widening should terminal rate expectations drift higher. The degree to which euro-area inflation dynamics decouple from the US — given Europe's weaker underlying demand and more advanced wage normalization — remains an open question worth monitoring through the January flash CPI releases. The widely-held call for continued dollar weakness is mechanically supportive of EUR/USD and, by extension, a headwind for euro-area exporters already contending with subdued external demand and persistent competitiveness concerns in autos and chemicals. A stronger euro would also assist the ECB's disinflation objective at the margin, potentially complicating the stickier-inflation thesis for the bloc specifically. For European equities, the constructive global risk backdrop — predicated on AI capex and accommodative policy — has historically benefited the region's cyclicals and financials, though the index composition remains less exposed to the AI theme than US benchmarks. Whether 2026 delivers the earnings catch-up that European multiples have long anticipated remains to be seen. UK-specific political and market developments are not addressed in today's source material.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Wall Street's 2026 Consensus: Modest Optimism with Embedded Tensions</p>
+<p class="para-body">The sell-side's compiled outlooks for 2026 — drawing on more than 60 institutions including Goldman Sachs, JPMorgan Wealth Management, and the BlackRock Investment Institute — coalesce around a cautiously constructive base case, though one with notable internal tensions worth flagging for cross-asset positioning. The dominant thread is that AI-related capital expenditure and accommodative government policy continue to supply growth impulse at what is, by conventional metrics, a late stage of the business cycle. This unusual configuration — fiscal and secular investment tailwinds extending an aging expansion — is the analytical centerpiece of most house views. The corollary, widely acknowledged, is that disinflation may stall short of central bank targets. Sticky services inflation and resilient demand appear to leave less room for monetary easing than rates markets currently price, setting up a potential repricing risk should the data validate the consensus view rather than the curve. On currencies, the modal call remains for continued dollar depreciation, consistent with expectations of narrowing rate differentials, persistent twin deficits, and ongoing reserve diversification. This view, however, sits in some tension with the sticky-inflation thesis: if the Fed has less room to cut than markets expect, the dollar's path lower becomes less straightforward. Investors should treat the dollar-bearish consensus with appropriate skepticism given this internal inconsistency in the broader narrative. Private assets are expected to continue gaining share of institutional allocations, extending a multi-year trend, though valuation dispersion and exit-channel constraints remain unresolved questions. The framing of 2026 as "another rocky year" for global trade — against a backdrop of unresolved tariff regimes and supply-chain reconfiguration — suggests that the macro tape will likely be driven as much by policy shocks as by cyclical data. Coverage today is otherwise light on geopolitical and energy-specific developments; we will revisit oil, Iran, and Hormuz dynamics as the news flow resumes.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

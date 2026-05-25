@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, May 06, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, May 06, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets extended their rally to yet another all-time record for the S&P 500, though the composition of the advance warrants scrutiny. Factor analysis shows quality stocks — characterized by stable earnings and strong balance sheets — have been consistent underperformers since Liberation Day, while momentum and liquidity factors continue to dominate. Goldman Sachs strategist commentary flags "yellow flags" in the thinness of the rally. The advance appears driven by animal spirits and abundant liquidity rather than fundamental re-rating, leaving it potentially vulnerable to any deterioration in the macro or geopolitical backdrop. On the technology earnings front, AMD surged approximately 17% in premarket trading after raising its sales forecast, and Super Micro Computer gained 19% on a strong report. The AI investment thesis received further validation as Alphabet raised nearly $17 billion in debt to fund data center buildout. Nvidia, by contrast, has fallen 9% over the past six sessions and is the worst performer in the Philadelphia semiconductor index year-to-date, as customers including Alphabet, Amazon, and Intel develop credible competing chip architectures — though there is limited evidence yet of material market share loss. On fiscal and data integrity matters, two consequential developments emerged. Former Treasury Secretary Mnuchin stated plainly there is no "break-the-glass" solution to the US debt problem, pushing back on Hank Paulson's call for emergency planning, while acknowledging rising risk premiums in long-dated Treasuries. The CBO projects federal debt reaching 108% of GDP by 2030. Separately, new research suggests the politically motivated dismissal of Bureau of Labor Statistics chief Erika McEntarfer correlated with approximately $20 billion in foregone industrial investment — a figure 25 times the BLS annual budget — as executives reportedly grew less willing to commit capital amid eroding confidence in government data. The SEC's proposal to end mandatory quarterly earnings reporting remains in a 60-day comment period, with multiple alternative frameworks under consideration.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equities delivered one of the more striking single-session moves in recent memory. A gauge of Asian shares rose 2.6% to a record high, led by South Korea's Kospi, which surged more than 6% as Samsung Electronics rallied 14-16% to cross a $1 trillion market capitalization — only the second Asian company to achieve that threshold. The re-rating reflects a market judgment that memory's role in the AI infrastructure stack is structural rather than cyclical, with Samsung sitting at the intersection of chipmaking and data infrastructure expansion. AI-related names across the region followed suit, with the liquidity and momentum factors particularly pronounced. The yen rallied as much as 1.8% against the dollar, reigniting speculation of Japanese official intervention — the second potential episode since April 30. Goldman Sachs analysts estimate Japan retains sufficient reserves for roughly 30 intervention episodes at last week's scale, though officials are expected to conserve firepower for more strategically effective moments. The yen remains approximately 9% weaker against the dollar over the past twelve months. Geopolitically, Japan's deployment of 1,400 combat troops to the Philippines for joint Balikatan drills — including a ship-sinking exercise in the South China Sea — marks the first such deployment since World War II and signals a meaningful shift in Tokyo's willingness to project military power proximate to China. In China, Foreign Minister Wang Yi hosted Iran's Abbas Araghchi and urged Tehran to continue negotiations, ahead of the Trump-Xi summit expected next week where the Iran war will be a central agenda item. Indonesia tightened foreign currency purchase limits to $25,000 from $50,000 to support a beleaguered rupiah. In India, a five-week administrative halt on gold and silver imports has pushed domestic bullion prices higher and raised shortage concerns in the world's second-largest gold market.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European markets processed a complex set of signals on May 6. UK 30-year gilt yields reached 5.78% — the highest level since 1998 — as inflation and fiscal concerns keep the UK in the crosshairs of sovereign debt markets. Thursday's UK local elections carry meaningful political risk for Prime Minister Keir Starmer; Labour is on course to record its lowest share of London voters in over a century, with Reform and the Greens gaining ground. Analysts note that poor results could sharpen intra-party challenges to Starmer's leadership, adding another layer of uncertainty to an already strained fiscal picture. In Germany, Chancellor Friedrich Merz — who entered office one year ago with sweeping ambitions to revitalize the economy and anchor European leadership — is, by most assessments, struggling on all three fronts. His coalition faces questions about longevity, and he has already ruled out forming a minority government should it collapse. The diplomatic backdrop worsened after Trump announced US troop withdrawals from Germany in response to Merz's public criticism, underscoring how transatlantic tensions constrain European policy space. On corporate earnings, Novo Nordisk surged approximately 9% after its new Wegovy pill drove quarterly sales growth and the company guided for a smaller-than-expected revenue decline. Infineon's revenue outlook beat expectations on AI-driven power chip demand. BMW's earnings declined, reflecting intense pricing competition in China. In central bank governance, French President Macron nominated Emmanuel Moulin, a close adviser, to head the Banque de France and take a seat on the ECB's Governing Council. Separately, the EU reiterated its demand that Washington adopt the main elements of their trade deal by July and respect prior commitments, including a 15% tariff ceiling, as US Ambassador Puzder warned 25% tariffs on European vehicles could arrive "relatively soon."</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The dominant cross-cutting theme remains the US-Iran conflict and the tentative signals pointing toward a negotiated resolution. President Trump suspended "Project Freedom" — the US-led naval operation to escort stranded vessels through the Strait of Hormuz — citing a request from mediator Pakistan and what he described as "great progress" toward a comprehensive agreement. Axios reported the two sides are working toward a one-page memorandum of understanding to frame subsequent nuclear negotiations. The operation had produced the opposite of its intended effect: while two ships were escorted out on Monday, US forces repelled multiple Iranian drone, missile, and fast-attack boat strikes, and Iran struck an oil terminal in Fujairah, UAE. The path to a durable settlement remains uncertain. Oil markets reacted sharply. WTI crude fell nearly 10% on the day, dropping below $100 a barrel from a peak near $112 a month ago, though December 2026 WTI futures remained around $77 — approximately 8% above early April levels — suggesting markets do not yet price a near-term, sustained reopening of the Strait. US shale producers are nonetheless responding: Diamondback Energy's CEO signaled an "inflection point," with the Permian Basin expected to add as many as 30 rigs. Exxon plans a 12% production increase. US gasoline prices topped $4.50 per gallon for the first time since July 2022. Chinese aluminum and metal exports are rising materially, benefiting from the Middle East supply disruption and clean-tech demand. Microsoft is reportedly weighing abandonment of its 2030 hourly clean-energy matching target — a significant retreat from commitments made before the AI era — as data center power demand and natural gas's appeal grow. This dynamic is not isolated to Microsoft: across major hyperscalers, reported carbon emissions have risen 23-64% versus pre-ChatGPT baselines, underscoring a widening tension between AI infrastructure expansion and corporate climate commitments that has yet to find a credible resolution framework.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

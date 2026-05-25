@@ -1,0 +1,168 @@
+Subject: New Economy: ‘AI sovereignty’
+Date: Sat, 21 Feb 2026 11:45:14 +0000
+
+India Has Its Own Unique Recipe for ‘AI Sovereignty’
+The vibe at India’s AI summit
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-02-21/india-has-a-unique-recipe-for-ai-sovereignty-new-economy>
+ <https://bloomberg.com/economics>
+
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=16995950&m=11b724c487f61753eb1a7a4a5f3ef261&p=02212026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=16995950&m=11b724c487f61753eb1a7a4a5f3ef261&p=02212026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Hello from New Delhi, where the Indian government has just finished hosting 
+the world’s fourth annual AI summit, and the first held in the Global South. 
+I’m Erik Schatzker, editorial director of Bloomberg New Economy, bringing you a 
+special edition of the Saturday newsletter.
+
+The weeklong AI summit, a sprawling affair 
+<https://www.bloomberg.com/news/articles/2026-02-20/india-ai-linked-plays-surge-as-modi-hobnobs-with-altman-amodei?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ with tens of thousands of delegates, hundreds of participating companies and 
+keynote speeches by everyone from Sam Altman and Demis Hassabis to Emmanuel 
+Macron, sent a clear message to the rest of the world: India has grand 
+ambitions in artificial intelligence and the convening power to match them.
+
+It’s no wonder they all beat a path to New Delhi 
+<https://www.bloomberg.com/news/articles/2026-02-20/modi-s-chaotic-ai-summit-showed-india-s-clout-and-constraints?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+. With a digitally savvy population of 1.4 billion and the fastest growth rate 
+of any major economy, India represents one of the better opportunities for 
+hyperscalers to recoup the hundreds of billions of dollars they’re investing in 
+model development and data centers. Already, more than 100 million Indians use 
+OpenAI’s ChatGPT every week, second only to uptake in the US.
+
+Yet the strongest undercurrent here wasn’t the usual mix of excitement, 
+optimism, curiosity, doubt, anxiety and fear AI tends to provoke. It was a 
+sense I can only describe as deep circumspection with a hint of dread. And 
+there’s an obvious reason why.
+An image of Prime Minister Narendra Modi during the AI Impact Summit in New 
+Delhi on Feb. 18.Photographer: Ruhani Kaur/Bloomberg
+This week in the New Economy
+
+ * Russia tries to rebuild influence 
+<https://www.bloomberg.com/news/features/2026-02-16/how-russia-uses-the-orthodox-church-to-gain-influence-in-africa?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ in Africa, in part with religion.
+ * Mexico investment plan is in trouble 
+<https://www.bloomberg.com/news/articles/2026-02-18/claudia-sheinbaum-is-uneasy-as-mexico-investment-plan-stumbles?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ andCuba ties 
+<https://www.bloomberg.com/news/articles/2026-02-15/mexico-s-cuba-obsession-puts-its-president-in-a-bind-with-trump?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ pose risks.
+ * US and Indonesia 
+<https://www.bloomberg.com/news/articles/2026-02-20/trump-prabowo-finalize-trade-deal-slashing-tariff-rate-to-19?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ complete trade deal, lowering tariffs.
+ * Guyana eyes the Norway model to avoid the oil curse 
+<https://www.bloomberg.com/news/articles/2026-02-19/guyana-plans-norway-on-steroids-to-avoid-oil-s-resource-curse?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+.
+ * US said to plan Peace Corps revamp 
+<https://www.bloomberg.com/news/articles/2026-02-20/us-plans-peace-corps-revamp-to-gain-edge-in-ai-race-with-china?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ to gain AI edge over China.
+Everyone at the AI summit, whether from India, elsewhere in Asia, Europe, 
+Africa or Latin America, likely understood one inescapable fact: They’re all at 
+the mercy of two countries — the US and China — and a small handful of 
+companies that control AI technology.
+
+This, fundamentally, is a matter of sovereignty 
+<https://www.bloomberg.com/news/articles/2025-01-22/cisco-ceo-says-political-tensions-driving-data-sovereignty-push?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+: Whether a nation’s AI systems can be independent of foreign authority. That 
+danger was showcased in 2024, when members of Australia’s UniSuper pension fund 
+had access to their accounts cut off due to a Google cloudmisconfiguration 
+<https://www.theguardian.com/australia-news/article/2024/may/09/unisuper-google-cloud-issue-account-access>
+. In October, Amazon.com Inc.’s cloud services — the world’s largest — also 
+suffered a major shutdown,damaging 
+<https://www.bloomberg.com/news/articles/2025-10-21/amazon-cloud-reputation-hit-after-outage-lasting-15-hours?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ its reputation.
+
+While such incidents were declared accidents, they opened eyes to the 
+possibility the next one might not be.
+
+“We know ‘open’ can become ‘closed’ at any point in time — the moment a CEO 
+decides,” Ashwini Vaishnaw, India’s minister for electronics and information 
+technology, said at a Bloomberg New Economy breakfast on the summit’s sidelines.
+
+That could happen for any number of reasons — a change in corporate strategy, 
+a commercial dispute or a government order.
+
+Even Mukesh Ambani, the billionaire Indian industrialist who ranks as Asia’s 
+richest man and isplowing money 
+<https://www.bloomberg.com/news/articles/2026-02-19/ambani-s-reliance-to-invest-110-billion-in-ai-infrastructure?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ into AI, framed the implications of this new dynamic in binary terms.
+Mukesh Ambani, chairman of Reliance Industries Ltd., at the AI Impact Summit 
+in New Delhi on Feb. 19.Photographer: Prakash Singh/Bloomberg
+“Will AI concentrate power in the hands of a few, or will it democratize 
+opportunity for all?” Ambani asked in his Feb. 19 plenary address at the summit.
+
+While no country can fully decouple from US or Chinese AI models 
+<https://www.bloomberg.com/news/articles/2026-02-12/openai-accuses-deepseek-of-distilling-us-models-to-gain-an-edge?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ anytime soon, alternatives to total dependency are emerging. One recipe came 
+from Rishi Sunak, who as UK prime minister hosted the first AI summit in 2023. 
+He’s now a senior adviser to Goldman Sachs Group Inc.
+
+First, a nation could create its own leverage, like the Netherlands with ASML 
+Holding NV, whose equipment no advanced chipmaking operation can do without. As 
+Sunak put it, “Where can we occupy a very strong, ideally monopolistic position 
+in that supply chain?”
+
+Next, diversification. “Avoid vendor lock-in, have a mix of providers, make 
+sure you’re building capabilities that will allow you to switch things in and 
+out,” Sunak said. Add inpartnerships 
+<https://www.bloomberg.com/news/articles/2024-04-21/uk-launches-saudi-investment-drive-to-grab-share-of-mbs-s-vision?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ — even in a world of geopolitical volatility, there’s room for allies to share 
+knowledge and intelligence that enhance mutual AI sovereignty.
+
+“If you do all three of those things, you can build a strategy that gives your 
+country resilience but also the opportunity to take advantage of this 
+incredible thing that’s in front of us,” Sunak said.
+
+India, meantime, has a vision 
+<https://www.bloomberg.com/news/articles/2026-02-19/ai-dominated-by-a-few-firms-risks-market-abuse-mistral-ceo-says?cmpid=BBD022126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260221>
+ for AI that’s distinctly Global South. “Welfare for All, Happiness of All,” 
+Prime Minister Narendra Modi proclaims on one of the many billboards in New 
+Delhi commemorating the summit. “Showcasing the Power of AI for Global Good,” 
+reads another.
+Signs promoting the AI Impact Summit in New Delhi.Photographer: Ruhani 
+Kaur/Bloomberg
+The country, Vaishnaw explained, has its own multipronged plan to achieve AI 
+sovereignty:
+
+ * Support the local development of so-called small language models based on 
+parameters critical to the Indian market.
+ * Build a “common compute facility” so students, entrepreneurs and startups 
+have affordable access to AI.
+ * Design and ultimately manufacture its own semiconductors.
+ * Use the AI summit to attract venture capital for Indian startups as well as 
+funding for computing infrastructure such as data centers.
+Before the summit began, Vaishnaw said India had obtained commitments for 
+about $5 billion of venture capital investments and $140 billion for AI 
+infrastructure. Days later, that had increased to at least $17 billion and $270 
+billion, respectively. “Not bad,” he mused.
+
+And enough to bring India one step closer to realizing its grand ambitions.
+
+
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=16995950&m=11b724c487f61753eb1a7a4a5f3ef261&p=02212026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=16995950&m=11b724c487f61753eb1a7a4a5f3ef261&p=02212026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Economics 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=NLshare>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/Ymz883hf5cfLXRPNBT8VCs_YA_DhmdLUrPmp372Va392i3YyjrIqnyKwiH_QGKz_aVkUaB75cRzU-eTEtCP5GpnfSrs0_2XiVHSK_0ly6jUnMWxHknriNCyioE8USa0E_Hx6nm4HhLA0uRmZpV2aqFpmZvPLN5ONI4YrYCnWCH7FmyWMD97vDsQCsz8iPaV_HEN6iXgvsoV7aqp4xKLp9fHEGUwbkOIjmYvjNnudnSw3wHVe2iRFu_o_5zL4uJ5uow238bld128lIDURDOhA6c237CyJdv-zKPFalzb1mJ7HmYyY8_P6KbU5iSlkUX5h5HIxI2RjzuFmtnE6hxphQR6Oy9Jddh49/tuS8VougzWlT4FoqI8LZ6xlzdOlln2it/18>

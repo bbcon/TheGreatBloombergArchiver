@@ -1,0 +1,8 @@
+credentials.json
+token.json
+.env
+api_auth.rtf
+previews/
+*.log
+__pycache__/
+.venv/

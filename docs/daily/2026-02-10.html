@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, February 10, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, February 10, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Markets pause near records ahead of data</p>
+<p class="para-body">S&P 500 futures were little changed at 6,988, with the index sitting just below an all-time high as traders awaited December retail sales and remarks from Cleveland Fed President Hammack and Dallas Fed President Logan — both 2026 voters viewed as hawkish. Asian indexes set fresh records overnight, led by Japan's Nikkei (+2.3%), but US tech sentiment remains uneven: ON Semiconductor fell 4.3% pre-market on soft guidance, Goodyear dropped 8.8% on a projected 10% Q1 volume decline, and Regenxbio slid 15% after an FDA rejection. Coca-Cola, CVS, Fiserv, S&P Global and Datadog report today, with the latter two under scrutiny following last week's AI-disruption selloff in data and analytics names.</p>
+<p class="para-title" style="color:#5597cb;">Alphabet's century bond underscores AI capex scale</p>
+<p class="para-body">Alphabet launched its first sterling and Swiss franc bond sales, including a rare 100-year tranche — the first century bond from a tech issuer since Motorola in 1997 — following a $20 billion US deal last week. The financing is earmarked for AI infrastructure. While pension and insurance demand for ultra-long duration is real, the structure is unusually sensitive to rate expectations; comparable Austrian century debt trades near 30 cents on the euro after peaking near 140. The issuance highlights how hyperscalers are terming out AI-related capex into the long end of the curve.</p>
+<p class="para-title" style="color:#5597cb;">Fed succession rhetoric escalates</p>
+<p class="para-body">President Trump claimed his Fed chair pick Kevin Warsh could deliver 15% GDP growth — a figure detached from any plausible potential-output estimate, and one that will sharpen questions about institutional independence should Warsh be confirmed. Separately, Fed Governor Waller suggested Trump-induced crypto enthusiasm may be fading; Bitcoin fell 2.2% and ether extended declines as derivatives positioning remained defensive following October's crash.</p>
+<p class="para-title" style="color:#5597cb;">Memory chip squeeze bifurcates equity returns</p>
+<p class="para-body">Sustained DRAM and NAND price increases are compressing margins at PC OEMs and Apple suppliers while lifting memory producers to records. Fidelity International's Vivian Pai expects tightness to persist through 2026, suggesting the dispersion trade has further to run.</p>
+<p class="para-title" style="color:#5597cb;">Trade friction</p>
+<p class="para-body">Trump said he would open negotiations with Canada over the Gordie Howe Bridge, threatening to block its opening absent US compensation and partial ownership — a reminder that USMCA-adjacent frictions remain a recurring tail risk.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">China sentiment inflection deepens, with caveats</p>
+<p class="para-body">The pivot in foreign positioning toward Chinese equities continued to gather pace. Eight Roads, the venture vehicle backed by Fidelity's Johnson family, has reportedly shelved plans to offload stakes in roughly 40 Chinese tech companies for approximately $400 million — a sale conceived last year at a steep discount to a peak combined valuation near $1 billion. The reversal reflects improved valuations and the lower temperature in US-China relations following the Trump-Xi meeting in October. Goldman Sachs and BNP Paribas surveys point to accelerating allocations, and Qube's China long-only fund has grown more than tenfold to $2 billion year-on-year. Set against this, Bloomberg reports Chinese regulators are urging domestic institutions to pare US Treasury purchases — a development that bears monitoring for cross-border flow implications, though its operational scope remains unclear. Separately, BoE's Catherine Mann noted Chinese exporters have raised prices to the UK to offset US tariffs, a modest data point consistent with tariff pass-through rather than deflationary dumping.</p>
+<p class="para-title" style="color:#e07b39;">Japan's Takaichi trade extends</p>
+<p class="para-body">The Nikkei 225 gained 2.8% Tuesday after Monday's 3.9% advance, with JGB yields edging lower — the rare equity-up, bond-stable combination the new prime minister needs. Markets are positioning for fiscal expansion paired with industrial policy directed at semiconductors, AI, defense, and shipbuilding. The constraint is external: a more assertive Tokyo and a weaker yen complicate the China relationship, and Xi faces a genuine dilemma over whether to engage Japan's most popular postwar leader or maintain distance given Tokyo's alignment with Washington.</p>
+<p class="para-title" style="color:#e07b39;">Regional and corporate notes</p>
+<p class="para-body">Asian indices set fresh records overnight on easing AI capex concerns. Memory chip tightness continues to bifurcate Asian tech, pressuring Nintendo and Apple suppliers while lifting Korean and Japanese memory producers; Korean equities have added roughly $1.7 trillion in market cap since the start of 2025 but still trade at a governance discount. Singapore upgraded its 2026 growth outlook on AI-infrastructure demand. Adani Enterprises disclosed it received an OFAC information request on February 4 regarding alleged Iranian LPG imports through Mundra. Qatar's LNG expansion is creating absorption challenges, with stalled India talks a notable Asia data point. Hong Kong single-family offices rose 25% to 3,384 by end-2025, with 19% planning reduced US exposure — among the highest reallocation intentions surveyed.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">UK politics: Starmer under siege, gilts wobble</p>
+<p class="para-body">The Epstein scandal has metastasized into the most acute political crisis of Keir Starmer's premiership, despite no evidence the Prime Minister ever met the late financier. The catalyst remains the 2024 appointment of Peter Mandelson as ambassador to Washington — subsequently dismissed after correspondence with Epstein emerged, and now compounded by disclosures that Mandelson shared market-sensitive policy decisions with Epstein while serving as deputy PM. Starmer's chief of staff and communications head have resigned in the past 48 hours, and Scottish Labour leader Anas Sarwar has publicly called for him to stand down. Gilt yields moved higher following Sarwar's intervention, though the reaction remains an order of magnitude below the 2022 Truss episode — sterling has held up and the curve has not dislocated. Prediction markets now price Starmer's departure by end-June. The succession question is the more durable concern for fixed income: the most plausible candidates (Rayner, Burnham) sit to Starmer's left and are perceived as more fiscally expansive. As Mizuho's Jordan Rochester puts it, the question of "who's next" is a Damocles sword over gilt traders. Separately, BoE's Catherine Mann flagged that Chinese exporters raising prices to the UK to offset US tariffs is adding to domestic inflation.</p>
+<p class="para-title" style="color:#4a9e6b;">France: Villeroy's surprise exit hands Macron a succession card</p>
+<p class="para-body">Bank of France Governor François Villeroy de Galhau unexpectedly announced his June departure, roughly 16 months ahead of schedule, citing personal reasons. The timing transfers the appointment from a potential post-2027 Le Pen or Bardella administration to Macron, allowing him to insulate the institution with a six-year term ahead of presidential elections. Given Bardella's stated preference for ECB QE to address French debt, the political stakes around the choice are material.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporates</p>
+<p class="para-body">BP shares fell 5% after suspending its $750m quarterly buyback and withdrawing capital return guidance, capping a turbulent year that saw CEO Auchincloss ousted. Barclays committed to returning at least £15bn through 2028. Standard Chartered CFO Diego De Giorgi unexpectedly resigned to join Apollo as EMEA head, removing him from CEO succession contention. Kering rose 10% in Paris on a smaller-than-expected Gucci sales decline and a special dividend. Alphabet is tapping sterling and Swiss franc markets, including a rare 100-year bond — the first century note from a tech issuer since Motorola in 1997. The Stoxx 600 was flat into the European afternoon.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Energy markets: Qatar's LNG calculus and North Sea decline</p>
+<p class="para-body">Qatar's aggressive long-term contracting drive — including a 27-year supply deal with Japan and a notable first sale to Malaysia, traditionally an exporter — has locked in roughly 39 million tons since 2022. Yet these commitments cover only about 60% of planned capacity expansion, forcing QatarEnergy toward greater spot-market participation and potentially a slower production ramp. Given Qatar's structural weight in seaborne gas, any strategic shift would reverberate globally. Separately, Carlyle's Jeff Currie argued oil and metals remain underinvested, with glut fears overstated. The contrast with the UK North Sea is stark: no new exploratory well was drilled in Britain last year — the first such pause since the 1960s — as Aberdeen's industry, now roughly 1% of GDP, contracts under the combined weight of fiscal policy and the energy transition.</p>
+<p class="para-title" style="color:#8b5cf6;">Iran sanctions enforcement broadens</p>
+<p class="para-body">Adani Enterprises disclosed that OFAC has requested information regarding alleged imports of Iranian LPG through its Mundra port, following a WSJ report from June. Separately, the Indian Coast Guard seized three tankers in what appears to be its first material enforcement action against the dark fleet — a potentially meaningful signal given India's role as a residual buyer of sanctioned barrels.</p>
+<p class="para-title" style="color:#8b5cf6;">Defense spending entrenches as a structural theme</p>
+<p class="para-body">European aerospace and defense has returned 236% since the February 2022 invasion, with US peers also outperforming materially. The pipeline remains supportive: Trump is pushing US military outlays toward $1.5 trillion by 2027, while Takaichi's Japan and Carney's "middle powers" accelerate their own build-ups. Valuations have stretched, and de-escalation episodes — such as Trump's recent softening on Greenland — will likely produce tactical volatility, but the structural thesis appears intact.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary policy divergence and central bank independence</p>
+<p class="para-body">Bank of France Governor Villeroy de Galhau announced an unexpected June departure, handing Macron the opportunity to make a six-year appointment ahead of presidential elections in which Le Pen or Bardella are polling competitively. The timing, alongside Trump's continued pressure on the Fed and his claim that Warsh could deliver 15% growth, underscores rising political pressure on G-7 central banks — though Villeroy denies any non-personal motive.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

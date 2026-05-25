@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, April 23, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, April 23, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets paused a record-breaking rally on Thursday as the Strait of Hormuz impasse deepened, with S&P 500 futures off roughly 0.5% and Brent crude pushing further above $100 per barrel. The pullback followed weeks of remarkable resilience: nearly 80% of S&P 500 companies reporting first-quarter results have beaten estimates, and realized volatility under the current administration has, counterintuitively, tracked levels seen during the relatively calm Biden years. Analysts at Barclays note that the market's equanimity in the face of sustained geopolitical stress mirrors the pattern seen through 2016-2018, which ultimately resolved in the sharp "Volmageddon" correction of February 2018 — a precedent worth monitoring as low-volatility conditions persist. Tesla delivered first-quarter earnings of $0.41 per share against a consensus of $0.34, but the beat failed to sustain an after-hours rally once management outlined plans to increase capital expenditure to $25 billion this year — $5 billion above prior guidance — in support of AI and robotics ambitions. Shares gave back gains as investors signaled a preference for clarity on the core automotive business over unquantified future ventures. Texas Instruments provided a sharper contrast, surging 12% after a stronger-than-expected forecast driven by data-center and industrial demand. ServiceNow fell 13% after cutting its margin outlook, citing deal delays attributable to the Middle East conflict. On monetary policy, Fed Chair nominee Kevin Warsh used his Senate confirmation hearing to signal interest in overhauling inflation measurement, expressing a preference for trimmed-mean gauges. The Dallas Fed's trimmed PCE currently reads 2.33% versus 3.0% for core PCE — a gap of 70 basis points that, if adopted as the policy benchmark, would materially shift the perceived distance from the Fed's 2% target. Strategists at BMO flagged the significance in the context of the Fed's current rate-hold posture. Wells Fargo economists cautioned, however, that over a full decade the trimmed measure has not painted a meaningfully different picture of underlying inflation trends. Consumer sentiment this month fell to an all-time low, with households increasingly concerned about war-driven inflation and gasoline prices approaching four-year highs — a divergence from equity market performance that several analysts describe as a growing tension for corporate earnings power.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">South Korea delivered a strong first-quarter GDP print of 1.7% quarter-on-quarter, driven by AI-related export demand that powered semiconductor revenues. SK Hynix reported a five-fold jump in quarterly profit and reaffirmed plans to increase capital spending, underscoring the degree to which global AI infrastructure investment is supporting Korean export volumes even as energy price pressures and US tariff uncertainty weigh on broader sentiment. Hyundai, by contrast, missed earnings estimates, citing US tariff disruption, Iran war-related supply chain strain, and cooling demand in key export markets. Japan's cabinet this week approved legal changes allowing the country to export lethal military equipment — including missiles, fighter jets, and warships — for the first time since the post-war constitution enshrined pacifism. Prime Minister Sanae Takaichi is pursuing a strategic vision of greater defense self-sufficiency in response to rising threats from China and North Korea, with government funding earmarked for defense R&D and a deal to supply warships to Australia already concluded. China has issued warnings about revived Japanese militarism, while domestic polling shows 67% of Japanese respondents opposed to weapons exports — a political constraint that Takaichi appears willing to absorb given her current approval trajectory. Planned visits by Takaichi and her defense minister to Southeast Asian nations signal efforts to develop an early order pipeline. In China, an unexpected deterioration in the labor market has extended to early-career workers, with AI adoption cited as a contributing factor. Tencent and Alibaba are in preliminary discussions to participate in a maiden financing round for DeepSeek, which is expanding into agentic AI applications. PwC agreed to pay HK$1.3 billion in fines and compensation to settle investigations into its auditing of China Evergrande, as the firm attempts to rebuild following client and staff departures triggered by an earlier record fine. Malaysia's king confirmed the anti-corruption agency head will not have his term renewed, following Bloomberg reporting on alleged improprieties. In India, approximately 9 million names were removed from voter rolls in West Bengal two weeks before state elections began, with opposition parties alleging politically motivated targeting of Muslim and lower-income voters.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">The eurozone economy unexpectedly contracted in April for the first time since late 2024, according to preliminary PMI data, driven by a steep decline in the services sector as the Iran war weighs on consumer confidence and energy costs. The data compounds pressure on the ECB as it navigates a difficult trade-off: energy-driven inflation is running higher — UK CPI accelerated to 3.3% in March on a 9% monthly surge in motor fuel prices, the largest since Russia's invasion of Ukraine — while growth risks are deteriorating. Analysts at TS Lombard have raised the risk of a "Trichet 2.0" scenario, in which the ECB tightens into a weakening economy, noting that China's exports and a relatively firm euro are already suppressing core goods inflation, and that household and corporate financial buffers are thinner than in 2022. European leaders gathered in Cyprus to discuss coordinated responses to the energy shock, while the ECB separately advanced the case for joint regional bonds. In Brussels, officials unveiled a plan to accelerate economic electrification. The parallel tracks of short-term crisis management and longer-term structural reform appear to be gaining political momentum, though execution timelines remain uncertain. UK Chancellor Rachel Reeves received a near-term fiscal reprieve as government borrowing fell to its lowest level in three years — though analysts caution the Iran war's inflationary pass-through may prove short-lived in budgetary terms. Prime Minister Starmer faced mounting political pressure over the Peter Mandelson affair, with London Mayor Sadiq Khan offering qualified support while arguing that political stability remains a UK competitive asset. The UK and France separately concluded a £660 million deal targeting cross-Channel migration flows. UBS faces a potential $20 billion increase in capital requirements as a Swiss regulatory split widens, representing a material headwind for the bank's return targets. Trump's executive action requiring pharmaceutical companies to price US drugs at parity with other wealthy nations is creating a difficult strategic calculation for European patients: companies including Biogen and Roche face the choice of raising European prices, cutting US prices, or bypassing select European markets — with tangible implications for patient access to recently approved therapies.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The Strait of Hormuz remains the dominant fault line in global markets. Both the US and Iran are maintaining effective blockades of the waterway, with Washington conditioning any easing on receipt of a new Iranian proposal and Tehran refusing to negotiate while the US siege remains in place. Traffic through the strait ground to a halt after Iran fired on commercial ships and seized at least two vessels. The US military separately intercepted two Iranian oil supertankers attempting to evade its blockade. Brent crude rose above $104 per barrel, its fourth consecutive daily gain, and WTI was trading near $94. European natural gas futures also climbed. Persian Gulf and Asian sovereigns have sought currency swap lines with the US Treasury, reflecting the dollar's reinforced role in global trade under stress conditions. Oil market analysts continue to debate how long strategic petroleum reserve releases and demand destruction can cushion the disruption, with a consensus that prolonged Hormuz closure would escalate supply consequences materially. Shell reported its Rotterdam refinery is operating at maximum throughput to produce jet fuel, as European airlines warn of a looming summer supply crunch. The energy shock is producing a discernible second-order effect: acceleration of clean energy policy and investment. At the Petersberg Climate Dialogue in Berlin — the opening event in the road to COP31 in Turkey this November — delegates from nearly 40 countries framed the crisis as a catalyst for reducing fossil fuel dependence. Australia's climate minister articulated the strategic logic with characteristic directness, contrasting the 150 million kilometers solar energy travels from the sun with the 150 kilometers of the Strait of Hormuz. China's EV and battery exports more than doubled year-on-year in March, in part reflecting this demand shift. On trade, approximately $300 billion in goods subject to US tariffs are estimated to be circumventing levies annually via transshipment through Southeast Asia and Mexico, according to Altana data showing a 76% year-on-year surge in suspect transactions in 2025. The pattern is sharpening USMCA renegotiation tensions, with USTR Greer signaling potential enforcement action against Canada over retaliatory trade measures.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

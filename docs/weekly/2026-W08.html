@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feb 16 – Feb 22, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="daily.html" class="nav-link">Daily</a><a href="#" class="nav-link  active">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Feb 16 – Feb 22, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Monetary Policy and the Fed's Hawkish Turn</p>
+<p class="para-body">FOMC minutes released Wednesday came in more hawkish than the market had anticipated, with several members suggesting rates may need to rise if inflation remains persistently elevated. The tone sat in awkward tension with broadly constructive disinflation data: the trimmed mean and median CPI sit at their lowest since 2021, the Atlanta Fed's sticky-price gauge fell to 3%, and January CPI averaged 2.16% across the twelve large metros tracked by the BLS — with the West South Central region printing annual inflation below 1% and Dallas recording its first deflationary reading since the pandemic. Friday's PCE release — delayed since November owing to last year's government shutdown — carried unusual weight given that PCE had been stuck near 3% and risen above core CPI. The market entered the week pricing roughly two Fed cuts in the second half of 2026, though a growing minority of managers, including Invesco's Rob Waldner, identified one cut or none as increasingly plausible given robust employment and the scale of AI-driven capex. Carmignac holds a short Treasury position and projects the 10-year yield drifting toward 4.5% from roughly 4.07%.</p>
+<p class="para-title" style="color:#5597cb;">The Supreme Court's Tariff Ruling</p>
+<p class="para-body">The week's most consequential domestic policy development arrived Friday, when the Supreme Court struck down in a 6-3 decision the administration's "Liberation Day" reciprocal tariffs imposed under emergency powers, invalidating duties on goods from dozens of countries and potentially cutting the US average effective tariff rate by more than half. The court left unresolved whether importers are entitled to refunds — Bloomberg Economics estimates the total could reach $170 billion — remanding that question to lower courts. The White House signaled it would reconstruct its trade architecture under alternative statutory authorities. The dollar, paradoxically, was on track for its best week in four months as rate-cut expectations were pared following the hawkish FOMC minutes, a reminder that trade and monetary policy dynamics can pull in offsetting directions on the currency.</p>
+<p class="para-title" style="color:#5597cb;">Equity Markets and the AI Contradiction</p>
+<p class="para-body">US equities ended the week mixed, with the S&P 500's 14% gain since election day representing the weakest start to a presidential term in decades on a comparable basis. The AI-driven rotation continued to produce sharp divergences: Nvidia rose on Meta's processor deployment announcement, Figma jumped 17% on strong revenue guidance, and DoorDash gained 14% on order forecasts, while Palo Alto Networks fell 7.5% on a weaker outlook and Carvana declined on margin pressure. Bank of America's global fund manager survey showed the largest-ever overweight on the euro versus the dollar and, for the first time in a generation, a majority of managers concerned about corporate overinvestment rather than underinvestment — a direct consequence of the AI capex cycle, with hyperscaler spending from Microsoft, Amazon, Meta, and Alphabet projected to exceed $600 billion in 2026.</p>
+<p class="para-title" style="color:#5597cb;">Fiscal and Industrial Policy</p>
+<p class="para-body">New CBO projections showed net interest payments rising from $1 trillion this year to $2.1 trillion by 2036, reaching 4.6% of GDP — a figure that alone exceeds Treasury Secretary Bessent's 3% total deficit target for 2029. Industrial production rose 0.7% in January, the strongest monthly gain in nearly a year, though the data predates the full effect of subsequent tariff escalations. On energy policy, the EPA moved to roll back Biden-era Mercury and Air Toxics Standards for coal-fired plants, consistent with the administration's broader posture, while a proposed 9.2-gigawatt Ohio gas plant — backed by SoftBank and the Commerce Department — attracted scrutiny from analysts estimating its potential carbon footprint at roughly 19.4 million metric tons annually. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">China: Policy Signals and Market Volatility</p>
+<p class="para-body">Xi Jinping's call to anchor China's economic growth around domestic demand as the "main driver" represents a notable rhetorical reinforcement of Beijing's consumption-led rebalancing agenda, though fiscal follow-through remains the operative test. Markets were unsettled early in the week by a Pentagon episode in which Alibaba, BYD, and Baidu were briefly added to a list of companies deemed to be aiding the Chinese military before the designation was withdrawn without explanation — triggering a more-than-3% slide in Alibaba in Hong Kong before partial recovery. When Hong Kong markets fully reopened after the Lunar New Year holiday on Thursday, a clear bifurcation emerged: shares of AI startups Zhipu and MiniMax Group surged as investors rotated into pure AI plays, while traditional internet giants remained under pressure. The IMF's Article IV assessment called once again for rebalancing toward consumption, noting that Chinese household consumption at roughly 40% of GDP is essentially unchanged since 2005. Officials have signaled the forthcoming 15th five-year plan may assign consumption a more prominent role, driven in part by recognition that trade barriers make continued export reliance increasingly untenable.</p>
+<p class="para-title" style="color:#e07b39;">Japan: Political Transition and BOJ Nominations</p>
+<p class="para-body">Prime Minister Sanae Takaichi was formally re-elected following her strong electoral showing and used her parliamentary address to pledge strategic investment, active fiscal policy, and assertive diplomacy. Her most consequential near-term decision may be the nomination of two Bank of Japan board members expected as soon as February 25, filling the seats of dovish member Asahi Noguchi and consensus voter Junko Nakagawa. Given Takaichi's historical association with reflation, the appointments will be closely parsed by bond and currency markets. On trade, Tokyo announced it will invest up to $36 billion in US oil, gas, and critical minerals projects — the first concrete tranche of the $550 billion framework agreed with the Trump administration — a move serving multiple strategic functions ahead of Takaichi's Washington visit. Japan's manufacturing PMI remained in expansionary territory for a third consecutive month, though Q4 GDP had expanded just 0.2% annualized in the preceding data release, complicating the BOJ's normalization path.</p>
+<p class="para-title" style="color:#e07b39;">Indonesia and Southeast Asia: Governance Concerns</p>
+<p class="para-body">Indonesia presented the starkest cautionary signal in the region. MSCI placed the country's emerging-market classification under review and FTSE Russell followed suit, citing governance deterioration under President Prabowo Subianto. The rupiah weakened to levels last seen nearly three decades ago, Moody's cut the credit outlook to negative, and market capitalization fell nearly $80 billion from peak levels following the abrupt dismissal of financial regulatory heads and the appointment of a family member as Bank Indonesia deputy governor. Bank Indonesia held its benchmark rate at 4.75%, maintaining a pause as currency weakness constrains the easing that benign inflation would otherwise permit. In a contrasting regional development, the US and Indonesia subsequently finalized a trade agreement with Jakarta committing to facilitate an estimated $33 billion in American goods purchases in exchange for lower tariffs, a symbolically notable bilateral win. Malaysian exports rose at their fastest pace in over three years in January.</p>
+<p class="para-title" style="color:#e07b39;">India: AI Ambitions and Climate Tensions</p>
+<p class="para-body">India's AI Impact Summit in New Delhi concluded with capital commitments rising materially across the week — AI infrastructure pledges reached at least $270 billion and venture commitments approximately $17 billion by the summit's close. Mukesh Ambani pledged up to 10 trillion rupees through Reliance and Jio, Adani announced a $100 billion data-center buildout through 2035, and OpenAI formalized a Tata Group partnership. India's AI sovereignty strategy, centered on domestic small language models, shared compute infrastructure, and semiconductor ambitions, reflects a coherent if difficult-to-execute response to the structural dependency concern shared by most non-US, non-Chinese economies. A separate national climate conference in Mumbai exposed the tension at the heart of India's development trajectory: coal accounts for nearly three-quarters of power generation, updated emissions plans are overdue, and proposals for new coal capacity through 2047 sit uneasily alongside the government's 2070 net-zero target. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">ECB Succession and Strategic Positioning</p>
+<p class="para-body">The most consequential European institutional story of the week was the reported likelihood that ECB President Christine Lagarde will depart ahead of her October 2027 mandate expiry, with timing calibrated around the French presidential election in April 2027. An ECB spokesperson confirmed that Lagarde "has not taken any decision regarding the end of her term," preserving optionality, but markets are increasingly pricing a transition. The dynamic carries direct policy implications: Macron and German Chancellor Merz could coordinate on a successor before either loses political relevance, while hawkish board member Isabel Schnabel has stated she intends to serve out her own term and Spain is actively campaigning for its candidate. Dutch governor Klaas Knot appears the most plausible consensus choice, though the process may expose the familiar fault lines between hawks and doves and between national and supranational interests. Separately, the ECB announced it stands ready to provide euro liquidity to monetary authorities globally, a strategic initiative aimed at broadening the single currency's international role at a moment when US policy unpredictability is prompting a reassessment of dollar dependency.</p>
+<p class="para-title" style="color:#4a9e6b;">Equity Markets and Macro Signals</p>
+<p class="para-body">European equities outperformed their US counterparts during the week, with the Stoxx Europe 600 touching an all-time high of 630 on Wednesday before settling near 628 by Thursday. The euro area flash PMI surprised to the upside, with manufacturers recording their best performance since 2022, driven by an unexpected improvement in Germany — a meaningful data point given the economy's extended weakness. Q4 negotiated wages rose 3%, a figure the ECB will monitor carefully as it balances disinflation progress against residual services-price pressures. Strategists are nonetheless flagging caution, with the median of Bloomberg survey forecasts suggesting European stocks will finish 2026 little changed from current levels, as eight consecutive months of gains and valuations at five-year highs leave limited room for further multiple expansion. Bank of America's global fund manager survey showed the largest-ever overweight on the euro versus the dollar, reflecting a combination of dollar weakness, relative valuation, and hedging against a potential AI correction in US tech.</p>
+<p class="para-title" style="color:#4a9e6b;">UK: Labour Market Deterioration and Fiscal Respite</p>
+<p class="para-body">UK unemployment rose to its highest level since the pandemic and wage growth eased further, prompting traders to fully price half a point of Bank of England rate cuts by year-end. Several analysts suggested a March cut is now increasingly likely. Against that, the UK recorded its largest budget surplus on record during the week, boosted by surging capital gains tax receipts and lower debt servicing costs — a brief fiscal reprieve for a government navigating difficult spending decisions. Youth unemployment rose above the EU average for the first time. Politically, Prime Minister Starmer reversed plans to cancel some May local elections following internal backlash, the latest in a sequence of U-turns, while the arrest of Prince Andrew on suspicion of misconduct in public office added further pressure on public institutions already navigating the Mandelson-Epstein fallout.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate Developments</p>
+<p class="para-body">Significant single-name moves punctuated the week. Airbus fell 6.7% in Paris on Tuesday after disclosing that Pratt & Whitney engine delivery shortfalls are forcing a reduction in aircraft output, shifting accountability to the supply chain. Bayer agreed to pay more than $7 billion to resolve Roundup cancer litigation, potentially closing a years-long legal overhang. Moncler rallied 13% on results Barclays described as significantly ahead of estimates, lifting LVMH and Hermès. Nestlé gained 4.5% after new CEO Philipp Navratil guided for 3–4% organic revenue growth in 2026. Hapag-Lloyd agreed to acquire ZIM Integrated Shipping at roughly $4.2 billion, sending ZIM shares up 35% on Monday. Novo Nordisk's approximately 5,000 job cuts — among the largest layoffs in Danish history — are beginning to weigh on consumer sentiment ahead of Denmark's general election. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">US-Iran: Military Pressure and Diplomatic Clock</p>
+<p class="para-body">The US-Iran confrontation dominated global risk sentiment through the week. Indirect nuclear talks in Geneva on Monday and Tuesday concluded on a cautiously constructive note, with Iran's delegation expected to return with detailed proposals within two weeks. President Trump nonetheless stated Iran has ten to fifteen days at most to reach an agreement, and the administration indicated military strikes remain explicitly on the table, with a second aircraft carrier deployed to the region. The Wall Street Journal reported the administration is evaluating a limited early strike designed to pressure Tehran toward negotiations. Prediction market participants assigned roughly 70% probability to a US strike by Thursday. Brent crude surged 4.3% on Wednesday to re-cross $70 per barrel, with WTI trading near $66 — close to a six-month high — as the combination of diplomatic uncertainty and military posturing removed whatever supply-risk discount had accumulated in prior weeks. Iran's calibrated scheduling of Strait of Hormuz naval exercises on Monday, even as talks were underway in Geneva, illustrated the deliberate two-track strategy both sides appear to be running. The UK's reported reluctance to grant US access to Diego Garcia for potential operations adds a further complication to military planning. The timeline for resolution, and whether diplomacy retains genuine viability, remains the single most consequential near-term variable for global energy and risk markets.</p>
+<p class="para-title" style="color:#8b5cf6;">Energy Markets and IEA Fracture</p>
+<p class="para-body">Beyond Iran, the IEA ministerial summit in Paris crystallized a genuine institutional fracture. US Energy Secretary Chris Wright assailed the agency's climate focus, the US threatened withdrawal unless the IEA abandons net zero framing, and the meeting ended without the customary joint communiqué — an outcome without modern precedent for an institution the US co-founded in the 1970s. Members found limited common ground on critical minerals and energy security, but the divisions appear structural rather than transient. Meanwhile, South Korea's Sinokor group accumulated roughly 120 VLCCs over recent weeks, helping push benchmark VLCC earnings above $120,000 per day — a more than fourfold increase in a month — a market signal that traders are positioning for a regime change in tanker demand regardless of the diplomatic outcome with Iran.</p>
+<p class="para-title" style="color:#8b5cf6;">AI Sovereignty as a Geopolitical Theme</p>
+<p class="para-body">The week's second dominant cross-cutting theme was AI sovereignty. India's summit crystallized a concern shared across Asia, Africa, Europe, and Latin America: the most consequential AI systems are controlled by a small number of US and Chinese entities, and access to them can, in principle, be withdrawn. India's response — domestic small language models, shared compute facilities, semiconductor ambitions, and active capital attraction — represents a state-directed variant of a logic other governments are independently reaching. OpenAI's concurrent move to finalize a funding round exceeding $100 billion at a valuation above $850 billion, anchored by Amazon, SoftBank, Nvidia, and Microsoft, illustrates the scale of capital concentration at stake. Rishi Sunak's framework for sovereign resilience — secure a niche in the AI supply chain, diversify providers, build switching capabilities — is practically sound but difficult to execute against incumbents with compounding resource advantages.</p>
+<p class="para-title" style="color:#8b5cf6;">Climate Policy Divergence</p>
+<p class="para-body">Climate policy divergence between the US federal government and the rest of the world widened further. EU carbon permits fell to their lowest since July as Slovakia called for ETS suspension and Germany's Merz floated revision before softening his stance; the Commission committed to a reform proposal in Q3 but JPMorgan noted the uncertainty is already impairing corporate green capex planning. The EPA's rollback of Mercury and Air Toxics Standards and the administration's own cost-benefit analysis suggesting costs from the endangerment finding rollback could exceed $1.4 trillion materially complicate the administration's savings claims and are likely to face sustained legal challenge. Former US officials were simultaneously in Mumbai urging the Global South to accelerate green transitions without waiting for Washington — a reorientation of climate diplomacy that reflects a genuine, if uncertain, shift in where ambition now resides.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

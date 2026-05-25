@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, April 14, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, April 14, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equities continued their recovery on Monday, with the S&P 500 rising more than 1% to erase all losses recorded since the outbreak of the US-Iran conflict on February 28 — a milestone that has surprised many market observers given the scale of economic disruption since. The recovery appears driven less by geopolitical optimism than by structural momentum: momentum-driven strategies that were performing well ahead of the conflict never suffered a serious reversal, and investor appetite to resume the prior bull run has proven resilient. As SocGen's Andrew Lapthorne noted, the market does not appear to be pricing elevated tail risk so much as reflecting an investor base "conditioned to buy the dip" after three years and $35 trillion in MSCI All-World gains. Still, the macro backdrop has deteriorated materially since February 28. The 10-year Treasury yield has climbed from 3.94% to 4.28%, Brent crude has risen from roughly $72 to near $99 per barrel, and the IMF is expected to downgrade its global growth projections in its World Economic Outlook release. First-quarter earnings season began with disappointments from Goldman Sachs and industrial bellwether Fastenal, though bank earnings from JPMorgan, Citigroup, and Wells Fargo were due before Tuesday's open. The White House used the IMF-World Bank Spring Meetings in Washington to publish its annual Economic Report of the President, projecting 3.5% growth this year and an average of 3% through 2036 — figures well above Fed and IMF estimates. The administration attributed its bullish outlook to deregulation and immigration controls, and projected 10-year Treasury yields falling to 3.7% this year, against a current rate of approximately 4.28% and a CBO forecast of 4.4% for the early 2030s. The gap between White House projections and independent forecasts remains substantial. Soaring electricity costs are emerging as a notable political risk ahead of November midterm elections, with rapid AI data center buildout, tariff-related cost pressures, and grid upgrade spending pushing utility bills higher at rates not seen in decades. The Iran conflict's impact on gasoline prices has compounded the affordability strain.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets followed Wall Street higher on Tuesday, with the Nikkei 225 gaining 2.4% and South Korea's Kospi rising 2.7%, as investors focused on the possibility of resumed US-Iran negotiations rather than the formal initiation of a US naval blockade of the Strait of Hormuz. Taiwan's Taiex closed at a record high, posting a year-to-date gain of 25%, driven heavily by Taiwan Semiconductor as investor enthusiasm for AI supply-chain names reasserted itself. China faces a complex set of pressures. March trade data showed export growth slowing sharply while imports surged at the fastest pace since late 2021, as elevated energy commodity purchases reflected the war's disruption to global supply. The divergence underscores the dual squeeze: higher input costs weighing on margins while external demand softens. Chinese President Xi Jinping, meeting with Spanish Prime Minister Pedro Sánchez in Beijing, described the international order as "crumbling into disarray" — language observers noted was notably stronger than his customary characterizations of global turbulence. China's independent oil refiners — the so-called teapots, accounting for roughly a fifth of national refining capacity — remain under acute pressure. Heavily reliant on discounted Iranian crude, the sector is now exposed to both US sanctions enforcement and the blockade. Floating stockpiles of approximately 38 million barrels of Iranian crude in Asian waters provide a temporary buffer of perhaps two months, and Beijing has released strategic reserves and granted additional import quotas to sustain output. Nevertheless, if the blockade persists, the cushion will narrow. China's accelerating shift toward domestically-generated electricity from coal and renewables provides some structural insulation, but not enough to offset near-term refining stress. Singapore became the first Asian central bank to tighten monetary policy settings in response to rising inflation driven by higher energy prices — a move that may signal broader policy divergence across the region if crude remains elevated. Meanwhile, China Evergrande founder Hui Ka Yan pleaded guilty to fundraising fraud and bribery in a Chinese court, closing a significant chapter in the country's property sector restructuring.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Financial markets in Europe reacted positively to the prospect of resumed US-Iran talks, with the Stoxx Europe 600 gaining 0.9%. The more consequential European story of the day, however, was political: Viktor Orbán's landslide defeat in Hungary's parliamentary elections, which markets had increasingly priced in as polls pointed toward opposition leader Péter Magyar. The Hungarian forint rose to a four-year high — surpassing its level at the time of Orbán's 2022 re-election — reflecting currency traders' relief at the prospect of restored access to frozen EU funds and a more conventional economic policy framework. The market judgment was on economic rather than political grounds: Hungary's growth has lagged peers Poland, Czechia, and Slovakia through the Orbán years, and forex markets consistently penalized the self-imposed isolation from EU financing. Magyar has indicated he intends a swift transition of power, supports eventual euro adoption, and wants to reintegrate Hungary into the EU's institutional framework. Orbán called a Fidesz party congress for April 28 to review the defeat. Elsewhere in Europe, the Iran conflict is generating tangible economic fallout. LVMH reported that sales at its fashion and leather goods division — home to Louis Vuitton — fell in the first quarter, with the war's dampening effect on demand cited alongside broader consumer caution. HSBC's CEO told Bloomberg Television that Middle East uncertainty is beginning to dent client confidence. The Bank of England's Andrew Bailey warned that private credit funds face heightened risks from one-off loss events that could threaten broader confidence in the sector. Italy's Prime Minister Giorgia Meloni called Trump's remarks about Pope Leo XIV "unacceptable," signaling a growing rift with Washington that reflects wider European discomfort over the Iran conflict's management. ECB President Christine Lagarde was due to speak at the IMF Spring Meetings, with markets attentive to any shift in guidance given the competing pressures of elevated energy-driven inflation and slowing regional growth.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The central tension in global markets on April 14 was the coexistence of a formal US naval blockade of the Strait of Hormuz and active diplomatic engagement aimed at avoiding a full rupture. President Trump's blockade, cutting off vessel traffic to and from Iranian ports, represents a significant escalation; yet simultaneous reports of prospective face-to-face negotiations before the April 7 ceasefire expires next week gave markets a constructive signal to focus on. WTI crude fell to approximately $97 per barrel as diplomacy dominated sentiment, though Brent remains near $99, roughly $27 above pre-war levels. The blockade's enforcement is already being tested. A US-sanctioned tanker linked to China — the Rich Starry — transited the Strait of Hormuz on Tuesday, creating a direct challenge to the mechanism's credibility and raising the possibility of US-China friction over energy access. The episode underscores a point made by several analysts: the blockade is, in part, a pressure tactic directed at Beijing as much as Tehran, given that China absorbs the overwhelming majority of Iranian crude exports. Iran, for its part, warned it would target ports across the Persian Gulf if its own shipping infrastructure is threatened. The International Energy Agency issued a striking forecast: global oil demand is expected to decline in 2026 for the first time since the pandemic, as the price surge caused by the conflict offsets underlying demand growth. The agency warned that "energy markets and economies around the world need to brace for significant disruptions in the months to come." The conflict is accelerating several longer-run shifts. China's lithium battery exports rose 50% year-on-year in the first quarter as buyers sought alternatives to oil-dependent energy, while the petroyuan concept has gained renewed traction after Iran accepted yuan payments for Strait transit. Delta Air Lines quietly downgraded its net-zero emissions goal to an "aspiration" and removed a 2030 sustainable aviation fuel target, illustrating how corporate climate commitments are being re-evaluated under the combined pressure of energy market disruption and political headwinds. Lebanon and Israel began the first direct US-hosted talks in decades, though Hezbollah's refusal to participate in or abide by any agreement reached limits the realistic scope of what can be achieved.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

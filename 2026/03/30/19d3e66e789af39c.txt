@@ -1,0 +1,237 @@
+Subject: Economics Daily: Pricing-power checkup
+Date: Mon, 30 Mar 2026 11:00:21 +0000
+
+Why the Iran War Doesn’t Mean a Covid-Scale Inflation Shock
+To what extent will companies pass along the higher costs from the latest 
+dramatic supply shock? ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-03-30/why-the-iran-war-doesn-t-mean-a-covid-scale-inflation-shock>
+ <https://bloomberg.com/economics>
+
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=17481524&m=11b724c487f61753eb1a7a4a5f3ef261&p=03302026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=17481524&m=11b724c487f61753eb1a7a4a5f3ef261&p=03302026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+I’m Chris Anstey <https://bloomberg.com/authors/AF7uNtxCFaA/chris-anstey>, an 
+economics editor in Boston, and today we’re looking at whether higher oil 
+prices will deliver a sustained spike to inflation. Send us feedback and tips to
+ecodaily@bloomberg.net <mailto:ecodaily@bloomberg.net>. And if you aren’t yet 
+signed up to receive this newsletter, you can do sohere 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=ecointro>
+.
+
+Top Stories
+
+ * The war in the Middle East 
+<https://www.bloomberg.com/news/articles/2026-03-30/us-israel-keep-up-strikes-on-iran-with-no-end-of-war-in-sight?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ continues to rage, with Iran’s grip on the Strait of Hormuz tighter than ever, 
+and theoil 
+<https://www.bloomberg.com/news/articles/2026-03-29/latest-oil-market-news-and-analysis-for-march-30?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ shock set toget worse 
+<https://www.bloomberg.com/graphics/2026-iran-war-hormuz-closure-oil-shock/?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+.
+ * Some of Wall Street’s biggest bond-fund managers say markets underestimate 
+risks of asharp slowdown 
+<https://www.bloomberg.com/news/articles/2026-03-29/jpmorgan-pimco-say-bond-market-is-underestimating-slowdown-risk?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ in asputtering global economy 
+<https://www.bloomberg.com/news/articles/2026-03-30/bonds-everywhere-are-rallying-as-global-slowdown-fears-intensify?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+.
+ * Coming up: German inflation 
+<https://www.bloomberg.com/news/articles/2026-03-30/german-inflation-headed-for-highest-in-more-than-year-on-energy?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ data may jump before tomorrow’seuro-zone release 
+<https://www.bloomberg.com/news/articles/2026-03-27/biggest-euro-zone-price-jump-since-2022-seen-in-first-g-20-data?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+, Israel may keep itsinterest rate on hold 
+<https://www.bloomberg.com/news/articles/2026-03-30/israel-to-hold-rates-lower-growth-forecast-as-iran-war-persists?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+, and Federal Reserve Chair Jerome Powell is scheduled to speak.
+Pricing-Power Check-up
+
+Events keep bringing this newsletter back to a key question: To what extent 
+will companies pass along the higher costs from the latest dramatic supply 
+shock?
+
+After Covid struck, the debate was about whether firms were essentially using 
+that crisis as an opportunity to make up for lost ground — the pre-2020 decade 
+of lowflation, when stagnant demand prevented them from raising prices much. “
+Greedflation 
+<https://www.bloomberg.com/news/articles/2022-05-19/-greedflation-pits-democrats-against-like-minded-economists?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+,” as some US politicians called it.
+
+Many economists, including then-Treasury Secretary Janet Yellen, played down 
+<https://www.bloomberg.com/news/articles/2022-06-09/yellen-rejects-idea-corporate-greed-is-to-blame-for-inflation?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ the idea that large-scale price-gouging was at work. Nevertheless, it seemed 
+clear that companies wouldn’t forget the episode of sky-high inflation, as this 
+newsletterdiscussed 
+<https://www.bloomberg.com/news/newsletters/2023-05-18/global-economy-latest-inflation-and-profit-margins?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ in May 2023.
+
+Back then, Ben May, director of global macro research at Oxford Economics, 
+argued that firms may be “more ready to pass on cost shocks in the future.” And 
+if supply disruptions became more common, “inflation may be much more volatile 
+than during the first two decades of the century,” he warned at the time. “This 
+could also mean bigger cyclical swings in policy rates.”
+
+Fast forward to today’s shock, and some observers have noted the speed with 
+which some companies are moving to raise prices. Weeks after the Iran war 
+began, the United Airlines CEO warned airfares may need togo up 20% 
+<https://www.bloomberg.com/news/videos/2026-03-24/united-airlines-ceo-warns-fares-may-have-to-rise-20-video?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+. Dow Chemical doubled a price hike for plastic resins — used in items like 
+shopping bags and plastic bottles, in about a week, the Wall Street Journalsaid 
+<>. And US Postal Service rates for some packages are going up 8%, until next 
+January 
+<https://www.bloomberg.com/news/articles/2026-03-25/us-postal-service-to-raise-prices-due-to-fuel-costs-wsj-says?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+.
+
+Is this evidence of what May pointed to three years back? May says not so fast.
+
+There’s no doubt that “some products are bound to go up in price, such as 
+airfares” given the surge in jet fuel costs, an important input cost for the 
+final price, May says. At the same time, “there’s reasons to think there’s a 
+little bit less dramatic an impact this time” on overall inflation than most of 
+the world experienced back in 2022, he says.
+
+The cost shocks from the Iran war are significant, but narrower in scope than 
+in Covid, May says. Back then, pretty much everything was going up (remember the
+flotillas of cargo ships 
+<https://www.bloomberg.com/news/articles/2021-10-13/biden-confronts-supply-chain-crisis-stretching-beyond-his-grip?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ waiting to access ports). This time, it won’t be just energy costs that rise, 
+but it would take an “adverse scenario where the strait is closed for months 
+and months” to see widespread and important secondary inflation effects, May 
+says.
+Container ships moored off the Los Angeles and Long Beach ports in Long Beach, 
+California, U.S., on Saturday, Oct. 9, 2021.Bloomberg
+Also consider the broader economic context: “Growth is a bit more subdued than 
+when Russia invaded Ukraine, andlabor markets 
+<https://www.bloomberg.com/news/articles/2026-03-06/us-unexpectedly-sheds-92-000-jobs-unemployment-rate-rises?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ are softer,” May says. Governments also aren’t opening the fiscal-stimulus 
+spigot, or at least not yet.
+
+Which all argues against a Covid inflation repeat. Between then and now, of 
+course, there was also President Donald Trump’s tariff shock. Fed policymakers 
+reckon that added at least half a percentage point to underlying inflation — 
+less than many expected, though, thanks in part to companies willing to shrink 
+their margins some, as this newsletter discussedlast June 
+<https://www.bloomberg.com/news/newsletters/2025-06-13/us-corporate-profit-fat-offers-cushion-for-absorbing-tariffs?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+.
+
+Does that mean companies have slimmer margins now and will be seeking to pass 
+along costs more aggressively? Or will thesofter demand 
+<https://www.bloomberg.com/news/articles/2026-03-25/iran-war-hits-us-economic-growth-forecasts-recession-risks-rise?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ May points to mean that’s not possible for most? We’ll have to stay tuned.
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=17481524&m=11b724c487f61753eb1a7a4a5f3ef261&p=03302026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=17481524&m=11b724c487f61753eb1a7a4a5f3ef261&p=03302026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+The Week Ahead
+
+US employment probably rebounded in March after one of the biggest pullbacks 
+in payrolls since the pandemic, extending a string of volatile readings.
+
+Economists estimate 60,000 jobs were added for the month following a 92,000 
+decline, according the median of a Bloomberg survey ahead of Friday’s report. 
+The jobless rate is seen holding steady at 4.4%.
+
+Here’s a look ahead to major events 
+<https://www.bloomberg.com/news/articles/2026-03-28/us-job-market-probably-thawed-out-this-month-after-february-chill?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ in the global economy this week.
+
+The Best of Bloomberg Economics
+
+ * The European Central Bank is ready to act 
+<https://www.bloomberg.com/news/articles/2026-03-29/ecb-must-anchor-inflation-expectations-villeroy-tells-la-stampa?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ to rein in price expectations, according to Francois Villeroy de Galhau. A 
+report showed themsurging 
+<https://www.bloomberg.com/news/articles/2026-03-30/european-consumers-inflation-expectations-surge-on-iran-war?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+.
+ * Japan’s top currency official helped strengthen the yen 
+<https://www.bloomberg.com/news/articles/2026-03-30/japan-s-fx-chief-warns-of-bold-action-after-yen-tops-160?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+, while minutes of the Bank of Japan’s last meeting suggested ahawkish posture 
+<https://www.bloomberg.com/news/articles/2026-03-30/boj-summary-displays-hawkish-tilt-with-debate-on-size-of-hike?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+.
+ * The number of graduate roles in London 
+<https://www.bloomberg.com/news/articles/2026-03-30/london-s-youth-unemployment-crisis-looms-over-local-elections?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ has fallen, with around one in four 16-24 year-olds in the capital looking for 
+work.
+ * Israel’s parliament approved a 2026 state budget 
+<https://www.bloomberg.com/news/articles/2026-03-30/israel-approves-revised-war-budget-extending-reliance-on-debt?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ with a large defense supplement to cover the war with Iran.
+ * People in Switzerland are increasingly frustrated 
+<https://www.bloomberg.com/news/articles/2026-03-30/swiss-find-they-can-t-pay-with-cash-as-much-as-they-used-to?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ that they can’t withdraw and use cash as much as they used to.
+ * Australia’s central bank may hike three more times 
+<https://www.bloomberg.com/news/articles/2026-03-30/rba-seen-lifting-key-rate-to-17-year-high-on-oil-shock-westpac-says?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ this year, Westpac said. Its officials will startdelivering speeches 
+<https://www.bloomberg.com/news/articles/2026-03-30/rba-opens-door-to-board-member-speeches-in-transparency-push?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ in a transparency push.
+Need-to-Know Research
+
+As this newsletter highlighted week before last, there’s likely to be some 
+tipping point 
+<https://www.bloomberg.com/news/newsletters/2026-03-13/here-s-what-could-tip-global-central-banks-toward-aiding-growth?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+ at which the demand-destruction effects of the Iran war will outweigh the 
+immediate, inflationary impact. Now, economists at Morgan Stanley offer a 
+fresh, somewhat wonky, gauge to keep an eye on.
+
+The bond market offers ways of deriving expectations for inflation over the 
+coming year, as well as expectations for year-ahead inflation at a point 12 
+months from now. In other words, effectively, what inflation will be over March 
+2026-27, and what it will be over March 2027-28. If it’s high in the first year 
+but down in the second, that suggests demand destruction will in time dominate.
+
+So far, both one-year and one-year one-year forward (1y1y) inflation gauges 
+have moved up, “suggesting that financial markets see the rise in oil prices as 
+more about inflation than growth,” Morgan Stanley economists led by Michael 
+Gapen wrote Friday. At some point, if oil prices keep rising, “financial 
+markets would likely take a different view,” causing lower 1y1y inflation bets, 
+they said.
+
+More from Bloomberg
+
+Enjoy Economics Daily?
+
+ * Read more economic stories 
+<https://www.bloomberg.com/markets/economics?cmpid=BBD033026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260330>
+Plus, here are some newsletters we think you might like
+
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for daily insights into supply chains and global trade
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for the latest in politics from around the globe
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+.
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Economics 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=NLshare>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/7tQuRg7L3f0t4KtGLQsIU_0gB6B6sKL_7pDIKaJMQtG1fvS6xatUz4opeo4kTtP-mLSHcNxubjpsjdjojSZV0TFm0etmxIrTjnCdAZCctNEdHF8TheQH0NpM8My3cOnP8htHS_JMzdNaJTIqH-YximMkx-nqK2u3EOBMnUCvlpPQdg9-2bjK20FUcZphzeO6C3BcfxqA8h_ntj2poewezm6wnQBfNPb8JSKOgIgjDtXAC8UpbRkY-SeZYBPGXMNNvKW43tlZHooXXet18KXNc_JLnXnRYWqIHGJpF4LQvtRzLSod0i0P7D-aqgAwIfKH8eL972AxhO9HhmfED1HKCupOMBKV0cNF/wfOHlc0czd-FU9Yl88rpOAknAjGD8ESN/19>

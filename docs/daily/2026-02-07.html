@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saturday, February 07, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Saturday, February 07, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">US Daily Briefing — February 7, 2026</p>
+<p class="para-body">Weekend coverage of US-specific developments is limited, with most syndicated content focused on global trade dynamics and climate-related operational risks. The most consequential US threads warrant brief treatment.</p>
+<p class="para-title" style="color:#5597cb;">Trade policy and the tariff regime</p>
+<p class="para-body">The Trump administration's tariff architecture continues to reshape global commodity and capital flows, though Saturday brought no new policy announcements. Notable adjacent developments include "Project Vault," a planned US strategic stockpile in key minerals, which extends the administration's industrial policy footprint into critical-materials security and may have downstream implications for domestic mining equities and processing capacity. Separately, a reported surprise US-India trade framework could mark a partial reset of bilateral ties that had frayed under earlier tariff actions, though terms and durability remain to be seen. The broader pattern—major economies diversifying trade relationships in response to US tariffs, with Gulf-Asia corridors expanding at 15% annually—suggests US exporters may face structurally tougher competition in third markets even as bilateral deals are negotiated.</p>
+<p class="para-title" style="color:#5597cb;">Corporate capex and the AI cycle</p>
+<p class="para-body">Big Tech capital expenditure is tracking toward $650 billion in 2026, an escalation that continues to underpin the equity rally in hyperscaler-adjacent names and power infrastructure. The figure, if realized, reinforces concerns about concentration risk in the S&P 500 and raises questions about return-on-invested-capital trajectories that have yet to be tested through a full cycle. The associated power-demand intensity also intersects with grid-reliability concerns flagged this week.</p>
+<p class="para-title" style="color:#5597cb;">Utility sector and wildfire risk</p>
+<p class="para-body">Western US utilities—PG&E, Edison International, and Xcel Energy—remain in focus as an unusually warm, arid La Niña winter elevates fire risk across Texas, New Mexico, and Colorado. Xcel executed multiple preventative shutoffs in Colorado affecting more than 50,000 customers. Edison faces hundreds of lawsuits tied to last year's Eaton fire. The pattern reinforces a familiar tail-risk overhang for Western utility credit and equity, with implications for ratepayer dynamics and state regulatory posture heading into spring. No material Fed or fiscal developments crossed the wires today.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Asia-Pacific Daily Briefing — February 7, 2026</p>
+<p class="para-body">Weekend flow is light, but several threads carry meaningful implications for the region.</p>
+<p class="para-title" style="color:#e07b39;">China-Panama friction escalates</p>
+<p class="para-body">Beijing is preparing retaliatory measures against Panama following the cancellation of the Canalport contract involving Chinese-linked operators. While details remain limited, the move underscores China's increasing willingness to deploy economic coercion in defense of overseas commercial interests, particularly those tied to strategic logistics infrastructure. The episode adds to the broader contest over global port concessions in which Chinese state-linked operators have come under pressure across multiple jurisdictions since the start of the Trump administration. For investors, it reinforces political risk around Chinese-operated maritime assets and may accelerate divestment discussions at COSCO and Hutchison-related entities.</p>
+<p class="para-title" style="color:#e07b39;">US-India reset in view</p>
+<p class="para-body">Reporting suggests a surprise Trump trade deal could materially reset bilateral ties after a fractious period marked by tariff disputes and friction over Russian oil purchases. The contours remain undisclosed, and execution risk is meaningful given the administration's track record of late-stage renegotiation. Still, a constructive outcome would be supportive of Indian equities, particularly export-sensitive IT and pharmaceutical names, and could ease pressure on the rupee. It would also have implications for Quad dynamics and India's positioning vis-à-vis China.</p>
+<p class="para-title" style="color:#e07b39;">Indonesia sovereign tensions surface</p>
+<p class="para-body">Following its recent downgrade, Jakarta publicly criticized a Citigroup economist, an unusually personal response that may signal heightened sensitivity to external commentary as the government navigates fiscal slippage concerns. The episode bears watching for any chilling effect on sell-side coverage and for what it implies about the Prabowo administration's market communication approach.</p>
+<p class="para-title" style="color:#e07b39;">Gulf-Asia trade corridor deepens</p>
+<p class="para-body">Standard Chartered projects Asia-Middle East trade reaching $1.5 trillion by 2030 from $905 billion in 2024. Chinese vehicle exports to the UAE reached roughly 560,000 units in 2025—the third-largest destination globally—though a substantial share is transshipped onward. The data reinforces the Gulf's emergence as a re-export hub for Chinese manufactured goods seeking to circumvent direct exposure to Western tariff regimes. Japan, Korea, and Australia coverage is thin in today's flow.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">European Daily Briefing — February 7, 2026</p>
+<p class="para-body">Coverage from today's wires offers limited Europe-specific content, with the principal regional threads emerging at the margins of broader global stories. We summarize the most relevant developments below.</p>
+<p class="para-title" style="color:#4a9e6b;">UK trade policy: GCC deal reportedly near</p>
+<p class="para-body">The British government indicated this week that a trade agreement with the Gulf Cooperation Council is "imminent," according to officials cited in coverage of Middle Eastern trade dynamics. If concluded, the deal would mark a notable post-Brexit win for Whitehall and align with broader UK efforts to deepen commercial ties beyond traditional European partners. The GCC bloc — anchored by Saudi Arabia and the UAE — has seen trade expand at a 15% annual clip from 2021-24, materially outpacing the 9% global rate per Standard Chartered data, making it an increasingly consequential counterparty. Concrete terms and timing remain to be disclosed, and the deal's macro impact will depend on the scope of services access and investment provisions, which have historically been the sticking points in GCC negotiations with Western partners.</p>
+<p class="para-title" style="color:#4a9e6b;">European shipping and ports</p>
+<p class="para-body">France's CMA CGM has recently joined MSC of Switzerland-Italy as joint-venture partners at Abu Dhabi's Khalifa Port, operated by AD Ports. The arrangement reflects continued strategic positioning by European container lines in Gulf logistics infrastructure, where competition between DP World and AD Ports is intensifying. For European carriers, deeper Gulf terminal integration supports the Asia-Europe trade corridor at a time when Red Sea routing remains a consideration for fleet economics.</p>
+<p class="para-title" style="color:#4a9e6b;">Cortina Winter Olympics underway</p>
+<p class="para-body">The 2026 Winter Games opened Friday in Cortina d'Ampezzo. Regional snowfall this week improved conditions, though the event has drawn renewed attention to the structural challenges facing Alpine tourism economies as warming trends pressure lower-elevation resorts — a slow-moving but material consideration for Italian, French, Swiss and Austrian tourism-dependent regions. No material eurozone macro data, ECB commentary, or UK gilt market developments appeared in today's wires.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Middle East emerges as globalization's bright spot</p>
+<p class="para-body">While protectionist currents dominate the broader global trade narrative, Gulf Cooperation Council economies expanded trade at a 15% annual clip from 2021-24, outpacing the 9% global rate, according to Standard Chartered. The Asia-Middle East corridor is projected to reach $1.5 trillion by 2030 from $905 billion in 2024, with Middle East-Africa trade expected to roughly double to $260 billion. The UAE, in particular, has positioned itself as an intercontinental logistics nexus: it imported approximately 560,000 Chinese passenger vehicles in 2025—third globally behind Mexico and Russia despite a population of only 11 million—reflecting its role as a transshipment hub rather than purely an end market. Britain signaled a GCC trade deal is "imminent," and competition between DP World's Jebel Ali and ADQ-owned Khalifa Port underscores the depth of regional logistics capacity. For investors, the Gulf increasingly offers diversification optionality as the Trump tariff regime reshapes traditional corridors, though the durability of this trade momentum will depend on whether energy-funded fiscal expansion can be sustained—Saudi Arabia has already scaled back its more ambitious Vision 2030 projects.</p>
+<p class="para-title" style="color:#8b5cf6;">Climate-energy nexus pressures Western utilities</p>
+<p class="para-body">A La Niña-driven dry winter across the US Mountain West has forced Xcel Energy to implement multiple preventative power shutoffs across Colorado, affecting more than 50,000 customers. The pattern, projected to persist into spring, illustrates the operating cost utilities now bear from elevated wildfire liability—a tail risk made tangible by Edison International's mounting litigation over the Eaton fire and PG&E's 2019 bankruptcy precedent. Capital allocation toward weather monitoring infrastructure, AI-driven risk modeling, and vegetation management is becoming a structural feature of utility cost bases in fire-prone jurisdictions.</p>
+<p class="para-title" style="color:#8b5cf6;">Climate transition meets symbolism</p>
+<p class="para-body">The Cortina Winter Olympics opened with regional temperatures 7°C above 1956 levels, with athletes increasingly competing on manufactured snow. While anecdotal, the trajectory has implications for tourism-dependent Alpine economies and reinforces the secular case for adaptation-related capex.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

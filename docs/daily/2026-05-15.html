@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, May 15, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, May 15, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity and bond markets came under significant pressure on Friday, as surging oil prices and renewed inflation concerns brought a sharp halt to the AI-driven equity rally that had carried stocks to successive record highs in recent weeks. S&P 500 futures fell 1.0% and Nasdaq 100 futures declined 1.5%, while the 10-year Treasury yield rose to 4.54%, its highest level in approximately a year, extending a rise that has persisted across every session this week. The two-year yield climbed to 4.06%, a level last seen in March 2025. Fed futures markets now price roughly a two-thirds probability of a rate hike by December, a notable repricing that reflects Fed Governor Michael Barr's assessment earlier in the week that inflation remains "the overwhelming risk facing the economy." Stronger-than-expected US producer price data reinforced that concern. On technology and corporate news, Nvidia's market capitalisation approached $6 trillion — a valuation no publicly traded company has previously reached — as AI-related demand for semiconductors continues to drive earnings upgrades that outpace share price gains. Cerebras Systems debuted in what is described as the year's largest IPO, surging 68% to a $67 billion market cap. Memory-chip names Sandisk and Micron also stand out: despite gains of 482% and 172% respectively this year, both trade at roughly nine times forward earnings as analyst estimates have risen faster than prices. Separately, Apple's relationship with OpenAI has deteriorated to the point where the startup is reportedly preparing potential legal action. Microsoft pared intraday losses after Bill Ackman disclosed a new stake in the company. On the fiscal and political side, Trump's financial disclosures revealed personal equity purchases in the first quarter, including positions in Nvidia, Oracle, Microsoft, Boeing and Costco. With midterm elections less than six months away, Republicans have yet to coalesce around a credible response to voter concerns about the cost of living — a political vulnerability that the ongoing energy shock is amplifying.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">The dominant story across Asian markets on Friday was a broad and sharp risk-off move, with a gauge of Asian equities falling 2.2%, the steepest single-day decline since March. South Korea's Kospi led the selloff, dropping 6.1%, as the market's heavy concentration in semiconductor names — the very stocks that have driven its world-beating rally in recent months — left it acutely exposed to a repricing of rate expectations. The move appeared to reflect exhaustion following an exceptionally rapid run-up rather than a fundamental deterioration in earnings, though the distinction may offer limited comfort in the near term. The Trump-Xi summit in Beijing concluded after roughly 36 hours of meetings, pageantry and a state dinner at Zhongnanhai. The headline deliverable was a Chinese commitment to purchase 200 Boeing aircraft — a meaningful symbolic win, though below the upper-end expectation of 500 jets — and an agreement to maintain the trade truce reached in South Korea last autumn under a newly coined framework of "constructive strategic stability." Agricultural purchase commitments are anticipated but not yet finalised. On Iran, both sides expressed convergence in wanting the conflict to end and the Strait of Hormuz reopened, though no actionable mechanism emerged. The most pointed moment came when Xi warned that mishandling Taiwan could push bilateral relations into a "highly dangerous situation" — his bluntest language on the subject to date. A delayed $14 billion US arms package for Taiwan now represents the most immediate test of whether the summit's goodwill proves durable. Beneath the summit headlines, China's credit quality issue warrants attention. Estimates from independent analysts suggest true non-performing loan ratios may be closer to 10% — versus the official 1.5% — implying as much as $3 trillion in loans that should technically be classified as past due. Regulatory forbearance has so far contained systemic risk, but the policy traps capital in unproductive firms and is visibly slowing overall loan growth. Japan's corporate goods prices rose by the most in 12 years, adding to pressure on the Bank of Japan to tighten. India raised retail fuel prices for the first time in four years, absorbing a fraction of the roughly 50% increase in Brent crude since the Iran conflict began. Thailand convened an emergency meeting between the prime minister and leading business figures to address what officials described as converging crises of inflation, unemployment and energy costs.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">UK political risk moved sharply to the foreground on Friday after Greater Manchester Mayor Andy Burnham secured a credible path to challenge Keir Starmer for the Labour leadership, following the decision by the MP for Makerfield to stand aside in his favour. Burnham, characterised in domestic media as a figure with genuine popular appeal, is now considered the frontrunner to unseat the prime minister. Markets responded promptly: the pound fell, gilt yields surged — with the 10-year reaching 5.14%, up 15 basis points on the day — and UK assets underperformed materially relative to already-weak European peers. The political anxiety is compounded by investor concern that a leadership transition could produce a more expansive fiscal posture at a time when the gilt market is already absorbing significant supply pressure from oil-driven inflation. The broader context is one of European political fragility. Romania's government has fallen, Latvia's prime minister resigned over a drone-related controversy, and Germany's chancellor faced trade union protests. The analysis that "few places appear governable" may be rhetorical in framing but captures something real about the compression of political time horizons across the continent. Italy under Giorgia Meloni stands as a notable exception to this pattern of rapid leadership attrition. On green finance, the UK has halved its pledge to the Green Climate Fund — reducing its 2024-2027 contribution from £1.6 billion to £815 million — a further withdrawal from multilateral climate commitments that follows the US cancellation of a $4 billion pledge last year. Separately, an analysis of London commercial property suggests that as much as 78% of Westminster offices and 71% of City of London offices will fail to meet Minimum Energy Efficiency Standards expected to take effect in the early 2030s, raising material stranded-asset risk across the sector. In eastern European bond markets, Hungary's borrowing costs have fallen below Poland's for the first time since 2020, reflecting investor optimism surrounding new Prime Minister Peter Magyar's push to align Budapest with EU mainstream policy and revive the country's euro accession path.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The defining macro theme on Friday was the intensifying feedback loop between the Iran war, oil prices, and global bond markets. With the Strait of Hormuz remaining largely closed under a fragile ceasefire, Brent crude has risen more than 60% over three months to approximately $109 a barrel — far enough to inflict broad demand destruction, but not yet resolved in either direction. The US EIA now projects global oil demand growth of only 200,000 barrels per day in 2026, against a pre-war forecast of 1.2 million; the IEA goes further, projecting an outright contraction of 420,000 barrels per day. Down years for oil demand are rare and historically coincide with severe economic stress. TD Securities warns that depleted inventories could drive a fresh surge toward $150 a barrel absent a Hormuz resolution; BloombergNEF estimates $160 if closure persists through July. The Trump-Xi summit produced a shared rhetorical commitment to reopening the strait and ending the Iran conflict, but no operational mechanism. Trump's comment to Fox News that the US does not need the strait open "at all" may complicate diplomatic signalling, even if intended for a domestic audience. The UAE, frustrated by Gulf neighbours' refusal to join a coordinated military response to Iranian strikes earlier in the conflict, announced plans to double its Hormuz-bypass export capacity via the Fujairah pipeline by 2027 — a structural adaptation to a prolonged disruption scenario. Sovereign bond markets are now pricing a coherent inflation narrative across jurisdictions: US 10-year yields at 4.54%, UK gilts at 5.14%, and Japan's 20-year rate at its highest level since 1996. The correlation of losses across US, UK, eurozone and Japanese government bond indices this year reflects a common driver in energy prices, layered over country-specific fiscal and political factors. Producer price indices in the US, China and Japan all surprised to the upside this week, suggesting pipeline inflation pressure has not peaked. Fed rate hike expectations for December have moved from a tail risk to a base-case probability for a meaningful share of market participants — a repricing with implications for equity valuations, credit spreads, and emerging market capital flows that have not yet fully resolved.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

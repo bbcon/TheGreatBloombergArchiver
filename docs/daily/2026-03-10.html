@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, March 10, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, March 10, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets staged a partial recovery on Tuesday, with S&P 500 futures adding 0.36% and the Nasdaq turning positive for the month, as President Trump signaled the Iran conflict could end "very soon" and suggested he was weighing sanctions waivers and US Navy escorts for tankers through the Strait of Hormuz. The late-day recovery on Monday extended into overnight trading, though the broader macro picture remains materially complicated. The most consequential domestic economic development may be the interaction between the Iran shock and Trump's fiscal agenda. Bloomberg Economics estimates that average US households stand to receive approximately $800 in additional tax refunds from the "One Big Beautiful Bill" this year — but crude oil settling around $80 per barrel would impose an estimated $650 energy cost increase, effectively neutralizing most of the benefit. At $83 per barrel the OBBB gain is entirely erased, and at $110 it represents a net household loss of roughly $1,960. The distributional concern compounds this: energy costs are regressive, disproportionately affecting lower-income households, and the top 20% of earners already account for over 59% of personal consumption. Evercore ISI's Krishna Guha flagged the risk of amplified K-shaped dynamics as the conflict prolongs. Credit markets registered additional stress, with the Markit CDX North American Investment Grade Index posting its largest spread widening since last May, partly catalyzed by a weak February payrolls report. The Bloomberg US Corporate Bond Index fell 0.95% last week, pushing investment-grade yield-to-worst to 4.9% and leaving year-to-date returns barely above zero. Private credit faces compounding pressure, with Blue Owl Capital's redemption difficulties still fresh and alternative asset managers navigating competing obligations to investors seeking exits. The Federal Reserve is in its pre-meeting quiet period ahead of next week's FOMC, but the committee's reaction function has become the pivotal near-term variable. Whether the Fed frames the oil shock primarily as inflationary or as a growth headwind will carry immediate market implications. Deutsche Bank's framework suggests a sustained bear market requires a large and lasting price spike, a hawkish policy pivot, and sufficient macro damage to tip an already-softening economy into recession — none of which is yet confirmed, but none of which can be dismissed.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets suffered significant losses when oil briefly surged toward $120 per barrel during Monday's session — the region's exchanges were open at the worst of the spike — before recovering Tuesday as Brent retreated toward $90. The Nikkei 225 rebounded 2.88% on Tuesday, partially recouping Monday's damage, while broader Asian indices bounced in sympathy with easing crude prices and Trump's signals on a possible near-term resolution to the Iran conflict. China's trade data, released Tuesday, provided a striking counterpoint to the broader anxiety: exports surged 21.9% year-on-year in the first two months of 2026, well above the 7.2% median estimate, generating a record trade surplus of $214 billion for the period. Imports rose nearly 20%. The strength was broad-based geographically, with shipments to the EU and UK holding up despite trade friction concerns, though exports to the US fell 11% reflecting tariff effects. The juxtaposition between China's export machine and domestic labor conditions is notable: workers in Guangdong province report falling wages and disappearing jobs, with automation and AI increasingly substituting for human labor. Citigroup economists project nearly a third of Chinese jobs could eventually be affected by AI-driven displacement. India presents a more nuanced energy picture. New Delhi had been reducing Russian oil purchases under US pressure since December and pivoting toward Saudi and Iraqi barrels — precisely the supply chains most disrupted by the Hormuz closure. Washington's announcement last Thursday of a one-month sanctions waiver allowing India to resume Russian crude purchases provided material relief, with Indian refiners immediately absorbing available Urals spot cargoes. Tankers carrying over 20 million barrels of Russian crude were already within a week's sailing time of Indian ports. Retail fuel prices have been held steady, and India appears unlikely to need to draw on strategic reserves in the near term, though LPG and LNG supply stress persists. Across the broader region, Asian airlines are raising fares — Indian carriers hiked long-haul ticket prices 15% — while Thailand has mandated government work-from-home arrangements to curb energy demand. Apple's continued production diversification into India, where iPhone output rose 53% to approximately 55 million units in 2025, illustrates the ongoing supply-chain reconfiguration away from China, independent of the current crisis.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European equity markets recovered on Tuesday, with the Stoxx Europe 600 gaining 2.21% as oil prices retreated and Trump's remarks on a potential near-term end to the Iran conflict improved sentiment. The rebound followed a sharp session Monday when Brent briefly approached $120 during European trading hours, prompting a pause in primary bond issuance as borrowers stood down from planned debt sales. European credit markets remain under visible strain. The iTraxx Europe investment-grade index reached its highest level since May, while the Crossover index of sub-investment-grade credits crossed 300 basis points for the first time since June. Bank of America analysts describe liquidity as "broadly supportive" but note a rising share of respondents reporting deteriorating conditions. An analysis by Goldman Sachs shows that nearly 150 European companies have already ceded control to direct-lending funds after failing to service their debts — a measure of how private credit stress is materializing on the continent. With corporate issuance delayed last week and again Monday, a pipeline of borrowers is waiting for a sufficiently stable window to access markets. UK consumer sentiment fell to a four-month low in March according to Barclays data, reversing gains made at the start of the year as Middle East developments weighed on household confidence, even as British Retail Consortium figures showed modest retail sales growth in February. On a longer-duration European policy question, EU Commission President Ursula von der Leyen made pointed remarks calling nuclear energy abandonment a "strategic mistake," a thinly veiled reference to Germany's reactor closures, as energy security anxiety intensifies across the bloc. Marcus Ashworth's analysis highlights that global deleveraging since the Iran war began has been particularly damaging for the euro, with markets now pricing the possibility of ECB rate tightening as early as July — a notable shift in expectations that reflects how quickly the inflationary oil shock is reshaping European monetary policy assumptions. Whether that repricing is durable depends heavily on how long supply disruptions persist.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The dominant cross-cutting theme remains the US-Iran conflict and its effects on oil markets, supply chains, and the global growth outlook. Brent crude's intraday range on Monday — a swing of approximately $36, the widest on record and surpassing even the moves seen at the onset of the Ukraine invasion — illustrated the degree of market stress, even as prices ultimately settled near $90. The swift reversal from near-$120 to below $90 in a single session reflects both genuine residual optimism about conflict duration and the extreme sensitivity of sentiment to any signal from Trump or the White House. Six-month Brent futures are pricing approximately $80 per barrel, roughly 10% above pre-conflict levels — meaningful, but not yet the sustained $110-plus scenario that historical analysis suggests is necessary to generate a full macro regime shift. The Strait of Hormuz remains effectively at a near-standstill, with at least twelve vessel clusters identified near the waterway, indicating elevated electronic interference and GPS jamming consistent with active military operations. Oxford Economics data show trade through the strait has dried up materially. Deepening Middle East production cuts are estimated to have removed approximately 6% of global supply. Qatar's LNG export facility, the world's largest, has suffered a war-related outage, tightening global gas markets and leaving some Asian buyers struggling to source prompt cargoes. G-7 energy ministers are meeting virtually on Tuesday to coordinate responses. Finance ministers have stated readiness to release strategic petroleum reserves, though that threshold has not yet been reached. French President Macron is separately pursuing a joint maritime escort mission for container vessels once initial hostilities subside. Russia's posture adds complexity: President Putin has instructed domestic energy companies to exploit elevated prices to pay down debt, and Moscow is reportedly considering ending most gas sales to the EU, while also holding what the Kremlin described as constructive discussions with Trump on both Iran and Ukraine. The broader macro framework for assessing duration and damage is reasonably clear among analysts: Societe Generale and Deutsche Bank both identify the shock's persistence and central bank reaction functions — particularly the Fed's — as the two decisive variables. A hawkish Fed pivot in response to oil-driven inflation, layered on an already softening US labor market and strained credit conditions, would constitute a materially more adverse outcome than current market pricing implies. That question is unlikely to be resolved before next week's FOMC meeting.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

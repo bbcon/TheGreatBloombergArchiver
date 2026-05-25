@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, March 27, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, March 27, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets remained under pressure as S&P 500 futures extended their losing streak into a fifth consecutive week, the longest such run since 2022, reflecting the compound strains of Middle East-driven inflation anxiety, a weakening labor market, and fiscal uncertainty. The index would need to fall an additional 7.7% to reach the 50% Fibonacci retracement level from April's low, a level technical analysts are watching closely. On the monetary policy front, three Federal Reserve officials expressed growing concern over the economic outlook, with at least one policymaker explicitly characterizing the oil price spike as elevating inflation risks above labor market deterioration in the hierarchy of concerns. That framing matters: it signals the Fed may be moving toward a posture where easing is harder to justify even as growth softens — a stagflationary bind the institution has limited tools to resolve cleanly. Weekly jobless claims fell to their lowest level in nearly two years, offering a modest counterweight, though February's 92,000 decline in nonfarm payrolls remains an overhang. The housing market is exhibiting visible stress heading into the spring selling season. Thirty-year fixed mortgage rates have climbed back to 6.4%, a six-month high, reversing the sub-6% readings seen as recently as late February. KB Home lowered full-year guidance, citing the conflict as a contributing factor, and industry contacts described conditions at a JPMorgan homebuilder conference as "fragile." The deterioration reflects both the mechanical channel — Treasury yields rising on inflation repricing — and the confidence channel, as households facing rising energy costs and equity portfolio losses pull back. On the fiscal front, the Senate passed legislation to fund most of the Department of Homeland Security, advancing a resolution to the partial government shutdown that has produced some of the worst airport congestion in recent memory. The bill must still clear the House and receive presidential signature, leaving the outcome uncertain. Trump separately indicated he would issue an executive order to pay TSA officers, though the legal authority to circumvent congressional appropriations remains questionable.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's economic and geopolitical positioning was the dominant theme across Asia this week. The White House confirmed a Trump-Xi summit for May 14-15 in Beijing, providing the clearest diplomatic signal yet that the US sees the Iran conflict winding down — though this outcome remains far from assured. Beijing, characteristically, has not confirmed the dates, preserving flexibility should conditions shift. China simultaneously launched retaliatory trade investigations into US supply chain and renewable energy practices, staking out negotiating leverage ahead of the summit rather than signaling a détente. The economic read on China is mixed. Container throughput at Chinese ports remained firm in the first three weeks of March, up over 6% year-on-year, suggesting trade disruption from the war has not yet materialized at scale. However, ground-level conditions in export hubs like Yiwu are deteriorating, with manufacturers facing rising input costs for oil-linked materials and Middle Eastern buyers pulling back on orders over shipping uncertainty. A factory manager in Jiangsu described the environment as the most difficult in over a decade, and the risk of demand-driven overcapacity translating into domestic price wars appears real if the conflict persists. The energy dislocation is reshaping asset prices regionally. BYD's Hong Kong-listed shares gained 12% in March, on track for their best month in over a year, as surging fuel prices drive consumers toward electric vehicles across Southeast Asia. Queues at EV dealerships in the Philippines and Indonesia have been reported. Japan, however, faces a more complex dynamic: rising oil prices combined with yen weakness are stoking stagflation concerns, prompting the Finance Minister to flag potential currency intervention. Japanese super-long bond yields also rose amid the uncertainty. In the Philippines, President Marcos is reportedly considering setting aside South China Sea territorial disputes with Beijing to explore cooperative oil exploration — a striking illustration of how energy stress is reshaping regional geopolitical alignments.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Europe is absorbing the Iran war's economic consequences at a moment of pre-existing fragility. The bloc had only recently begun shaking off the growth drag of the Ukraine conflict, and energy-driven inflation now threatens to reinstate the stagflationary pressure that defined 2022-23. European economies are revising output expectations downward while simultaneously bracing for a renewed inflationary impulse, a combination that complicates ECB policy sequencing significantly. UK retail sales declined for the first time in three months, with consumers pulling back even ahead of the more recent escalation in oil prices. In London, the housing crisis deepened. Ground broken on residential homes fell to just 5,547 units last year — down more than 75% from a decade earlier and the lowest in at least fifteen years — while London's population has grown by over half a million in the same period. The collapse of a contractor in Ealing has left over 100 affordable homes unbuilt, illustrative of a broader pattern of cancellations and indefinitely paused projects. The supply-demand gap appears set to widen further. On the corporate side, Pernod Ricard is in preliminary discussions to acquire Brown-Forman, owner of Jack Daniel's, with Brown-Forman's Class B shares rising as much as 21% on the news while Pernod fell 5.7% in Paris. The potential deal reflects consolidation pressure across the global spirits industry amid a downturn in demand. The UK's flood insurance program came under scrutiny for channeling subsidies from lower-income northern households to wealthy southern property owners through a structurally flawed council tax calculation dating to 1991 — a distributional distortion the program's own CEO acknowledges cannot be corrected independently. UK Prime Minister Starmer signaled publicly that he will not be pressured by Trump, as the Iran war continues to strain the bilateral relationship. Trump's criticism of NATO's refusal to support US military operations — warning he would "remember" the alliance's response — adds a further layer of institutional tension across the Atlantic.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The Iran war remained the organizing fact of global markets this week. Trump extended his pause on strikes against Iranian energy infrastructure by ten days, to April 6, citing progress in negotiations — though the talks appear to lack clarity on interlocutors, given the deaths of multiple senior Iranian government and military officials. Iran and Israel exchanged missile fire, and Tehran targeted several Gulf states, underscoring that the conflict retains significant escalation potential despite the diplomatic pause. Brent crude traded at $110 per barrel, and Macquarie warned of a path to $200 if the Strait of Hormuz remains closed through June — a scenario that would represent a supply shock with no modern precedent. The dollar's behavior has confounded pre-war consensus. The Bloomberg Dollar Spot Index is on track for its largest monthly gain since July, an approximately 2% advance that reflects haven demand and the repricing of Fed easing expectations. The move complicates the global inflation picture: a stronger dollar raises the local-currency cost of oil and food for importing nations, compounding the energy price shock. JPMorgan strategists have turned bullish on the dollar for the first time in a year; speculative positioning has flipped from the most net-short in five years to net-long. Gold markets face a structural challenge. Turkey has sold approximately $8 billion — around 60 tons — of gold reserves this month to defend its currency and meet dollar demands, a pace of selling larger than concurrent ETF outflows. Should other energy-importing central banks follow suit, the narrative of central banks as consistent net buyers of gold, which has underpinned the metal's more-than-doubling since 2022, would face meaningful revision. Gold has already fallen roughly 18% from its peak above $5,000 per ounce. Reports that Iran is permitting Hormuz passage for vessels paying oil in yuan has prompted Deutsche Bank to flag the conflict as a potential "catalyst for erosion in petrodollar dominance." The geopolitical and monetary ramifications of that scenario, while uncertain in magnitude, are significant and warrant continued monitoring.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

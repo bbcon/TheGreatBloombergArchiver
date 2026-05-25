@@ -1,0 +1,298 @@
+Subject: Batteries are driving the gas revolution
+Date: Fri, 24 Apr 2026 11:09:58 +0000
+
+Batteries and Natural Gas Become Unlikely Companions
+An unlikely pairing gains steam ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-04-24/data-centers-turn-to-batteries-and-natural-gas-for-power>
+ <https://www.bloomberg.com/green>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17840396&m=11b724c487f61753eb1a7a4a5f3ef261&p=04242026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17840396&m=11b724c487f61753eb1a7a4a5f3ef261&p=04242026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Renewables and batteries go hand in hand. But for US data center operators, 
+batteries are increasingly a tool to pair with natural gas.
+
+Today’s newsletter looks at how energy storage is being used to deploy more 
+fossil fuel 
+<https://www.bloomberg.com/news/articles/2026-04-24/data-centers-pair-batteries-and-natural-gas-to-get-power-faster?cmpid=BBD042426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ in service of the AI boom. Plus, China’slocal officials are under pressure 
+<https://www.bloomberg.com/news/articles/2026-04-24/fail-on-climate-action-and-miss-out-on-promotion-china-warns-officials?cmpid=BBD042426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ to make sure the country meets its climate goals.
+
+Someone forward you this email? You can subscribe to the Green Daily 
+<https://wolf.cm.bloomberg.com/wolf/article/1285824> for free news about the 
+twists and turns of the energy transition.
+
+Charging with gas
+
+By Mark Chediak 
+<https://origin.www.bloomberg.com/authors/APj9IOx5Yhk/mark-chediak> and 
+Michelle Ma <https://origin.www.bloomberg.com/authors/AWTYlfwjEUk/michelle-ma>
+
+The scramble to find enough power for artificial intelligence has data center 
+operators looking for any solution. An unexpected one taking root pairs 
+batteries — long seen as a key to adding more renewables — with fossil fuels.
+
+BloombergNEF has tracked 4.9 gigawatts of energy storage announcements 
+<https://www.bloomberg.com/news/articles/2026-04-24/data-centers-pair-batteries-and-natural-gas-to-get-power-faster?cmpid=BBD042426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ that are co-located with on-site fossil fuel generation at data centers. 
+That’s about 32% of announced global on-site data center battery capacity.
+
+The sites include some of the largest AI data center complexes under 
+development, such as Elon Musk’s Colossus supercomputer in Memphis, Tennessee, 
+and the combo has become so popular that companies such as Caterpillar Inc. and 
+GE Vernova Inc. have announced products or partnerships pairing energy storage 
+with gas generation.
+
+Batteries are a linchpin for unlocking solar and wind energy’s full potential 
+by soaking up excess green energy and then discharging it when the wind isn’t 
+blowing or the sun isn’t shining. However, the steep drop in battery costs is 
+now allowing energy-storage technology to be deployed in conjunction with 
+natural gas to provide more reliable power for data centers.
+
+While gas can provide round-the-clock power, not all plants work 24/7. For 
+many behind-the-meter facilities, data centers are choosing gas turbines that 
+run for shorter periods and don’t ramp up quickly enough to meet computing 
+needs. That has hyperscalers turning to batteries, which can rapidly discharge 
+power, to fill these gaps. The batteries also help prevent damage to gas 
+turbines that aren’t designed to be used for frequent ramping cycles.
+
+“I assumed batteries would be a tool for decarbonization,” said Michael 
+Thomas, founder of clean energy research firm Cleanview who hasalso been 
+tracking <https://cleanview.co/content/power-strategies-report> the rise of 
+energy storage paired with gas. “What we are learning in this new AI era is 
+that they can also be used as a tool for fossil fuel power because their 
+technological advantages make it possible to build and operate an off-grid 
+power plant.”
+
+While data centers now face an average of four years to get power from the 
+grid, they are turning to gas generators paired with energy storage as a bridge 
+source of energy, said Allison Weis, Wood Mackenzie’s global head of energy 
+storage. As long interconnection queues delay requests for utility-connected 
+power, data center developers are finding it faster to bring their own 
+generation.
+Gas turbines at an xAI data center in Memphis.Photographer: Brandon Dill/The 
+Washington Post/Getty Images
+Data centers also have sharp demand spikes driven by computing-intensive 
+tasks, such as training models. Batteries paired with gas can help provide 
+power rapidly enough to ensure smooth operations.
+
+Some of the largest US data center projects are deploying batteries alongside 
+gas generators. At xAI’s Colossus facility, rows of Tesla Inc. Megapacks are 
+being installed next to gas turbines as part of a 1.2 gigawatt off-grid power 
+plant that will supply the massive data center. In West Texas, Pacifico 
+Energy’s GW Ranch off-grid data center will have 1.8 gigawatts of battery 
+storage installed next to 7.65 gigawatts of gas-fired power generation.
+
+Williams Cos., a natural gas pipeline operator, plans to install Tesla 
+batteries along with natural gas-fueled power plants its building for several 
+data center projects. “Batteries really help support the turbines and give us 
+the 99.999% reliability,” said Executive Vice President Rob Wingo at the S&P 
+Global Power Markets Conference in Las Vegas last week.
+
+Fluence Energy Inc., a global energy storage provider, is in talks with large 
+natural gas companies to supply batteries that can help get data centers up and 
+running before turbines arrive, said Chief Customer Officer Jeff Monday.
+
+“We are seeing massive demand coming out of the hyperscalers and data center 
+operators,” Monday said, noting that projects pairing batteries with gas 
+generation are part of the fastest-growing part of the company’s energy storage 
+pipeline.
+
+Coupling batteries with natural gas also promises to extend the life and 
+usefulness of fossil fuel plants. That is setting batteries up for a dual role 
+as an enabler to putting more green energy on the grid and delaying the 
+phase-out of fossil fuels.
+
+“There is nothing about batteries that are inherently clean,” said Thomas. 
+“Batteries are just a technology.”
+Read more 
+<https://www.bloomberg.com/news/articles/2026-04-24/data-centers-pair-batteries-and-natural-gas-to-get-power-faster?cmpid=BBD042426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17840396&m=11b724c487f61753eb1a7a4a5f3ef261&p=04242026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17840396&m=11b724c487f61753eb1a7a4a5f3ef261&p=04242026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Cost cuts
+
+75%
+
+How much the price of batteries fell 
+<https://www.bloomberg.com/news/features/2026-04-19/cheap-batteries-are-taking-over-the-world-s-power-grids?cmpid=BBD042426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ from 2018 to 2025.
+
+People power
+
+“Solar is a very good example of how private citizens themselves found a 
+solution 
+<https://www.bloomberg.com/news/features/2026-03-26/war-oil-price-shock-sparks-new-interest-in-green-tech-around-the-world?cmpid=BBD042426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ for high energy prices.”
+
+Syed Raza Mohsin
+
+Founder, VLEKTRA Electric Motorcycles
+
+Mohsin, who sells electric motorcycles in Pakistan, expects battery-powered 
+two-wheelers to account for 10% to 15% of the market in 2026, up from less than 
+1% two years ago.
+
+China’s climate push
+
+By Lili Pike <https://www.bloomberg.com/authors/AXt16hTqABg/lili-pike>
+
+China will begin a major campaign aimed at accelerating climate action by 
+local authorities, warning regional officials thatthey will be held accountable 
+<https://www.bloomberg.com/news/articles/2026-04-24/fail-on-climate-action-and-miss-out-on-promotion-china-warns-officials?cmpid=BBD042426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ for failing to make progress toward President Xi Jinping’s green targets.
+
+Starting this year, provinces will be graded on efforts to ensure China’s 
+carbon dioxide emissions peak before 2030, and on objectives to lift clean 
+energy consumption and to limit the use of coal and oil, according to an 
+official document published Thursday by the Xinhua News Agency.
+
+Authorities ranked as making unsatisfactory progress during annual assessments 
+will have 30 working days to set out remedies and could be subject to 
+disciplinary processes if issues aren’t rectified, according to the notice by 
+the State Council and the central committee of the Chinese Communist Party. 
+Individual officials also face potential punishments or rewards dependent on a 
+region’s success.
+
+Clean energy companies in China advanced following the release of the new 
+rules. Huadian Energy Co. jumped as much as 10% in Friday trading, while Jinko 
+Power Technology Co. rose as much as 9.6%.
+
+Officials in China, the world’s top polluter, have recently stressed the 
+importance of meeting Xi’s goals to peak emissions this decade and to hit net 
+zero by 2060, emphasizing potential benefits from modernizing the country’s 
+heavy industry and further improving energy security. Though recent medium-term 
+climate plans have underwhelmed global advocates of faster decarbonization, Xi 
+in September pledged the nation would be “striving to do better” than those 
+targets.
+
+Putting pressure on local-level officials to deliver national policy goals is 
+a familiar strategy for China’s government, with those leaders often evaluated 
+in the past on their region’s contribution to economic growth, air quality 
+improvements or poverty alleviation.
+
+The results of the evaluation will serve “as an important reference for the 
+comprehensive assessment, selection and promotion, supervision and management” 
+of provincial leaders and relevant leading cadres, the notice said. Outstanding 
+performers may be rewarded.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-04-24/fail-on-climate-action-and-miss-out-on-promotion-china-warns-officials?cmpid=BBD042426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260424>
+This week’s Zero
+
+
+Zero
+
+London Mayor Khan on 10 Years of Wins and Losses
+ 
+<https://www.bloomberg.com/news/audio/2026-04-22/zero-london-mayor-khan-on-10-years-of-wins-and-loses-podcast>
+Sadiq Khan is about to complete 10 years as London’s mayor. He’s seen the city 
+affected by Brexit, the pandemic and two energy crises. That hasn’t deterred 
+him from deploying some of the strongest air-quality regulations in any city. 
+But he hasn’t yet succeeded in getting enough homes built and struggled to keep 
+improving the train network. As cities keep growing, Khan talks to Akshat Rathi 
+about lessons from London’s successes and failures. As a prominent member of 
+the UK’s Labour Party, Khan also shares his thoughts about the future of the 
+party. The interview was recorded on April 16.
+
+Listen now, and subscribe on Apple 
+<https://podcasts.apple.com/us/podcast/zero/id1621556928>, Spotify 
+<https://open.spotify.com/show/5rHwnJEjFRnivIdpWwnZyZ?si=985034d7e76a47a0> or 
+YouTube 
+<https://www.youtube.com/playlist?list=PLe4PRejZgr0MtnA98Xp8igGT9S3Na_zDD> to 
+get new episodes of Zero every Thursday.
+
+More from Green
+
+Green
+
+Apple, Amazon Push Back on Stricter Emissions Reporting Rules
+
+The tech giants and dozens more companies are resisting changes proposed by 
+the Greenhouse Gas Protocol, a global standard-setter.
+ 
+<https://www.bloomberg.com/news/articles/2026-04-23/apple-amazon-push-back-on-stricter-emissions-reporting-rules>
+Green
+
+World Bank Teams Up With Amazon for a $120 Million Bacon Tree Bond
+
+The World Bank has teamed up with Amazon.com Inc. on a bond whose proceeds 
+will go toward rehabilitating ecosystems in South Africa’s Eastern Cape 
+Province.
+ 
+<https://www.bloomberg.com/news/articles/2026-04-23/world-bank-teams-up-with-amazon-for-a-120-million-bacon-tree-bond>
+Markets
+
+Seraya Said to Mull Sale of Offshore Wind Vessel Operator Cyan
+
+Seraya Partners is considering selling Cyan Renewables Pte, an operator of 
+vessels that serve the offshore wind industry, according to people familiar 
+with the matter.
+ 
+<https://www.bloomberg.com/news/articles/2026-04-24/seraya-said-to-mull-sale-of-offshore-wind-vessel-operator-cyan>
+Industries
+
+Australia’s Multi-Billion Dollar Undersea Power Cable Given Environmental Nod
+
+Australia has given environmental approval to a multibillion -dollar undersea 
+power cable project, linking the mainland to renewable power generated on the 
+island state of Tasmania.
+ 
+<https://www.bloomberg.com/news/articles/2026-04-24/marinus-link-australia-s-undersea-power-cable-given-environmental-nod>
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/PKs8JEyWg0Ol5jHDeJ3oxnwkj945GqHLg2CoIWSX8iXZ7mW2wFP-jDQPI-e29K_8wINc8XwTYbxOh1Rp1AroLQLxXiZiPU_9sycRFHYFhmgaoKUFUEZ6mMjsbGUvgs4OV9xN6LcDoP5tm_24-X3xZOfR5vVcx36bbF8cmb_bIWfQh7D4iAyPeDfGnZfn7bUQJtFF0E2rDKh2RhhH5zFG4BnnzS75pUQsDCi97Bqr6YkdqQj0wlQjlhO1-lYPQ2CAtoAE3MFXjyDJa1ODhMSSuo8JE2ullwmV68gIRPHKd9B09hCcQlq7eXjynhWoYnrYLTh4o884vUtJakLvnHvyh0gHipq8yA8i/HPyiphJPR9GdfX9JU9Yw3iur2vDzPPwe/20>

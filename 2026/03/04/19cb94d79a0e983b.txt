@@ -1,0 +1,307 @@
+Subject: New risk of stranded renewables
+Date: Wed, 04 Mar 2026 14:43:07 +0000
+
+Why Barclays Is Warning of Stranded Renewable Energy Assets
+Grid bottlenecks could create zombie renewables installations
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-03-04/barclays-stranded-asset-warning-bottlenecks-threaten-renewables-growth>
+ <https://www.bloomberg.com/green>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17139609&m=11b724c487f61753eb1a7a4a5f3ef261&p=03042026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=17139609&m=11b724c487f61753eb1a7a4a5f3ef261&p=03042026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Companies trying to connect renewables to the grid are already facing 
+bottlenecks. But if the problem persists, there’s an increasing risk that some 
+clean power projects could become obsolete. That’s thewarning from Barclays 
+bankers 
+<https://www.bloomberg.com/news/articles/2026-03-04/barclays-bankers-warn-distressed-valuations-can-hit-clean-energy?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ in today’s newsletter.
+
+Plus, why rising energy prices tied to the war in Iran could create a global 
+inflation shock 
+<https://www.bloomberg.com/news/features/2026-03-03/iran-war-oil-price-surge-put-global-economic-recovery-at-risk?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+, according to modeling by Bloomberg Economics, and a warning from Singapore 
+that war can heighten climate change impacts.Subscribe to Bloomberg News 
+<https://www.bloomberg.com/subscriptions> to get the latest on how the Middle 
+East conflict is impacting energy markets.
+
+The next stranded assets?
+
+By Alastair Marsh <https://bloomberg.com/authors/AQvVwWuhxcQ/alastair-marsh>
+
+In an age dominated by war, inflation and AI, investors may be underestimating 
+the risks now associated withrenewable energy assets 
+<https://www.bloomberg.com/news/articles/2026-03-04/barclays-bankers-warn-distressed-valuations-can-hit-clean-energy?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+.
+
+That’s according to a group of bankers at Barclays, who just published a paper 
+laying out their views on the future of the clean energy transition.
+
+“The classic stranded-asset story focused on fossil fuels, but what we are now 
+seeing is stranded-like outcomes also emerging for renewables,” Daniel Hanna, 
+group head of sustainable and transition finance and a contributing author to 
+the paper, said in an interview.
+
+He says risks are now arising for renewables where “systems integration 
+fails.” And if clean energy can’t connect to the grid, it starts to risk 
+obsolescence.
+ 
+<https://www.bloomberg.com/news/articles/2026-03-04/barclays-bankers-warn-distressed-valuations-can-hit-clean-energy>
+Despite record investments in renewable energy, Barclays notes that global 
+fossil-fuel consumption has never been higher. And with an escalating military 
+conflict in the Middle East, the price of oil and gas is once again soaring. 
+The development highlights that having secure and affordable access to energy 
+continues to be a bigger priority globally than reducing emissions.
+
+Valuations will therefore depend on how efficiently an energy source can feed 
+into distribution systems, according to the Barclayspaper 
+<https://home.barclays/content/dam/home-barclays/documents/news/Insights/Barclays%20Transition%20Realism%20White%20Paper%20February%202026.pdf>
+, whose main author wasNiall Mac Dowell <https://profiles.imperial.ac.uk/niall>
+, the bank’s head of climate technology and a professor of energy systems at 
+Imperial University.
+
+The observation shouldn’t be seen as a critique of renewables, but as a 
+reflection of what happens when energy generation of any type moves fast and 
+“the grid doesn’t keep up,” said Hanna.
+ 
+<https://www.bloomberg.com/news/articles/2026-03-04/barclays-bankers-warn-distressed-valuations-can-hit-clean-energy>
+A customer tries to use his mobile phone during a power outage in Spain
+Photographer: Brais Lorenzo/Bloomberg
+Renewables are regularly hampered by long queues 
+<https://www.bloomberg.com/news/articles/2026-02-11/hundreds-of-uk-clean-power-projects-face-fresh-grid-delays?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ to connect to the grid, and by a system in which grid operators often have to
+pay 
+<https://www.bloomberg.com/news/articles/2025-01-07/uk-set-to-spend-1-8-billion-as-wind-power-chokes-grid?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ wind farms toshut down 
+<https://www.bloomberg.com/graphics/2024-uk-wind-farms-overstate-output/?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ when excess power is generated. Barclays says such a dynamic opens the door to 
+“a new class of distressed energy transition opportunities in under-connected 
+renewables.”
+
+It’s a development that’s been percolating for a while now.
+
+While solar and wind will “undoubtedly” be the stars of the energy transition 
+in the long run, new renewables capacity isuseless without the infrastructure 
+<https://about.bnef.com/insights/clean-energy/a-power-grid-long-enough-to-reach-the-sun-is-key-to-the-climate-fight/>
+ to transport that clean electricity from where it’s produced to the end user, 
+BloombergNEF noted as far back as 2023. In December last year, BNEFsaid 
+<bbg://news/stories/T6LHM7KIP3IZ> grids remain a bottleneck with queues for new 
+demand “lengthening rapidly” across the US and Europe.
+ 
+<https://www.bloomberg.com/news/articles/2026-03-04/barclays-bankers-warn-distressed-valuations-can-hit-clean-energy>
+Solar panels near electrical transformers in PolandPhotographer: Damian 
+Lemanski/Bloomberg
+In its 2025 renewables report 
+<https://iea.blob.core.windows.net/assets/76ad6eac-2aa6-4c55-9a55-b8dc0dba9f9e/Renewables2025.pdf>
+, the International Energy Agency noted that issues with distribution, 
+transmission and interconnection capacity have curtailed the pace at which new 
+renewable power plants can be connected to the grid, threatening project 
+delays, higher costs and reduced auction participation.
+
+For investors, these risks can be translated into opportunities to generate 
+market-beating returns, according to the Barclays report.
+
+“Where you are able to identify these bottlenecks and provide mechanisms to 
+ease them, that will then create alpha,” said Hanna, who noted the report 
+doesn’t reflect the bank’s house view but that of the authors.
+
+Read the full story 
+<https://www.bloomberg.com/news/articles/2026-03-04/barclays-bankers-warn-distressed-valuations-can-hit-clean-energy?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+, including what comes next for the energy transition.
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17139609&m=11b724c487f61753eb1a7a4a5f3ef261&p=03042026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=17139609&m=11b724c487f61753eb1a7a4a5f3ef261&p=03042026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Waiting game
+
+5
+
+The number of years it takes for a large transformer to be delivered 
+<https://www.bloomberg.com/features/2025-bottlenecks-transformers/?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+. Without this crucial piece of equipment, many grid projects can’t move 
+forward.
+
+Cause and effect
+
+“Lower investment means lower economic growth 
+<https://www.bloomberg.com/news/features/2025-12-15/electricity-is-holding-back-growth-across-the-global-economy?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ in the long run.”
+
+Maeva Cousin
+
+Chief trade and climate economist, Bloomberg Economics
+
+The struggle to get power supplies hooked up to the grid is already curtailing 
+economic growth in almost all G-20 countries.
+
+Oil shock
+
+By Bloomberg Economics 
+<https://www.bloomberg.com/news/features/2026-03-03/iran-war-oil-price-surge-put-global-economic-recovery-at-risk?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+
+President Donald Trump’s war with Iran threatens to deal a severe blow to a 
+global economy 
+<https://www.bloomberg.com/news/features/2026-03-03/iran-war-oil-price-surge-put-global-economic-recovery-at-risk?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ still grappling with the impact of his historic tariff hike.
+
+For Europe, sustained higher energy prices would take the economy to the brink 
+of recession. For the US, they would place the Federal Reserve in an impossible 
+position — stuck between a war that pushes inflation higher and a president 
+demanding that interest rates come down. For China, the end of discounted 
+Iranian oil imports adds to strain from Trump’s tariffs and a real estate 
+collapse.
+
+In the first days of the fighting, the intensity is high and the endgame 
+uncertain. Bloomberg Economics has modeled scenarios for what lies ahead, and 
+what they mean for oil prices, major economies, and the future of Iran.
+
+It is, of course, possible that Washington and Tehran find an off-ramp, oil 
+settles back at its pre-escalation average of $65 a barrel, and the global 
+economy dodges a blow.
+ 
+<https://www.bloomberg.com/news/features/2026-03-03/iran-war-oil-price-surge-put-global-economic-recovery-at-risk>
+The latest signs, though, suggest there’s worse to come. Saudi Arabia’s 
+largest oil refinery 
+<https://www.bloomberg.com/news/articles/2026-03-02/saudi-arabia-s-ras-tanura-refinery-shuts-down-after-drone-attack?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ is closed. Qatar hasshuttered 
+<https://www.bloomberg.com/news/articles/2026-03-02/european-gas-rallies-more-than-30-as-qatar-halts-lng-production?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ the world’s biggest liquefied natural gas facility. The Strait of Hormuz is
+effectively paralyzed 
+<https://www.bloomberg.com/news/articles/2026-03-01/latest-oil-market-news-and-analysis-for-march-2?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+. Oil and gas prices have already rocketed higher. Stocks have taken a hit. 
+Treasury yields have risen as traders curb bets on Fed cuts.
+
+About 20% of global oil supply passes through the Strait. Drawing on academic 
+studies and the experience of past supply outages, Bloomberg Economics 
+estimates that a 1% drop in supply pushes prices up by about 4%.
+
+That suggests a prolonged closure of the Strait would raise prices by 80% from 
+pre-war levels – taking them to around $108 a barrel. In a severe scenario, 
+Bloomberg Economics assumes prices would stay that high into the fourth quarter 
+of the year.
+
+Sharply higher oil prices impact the economy through multiple channels. They 
+add to costs for consumers and businesses, reducing spending power and taking a 
+chunk out of growth. They also add to inflation, pushing up prices for 
+transport, and anything with petrochemicals as an input.
+
+Read the full story to see what inflation would look like 
+<https://www.bloomberg.com/news/features/2026-03-03/iran-war-oil-price-surge-put-global-economic-recovery-at-risk?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ in the US and elsewhere under four scenarios modeled by Bloomberg Economics.
+
+This week’s Zero
+ 
+<https://omny.fm/shows/zero/war-with-iran-is-a-nightmare-for-oil-and-gas-what-does-it-mean-for-clean-energy>
+Many consider a widespread war in the Middle East the worst-case scenario for 
+the global oil and gas markets. That war is here, and it could have 
+wide-ranging, long-lasting impacts on energy and climate policy. This week on 
+Zero, Akshat Rathi speaks with Jason Bordoff, director of the Center on Global 
+Energy Policy at Columbia University and former energy and climate advisor to 
+President Barack Obama to try to understand what those impacts could look like. 
+Will countries double down on fossil fuels or will they speed up the 
+clean-energy transition?
+
+Listen now 
+<https://bloombergdigital.slack.com/archives/CRRCDKHNG/p1772553813327679>, and 
+subscribe onApple <https://podcasts.apple.com/us/podcast/zero/id1621556928>, 
+Spotify 
+<https://open.spotify.com/show/5rHwnJEjFRnivIdpWwnZyZ?si=985034d7e76a47a0> or 
+YouTube 
+<https://www.youtube.com/playlist?list=PLe4PRejZgr0MtnA98Xp8igGT9S3Na_zDD> to 
+get new episodes of Zero every Thursday.
+
+More from Green
+ 
+<https://www.bloomberg.com/news/articles/2026-03-04/global-instability-is-fueling-climate-risks-singapore-warns>
+Grace FuPhotographer: Ton Molina/Bloomberg
+Singapore’s government and businesses must prepare to handle accelerating risks
+ 
+<https://www.bloomberg.com/news/articles/2026-03-04/global-instability-is-fueling-climate-risks-singapore-warns?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ posed by climate change, according to the country’s environment minister.
+
+Challenges to economic and geopolitical stability, including the crisis in the 
+Middle East, are clouding the world’s focus on climate protections and mean 
+there’s a more urgent need to bolster resilience, Singapore’s Minister for 
+Sustainability and the EnvironmentGrace Fu 
+<https://www.bloomberg.com/profile/person/17281576> said during a budget debate 
+<https://www.mse.gov.sg/latest-news/speech-by-minister-grace-fu-committee-of-supply-2026/>
+ in parliament.
+
+“Major emitters may backslide on their climate obligations as they grapple 
+with the global tensions on security, energy, trade and investments,” Fu said. 
+“In such uncertain times, the environment becomes an inevitable casualty, and 
+our planet will face the impacts of climate change more severely — and sooner.”
+
+To avoid larger losses and reassure investors, companies need to do more to 
+assess risks, protect workers and infrastructure, diversify suppliers and 
+insure against climate hazards. “Those who innovate and adapt will thrive in 
+the future,” Fu said during the Tuesday debate.
+
+Read the full story 
+<https://www.bloomberg.com/news/articles/2026-03-04/global-instability-is-fueling-climate-risks-singapore-warns?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ on Bloomberg.
+
+Funds with sustainable investing goals are set to become meaningful backers of 
+the defense industry 
+<https://www.bloomberg.com/news/articles/2026-03-04/morgan-stanley-sees-esg-funds-piling-fresh-billions-into-defense?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+, as geopolitical tensions and outright war redefine what it means to be an ESG 
+investor.
+
+European Union leaders will direct the bloc’s executive arm to propose 
+measures tolower power prices 
+<https://www.bloomberg.com/news/articles/2026-03-04/eu-leaders-set-to-call-for-measures-to-lower-power-prices?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ to aid local industries when they meet at a summit later this month.
+
+Pakistan’s largest gas distributor is set to cut supplies to some of its 
+industrial customers,suggesting growing strain 
+<https://www.bloomberg.com/news/articles/2026-03-04/pakistan-cuts-gas-for-some-industry-buyers-as-war-upends-supply?cmpid=BBD030426_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260304>
+ in one of the economies most dependent on energy exports from Qatar.
+
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Hyperdrive 
+<https://www.bloomberg.com/account/newsletters/hyperdrive?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for expert insight into the future of cars
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+.
+
+
+
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/YW_1_ff67iocHzledrOxdXOlHFK-kNLski6EcVaS6PH4kmmLQ7NNb1yl9V54rQR_DkKdpeauClcbKJjOzOeQ3uUdiabUf11xYo6-fNj95O4Aj8GA8Y58mxUaNqOpwWh4KOyYWQEJiEeOTv4o55-eJ2HIl848RftRLk_hTETjRLbyguR4e0NjjXaiRnfKg-IoAi9_bZVGHgUd3UwwdsZ9Di7Sj9M4rgngJpm9YgKc6UJcFJvFGLPoY5XKM-o6qZIc3jOMhXRyPHvYIWLujmLji5WGD-iAEHVmEUon4z2VIEYXtbVTW2i2NrZq9QsErrIIV42oq3CayiZCS3NdZ4MWTMouCu7i100Y/pYPPS89UZpg43Gt-yS308SkLAGvkCkx3/18>

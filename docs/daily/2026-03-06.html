@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, March 06, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, March 06, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">Financial markets entered the week's final session under pressure from a confluence of geopolitical and monetary policy concerns. S&P 500 futures traded 0.44% lower as of early Friday, with WTI crude at $84.46 — up over 4% on the day — deepening concerns about the inflationary trajectory. The setup is politically awkward for the Trump administration: prior to the Iran conflict, the president appeared to be achieving his stated market preferences of lower oil, lower yields, and a weaker dollar. All three have now reversed. The dollar has reclaimed safe-haven status, Treasury yields edged higher to 4.163% on the 10-year, and gasoline pump prices reached their highest level under Trump's presidency at $3.32 per gallon. The Federal Reserve faces a familiar dilemma. With Jerome Powell at the helm, the institution's institutional instinct appears to be patience — the same posture it adopted during the tariff-driven inflation episode last year. Bloomberg Economics' Anna Wong argues the oil shock will create an "asymmetric easing bias": near-term headline inflation rises, but consumer spending on non-energy goods contracts, ultimately pushing unemployment higher. For now, hawkish voices appear to be prevailing within the FOMC. The monthly US jobs report released Friday provided an additional data point for policymakers to assess, with a stronger reading potentially further deferring rate cut expectations. On the fiscal side, the Supreme Court's invalidation of Trump's IEEPA-based tariffs continues to reverberate. The Committee for a Responsible Federal Budget estimates the ruling reduces government revenue by $1.7 trillion through 2036. The administration's replacement 10% levy would recoup approximately $925 billion, leaving a meaningful gap even if escalated to 15%. Federal debt accumulation continues on any modeled trajectory. On the corporate side, Marvell Technology surged 12% in premarket trading on accelerating data center demand, while Gap fell 6% on a disappointing Old Navy performance. Trump also dismissed Homeland Security Secretary Kristi Noem, naming Oklahoma Senator Markwayne Mullin as her replacement, raising questions about FEMA's leadership continuity ahead of the spring disaster season.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's annual National People's Congress dominated regional attention this week, with Premier Li Qiang delivering a government work report that set the growth target at its lowest level since 1991. While the headline figure signals diminished ambition, Chinese officials framed the target as more credible and achievable than prior years, reflecting a deliberate pivot toward "quality" growth and deflation elimination — officials made their strongest commitment yet to ending deflationary conditions in 2026. Defense spending rose 7%, the slowest pace since 2022. The work report's characterization of US-China trade relations was notably upbeat, suggesting Beijing's leadership enters the upcoming Trump visit in Beijing with confidence in their negotiating position. Preparatory meetings between He Lifeng, Scott Bessent, and Jamieson Greer are expected in Paris next week, with potential deliverables including Boeing aircraft purchases, soybean commitments, and the fentanyl tariff framework. The Iran conflict's regional spillover is generating significant stress in Asian markets. Global funds sold a net $11 billion of emerging Asian equities excluding China this week — the largest outflow since March 2022 — with Taiwan absorbing $7.9 billion in withdrawals, South Korea $1.6 billion, and India approximately $1.3 billion. The US Treasury's temporary waiver allowing Indian refiners to resume Russian oil purchases provided some relief to New Delhi, though it simultaneously highlighted India's strategic exposure: a US submarine sank the Iranian frigate IRIS Dena off Sri Lanka after it had participated in an Indian Navy-hosted exercise, placing Modi in a diplomatically untenable position between Washington and Tehran. On China-Taiwan dynamics, Beijing has not dispatched military aircraft near Taiwan for seven consecutive days — the longest such absence since Taiwan began regular disclosure of PLA activity — a development whose significance remains unclear. Meanwhile, three Filipino nationals were detained for allegedly leaking sensitive South China Sea operational data to Beijing, heightening regional security concerns. The Bank of Japan remains on a rate-hiking path, with a former official placing April move odds at 50/50, even as the Iran conflict injects additional uncertainty into the global outlook.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European markets remained under mild pressure, with the Stoxx Europe 600 declining 0.28% amid the broader risk-off tone generated by the continuing Iran conflict. The most consequential regional development lies not in equities but in monetary policy signaling: the European Central Bank's policy trajectory appears to be shifting, with traders now fully pricing in a 2026 rate hike as the oil price surge fans inflation concerns. Bundesbank President Joachim Nagel was unambiguous on Thursday, stating that the inflation impact of the Iran war currently outweighs the growth drag — a view that, if shared by the broader Governing Council, would represent a meaningful pivot from the easing posture of recent quarters. Euro-area fourth-quarter GDP was simultaneously revised lower than initially reported, with trade weighing on output, creating a stagflationary tension that policymakers will need to navigate carefully. Germany provided a rare constructive energy datapoint: unusually strong solar generation in March, with installations feeding over 40 gigawatts into the grid for five consecutive days, has helped cap domestic electricity prices even as global energy markets surge. The episode illustrates the buffering capacity of domestic renewable generation during external supply shocks — a dynamic likely to reinforce policy arguments for accelerated energy transition investment across the continent. Bloomberg Opinion's Marcus Ashworth separately argued this environment represents an opportune moment for the EU to pursue joint bond issuance. The UK confronted a longer-term structural concern: London's child population is declining at the fastest pace in Britain, with the under-10 cohort falling by 99,100 between 2013 and 2023 even as total population rose by 506,000. The capital's fertility rate has dropped below 1.2 births per woman, well below the England and Wales average of 1.41. The demographic implications for school infrastructure, public services, and long-run fiscal capacity are material. Spain also emerged as a flashpoint in the Iran war's diplomatic fallout, with the Trump administration threatening to cut off LNG exports to Madrid after Spain denied access to military bases — a threat that, if executed, would expose Spain to higher marginal gas procurement costs.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The US-Israel military campaign against Iran entered its seventh day with no evident de-escalation, reshaping energy markets, financial flows, and geopolitical alignments simultaneously. Iranian missiles and drones struck at least five countries across the Gulf region, including Saudi Arabia, Kuwait, and Bahrain, while Israeli airstrikes continued on Tehran. The Strait of Hormuz has effectively ceased functioning as an oil transit corridor — only two commercial vessel transits were recorded in the preceding 24-hour period and no oil shipments passed through at all. Goldman Sachs flagged the plausibility of Brent crossing $100 per barrel if low flows persist for another five weeks; Brent has already rallied approximately 18% on the week, with US diesel futures on track for a weekly gain exceeding 40%. The Trump administration has ruled out deploying Treasury to trade oil futures to suppress prices, at least for now, while the temporary waiver on Indian purchases of Russian crude represents a tactical release valve that simultaneously benefits Moscow's war finances at a moment when sanctions were beginning to bite meaningfully. The conflict is forcing central banks globally to confront another supply-side inflation shock in what has become a structurally shock-prone decade — Covid, the Russia-Ukraine war, mercantilist trade disruptions, and now a Middle East regional war have each required difficult monetary policy judgments under uncertainty. The IMF's Kristalina Georgieva warned that a sustained 10% increase in energy prices would push global inflation up 40 basis points and shave 0.1-0.2% from growth. Traditional safe-haven assets have behaved anomalously: gold has declined and is trading at a steep discount in Dubai, while Treasuries have also sold off, leaving the dollar as the primary haven vehicle. Geopolitically, Russia has emerged as the clearest early beneficiary of the conflict. India's return to Russian crude purchasing — with buyers paying premiums for stranded cargoes — replenishes the Kremlin's revenue stream at a critical juncture. The UAE and Gulf financial hubs face reputational and operational pressure as their image as stable commercial anchors is tested. Meanwhile, a new scientific study published in Geophysical Research Letters provides the first statistically significant evidence of an acceleration in global warming, with the planet warming at approximately 0.35°C per decade since 2015, nearly double the average rate between 1970 and 2015 — a finding that adds long-term structural urgency to energy transition debates even as immediate policy attention is consumed by the conflict.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

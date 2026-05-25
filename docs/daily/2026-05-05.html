@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, May 05, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, May 05, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets remain remarkably resilient in the face of a deteriorating geopolitical backdrop. S&P 500 futures edged higher by roughly 0.3%, with the index holding near record highs despite the renewed Iran-related tensions that sent bond yields climbing on fresh inflation concerns. The durability of that performance owes much to the ongoing AI capital expenditure cycle: first-quarter earnings from the Magnificent Seven — with Nvidia still to report — have been broadly robust, with AI-driven investment in information-processing equipment rising 64% in real terms and software spending up 46% in Q1. All other capex declined 17%, underscoring that the AI trade remains the dominant force in US business investment. Corporate buybacks are providing a structural floor. S&P 500 companies announced $665 billion in authorized repurchases in the first four months of the year, the highest pace on record to start any year, with full-year authorized repurchases projected at $1.55 trillion — potentially eclipsing last year's record. The buyback surge partially offsets a notable compression in shareholder returns via dividends and free cash flow, as hyperscalers redirect cash toward data-center buildouts. Wall Street projects free cash flow for the largest cloud platforms to fall more than 70% from peak by end-2026, even as earnings continue to climb — a tension that reflects accounting treatment of capex rather than underlying deterioration. On the corporate front, Amazon's launch of Amazon Supply Chain Services — packaging its freight, trucking, air, ocean, and last-mile capabilities into a single commercial offering — represents a potentially significant competitive incursion into freight markets. Shares in FedEx, UPS, and Expeditors declined on the announcement, though Bloomberg Intelligence analysts characterize the near-term threat as incremental rather than structural. Elsewhere, Palantir shares fell after disappointing US commercial revenue, Duolingo tumbled on a soft bookings outlook, and Pinterest surged after results beat expectations. The Fed left rates unchanged last week, with internal divisions over the inflation outlook deepening as two-year inflation swaps have risen above 3%.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets pulled back modestly from recent highs in thinned holiday trading, with the Hang Seng declining 0.8%, as the renewed Iran-US exchange of fire rekindled inflation concerns and prompted risk reduction across the region. The most immediate transmission mechanism is through oil-dependent currencies: the Indonesian rupiah set a new record low, the Indian rupee also touched historic lows, and the Philippine peso approached all-time weak levels as investors shed exposure to economies most vulnerable to the energy shock. Despite the macro headwinds, Indonesia delivered a notably strong first-quarter GDP print of 5.61% year-on-year — a three-year high — supported by record government spending. That pace ranks Indonesia among Asia's fastest-growing large economies, though it trails Taiwan's AI-fueled 13.7% expansion. Hong Kong's economy also expanded at its fastest pace in nearly five years in Q1. The bifurcation between AI-leveraged and oil-exposed economies is becoming a defining feature of the regional growth landscape. Japan's diplomatic posture during the holiday week merits attention. Prime Minister Takaichi conducted overseas visits to Vietnam and Australia — deepening what both sides characterize as a quasi-alliance — while Defense Minister Koizumi deployed to the Philippines to observe Japanese troops exercising there for the first time since World War II. The conspicuous absence of any substantive China engagement, set against the backdrop of a ruling-party delegation visiting Taiwan and prior statements on potential Japanese military involvement in a Taiwan Strait scenario, suggests the bilateral relationship remains under meaningful strain. A senior LDP lawmaker visited China briefly but met no officials. The Reserve Bank of Australia delivered a third consecutive rate hike in an 8-1 vote, unwinding all of last year's easing. Governor Bullock acknowledged the hardship the cycle is imposing on households but signaled the board has little alternative given pre-existing inflation pressures, a loose fiscal stance, and weak productivity. The RBA now leads developed-market peers in the hawkish response to the energy shock.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European markets showed modest resilience on Tuesday, with the Stoxx Europe 600 gaining 0.6%, though the region faces a complex macro backdrop that warrants careful monitoring. The European Commission's Dombrovskis described the continent as facing a stagflationary shock — a characterization that captures the uncomfortable combination of higher energy costs and sluggish growth, even if European electricity markets have remained calmer than oil markets might imply. ECB President Lagarde, speaking at a climate conference, reinforced the message that Europe's dependency on imported fossil fuels is "clearly unsustainable," adding institutional weight to the energy transition narrative. HSBC reported first-quarter profits that missed consensus estimates, weighed by an unexpected UK fraud-related charge and provisions related to Middle East conflict risks. Shares fell 5.9% in London. The result partially obscures a more constructive picture in wealth management and Hong Kong, and the bank upgraded its net interest income outlook. By contrast, UniCredit delivered a record quarterly profit of €3.22 billion, up 16% year-on-year and well ahead of the €2.68 billion consensus — illustrating the continued divergence in European banking fortunes. UK political dynamics are evolving in ways that may complicate the government's policy agenda. Labour's perceived failure to deliver on election commitments has revitalized Scottish nationalist sentiment, adding a domestic pressure point for Prime Minister Starmer. Meanwhile, the EU-US trade relationship remains tense: EU finance ministers reiterated that the bloc retains retaliatory tools should the US follow through on proposed 25% auto tariffs, while French officials emphasized European options against threats to strategic industries. Romanian politics added to continental uncertainty, with a no-confidence vote against Prime Minister Bolojan backed by both the far-right and the Social Democrats — a coalition that, if successful, could deepen a fiscal crisis around the EU's widest budget deficit.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The defining event of the past 24 hours is the breakdown of the month-old US-Iran ceasefire, which now appears increasingly fragile. US warships escorted American-flagged vessels through the Strait of Hormuz, prompting an exchange of fire and an Iranian missile and drone attack that caused a large fire at the UAE's Fujairah port — a facility Tehran has now explicitly designated within its "zone of maritime control." Hundreds of vessels clustered near Dubai as shipowners continued to avoid the strait. Iraq is offering substantial discounts to term buyers for crude loaded this month, but tankers would need to transit Hormuz to collect barrels, creating a commercial impasse. The oil market implications are compounding daily. With the conflict entering its tenth week, analysts estimate a cumulative supply loss now approaching or exceeding one billion barrels, with a minimum of 10 million barrels per day not reaching global markets via the strait. Brent futures for end-2026 have moved above $90 per barrel — the highest since the conflict began — while WTI spot trades above $104. Prediction markets now assign less than 50% odds to a return to normal Hormuz traffic by end of June, down from around 90% two weeks ago. Two-year inflation swaps in the US have crossed 3%, their highest since 2022. The geopolitical calculus points toward a negotiated resolution structured around something resembling the 2015 JCPOA framework, though the political costs for both sides remain high. Analysts at Macquarie characterize a return to a JCPOA-like arrangement as the only "modestly rational" outcome, while BCA Research notes that continued economic resilience — underpinned by the AI investment cycle — paradoxically reduces the pressure on either party to compromise. The Trump-Xi summit remains scheduled for May 14-15 in Beijing, with trade, Taiwan, and Iran all on the agenda. The US has also become the world's largest crude exporter by volume, shipping more than 250 million barrels in the past nine weeks to help offset the supply shortfall — though US domestic inventories are drawing down rapidly, raising questions about the sustainability of that role.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

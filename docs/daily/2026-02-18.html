@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, February 18, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, February 18, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US markets returned from the Presidents' Day holiday to a broadly quiet session, with the S&P 500 gaining 0.1% and the 10-year Treasury yield adding one basis point to sit near 4.07%. Beneath the calm surface, however, a meaningful structural rotation appears to be accelerating. Bank of America's latest global fund manager survey reveals that, for the first time in a generation, a majority of money managers are concerned about corporate overinvestment rather than underinvestment — a direct consequence of the AI capital expenditure cycle. The clearest market expression of this anxiety is the divergence between hardware and software: chipmakers have surged while software companies face growing fears that AI will commoditize their core products. Nvidia rose 1.2% in premarket trading after Meta agreed to deploy millions of its processors, while Palo Alto Networks fell 7.5% on a weaker-than-expected earnings outlook. Apple, conspicuously absent from the AI spending bonanza, saw its 40-day correlation with the Nasdaq 100 fall to around 0.2 — its lowest since 2006 — effectively functioning as a haven within the tech sector. The macro backdrop carries an internal tension worth flagging explicitly. The economy appears firm, fiscal stimulus from last year's One Big Beautiful Bill is filtering through to consumers — average tax refunds are running roughly $200 above last year's pace — and capex spending is providing an additional impulse. Yet markets are simultaneously pricing two Fed rate cuts within a year as near-certainties, with roughly 50/50 odds on a third. Fund managers surveyed by BofA now believe a "no landing" scenario — in which the economy runs hot, inflation re-accelerates, and the Fed is eventually forced into a sharp response — is more likely than either a soft or hard landing. Bond yields are broadly expected to rise, and investors appear to be positioning accordingly: rotating toward non-US equities, value stocks, and away from the Magnificent Seven. US corporate bond daily trading volume hit a record $61 billion in January, reflecting the intensity of repositioning in credit markets as well.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Japan dominated the Asia newsflow, with Tokyo announcing it will invest up to $36 billion in US oil, gas, and critical minerals projects — the first concrete tranche of the $550 billion framework agreed with the Trump administration. The most prominent component is a large natural gas facility in Ohio. The announcement arrives weeks before Prime Minister Sanae Takaichi, formally re-elected today following her strong electoral showing earlier this month, is set to visit Washington. The investment serves multiple strategic functions: it provides visible progress on the trade deal, reinforces energy security ties, and may help Tokyo navigate the tariff environment. The Japan-US trade deficit, notably, has remained largely static in nominal terms for three decades — partly because Japanese manufacturers shifted production to America, a model that Trump officials are now reportedly exploring with Chinese automakers. The Ford-China joint venture concept, in which US firms would hold controlling stakes, represents a meaningfully different structure from either the Japan precedent or existing Chinese investments elsewhere in the world such as BYD's Hungary facility, and faces material political headwinds at the state level even if Washington proves receptive. Indonesia presents a contrasting picture within the region. MSCI has placed the country's emerging-market classification under review, and FTSE Russell has followed suit, citing governance deterioration under President Prabowo Subianto. The rupiah has weakened to levels last seen nearly three decades ago, Moody's cut the credit outlook to negative, and market capitalization fell nearly $80 billion from peak levels following the abrupt dismissal of the heads of the Financial Services Authority and the Indonesian Stock Exchange. The structural concerns are layered: Prabowo's replacement of technocrats with loyalists, the appointment of a family member as Bank Indonesia deputy governor, and a flagship school lunch program costing an estimated $28 billion annually that strains an already narrow fiscal base. Central bank rate cuts — warranted by benign inflation — remain politically constrained by currency weakness, illustrating the compounding nature of the credibility erosion.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">The most consequential European development of the day was the Financial Times report that ECB President Christine Lagarde is expected to depart before her mandate expires in October 2027, with the timing calibrated around the French presidential election in April 2027. An ECB spokesperson confirmed that Lagarde "has not taken any decision regarding the end of her term," preserving optionality, but the market implications of an early transition are nonetheless worth considering. An earlier-than-scheduled departure would allow French President Macron and German Chancellor Friedrich Merz to coordinate on her successor — a politically significant dynamic given the ECB's evolving role in an environment of fiscal expansion, German rearmament, and ongoing disinflation. The identity and orientation of the next ECB president will bear directly on the pace of any further easing and on the institution's longer-term credibility framework. European equities set fresh records, with the Stoxx Europe 600 gaining 0.97% to 627.32, continuing a run that reflects a meaningful reallocation away from US assets. Fund manager positioning data from BofA shows the largest-ever overweight on the euro versus the dollar, and the shift appears driven by a combination of dollar weakness, relative valuation, and investor hedging against a potential AI-related correction in US tech. On the corporate side, Bayer agreed to pay more than $7 billion to resolve Roundup cancer litigation, a settlement that may finally close a years-long legal overhang. Carrefour fell 5% after disappointing full-year results, while Raspberry Pi surged 33% on AI agent-driven demand expectations. UK unemployment reached its highest level since the pandemic and youth unemployment rose above the EU average for the first time, adding to pressure on the Bank of England ahead of its next policy decision.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The US-Iran nuclear negotiations in Geneva concluded on a cautiously constructive note, with both sides describing the second round of talks as positive. Iran's delegation is expected to return with detailed proposals within two weeks, after which a third round would address outstanding sticking points. The White House, however, was explicit that military strikes remain on the table, with Vice President Vance noting that Iran has not yet acknowledged core US red lines. President Trump is deploying a second aircraft carrier to the region, maintaining coercive leverage even as diplomacy proceeds. The dynamic reflects a deliberate two-track strategy, though the timeline for resolution is compressed: Trump faces midterm elections and has signaled limited tolerance for protracted negotiations. Supreme Leader Khamenei retains the capacity to threaten regional escalation, and oil markets remain sensitive to any deterioration — traders are already pricing a risk premium given the proximity to the Strait of Hormuz. On energy and trade, the divergence in US tariff outcomes sharpened. Port of Los Angeles export volumes fell 8% year-on-year in January, with soybean shipments to China down 80% and South American competitors — Argentina and Brazil — having locked in multi-month supply contracts that effectively displace US exporters for at least another agricultural cycle. Against that, Japan's $36 billion investment commitment represents a tangible win for the administration's bilateral deal framework. The US also renewed threats to withdraw from the International Energy Agency unless the organization reduces its climate advocacy focus. Meanwhile, Ethiopia's EV adoption offers a case study in policy-driven energy transition: a fossil fuel import ban and tariff cuts on electric vehicles have pushed EV penetration from below 1% to over 6% in under two years, primarily through inexpensive Chinese models, driven by fiscal necessity rather than climate ambition — a dynamic likely to repeat across other fuel-importing emerging economies.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

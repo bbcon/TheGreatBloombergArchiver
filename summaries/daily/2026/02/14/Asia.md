@@ -1,0 +1,11 @@
+**Asia-Pacific Daily Briefing — February 14, 2026**
+
+Coverage relevant to the region today is relatively thin, with the day's Bloomberg dispatches focused largely on global thematic pieces. The most consequential threads for Asia-Pacific investors center on electricity demand, AI competitiveness, and India's deepening air pollution crisis.
+
+**China's structural edge in the AI power race.** The International Energy Agency's annual outlook, released this week, projects global electricity demand will grow roughly 50% faster over the next five years than in the prior decade — outpacing GDP growth in what the agency terms an emerging "Age of Electricity." China remains the clear pacesetter, adding generation capacity at a rate well beyond US build-out and leading globally in electrification of industrial machinery. This positions Chinese AI infrastructure on a more favorable cost curve than US peers, where Goldman Sachs economists Manuel Abecasis and Hongcen Wei this week forecast data centers will drive 40% of incremental US power demand through 2030 and keep electricity-price inflation near 6% through 2027. The implication for capital allocation is meaningful: power-cost differentials may increasingly shape where the marginal data center is sited, though US export controls on advanced chips continue to constrain China's position higher up Jensen Huang's "five-layer cake."
+
+**Taiwan upgrade.** Bloomberg references a substantial upward revision to Taiwan's growth outlook tied to what is described as "relentless" AI-related demand, reinforcing the island's centrality to the global semiconductor supply chain and supporting the case for continued strength in TWD-denominated tech exporters.
+
+**India — US trade signals and pollution politics.** The US has altered its public statement on the India trade deal, generating confusion over the terms — a development worth monitoring for INR and Indian equity sentiment, though specifics remain unclear. Separately, public anger in New Delhi over hazardous winter air quality (AQI averaging 307–349 in December and January) appears to have reached a tipping point following November protests, raising the prospect of more assertive regulatory intervention on emissions, construction and crop burning.
+
+No material flow from Japan, Korea, Australia or ASEAN in today's dispatches.

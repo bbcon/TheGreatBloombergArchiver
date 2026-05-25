@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, February 19, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, February 19, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">Federal Reserve officials were notably reluctant to ease monetary policy when they convened last month, with several members suggesting rates may need to rise if inflation remains persistently elevated, according to FOMC minutes released Wednesday. The hawkish tone came as a surprise relative to market expectations — traders had priced in a more neutral posture — and prompted a reassessment of the near-term rate path. Separately, National Economic Council Director Kevin Hassett drew scrutiny after publicly attacking a New York Fed study concluding that US companies bear the primary burden of existing tariffs, calling it "an embarrassment" and suggesting its authors should be "disciplined." The episode highlights ongoing friction between the administration and independent economic research institutions. On the capital flows front, Treasury Department data showed overseas investors purchased a net $1.55 trillion of long-term US financial assets in 2025, up from $1.18 trillion the prior year. Equity allocations accounted for $658.5 billion of the total, with Treasuries absorbing another $442.7 billion — a result that appears to undercut the narrative of a sustained "Sell America" rotation, though dollar weakness may have amplified the attractiveness of US assets to foreign buyers rather than reflecting unambiguous confidence in US policy. US industrial production rose 0.7% in January, the largest monthly gain in nearly a year, with manufacturing output up 0.6%. The White House cited the figures as evidence that its trade agenda is strengthening domestic industry, though the data predate the full effect of tariff escalations implemented in subsequent weeks. In corporate news, AI-adjacent names were mixed: Figma jumped 17% after revenue guidance exceeded estimates, and DoorDash gained 14% on a strong order forecast, while Carvana fell sharply on margin pressure. Bitcoin continued its retreat, declining more than 40% from its October peak as US institutional flows — which had become the marginal price-setter via spot ETFs and CME futures — remain in withdrawal.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Former South Korean President Yoon Suk Yeol was sentenced to life in prison after a Seoul court found him guilty of leading an insurrection following his declaration of martial law in late 2024. Prosecutors had sought the death penalty, arguing the act posed an existential threat to South Korea's constitutional order. Yoon denied wrongdoing and retains the right to appeal, but the verdict formally closes one chapter of what was the country's most severe political crisis in decades. The ruling carries significant implications for South Korea's institutional trajectory and near-term political calendar. In Japan, Prime Minister Sanae Takaichi faces an early test of her intentions toward monetary policy, with nominations for two open Bank of Japan board seats expected as soon as February 25. The seats — those of dovish member Asahi Noguchi and consensus voter Junko Nakagawa — give Takaichi, historically associated with reflation, an opportunity to shape the board's composition at a delicate moment. Inflation running above target and the yen's sensitivity to rate expectations mean the appointments will be closely parsed by bond and currency markets. A like-for-like swap may not dramatically alter the balance; a hawkish deviation would carry more signal. Bank Indonesia held its benchmark rate at 4.75%, a widely expected pause as the rupiah hovers near record lows. Governor Warjiyo signaled stepped-up currency stabilization efforts while urging banks to pass through prior rate reductions — a tension that reflects the difficult position facing several Southeast Asian central banks caught between currency defense and growth support. India's AI Impact Summit in New Delhi saw significant capital commitment announcements. Mukesh Ambani pledged up to 10 trillion rupees ($110 billion) over seven years through Reliance Industries and Jio, following rival Gautam Adani's comparable pledge. OpenAI formalized a partnership with Tata Group. The summit's ambitions were briefly overshadowed by Bill Gates's abrupt withdrawal from a keynote appearance amid renewed scrutiny over his past ties to Jeffrey Epstein.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Christine Lagarde is reportedly considering stepping down ahead of the official conclusion of her ECB term in October 2027, a move that would preserve outgoing French President Emmanuel Macron's ability to influence the choice of successor before a potential hard-right electoral outcome in France next year. The report has not been confirmed but has accelerated a succession debate that carries both policy and political dimensions. The hawkish Bundesbank-aligned governor Isabel Schnabel stated she intends to serve out her term, while Spain is actively campaigning for its own candidate. Dutch governor Klaas Knot appears the most plausible consensus choice. The process threatens to expose the fault lines — hawks versus doves, national versus supranational interests — that European institutions routinely struggle to manage. The euro's recent strength provides some context for Lagarde's potential legacy. In real effective terms, the currency has reached its strongest level in over a decade, reflecting both the weak dollar environment and a partial recovery of French sovereign spreads. The OAT-Bund spread has retraced much of its post-2024 snap-election widening, suggesting that financial markets have become more comfortable with France's political situation than the underlying fiscal dynamics strictly warrant. Airbus shares fell 6.7% in Paris after the company disclosed that engine supplier Pratt & Whitney has failed to deliver engines in sufficient quantities, forcing a reduction in aircraft output. The development is a material setback for a company managing record order backlogs, and shifts some accountability to the supply chain rather than demand. Nestlé gained 4.5% in Zurich after new CEO Philipp Navratil signaled the turnaround is on track and guided for 3-4% organic revenue growth in 2026. Novo Nordisk's approximately 5,000 job cuts — among the largest layoffs in Danish history — are beginning to weigh on consumer sentiment in Denmark ahead of a general election due before October.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The most consequential single variable in global markets at present may be the trajectory of US-Iran tensions. Brent crude surged 4.3% on Wednesday to re-cross $70 per barrel and extended gains Thursday, reflecting growing concern that a military confrontation is no longer a remote possibility. Prediction market participants now assign roughly 70% probability to a US strike. President Trump stated the US is "ready, willing, and able to rapidly fulfill its mission, with speed and violence, if necessary"; Iran responded it would "defend itself and respond like never before." US Vice President Vance described the latest round of nuclear talks as having gone "well in some ways" while acknowledging Iranian negotiators had not accepted the red lines set before them. The US also announced visa restrictions on Iranian officials for suppressing domestic protests and restricting internet access. Iran's capacity to administer a meaningful oil supply shock — through the Strait of Hormuz or direct targeting of regional energy infrastructure — is not in question, and the risk of a financial accident remains material even if broader equity markets appear, for now, to be pricing the situation with unusual equanimity. The IMF released its annual Article IV assessment of China, calling once again for a rebalancing toward domestic consumption and away from investment and export-led growth. The Fund noted China's large current-account surplus has produced "adverse spillovers to trading partners." The prescription is identical to guidance the IMF has issued for two decades — Chinese household consumption remains near 40% of GDP, essentially unchanged since 2005 — though officials have recently signaled the forthcoming 15th five-year plan may give consumption a more prominent role, driven in part by the realization that trade barriers make continued export reliance increasingly untenable. OpenAI is close to finalizing the first phase of a funding round exceeding $100 billion, which would value the company above $850 billion — among the largest private financings on record. Amazon, SoftBank, Nvidia, and Microsoft are expected to anchor the round, with sovereign wealth funds and venture capital to follow. The scale of capital deployment reflects a broader dynamic in which AI infrastructure spending has become a geopolitical as well as commercial competition, with India's AI summit serving as the most recent venue for governments and corporations to signal strategic commitment.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+Subject: Making water from air
+Date: Sat, 16 May 2026 14:30:47 +0000
+
+Iran War Boosts Interest in Air-to-Water Technology
+A startup expands its technology ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-05-16/iran-war-boosts-interest-in-air-to-water-technology>
+ <https://www.bloomberg.com/green>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=18155878&m=11b724c487f61753eb1a7a4a5f3ef261&p=05162026143047&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=18155878&m=11b724c487f61753eb1a7a4a5f3ef261&p=05162026143047&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+As water risks are exposed by the Iran War and AI data centers, startup Atoco 
+is working on a device that can produce4,000 liters daily 
+<https://www.bloomberg.com/news/features/2026-05-12/startup-atoco-unveils-device-that-pulls-drinking-water-from-air?cmpid=BBD051626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260516&utm_content=4573>
+ by pulling it out of the air.
+
+Tech for a drier planet
+
+By Todd Woody <https://www.bloomberg.com/authors/AVl1IPrK6vs/todd-woody>
+
+The large metallic white box sits in a Southern California parking lot, 
+looking unremarkable until water starts flowing from a hose attached to it. 
+Peer inside, though, and it’s nearly empty but for some wires, tubes and a 
+container of light-colored material.
+
+The water isn’t being conjured out of thin air by magic but by MOFs— metallic 
+organic frameworks. MOFs are nanocrystalline structures engineered at an atomic 
+level to attract specific molecules. In this case that’s H2O and the machine 
+made by startup Atoco is silently harvesting molecules from the surrounding air 
+and storing them in the material’s porous cavities that serve as microscopic 
+water tanks.
+Drinkable water from the unit is held by an Atoco team member.Photographer: 
+Ethan Noah Roy/Bloomberg
+Atoco founder Omar Yaghi shared the 2025 Nobel Prize in chemistry for 
+pioneering MOFs and on an April morning he gave Bloomberg News an exclusive 
+demonstration of the commercial prototype of its atmospheric water harvester in 
+the lot outside the company’s Orange County laboratory.
+
+In the wake of the Iran war, interest in the technology has risen 
+<https://www.bloomberg.com/news/features/2026-05-12/startup-atoco-unveils-device-that-pulls-drinking-water-from-air?cmpid=BBD051626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260516&utm_content=4573>
+ as the giant desalination plants that supply water to tens of millions of 
+people in the Middle East have become military targets. “There’s a new 
+realization of the vulnerability and security risk of centralized water 
+systems,” said Samer Taha, Atoco’s chief executive officer, who is based in 
+Irvine, California.
+Atoco’s water harvester prototype.Photographer: Ethan Noah Roy/Bloomberg
+Set to go into production later this year, the shipping container-sized 
+machine will produce up to 4,000 liters (1,057 gallons) of water daily and can 
+be installed at data centers, hospitals and other critical infrastructure. An 
+off-the-grid model that operates on ambient sunlight and produces less water 
+can be deployed to communities where water must now be trucked in.
+
+“This becomes absolutely essential in alleviating the problems we are facing 
+on our planet in terms of water scarcity,” said Yaghi, 61, a University of 
+California at Berkeley chemistry professor who started Atoco in 2021.
+Atoco CEO Samer Taha, left, and Atoco founder Omar Yaghi drink from the 
+company’s water harvester prototype.Photographer: Ethan Noah Roy/Bloomberg
+Climate change is only intensifying those risks as drought and heat waves dry 
+up rivers and reservoirs, with half the global population experiencing water 
+shortages, according to the United Nations. In the US, Colorado River flows 
+that supply water to 40 million people are declining dramatically amid 
+record-low snowpack. Communities across the country are battling artificial 
+intelligence data centers that threaten to drain already depleted aquifers 
+while nearly a million Californians lack access to safe drinking water largely 
+due to agricultural pollution. Some 500,000 people in Corpus Christi, Texas, 
+face running out of water next year from a lack of rain.
+
+“You’re going to see more Corpus Christis around the world,” said Wendy 
+Jepson, who researches water security at Texas A&M University, adding that 
+crumbling infrastructure and poor policy decisions are exacerbating the water 
+crisis.
+Read more 
+<https://www.bloomberg.com/news/features/2026-05-12/startup-atoco-unveils-device-that-pulls-drinking-water-from-air?cmpid=BBD051626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260516&utm_content=4573>
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=18155878&m=11b724c487f61753eb1a7a4a5f3ef261&p=05162026143047&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=18155878&m=11b724c487f61753eb1a7a4a5f3ef261&p=05162026143047&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Your weekend listen
+
+
+Zero
+
+Electricity Will Power a Globally Stable Era
+ 
+<https://www.bloomberg.com/news/audio/2026-05-13/zero-electricity-will-power-a-globally-stable-era-podcast>
+This week on Zero, Akshat Rathi talks wars raging and supply chains blocked 
+with Gerald Butts, chairman of the political risk consultancy Eurasia Group and 
+former chief of staff to Prime Minister Justin Trudeau. In an era of political 
+chaos, they discuss how investors and companies are responding to the energy 
+shock.
+
+Listen now 
+<https://links.message.bloomberg.com/s/c/CEZnbzUYXDau4KVlsDSqceMj-qlJJKpN_eOXyzyEIQ83v6bg95pqs9xBi2iOqVSuCTWB_bVc5IKZF4Re_zWxbmoJg20ksMJfN1mIwY2MDeLWXyypC-ks3z-n0D2jLnP_juXtfgXhn4AjUR_lOcMGrxPPX6NF96TM-diN82rEnP1ZAs2Nkk3X2g0HmMfH6qsRbbky01JGw4KlpgtuNeFDixyxSwCqATp85ZACseqYHbafGLBXoQySy3YnGha9vPPpIIXBHd_aUou81SdfFfxt2rmXacns48XEq77k4YjwdgFQMl2R3OlhJxBVQ7uSgPaYXmgLahqC3OL0X3gq/4iH2AmWlCUrqLyx0nWKurooMPn3ZYrQg/20>
+, and subscribe onApple 
+<https://links.message.bloomberg.com/s/c/aJ-_eORrb3XdlzRe3orxl9EzcXJzDjZkGuUqEudHQZgqiqrC76In04Sli7Hh7blN48yPFo-LDvK1cDxn75I9J_4BtpJABn2cB0_kemaZxhCdGkndQxaoQQkcESh00acGMGkyFee01UFeFkUsYHaZC9D4kaW73UlCuPbPtbTCbUoIPUAEDceHEbuioD5i6vDp_HCJ0AUmlo1XD5Wetp5-FC7rRQ45ZZWmgvrmpdb6lP64Onc6ezuy-a3skHgJzCnhhTQxkD_lyTnwdODj8LDkkKBoC6eJbsyBNx29-OFMh5GtJlxCx0-o1KbwuUivHPf5Af-l-A/D7hr_r52pKgA0nZy9QLp0uil1oROvZQk/20>
+,Spotify 
+<https://links.message.bloomberg.com/s/c/haZh1QUfHhXLjNits2fvKUOJG439jcOVwxqwIuPgehyU51wNVugEBkbt4GU9SJZ7_Rg4ibkieWY8oyjZDjS4MIS8OQHfeueUCUpFuAjuIWqiQ9M28T5TwClI4tUbaKVekYi6bT_H5a6Zkd-sN9PaI3YmdCaGfHPL4lDHVjPziufKaQ_m4aO3IrCaTVCm_3Ox_XtRELRsEGM5_zRBq3pYBUBzVwDMglr5UVvpY6F4oXQOaoLGReDKZcgPD56ci87Q9EoCNNzt4sCmwH175cKodGJrzVkpTdLS7Gj-6_OWOegDJbRwo3MyXzKIh8xcNye3wa_wWTDmeh9wUk1781eV68GG97YY/XCJpPrctALDqLdk5dMWlIBVlaNUmfQnT/20>
+ orYouTube 
+<https://links.message.bloomberg.com/s/c/P1dxpBKxT17oHPWXaG7ZdeZz9Twuuc90NRha04MvdQ4ZoLZEsff7jmpqoUi-H7j4Bnl7sP-g4oV0c9EWvPP6m2UKpWH6_a9TIsP8bpPPEEDrQHTrE6n-44N3D89lKOjWILTbWoRM311pG1mWyeIeiRDILiI4H_2huQiXRTAEUh40UrAllHbIrsc_poPrKMFSAESgns6y18RnxHS6ckiPRRtlkul-N67Fw6w2AnrAByCHmsnQ5TUzrbzsLRd2Ph-BWF0q86MAzG2-U9gEE6zPwg7qP4uE22t2R9602j-gxUTzIWJSQqPtPuSQsXRqZ75iS6rGeiB_2LJPtCpeHAO-R7asPP0J/MUxdIe9E67LS3_50p5QcxuBnJCqIqUEv/20>
+ to get new episodes of Zero every Thursday.
+
+A new generation of dams
+
+By Tyler J. Kelley
+
+The Chimney Hollow Dam looks ancient in its simplicity, like a Neolithic 
+mound. The largest dam built in the US in a quarter century, it is not a 
+monumental wall of concrete like the Hoover Dam. Instead, it’s a triangular 
+prism of granite boulders, 350 feet high and 3,700 feet long, stretching across 
+a dry valley in northern Colorado. Two white pipes snake up the far side of the 
+valley and out of sight, heading toward the Colorado River, about 30 miles 
+away. On April 20 engineers turned a valve and began pumping water from the 
+river and putting it behind the dam. Filling the reservoir completely will take 
+years.
+
+A new dam of this size is very rare in the US. By turning rivers into lakes, 
+dams destroy riverine ecosystems, and environmentalists have long fought to 
+stop new dams and remove existing ones. More than 100 were torn down last year 
+alone, according to American Rivers, an advocacy group. In 2024 the last of 
+four large dams on the Klamath River in California and Oregon were removed, 
+completing what the group calls “the world’s largest dam removal.”
+At 350 feet tall and 3,700 feet long, Chimney Hollow is the largest dam built 
+in the US in a quarter century.Source: Northern Water
+But dams do one thing well: They store water. And the American West is in the 
+grips of a multi-decade megadrought, with mountain snowpack, by far the largest 
+source of stored water in the West, declining rapidly. Snow levels in the 
+Rockies this winter were the lowest ever recorded. Some experts see the region 
+tipping into aridification, a more-or-less permanent drying out of the climate.
+
+That means more projects like Chimney Hollow are coming 
+<https://www.bloomberg.com/news/features/2026-05-15/colorado-builds-new-dams-in-a-race-with-the-west-s-megadrought?cmpid=BBD051626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260516&utm_content=4573>
+. Thirty miles south, local utility Denver Water is raising Gross Dam by over a 
+hundred feet, almost tripling its capacity. In California, construction on the 
+$6 billion Sites Reservoir is scheduled to begin later this year. And several 
+smaller reservoirs have recently been built or are being built in Texas.
+
+“Without water, things don’t happen; people can’t live here,” says Malcolm 
+Fleming, who until February served as town manager of Erie, Colorado, one of a 
+dozen municipalities that will get water from Chimney Hollow. “It’s semi-arid 
+high desert. We get on average 15 inches of rain a year, and that’s not enough 
+to sustain the kind of development that you see all around.”
+
+On a warm January evening, Fleming is celebrating the latest example of that 
+growth: the opening of Erie’s new town hall. Once a tiny coal-mining town, Erie 
+didn’t have paved roads until 1991. Then the area began to fill with buyers 
+looking for homes within commuting distance of Denver and nearby Boulder. Today 
+43,000 people live here, mostly in neighborhoods of single-family homes with 
+names like Vista Ridge, Canyon Creek and Redtail Ranch.
+Two pipes carrying water from the Colorado River to Chimney Hollow Reservoir.
+Source: Northern Water
+And Erie is just one patch in the fabric of the Front Range urban corridor, a 
+five-million-person agglomeration of towns, cities, suburbs and exurbs 
+following Interstate 25 from Pueblo, Colorado, through Denver up to the Wyoming 
+border. By 2050, more than 800,000 additional people are expected to move here, 
+while Erie’s population is forecast to almost double.
+
+Before cutting a ribbon with a pair of oversized yellow scissors, Fleming 
+opens his speech with a salute to the infrastructure that helped make his town 
+the 15th fastest growing municipality in the US last year.
+
+“You turn on your tap, water comes out,” he says. “You don’t think about the 
+dozens of reservoirs that are hundreds of miles away, the hundreds of miles of 
+pipeline that bring that water here.”
+Read more 
+<https://www.bloomberg.com/news/features/2026-05-15/colorado-builds-new-dams-in-a-race-with-the-west-s-megadrought?cmpid=BBD051626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260516&utm_content=4573>
+In case you missed it
+
+Grid Connection Delays Threaten UK’s Offshore Wind Push
+
+The majority of recently announced offshore wind farms are stuck in a queue.
+ 
+<https://www.bloomberg.com/news/articles/2026-05-15/grid-bottlenecks-threaten-uk-s-offshore-wind-push>
+Worst Start to Wildfire Season Raises Alarm as El Niño Threatens
+
+Record-breaking heat and drought are fueling the danger.
+ 
+<https://www.bloomberg.com/news/articles/2026-05-12/worst-start-to-wildfire-season-raises-alarm-as-el-nino-threatens>
+China Green Tech Firms Target New Consumers Hit by Iran War Energy Shock
+
+Suppliers of batteries, solar panels and electric cars are pushing to 
+capitalize on rising demand.
+ 
+<https://www.bloomberg.com/news/articles/2026-05-10/china-s-green-exporters-seize-on-new-markets-after-iran-war-fuel-shock>
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/-rpt9u-VBYC1eNIZOJWrMmeASJPeQhjIRXSPdB95bC1RhUMl0rnFcfDN8av5Xca21H-02ivQP1gK6TAsdJ7drCL0Qg8-fZKnV08jopbz6L94mf80mIszbwzSkFXPJEyrtW78J6YxxzYb-skvRX-pnXM1is_xgvkbz10pP8Enyba9hFGllElqqzuUcBhqCKCVFyaIvvHnn1AocRYLT-2F62fxjFl_0oG5bx14RRt3e2p8eGyFBvgQb9N0FWs_wSSzelCJt_t2iUVEZzCHjozKogDbMVBEkJb0QvJh5widrYy0B5g-2dmIPUfQwbE-tTnJlzG6Ru8CkpWe8cm4G8UUtbuaK0bk9cxN/yhKa9RBamLlMT4T5XhD5AFetIy-8K6-Q/20>

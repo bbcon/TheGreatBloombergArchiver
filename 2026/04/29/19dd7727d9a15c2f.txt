@@ -1,0 +1,288 @@
+Subject: Chip supply chains risk being next casualty of war
+Date: Wed, 29 Apr 2026 04:14:57 +0000
+
+Points of Return 
+ Key chipmaking ingredient is blockaded. 
+
+View in browser <https://bloom.bg/4eh5V0p> 
+ <https://bloom.bg/422nfPy> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=17900478&m=11b724c487f61753eb1a7a4a5f3ef261&p=04292026041456&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=17900478&m=11b724c487f61753eb1a7a4a5f3ef261&p=04292026041456&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/4tdl3zW> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ * The  BOJ’s hawkish hold <https://bloom.bg/421YTW4> did nothing to prop up  
+the yen <https://bloom.bg/3OtU9FG>. 
+ *  Futures for Brent <https://bloom.bg/4egCuvA> crude in December are at a 
+new record. 
+ * US stocks staged a pause, largely thanks to a leak 
+<https://bloom.bg/4ecc0eF> from  OpenAI <https://bloom.bg/4cXXYeh>. 
+ * Brace for Wild and Weary Wednesday afternoon — Powell’s last FOMC 
+<https://bloom.bg/4ehoEcf>, and  results <https://bloom.bg/42Bz1R2> from 
+Amazon, Alphabet, Meta and Microsoft, all within two hours. 
+ * AND: Time for an argument identifying America’s best living songwriters 
+<https://bloom.bg/4cTPBAm>. 
+
+
+
+Casualties of War
+
+Mention propylene glycol methyl ether acetate <https://bloom.bg/3OtTXpW> 
+(PGMEA) as a casualty of the Iran war, and few will know what you’re talking 
+about. More visible commodities like oil and, to a lesser extent, inputs for 
+fertilizer have dominated the headlines. But PGMEA, a special kind of paint 
+based inthe oil derivative naphtha <https://bloom.bg/4t7vy7R>, also known as 
+photoresist <https://bloom.bg/3R8Wnef>, is harder to find since the Middle East 
+conflict erupted two months ago.
+
+How much this matters depends on PGMEA’s role <https://bloom.bg/4t3dBas> in 
+the chipmaking process <https://bloom.bg/42AbEaq> and whether there are useful 
+replacements. Its unavailability risks rekindling supply chain strains still 
+not fully healed from the pandemic. With semiconductor production concentrated 
+in East Asia, disruption will first be visible there — and already the alarm 
+bells are ringing.
+
+Japan’s largest chemical company, Shin-Etsu Chemical, has withheld its 
+full-year forecast, <https://bloom.bg/4t2ePTe> citing supply constraints on 
+naphtha-derived products due to the war. Shin-Etsu, which also makes silicon 
+wafers for semiconductors, says it’s difficult to “reasonably predict” 
+performance for the fiscal year. Its most-recent quarterly operating income of 
+about $860 million was down 13% from last year and short of estimates.
+
+Could this be the canary in the coal mine? Sohil Sinha writing in the 
+FirstPost points out that the distance between a naphtha cargo and a finished 
+semiconductor is measured in months and dozens of intermediate steps, so 
+disruptions to the feedstock take a while to register and are very hard to 
+reverse.
+
+But the market isn’t pricing any downside risk to chip manufacturing because 
+of this, nor should AI data-center buildouts fail to sustain massive chip 
+demand if hyperscalers’ earlier investments disappoint. Bloomberg’s index of 
+companies exposed to the chips supply chain suggests nothing is amiss:
+
+Lessons from the Covid supply chain crisis warrant caution, and the impact of 
+the Iran war may be overstated. The key question concerns companies’ 
+preparedness. Morningstar’s Brian Colello says there were concerns about 
+helium, vital to chipmaking, of which a third comes from Qatar — but companies 
+have enough inventory to last months and alternative sources readily available. 
+Still, Colello says pressures on helium bear watching the longer the conflict 
+goes on.
+
+Fallout should still be contained. Ramiro Palma of Boston Consulting Group 
+notes that photoresist materials account for about 15% of chip production’s 
+overall cost:
+
+There is a large ability of the overall value chain to absorb the shot from a 
+price increase perspective. And I think the volumes of production are 
+sufficiently small that I would not expect that shortages would materially 
+impact production. So, I tend to worry less about photoresist.
+
+Regarding companies like Shin-Etsu Chemical, which are reeling from the 
+disruption, the most plausible explanation is that they’re particularly heavily 
+exposed to photoresist. For the broader semiconductor industry, the impact 
+appears manageable for now.
+
+Unlike photoresist, crude oil’s impact is immediate. Brent futures are going 
+through the roof with Washington and Tehran deadlocked. The United Arab 
+Emirates’ announcement that it’sexiting OPEC <https://bloom.bg/4cY0OzX> didn’t 
+help. Perhaps most significantly, futures for December are now at a new high, 
+showing that the enduring blockade is having an impact:
+
+Other commodities are reacting in a similar way. Bloomberg’s agricultural 
+commodities index is at its highest since late 2023, and up 13% over the last 
+three months:
+
+In the absence of active hostilities, the US stock market is proceeding on the 
+basis that the worst has been avoided and the war can be ignored. Emerging 
+markets — including some big chipmakers and a number of oil exporters — have 
+also made good their losses. The MSCI EAFE index (Europe, Australasia and the 
+Far East — effectively the non-US developed markets) has not. It’s more 
+dependent on the Strait, and lacks the chipmakers that are dominating attention:
+
+For the time being, the bet is that chipmakers and oil exporters are insulated 
+from the war. That may be right. But it’s worrying that prices currently seem 
+to ignore the downside risks altogether. Keep an eye on PGMEA.
+
+—Richard Abbey
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=17900478&m=11b724c487f61753eb1a7a4a5f3ef261&p=04292026041456&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=17900478&m=11b724c487f61753eb1a7a4a5f3ef261&p=04292026041456&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+Hawks Over Tokyo
+
+Central bankers must feel as though they’re caught between Scylla and Charybdis
+ <https://bloom.bg/4t35Lxs> — or at least between the shores of the Strait of 
+Hormuz <https://bloom.bg/4t451bl>. For oil importers, the blockade 
+<https://bloom.bg/3Ow2IzN> is directly inflationary, but poses an immediate 
+threat to growth. How to respond?
+
+It’s trickier in Japan, where the evidence mounts that the deflation trap has 
+been escaped (so any central banker would want to bring rates higher), but the 
+political system has broken its own impasse with the arrival of the most 
+popular prime minister in generations,Sanae Takaichi <https://bloom.bg/4tdl3Qs>
+, who opposes rate hikes.
+
+Thus life was even harder for Kazuo Ueda and his colleagues at the Bank of 
+Japan this week than it will be for the Federal Reserve and the European 
+Central Bank. They responded with a “hawkish hold” — rates didn’t change, but 
+the BOJ tried to lift the odds that they’ll rise soon. The vote to hold rather 
+than hike was 6-3, a record number of dissents. And it made a declaration of 
+intent:
+
+Underlying CPI inflation has been approaching 2% and real interest rates are 
+at significantly low levels, the Bank will continue to raise the policy 
+interest rate… while closely monitoring… the Middle East.
+
+The grammar is important. The BOJ intends to raise rates. It will watch the 
+Mideast but there’s nothing about hikes being conditional on good news from the 
+conflict. That implies an increase, probably in June, barring a serious 
+escalation in Iran (in which case Japanese rates would be far down everyone’s 
+list of concerns).
+
+But the decision had minimal impact on the yen, which is weak and continues to 
+teeter close to 160 per dollar:
+
+There are reasons for this. Ueda didn’t speak very hawkishly in his press 
+conference, and the new dissenter is due to leave after the next meeting. It’s 
+part of a baffling fresh uncertainty over whether Japan’s monetary policy will 
+indeed normalize.
+
+Wages are rising, with the spring “Shunto” negotiations 
+<https://bloom.bg/3OQy5oA> producing a 5% raise for salarymen, for the third 
+year running. The deflationary morass seems over:
+
+Bond market forecasts also call for Japanese inflation to tick up at 2% or 
+more, no longer an exception to the rest of the world. The break-even rate for 
+the next five years is as high as 2.7%:
+
+Japanese government bonds are also behaving as though the country has truly 
+changed. After ending almost a decade ofyield curve control 
+<https://bloom.bg/4vWGUhp>, the central bank has allowed the 10-year JGB yield 
+to reach 2.45%, not so much lower than German bunds:
+
+There’s also an argument that the BOJ’s real rates, accounting for inflation, 
+are no longer so far out of line with the US and the euro zone:
+
+But the yen is weak because investors are losing certainty Ueda will raise 
+rates as much as others. The war has transformed expectations for the European 
+Central Bank, now forecast to hike three more times this year, but had no 
+effect on forecasts for the BOJ:
+
+Why? In part, the return of inflation isn’t cut and dried. The core number 
+most widely cited excludes energy and fresh food — but not all food, as in 
+other countries. The staple, rice, has endured massive inflation of late. If 
+it’s excluded, the return of inflation largely vanishes:
+
+Comparing CPI excluding fuel and all food to the US and the EU suggests that 
+Japan might not have shed its deflationary psychology. Barring years following
+consumption tax hikes <https://bloom.bg/4ugfjpI>, it has been below other 
+developed markets for decades, and rose only very briefly above 2%:
+
+Takaichi herself is the biggest factor keeping the yen and rates down. She’s 
+long been on the record <https://bloom.bg/4t0G0Oc> in favor of a weak yen 
+<https://bloom.bg/3QtFqv3> to support exports, much as her political patron 
+Shinzo Abe was. Udith Sikand of Gavekal concedes that she’s “no longer publicly 
+berating the BOJ for offering guidance on its plans to raise rates,” but her 
+position remains clear. Sheappointed <https://bloom.bg/42mHYxL> two dovish 
+candidates to the rate-setting committee last month, and more recently
+criticized Trade Minister Ryosei Akazawa <https://bloom.bg/49aLDSL> for 
+suggesting that higher interest rates could strengthen the yen.
+
+Hikes still look likely. Mansoor Mohi-Uddin of the Bank of Singapore argues 
+that “further gradual BOJ rate hikes combined with the Federal Reserve 
+retaining its easing bias” should support the yen “at its current very weak 
+levels.” But investors want something more than a reliance on cheap exports, 
+while a weak yen encourages Japanese investors to put their money abroad.
+
+That could endanger the dramatic leap in Japanese stocks 
+<https://bloom.bg/41YVzLt> that Takaichi has overseen, as old-line industrial 
+groups benefit from her corporate governance reforms and dealmaking. But it 
+could be a one-time re-rating that’s running its course, and stocks have lagged 
+since war started:
+
+Like Donald Trump, Takaichi is testing the limits of the market’s tolerance 
+for political influence over monetary policy. She should be careful. Long-time 
+Japan investment banker Jesper Koll, who publishes the Japan Optimist 
+<https://bloom.bg/4ec3oog> newsletter, warns:
+
+Soon the corporate governance arbitrage — Japan catching up to global best 
+practices — will go from “wow, Japan is changing and I must buy to be part of 
+that change” to “so what – of course CEOs work for shareholders, but what are 
+they doing to create future growth?” Abenomics 2.0 is not enough.
+
+Japan shouldn’t need a weak yen for Takaichi to execute her plans.
+
+
+
+ Survival Tips 
+
+
+
+Lists are irresistible. Here’s the New York Times’ list of the 30 greatest 
+living American songwriters, <https://bloom.bg/4cTPBAm> and their other list of 
+11 who narrowly missed out <https://bloom.bg/4cTsKF9>. We can now all enjoy the 
+parlor game of adding more names that they’ve outrageously omitted. I nominate
+Lin-Manuel Miranda <https://bloom.bg/4lqIPEy>, whose Hamilton 
+<https://bloom.bg/4sYdnRL> showcased his utter genius, Pharrell Williams 
+<https://bloom.bg/3OtU9Wc>, and the prime songwriter for my favorite band 
+<https://bloom.bg/4ebUUxt>, Win Butler (a Texan who is now a dual Canadian 
+citizen but maintains his US passport), whoused to write 
+<https://bloom.bg/3R8WnuL> some pretty great songs <https://bloom.bg/41Ycb61>. 
+Any more?
+
+More From Bloomberg Opinion
+
+ * AI <https://bloom.bg/4ehoIbZ> May Be the US Economy’s Only Hope: Allison 
+Schrager 
+ * Is California a Harbinger of the AI Job Disruption 
+<https://bloom.bg/4cTsGVV>? Justin Fox 
+ * The Saudis <https://bloom.bg/42xmzSm> Could Help End the War. Will the US 
+Listen? Marc Champion 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/2hQjh2KDLzPxkTjnUzMow1mTzJ4CqjjCrju-odYWZDmZm6Kq_7KcoRe9ZGJqsG8gQanzR8SYOkt2gOzbcj6zQ2Hq9Ghjlsfgv4Fz076Ov14chazrtZQqmflsdTkyELzZ9m8AEWbjuKQaXRIpsfgiAScujx6ExuO8OhaWtBog41XIdS15e_39g6I6QpnJ9r0FJ1yUSdLLV3l2YXbWAlVgjU2WR504Zu-T3KZqf1UwsAbimKp_HfVIHjq1iu_VR1zB7JOfRIfxQgW6_2ji3TsMoPP19UNC4OK1u7PjHzRpnwoFMWL8ohfNUi4z7TNK7eijZa6h3F-wQ9gOaoiRWIq4hios2ylG4GCG/nMfM4xs9FiX1EOJvRqvsUvu0GcEwUdky/20>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saturday, March 07, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Saturday, March 07, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US electric vehicle market dynamics present an apparent contradiction: new EV sales fell nearly 40% year-over-year in Q4 2025, yet public charging infrastructure continues to expand and utilization is rising. ChargePoint Holdings posted a 7% increase in quarterly revenue despite the sales decline, while EVgo plans to add up to 1,650 new charging slots in 2026, a 38% increase over last year. The resolution of this paradox lies in the cumulative installed base — approximately 5.8 million EVs now operate on American roads — which sustains charging demand even as new purchase rates soften. Ultra-fast charging capacity expanded roughly 48% in 2024, with nearly one in four new chargers installed in Q4 capable of delivering 250 kilowatts or more. Analysts at Needham characterize the weak new-car sales trend as an overhang, and shares of both ChargePoint and EVgo remain near historical lows despite the constructive operating data, reflecting investor uncertainty about the medium-term trajectory. Two factors may yet shift the demand calculus. Elevated oil prices driven by the US-Iran conflict are providing an indirect subsidy to the economics of electric and hybrid ownership, and a cohort of new affordable electric SUVs entering the market could reignite consumer interest. Hybrid vehicle sales have risen since federal EV incentives expired, with S&P Global Mobility noting continued demand momentum in that segment. Charging infrastructure operators appear to be building for a 2035 demand horizon rather than optimizing for current conditions, suggesting capital deployment will continue even if the pace moderates near term. On the broader industrial policy front, the Trump administration's push to secure critical minerals — copper and cobalt in particular — through direct investment in the Democratic Republic of Congo adds a supply-side dimension to the US energy transition narrative, though execution timelines remain uncertain.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China set its official GDP growth target at approximately 5% for 2026 while deliberately avoiding a large-scale fiscal stimulus package, signaling that policymakers remain cautious about the economy's structural trajectory. The decision reflects a familiar tension: acknowledging near-term headwinds — including export exposure to US tariffs and subdued domestic consumption — while resisting the balance-sheet expansion that larger stimulus would entail. Markets had watched the target-setting closely for signs of a more aggressive demand-side response; the absence of one may temper near-term risk appetite for China-exposed assets. India moved to insulate its economy from the spillover effects of the US-Iran conflict, with policymakers focused on the dual exposure of elevated oil import costs and potential disruption to trade routes through the Persian Gulf. India's dependence on Gulf energy supplies makes it structurally vulnerable to any sustained increase in crude prices or Strait of Hormuz disruption, and the government's defensive posture reflects that sensitivity. The precise policy measures remain to be detailed, but the signal of active contingency planning is itself notable. South Korea's ongoing equity market reform initiative — the so-called "Korea Discount" program aimed at improving corporate governance and shareholder returns — faces a significant test as global risk sentiment becomes more complex. The program has attracted investor attention since its inception, but execution risk remains elevated given the country's chaebol-dominated corporate structure and the tendency for reform momentum to stall. Separately, geopolitical currents, including the minerals competition in Africa and the Iran conflict's effect on energy prices, create second-order headwinds for Asia's manufacturing exporters broadly, as input costs rise and trade route uncertainty increases.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">No significant coverage for this period.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The US-Iran conflict has emerged as the dominant macro variable across multiple dimensions this week. Oil markets are pricing in a meaningful risk premium as the conflict raises questions about potential disruption to the Strait of Hormuz, through which a substantial share of global crude flows. The energy policy implications are genuinely uncertain: the conflict could accelerate the clean-energy transition by reinforcing the strategic case for domestic renewable capacity, or it could prompt fossil-fuel-dependent economies to extend hydrocarbon infrastructure investment in the name of energy security. Both dynamics may operate simultaneously in different regions, creating divergent policy trajectories rather than a clean directional shift. The US decision to go to war with Iran, while simultaneously pursuing Venezuela ties and sanctioning Rwanda's military, illustrates the breadth of the Trump administration's geopolitical activism and its underlying logic: securing physical access to critical resources — energy and minerals — as a strategic priority. The minerals competition with China is the clearest expression of this, with the US moving to acquire stakes in Congolese copper and cobalt assets while Beijing retains commanding market shares across sub-Saharan African commodity supply chains. China conducted roughly $200 billion in annual trade with sub-Saharan Africa in 2024 — approximately four times the US figure — and controls an estimated 80% of Congo's copper output. Closing that gap through deal-making alone, without the decades of relationship capital China has accumulated, appears a formidable task. The energy transition's near-term trajectory faces genuine uncertainty. Surging gasoline prices may accelerate hybrid and EV adoption in consumer markets, but simultaneously strengthen the political economy arguments for fossil fuel expansion in producing nations. This tension is unlikely to resolve cleanly in the near term, and investors with exposure to energy transition assets should treat the conflict's impact as a source of volatility rather than a directional catalyst.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

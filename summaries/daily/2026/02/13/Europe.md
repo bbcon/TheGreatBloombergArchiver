@@ -1,0 +1,11 @@
+**European Morning Briefing — February 13, 2026**
+
+European equities edged lower in early trade, with the Stoxx 600 down 0.35% as the AI-driven selloff that battered US megacaps overnight rippled across global markets. Sentiment remained fragile ahead of the US January CPI release, though by mid-morning the selloff was losing momentum. Treasury volatility has paradoxically fallen to a five-year low, suggesting the rotation reflects sector-specific repricing of AI exposure rather than broader macro stress.
+
+**L'Oréal** led losers after the French beauty group reported disappointing sales growth, weighed down by its luxury division and continued softness in the Greater China region — a reminder that European consumer exposure to Chinese demand remains a meaningful drag even as broader trade flows stabilize. The print extends a run of mixed results from Europe's luxury complex and will reinforce questions about the timing of any China consumer recovery.
+
+On the policy front, the **ECB** fined Crédit Agricole €9 million for failing to adequately manage climate-related and environmental risks — a modest sum but a notable signal of supervisory follow-through on the ECB's climate framework, and one that peers will likely study closely. Separately, the EU continues to press Washington to narrow the scope of US steel and aluminium tariffs as part of pending trade negotiations; the USTR is reportedly working to address calculation complexities that have frustrated European exporters since the 50% levy took effect.
+
+In Hungary, opposition leader **Péter Magyar**, whose Tisza party leads in polls ahead of this year's election, disclosed that he was secretly recorded in 2024 in what he characterised as a "Russia-style" blackmail attempt. The pre-emptive disclosure appears designed to neutralise the material's political impact; whether it succeeds remains to be seen, but Tisza's polling lead over Fidesz makes the episode consequential for Hungarian political risk.
+
+Finally, at the Munich Security Conference, European officials are reportedly reassessing the continent's nuclear deterrent posture following what attendees described as a sobering recalibration of US security commitments — a discussion with potentially significant long-term implications for European defence spending trajectories.

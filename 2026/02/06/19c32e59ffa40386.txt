@@ -1,0 +1,318 @@
+Subject: EVs kept the lights on
+Date: Fri, 06 Feb 2026 12:20:29 +0000
+
+How Bidirectional Charging Kept the Lights On Amid Cold and Blackouts
+Owners powered their homes amid brutal cold and power outages
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-02-06/how-evs-kept-the-lights-on-as-temperatures-dropped-and-grids-failed>
+ <https://www.bloomberg.com/green>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=16791137&m=11b724c487f61753eb1a7a4a5f3ef261&p=02062026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=16791137&m=11b724c487f61753eb1a7a4a5f3ef261&p=02062026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Power outages — or the threat of them — are an increasing fact of American 
+life due to extreme weather and surging energy demand. The solution to getting 
+through them might be sitting in your driveway.
+
+A growing number of electric vehicles are able to feed power back to homes and 
+even individual appliances. Today’s newsletter looks at how so-called 
+bidirectional charging helpedkeep the lights on 
+<https://www.bloomberg.com/news/articles/2026-02-06/these-ev-models-can-keep-the-lights-on-during-power-outages?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+ and the hot water flowing amid the recent US cold snap. Plus, a scoop on how 
+Tesla is moving forward with its plans tobuild out its solar panel supply chain 
+<https://www.bloomberg.com/news/articles/2026-02-06/tesla-weighs-new-york-arizona-idaho-to-lift-solar-cell-output?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+.
+
+Want all the latest stories on the energy transition? Subscribe to Bloomberg 
+News <https://www.bloomberg.com/subscriptions>.
+
+Power up
+
+By Kyle Stock <https://origin.www.bloomberg.com/authors/ARKz8x17rNs/kyle-stock>
+
+West Monroe, Louisiana, has experienced some of the nastiest weather in the US 
+of late, but Keith McGraw, who has lived in the rural town for all of his 46 
+years, was ready.
+
+On the third day of a recent blackout, while his neighbors were struggling to 
+find gas for their generators, McGraw was powering almost all of his house with 
+his Ford F-150 Lightning pickup truck. McGraw was even able to fire up his oven 
+to satisfy a pizza craving. “We were like ‘Screw it,’” he explained, ”‘we got 
+electricity and we can run all day long.’”
+During a multiday, weather-related power outage, McGraw relied on his Ford 
+F-150 Lightning to keep the lights on at home.Courtesy of Keith McGraw
+As ice, snow and bitter cold stressed America’s power infrastructure in recent 
+days, electric vehicles have filled in as emergency power sources, shifting 
+from transportation to 6,000-pound backup batteries for a growing share of 
+drivers.
+
+US drivers have now bought about 630,000 electric cars and trucks capable of 
+discharging electricity — what’s known as bidirectional charging — at levels 
+strong enough to power a home or apartment, according to Cox Automotive and 
+company sales reports. That figure is rising quickly, too. One in five EVs 
+purchased in the past quarter had so-called V2H — or vehicle-to-home 
+capabilities — and analysts say the feature will soon be table stakes for those 
+hoping to sell an electric car.
+
+At the moment, 14 of the 70  
+<https://www.coxautoinc.com/wp-content/uploads/2026/01/Q4-2025-Kelley-Blue-Book-EV-Sales-Report.pdf>
+or so EV models available in the US offer bidirectional charging. Every auto in 
+the General Motors Co. product line can now power a home in a pinch, as will 
+high-end models from Hyundai Motor Co., Kia Corp. and Volvo Car AB.
+
+That share is likely to climb in coming months. BMW Group has promised 
+bidirectional charging in its new iX3, a pledge echoed by Tesla Inc. for its 
+next Model Y and Rivian Automotive Inc. regarding its R2 SUV expected to hit 
+the market in the next few months.
+
+And although Ford has pulled the plug 
+<https://www.bloomberg.com/news/articles/2025-12-15/ford-to-repurpose-ev-battery-plant-for-energy-storage-batteries?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+ on its Lightning pickup, there are roughly 101,000 of them in US driveways, 
+many of which have served as tiny power plants during this winter’s brutal 
+weather.
+
+Ford sells a system that connects its vehicles to a home’s electrical panel — 
+a product CEO Jim Farley hascrowed about 
+<https://www.linkedin.com/posts/jim-farley_hurricaneian-activity-6984255291039047680-iYsz/?utm_source=share&utm_medium=member_desktop>
+ on LinkedIn. The systems, which detect outages and switch power automatically, 
+kick on about four times a year, on average, but last week, as outages hit 
+parts of the country, Ford said usage quadrupled.
+
+To be sure, weathering a storm in an EV takes some planning. It helps to 
+charge in advance and cold weather canslowly sap a battery 
+<https://www.bloomberg.com/news/articles/2023-12-15/how-to-keep-your-electric-car-battery-charged-in-cold-weather?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+. Still, in places like rural Louisiana, finding gas in an extended storm can 
+be a challenge, too.
+
+Even the millions of EVs that aren’t capable of powering an entire house are 
+still proving useful. Many contemporary EVs have so-called vehicle-to-load 
+capabilities, which essentially turns the vehicle’s charging port into an 
+electrical outlet. A few years ago, a doctor in Texasfamously used 
+<https://www.autonews.com/technology/rivian-ev-powers-vasectomy/> his Rivian to 
+power surgical tools for a vasectomy.
+
+Kim Mestre, a remote worker in Alexandria, Virginia, has simpler needs. Last 
+week, she was planning to use her 2025 Hyundai Ioniq to grind coffee beans and 
+get the electric kettle boiling. “I don’t care about the TV and the food we 
+could put outside,” she explained. “For me, it was: Charge my phone and give me 
+coffee, that’s all I really need in life.”
+
+Read the full story to see what comes next for bidirectional charging. 
+Subscribe to the weeklyHyperdrive newsletter 
+<https://www.bloomberg.com/account/newsletters/hyperdrive>, your guide to the 
+future of cars.
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=16791137&m=11b724c487f61753eb1a7a4a5f3ef261&p=02062026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=16791137&m=11b724c487f61753eb1a7a4a5f3ef261&p=02062026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Tough times
+
+$19.5 billion
+
+The amount of charges Ford took, tied to a sweeping overhaul of its EV business
+ 
+<https://www.bloomberg.com/news/articles/2025-12-15/ford-to-repurpose-ev-battery-plant-for-energy-storage-batteries?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+ after struggling for years to make it profitable. Whether expanding 
+bidirectional charging can help increase sales remains to be seen.
+
+Cutting costs
+
+“We’ll start to be able to go to electric fleets and reduce the cost 
+<https://www.bloomberg.com/news/articles/2025-08-28/the-next-big-ev-feature-a-charger-that-goes-both-ways?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+ straight up.”
+
+Rick Wilmer
+
+Chief executive officer, ChargePoint
+
+The charging company is working on building out a new kind of station that 
+will pump power to and from vehicles. That could be particularly beneficial to 
+fleet operators, from rideshares to delivery companies.
+
+Tesla’s solar plans
+
+By Ed Ludlow <https://bloomberg.com/authors/ASSn3UBPqjI/edward-ludlow>, Mark 
+Chediak <https://bloomberg.com/authors/APj9IOx5Yhk/mark-chediak> and Dana Hull 
+<https://bloomberg.com/authors/ASGzcekUisU/dana-hull>
+
+Tesla isn’t waiting around to see if Elon Musk’s 100-gigawatt solar ambition 
+is feasible — it’s already acting on it. The company is evaluatingmultiple 
+sites across the US to begin manufacturing solar cells 
+<https://www.bloomberg.com/news/articles/2026-02-06/tesla-weighs-new-york-arizona-idaho-to-lift-solar-cell-output?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+, according to people familiar with the matter, turning what sounded like a 
+moonshot just weeks ago into an active industrial push.
+
+One component of the plan: expanding production at its Buffalo, New York, 
+factory, said the people, who weren’t authorized to speak publicly. Capacity 
+there could reach 10 gigawatts, they said, which would be equivalent to 10 
+nuclear plants.
+
+Longer-term, another scenario would involve building a second facility in New 
+York state, one of the people said.
+A solar panel canopy at the Tesla Inc. Supercharger station in California.
+Photographer: Patrick T. Fallon/Bloomberg
+Arizona and Idaho are among other locations under consideration, the people 
+said. The effort is being led by Tesla Vice President Bonne Eggleston, who 
+recently posted on LinkedIn he was hiring for domestic solar-manufacturing jobs.
+
+AI’s insatiable appetite for electricity is again spurring Musk to prioritize 
+solar after the company’s earlier efforts failed to realize the ambitions he 
+outlined. Solar cells are thin wafers used in the manufacture of solar panels.
+
+Musk and representatives for Tesla didn’t immediately respond to requests for 
+comment.
+
+“We can neither confirm nor deny companies we are currently working with and 
+do not discuss open or potential projects,” said Jeremy Chase, tourism and 
+marketing administrator for the Idaho Department of Commerce, in an email.
+
+Read the full story 
+<https://www.bloomberg.com/news/articles/2026-02-06/tesla-weighs-new-york-arizona-idaho-to-lift-solar-cell-output?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+ to see how the solar manufacturing industry is faring.
+
+Putting a price on nature
+
+By Olivia Rudgard <https://bloomberg.com/authors/AWBnLoYN_tg/olivia-rudgard>
+
+Nature was supposed to be the next big business opportunity. But despite 
+warnings that degradation poses a material risk, calls to finance protecting 
+the natural world are largely falling on deaf ears.
+
+That was the message at a conference for business and finance organized by the 
+insurance company Aviva and the UK government’s environment department, 
+happening in concert with a separate meeting this week where scientists and 
+diplomats arehashing out an assessment of how businesses depend on biodiversity 
+<https://www.ipbes.net/events/ipbes-12-plenary> in Manchester.
+Coffee plants affected by drought in Brazil.Photographer: Tuane 
+Fernandes/Bloomberg
+The most dramatic example is the Cali Fund, which was launched a year ago to 
+attract voluntary contributions from businesses that rely in part on biological 
+data for their products. UK Nature Minister Mary Creagh opened the 
+Aviva-organized conference hailing the first investment into the fund in 
+November by British startup TierraViva AI. But that investment wasvery modest – 
+only $1,000. <https://mptf.undp.org/fund/cal00>
+
+That didn’t dampen Creagh’s enthusiasm: It’s all “still at the very, very 
+early stages,” she said in an interview.
+
+“It is crystal clear now that there is financial materiality” if nature is 
+lost, said Nicola Ranger, executive director of Earth Capital Nexus at the 
+London School of Economics, during Wednesday’s closing panel. But, she added, 
+less than half of firms that analyze their exposure under frameworks like the 
+EU’s Corporate Sustainability Reporting Directive conclude that a damaged 
+environment is something that would affect the viability of their business. 
+That means they don’t think it’s worthwhile to spend money on protecting it.
+
+“We don’t think that’s supported by the evidence,” she said. On Monday, the 
+main conference, a meeting of scientists and diplomats from all over the world, 
+will add more evidence to that pile with a report on the interdependencies of 
+business and biodiversity, the culmination of almost three years of work by 80 
+experts from all over the world.
+
+Subscribe to Green Daily 
+<https://links.message.bloomberg.com/a/click?_t=f574328d4d0c4c359b90d8e49b10e21d&_m=36349761c23f4c80aff3d923c2a03c19&_e=9IEULqrmCV805ukSVWBZvcmoPj8rotOw5G8CjZIkseE4DkXgFHuEYu1KZ4X7GvydNOX8SB7f9LVdfB0gVpqQhYja7V6rIIqC39otKSwS_l8BEtU8_AfzYmhztmKg9ghkX_eUMUi8kM_DMltCnCoxwJHgu_JllYPrR7v4bjzYkseowt6Qb5B6qkWmTcHMmweEn5h9NQcfk_tfJ653ufb_NlYD2CkTGkgUj9UEdmQHyMNJT9XMR5Mx4l3b_-3yvFf6JlM_rZc5EmVedi5e7Ekpbw%3D%3D>
+ to get our take on the forthcoming report on biodiversity and business risks 
+delivered straight to your inbox.
+
+This week’s Zero
+ 
+<https://omny.fm/shows/zero/electricity-is-now-holding-back-growth-across-the-global-economyhttps://omny.fm/shows/zero/electricity-is-now-holding-back-growth-across-the-global-economy>
+Major economies around the world are grappling with electricity grids under 
+stress from equipment bottlenecks and workforce shortages. What can be done to 
+solve it? This week onZero, Akshat Rathi talks with Manoj Sinha, CEO of Husk 
+Power Systems, about distributed energy resources and their potential to bring 
+electricity to where it is needed most — from energy-poor regions in the Global 
+South, to energy-hungry data centers in rich countries.
+
+Listen now, and subscribe on Apple 
+<https://podcasts.apple.com/us/podcast/zero/id1621556928>, Spotify 
+<https://open.spotify.com/show/5rHwnJEjFRnivIdpWwnZyZ?si=985034d7e76a47a0> or 
+YouTube 
+<https://www.youtube.com/playlist?list=PLe4PRejZgr0MtnA98Xp8igGT9S3Na_zDD> to 
+get new episodes ofZero every Thursday.
+
+More from Green
+
+Stellantis is taking €22 billion ($26 billion) in charges to reverse course on 
+its electric vehicle strategy, one of thebiggest such writedowns 
+<https://www.bloomberg.com/news/articles/2026-02-06/stellantis-to-take-charges-of-about-22-billion-on-ev-reset?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+ among its peers, prompting a record plunge in the Jeep and Fiat owner’s shares.
+
+The writedowns, covering the cost of canceling EV models as well as 
+compensating suppliers, follow similar announcements from carmakers ranging 
+from Ford and General Motors to Porsche.
+
+Stellantis shares cratered as much as 24% in Milan, cutting the company’s 
+market value by more than €5 billion, to about €18 billion. The charges 
+significantly exceeded analyst projections.
+
+Read the full story. 
+<https://www.bloomberg.com/news/articles/2026-02-06/stellantis-to-take-charges-of-about-22-billion-on-ev-reset?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+Newly manufactured vans at Stellantis’ Vauxhall van factory in Luton, UK in 
+2024.Photographer: Chris Ratcliffe/Bloomberg
+The US Congress has directed a government agency to study the carbon intensity 
+of certain industrial products 
+<https://www.bloomberg.com/news/articles/2026-02-06/energy-department-will-start-counting-carbon-emissions-of-steel-cement?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+ exported to the European Union.
+
+Cape Town will call for tenders to implement several major projects that aim to
+cut electricity costs and bolster water 
+<https://www.bloomberg.com/news/articles/2026-02-06/cape-town-goes-private-to-boost-electricity-and-water-supply?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+ security.
+
+Large Japanese polluters are buying carbon credits 
+<https://www.bloomberg.com/news/articles/2026-02-06/big-japan-emitters-buy-carbon-credits-ahead-of-compliance-market?cmpid=BBD020626_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260206>
+ on the Tokyo Stock Exchange’s voluntary market before the country launches a 
+mandatory program.
+
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Hyperdrive 
+<https://www.bloomberg.com/account/newsletters/hyperdrive?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for expert insight into the future of cars
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * CityLab Daily 
+<https://www.bloomberg.com/account/newsletters/citylab-daily?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for top stories, ideas and solutions, from cities around the world
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+.
+
+
+
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/iB7kOAY68jCy-yrdIjclvbDxU1OvcChaHe_4T-opTxHeRpPqpraaiVC_WqcvSKkdvml8hehRTqKiFxn6oeSrLcZpe5Tvs0mbTuxthQXPOAM8WIT15gb4vkRnE3BADe1zbIcB-DmCLwMZLFfcT_yqgsYh-8emJe8MpDG2C3mM3qGI91wuT8PG8S-IaM-HRfMAqkaFPUW2RFzCjWvg5lu9QsU56VP-1-dGIzHxMsHLsEq9OcSfvLimKw_rEAqcac4nN5FONHVw3FymIA3_XBBwA6Ab3X_YvKy72vwi3b8h8jVyCFHa0f17CTdqpP0flI2aBm-ORZ7ivfPsAKxaGIyvDU6pge60Zr5J/ljTgGFVXMN17eGQI1aShSmYAQZFe6aQY/17>

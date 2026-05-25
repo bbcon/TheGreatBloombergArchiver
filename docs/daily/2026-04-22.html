@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, April 22, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, April 22, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity futures advanced on Wednesday, with S&P 500 futures up roughly 0.5% and Nasdaq 100 futures gaining 0.6%, after President Trump announced an indefinite extension of the Iran ceasefire. The move reinforced what markets have come to call the TACO trade — the wager that Trump will consistently seek an off-ramp rather than permit escalation — and confirmed the pattern that has defined post-selloff behavior since the pandemic: once traders decide risk is back on, there is no retest. As Bloomberg's Longview Economics notes, the historical retest rate for major corrections stood at 87% from 1978 through 2020; it has been zero since. Whether that reflects structural changes in retail participation, tighter hedge fund risk controls, or simply extrapolation of a short behavioral sample remains genuinely uncertain. The session also brought Kevin Warsh's long-awaited Senate Banking Committee confirmation hearing. The Fed chair nominee pledged independence repeatedly but declined to offer any near-term guidance on the interest rate path, leaving his views largely opaque. More substantively, Warsh signaled comfort with the administration's "economic statecraft" agenda, describing a Fed role in supporting dollar stability through Treasury Secretary Bessent and Secretary of State Rubio's framework. His comments on dollar swap lines were notably restrained — he framed the Fed's contribution as delivering stable prices rather than directly expanding liquidity facilities — but the alignment with the Bessent-Rubio posture on dollar supremacy is worth monitoring. The nomination remains complicated by Senator Thom Tillis's hold, tied to the Justice Department's probe of the Fed. On the tariff front, Trump signaled that companies seeking refunds from the Supreme Court-ordered repayment of struck-down IEEPA tariffs — a process potentially totaling more than $160 billion — might face implicit political consequences. "If they don't do that, I'll remember them," the president said of firms that forgo claims. The comment adds a chilling dimension to what CBP framed as a routine administrative process. Tesla reports quarterly earnings after the close, with Wall Street focused less on the headline figures — expected to beat lowered estimates — than on concrete progress toward robotaxi commercialization and AI/robotics initiatives that underpin the stock's 183x forward earnings multiple.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Japanese equity markets drew renewed interest from US investors, according to Goldman Sachs, as confidence recovers following the initial shock of the Middle East conflict. The observation aligns with a broader MSCI global gauge that has risen approximately 7% since the ceasefire was announced two weeks ago, with AI-focused benchmarks in South Korea and Taiwan rallying more than 13%. Memory chipmakers remain central to that move: Samsung shares have tripled and SK Hynix's have quadrupled since late August as AI-driven demand pushed chip prices sharply higher. The debate among investors is whether this represents a structural supercycle — with data center buildout creating a sustained demand floor — or a cyclical upturn that will eventually revert. Samsung and SK Hynix still trade at under 10x earnings, a significant discount to semiconductor peers, reflecting persistent market skepticism about the durability of memory cycles. In China, the People's Bank of China injected additional liquidity into the banking system as data revealed an unexpected deterioration in the labor market, particularly among early-career workers, where unemployment has risen as AI adoption accelerates. Separately, China's "national team" — led by Central Huijin Investment — appears to have stepped back from dominant ETF positions that had stabilized markets during the tech-led rally earlier this year, with first-quarter filings showing holdings falling below the 20% disclosure threshold. The retreat suggests authorities may be satisfied with current market levels, or are managing the risk of an overheated rally, though their current exposure remains opaque. Trump's cryptic CNBC remarks about a vessel carrying a "gift from China" — implying potential lethal aid to Iran — introduce a significant geopolitical variable. If substantiated, such transfers would test a declared US red line and could materially complicate the bilateral relationship at an already sensitive moment. Beijing has not publicly responded. Japan's March export data showed faster-than-expected growth on rebounding Chinese demand, offering a modestly constructive data point even as the Bank of Japan's expected rate hike next week faces diminished probability given war-related uncertainty.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Keir Starmer's political position deteriorated further on Tuesday as former top official Olly Robbins testified to a public inquiry that Downing Street was "dismissive" of concerns raised during Peter Mandelson's vetting process ahead of his appointment as UK ambassador to Washington. Mandelson's well-documented ties to convicted sex offender Jeffrey Epstein were at the center of the controversy, and Starmer's decision to dismiss the Foreign Office's permanent secretary has triggered what amounts to an open revolt by senior civil servants — a damaging and distracting conflict at a moment when global crises demand coherent diplomatic capacity. Starmer's credibility appears to be eroding incrementally rather than acutely, but the trajectory is concerning for a government that entered office promising institutional restoration. On the macroeconomic front, UK inflation accelerated in March, with the surge in energy costs tied to the Hormuz closure feeding through to consumer prices. Research published this week suggests the Iran conflict could erase most of Chancellor Rachel Reeves's fiscal buffer, compounding an already narrow margin. In Germany, the Bundesbank estimated slight first-quarter GDP expansion, but the ZEW investor expectations index collapsed to -17.2 in April from -0.5 in March — its lowest level in more than three years and well below the consensus estimate of -5.8 — signaling that business confidence is deteriorating rapidly as the war weighs on Europe's industrial core. European bank lending conditions are also reportedly tightening under war-dented demand, adding to medium-term growth concerns. Hungary's incoming leader Péter Magyar has made euro adoption a top priority, which would represent the eurozone's largest single expansion since Greece joined in 2001. The ambition is real, but the timeline is long: Viktor Orbán's 16-year legacy of sluggish growth leaves the budget deficit well outside Maastricht parameters, and the convergence process typically spans several years under the best of conditions.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The most consequential development of the day was President Trump's announcement of an indefinite ceasefire extension with Iran, delivered within 30 minutes of news that Vice President Vance's planned trip to Islamabad for renewed talks had been cancelled. The sequencing — bad news followed almost immediately by a de-escalatory action — encapsulates the dynamic that markets have priced: Trump retains escalation optionality but consistently elects the off-ramp. The Strait of Hormuz remains closed, however, and the US naval blockade continues. Iran's UN envoy indicated Wednesday morning that Tehran had received "some sign" Washington is ready to lift the blockade, suggesting backchannel communication is active even as formal talks have stalled. The UK and France convened a summit of military planners in London to discuss keeping the Strait open; separately, an Iranian gunboat fired on a container ship near Hormuz on Wednesday. The commodity dimensions of the conflict deserve attention beyond crude oil. The Bloomberg Agriculture sub-index has risen meaningfully since hostilities began, with wheat and rice both moving higher, though the moves remain below 2022 levels — possibly because markets anticipate a short conflict, or have not yet fully priced fertilizer supply disruptions from the Gulf. Bank of America flags corn as carrying the largest upside risk, given mounting pressure in nitrogen fertilizer markets. Industrial metals have also rallied sharply: copper and aluminum are each up more than 11% since mid-March, supported both by supply chain disruption and robust structural demand from AI data center buildout and grid electrification. The copper-to-gold ratio recently touched four-decade lows, a level historically associated with the onset of commodity supercycles. Commodity trading houses have been direct financial beneficiaries of the volatility. Vitol, Trafigura, and Gunvor together raised $7.5 billion in contingency liquidity facilities at the war's outset, and preliminary first-quarter figures suggest profits comparable in magnitude to the $30 billion-plus earned collectively in 2022. Russia's oil export revenues have risen to their highest since early in the Ukraine invasion, but elevated domestic borrowing costs and a military-distorted economy mean the windfall is unlikely to translate into broader growth — a meaningful constraint on any Putin-mediated diplomatic initiative.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

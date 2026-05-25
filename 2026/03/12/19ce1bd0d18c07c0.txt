@@ -1,0 +1,242 @@
+Subject: Economics Daily: Inflation disconnect
+Date: Thu, 12 Mar 2026 11:09:46 +0000
+
+The Two Main US Inflation Gauges Are Telling Different Stories
+The two main US inflation gauges are telling different stories
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-03-12/the-two-main-us-inflation-gauges-are-telling-different-stories>
+ <https://bloomberg.com/economics>
+
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=17248272&m=11b724c487f61753eb1a7a4a5f3ef261&p=03122026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=17248272&m=11b724c487f61753eb1a7a4a5f3ef261&p=03122026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+I’m Chris Anstey <https://bloomberg.com/authors/AF7uNtxCFaA/chris-anstey>, a 
+senior economics editor in Boston, and today we’re looking at an divergence 
+between the two main US inflation gauges. Send us feedback and tips to
+ecodaily@bloomberg.net <mailto:ecodaily@bloomberg.net>. And if you aren’t yet 
+signed up to receive this newsletter, you can do sohere 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=ecointro>
+.
+
+Top Stories
+
+ * Iran escalated attacks 
+<https://www.bloomberg.com/news/articles/2026-03-12/iran-escalates-attacks-on-shipping-and-dubai-sending-oil-higher?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ on Dubai andshipping assets 
+<https://www.bloomberg.com/news/articles/2026-03-12/oman-evacuates-vessels-from-oil-terminal-in-precautionary-move?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+, pushingoil 
+<https://www.bloomberg.com/news/articles/2026-03-12/iran-war-is-causing-biggest-ever-oil-market-disruption-iea-says?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ above$100 a barrel 
+<https://www.bloomberg.com/news/articles/2026-03-11/latest-oil-market-news-and-analysis-for-march-12?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ and stoking concern about thelength of the war 
+<https://www.bloomberg.com/news/articles/2026-03-12/war-spending-sinks-long-term-government-bonds-on-deficit-worries?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+.
+ * As US President Donald Trump tries to rebuild a tariff wall 
+<https://www.bloomberg.com/news/articles/2026-03-11/trump-tariffs-revival-trade-investigations-launched-in-china-eu?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+, theTrade Representative’s office 
+<https://www.bloomberg.com/news/articles/2026-02-24/trump-s-tariff-options-after-supreme-court-defeat-sections-122-338-and-more?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ willprobe economies 
+<https://www.bloomberg.com/news/articles/2026-03-12/south-korea-passes-us-investment-bill-as-trump-starts-new-probe?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ includingChina 
+<https://www.bloomberg.com/news/articles/2026-03-12/soybeans-in-spotlight-as-trade-chiefs-prepare-for-trump-xi-meet?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ and the EU.
+ * Turkey 
+<https://www.bloomberg.com/news/articles/2026-03-12/turkey-pauses-rate-cuts-in-the-face-of-iran-war-pressures?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+’s central bank paused interest-rate cuts,Australian 
+<https://www.bloomberg.com/news/articles/2026-03-11/australia-s-slump-in-job-hunters-to-spur-march-rba-hike-be-says?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ officialsmay hike next week 
+<https://www.bloomberg.com/news/articles/2026-03-12/australia-set-to-fully-reverse-last-year-s-rate-cuts-on-iran-war?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ and more than a third ofeconomists 
+<https://www.bloomberg.com/news/articles/2026-03-12/yen-nears-year-s-low-as-strategists-see-higher-intervention-bar?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ reckon theBank of Japan 
+<https://www.bloomberg.com/news/articles/2026-03-11/boj-watchers-set-sights-on-april-rate-hike-after-hold-next-week?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ will do so in April.
+Two Inflations
+
+To know where you’re heading, it can help to know where you’ve been. With that 
+in mind, the pre-Iran war readings on US inflation aren’t entirely devoid of 
+information. But something striking has emerged with regard to the two main 
+measures of prices facingAmerican consumers 
+<https://www.bloomberg.com/news/articles/2026-03-11/ceos-gain-confidence-in-us-economic-outlook-despite-iran-war?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+.
+
+The gauge that almost always runs cooler than the other one is now running 
+materially hotter 
+<https://www.bloomberg.com/news/articles/2026-03-11/us-core-inflation-slowed-as-expected-before-war-with-iran?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+. That’s the core PCE, or the cumbersomely worded personal consumption 
+expenditures price index, taking out thevolatile food 
+<https://www.bloomberg.com/news/articles/2026-03-11/hold-the-salad-as-lettuce-and-tomato-prices-surge-in-february?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ andenergy components 
+<https://www.bloomberg.com/news/articles/2026-03-10/trump-softens-iran-tone-as-gas-prices-show-their-political-power?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+. It’s published a little later each month than the other one, the core 
+consumer price index.
+
+On Friday, economists see the government reporting the core PCE up 3.1% in 
+January on a year-on-year basis — the most since April 2024. By contrast, the 
+core CPI rose 2.5% that month, the least since the inflation breakout of spring 
+2021. And Wednesday’s reading on February prices showed the CPI paceheld at 
+that low rate 
+<https://www.bloomberg.com/news/articles/2026-03-11/tame-cpi-still-spells-trouble-for-fed-s-favored-inflation-gauge?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+.
+
+Sifting through CPI figures that cross over to the PCE, things aren’t looking 
+good for February. And that was all before the Iran war broke out and sent 
+energy and other prices — such asfertilizer costs 
+<https://www.agweb.com/news/policy/politics/farmers-face-skyrocketing-fertilizer-prices-there-short-and-long-term-fix>
+ — soaring.
+
+This is likely to send policymakers into different camps. The Trump 
+administration has already been touting the CPI reports in arguing that price 
+pressures are contained and the Federal Reserve ought to be slashing rates. 
+While hawks at the US central bank point to a PCE gauge that showsinflation is 
+running 
+<https://www.bloomberg.com/news/articles/2026-03-12/global-bonds-erase-2026-gains-as-war-fuels-inflation-angst?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ at a full percentage point above policymakers’ 2% target.
+
+Worryingly for the doves, the chart above shows the PCE gauge started climbing 
+before the CPI one in 2021 as inflation took off. If the January core PCE comes 
+in as economists forecast, it would exceed the annual core CPI by one of the 
+widest margins in decades.
+
+The division stems from how each inflation measure weights certain items. CPI, 
+which is produced by the Bureau of Labor Statistics, places a strong emphasis on
+housing costs 
+<https://www.bloomberg.com/news/articles/2026-03-05/sub-6-mortgage-rates-vanish-as-iran-war-sparks-inflation-fears?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+. A key metric known as rent of primary residence rose 0.1% from January, the 
+least in five years. It also assigns a higher weight to used-car prices, which 
+have fallen for three straight months.
+
+The PCE focuses on certain goods much more, such as computer software and 
+jewelry. Those both jumped notably in February’s CPI. Forecasters at Barclays 
+Plc, Morgan Stanley and Bank of America see PCE core goods prices advancing at 
+least 0.8% in February — some 10 times the increase shown in the latest CPI 
+report.
+
+PCE figures “should keep Fed officials cautious on inflation risks and on hold 
+for now,” Citigroup economists including Veronica Clark wrote in a note 
+Wednesday.
+ 
+<https://www.bloomberg.com/news/articles/2026-03-11/podcast-why-what-you-know-about-recessions-could-be-all-wrong>
+Could what you know about recessions be all wrong? On the latest Trumponomics 
+podcast 
+<https://www.bloomberg.com/news/articles/2026-03-11/podcast-why-what-you-know-about-recessions-could-be-all-wrong?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+, hostStephanie Flanders 
+<https://www.bloomberg.com/authors/ARdopHJe75o/stephanie-flanders> speaks with 
+ExxonMobil Chief Economist Tyler Goodspeed about his new book, Recession: The 
+Real Reasons Economies Shrink and What to Do About It. Listen onApple 
+<https://podcasts.apple.com/us/podcast/what-you-know-about-recessions-could-be-all-wrong/id1038108799?i=1000754731978>
+,Spotify 
+<https://open.spotify.com/episode/08KCJIepky6Nu21ro4uKtz?si=3e14b21823d14ee9>, 
+or wherever you get your podcasts.
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=17248272&m=11b724c487f61753eb1a7a4a5f3ef261&p=03122026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=17248272&m=11b724c487f61753eb1a7a4a5f3ef261&p=03122026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+The Best of Bloomberg Economics
+
+ * China is increasingly clawing back profits 
+<https://www.bloomberg.com/news/articles/2026-03-11/china-squeezes-state-firms-more-than-ever-to-ease-budget-strains?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ from state companies to cover some of the government’s spending needs.
+ * The European Union 
+<https://www.bloomberg.com/news/articles/2026-03-11/europe-rushes-to-deal-with-price-fallout-from-trump-s-iran-war?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ warned thatinflation could surpass 3% 
+<https://www.bloomberg.com/news/articles/2026-03-11/eu-warns-iran-conflict-could-push-the-bloc-s-inflation-above-3?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ this year if oil prices remain around $100 per barrel andgas prices 
+<https://www.bloomberg.com/news/articles/2026-03-12/european-gas-prices-follow-oil-higher-as-shipping-crisis-worsens?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ stayelevated 
+<https://www.bloomberg.com/news/articles/2026-03-12/german-10y-yield-climbs-to-highest-since-2023-on-inflation-fears?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+.
+ * A prolonged natural gas pipeline leak in Peru is suddenly laying bare the 
+costs of itschronic political instability 
+<https://www.bloomberg.com/news/articles/2026-03-12/peru-s-gas-leak-is-revealing-that-instability-matters-after-all?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+.
+ * India’s gas crunch 
+<https://www.bloomberg.com/news/articles/2026-03-12/india-cooking-gas-crunch-fuels-inflation-fear-as-iran-war-widens?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ is rippling through theeconomy 
+<https://www.bloomberg.com/news/articles/2026-03-12/india-in-talks-with-iran-to-secure-safe-passage-for-tankers?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+, raising fears about a spike in prices and a drop in output insome sectors 
+<https://www.bloomberg.com/news/articles/2026-03-12/indian-assets-crack-as-energy-shock-brings-growth-fears-to-fore?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+.
+ * Ukraine 
+<https://www.bloomberg.com/news/articles/2026-03-12/ukraine-warns-oil-price-surge-set-to-boost-putin-s-war-chest?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ central bank chief accused Hungary of brutally interrogating the couriers in 
+last week’s seizure of$82 million of gold and cash 
+<https://www.bloomberg.com/news/articles/2026-03-11/ukraine-central-bank-chief-slams-hungary-over-82-million-heist?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ they escorted towar-torn country 
+<https://www.bloomberg.com/news/articles/2026-03-11/kyiv-rebuffs-hungarian-team-sent-to-check-pipeline-damage?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+.
+ * Egyptian assets 
+<https://www.bloomberg.com/news/articles/2026-03-11/ripples-from-iran-war-put-egypt-s-resilience-under-spotlight?cmpid=BBD031226_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260312>
+ are among the Middle East’s worst hit by the Iran war, a stress test for 
+grueling International Monetary Fund-backed reforms.
+Need-to-Know Research
+
+Gasoline prices have been soaring thanks to the jump in crude prices resulting 
+from the war in Iran, but some locations are seeing bigger rises than others. 
+On a country-by-country basis, the poor ones are getting hit harder. Within the 
+US itself, Republican states are more at risk, according to Bloomberg Economics.
+
+“Our analysis of personal consumption expenditures reveals consumers in states 
+that voted for Trump in 2024 are likely to be hit hardest,” said BE’sChris 
+Kennedy <https://www.bloomberg.com/authors/AXiAjm5I6so/chris-kennedy>. At $100 
+a barrel crude oil prices — above current levels but below the Bloomberg 
+Economics benchmark for a protracted Iran conflict — the nationwide share of 
+spending going to fuel climbs to 2.3% from 1.9%, he wrote.
+
+“The increase is more dramatic for the average consumer in states that voted 
+for Trump in 2024, Kennedy, economic statecraft lead, wrote in a note 
+Wednesday. Their fuel spending increases to 2.7% of all spending, from 2.2%, he 
+said. “That shock is 70% larger than for consumers in states that voted for the 
+Democratic candidate, Kamala Harris.”
+
+Read the full research on the Bloomberg Terminal. <>
+
+More from Bloomberg
+
+Enjoy Economics Daily?
+
+ * Read more economic stories <https://www.bloomberg.com/markets/economics>
+Plus, here are some newsletters we think you might like
+
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for daily insights into supply chains and global trade
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for the latest in politics from around the globe
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+.
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Economics 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=NLshare>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/QYaxnmP3qmiYS51CEBiM4L5yQOsvxuJfG10SZWzWD2JYzJtcUHo9VI97rBEEZcL0MTlIBPLzJMTxPILmiOXs4c854Yq69nRQ3UBkync7XsgccEaRc6Qr-9Jm_GApqan_k3-tLOZaPASmDowdwAYEBTvk_jZCs0RnPAv6_IQ3K0IGvfgeoRhA-AvZHp3R4Nq1WZpuuNGPBgGlZePOBK12OIiCigW82AR7MNfw0yEhJPVALgw4bCqGGjlBm174kkZVXqU7lp4nmguK4w_Q2BNg-8FQBTutKm-ZhpWnzN4Hjxdrh7vGmBh-rCuvB8c1E2uOcQoAKuItPlvBMfh1fX2m5UWOT8uu0DXB/arSeo1alXRZN9GzVfx1ekq3ibEnHCFhj/18>

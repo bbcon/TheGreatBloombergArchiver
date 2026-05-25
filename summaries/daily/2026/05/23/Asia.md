@@ -1,0 +1,11 @@
+**Asia-Pacific Daily Briefing — May 23, 2026**
+
+Coverage for the region is thin in today's flow, with the bulk of newswire material focused on the ongoing Iran war's disruption of Gulf petrodollar flows and US domestic climate policy. We highlight the Asia-relevant threads below.
+
+**China growth momentum fades, reviving stimulus debate.** Bloomberg Economics flagged that China's economy is slowing across the board, reigniting expectations for additional policy support. The signal is consistent with the softer prints seen through the spring, though specifics on the composition of any forthcoming package — fiscal, monetary, or property-targeted — remain unclear. Markets will look for clarity from Beijing in the weeks ahead, particularly given that external demand is being further pressured by the Hormuz disruption and elevated energy costs.
+
+**India digests a sharp equity drawdown tied to AI underexposure.** Indian equities have seen a notable rout, with commentary framing it as the cost of "missing the AI wave." The narrative marks a meaningful shift from the bullish India-as-alternative-to-China positioning that dominated 2024–25 flows, and warrants scrutiny as to whether this reflects a durable rerating of sector composition or a tactical rotation. We would caution against extrapolating either way until earnings revisions confirm the trend.
+
+**Indirect Asia channel: shrinking Gulf capital pools.** The most consequential cross-regional development remains the contraction of petrodollar recycling. Gulf sovereign wealth funds, historically large allocators to Asian tech, infrastructure, and EM debt, are turning inward to fund war-related spending and domestic projects such as Saudi Arabia's $35 billion Aramco privatization push. Pakistan, which has previously relied on Gulf bilateral support to avert default, sits among the more exposed sovereigns; Egypt-style rescues will be harder to replicate. Asian beneficiaries of GCC FDI — including Indian infrastructure platforms and Southeast Asian data-center projects — may face delayed or scaled-back commitments, though the magnitude remains to be seen and will depend on the war's duration.
+
+No material flow today on Japan, Korea, or Australia.

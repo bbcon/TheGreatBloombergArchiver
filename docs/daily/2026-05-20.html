@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, May 20, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, May 20, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Bonds Reprice the Long End; Equities Diverge</p>
+<p class="para-body">The 30-year Treasury yield rose to 5.19% on Tuesday, the highest since June 2007, as persistent oil-driven inflation pressures from the Hormuz closure continued to push the term premium higher. Bloomberg's gauge of average global sovereign yields is now at its highest since July 2008. The selloff is increasingly bifurcating the equity market: large-cap AI names remain bid, while options activity in the Russell 2000 shows the first meaningful pickup in hedging demand in six weeks, reflecting concern that smaller, rate-sensitive companies will absorb the brunt of tighter financial conditions. Futures markets are now pricing roughly a three-in-four probability of a Fed hike by December — a notable shift for a committee nominally still in a cutting cycle. Barclays' Ajay Rajadhyaksha argued that, absent a reopening of Hormuz, only weaker macro data is likely to arrest the move in yields.</p>
+<p class="para-title" style="color:#5597cb;">Fed Posture and the Housing Channel</p>
+<p class="para-body">Fed official Anna Paulson reiterated a preference for holding rates steady, with FOMC minutes due later in the session. TD Securities now expects 30-year mortgage rates to end the year near 6.15%, leaving housing affordability at levels not sustained since the 1980s and pointing to continued stagnation in existing sales and new construction. HSBC's base case now contemplates a 2026 Fed hike as a tail risk that can no longer be dismissed.</p>
+<p class="para-title" style="color:#5597cb;">Nvidia and the AI Capex Question</p>
+<p class="para-body">Nvidia reports after the close, with consensus looking for 79% revenue growth to $78.9 billion. Hyperscaler capex projections for 2026 and 2027 have been revised to $812 billion and $968 billion respectively — up 89% year-to-date among the top four buyers. Equity holders have rewarded the spending; credit markets have not, with hyperscaler IG spreads now 25% wider than the broader index, having been 15% tighter a year ago. The Shiller CAPE stands at 39.6, a level exceeded only during the late stages of the dot-com bubble.</p>
+<p class="para-title" style="color:#5597cb;">Trade and Corporate</p>
+<p class="para-body">The EU finalized the text of its US trade deal, clearing a procedural hurdle ahead of the July 4 tariff deadline; the pact caps EU export tariffs at 15% in exchange for removal of EU duties on US industrial goods. Goldman Sachs and Morgan Stanley are reported to lead the SpaceX IPO, with the filing potentially landing today. The Pentagon confirmed a permanent reduction of roughly 4,000 US troops from Europe.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Xi anchors Beijing diplomacy as Putin visit underscores axis</p>
+<p class="para-body">President Xi Jinping welcomed Vladimir Putin to Beijing with full state honors, the Russian leader's 25th visit, as the two convened against the backdrop of escalating tensions over Iran and the ongoing Ukraine conflict. Xi explicitly cautioned Washington against resuming strikes on Iran, calling a "comprehensive ceasefire" imperative—remarks that followed President Trump's renewed threats of military action. Talks centered on the long-discussed Power of Siberia 2 pipeline and deepening energy ties, with Russia now reliant on China for over 90% of sanctioned technology imports. The visit caps a year in which Xi has hosted leaders from the UK, Canada, South Korea, and Vietnam, positioning Beijing as an alternative diplomatic hub amid Washington's more transactional posture.</p>
+<p class="para-title" style="color:#e07b39;">Samsung labor breakdown threatens chip supply</p>
+<p class="para-body">Negotiations between Samsung Electronics and its largest union collapsed, with a general strike set for Thursday after management rejected a government-mediated proposal. Shares fell as much as 4.4% before paring losses. The dispute reflects broader political tensions over AI-era wealth distribution: Samsung's semiconductor arm posted a 48-fold quarterly profit increase and is projected to generate nearly $200 billion in operating profit this year. President Lee Jae Myung's government has intervened urging direct talks, though the underlying question—how AI windfalls are shared—remains unresolved and increasingly politicized.</p>
+<p class="para-title" style="color:#e07b39;">Indonesia tightens monetary and commodity controls</p>
+<p class="para-body">Bank Indonesia raised rates 50bp to 5.25%, double consensus expectations, in a defensive move against rupiah weakness amid Iran-driven volatility. Separately, President Prabowo announced a state-owned entity to centralize exports of palm oil, thermal coal, and nickel—a sweeping reassertion of state control echoing earlier authoritarian-era practices and likely to unsettle foreign commodity buyers.</p>
+<p class="para-title" style="color:#e07b39;">Other developments</p>
+<p class="para-body">Indian rupee weakness continues, with funds positioned for a move toward 100/USD as New Delhi prepares vessels to transit the Strait of Hormuz pending government approval. Taiwan's President Lai used his second-anniversary address to cast Taipei as a stabilizing actor, comments aimed at reassuring Trump following last week's Xi summit. Japanese 30-year yields approach 3%, though Pimco has turned constructive on the long end.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">EU finalizes US trade deal</p>
+<p class="para-body">After months of negotiation, EU lawmakers and member states reached agreement on the text of the long-delayed trade pact with Washington, clearing a major hurdle to ratification ahead of President Trump's July 4 deadline for higher tariffs. The framework removes EU tariffs on American industrial goods in exchange for a 15% ceiling on the bloc's exports — critically averting a threatened increase to 25% on European automobiles. The outcome offers near-term relief for European exporters, though it formalizes a meaningfully less favorable trading arrangement than the status quo ante. Eurozone export data underscored the stakes: EU shipments to the US fell 37% year-on-year in March, the sharpest decline in records dating to 2003, following last year's pre-tariff frontloading.</p>
+<p class="para-title" style="color:#4a9e6b;">ECB and Banque de France leadership</p>
+<p class="para-body">Belgian Governor Pierre Wunsch indicated the ECB will likely hike rates in June, with the Iran-driven oil shock reshaping the inflation trajectory. Emmanuel Moulin, appearing before French lawmakers voting on his nomination to lead the Banque de France, reinforced that the ECB must be "ready to act." The shift toward a tightening bias marks a notable repricing from earlier in the cycle and aligns with broader developed-market dynamics, where global long-bond yields have reached their highest levels in nearly two decades.</p>
+<p class="para-title" style="color:#4a9e6b;">UK inflation and politics</p>
+<p class="para-body">UK CPI fell to its lowest reading in more than a year, prompting traders to scale back expectations for further BoE hikes — a divergence from euro-area pricing worth monitoring. Separately, Reform UK deputy leader Richard Tice warned investors against participating in the AR7 offshore wind auction, pledging the party would unwind Labour-era renewables contracts. Given Reform's recent local election performance, the policy risk premium attached to UK green infrastructure assets warrants reassessment, though the legal basis for retroactive contract intervention remains untested.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate</p>
+<p class="para-body">Marks & Spencer guided full-year profit above pre-cyberattack levels, gaining 4.7% in London. Mercedes-Benz unveiled an electric AMG GT positioned against rivals navigating the EV transition.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">The Hormuz closure approaches an inflection point</p>
+<p class="para-body">With the Strait shut for nearly three months following the outbreak of the US-Iran conflict, HSBC's global economics team argues that even a swift reopening would now leave durable scars on inflation and growth. The bank's revised base case envisions gradual restart of Hormuz traffic from mid-June, though NATO is reportedly discussing intervention to escort vessels through the waterway if it remains closed by early July. India has finalized plans to send tankers through the strait pending government approval, and a South Korean-flagged supertanker appears to be attempting a similar crossing. WTI traded near $107.77, easing modestly as markets weighed President Trump's renewed threat to resume strikes against Iran — a threat now meeting some resistance within the Republican-led Senate. Barclays' Ajay Rajadhyaksha has lifted his 2026 Brent average to $100; in the options market, one trader paid for a position that would pay up to $129 million on a sharp Brent decline by early next week.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary policy is tilting hawkish across regions</p>
+<p class="para-body">Bloomberg's gauge of average sovereign yields has reached its highest level since July 2008, with 30-year US Treasuries hitting 5.19% — a 19-year high — and Japanese long yields approaching 3%. Bank Indonesia surprised with a 50bp hike to 5.25% to defend the rupiah; Iceland also tightened. The ECB is widely expected to hike in June, and HSBC argues a 2026 Fed hike "can't be ruled out." UK inflation, by contrast, fell to a one-year low, prompting markets to pare BoE hike expectations — a rare instance of divergence.</p>
+<p class="para-title" style="color:#8b5cf6;">Energy security is reshaping policy</p>
+<p class="para-body">Germany's gas storage sits below 30% full with the inverted forward curve discouraging injections; traders increasingly expect Berlin to intervene. The UK quietly loosened Russia sanctions to permit imports of diesel and jet fuel refined from Russian crude in third countries — a pragmatic concession to wartime supply constraints. Indonesia announced state centralization of palm oil, thermal coal, and nickel exports, citing fiscal pressure and currency weakness. The combination of equity valuations reminiscent of 2000 and bond yields reminiscent of 2007 remains the defining tension, with AI capex the principal counterweight to deteriorating financial conditions.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

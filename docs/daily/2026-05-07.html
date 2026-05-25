@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, May 07, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, May 07, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets closed at record highs on Wednesday and extended those gains in overnight futures, with the S&P 500 approaching 7,400 as investors increasingly look through the energy shock toward a potential US-Iran deal. The market's resilience is notable: having largely decoupled from oil's gyrations in recent weeks, equities are drawing support from robust high-tech investment and an earnings season that continues to outperform expectations — roughly 80% of S&P 500 companies reporting thus far have beaten estimates. Wall Street bonuses are projected to rise for a third consecutive year as volatility-driven trading revenues and a recovery in dealmaking reinforce the sector's performance. The more contested debate in fixed income markets centers on whether 30-year Treasury yields can sustain a push through 5%. The long bond briefly breached that level this week, driven by persistent fears that Middle East-linked energy inflation will delay Federal Reserve easing further. Market pricing remains relatively hawkish by some estimates, though analysts at Evercore ISI argue a durable deal bringing oil lower would render rate cuts delayed rather than derailed. Fed Governor Collins this week aligned herself with last week's policy dissent on easing language, suggesting internal divisions at the FOMC have not fully resolved. The K-shaped nature of the oil shock is increasingly well-documented. New York Fed research finds that households earning under $40,000 annually reduced real gasoline consumption by 7% even as nominal spending rose 12%, while higher-income cohorts barely adjusted consumption at all. This dynamic complicates the Fed's task: the inflation impulse is real but its incidence is uneven, limiting the demand-destruction signal from aggregate data. On corporate news, Fortinet surged 15% in premarket trading after raising its revenue outlook, while Snap fell sharply on advertising revenue weakness attributed directly to the Middle East conflict. The Trump administration began processing refunds for $166 billion in tariffs declared unlawful by the Supreme Court, a development with meaningful fiscal implications that has received relatively limited market attention amid the broader geopolitical noise.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's financial regulators have quietly directed the country's largest banks to halt new lending to five refiners recently sanctioned by the US for their involvement in Iranian oil trade. The directive leaves existing loans intact, stopping short of a full clampdown, but the signal is deliberate and well-timed: President Trump is expected to press President Xi Jinping on China's continued purchases of Iranian crude at their upcoming Beijing summit. Beijing is simultaneously invoking its "blocking" rules to project defiance against US secondary sanctions while shielding its major banks from the dollar-access risks that aggressive enforcement would entail. The financial retreat is cautious but unmistakable. The legal exposure for global banks operating between the two systems is crystallizing separately. JPMorgan and Citigroup are being sued in China after freezing tens of millions of dollars in payments tied to a firm subsequently sanctioned by the US — with the plaintiff alleging funds were blocked and routed to US authorities before sanctions formally applied. The case illustrates the narrowing corridor available to institutions caught between competing legal jurisdictions. Japan's Nikkei 225 surged 5.6% to a record high as deal optimism surrounding the Strait of Hormuz lifted risk sentiment broadly across the region. The yen, however, continues to struggle near 155 per dollar despite repeated suspected interventions by Japanese authorities estimated to have deployed around $30 billion in recent days. Analysts broadly characterize intervention as increasingly ineffective level-targeting absent a meaningful shift in Bank of Japan policy, given persistent structural headwinds from elevated energy import costs and still-accommodative monetary settings. In Southeast Asia, the Philippines faces its most severe economic stress since the pandemic, with growth slowing sharply, inflation surging, and consumer spending at its weakest in over a decade — a direct consequence of the country's heavy reliance on Middle Eastern crude. Malaysia's central bank kept its benchmark rate unchanged for a fifth straight meeting, judging that contained inflation and a relatively resilient ringgit provide sufficient buffer for now.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">UK local elections took place Thursday, with control of the Scottish and Welsh parliaments and more than half of England's councils at stake. The vote functions as a verdict on Prime Minister Keir Starmer's tenure of under two years, during which a combination of policy missteps, tax increases, and questions over judgment — notably the appointment of Peter Mandelson as ambassador to Washington — have eroded Labour's standing significantly. The political arithmetic is complicated: Labour holds a large parliamentary majority and faces no general election until 2029, but market attention has focused on whether leadership pressure could push successor candidates toward looser fiscal commitments, which gilt markets would view unfavorably. That gilt market backdrop is already under strain. The spread of UK gilts over US Treasuries has widened beyond levels seen at the peak of the Liz Truss episode in 2022, reflecting a combination of the UK's negative net international investment position, twin current account and fiscal deficits, and the perception that the Bank of England faces a more constrained path than the Federal Reserve. Overnight index swaps imply significantly more BoE tightening than was priced before the Iran conflict, a divergence that has widened materially from the Fed's expected trajectory. Bank of England officials this week joined private forecasters in questioning the reliability of recent UK economic data, adding further complexity to rate-setting. On the European corporate front, Shell reported stronger-than-expected first-quarter earnings as elevated energy prices and increased trading volatility — both direct consequences of the Hormuz closure — more than offset production declines. Campari sank 11% in Milan after disappointing results. Looking further ahead, China's newly issued five-year plan, with its emphasis on upgrading traditional industries and cultivating frontier technologies including robotics and biomedicine, is generating significant anxiety in European industrial circles, particularly in Germany. Machinery association VDMA describes the level of corporate concern as unprecedented, as Beijing's shift from scale toward quality and sustainability directly threatens sectors that have historically underpinned European export competitiveness.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The central geopolitical and market-moving development of the day is the tentative US-Iran diplomatic framework that has circulated in the form of a one-page memorandum of understanding. The proposal calls for Tehran to reopen the Strait of Hormuz in exchange for Washington ending its blockade of Iranian ports and lifting some sanctions, with Iran agreeing to a moratorium on uranium enrichment. Broader nuclear questions — the duration of the moratorium and disposition of Iran's highly-enriched uranium stockpile — would be negotiated subsequently. Brent crude fell sharply on the news before paring losses after Tehran indicated a deal was not imminent; the commodity remains above $99 per barrel, having declined roughly 12% over the prior two sessions but still elevated relative to pre-conflict levels. Market participants appear to be pricing something between a near-term transit reopening and a comprehensive settlement — a distinction that matters considerably for the path of energy prices, inflation expectations, and central bank policy globally. Analysts note that even a narrow deal restoring shipping flows would meaningfully relieve pressure on fuel, fertilizers, plastics, and a range of intermediate goods now experiencing shortages. European industrial sectors — aerospace, autos, broader manufacturing — stand to benefit disproportionately given the continent has borne the heaviest economic burden from the disruption. Supply chain infrastructure is adapting in parallel with diplomacy. DP World has introduced end-to-end war risk insurance covering ocean freight, air freight, inland haulage, and storage for cargo traversing the region — an acknowledgment that perceived risk will persist even if a deal materializes. The New York Fed's global supply chain pressure index reached its highest reading since July 2022 in April. Meanwhile, the Iran conflict is accelerating green bond issuance in emerging markets, with first-quarter volumes rising 53% year-on-year to $24 billion as energy-import-dependent economies seek to accelerate renewables deployment — a structural consequence of the shock that may outlast any near-term diplomatic resolution.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

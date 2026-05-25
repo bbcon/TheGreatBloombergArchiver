@@ -1,0 +1,11 @@
+**European Morning Briefing — January 15, 2026**
+
+Coverage in today's available source material is exceptionally thin for the European region. The single Bloomberg item received concerns a US-focused Businessweek cover story on corporate America's approach to managing relations with the Trump White House — relevant to European corporates only insofar as they face similar tariff and political-pressure dynamics, but containing no Europe-specific reporting, data, or named European companies.
+
+Accordingly, we are unable to provide substantive synthesis on the priority topics for this region today: eurozone macro indicators and ECB policy signals; UK political developments and Gilt/sterling market action; individual sovereign stories across France, Germany, Italy, and peripheral economies; or European corporate earnings and M&A flow.
+
+What can be inferred indirectly from the US-centric material is limited but worth flagging for European readers. The continued characterization of the Trump administration as the most interventionist in nearly a century, with tariffs deployed as a recurring instrument, remains a material external risk for European exporters — particularly German autos, French luxury, and Italian industrials — and a complicating factor in the ECB's growth assessment. However, no new tariff actions, transatlantic trade developments, or specific European corporate responses are reported in today's source set, so any elaboration would be speculative.
+
+For a properly grounded European briefing, readers should consult primary feeds for: this morning's eurozone trade balance and any final inflation prints, scheduled ECB speakers, UK economic releases and Westminster developments, and the corporate earnings calendar. We would also flag sovereign auction activity and peripheral spread behavior as worth monitoring given the recent sensitivity of European duration to US rate expectations.
+
+Normal coverage will resume when source material permits. We prefer to acknowledge the gap rather than extrapolate beyond what the underlying reporting supports.

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mar 16 – Mar 22, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="daily.html" class="nav-link">Daily</a><a href="#" class="nav-link  active">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Mar 16 – Mar 22, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Federal Reserve at the Crossroads</p>
+<p class="para-body">The Federal Reserve's March 19 FOMC meeting was the week's defining event for US markets. The committee voted 11-1 to hold the benchmark rate at 3.5%–3.75%, but Chair Jerome Powell's press conference generated significant volatility in its own right. Powell made clear that rate cuts remain contingent on demonstrated inflation progress — a bar that appears increasingly distant given the concurrent pressures of tariff-driven price acceleration and an escalating Middle East energy shock. The Fed's preferred core inflation gauge ran at an estimated 3% in February, a full percentage point above target, and core PPI rose to a three-year high, indicating the pipeline was already accelerating before the Strait of Hormuz blockade. Powell acknowledged "meaningful" internal movement toward fewer cuts and explicitly noted that colleagues had raised the possibility that the next move could be a hike. Futures markets repriced sharply: from two cuts anticipated earlier in the year to zero by week's end. The S&P 500 recorded its largest Fed-day decline since 2024 on Wednesday.</p>
+<p class="para-title" style="color:#5597cb;">Succession and Institutional Uncertainty</p>
+<p class="para-body">Powell's remarks on his own tenure amplified market unease. He confirmed that if Kevin Warsh is not confirmed before his May term expiry, he will remain as chair pro tempore, and stated he will not vacate his board seat — running to January 2028 — until the Justice Department investigation into the Fed's building renovation project concludes. Senator Thom Tillis is blocking Warsh's confirmation vote pending the probe's resolution, and prosecutor Jeanine Pirro has signaled she will not abandon the inquiry. Compounding institutional concerns, senior Justice Department officials rallied behind a US attorney's challenge to Powell's authority, with the White House declining to oppose the effort — a development with potentially significant implications for central bank independence. Markets are increasingly uncomfortable with the prospect of a protracted, politically charged transition at the institution.</p>
+<p class="para-title" style="color:#5597cb;">Energy Prices and the Consumer</p>
+<p class="para-body">US average gasoline prices rose roughly 27% since hostilities began on February 28, reaching approximately $3.70 per gallon by Sunday and approaching levels that historical precedent associates with meaningful electoral consequences. Diesel surpassed $5 per gallon for the first time since December 2022. SMBC Nikko Securities estimated the gasoline price increase could reduce the savings rate by approximately 60 basis points to roughly 3.9%. University of Michigan consumer sentiment fell to a three-month low in the March preliminary reading, and January consumer spending was essentially flat even before the energy spike fully registered. Oxford Economics cautioned that higher energy costs threaten to suppress household decisions in coming months. The administration, facing simultaneous tariff pressure and energy inflation, directed Sable Offshore to restore California offshore oil production and Treasury Secretary Scott Bessent floated the idea of lifting sanctions on approximately 140 million barrels of Iranian crude already at sea — though analysts noted virtually all such oil flows to Chinese refiners, limiting the practical price relief.</p>
+<p class="para-title" style="color:#5597cb;">Equities and Corporate News</p>
+<p class="para-body">US equity futures edged higher early in the week on Monday, with S&P 500 contracts up 0.6%, but sentiment deteriorated markedly as the week progressed. By Friday, futures were off 0.6% amid Iran war uncertainty and the Fed's hawkish tilt, with Goldman Sachs's trading desk noting that clients who had anticipated a quick resolution to the conflict are increasingly doubtful. FedEx climbed roughly 10% on Friday after raising its earnings forecast, providing a modest counterpoint. Super Micro tumbled 22% after federal prosecutors charged a co-founder with illegally diverting Nvidia-powered servers to China. Meta rose approximately 3% early in the week on reports of a $27 billion cloud infrastructure deal with Nebius. Lululemon fell roughly 2% after forecasting a second consecutive year of profit declines, while DocuSign rose after beating earnings. The US 10-year Treasury yield rose to approximately 4.30% by week's end. New York Governor Hochul's proposal to delay the state's 2030 emissions reduction target to 2040, citing energy affordability pressures, illustrated the political difficulty of sustaining decarbonization commitments when fuel costs are acute — a notable signal from a reliably Democratic state. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">China: Resilience and Risk</p>
+<p class="para-body">China's January–February economic data released Monday surprised to the upside, with industrial production rising 6.3% year-on-year — the fastest pace since September — and retail sales and fixed-asset investment both exceeding forecasts. The data offered an encouraging snapshot of domestic momentum building before the Iran conflict's full weight could register. By midweek, however, the structural risk was becoming clearer: Jefferies' Christopher Wood argued that Chinese mainland equities remain among the most defensible in the current environment, citing robust domestic renewable capacity, battery storage, and reserve buffers as relative insulation. FGE NexantECA indicated Beijing is close to drawing on its estimated 1.4 billion barrels of commercial oil reserves as the Strait of Hormuz disruption persists. Citigroup, Goldman Sachs, and Macquarie economists projected Chinese producer prices could turn positive as soon as March, potentially ending a deflationary streak dating to 2022 — though the key uncertainty is whether such inflation reflects genuine demand recovery or purely cost-push dynamics that could compress margins further.</p>
+<p class="para-title" style="color:#e07b39;">China: Markets and Geopolitics</p>
+<p class="para-body">Alibaba and Tencent combined lost approximately $66 billion in market value over roughly 24 hours on Friday after results from both companies disappointed investors seeking a clearer path to AI monetization. Alibaba's quarterly net income fell 67%, its worst performance since early 2024, partly reflecting heavy promotional spending. Alibaba separately raised AI computing and storage prices by as much as 34%, reflecting surging demand. The AI theme drove significant moves in Hong Kong, with LLM providers MiniMax and Zhipu gaining approximately 20% and 19% respectively following Nvidia CEO Jensen Huang's endorsement of OpenClaw, an agentic AI platform. Nvidia confirmed it is ramping production of H200 AI accelerators for Chinese customers following the Trump administration's reversal on tech export controls. The Trump–Xi summit, originally planned for late March, was postponed to approximately mid-May, with Beijing appearing quietly relieved at the delay. The trade truce remains intact, but a pending $14 billion US arms package for Taiwan represents a significant latent irritant.</p>
+<p class="para-title" style="color:#e07b39;">Japan and South Korea</p>
+<p class="para-body">Japan's Bank of Japan kept its policy rate unchanged, with Governor Ueda citing Middle East uncertainty as materially clouding the timing of any further adjustment, though the conditional tightening bias was maintained. Prime Minister Takaichi characterized her White House meeting with Trump as "extremely difficult," with Japan's pacifist constitution foreclosing warship contributions to Hormuz operations. February export data showed shipments to the US falling 8% year-on-year and car exports by value down 14.8%, though overall exports beat expectations at +4.2%. Japan's petrochemical sector faces specific vulnerability from tightening naphtha supplies, with multiple firms announcing production cuts. On a more constructive note, Japan and South Korea appear to be consolidating a pragmatic rapprochement driven by convergent external pressures — Chinese economic coercion, the China-Russia-North Korea military alignment, and Washington's transactional posture. Korean favorability toward Japan recently surpassed 56%, described as a record high, while finance ministers from both countries agreed to expand bilateral cooperation including a review of their currency swap arrangement.</p>
+<p class="para-title" style="color:#e07b39;">Southeast Asia and India</p>
+<p class="para-body">South Korea's Kospi surged 5% on Wednesday after authorities moved to restrict publicly listed companies from listing certain subsidiaries, a governance reform that drove Samsung Electronics up 7% after the company signaled a potential shift toward multi-year memory chip contracts. India's rupee weakened past 93 per dollar to a record low, with Nomura projecting the currency could reach 96 per dollar by end-June and Goldman Sachs projecting it could reach 95 over the next year. India imports approximately 90% of its oil, and Prime Minister Modi secured safe passage for two LPG tankers through Hormuz while simultaneously managing US relations — a difficult bilateral balance with state elections in April approaching. Indonesia's central bank delivered a hawkish hold while tightening foreign-exchange regulations to defend the rupiah, which is down approximately 14% in March. Pakistan's airstrikes on Kabul, which the Taliban government says killed at least 400 people at a drug treatment hospital, represent a serious separate escalation risk in the region that attracted alarm from the EU and China alike. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Central Banks Pivot Hawkish</p>
+<p class="para-body">The week's central bank decisions across Europe represented the most significant monetary policy repricing in the region since the 2022 energy shock. The ECB held its key rate at 2.0% on Thursday, in line with consensus, but dropped language describing policy as being in a "good place" and shifted its forward guidance materially. Traders are now fully pricing two ECB hikes this year — a dramatic reversal from the easing trajectory that prevailed before the conflict began. Governing Council member Joachim Nagel stated Friday that a hike as early as April is conceivable if energy-driven inflation risks materialize, explicitly referencing the post-Ukraine 2022 episode. The Bank of England similarly held rates, but Governor Andrew Bailey's explicit statement that "the prior expectation of scope to cut has changed" drove a sharp repricing in gilts. UK 10-year yields rose to their highest level since 2008, with the move amplified by February borrowing data that came in above forecast due to a surge in debt-interest costs. Sweden's Riksbank also held. The direction of travel across European central banks is now unmistakably toward tighter policy.</p>
+<p class="para-title" style="color:#4a9e6b;">Energy Shock and Market Divergence</p>
+<p class="para-body">European natural gas futures jumped as much as 35% on Thursday following Iranian missile strikes on Qatar's Ras Laffan complex, pushing benchmark prices to more than double their pre-war levels. Dubai crude contracts for Gulf-loaded oil are up over 80% this month. The Stoxx Europe 600 fell 2.0% on Thursday, though it had managed modest gains of 0.3% and 0.6% earlier in the week. France's CAC is down 7.6% in March and Switzerland's SMI off 8.1%. One partial cushion is Europe's expanded renewable fleet — Rabobank estimates electricity prices would be approximately one-third higher absent post-2022 growth in solar and wind capacity, with France's nuclear fleet also operating more reliably than during the prior energy crisis. Evening price spikes nonetheless point to ongoing vulnerability. Germany restricted petrol stations to one price hike per day and tightened antitrust oversight, a measure reflecting political sensitivity rather than substantive market intervention. At the EU Brussels summit, leaders called for a moratorium on strikes against energy infrastructure, with Italian Prime Minister Meloni described as particularly animated.</p>
+<p class="para-title" style="color:#4a9e6b;">Politics and Geopolitics</p>
+<p class="para-body">Chancellor Friedrich Merz's political standing remains precarious, with recent polling showing fewer than a quarter of Germans hold a positive view of him. Germany's €600 billion defense spending program is generating tangible economic stimulus, with defense suppliers reporting record order books. Trump explicitly warned that the US "will remember" whether NATO allies support efforts to reopen the Strait of Hormuz, adding that insufficient response would be "very bad for the future of NATO" — a pressure that European governments are weighing against years of accumulated skepticism about Washington's reliability. Irish Taoiseach Micheál Martin defended UK Prime Minister Starmer after Trump criticized Britain for declining to join the war effort. Starmer faces mounting pressure from Labour's left flank ahead of anticipated losses in May's local elections, while Nigel Farage's Reform UK continues to lead in national polls but faces fragmentation from newer far-right parties including Restore UK and Advance UK. The European Commission is reported to be in the final stages of concluding a long-delayed trade agreement with Australia.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate News</p>
+<p class="para-body">UniCredit launched a $40 billion bid for Commerzbank that would allow the Italian lender to increase its shareholding beyond the 30% threshold, easing the path toward a potential full acquisition. Unilever confirmed it is evaluating a separation of its food assets and has received an offer from McCormick for that division, valued by Barclays at approximately €28–31 billion — potentially the largest restructuring in the company's near-century history. HSBC announced it is weighing cuts to approximately 20,000 roles as part of an AI-driven restructuring of its middle and back offices. Logitech fell 5.7% in Zurich after a UBS downgrade on weaker gaming market signals, while HelloFresh dropped 9.6% in Frankfurt after issuing guidance materially below analyst expectations. Prudential Plc reported an increase in new business profit and announced an additional $1.2 billion share buyback. Italy's Giorgia Meloni government is consulting on restarting nuclear energy production as a long-term response to the country's elevated energy prices. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Strait of Hormuz: Escalation and Tentative Signals</p>
+<p class="para-body">The defining development across global markets this week was the continued closure of the Strait of Hormuz, now entering its fourth week, combined with a significant escalation mid-week and the first tentative signals of possible recalibration by week's end. Israel struck Iran's South Pars gas field on Thursday — the first attack on Iranian energy production facilities in the conflict — and Iran responded by striking Qatar's Ras Laffan Industrial City, causing "extensive damage" and sparking fires; two affected LNG trains are expected to remain offline for up to five years. Additional Iranian strikes hit a gas facility in Abu Dhabi, set ablaze two Kuwaiti oil refineries, and caused damage near a Saudi refinery. Tehran explicitly designated energy facilities in Qatar, Saudi Arabia, and the UAE as "legitimate targets." By Friday, however, Prime Minister Netanyahu stated Israel would no longer target energy infrastructure and said the war would end faster than people expect, while Iran's foreign minister signaled that recent restraint was deliberate. Whether this constitutes a durable de-escalation or tactical repositioning remains genuinely uncertain.</p>
+<p class="para-title" style="color:#8b5cf6;">Oil and Energy Markets</p>
+<p class="para-body">Brent crude surged above $118 per barrel on Thursday — a gain of approximately 63% since hostilities began on February 28 — before pulling back to approximately $108–110 on Friday following Netanyahu's remarks. The IEA has characterized the disruption as the largest oil supply shock in recorded history by volume. Longer-dated Brent futures remain below $70, suggesting markets still price the closure as temporary, though that view has become harder to sustain with each passing week. Notably, Goldman Sachs analysts observed that refined products have rallied far more than crude, with jet kerosene in Singapore up more than 60%, reflecting the disruption to medium-heavy Gulf crude that feeds diesel, jet fuel, and fuel oil production. The gap between WTI near $96, Brent at $108–118, and Middle Eastern grades above $150 reflects a fragmented supply landscape in which the shortage is most acute for Asian importers. Saudi Arabia has reportedly been able to reroute some exports to above half of normal levels via contingency infrastructure. Iraq's agreement to resume pipeline exports via Turkey offered one partial workaround and contributed to Friday's price pullback. Insurance premiums for Hormuz transit have reached approximately 5% of hull value, roughly five times the conflict's outset level.</p>
+<p class="para-title" style="color:#8b5cf6;">Central Banks and Macro Consequences</p>
+<p class="para-body">The week's central bank calendar was historically dense, covering approximately two-thirds of the global economy across 18 policy meetings. The Reserve Bank of Australia became the first to move, hiking rates on Tuesday in response to the inflationary impulse from energy — a signal that at least some inflation-targeting frameworks are treating the oil shock as a demand-side tightening event rather than a supply disruption to be looked through. The Fed held on Wednesday, the ECB and Bank of England held on Thursday, and the Bank of Japan held on Thursday. All shifted their tone materially toward caution, and the cumulative repricing across global rate markets — from an easing trajectory to a tightening one within the space of three weeks — represents one of the more significant collective monetary policy pivots of the current cycle. Bloomberg Economics estimates March inflation across advanced economies is running approximately 0.4 percentage points above pre-conflict projections. BofA's global fund manager survey found institutional investors rotating overweight commodities — the biggest such shift since the 2022 Ukraine invasion.</p>
+<p class="para-title" style="color:#8b5cf6;">Alliance Fractures and Geopolitical Realignment</p>
+<p class="para-body">Trump's appeals for allied support have produced little tangible commitment. The UK, Japan, Germany, and South Korea have each declined to participate militarily; Europe's largest naval powers stated that reopening the Strait during active hostilities would require a deeply complex multinational capability not currently feasible. Trump publicly abandoned the request for allied warships after being rebuffed and criticized allies, exposing meaningful fissures in Western alliance architecture. China's state media have been openly dismissive of US appeals. The Trump-Xi summit postponement to mid-May adds to a picture of constrained US diplomatic leverage. Trump threatened to delay the summit further if Beijing does not assist, while simultaneously the Pentagon is reported to have requested an additional $200 billion from Congress to fund ongoing operations. Gold fell approximately 7% on the week — its largest weekly decline since March 2020 and on pace for its worst monthly performance since 2008 — as the global monetary policy repricing eroded the appeal of non-yielding assets, with ETF outflows exceeding 60 tons over three weeks. Tungsten prices have more than doubled this year amid Chinese export controls and rising military demand, illustrating how the conflict is amplifying pre-existing commodity tensions.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

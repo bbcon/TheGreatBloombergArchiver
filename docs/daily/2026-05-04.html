@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, May 04, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, May 04, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets are sustaining record highs even as the underlying economic picture grows increasingly bifurcated. The S&P 500 remains near all-time highs with volatility subdued, supported by a resurgence in the AI trade following strong earnings from Alphabet and other large-cap technology companies. That resilience is proving a strategic asset in the standoff over the Strait of Hormuz: financial conditions remain accommodative, undermining Iran's central weapon of economic coercion. However, the calm at the index level obscures genuine stress at the household level. Gas prices have exceeded $4 per gallon, and Pantheon Macro estimates the energy shock could translate into roughly a 1% annualized decline in real after-tax income in Q2. With the savings rate already at 3.9%, the buffer for lower-income households is thin. Bank of America estimates the full-year "gas tax" amounts to roughly 0.5% of GDP — approximately equal to the projected boost from either the One Big Beautiful Bill or AI capital expenditure. The K-shaped character of US consumption is becoming more pronounced. New York Fed data show retail spending concentrated among households earning above $125,000 annually, while consumer confidence has fallen to fresh lows. Spirit Airlines ceased operations, a pointed illustration of the energy shock's asymmetric impact on businesses serving lower-income consumers. The temporary income boost from tax refunds is now fading, leaving that cohort increasingly exposed. On the corporate front, GameStop has proposed a $56 billion all-cash-and-stock acquisition of eBay, offering a roughly 20% premium to Friday's close — a striking bid from a company with a $12 billion market capitalization. Separately, data-center startup Fermi ousted its CEO after failing to sign a single client despite a $19 billion IPO valuation, serving as a cautionary reminder that AI capital formation enthusiasm does not guarantee commercial execution. The April nonfarm payrolls report, due Friday, is expected to show approximately 62,000–65,000 jobs added, with the labor market yet to register the energy shock's full impact.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets climbed to fresh record highs, led by AI-linked semiconductor names in South Korea and Taiwan, whose benchmark indices surged 5.1% and 4.6% respectively. The rally reflects strong earnings momentum from chipmakers supplying the global AI infrastructure build-out, and appears to be shrugging off near-term headwinds from the Hormuz disruption. Morgan Stanley's chief Asia economist Chetan Ahya has characterized the dynamic as the beginning of a multi-year industrial super-cycle, arguing that structural forces — AI infrastructure, energy transition, and defense spending — will broaden from a narrow semiconductor rally into wider capital expenditure, job creation, and ultimately consumption growth across the region. Taiwan's first-quarter GDP expansion and South Korea's export boom are cited as early evidence. The cycle is expected to last three to four years, with Taiwan, South Korea, China, and Japan identified as the primary beneficiaries. China's posture on US sanctions hardened materially over the weekend. Beijing ordered its companies to disregard US secondary sanctions — an explicit act of defiance that represents a meaningful departure from its historically cautious approach of quiet compliance. The immediate trigger was Washington's decision to sanction Hengli Petrochemical, one of China's largest private refiners, over Iranian crude purchases. Energy security appears to be the key threshold: private refiners now account for roughly a third of China's processing capacity and have been integral to maintaining fuel supply during the Hormuz disruption. The directive likely signals that Beijing views energy access as a non-negotiable red line ahead of the Trump-Xi summit expected in approximately ten days. Japan's Ministry of Finance intervened in foreign exchange markets, spending approximately $34 billion to buy yen after the currency breached ¥160 against the dollar following the Federal Reserve's meeting last week. The intervention produced the yen's largest single-day gain since 2022. However, analysts are skeptical of its durability given that Prime Minister Sanae Takaichi is perceived as holding a structurally dovish fiscal and monetary stance, the Bank of Japan remains cautious about committing to near-term rate hikes, and Japan's dependence on Hormuz-transiting oil continues to weigh on the currency structurally. The Bank of Korea, meanwhile, signaled that rate increases may be warranted, citing stronger-than-expected economic resilience and mounting inflationary pressures.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European assets continued to underperform relative to US markets, a divergence that reflects the continent's greater structural exposure to the Strait of Hormuz disruption given its reliance on Middle Eastern energy flows. Euro Stoxx 50 futures fell 1.7%, in contrast to modest gains in US and Asian futures. That vulnerability has been compounded by two fresh US actions: President Trump announced a tariff increase on European automobiles to 25%, and the Pentagon confirmed a drawdown of US troops from Germany beyond the initial 5,000 previously disclosed. Both moves appear connected to German Chancellor Friedrich Merz's public criticism of US Iran policy. The European Commission signaled it is prepared to respond to the auto tariff threat, though the much-delayed US-EU trade deal — initially reached last July but still unratified by EU lawmakers — remains a complicating backdrop. The diplomatic calendar offered some counterweight. Dozens of European leaders convened in Yerevan, Armenia, for the European Political Community summit, with the gathering underscoring the EU's push to expand its strategic footprint in the Caucasus — a region that offers an alternative trade corridor bypassing Russia. UK Prime Minister Keir Starmer announced Britain's intention to join the EU's €90 billion Ukraine loan plan, a notable step in post-Brexit alignment on European security matters. NATO Secretary-General Rutte and Canadian Prime Minister Carney also attended, the latter marking the first non-European leader at such a summit. In Swiss financial regulation, lawmakers convened to begin a legislative process that could impose up to $20 billion in additional capital requirements on UBS — a proceeding with significant implications for the institution's capital allocation and European banking sector sentiment. UK local elections on May 7 are expected to reveal further erosion of support for both Labour and the Conservatives, with polling suggesting Nigel Farage's Reform UK and other insurgent parties stand to benefit.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The Strait of Hormuz remains the central fault line in global markets. Three weeks into the double-blockade, President Trump announced "Project Freedom," a plan to guide neutral vessels through the waterway — but the initiative has left shipping executives confused given a lack of operational detail and the US Navy's stated non-involvement. The head of Iran's parliamentary National Security Commission characterized any US interference as a violation of the existing ceasefire. Oil prices fluctuated sharply on the mixed signals, with WTI touching $106 per barrel in some trading windows. Brent futures for end-2026 reached new highs, and 2027 contracts remain elevated, suggesting markets are not pricing a near-term resolution. Global LNG exports fell to their lowest level in nearly two years in April, while Dubai International Airport reported a 66% year-on-year drop in March passenger traffic. The US has emerged as the world's largest crude exporter once again, shipping over 250 million barrels in the past nine weeks to compensate for constrained Middle Eastern supply. Analysts are beginning to flag limits to this cushion. OPEC+ major producers agreed on a modest symbolic increase of 188,000 barrels per day for June, largely a signaling exercise following the UAE's surprise exit from the bloc. Abu Dhabi's ADNOC simultaneously announced $55 billion in accelerated project awards. The geopolitical contest for influence in the Caucasus is intensifying, with the US signing a 99-year agreement with Armenia for management of a transit corridor linking Azerbaijan to Nakhchivan — a move that directly challenges Russian influence in a region Moscow has historically dominated. Turkey, Iran, and the EU are also asserting competing interests. For middle powers globally, the dilemma is acute: the Hormuz shock is delivering an immediate, visible economic hit through energy prices, inflation, and disrupted supply chains, while the longer-run challenge of Chinese industrial overcapacity feels slower and more diffuse — even as Beijing's sanctions defiance raises the stakes of the structural US-China contest ahead of their anticipated summit.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

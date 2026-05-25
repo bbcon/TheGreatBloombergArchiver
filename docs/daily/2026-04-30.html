@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, April 30, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, April 30, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">The Federal Reserve's April meeting, Jerome Powell's last as chair, produced the most fractious policy vote since October 1992, with four FOMC members dissenting — three regional presidents (Beth Hammack, Neel Kashkari, and Lorie Logan) objecting to any residual easing bias in the forward guidance, and Stephen Miran dissenting on separate grounds. Rates were left unchanged, as expected. The episode signals that incoming chair Kevin Warsh will inherit a committee disinclined to accommodate the rate cuts President Trump has sought: futures markets no longer price any easing in 2026, and traders now assign roughly 50% odds to a rate increase by April 2027. Two-year Treasury yields jumped 11 basis points on the day, the largest Fed-day move since January 2022, while 30-year yields reached 5% for the first time this year. Adding to the institutional complexity, Powell announced he will remain on the Fed board as a governor under Warsh until the Justice Department's investigation into the Fed's building renovation is "well and truly over." Treasury Secretary Bessent characterized the decision as a "violation of all Federal Reserve norms," though the parallel to Marriner Eccles — who remained as governor after leaving the chair — somewhat undercuts that framing. Powell's stated intention is to maintain a low profile and support the incoming chair, but the presence of a former chair with two years remaining on his board term, amid a deeply divided committee, will complicate Warsh's ability to quickly shift policy direction. On the corporate side, Wednesday's mega-cap earnings delivered a differentiated verdict. Alphabet surged more than 7% after reporting revenues and profits ahead of estimates, with its custom TPU chip architecture seen as a credible challenge to Nvidia's dominance in AI inference workloads. Meta fell roughly 7% in after-hours trade despite strong advertising revenue of $56.3 billion, after raising its 2026 capex guidance by $10 billion to potentially above $145 billion — a level investors deemed excessive relative to near-term returns. Amazon's cloud unit AWS posted 28% revenue growth, its fastest in over three years, and was received more favorably. Microsoft's Azure growth was viewed as underwhelming, with shares slipping modestly. The combined 2026 capex envelope for the four hyperscalers now approaches $725 billion, sustaining but not expanding AI-related enthusiasm.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's economic data for April presented a sharply bifurcated picture. Manufacturing remained in expansion territory, supported by resilient export demand even as the Iran war drives up input costs. Services and construction, however, slipped back into contraction, with building activity registering its worst slump since the early stages of the pandemic. The divergence underscores a familiar structural tension: external demand is sustaining factory output while weak domestic consumption and a deepening property downturn weigh on the broader economy. How long export strength can carry overall growth, particularly if the energy shock worsens and global demand softens, remains an open question. Beijing's intervention in the Meta-Manus transaction represents a significant escalation in China's approach to technology governance. Chinese authorities have ordered the two companies to unwind a completed $2 billion acquisition within weeks and restore Manus's assets to their original state — an instruction whose practical feasibility is genuinely unclear. Manus co-founders have been barred from leaving China. The stated rationale centers on preventing the outflow of strategically important AI capabilities and talent to the United States. The broader signal, however, appears directed at domestic entrepreneurs: Chinese startups that restructure offshore to attract US capital and circumvent domestic regulatory review will face severe consequences. Several private firms have reportedly already been instructed by the NDRC to reject US-origin capital unless explicitly approved. The episode risks reinforcing perceptions of elevated political risk in China's technology sector, potentially complicating Beijing's simultaneous effort to attract international capital back to the private economy. China's role in global LNG markets is providing an inadvertent buffer for European buyers. Beijing's LNG imports are tracking roughly 1.3 million tons below year-earlier levels in April, enabled by years of investment in pipeline imports and domestic production capacity. However, domestic trucked LNG prices are rising in key industrial provinces, and the 30-day moving average of Chinese imports has begun to edge higher, suggesting demand destruction may be approaching its limits. The yen weakened toward levels that prompted intervention in 2024, with Japan's top currency officials issuing a "final" warning to speculators as the Bank of Japan maintains its wait-and-see posture amid the energy shock.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">The eurozone economy unexpectedly decelerated at the start of 2026, with first-quarter GDP growth falling short of consensus estimates as surging energy costs — a direct consequence of the Strait of Hormuz blockade — weigh on industrial output and household purchasing power. The configuration increasingly resembles a stagflationary dynamic: energy-driven inflation pressures are building precisely as growth momentum fades. Germany, Italy, and Spain individually outperformed expectations, but the aggregate picture remains concerning, and the trajectory into the second quarter depends heavily on whether oil prices stabilize or continue to rise. The European Central Bank and the Bank of England both held rates steady at their respective April meetings, in line with consensus expectations. The policy stance represents a holding pattern rather than a clear directional signal: both institutions face a genuine dilemma between responding to accelerating energy inflation and cushioning economies that are more directly exposed to the Middle East conflict than the United States. Market pricing has shifted materially over recent months — traders now expect the ECB to begin hiking rates in June, with three increases priced in for the year, a dramatic reversal from February's expectations of unchanged rates throughout 2026. Whether that pricing holds will depend on how durable the oil price surge proves to be, and whether second-round inflation effects materialize in wage and services data. UK domestic politics present a separate source of uncertainty. Keir Starmer's Labour government is projected to lose approximately 1,850 seats in next week's local elections, according to expert analysis, a performance that would raise credible questions about the Prime Minister's political durability. Standard Chartered, BNP Paribas, and Société Générale each reported first-quarter results that exceeded expectations, offering some evidence that European financial institutions are navigating the energy shock more robustly than their equity valuations — which have underperformed the S&P 500 by roughly 9 percentage points since the Iran conflict began — might suggest.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">Brent crude briefly surpassed $126 per barrel on Thursday, its highest level since the aftermath of Russia's 2022 invasion of Ukraine, after Axios reported that President Trump is scheduled to receive a briefing on new military options against Iran. The US Central Command chief is preparing fresh strike plans, suggesting the conflict may be approaching an inflection point rather than winding down. Trump separately confirmed to Axios that he will not lift the naval blockade of Iran's ports without a nuclear agreement, removing any near-term ambiguity about the conditions for Hormuz reopening. Polymarket assigns only 52% odds to the strait reopening by end-June, making a protracted blockade the probabilistic base case. The Pentagon's publicly stated $25 billion war cost estimate has drawn skepticism from analysts who argue it omits munitions replenishment, facility repair, and rising fuel costs for military operations themselves. The UAE's withdrawal from OPEC+ adds a structural dimension to energy market dynamics that extends beyond near-term price moves. The departure reflects a broader regional realignment: Abu Dhabi's posture has increasingly diverged from Riyadh's across multiple dimensions — its alliance with Israel, its commercial ambitions in Africa, and now its willingness to challenge the cartel's production architecture. Reports that the UAE is reconsidering its participation in the Arab League, the Organization of Islamic Cooperation, and potentially the Gulf Cooperation Council suggest a durable reorientation rather than a tactical maneuver. A Turkey-Saudi axis may emerge as a counterweight, with implications for the region's post-conflict order. The Hormuz closure is producing second-order logistics adaptations. Container throughput at Khor Fakkan — a UAE port outside the strait — has surged, with truck volumes rising from roughly 100 per day pre-conflict to approximately 6,000 currently. Jebel Ali's container vessel arrivals have fallen from 12 per day to approximately one. US crude exports meanwhile reached a record above 6 million barrels per day as importing nations seek alternatives to Middle Eastern supply. China's top oil producer has pledged an all-out domestic supply effort, leaning on stockpiles, coal, and electrification, but cracks are visible in refinery runs and industrial power costs. Gold has fallen roughly 13% since the conflict began, as markets price the inflation consequences of elevated energy costs into rate expectations — a reminder that the war's financial transmission channels remain complex and, in some respects, counterintuitive.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+Subject: Energy Daily: Hyperscalers go nuclear
+Date: Wed, 13 May 2026 11:44:16 +0000
+
+AI Hyperscalers Mull Going Deeper Into Next-Gen Nuclear Supply Chain
+Tech companies are considering investments in fuel for small modular reactors. 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-05-13/ai-hyperscalers-look-at-going-deeper-into-next-generation-nuclear-power>
+ <https://www.bloomberg.com/industries/energy>
+
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=18102153&m=11b724c487f61753eb1a7a4a5f3ef261&p=05132026114416&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=18102153&m=11b724c487f61753eb1a7a4a5f3ef261&p=05132026114416&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Welcome to our guide to the commodities driving the global economy. Today, 
+reporter Will Wade examines the emerging demand for next-generation nuclear 
+power.
+
+The reactors still haven’t been built and there’s just a trickle of the fuel 
+that they’ll need, but the next generation of nuclear power in the US is still 
+attracting deeper involvement from Big Tech.
+
+The concept of small and medium-sized reactors 
+<https://www.bloomberg.com/news/videos/2026-05-13/making-new-nuclear-fuel-for-an-atomic-renaissance-video?cmpid=BBBXT051326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260513&utm_content=4427>
+ may eventually deliver relatively cheap and quickly deployable power with zero 
+emissions. That makes it an obvious fit for deep-pocketed developers of AI data 
+centers who are looking to bypass constrained electricity grids while also 
+being mindful of their climate goals.
+
+Already we’ve seen Meta Platforms Inc., Amazon.com Inc. and Google sign 
+agreements 
+<https://www.bloomberg.com/news/articles/2026-04-29/meta-s-need-for-gas-power-boosts-entergy-spending-by-14-billion?cmpid=BBBXT051326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260513&utm_content=4427>
+ to take power from proposed SMRs. Now some hyperscalers are looking to go even 
+deeper into the nuclear supply chain.
+
+Centrus Energy Corp., a US company that provides conventional nuclear fuel to 
+utilities, is building out a production facility in Ohio for High-Assay 
+Low-Enriched Uranium, or HALEU, the kind of energy-dense fuel that the new 
+generation of SMRs will need.
+
+The company’s Chief Executive Officer Amir Vexler 
+<https://www.centrusenergy.com/who-we-are/leadership/bio/amir-vexler/> says 
+that in addition to talking to reactor developers, Centrus is also getting 
+inquiries from hyperscalers.
+
+“They want surety there will be fuel for their reactors,” he said. “It’s not 
+too soon to start thinking about when this fuel needs to be delivered.”
+The Google Midlothian Data Center in Texas.Photographer: Jonathan 
+Johnson/Bloomberg
+To be sure, SMRs at a commercial scale aren’t a done deal. Despite 
+enthusiastic backing from President Donald Trump’s administration, most still 
+need approval from federal regulators, and they remain years away from becoming 
+reality.
+
+Nevertheless, the outreach to Centrus is an acknowledgment that 
+next-generation nuclear is no longer in the realm of science fiction, but is 
+now a prospective part of the future energy mix in the US.
+
+The discussions also reveal concerns about the nascent SMR supply chain. HALEU 
+could be hard to get in a few years, just when it will be needed. With dozens 
+of companies working on new reactor designs, it’s best to get in position 
+before the scramble begins.
+
+With projected capital spending on AI north of $700 billion 
+<https://www.bloomberg.com/opinion/articles/2026-05-12/ai-bubble-big-tech-hyperscalers-have-a-serious-chip-inflation-problem?cmpid=BBBXT051326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260513&utm_content=4427>
+ this year, that’s the kind of bet the industry can afford to take.
+
+—Will Wade, Bloomberg News
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=18102153&m=11b724c487f61753eb1a7a4a5f3ef261&p=05132026114416&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=18102153&m=11b724c487f61753eb1a7a4a5f3ef261&p=05132026114416&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Chart of the day
+
+Europe’s solar growth is slowing because generators are increasingly being 
+forced to shut down 
+<https://www.bloomberg.com/news/articles/2026-05-13/europe-solar-power-wasted-as-electricity-grids-fail-to-handle-surge?cmpid=BBBXT051326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260513&utm_content=4427>
+ plants for hours at a time on sunny days when there’s too much power for the 
+system to handle. The glut is also pushing electricity prices deep below zero 
+during those peak solar hours, meaning projects that looked like safe bets just 
+a few years ago are now being reassessed.
+
+Top stories
+
+Oil held its 8% surge over the past three sessions 
+<https://www.bloomberg.com/news/articles/2026-05-12/latest-oil-market-news-and-analysis-for-may-13?cmpid=BBBXT051326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260513&utm_content=4427>
+, as Middle East tensions simmer and global stockpiles shrink at a record pace.
+
+Iran’s oil shipments from the Kharg Island export terminal appear to have come 
+to a standstill 
+<https://www.bloomberg.com/news/articles/2026-05-12/iran-kharg-island-oil-shipments-show-first-prolonged-halt-since-start-of-war?cmpid=BBBXT051326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260513&utm_content=4427>
+ over the past several days, according to satellite images, the first sign of a 
+prolonged halt since the start of the war.
+
+Oil inventories are falling around the world at a record pace 
+<https://www.bloomberg.com/news/articles/2026-05-13/oil-inventories-fall-at-record-pace-on-iran-war-shock-iea-says?cmpid=BBBXT051326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260513&utm_content=4427>
+ and will continue to drop for months as the disruption to Middle East supplies 
+from the Iran war intensifies, according to the International Energy Agency.
+
+India raised import tariffs on gold and silver 
+<https://www.bloomberg.com/news/articles/2026-05-13/india-hikes-gold-and-silver-import-tariffs-to-protect-economy?cmpid=BBBXT051326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260513&utm_content=4427>
+ in an attempt to defend its currency, as the country races to shore up 
+foreign-exchange reserves and limit the damage from the war in the Middle East.
+
+US oil exports can remain at high levels for several more weeks, perhaps even 
+months, writes Bloomberg Opinion’s Javier Blas.The question 
+<https://www.bloomberg.com/opinion/articles/2026-05-13/iran-war-how-long-can-us-oil-exports-keep-oil-prices-low?cmpid=BBBXT051326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260513&utm_content=4427>
+ is whether that’s long enough to keep crude prices from exploding before it 
+reaches a deal with Iran.
+
+BNEF today
+
+Power demand from data centers in Japan is expected to more than double by the 
+end of the decade, particularly in the Tokyo and Kansai regions, according to 
+BloombergNEF. Technology investor SoftBank is moving into battery manufacturing 
+for the facilities, intending to scale up to gigawatt-hour annual output by 
+2028.
+
+Coming up
+
+Bloomberg Tech returns to San Francisco on June 3-4, convening leading CEOs, 
+investors and innovators to explore the capital, connectivity and ideas driving 
+the industry forward.Register here 
+<https://events.bloomberglive.com/event/BloombergTechSanFrancisco2026/summary?RefId=Briefs>
+.
+
+More from Bloomberg
+
+ * Economics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?utm_medium=email&utm_source=newsletter&utm_campaign=energy>
+ for what the changing landscape means for policymakers, investors and you
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Green Daily 
+<https://www.bloomberg.com/account/newsletters/green?utm_medium=email&utm_source=newsletter&utm_campaign=energy>
+ for the latest in climate news, zero-emission tech and green finance
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=energy>
+ for daily insights into supply chains and global trade
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=energy>
+ to get most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Energy 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/elements?source=NLshare> to get 
+it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/elements?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/_P8FEmuGJWEMriXAp-iG1-8lMY7VoUBntLlsuriC1IA7oSXIOw1gGTrAx-mydzsntiZ8q9SUvdanKDtjouEuTc9iYDTi0yI-AonsKVieBgiiLJ58s1_LDyuROAxy4Lhr6fV7V89vofrv5HUz758ZxkwhJKMNxhEHpbqFFB9r1WjAQsz0qzaYCIgjzm11wBoZLPSjrWBn6yHXkcirsaG3-EN6HVynCHouKWwflQZIa8_1Q3lkq2VFglOG40mFohmQiDxcTqS-VdYgZ9fxE8vnmwjUaAIHpv5_UtNzvMzMyTTPwMIQp2LeF2339hR0Q9NXW72mHoZkPnPFv7U94e1yKGhg8i1AnzZl/tWiZtgntsONCKWfxdeNTSPd2lsKsUfrd/20>

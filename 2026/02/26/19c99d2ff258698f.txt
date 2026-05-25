@@ -1,0 +1,232 @@
+Subject: Economics Daily: All about AI
+Date: Thu, 26 Feb 2026 12:01:05 +0000
+
+Waymofication? AI’s Promise and Peril Spurs Debate at Economics Conference
+AI was the focus for discussions at this week’s NABE conference.
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-02-26/waymofication-ai-s-promise-and-peril-spurs-debate-at-economics-conference>
+ <https://bloomberg.com/economics>
+
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=17056568&m=11b724c487f61753eb1a7a4a5f3ef261&p=02262026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=17056568&m=11b724c487f61753eb1a7a4a5f3ef261&p=02262026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+I’m Mark Niquette <https://www.bloomberg.com/authors/AQVgYOcI2go/mark-niquette>
+, an economy reporter based in Columbus, Ohio. Today we’re looking at AI 
+discussions at an annual US economics confab. Send us feedback and tips to
+ecodaily@bloomberg.net <mailto:ecodaily@bloomberg.net>. And if you aren’t yet 
+signed up to receive this newsletter, you can do sohere 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=ecointro>
+.
+
+Top Stories
+
+ * President Donald Trump will sign a directive raising his global tariff 
+<https://www.bloomberg.com/news/articles/2026-02-25/china-warns-us-it-will-respond-if-trade-probe-spurs-new-tariffs?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ to 15% “where appropriate,” while seeking “continuity” withtrade deals 
+<https://www.bloomberg.com/news/articles/2026-02-25/imf-says-tariff-uncertainty-risks-hampering-buoyant-us-economy?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+, US Trade RepresentativeJamieson Greer said 
+<https://www.bloomberg.com/news/articles/2026-02-25/us-to-keep-china-tariffs-steady-avoid-escalation-greer-says?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+.
+ * The Bank of Japan’s most hawkish board member renewed his call for higher 
+interest rates 
+<https://www.bloomberg.com/news/articles/2026-02-26/boj-hawk-calls-for-more-hikes-after-takaichi-nominates-doves?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+. That will boost governmentdebt costs 
+<https://www.bloomberg.com/news/articles/2026-02-26/japan-sees-interest-payments-doubling-by-2029-as-boj-hikes-rate?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+.
+ * The European Central Bank reported another loss 
+<https://www.bloomberg.com/news/articles/2026-02-26/ecb-records-third-annual-loss-in-worst-run-since-its-creation?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+, while President Christine Lagarde defendedher salary 
+<https://www.bloomberg.com/news/articles/2026-02-26/lagarde-was-paid-almost-600-000-as-ecb-president-last-year?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ and said officials are watchingperceptions of inflation 
+<https://www.bloomberg.com/news/articles/2026-02-26/lagarde-says-ecb-must-keep-watching-perceptions-of-inflation?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+.
+All About AI
+
+This week’s National Association for Business Economics conference — one of 
+the top annual US confabs for “the dismal science” — came on the heels of the 
+Supreme Court’s tariff ruling, and in the midst of a leadership transition at 
+theFederal Reserve 
+<https://www.bloomberg.com/news/articles/2026-02-25/fed-s-bostic-says-doubts-over-independence-a-major-concern?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+.
+
+But the big focus of discussion was all about the rapid rise of artificial 
+intelligence 
+<https://www.bloomberg.com/news/articles/2025-07-30/ai-s-takeover-of-entry-level-tasks-is-making-college-grads-job-hunt-harder?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+. After all, NABE President Gregory Daco said, “AI is the number one topic that 
+every business leader is talking about today.”
+
+“Whether you talk about trade or you talk about monetary policy, or you talk 
+aboutproductivity growth 
+<https://www.bloomberg.com/news/articles/2026-02-26/ai-coding-agents-like-claude-code-are-fueling-a-productivity-panic-in-tech?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+, or you talk about the fiscal landscape, you’re going to be including AI as 
+part of the discussion — because it’s really going to be a key driver of 
+economic activity,” said Daco, EY-Parthenon’s chief economist.
+
+While many observers have been quick to play down 
+<https://www.bloomberg.com/news/articles/2026-02-25/citrini-s-dystopian-ai-vision-draws-global-investor-criticism?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ last weekend’s alarmist — or at least alarming — Citrini Research hypothesis 
+about AI walloping the job market, Fed Governor Lisa Cook presented one 
+sobering scenario at NABE.
+
+“We appear to be approaching the most significant reorganization of work in 
+generations,” and for a time AI may displace more jobs than it creates, she 
+said. During that transition, the Fedmay not be able to counter 
+<https://www.bloomberg.com/news/articles/2026-02-24/cook-says-fed-may-not-be-able-to-counter-ai-driven-unemployment?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ rising unemployment throughrate 
+<https://www.bloomberg.com/news/articles/2026-02-25/government-bonds-shrinking-appeal-has-cost-new-york-fed-says?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ cuts, Cook said. That’s because higher joblessness may not in that case be 
+signaling “increased slack” in the economy, she said.
+Lisa CookPhotographer: Graeme Sloan/Bloomberg
+Speaking away from NABE, Richmond Fed President Tom Barkin said the benchmark 
+rate is “not the answer to all these issues” raised by AI disruption to 
+business and labor.
+
+But all may not be lost for humanity. Nela Richardson, chief economist at ADP 
+and NABE vice president, test drove, as it were, the term “Waymofication” of 
+the job market.
+
+True, Waymo, the robotaxi service 
+<https://www.bloomberg.com/news/articles/2025-06-26/why-it-s-so-hard-to-make-a-reliable-self-driving-car?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+, involves the elimination of drivers’ jobs. But, new roles were created, with 
+a team of professionals behind the scenes keeping the cars on the road, she 
+said.
+
+MIT Professor Daron Acemoglu offered a basketball analogy for how AI can 
+complement the human. “The Chicago Bulls didn’t try to have Michael Jordan 
+replace Scottie Pippen — they worked together. That’s why that was a 
+championship team.”
+
+Away from NABE, Kansas City Fed President Jeff Schmid on Wednesday observed 
+that, as the US population ages and fewer people enter the job market, 
+AI-driven productivity can be a handy supplement.
+
+Lagarde, meanwhile, said on Thursday that the ECB is observing productivity 
+gains — but will also be “extremely attentive 
+<https://www.bloomberg.com/news/articles/2026-02-26/lagarde-vows-extremely-attentive-ecb-on-ai-driven-job-cuts?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+” for any related job losses.
+
+On this episode of Trumponomics, host Stephanie Flanders 
+<https://www.bloomberg.com/authors/ARdopHJe75o/stephanie-flanders> speaks with 
+Josh Green <https://www.bloomberg.com/authors/AP4X8fkBBbg/joshua-green>, 
+national correspondent at Bloomberg Businessweek, andAnna Wong 
+<https://www.bloomberg.com/authors/AVZEA8jmBvs/anna-wong>, chief US economist 
+for Bloomberg Economics, about President Trump’s upbeat economic message during 
+his State of the Union address and the reality on the ground. Affordability 
+fears remain despite government data indicating slowing inflation, and the 
+Supreme Court ruling upending Trump’s tariff strategy has thrown fresh 
+uncertainty into the mix. Our guests ask whether those numbers will outweigh 
+shaky consumer sentiment, tariff turmoil and growing anxiety over artificial 
+intelligence ahead of the midterms. Listen onApple 
+<https://podcasts.apple.com/us/podcast/trumponomics/id1038108799>, Spotify 
+<https://open.spotify.com/show/661R5r3l4vePQohGQjiHeJ> or wherever you get your 
+podcasts.
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=17056568&m=11b724c487f61753eb1a7a4a5f3ef261&p=02262026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=17056568&m=11b724c487f61753eb1a7a4a5f3ef261&p=02262026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+The Best of Bloomberg Economics
+
+ * Births in Japan 
+<https://www.bloomberg.com/news/articles/2026-02-26/japan-s-births-fall-for-10th-year-adding-to-demographic-strain?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ fell for a 10th straight year, underscoring the demographic strain Japan 
+faces. Meanwhile Singapore’s fertility ratehit a record low 
+<https://www.bloomberg.com/news/articles/2026-02-26/singapore-s-fertility-rate-falls-to-fresh-low-as-population-ages?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+.
+ * Young Britons out of work and education 
+<https://www.bloomberg.com/news/articles/2026-02-26/number-of-young-britons-not-in-jobs-or-education-nears-a-million?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ rose closer to 1 million, as theLabour government 
+<https://www.bloomberg.com/news/articles/2026-02-25/reeves-urged-by-former-watchdog-boss-to-keep-to-the-fiscal-rules?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+’s policies attract criticism for stoking unemployment.
+ * South Korea’s central bank kept its rate unchanged at 2.5%, upgraded 
+forecasts 
+<https://www.bloomberg.com/news/articles/2026-02-26/bok-holds-base-rate-steady-as-economic-risks-roughly-balanced?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ for growth and inflation, and issued newdot-plot projections 
+<https://www.bloomberg.com/news/articles/2026-02-26/bank-of-korea-to-release-6-month-rate-guidance-to-boost-comms?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+.
+ * Prime Minister Narendra Modi’s aim to turn India 
+<https://www.bloomberg.com/news/articles/2026-02-26/lutnick-india-s-goyal-meet-amid-us-court-tariff-setback?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ into a manufacturing superpower isdrawing fire 
+<https://www.bloomberg.com/news/articles/2026-02-26/us-china-challenge-modi-s-make-in-india-factory-incentives?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+. ButCanada 
+<https://www.bloomberg.com/news/articles/2026-02-26/india-canada-to-sign-immense-range-of-deals-during-carney-visit?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ is set to sign deals there.
+ * Egypt is poised to capitalize on the opportunities of being the world’s 
+largest date-grower 
+<https://www.bloomberg.com/news/articles/2026-02-26/a-sticky-ramadan-staple-gives-egypt-s-economy-an-export-boost?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+.
+ * Most Venezuelans expect the economy and job market to improve 
+<https://www.bloomberg.com/news/articles/2026-02-26/venezuelans-see-brighter-economic-outlook-after-us-intervention?cmpid=BBD022626_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260226>
+ within six months as US sanctions ease and the government rolls out reforms.
+Need-to-Know Research
+
+Kevin Warsh has been critical of the current communications practices of the 
+Fed. So how might things change when — assuming he wins confirmation — he takes 
+the helm? Deutsche Bank’s US economists, led by Matthew Luzzetti, took a stab 
+at that on Wednesday.
+
+A couple things that likely won’t happen: Cancelling press conferences by the 
+chair after policy decisions, or muzzling reserve bank president speeches. The 
+briefings offer “a powerful and frequent platform for him to put his stamp on 
+the committee’s message” and it would be a missed opportunity to give them up, 
+they wrote. And if Warsh were seen to be silencing colleagues, it could look 
+like an attack on independence, making it harder to get a majority to back his 
+views.
+
+What could well change is the quarterly Summary of Economic Projections, 
+including the anonymous “dot plot 
+<https://www.bloomberg.com/explainers/the-dot-plot-explained-how-the-fed-forecasts-interest-rates>
+” of each official’s anticipated rate setting for coming year-ends. Plausible 
+revamps include abandoning individual projections in favor of just the “central 
+tendency” of forecasts, and their range, Luzzetti and his colleagues wrote. 
+Baseline projections could be complemented with alternative scenarios, 
+“downgrading the importance” of median forecasts.
+
+Rather than year-end projections, rolling 12- and 24-month horizons could be 
+adopted, Deutsche Bank said. That would signal the “broad direction of travel” 
+without seeming to offer explicit guidance, such as can happen in September for 
+the December rate decision, they wrote.
+
+More from Bloomberg
+
+Enjoy Economics Daily?
+
+ * Read more economic stories <https://www.bloomberg.com/markets/economics>
+Plus, here are some newsletters we think you might like
+
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for daily insights into supply chains and global trade
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for the latest in politics from around the globe
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+.
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Economics 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=NLshare>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/8AdBmAwfDoGsEhwE0IHjIdmZId4tfROvTcSEp5nJUMGJ7UaXn11MIrEBp3GfGya4M9rBY2AnTiNUHLlx1YdxH0uSKDZBsPEe8rbNGJ5e6jtSGD577XemeLjxkvkwsHtMRaxMSgWMTskyj9wuC7gecwUCZfSi1l27EEnJhdrApXKH8SVZdIK2H1ozXFlS00ifVNgzLnIEu6MPJy076HlXmm9QpnMZes__iWpQw_6XN5lo4CUhE5xiUNo-swTUi-U1qHgYm5hv6KUuIoMdr6cAy5ANgJfNwGQAdtrMWYoYe_nT0Nd6rCZgA4jsyJLRb1POI7Ti3DkFLoyLsalXSfB-1uYxm0kV_-BI/aD1DdT3XmQ1IV0n-RfTSVTR1U0FLoM30/18>

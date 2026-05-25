@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, April 21, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, April 21, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">Kevin Warsh's confirmation hearing before the Senate Banking Committee dominated domestic attention on Tuesday, though the political dynamics surrounding it may matter more than anything Warsh actually says. The nominee is expected to vow to protect the Fed's independence while simultaneously arguing that the central bank has overreached its statutory mandate in areas beyond monetary policy — a formulation carefully calibrated to reassure markets without alienating the administration that nominated him. The more consequential obstacle to confirmation remains Senator Thom Tillis's stance linking his support to the resolution of the case against incumbent Jerome Powell over Fed renovation expenditures. Warsh's opening remarks, leaked Monday, signal a preference for a narrower Fed role and a smaller balance sheet — positions that carry genuine market implications, though he appears to have avoided committing to specifics in his five-page statement. Any signal on quantitative tightening will be watched closely given the sensitivity of bond markets to balance sheet rhetoric. US equity markets continued their April advance on low conviction. The S&P 500 is up approximately 9% this month, closing above 7,000 for the first time last week, prompting JPMorgan to raise its year-end target to 7,600. However, the rally's technical underpinnings remain fragile: fewer than half of S&P 500 members traded above their 50-day moving averages at the index's record, volume has run 11% below the six-month average, and investor sentiment indicators have actually declined during the advance. The Nasdaq 100 logged a 13-session winning streak — its longest since 2013 — before pausing Monday. On the corporate front, Apple confirmed that Tim Cook will transition to executive chairman in September, handing the CEO role to hardware chief John Ternus. Amazon gained roughly 3% in premarket trading after committing an additional $5 billion to Anthropic. Alaska Air suspended profit guidance and flagged a deeper-than-expected second-quarter loss, citing rising fuel costs attributable to the Strait of Hormuz disruption. Trump invoked the Defense Production Act to direct federal funds toward energy infrastructure, including coal, LNG, petroleum and grid projects, as his administration faces pressure over elevated fuel prices.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's economic narrative has shifted meaningfully in recent weeks. GDP data surprised to the upside, property indicators showed tentative green shoots, and equity markets have recovered to near decade highs. Two influential academic papers published this month examine whether Beijing has escaped the "Japanification" comparison that has shadowed it since the property downturn began. Kenneth Rogoff and Yuanchen Yang, writing for the NBER, acknowledge that China's state-dominated financial system and interventionist policy apparatus have prevented a financial breakdown, but warn that without structural reforms to rebalance growth, today's managed adjustment could evolve into stagnation — particularly if export-oriented sectors like EVs and solar encounter external constraints. Stephen Jen and Joana Freire of Eurizon SLJ Capital are more sanguine, arguing China has "turned a corner" and that fierce domestic competition, combined with US-China technological rivalry, is sustaining productivity in ways that distinguish Beijing's trajectory from Tokyo's lost decades. The debate remains unresolved, though recent data lend some weight to the more constructive reading. Asian technology exports are providing a separate source of optimism. South Korean chip exports surged 183% year-on-year in the first 20 days of April, driven by AI-related semiconductor demand, with overall exports rising 49%. Taiwan's export orders jumped 66% in March, the fastest pace in 16 years, reflecting continued strength in high-performance computing and cloud infrastructure. Victory Giant, a Chinese Nvidia supplier, surged as much as 60% in its Hong Kong debut after raising $2.6 billion. The South Korean Kospi is up 52% year-to-date, reaching a record, with Samsung and SK Hynix leading the advance. Japan's Topix Nonferrous Metals sub-index has gained over 400% since the Liberation Day tariff reversal a year ago, driven by data center component demand and accelerating corporate governance reform under Prime Minister Takaichi. Her cabinet also approved Japan's first overseas arms export framework since World War II, a significant strategic shift. The Bank of Japan is meanwhile leaning toward holding rates unchanged at its next meeting, citing uncertainties from the Iran conflict. Indonesia's equities declined after MSCI extended its market status review to June.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Keir Starmer faces a potentially defining political test as former senior civil servant Olly Robbins testifies before the House of Commons regarding the prime minister's handling of Peter Mandelson's appointment as US ambassador. The central question — whether Starmer was aware of Mandelson's vetting failure or pressured the Foreign Office to proceed regardless — goes to the heart of his credibility on standards in public life. Starmer has already survived the first day of parliamentary scrutiny, but Robbins's testimony carries greater evidentiary weight. UK businesses stepped up job cuts in March, a sign that the Iran war is generating fresh caution in the labour market, adding to the economic headwinds facing the government. In European financial markets, the UniCredit-Commerzbank takeover battle has entered a decisive phase. UniCredit CEO Andrea Orcel and Commerzbank counterpart Bettina Orlopp met last month but failed to find common ground despite Orcel having accumulated just under 30% of Commerzbank and tabling a €35 billion offer. The German government continues to back Orlopp's resistance, though questions about the sustainability of that defense are sharpening as Commerzbank's profit tailwinds from higher rates fade. ECB President Christine Lagarde noted that the Iran war's "double uncertainty" — simultaneously threatening energy supply and inflation — is complicating monetary policy deliberations, effectively arguing for a data-dependent approach that delays further rate action. German investor optimism fell to a three-year low, reflecting broader eurozone anxiety. Associated British Foods announced plans to spin off budget clothing chain Primark after more than three decades as part of the conglomerate, while Ukraine reported the Druzhba pipeline would resume oil flows Tuesday, potentially paving the way for a reconstruction loan.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The imminent expiry of the two-week US-Iran ceasefire is the dominant global market risk. President Trump signaled on Tuesday that he is unlikely to extend the truce beyond its Wednesday deadline, intensifying pressure on negotiators attempting to reconvene talks in Islamabad. Iran has yet to formally confirm its participation. Three vessels — two cargo ships and a fuel tanker — appeared to attempt transit of the Strait of Hormuz on Tuesday while both US and Iranian blockades nominally remained in place, a high-risk manoeuvre that may test enforcement. Approximately 800 vessels remain stranded in the Persian Gulf, and the International Maritime Organization is developing an evacuation plan. DHL's CEO warned the global economy risks a "tipping point" if the supply shortfall is not resolved. Xi Jinping broke his public silence on the standoff, calling Saudi Crown Prince Mohammed bin Salman to urge restoration of Strait transit — a signal of Beijing's acute vulnerability as a major oil importer, though short of any concrete diplomatic intervention. Oil markets slipped on Tuesday as the prospect of resumed talks tempered immediate supply fears, with WTI trading near $88 per barrel. Analysts cautioned that prices do not yet fully reflect the scale of the supply disruption. US shale producers face an awkward dilemma: oil above $100 per barrel generates strong cash flows, but memories of the 2014 dash-for-growth bust have instilled discipline that resists White House pressure to ramp up output. Continental Resources remains the only major producer to confirm increased drilling plans. On a structural note, clean power surpassed coal's share of global electricity generation in 2025 for the first time since 1919, with renewables at 34% against coal's 33%, according to Ember — a milestone likely to sharpen policy focus on energy independence. In the long-duration energy storage space, China holds roughly 72% of cumulative installed capacity but its dominance appears less entrenched than in conventional lithium-ion, offering competitive openings for US and European developers.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+Subject: Economics Daily: Almost-doom loop
+Date: Fri, 20 Feb 2026 12:00:17 +0000
+
+New US Debt Projections Put Spotlight on the ‘Doom Loop’ Scenario
+Could nervous investors start demanding higher rates on US government debt?
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-02-20/new-us-debt-projections-put-spotlight-on-the-doom-loop-scenario>
+ <https://bloomberg.com/economics>
+
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=16980308&m=11b724c487f61753eb1a7a4a5f3ef261&p=02202026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=16980308&m=11b724c487f61753eb1a7a4a5f3ef261&p=02202026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+I’m Chris Anstey <https://bloomberg.com/authors/AF7uNtxCFaA/chris-anstey>, a 
+senior editor in Boston. Today we’re looking at implications from new US debt 
+projections. Send us feedback and tips toecodaily@bloomberg.net 
+<mailto:ecodaily@bloomberg.net>. And if you aren’t yet signed up to receive 
+this newsletter, you can do sohere 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=ecointro>
+.
+
+Top Stories
+
+ * The UK recorded the biggest budget surplus 
+<https://www.bloomberg.com/news/articles/2026-02-20/uk-posts-biggest-ever-budget-surplus-as-tax-revenue-surges?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ on record, while British firms boosted output at thefastest pace 
+<https://www.bloomberg.com/news/articles/2026-02-20/uk-private-sector-recovery-speeds-up-in-february-pmi-shows?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ in almost two years.
+ * In the euro area, private-sector activity topped expectations as 
+manufacturers recorded theirstrongest performance 
+<https://www.bloomberg.com/news/articles/2026-02-20/euro-zone-business-activity-up-on-german-manufacturing-revival?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ since 2022. Meanwhile, fourth-quarternegotiated wages 
+<https://www.bloomberg.com/news/articles/2026-02-20/euro-zone-wage-growth-quickens-backing-ecb-caution-on-more-cuts?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ rose 3%.
+ * Coming up: Be on the lookout for US PCE data 
+<https://www.bloomberg.com/news/articles/2026-02-20/treasuries-dip-before-pce-as-fed-hawks-iran-put-traders-on-edge?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ — theFederal Reserve 
+<https://www.bloomberg.com/news/articles/2026-02-20/fed-independence-is-jerome-powell-s-priority-in-his-final-months-as-chair?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+’s preferred inflation gauge — as well as fourth-quarter numbers for gross 
+domestic product.
+Almost-Doom Loop?
+
+One of the darkest scenarios for government borrowing features investors 
+beginning to demand higher returns for the money they fork over to take on 
+public debt. The government then has to borrow even more in order to pay for 
+the higher interest costs on the bonds it’s just sold. That spurs investors to 
+press foreven higher yields 
+<https://www.bloomberg.com/news/articles/2025-12-13/long-dated-bonds-selloff-why-governments-face-higher-borrowing-costs?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+. And so on. It’s known as the doom loop.
+
+The latest benchmark projections 
+<https://www.bloomberg.com/news/articles/2026-02-11/cbo-boosts-us-deficit-call-by-1-4-trillion-on-trump-policies?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ for US borrowing, assembled by the nonpartisan Congressional Budget Office, 
+bore some element of this worrying storyline. Net interest payments by the US 
+Treasury are seen climbing from $1 trillion this year to $2.1 trillion in 2036 
+— or some 4.6% of GDP by then.
+
+That ratio on its own is notably higher than the 3% total deficit-to-GDP 
+target that Treasury Secretary Scott Bessent has set for the end of the Trump 
+administration, in January 2029. And a 4.6% ratio would make up the majority of 
+the 6.7% overall deficit the CBO is penciling in for a decade from now.
+
+But the agency isn’t anticipating the other part of the doom-loop scenario: 
+Raucous demands from the so-called bond vigilantes to shell out more to sell 
+the ever-increasing amount of debt. Ten-year Treasury yields are seen going 
+from 4.1% this year to just4.4% in 2036 
+<https://www.cbo.gov/system/files/2026-02/61882-Outlook-2026.pdf> — hardly an 
+earth-shattering change.
+
+“It’s really a pretty benign outlook for Treasury yields,” CBO Director 
+Phillip Swagel said last week. He pointed to demographics as one reason — an 
+aging population is associated with helping damp interest rates.
+
+Morgan Stanley strategists cited another: The liquidity and safety that US 
+Treasuries offer investors the world over, and the relativelack of alternatives 
+<https://www.bloomberg.com/news/newsletters/2025-10-17/termites-erode-dollar-s-foundation-but-alternatives-are-lacking?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+. The bank’s macro strategy team, led by Matthew Hornbach, also wrote in a note 
+last week that the income investors receive from Treasuries helps support the 
+broader economy.
+
+Even so, the “sheer size of the outstanding debt stock,” and its continuing 
+increase, may end up constraining fiscal policy in future US administrations, 
+Jim Reid, Deutsche Bank’s global head of macro research and thematic strategy, 
+wrote in a note Thursday.
+
+Eventually, Washington could look at policy levers to lower 10-year yields 
+<https://www.bloomberg.com/news/newsletters/2025-02-07/trump-presidency-bonds-not-stocks-emerge-as-key-metric-for-economy-team?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+, such as rejigging bank regulations, Reid’s colleagues including Matthew 
+Raskin wrote separately.
+
+It all adds up to not quite doom, but not cheery sunshine either.
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=16980308&m=11b724c487f61753eb1a7a4a5f3ef261&p=02202026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=16980308&m=11b724c487f61753eb1a7a4a5f3ef261&p=02202026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+The Best of Bloomberg Economics
+
+ * President Donald Trump declared victory 
+<https://www.bloomberg.com/news/articles/2026-02-19/trump-says-he-won-on-affordability-singaling-messaging-shift?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ in the fight over cost-of-living concerns, touting successes in job growth and 
+other metrics.
+ * The US imported more 
+<https://www.bloomberg.com/news/articles/2026-02-20/us-imports-more-from-taiwan-than-china-for-first-time-in-decades?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ from Taiwan than China for the first time in decades as Trump’s tariffs and 
+the AI boom reshape trade flows.
+ * Japanese Prime Minister Sanae Takaichi will present a broad economic vision 
+<https://www.bloomberg.com/news/articles/2026-02-19/japan-s-takaichi-to-tout-plans-aimed-at-stoking-private-spending?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ to help stoke private investment into key industries.
+ * Spain is planning to build more political and financial links to China 
+<https://www.bloomberg.com/news/articles/2026-02-20/spain-courts-china-in-new-asia-strategy-as-us-ties-sour?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ as Trump upends the global economic order.
+ * Brazil and India are set to strengthen cooperation on critical minerals 
+<https://www.bloomberg.com/news/articles/2026-02-20/brazil-and-india-to-deepen-critical-mineral-and-technology-ties?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ and artificial intelligence.
+Need-to-Know Research
+
+Fiscal worries in Poland, a European Union member on the front-lines of the 
+West’s tensions with Russia, have recently become so serious that they 
+contributed to a decision by the nation’s government torein in a campaign 
+<https://www.bloomberg.com/news/articles/2026-02-11/poland-s-bulging-debt-pushes-tusk-to-shelve-central-banker-probe?cmpid=BBD022026_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260220>
+ against the current central bank chief.
+
+The thinking: Tensions over the central bank could hurt bond-investor 
+confidence. Nevertheless, August Gudmundsson at Gavekal argues the nation’s 
+economy is poised to see a transition toward an expansion of its supply side, 
+putting Poland on track for a strengthening in nominal growth that should leave 
+it well positioned for fiscal tightening later in the decade.
+
+Poland is set to be the biggest beneficiary of the EU’s “Security Action for 
+Europe” defense buildupprogram 
+<https://defence-industry-space.ec.europa.eu/eu-defence-industry/safe-security-action-europe_en>
+, and Warsaw’s own “East Shield”project <https://tarczawschod.wp.mil.pl/en/> 
+will spur “substantial domestic construction and logistics” activity, 
+Gudmundsson wrote in a note Thursday. Along with EU-funded capital expenditure, 
+this means Poland’s growth is “becoming more investment-led and supply 
+augmenting.” That should damp inflation pressures and create room for monetary 
+easing, he said.
+
+More from Bloomberg
+
+Enjoy Economics Daily?
+
+ * Read more economic stories <https://www.bloomberg.com/markets/economics>
+Plus, here are some newsletters we think you might like
+
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for daily insights into supply chains and global trade
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for the latest in politics from around the globe
+ * CityLab Daily 
+<https://www.bloomberg.com/account/newsletters/citylab-daily?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+ for the latest on America’s municipalities and more
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=nef>
+.
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Economics 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=NLshare>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/ebAiSaDgAxMY7o1deKpmH23m3NxYSItvRuqmvvF6f9a-Nswj1YCx157pJ7-7kYipf-W3QEMDLZ2yqP1P2XbqG85qT80PcnKQnH9PErZgojYbCANxGppVpzu7irAgFxgHTKybZrhdADh6hyQv73t22cbBkFTIKqzyIgZzIJzxsbeb7qLyIW3rYDOUpGUMAjlx-Nx9FhMxYYRlBEcAavJz9ERMIPNOHydlJwNz0uQ4jyKg46hM3l9qQ-Dq6Uj6nXuVOVr3Dt0oI2YpX1iwzkk9OuZWFjQVkmiPGlUyomdaSUKxsXTkn3OPhQvZM70QA-f53Z4cPii4xNjZvY8e6X9oMGPpyz_uN2k3/e03RM_1gbd6d2vxycfddxsqWifSsr_zI/18>

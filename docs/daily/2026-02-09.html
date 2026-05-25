@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, February 09, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, February 09, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Equity market leadership in flux</p>
+<p class="para-body">Friday's recovery — which lifted the Dow Industrials above 50,000 for the first time — masked a more consequential repositioning underneath. The rotation out of mega-cap software and into chipmakers, equal-weighted indices, small-caps, and value has accelerated, with broader market measures hitting all-time highs even as the S&P 500 and Magnificent Seven sit below recent peaks. The catalyst appears to be Anthropic's release of new AI work-automation tools, which sent the iShares Expanded Tech-Software ETF down 8.7% on the week and prompted reassessments of incumbent software business models. Friday's bounce was thin: volume ran roughly 13% below the five-day average, implied volatility remained elevated, and a 9% rally in Goldman's most-shorted basket suggests short-covering rather than fresh conviction. Goldman's trading desk warned of further selling pressure this week from CTA unwinds. S&P 500 futures were down 0.29% in early trading; 10-year Treasury yields edged up 2bp to 4.23%.</p>
+<p class="para-title" style="color:#5597cb;">Fed leadership and institutional questions</p>
+<p class="para-body">Treasury Secretary Scott Bessent urged the Senate to begin hearings on Kevin Warsh's nomination to chair the Federal Reserve, despite a Republican senator's pledge to block all such nominations pending resolution of a criminal investigation involving Chair Powell. Separately, Warsh floated reviving a Fed-Treasury accord to constrain bond-market intervention — a proposal that has stirred debate across rates markets given its implications for Fed independence and balance-sheet operations.</p>
+<p class="para-title" style="color:#5597cb;">China trims Treasury exposure; market reaction muted</p>
+<p class="para-body">Chinese regulators have verbally instructed large domestic banks to pare US Treasury holdings, citing concentration and volatility concerns. The market response was negligible, reflecting that Chinese official and private holdings have declined steadily for over a decade to roughly $683 billion (about 7% of foreign-held Treasuries) and have been more than absorbed by other foreign buyers.</p>
+<p class="para-title" style="color:#5597cb;">Week ahead</p>
+<p class="para-body">The shutdown-delayed January payrolls report lands Wednesday — including the annual benchmark revision, expected to mark down payrolls growth through March 2025 — followed by CPI on Friday. Fed speakers include Waller, Miran, Bostic, Hammack, Logan, Bowman, and Schmid.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Japan: Takaichi's Landslide Reshapes the Outlook</p>
+<p class="para-body">Prime Minister Sanae Takaichi's snap election gamble produced the Liberal Democratic Party's largest postwar single-party victory, delivering a two-thirds lower-house supermajority — an outcome prediction markets had priced at roughly even odds just two weeks ago. The Nikkei 225 surged nearly 4% to a record high, with investors pricing in fiscal stimulus, accelerated corporate governance reform, and the prospect of multi-year policy continuity. The yen and JGBs were notably calmer than the January rout had suggested possible, helped by Finance Minister Satsuki Katayama's assurance that a proposed two-year consumption tax cut on food would not require additional bond issuance. Still, the yen drifted to 157.76 against the dollar, with 160 widely viewed as the intervention threshold. The central tension remains unresolved: Takaichi's fiscal expansion sits awkwardly against Japan's ~230% debt-to-GDP burden, and her well-documented opposition to BOJ rate hikes complicates the inflation response. Evercore ISI frames the risk as a "fat right tail" — a Japanese analogue to the Truss episode — should political authority override fiscal restraint.</p>
+<p class="para-title" style="color:#e07b39;">China: Treasury Guidance and Lunar New Year Liquidity</p>
+<p class="para-body">Chinese regulators have verbally instructed major banks to limit US Treasury purchases and trim concentrated positions, citing volatility and concentration risk. The directive excludes state holdings, and markets shrugged — 10-year yields rose only two basis points — reflecting that Chinese diversification has been gradual and well-absorbed by other foreign buyers. Separately, the PBOC injected $86.4 billion via 14-day repos, with Industrial Securities forecasting over $500 billion in liquidity provision ahead of Sunday's holiday. The PBOC also extended its gold-buying streak to 15 months. In Hong Kong, the 20-year sentence handed to Jimmy Lai under the national security law will test Western capitals' appetite to press Beijing while pursuing stabilization.</p>
+<p class="para-title" style="color:#e07b39;">India and Southeast Asia</p>
+<p class="para-body">Trump formally rescinded the additional 25% tariff on Indian goods tied to Russian oil purchases, cementing terms of last week's trade deal; the Nifty 50 gained 3.5% on the week. The RBI held at 5.25%, citing reduced external uncertainty. Gavekal cautions the deal is necessary but not sufficient given MSCI India earnings growth of 8.3% trails regional peers materially. In Thailand, the Bhumjaithai Party's strong showing — tracking 191 seats — lifted the SET Index as much as 4% and strengthened the baht over 1%, on expectations of policy continuity under PM Anutin Charnvirakul. DBS shares fell as much as 1.9% after Q4 net income dropped 10% to $1.85 billion, missing estimates on comp</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">UK political crisis intensifies</p>
+<p class="para-body">Prime Minister Keir Starmer's position has come under serious strain following the resignation of Morgan McSweeney, his chief of staff, amid the fallout from the appointment of Peter Mandelson as ambassador to Washington. People familiar with the matter indicate a group of cabinet ministers may privately urge Starmer to step down, though allies expect him to survive the week. Markets are positioning for further weakness: hedge funds have built short positions in sterling against the euro, citing the combination of political turmoil, expectations of further BOE rate cuts, and elevated options demand. Gilts declined as the political pressure intensified, though separate UK labour market data suggested the jobs sector is beginning to stabilise as firms emerge from a period dominated by tax speculation. UK Q4 GDP and industrial production are due Thursday.</p>
+<p class="para-title" style="color:#4a9e6b;">Iberian political shifts</p>
+<p class="para-body">Socialist António José Seguro won Portugal's presidency in the first runoff in four decades, defeating far-right candidate André Ventura after a turbulent campaign. In Spain, the Socialists suffered another setback in a snap regional vote, underscoring waning support for Prime Minister Pedro Sánchez.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate developments</p>
+<p class="para-body">Swatch Group's defence against activist Steven Wood strengthened materially after last month's upbeat outlook drove the most-shorted stock in Europe to its best day on record; shares are up 15% year-to-date. The company has nominated its own new board member ahead of Wood's second-year campaign for a seat. Novo Nordisk shares rebounded in pre-market trade after Hims & Hers Health withdrew a copy of its Wegovy weight-loss pill. STMicroelectronics gained 6.5% in Paris on a deepening partnership with AWS. InPost jumped 14% in Amsterdam after an Advent/FedEx-led group disclosed buyout plans. Greggs fell 6% in London following a Jefferies downgrade citing GLP-1 headwinds. BP reports Tuesday, with Bloomberg Opinion's Javier Blas arguing the $750mn quarterly buyback is unaffordable given softer commodity prices.</p>
+<p class="para-title" style="color:#4a9e6b;">ECB calendar</p>
+<p class="para-body">Lagarde, Lane, Simkus and Nagel speak today, with Schnabel, Cipollone and others later in the week alongside euro-area Q4 GDP on Friday.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">US-Iran Talks Lower Geopolitical Premium, But Not by Much</p>
+<p class="para-body">The first round of US-Iran nuclear negotiations in Oman concluded on a constructive note, with President Trump describing the talks as "very good" and Iranian President Pezeshkian calling them "a step forward." A second round is scheduled this week. Brent crude opened lower in response, but remains up more than 10% year-to-date, suggesting traders are unwilling to fully discount the geopolitical premium. As SEB's Bjarne Schieldrop noted, "the Iranian risk premium cannot be fully defused as long as US warships are located where they are." Meaningful divergence persists between the two sides: Iran insists negotiations remain confined to its nuclear program, while Secretary of State Rubio has signaled Washington wants a broader framework covering ballistic missiles and proxy financing. Trump has indicated he could accept a narrower deal, which would offer a politically expedient win ahead of midterms — though prior negotiations with Tehran ended with US participation in Israel's 12-day strike campaign, a reminder that the path is not linear. Netanyahu travels to Washington Wednesday to press for tighter constraints on Tehran.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary Policy Divergence: Japan Takes Center Stage</p>
+<p class="para-body">PM Takaichi's two-thirds lower-house supermajority — the LDP's largest postwar single-party mandate — reshapes the global fiscal-monetary backdrop. The Nikkei rallied nearly 4% to record highs, while the yen and JGBs held steadier than feared after Finance Minister Katayama clarified that a proposed two-year food consumption tax cut would not require additional debt issuance. The tension remains structural: planned fiscal expansion against a 230% debt-to-GDP backdrop, combined with implicit pressure on the BOJ to delay further hikes, sits awkwardly with a yen trading near 157 and approaching levels markets associate with intervention. Evercore ISI flags a "fat right tail" risk of a Truss-style bond episode should fiscal restraint erode.</p>
+<p class="para-title" style="color:#8b5cf6;">Cross-Currents: China Trims Treasuries, Gold Rebounds</p>
+<p class="para-body">Chinese regulators have verbally instructed banks to reduce US Treasury holdings on concentration and volatility concerns. Market reaction was muted — 10-year yields rose only two basis points — reflecting that Chinese diversification has been underway for a decade. Gold reclaimed $5,000/oz, recovering roughly half its late-January drawdown, with Bessent attributing recent volatility partly to Chinese trading activity. Separately, Trump removed the 25% tariff surcharge on Indian goods tied to Russian oil purchases, a step that may halve India's Russian crude imports and redirect flows toward US and Venezuelan barrels.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

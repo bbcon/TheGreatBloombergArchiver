@@ -1,0 +1,11 @@
+**European Daily Briefing — January 17, 2026**
+
+Weekend news flow into Europe was unusually thin, with limited primary macro or policy developments to report. We highlight the few items of regional relevance below and flag the absence of substantive ECB, UK political, or eurozone data catalysts in today's coverage.
+
+The most directly Europe-relevant story concerns Aldi, the German discount grocer, which continues to expand its US footprint and consolidate share among American shoppers. While framed as a consumer feature, the underlying commercial story is material for the Schwarz/Aldi competitive complex and, by extension, for European grocery incumbents whose international growth narratives increasingly depend on US penetration. The discounter model's traction in an inflation-fatigued US consumer environment may also inform read-throughs for European listed grocers facing their own margin pressures, though we would caution against overinterpreting a single qualitative data point.
+
+Tangentially relevant to European markets is the ongoing discussion around US power costs and the Trump administration's moves to shift more of that burden onto hyperscalers. The implications for European utilities, grid operators, and data center developers — particularly in Ireland, the Nordics, and the Frankfurt corridor — are worth monitoring, as US policy shifts could redirect hyperscaler capex toward European jurisdictions with more accommodative cost structures. This remains speculative pending greater clarity on the US regulatory mechanism.
+
+We would also flag the broader theme of locked-up real estate fund redemptions, currently surfacing in Canada but with clear parallels to the gating episodes seen across European open-ended property funds in 2023–24. Whether this signals renewed stress in illiquid retail vehicles globally remains to be seen.
+
+Otherwise, today's flow contains no material updates on ECB policy guidance, UK fiscal or political developments, eurozone data, or individual European corporate news. We expect a more substantive agenda to resume with the new week.

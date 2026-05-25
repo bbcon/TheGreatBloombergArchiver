@@ -1,0 +1,269 @@
+Subject: China’s AI advantage
+Date: Thu, 05 Feb 2026 14:05:54 +0000
+
+China’s Secret Superpower in the AI Race
+Its “tremendous” energy growth could be the deciding factor in the AI race
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-02-05/china-s-energy-buildout-is-its-ai-superpower-in-race-with-the-us>
+ <https://www.bloomberg.com/green>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=16775087&m=11b724c487f61753eb1a7a4a5f3ef261&p=02052026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=16775087&m=11b724c487f61753eb1a7a4a5f3ef261&p=02052026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+The ability to win the artificial intelligence race hinges on access to 
+energy. And on that front, China is better positioned than the US.
+
+Today’s newsletter looks at why Beijing’s rapid energy infrastructure buildout 
+is also itssecret AI superpower 
+<https://www.bloomberg.com/news/articles/2026-02-04/china-ramps-up-energy-boom-flagged-by-musk-as-key-to-ai-race?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+. Plus, Fidelitydoesn’t see adaptation as a sure bet 
+<https://www.bloomberg.com/news/articles/2026-02-04/fidelity-calls-out-limits-of-extreme-weather-adaptation-bets?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+ for investors.
+
+Did someone forward you this newsletter? Subscribe to Green Daily 
+<https://www.bloomberg.com/account/newsletters/green-daily> for free reads on 
+the role renewable energy is playing in the global struggle for AI dominance.
+
+The electricity gap
+
+By Emily Forgash <https://www.bloomberg.com/authors/AW4BeVx3KeQ/emily-forgash> 
+andLili Pike <https://www.bloomberg.com/authors/AXt16hTqABg/lili-pike>
+
+New data on China’s relentless energy installations underscore warnings from 
+Elon Musk and Jensen Huang that the nation’s world-beating power network will 
+deliver a major advantage over the US in the race to dominate artificial 
+intelligence.
+
+Since 2021, China has added more power capacity 
+<https://www.bloomberg.com/news/articles/2026-01-28/china-s-four-year-energy-spree-has-eclipsed-entire-us-power-grid?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+ across all energy technologies than the US has in its history, including 543 
+gigawatts last year, according to figures released late last month by the 
+country’sNational Energy Administration 
+<https://www.bloomberg.com/quote/1782729D:CH>.
+
+China will add more than 3.4 terawatts of electricity generation capacity over 
+the next five years, almost six times as much as the US, BloombergNEFprojects 
+<https://www.bnef.com/flagships/new-energy-outlook> under its base-case 
+Economic Transition Scenario. That influx would give the No. 2 economy greater 
+ability to accommodate rising power demand from data centers.
+
+“The limiting factor for AI deployment is fundamentally electrical power,” 
+Musk told BlackRock Inc. Chief Executive Officer Larry Fink in an interview at 
+the World Economic Forum on Jan. 22. “Very soon, maybe even later this year 
+we’ll be producing more chips than we can turn on — except for China,” said 
+Tesla Inc. CEO Musk, whose xAI isbuilding US data centers 
+<https://www.bloomberg.com/news/articles/2026-01-09/musk-s-xai-reports-higher-quarterly-loss-plans-to-power-optimus?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+. “China’s growth in electricity is tremendous.”
+
+Musk’s comments echo similar sentiments from Nvidia Corp.’s CEO Huang, who has 
+also identified access to electricity as a potential differentiator between the 
+US and China. AI competitiveness can be thought of as a cake composed of five 
+layers: energy, chips, infrastructure, models and applications, Huang told a 
+December event hosted by the Center for Strategic and International Studies. 
+“At the lowest level — energy — China has twice the amount of energy we have as 
+a nation,” he said.
+
+In the US, data centers will account for 38% of the growth in electricity 
+demand between 2024 and 2030, though just 6% in China, according to BNEF 
+projections. Data centers will command almost 7% of total US power demand by 
+2030, compared to 2% in China.
+
+China, where electricity consumption hit a record last year, is continuing to 
+rapidly add new power capacity with huge deployments of renewable sources like 
+solar and wind alongside more coal, nuclear and gas facilities. Solar 
+generating capacity is on track to surpass coal in China for the first time 
+this year, though newly added renewables have lower utilization rates than 
+fossil fuel assets.
+
+Growth in generation capacity is proving slower in the US, where electricity 
+demand has recently begun surging after roughly two decades of flat growth 
+through the early 2020s. The anticipated requirements from AI have triggered a 
+rush of development of new gas-fired capacity, though US power plants can take 
+years to come online as a result of more onerous regulation andsupply chain 
+bottlenecks 
+<https://www.bloomberg.com/features/2025-bottlenecks-gas-turbines/?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+. President Donald Trump’sopposition to renewables 
+<https://www.bloomberg.com/news/articles/2025-12-04/trump-s-ai-dominance-plans-threatened-by-his-own-attacks-on-solar-wind?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+ also means clean energy projects have been subject tocancellation or delays 
+<https://www.bloomberg.com/news/articles/2026-02-02/judge-revives-orsted-ny-offshore-wind-project-halted-by-trump?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+.
+
+“The federal government is essentially shooting ourselves in the foot by not 
+allowing a more straightforward and robust uptake of” renewables to meet data 
+center demand, said Michael Davidson, an associate professor at UC San Diego 
+who focuses on US and Chinese energy policy.
+
+Read the full story to see what else will determine the winner 
+<https://www.bloomberg.com/news/articles/2026-02-04/china-ramps-up-energy-boom-flagged-by-musk-as-key-to-ai-race?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+ in the battle for AI supremacy and subscribe to Bloomberg forunlimited access 
+<https://www.bloomberg.com/subscriptions/euro> to all stories.
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=16775087&m=11b724c487f61753eb1a7a4a5f3ef261&p=02052026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=16775087&m=11b724c487f61753eb1a7a4a5f3ef261&p=02052026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Long queue
+
+7
+
+The number of years data centers are waiting 
+<https://www.bloomberg.com/news/articles/2024-08-29/data-centers-face-seven-year-wait-for-power-hookups-in-virginia?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+ to hook up to the grid managed by Dominion Energy Inc., the utility that 
+services areas including the heart of Data Center Alley.
+
+Power hungry
+
+“Take your house and increase that by 10,000 
+<https://www.bloomberg.com/graphics/2024-ai-power-home-appliances/?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+. That is the difference between your house and a data center.”
+
+Hasala Dharmawardena
+
+Senior member, Institute of Electrical and Electronics Engineers
+
+Investors beware
+
+By Alastair Marsh 
+<https://www.bloomberg.com/authors/AQvVwWuhxcQ/alastair-marsh>
+
+As extreme weather becomes more frequent, investors are examining how much 
+money can realistically be made fromclimate adaptation 
+<https://unfccc.int/topics/adaptation-and-resilience/the-big-picture/introduction>
+.
+
+Jenn-Hui Tan, chief sustainability officer at Fidelity International, which 
+oversees about $1.1 trillion, said the investment case for adapting to climate 
+change is far less straightforward than for reducing emissions. Mitigation has 
+produced clear growth opportunities such as renewable energy and electric 
+vehicles, while adaptation — focused on protecting assets from damage caused by 
+wildfires, floods and droughts — is harder to monetize.
+Uprooted trees around a boarding school and mosque following floods in 
+Indonesia.Photographer: Aditya Aji/AFP
+The urgency is increasing as heat waves, fires and floods batter cities from 
+Lisbon to Los Angeles and progress on decarbonization stalls. But adaptation 
+spending is largely about resilience rather than expansion, Tan said.
+
+“The nature of adaptation spend is essentially to be able to continue to do 
+what you do today,” he said in an interview. “It’s resilience spending.”
+
+That doesn’t mean there are no options, Tan said, pointing to sectors such as 
+air conditioning, water management and irrigation. But “the return on 
+investment of resilience or adaptation is harder to identify than for 
+mitigation,” he said.
+
+Others are more optimistic. JPMorgan Chase & Co. has said companies that are 
+alert to physical risks can deliveroutsize returns 
+<https://www.bloomberg.com/news/articles/2025-05-01/jpmorgan-report-touts-huge-investment-returns-from-adaptation?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+, while analysts at Jefferies Financial Group Inc. have said climate-adaptation 
+strategies may ultimately outperform investments focused solely on emissions 
+reduction.
+
+“When we talk about resilience and adaptation, what we’re thinking about is 
+how are the companies we invest in becoming more resilient to these changes,” 
+he said.
+
+Read the full story 
+<https://www.bloomberg.com/news/articles/2026-02-04/fidelity-calls-out-limits-of-extreme-weather-adaptation-bets?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+.
+
+This week’s Zero
+ 
+<https://omny.fm/shows/zero/electricity-is-now-holding-back-growth-across-the-global-economy>
+A woman walks under the transmission lines of a Husk Power mini-grid in Rukubi, 
+Nasarawa state, Nigeria.Source: Husk Power
+Major economies around the world are grappling with electricity grids under 
+stress from equipment bottlenecks and workforce shortages. What can be done to 
+solve it? This week onZero, Akshat Rathi talks with Manoj Sinha, CEO of Husk 
+Power Systems, about distributed energy resources and their potential to bring 
+electricity to where it is needed most — from energy-poor regions in the Global 
+South, to energy-hungry data centres in rich countries.
+Listen now 
+<https://omny.fm/shows/zero/electricity-is-now-holding-back-growth-across-the-global-economy>
+, and subscribe onApple 
+<https://podcasts.apple.com/us/podcast/zero/id1621556928>, Spotify 
+<https://open.spotify.com/show/5rHwnJEjFRnivIdpWwnZyZ?si=985034d7e76a47a0> or 
+YouTube 
+<https://www.youtube.com/playlist?list=PLe4PRejZgr0MtnA98Xp8igGT9S3Na_zDD> to 
+get new episodes ofZero every Thursday.
+More from Green
+
+China criticized the EU’s in-depth probe into subsidies for Chinese wind power 
+companies 
+<https://www.bloomberg.com/news/articles/2026-02-04/china-raises-serious-concerns-with-eu-wind-power-subsidy-probe?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+, calling the move protectionist and vowing to take action to protect the 
+country’s interests.
+
+Berkshire Hathaway’s PacifiCorp is asking an appeals court to throw out a 2023 
+jury verdict in a wildfire class-action case that has exposed the company to
+billions of dollars in losses 
+<https://www.bloomberg.com/news/articles/2026-02-04/berkshire-utility-presses-wildfire-appeal-with-billions-at-stake?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+.
+
+Federal enforcement of polluters slumped in the first year of the second Trump 
+administration, anew analysis of government data 
+<https://www.bloomberg.com/news/articles/2026-02-05/epa-enforcement-of-polluters-has-dropped-under-trump?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+ by a nonprofit watchdog group has found.
+
+Photo finish
+ 
+<https://www.bloomberg.com/news/articles/2026-02-04/texas-big-batteries-kicked-in-at-most-critical-moment-in-storm>
+A power station in front of the skyline of downtown Dallas during a winter 
+storm on Jan. 25.Bloomberg
+Last month’s sprawling winter storm was one of the first multi-grid tests in 
+the US for big batteries —and they passed 
+<https://www.bloomberg.com/news/articles/2026-02-04/texas-big-batteries-kicked-in-at-most-critical-moment-in-storm?cmpid=BBD020526_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260205>
+. Texas in particular benefited from energy storage, which helped cushion the 
+state’s grid during the storm. “The batteries were the savior this time,” said 
+Barbara Clemenhagen, executive director of the Gulf Coast Power Association and 
+energy consultant.
+
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Hyperdrive 
+<https://www.bloomberg.com/account/newsletters/hyperdrive?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for expert insight into the future of cars
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * CityLab Daily 
+<https://www.bloomberg.com/account/newsletters/citylab-daily?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for top stories, ideas and solutions, from cities around the world
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+.
+
+
+
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/7QY0Kc-LT4PuqPwGNwrl6PZw_aN2YNBQ6dsqMlEMkmU3N7fTT25T8CjgAmkqJ-rttptY1LSpHABpWkZ5gL2U8gCPPeHRRr5UWiKE0UmM0UGCHQOdOdntJGJ7HEQzhFvA5MV_OGUJ24om3Ywr2OHd10uJQV9LrKPeBWKxkWWyijEbbyLKD4iy0Ht0RxK-ToUdMdWjQKB8jrf-m_m1TXkMlMKPcl7L1c04gyzkZV7UpQmxoqp7F1KJIgqUcFhn4Dszy4nftGdFBXdfFdNc8uwYf75ZPJe_aWTLAjbWtNgdPBG6EvyiNAma1zSYMUJnhT7AsnIGzwg3F97lc1KPRcqHGN3RmpC7qhui/fE43x6MW2Sex1HGsodjbuK2VMATlQjqj/17>

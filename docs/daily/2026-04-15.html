@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, April 15, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, April 15, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets are holding near all-time highs as investor sentiment has rotated decisively toward optimism over a potential end to the US-Iran conflict. The Nasdaq 100 has posted ten consecutive sessions of gains — its longest streak since November 2021 — rising approximately 13% over that stretch, while the S&P 500 futures were trading near 7,000. Software stocks, which had been the most punished by fears of AI-driven disruption, staged a sharp bounce: Oracle surged 18% in two sessions, and an iShares software ETF gained 6.4%, though it remains down 25% year-to-date and bottom-fishing investors are not yet declaring a durable turn. The Bank of America global fund manager survey is notable for the degree to which sentiment has reoriented. The proportion of respondents viewing US equities as overvalued fell to its lowest level in more than seven years. That finding warrants some skepticism — the Shiller CAPE remains elevated by historical standards and US stocks trade at a substantial premium to the rest of the world — but it does suggest that war-driven selling compressed valuations enough to bring marginal buyers back. The interaction between that valuation re-rating and a weakening dollar may prove self-limiting: if the US is perceived as cheap again, capital inflows could put a floor under the currency, but the structural drivers of dollar weakness — narrowing rate differentials and reduced foreign appetite for US assets — have not been resolved. On the fiscal and monetary policy front, Treasury Secretary Scott Bessent confirmed that tariff rates may be restored to their pre-Supreme Court levels by July, after the court struck down the use of emergency powers for their original imposition. The Atlanta Fed published survey evidence suggesting that the One Big Beautiful Bill's capex provisions have had limited uptake: only 20% of firms incorporated the legislation into their planning, echoing a similar result from the 2017 tax cuts. That finding complicates the bull case for a business investment-led expansion. US consumer stress continues to accumulate beneath the equity market resilience. BNPL provider Klarna has lost more than 60% of its market value since its September IPO; nearly half of BNPL users report having paid at least one installment late in the past year, and usage is increasingly concentrated in essentials such as groceries — a sign of financial necessity rather than discretionary adoption. Prosecutors also made an unannounced visit to the Federal Reserve in Washington, adding to institutional uncertainty around the central bank.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Chinese and broader Asian markets recovered further on Wednesday, with the Hang Seng rising 0.3% and stock benchmarks in China and the US having now recouped all their war-driven losses since the conflict began in late February. The recovery reflects cautious optimism that US-Iran negotiations will produce a durable de-escalation, though the structural disruption to energy flows continues to impose real costs on the region's industrial base. The most consequential geopolitical signal from Beijing was Xi Jinping's meeting with Russian Foreign Minister Sergei Lavrov at the Great Hall of the People. Xi emphasized that "the stability and certainty of China-Russia relations are particularly valuable" amid global turbulence — a formulation that signals Beijing is deepening its strategic alignment with Moscow at a moment when Russia's energy exports, particularly oil and gas, have become more valuable to China as Middle East flows tighten. Chinese oil imports from Saudi Arabia are set to halve next month, and China's overall oil and gas imports declined in March as the Hormuz disruption took effect. Russia's potential to fill that gap creates a structural incentive for Beijing to reinforce the relationship regardless of the war's outcome. Southeast Asian sovereign credit quality is under pressure. S&P Global Ratings flagged Indonesia as particularly exposed to a prolonged conflict scenario, given that higher energy prices will widen its subsidy burden and current account deficit simultaneously. S&P's base case assumes Hormuz disruption peaks in April, but acknowledges that some disruption could persist for months given infrastructure damage. For Indonesia, and other energy-importing ASEAN sovereigns, the resolution timeline matters more than the headline ceasefire. India's manufacturing ambitions remain constrained by China's dominance in batteries, EVs, and critical minerals, despite substantial Make in India investment. That dependency is deepening rather than narrowing, with up-and-coming Indian sectors becoming more reliant on Chinese technology even as geopolitical logic argues for diversification. The Port of Los Angeles chief's assessment — that supply chain normalization through Hormuz will take roughly four and a half months even after the strait reopens — implies sustained disruption to container flows through Asian trade hubs, where cargo for the Middle East is already piling up at ports in China, India, Japan, South Korea, and Singapore.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">The ECB's policy path for the April 30 decision remains genuinely unclear after ECB President Christine Lagarde declined to signal either a hike or a hold at the IMF Spring Meetings in Washington. Her comments placed the eurozone between the ECB's March baseline scenario — which itself incorporated two rate increases in 2026 — and the adverse scenario projecting 3.5% inflation this year. She explicitly stated the ECB has no tightening bias, yet simultaneously acknowledged that simply "looking through" the energy shock risks undermining the bank's credibility on price stability. Those positions are in tension, and Lagarde did not resolve them, leaving the market to price a range of outcomes ahead of the meeting. The real economy signals from Europe are deteriorating. European chemical producers are facing acute input cost pressures, with prices of fossil-fuel-derived feedstocks — essential for everything from food packaging to pharmaceuticals — surging as supply remains trapped in the Persian Gulf. SKW Stickstoffwerke Piesteritz's COO warned that the loss of basic chemical supply chains could trigger an economic collapse, language that may be directionally correct even if the extreme outcome is not the central case. The Port of Antwerp-Bruges, home to major operations for TotalEnergies, ExxonMobil, and BASF, is managing additional disruption from a fuel spill. French luxury goods suffered a notable earnings shock. Hermès shares fell as much as 14% — its largest single-day decline on record — after first-quarter sales growth disappointed, with the company attributing weakness to the confidence effects of the war. Kering also reported disappointing figures. ASML provided the counterpoint: Europe's most valuable company raised its full-year sales forecast to €36-40 billion from €34-39 billion, driven by AI-related semiconductor demand, with its CEO noting that supply cannot meet demand "for the foreseeable future." Politically, German Chancellor Friedrich Merz is pressing for rapid disbursement of a €90 billion EU loan for Ukraine following Hungarian Prime Minister Orbán's electoral defeat. Merz met with Ukrainian President Zelensky in Berlin and reinforced support for Ukraine's EU membership. Italy's Giorgia Meloni has used Pope Leo XIV's moral critique of the Iran war as a pretext to distance herself from Trump, a shift that reflects broader European recalibration as the US president's behavior becomes increasingly difficult for allied governments to manage domestically.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The dominant cross-cutting theme remains the US-Iran conflict and its Hormuz consequences, even as markets price in a negotiated resolution. President Trump told multiple US outlets he sees the war as "very close to over" and hinted at significant progress within days. A second round of talks is being arranged, and a ceasefire entered its second week. Markets have responded as though the conflict is effectively concluded: oil futures have fallen sharply, the Bloomberg Dollar Spot Index has retraced most of its war-driven gains, and equity markets globally have recovered their losses. However, the gap between market pricing and geopolitical reality remains meaningful. Operationally, the Strait of Hormuz remains near-closed. An Iraq-bound supertanker successfully transited the strait on its second attempt, making it the first crude carrier to do so since the US blockade on Iranian ports came into force — a data point that illustrates how thin actual traffic remains. WTI crude was trading near $91-92 per barrel, and Brent year-end futures are still priced around $80, implying that the market does not expect a full and immediate supply normalization. The Port of Los Angeles chief estimates that even after the strait reopens, full shipping normalization will take approximately four and a half months. The IMF's Spring Meetings provided a sobering macro backdrop. The Fund cut its global growth forecast and outlined a scenario in which prolonged conflict brings the world close to recession. Global trade volume growth is now projected at 2.8% for 2026, below global GDP growth of 3.1%. Brazil's new finance minister warned that a sustained conflict could force central banks worldwide to tighten to contain energy-driven inflation — a dynamic that would compound pressure on emerging market sovereigns already strained by high energy import costs. Russia's oil export position is itself under pressure: Ukrainian drone strikes on the Novorossiysk port have disrupted Black Sea flows just as Baltic exports recover, bringing Russia's four-week average shipments to their lowest since August at 3.22 million barrels per day. That constrains Russia's ability to fully capitalize on elevated prices and limits the degree to which it can substitute for lost Gulf supply. Meanwhile, the broader energy security debate is accelerating the case for geothermal power in Europe, where more than 60 companies and investors have written to EU leaders urging stronger support for a technology that is domestic, dispatchable, and — as one advocate noted — significantly harder for adversaries to attack than surface infrastructure.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

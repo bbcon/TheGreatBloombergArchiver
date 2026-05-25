@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, April 27, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, April 27, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">The most consequential domestic development heading into this week is the resolution of the Fed leadership impasse. Senator Thom Tillis dropped his blockade of Kevin Warsh's nomination to chair the Federal Reserve after the Justice Department ended its criminal investigation of incumbent Chair Jerome Powell. The episode illustrates how institutional guardrails, however imperfect, retained enough force to produce an orderly outcome. Warsh, who carries both Wall Street and Fed credentials, is widely viewed as the most market-compatible nominee the administration could credibly advance. The remaining uncertainty concerns Powell's own intentions. His term as chair expires next month, but his governor's seat runs two more years. Whether he elects to remain as a governor — a decision that now appears less certain given the collapse of the legal pressure campaign against him — is likely to be the most closely watched subtext at Wednesday's FOMC meeting. The meeting itself is broadly expected to produce an unchanged rate decision, though markets will parse the statement for signals that sustained energy cost pressures are shifting the committee's reaction function. Equity markets enter the week at record highs, but the composition of the rally warrants scrutiny. The Philadelphia Semiconductor index has gained 47% over 18 consecutive positive sessions since markets perceived a thaw in the Iranian standoff — the longest winning streak in the index's history. At a trailing price-to-earnings multiple of roughly 60 times, valuations are elevated and appear to price in substantial margin expansion premised on chipmakers' pricing power over hyperscaler customers. That thesis faces a near-term test: Alphabet, Amazon, Meta, and Microsoft all report Wednesday, with Apple following Thursday. If any of these companies signal restraint in capital expenditure on chips, the feedback loop sustaining the semiconductor rally could weaken. University of Michigan consumer sentiment fell to 49.8 in April, its lowest reading since data collection began in 1978, suggesting the macro backdrop outside of equity markets remains more fragile than headline index levels imply.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">Asian equity markets advanced approximately 1.2% on Monday following an Axios report indicating Iran had transmitted a new proposal to Pakistan — the primary mediator — suggesting willingness to reopen the Strait of Hormuz in exchange for a lifting of the US port blockade, with nuclear negotiations deferred to a later phase. MSCI's emerging markets index reached a record level, and the regional technology gauge surged 3.3% to an all-time high, reflecting the same AI-driven semiconductor enthusiasm driving US markets. Taiwanese and South Korean indices, both heavily weighted toward chipmakers, have materially outperformed the US market over the eighteen months since the 2024 election. China featured prominently across several distinct developments. Beijing blocked Meta's $2 billion acquisition of agentic AI startup Manus, citing concerns over technology leakage to the US. The decision comes as Beijing tightens oversight of domestic AI firms and signals continued wariness about foreign acquisition of strategic technology assets. Separately, China's tax authorities launched a sweeping crackdown on circular invoicing practices in the metals trading sector, rattling copper, aluminum, and silver traders in Shanghai who rely on such invoices for bank financing. The State Taxation Administration framed the investigation as targeting fraudulent activity that has artificially inflated economic output measures. Economists have also sharply upgraded forecasts for China's import growth, now expecting it to surpass export expansion for the first time since 2021 — a development that, if sustained, could moderate political pressure over the bilateral trade balance. The US sanctioning of Hengli Petrochemical's Dalian refinery, one of China's largest private "teapot" operators, marks an escalation in Washington's effort to interdict Iranian oil revenues. Beijing's likely response — condemning the sanctions while maintaining de facto tolerance of private-sector flows — represents a calibrated posture that avoids a direct confrontation while protecting China's energy security interests. How Beijing responds formally will be watched ahead of an anticipated Trump-Xi meeting next month. In India, Sun Pharmaceutical agreed to acquire Organon for approximately $11.75 billion on an enterprise basis, marking one of the largest outbound acquisitions in Indian corporate history.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">Germany's economic outlook continues to deteriorate, with the government last week halving its 2026 growth forecast to 0.5% — a significant downward revision from projections made when Chancellor Merz took office promising a "year of growth." The Iran war's disruption to energy markets is the proximate cause, though Germany entered 2026 already burdened by structural competitiveness challenges. The Ifo Institute's business expectations index fell to its lowest level since 2023, while eurozone PMI data slipped into contraction territory with delivery times and input price inflation rising at their fastest pace since 2022 — consistent with mounting stagflationary pressure. Thursday's first-quarter GDP release will offer an early quantitative read on the damage, though economists expect the full impact to emerge in subsequent quarters given that hostilities began mid-period. Germany's €500 billion infrastructure stimulus fund may be the primary buffer preventing outright contraction, per Ifo President Clemens Fuest. King Charles III arrived in Washington Monday for a four-day state visit, including bilateral meetings with President Trump, a White House banquet, and an address to a joint session of Congress. The visit comes as UK-US relations are under strain, against the backdrop of a weekend shooting at the White House Correspondents' Dinner. Prime Minister Starmer faces his own domestic pressures: Labour appears set to lose control of the Welsh Parliament for the first time since its formation in 1999, with May 7 local election results expected to be broadly unfavorable for the government. In European corporate and financial developments, Germany was reported to have sounded out European banks earlier this year to serve as potential white knights in defense of Commerzbank against UniCredit's ongoing takeover approach. Bayer is seeking a favorable Supreme Court ruling today that could limit the scope of Roundup weedkiller litigation that has cost the company more than $10 billion. S&P cut credit ratings for Belgium and Slovakia and placed Finland on negative watch, reflecting fiscal deterioration partly linked to elevated energy costs. Lufthansa has cancelled approximately 20,000 flights over the next six months in response to the surge in jet fuel prices — an early and visible sign of the war's operational consequences for European aviation.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The Strait of Hormuz remains effectively impassable, with Polymarket odds placing the probability of a full reopening by end-April at zero and end-of-May odds also unfavorable — implying the world's most critical oil artery could remain closed for a third consecutive month. Iran's Foreign Minister Araghchi traveled to Moscow on Monday to coordinate with President Putin after the weekend's second round of US-Iran peace talks failed to materialize despite Pakistani mediation efforts. Tehran's latest proposal — conveyed through Islamabad — calls for reopening the strait in exchange for a US lifting of its port blockade, with nuclear negotiations separated into a distinct later track. Washington's response remains to be seen. Oil markets reflect the unresolved standoff. Brent crude traded near $108 per barrel Monday, up roughly 2.5%, while WTI rose above $96. Goldman Sachs raised its fourth-quarter Brent forecast to $90 per barrel — up nearly $30 from pre-conflict projections — though spot prices remain elevated well above that level. December crude futures have settled near or above $80, suggesting markets are pricing a protracted disruption. The aviation sector is among the most acutely exposed: Delta Air Lines' fuel costs have doubled in a month, adding an estimated $2.5 billion to quarterly expenses. Lufthansa's 20,000-flight reduction is an early industry response; broader route cancellations appear likely if conditions persist into the peak summer travel season. The US escalated its campaign to isolate Iranian oil revenues by sanctioning Hengli Petrochemical's Dalian refinery, the first time Washington has targeted a major Chinese private refiner. The move is designed to raise the cost to Beijing of continued Iranian crude purchases, though China's likely response involves calibrated ambiguity rather than compliance. Separately, the US and EU announced an agreement to coordinate on critical minerals supply chains and reduce dependence on Chinese rare earths — a strategically significant step even if implementation details remain to be defined. The first international conference on transitioning away from fossil fuels convened in Santa Marta, Colombia, drawing more than 50 countries; the Iran war's disruption to energy markets has lent the gathering added urgency, though translating ambition into binding commitments remains the central challenge.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

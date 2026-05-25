@@ -1,0 +1,11 @@
+US inflation data for April delivered an uncomfortable surprise, with headline CPI rising to 3.8% year-on-year — the highest reading in three years and meaningfully above the Federal Reserve's upper tolerance band of 3%. While the Strait of Hormuz closure remains the primary driver through elevated energy prices, the picture beneath the surface is more troubling: core inflation excluding energy ran at 2.8%, median and trimmed-mean measures are turning upward, sticky prices have re-crossed 3%, and the Fed's "supercore" services measure — services inflation minus shelter — rose sharply in the month. The breadth of the acceleration suggests the oil shock is generating second-order effects rather than remaining purely a relative-price disturbance.
+
+The affordability dimension compounds the political difficulty. Consumer prices rose faster than average hourly earnings in April, the first such occurrence since 2022 and a dynamic that did not materialise during Trump's first term. The Atlanta Fed's wage tracker recorded 3.9% wage growth through March, leaving real compensation in marginally negative territory on the latest reading.
+
+Markets adjusted quickly to the new information. Two-year Treasury yields touched 4%, their highest since June 2025, as the probability distribution for the fed funds rate shifted decisively: the next move is now priced more likely to be a hike than a cut. The S&P 500 dipped only 0.16% before recovering, with semiconductor names initially falling sharply before regaining much of the intraday loss — a sign that AI-driven earnings momentum continues to provide a partial buffer against the rate repricing.
+
+Kevin Warsh was confirmed as a Federal Reserve governor on the same day, with his elevation to chair expected to follow. The timing is notable: he inherits an institution where the easing cycle that markets anticipated at the start of the year has effectively been suspended, and where the risk profile is shifting from a familiar dilemma of slow growth versus sticky inflation toward a harder stagflationary configuration if the energy shock persists.
+
+The Trump administration separately faces a significant fiscal development, processing more than $35.5 billion in tariff refunds following the Supreme Court ruling that struck down the president's broad tariff authority.
+
+---

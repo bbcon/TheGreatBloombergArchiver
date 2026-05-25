@@ -1,0 +1,286 @@
+Subject: “I wouldn’t want that job”
+Date: Sat, 07 Feb 2026 20:35:55 +0000
+
+“I Wouldn’t Want That Job”: The Meteorologists Who Help Decide When Utilities 
+Cut Power
+What it’s like to work the most stressful job in meteorology
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-02-07/pg-e-utilities-rely-on-meteorologists-to-help-decide-when-to-cut-power>
+ <https://www.bloomberg.com/green>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=16809409&m=11b724c487f61753eb1a7a4a5f3ef261&p=02072026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=16809409&m=11b724c487f61753eb1a7a4a5f3ef261&p=02072026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Quarterbacks playing for the Super Bowl, accountants during tax season, postal 
+workers at Christmas. They’re all jobs that come with a fair degree of stress. 
+But none have quite the same stakes of meteorologists working at utilities when 
+the weather gets wild.
+
+Forecasters are on the frontline of deciding whether to cut power for millions 
+or keeping it on and risking a catastrophic fire. Today’s newsletter takes you 
+inside one of themost high-stakes jobs in meteorology 
+<https://www.bloomberg.com/news/features/2026-02-07/rising-fire-risk-prompts-utilities-to-order-unpopular-power-cuts?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+. Plus, your weekend listen and weekend read.
+
+You can subscribe to Bloomberg News <https://www.bloomberg.com/subscriptions> 
+to get all the latest on utilities and the energy transition.
+
+Making ‘agonizing’ decisions
+
+By Michelle Ma 
+<https://origin.www.bloomberg.com/authors/AWTYlfwjEUk/michelle-ma> and Lauren 
+Rosenthal 
+<https://origin.www.bloomberg.com/authors/AXCV-bQx5Dk/lauren-rosenthal>
+
+States in the US West are grappling with an unusually warm, arid winter that 
+is ramping up fire risk in some areas, driving utilities to take drastic 
+precautions, including sometimes shutting off the power in a bid to keep their 
+equipment from sparking a potentially ruinous blaze.
+
+Across large pockets of Texas, New Mexico and Colorado, fine grasses and brush 
+that fuel fires have dried out as La Niña largely holds significant rain and 
+snow at bay— a pattern that’s projected to continue into the spring. As fire 
+weather alerts from the US National Weather Service loomed in December and 
+January, Xcel Energy Inc.ordered multiple rounds 
+<https://www.bloomberg.com/news/articles/2025-12-17/colorado-shutoffs-have-potential-to-leave-some-in-dark-for-days?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+ of preventative power cuts in Colorado for more than 50,000 customers, many in 
+the Boulder and Fort Collins areas, reaching into the Rocky Mountains.
+Inside PG&E’s Applied Technology Services building in San Ramon, California.
+Photographer: Manuel Orbegozo
+The shutoffs, known as “public safety power shutoffs,” are enacted so that 
+during scorching, windy weather, power lines won’t inadvertently spark a blaze. 
+Those moves are deeply unpopular, but Xcel says they were necessary. Behind the 
+scenes, Xcel executives were heeding advice from a team of weather scientists 
+as they decided where and when to cut the flow of power. It “all starts with 
+meteorology,” says Paul McGregor, the company’s vice president of wildfire risk 
+management.
+
+Before he worked at Xcel, McGregor worked at Pacific Gas & Electric Co., the 
+utility serving northern and central California. The company rolled out a 
+shutoff program in 2018, building on an idea pioneered by San Diego’s utility. 
+Since its first proactive power cut, PG&E’s meteorology team has developed a 
+system that has inspired other utilities to create their own shutoff programs, 
+advising how best to track conditions and design shutoff protocols that can be 
+deployed quickly.
+
+In a control room in San Ramon, California, a giant map looms, dotted with 
+transmission lines that cut across mountains and valleys. It’s at PG&E’s 
+offices here that Scott Strenfel, the company’s senior director of meteorology 
+and fire science, along with his team of seven forecasters, monitors the 
+weather and decides when the risk of fire is too great to keep energy flowing 
+across the utility’s vast transmission and distribution system.
+Scott Strenfel at PG&E’s office in San Ramon.Photographer: Manuel Orbegozo
+Strenfel, 43, is widely regarded as an industry leader in managing fire 
+threats. He’s also a weather nerd who got sent to the principal’s office at his 
+Southern California middle school for being disruptive every time it rained. 
+Strenfel was working at PG&E in 2017 when the utility’s equipment sparked a 
+string of catastrophic fires across Northern California. Mounting lawsuits and 
+public pressure led the company to begin rolling out preventative shutoffs. (A 
+series of wildfires led PG&E to file for bankruptcy in 2019.)
+
+At the heart of their operations is data. The utility, which provides power to 
+more than 5 million customers, now operates more than 1,600 weather stations 
+perched atop its power lines in remote mountain passes, which report real-time 
+wind speeds, wind gusts, humidity and temperature at least every 10 minutes. 
+The company tracks how much moisture is packed into grasses and brush to 
+determine how quickly they could ignite.
+
+In a daily meeting, Strenfel and his coworkers look at the AI-powered models, 
+which consider both the probability of utility equipment sparking a fire as 
+well as potential damage, and discuss the risks. The machine learning models 
+make recommendations on whether to shut off power or not, and if things are 
+“cusp-y,” the meteorologists take a closer look. If conditions are ripe for a 
+deadly conflagration, meteorologists monitor conditions 24/7 alongside a senior 
+PG&E executive.
+
+How scientists make the call to cut the power is a complicated nexus of data, 
+technology and human judgment. “It’s a man-machine mix,” Strenfel says. “Models 
+aren’t perfect.” And making the right decision can be agonizing.
+
+There’s a lot at stake: PG&E’s neighbor, Edison International’s Southern 
+California utility, is facing hundreds of lawsuits alleging its equipment 
+started the Eaton fire, which killed 19 people and razed part of the community 
+of Altadena one year ago during a record-breaking windstorm. The utilitylater 
+said 
+<https://www.bloomberg.com/news/articles/2025-09-04/southern-california-edison-should-pay-for-la-fire-costs-us-says?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+ it detected a fault on one of its transmission lines near the time the fire 
+started.
+
+“I wouldn’t want that job,” says San Jose State University fire weather 
+scientist Craig Clements, who Strenfel studied with while he was at the school. 
+“It’s probably the most stressful — and one of the more important — meteorology 
+positions in the world.”
+
+Read the full story 
+<https://www.bloomberg.com/news/features/2026-02-07/rising-fire-risk-prompts-utilities-to-order-unpopular-power-cuts?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+ about how PG&E is still working to manage risk and safety. For a weekly look 
+at the market, business and economic impacts of extreme weather, subscribe to 
+theWeather Watch newsletter 
+<https://www.bloomberg.com/account/newsletters/weather-watch>.
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=16809409&m=11b724c487f61753eb1a7a4a5f3ef261&p=02072026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=16809409&m=11b724c487f61753eb1a7a4a5f3ef261&p=02072026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Risk around the world
+
+6.9 million
+
+The number of people in Australia who live in areas where homes adjoin highly 
+flammable grasslands 
+<https://www.bloomberg.com/news/articles/2026-01-05/millions-at-risk-of-los-angeles-style-wildfires-in-australia?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+, raising the risk of Los Angeles-like urban conflagrations.
+
+AI maintenance workers
+
+“Even if the equipment failed, the sparks that it threw would have landed on 
+bare earth 
+<https://www.bloomberg.com/news/articles/2025-11-25/massive-wildfire-liabilities-push-utilities-to-use-ai-to-stop-blazes?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+. There would have been no fire.”
+
+Andy Abranches
+
+Vice president of wildfire mitigation, PG&E
+
+Utilities are turning to artificial intelligence and other tools that can help 
+prioritize maintenance concerns, including where to reduce vegetation growing 
+too close to power lines.
+
+Readers really liked
+
+🏥Hospitals are kicking 
+<https://www.bloomberg.com/news/features/2026-02-03/hospitals-are-phasing-out-popular-baxter-anesthetic-due-to-footprint?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+ a potent greenhouse gas
+🔋An ex-Tesla exec raised $230 million 
+<https://www.bloomberg.com/news/articles/2026-02-04/lunar-energy-raises-230-million-for-batteries-to-prevent-blackouts?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+ for his battery startup
+🛰️Fusion reactors for satellites 
+<https://www.bloomberg.com/news/articles/2026-02-03/washington-fusion-startup-avalanche-energy-raises-29-million?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+? That’s one startup’s dream
+🇨🇳China has an AI superpower 
+<https://www.bloomberg.com/news/articles/2026-02-04/china-ramps-up-energy-boom-flagged-by-musk-as-key-to-ai-race?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+: it’s massive energy buildout
+
+Your weekend read
+
+The Winter Olympics officially kicked off on Friday in Cortina, Italy. The 
+good news: The region received some snow this week, which should make for 
+decent conditions for skiing and other outdoor events.
+
+The bad news: Climate change is lowering the odds of reliable snow globally, 
+as the planet warms, especially at lower elevations. The trend is clear, even 
+in Cortina. The region last hosted the Olympics in 1956, and temperatures have 
+warmed 7C since then. Your weekend read comes fromLaura Millan 
+<https://www.bloomberg.com/authors/ASzdyi2b6bE/laura-millan> and Hayley Warren 
+<https://www.bloomberg.com/authors/ASy8ufuymtE/hayley-warren>, who dove into 
+the data and spoke with Olympians about their experiences skiing onincreasingly 
+artificial and precarious snow 
+<https://www.bloomberg.com/graphics/2026-winter-olympics-climate-change/?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+.
+James Clugnet of Great Britain competes during a qualification event in Davos, 
+Switzerland.Photographer: Jean-Christophe Bott/Keystone
+At the 2018 Winter Olympics in Pyeongchang, South Korea, about 80% of the snow 
+was artificial. Four years later, in Beijing, all the snow was manufactured for 
+the first time in Olympic history,sparking an outcry 
+<https://www.lboro.ac.uk/media-centre/press-releases/2022/february/environmental-cost-of-beijing-2022/>
+ over the event’s sustainability, as well as the Games’ impact on local 
+environments and global warming more broadly. The optics and images of ribbons 
+of white surrounded by dirt-brown hills in China that were flashed around the 
+world only accelerated the discussion, even if it was extremely cold during the 
+events.
+
+James Clugnet, a cross-country skier with Team Great Britain, says that pretty 
+much every competition he participates in these days depends on artificial 
+snow—and that although it is firmer, allowing for faster racing, he prefers the 
+real thing. He lives in Norway and trains on roller skis in the summer, which 
+he says is similar to skiing on snow. When possible, the 29-year-old waits as 
+late in the winter season as he can to start training on real snow, as cover 
+tends to be deeper, lessening the environmental impact.
+
+He’s not the only athlete concerned about the future of winter sports. 
+Hundreds of competitors have been sounding the alarm through campaigns and in 
+open letters to the IOC. Last year, just as the organization was choosing a new 
+leader, 450 Olympiansurged 
+<https://athletesoftheworld.org/dear-ioc-candidates-1> the IOC to do more to 
+protect the environment. Days after being elected president, Kirsty Coventry 
+said she would make those concerns a priority and later met with athletes to 
+discuss the issue.
+
+Clugnet, raised near Grenoble, France, grew up near two winter resorts in the 
+Alps—one at 1,000 meters above sea level and the other at 1,200 meters. As the 
+years passed and temperatures rose, he recalls, training sessions moved to the 
+higher-altitude resort; the lower one eventually closed. “That’s when I 
+understood the impact it can have on the sport,” he says. “I don’t really 
+remember not being aware of climate change.”
+
+See the data visualizations and read the full story 
+<https://www.bloomberg.com/graphics/2026-winter-olympics-climate-change/?cmpid=BBD020726_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260207>
+.
+
+Your weekend listen
+ 
+<https://omny.fm/shows/zero/electricity-is-now-holding-back-growth-across-the-global-economy>
+Major economies around the world are grappling with electricity grids under 
+stress from equipment bottlenecks and workforce shortages. What can be done to 
+solve it? This week onZero, Akshat Rathi talks with Manoj Sinha, CEO of Husk 
+Power Systems, about distributed energy resources and their potential to bring 
+electricity to where it is needed most — from energy-poor regions in the Global 
+South, to energy-hungry data centers in rich countries.
+
+Listen now, and subscribe on Apple 
+<https://podcasts.apple.com/us/podcast/zero/id1621556928>, Spotify 
+<https://open.spotify.com/show/5rHwnJEjFRnivIdpWwnZyZ?si=985034d7e76a47a0> or 
+YouTube 
+<https://www.youtube.com/playlist?list=PLe4PRejZgr0MtnA98Xp8igGT9S3Na_zDD> to 
+get new episodes ofZero every Thursday.
+
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Hyperdrive 
+<https://www.bloomberg.com/account/newsletters/hyperdrive?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for expert insight into the future of cars
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * CityLab Daily 
+<https://www.bloomberg.com/account/newsletters/citylab-daily?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for top stories, ideas and solutions, from cities around the world
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily>
+.
+
+
+
+Follow us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/mUqdhytX96k3vweABTx3_ngnS_PqQz5JSIAjpr_5lbgk-gVanJb8NxoWfpx0UjtVovmvnRh96NYJ1zWZyZ1xrfHjWReHGeOWO1Js_mOG5ftEvxsb5D5BqNZdxRsIpz5ZIejryik2MFOgF5pVMblQHt3ANDEjrzVrJ4pUm5umzx_KndFgWINsqAynSRSeaJtY8KEPlzUkJJ7xogwKAc30MtSslamlJ4z-klPX0U7qf7izpZ5s94qrOvGFtHuJXC6arj-x4uhxjoSWp_3uh7fVv7NiiU9bI8uroqpFG0HafaytrEngiwQX30YlGY1Hdqii4YKSVg_ZbAYXkKesZhAweedDskQTyqEo/zg_3FGzIAotF2p-7rXA6XW0JlTMb_IiX/17>

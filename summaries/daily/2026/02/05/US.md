@@ -1,0 +1,13 @@
+# US Daily Briefing — February 5, 2026
+
+## Tech Rotation Deepens; Software Bears the Brunt
+
+US equities are in the midst of a sharp factor rotation rather than a broad selloff. Value outperformed momentum on Wednesday by the largest margin since November 2020, when initial vaccine efficacy data triggered a comparable reversal — a move all the more notable for occurring without a singular catalyst. The S&P 1500 Software index has declined more than 17% year-to-date, with Anthropic's latest tool intensifying concerns that AI is now disrupting, not merely augmenting, incumbent software business models. Thomson Reuters fell as much as 20% on the week, its largest decline on record. AMD slid 17% post-earnings, and an iShares software ETF has shed nearly $1 trillion in market value over seven sessions. Alphabet beat Q4 revenue estimates but guided 2026 capex to as much as $185 billion versus consensus near $120 billion; shares fell 3.3% premarket. Qualcomm declined 9% and Arm 6.6% on softer outlooks. Notably, breadth remains constructive: roughly two-thirds of S&P 500 constituents advanced Wednesday, and the equal-weighted index closed at a record. Nvidia's CEO Jensen Huang called the software selloff "illogical," though investors appear unlikely to take comfort absent stronger evidence — Nvidia's earnings later this month loom as the key test.
+
+## Macro Backdrop Remains Supportive
+
+Q3 GDP was revised to a 4.4% annualized pace, the strongest in two years. Bank of America expects front-loaded 2026 growth, citing roughly $135–140 billion in OBBBA stimulus (about 0.6% of disposable income) and a 0.5–1pp boost from post-shutdown normalization in Q1 — factors not yet reflected in consensus forecasts. Separately, AEI/Brookings researchers estimate the US may have experienced net negative immigration in 2025, with 2026 projections ranging from a 185,000 gain to a 925,000 decline, a development with potential implications for labor supply and trend growth.
+
+## Crypto and Fed
+
+Bitcoin fell below $70,000, down more than 42% from its October peak, with Strategy expected to report a multibillion-dollar Q4 loss. On policy, President Trump indicated he would not have nominated Kevin Warsh to the Fed had Warsh signaled a preference for hikes; Governor Lisa Cook reiterated the importance of central bank credibility. Treasury Secretary Bessent testifies before the Senate today following a contentious House appearance.

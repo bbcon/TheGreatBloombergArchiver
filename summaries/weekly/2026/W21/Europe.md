@@ -1,0 +1,23 @@
+# Weekly Briefing: Europe — May 18–24, 2026
+
+## Eurozone activity contracts as energy shock bites
+
+The clearest signal of the week came from Thursday's flash purchasing managers' indices, which showed euro-area composite activity falling to 47.5 in May from 48.8 in April — the second consecutive month below the 50 contraction threshold and the weakest reading in two and a half years. France deteriorated sharply to its lowest level since 2020, while Germany's composite reading was broadly stable. The European Commission concurrently projected the bloc would experience its fastest inflation since 2023. Against this backdrop, Belgian ECB Governor Pierre Wunsch indicated a June rate hike is likely, and Christine Lagarde, questioned in Paris during the G-7 finance ministers' meeting on Monday, acknowledged the bond-market gyrations were "always my job" to monitor. The contrast with prior easing expectations is stark: the energy shock from the closure of the Strait of Hormuz, now approaching its third month, is forcing a broad reassessment across European central banks, with markets pricing further tightening rather than the cuts anticipated earlier this year.
+
+## Bond market under sustained pressure
+
+European sovereign yields participated in the global selloff that took 30-year US Treasury yields to 5.19% on Tuesday, the highest since 2007. The Iran war's inflationary impulse, combined with fiscal expansion concerns, drove the move. UK gilts proved a partial exception, gaining Monday after Andy Burnham — currently the leading contender to replace Keir Starmer — ruled out altering the government's self-imposed borrowing limits. UK inflation data released Wednesday showed price growth at a more than one-year low, prompting traders to scale back Bank of England hike expectations. Separately, Emmanuel Macron's nominee Emmanuel Moulin was confirmed by parliament as Bank of France governor, removing a source of political uncertainty.
+
+## EU finalizes US trade deal text
+
+On Wednesday, EU lawmakers and member states reached agreement on legislation implementing the bloc's trade pact with the US, clearing a major hurdle ahead of Trump's July 4 deadline. The deal removes EU tariffs on American industrial goods in exchange for a 15% ceiling on European exports. Failure to ratify risked a 25% levy on European autos — a particularly acute threat given the industrial sector's existing strain from the energy shock. Separately, EU officials began exploring new defensive measures against Chinese import flows, with an orientation debate on China planned ahead of a June leaders' summit. Beijing warned of countermeasures if Brussels proceeds with restrictions.
+
+## UK political turbulence and policy response
+
+Labour's leadership contest continued to color sterling markets, with hedge funds maintaining bearish positioning. The contest has also reopened the question of EU relations, with both Wes Streeting and Burnham suggesting a case for rejoining the bloc — comments that, as Lionel Laurent observed, will shape European capitals' calculus on how far any UK reset can plausibly extend. Chancellor Rachel Reeves on Thursday unveiled cost-of-living measures including free August bus travel for children, potential food-tariff cuts, and closure of an oil-and-gas tax loophole projected to yield approximately £300 million annually. UK retail sales fell at the fastest pace in nearly a year, and the Institute for Fiscal Studies reported only 50.6% of 16-to-24-year-olds are in payrolled work, down from 54.9% at end-2022.
+
+## Corporate developments
+
+UK M&A activity continued its surge, with year-to-date target value reaching roughly $150 billion — a more than 250% increase and the strongest since 2015. Standard Chartered named Manus Costello CFO Monday and announced plans Tuesday to eliminate close to 8,000 support roles by 2030 through AI adoption; CEO Bill Winters subsequently apologized for characterizing the change as replacing "lower-value human capital." The planned Estée Lauder–Puig acquisition of Charlotte Tilbury collapsed on Thursday over compensation terms. Germany launched the privatization of Uniper, potentially Europe's largest utility transaction this year. The Council of Experts on Climate Change warned Germany is likely to miss its 2030 emissions target by up to 100 million tons of CO2, with the Merz coalition having abandoned the renewable heating mandate.
+
+##

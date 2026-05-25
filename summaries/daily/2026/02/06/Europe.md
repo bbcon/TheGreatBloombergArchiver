@@ -1,0 +1,11 @@
+# European Morning Briefing — February 6, 2026
+
+**Markets and macro.** European markets open against a backdrop of a sharp global retreat from risk that has dominated the week, though selling pressure showed signs of easing in Asian trading. The Nasdaq 100 has fallen roughly 4.6% over three sessions in its worst stretch since April, with software ("SaaSpocalypse"), crypto and precious metals all caught in the unwind. Silver swung nearly 10% intraday before stabilizing, and bitcoin briefly traded below $61,000. European equities will likely take direction from whether this stabilization holds into the US open.
+
+**Bank of England.** Governor Andrew Bailey appeared to endorse market pricing of a roughly 50% probability of a March rate cut, following this week's more dovish-than-expected hold. The MPC's growing confidence that UK inflation has been contained now shifts the policy risk toward the labour market, where signs of softening have accumulated. Sterling and short sterling will remain sensitive to incoming wage and employment data.
+
+**ECB and the euro.** ECB Governing Council member Yannis Stournaras downplayed concerns about the euro's recent appreciation, saying the move is being monitored but does not warrant alarm. The comments are consistent with a Governing Council comfortable holding policy steady, though a sustained currency rally would tighten financial conditions at the margin.
+
+**Corporate.** Stellantis fell as much as 24% in Milan — a record intraday decline — after announcing €22 billion (~$26 billion) in charges tied to unwinding its EV strategy, including model cancellations and supplier compensation. The writedown exceeds analyst expectations and follows similar, smaller moves at Ford, GM and Porsche, underscoring the broader recalibration of European auto EV ambitions. Separately, the proposed Rio Tinto–Glencore tie-up collapsed within 24 hours, reportedly over price; Glencore shares fell roughly 11%, leaving questions about strategic direction with Ivan Glasenberg still a key shareholder.
+
+**Trade.** French customs data showed Q4 2025 spirits exports to the US down 47%, wine down 39% and perfumes/cosmetics down 25%, evidence that US tariffs are now materially affecting French luxury and consumer export categories.

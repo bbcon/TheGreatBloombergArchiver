@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, May 18, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, May 18, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Bond Rout Reshapes Rate Expectations</p>
+<p class="para-body">US Treasuries extended last week's selloff as Brent pushed above $111/barrel amid the unresolved Iran conflict and continued closure of the Strait of Hormuz. The 10-year yield held at 4.60% in early trade, while the long end remained the focal point of stress — Federated Hermes' Karen Manna framed the move as a market "reckoning with renewed inflation," with 30-year yields approaching levels not seen in two decades. Rate-cut pricing has shifted materially: traders that earlier in the year were positioned for Fed easing in 2026 are now beginning to discount the tail possibility of a hike. DoubleLine's Jeffrey Gundlach said a June cut is off the table, and Ed Yardeni publicly urged the Fed to abandon its easing bias to avoid losing control of the long end. The FOMC minutes due Wednesday will be parsed carefully for any acknowledgment of the inflation impulse from energy.</p>
+<p class="para-title" style="color:#5597cb;">Equities Test the AI Thesis Against Higher Yields</p>
+<p class="para-body">S&P 500 futures declined 0.6% overnight following Friday's drop of more than 1%. The episode appears so far to resemble a wobble rather than a regime change, though Morgan Stanley's Michael Wilson — who recently raised his S&P target — cautioned that sustained yield volatility could produce the first meaningful correction since the late-March lows. The week's earnings calendar is consumer-heavy (Home Depot, Lowe's, Walmart) and culminates in Nvidia on Wednesday, a key test of whether AI-driven earnings momentum can offset the discount-rate headwind.</p>
+<p class="para-title" style="color:#5597cb;">Corporate and Deal Flow</p>
+<p class="para-body">NextEra is reportedly in talks to acquire Dominion Energy at roughly $66 billion, which would rank as the largest power-sector transaction on record — notable given accelerating data-center load growth. UnitedHealth fell 5.6% premarket after Berkshire disclosed it had exited the position; Berkshire built a $2.6 billion Delta stake and added Macy's. Regeneron dropped 12% on a failed late-stage melanoma trial. SpaceX's S-1 may surface as soon as Wednesday, setting up a potential June roadshow at a valuation reportedly approaching $2 trillion.</p>
+<p class="para-title" style="color:#5597cb;">Policy Backdrop</p>
+<p class="para-body">The post-summit US-China framework remains thin on specifics beyond a $17 billion annual agricultural commitment through 2028. With Section 232-style overcapacity and forced-labor investigations queued to replace the tariffs struck down in February, a fresh round of duties is likely this summer — potentially colliding with gasoline prices that have risen toward $4.50 and consumer affordability concerns ahead of the midterms.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">China growth disappoints across the board</p>
+<p class="para-body">April data delivered a uniformly weak reading that has reopened the debate over Beijing's stimulus restraint. Retail sales rose just 0.2% year-on-year — the softest print since the post-Covid reopening of December 2022 — with auto sales down 15%, jewelry off 21%, and previously subsidy-supported categories such as appliances and furniture declining at double-digit rates. Industrial production grew 4.1%, the weakest in nearly three years, while fixed-asset investment unexpectedly contracted 1.6% year-to-date. No economist surveyed by Bloomberg had anticipated a downside surprise of this breadth. The figures, following last week's contraction in new loan demand, suggest the booming export channel is no longer offsetting domestic weakness. They also complicate the post-summit narrative: while Beijing agreed to purchase at least $17 billion of US agricultural products annually through 2028 and to establish new trade and investment boards, the agreements remain vague, and the trade board's mandate appears to cover only around $30 billion in flows. The "placeholder summit" framing leaves meaningful scope for friction when Trump's tariff replacement architecture is unveiled this summer.</p>
+<p class="para-title" style="color:#e07b39;">Japan's fiscal pivot and JGB stress</p>
+<p class="para-body">Prime Minister Takaichi instructed the finance ministry to compile a supplementary budget after weeks of insisting none was needed, citing commodity-driven inflation pressures from the Iran conflict. The 30-year JGB yield surged as much as 20bp to a post-1999 high before paring gains, contributing to a broader Asian bond selloff that extended to Indonesia and India, both heavily energy-import dependent. HSBC's Frederic Neumann noted that with Gulf flows unlikely to be restored quickly, regional inflation pressures will continue building.</p>
+<p class="para-title" style="color:#e07b39;">Elsewhere</p>
+<p class="para-body">Thailand is preparing a 200 billion baht ($6.1 billion) cost-of-living package. Taiwan's President Lai invoked the island's semiconductor centrality as questions linger over US commitments post-summit. Samsung shares rose on resumed union talks, and Kospi gained modestly on AI sentiment. Malaysia's Anwar raised the prospect of a snap election amid coalition strains. Putin's upcoming Beijing visit revives Power of Siberia 2 talks, though pricing leverage remains with Xi.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">UK politics dominates as bond markets test European nerves</p>
+<p class="para-body">Wes Streeting, in his first public appearance since resigning as health secretary, used the platform to lay groundwork for a potential Labour leadership bid and argued Britain should rejoin the EU. Greater Manchester Mayor Andy Burnham, who intends to contest a June by-election as a route to challenging Keir Starmer, echoed the case for EU re-engagement. Hedge funds and asset managers responded by piling into bearish sterling option bets last week, reflecting concern that a Burnham-led Labour could pursue looser fiscal policy. Separately, *The Sun* reported Chancellor Rachel Reeves is set to abandon a planned fuel-duty increase, a politically expedient move given oil-driven cost pressures but one that complicates the fiscal arithmetic at a sensitive moment for gilts.</p>
+<p class="para-title" style="color:#4a9e6b;">Bond stress framed the G-7 finance ministers' meeting in Paris</p>
+<p class="para-body">A renewed selloff—led by Japanese government bonds but extending across global curves—overshadowed the agenda of addressing structural imbalances. French Finance Minister Roland Lescure characterised the move as "correcting, but I wouldn't go as far as to say it's collapsing," while ECB President Christine Lagarde acknowledged the gyrations fell within her remit. German Finance Minister Lars Klingbeil pressed partners to deepen cooperation on raw materials, energy and supply chains. With Brent above $110 and the Strait of Hormuz closure persisting, inflation expectations are repricing higher across the bloc, complicating the ECB's policy path even as Lescure maintained the eurozone faces slowdown rather than recession or stagflation.</p>
+<p class="para-title" style="color:#4a9e6b;">UK M&A activity stands in marked contrast to political dysfunction</p>
+<p class="para-body">Bids targeting UK companies have risen more than 250% year-to-date to roughly $150 billion—the strongest pace since 2015—with Unilever, Schroders, Beazley, Intertek and Tate & Lyle among the names in play, as overseas acquirers exploit depressed sterling valuations. <strong>In corporate news</strong>, Standard Chartered named former banking analyst Manus Costello as CFO, ending a months-long search following Diego De Giorgi's February departure. Publicis rose 2.4% in Paris after agreeing to acquire LiveRamp for approximately $2.5 billion. In Spain, the ruling Socialists suffered their worst-ever result in the country's largest region. Germany's climate advisory council warned the country is likely to miss its 2030 emissions targets by up to 100 million tons of CO2 following the coalition's decision to dilute the buildings-sector heating law.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Iran stalemate drives the global macro picture</p>
+<p class="para-body">Brent crude rose above $111 a barrel and WTI traded near $107 as the US-Iran impasse over the Strait of Hormuz entered its third month with no diplomatic breakthrough in sight. President Trump warned Tehran the "clock is ticking" hours after drones targeted a UAE nuclear power plant, while Iran's Mehr agency characterized US terms — including transfer of uranium stocks, no reparations, and release of less than a quarter of frozen assets — as offering "no tangible concessions." Commercial shipping through the strait remains largely frozen. The UAE is accelerating construction of a pipeline to Fujairah to double bypass capacity by next year, though such workarounds will not substitute for restored Gulf flows at scale.</p>
+<p class="para-title" style="color:#8b5cf6;">Bond markets are doing the repricing the Fed has not</p>
+<p class="para-body">A global sovereign selloff deepened, with Japan's 30-year yield surging as much as 20bp to its highest since the tenor's 1999 debut, and US 30-year yields approaching 5%. Traders have flipped from pricing US cuts this year to entertaining the prospect of a hike — a striking reversal that reflects how energy-driven inflation is overwhelming the disinflationary forces central banks had been counting on. Equity futures slipped but the AI-led rally has so far proven resilient; Morgan Stanley's Wilson warned a sustained yield grind higher could trigger the first meaningful correction since March.</p>
+<p class="para-title" style="color:#8b5cf6;">Policy divergence is widening under a common shock</p>
+<p class="para-body">Japan's PM Takaichi reversed course and instructed the finance ministry to compile a supplementary budget; Thailand is readying a roughly $6.1 billion cost-of-living package. China's April data — retail sales up just 0.2% y/y, industrial production at 4.1%, fixed-asset investment contracting 1.6% YTD — undercut Beijing's reluctance to add stimulus and complicate the afterglow of last week's Trump-Xi summit, which yielded $17 billion in annual US agricultural purchases through 2028 but little operational detail. G-7 finance ministers convening in Paris confront these imbalances against a backdrop French Finance Minister Lescure called "correcting, but not collapsing."</p>
+<p class="para-title" style="color:#8b5cf6;">Tensions to watch</p>
+<p class="para-body">Trump's July 24 tariff deadline could collide with elevated US pump prices and a still-closed Hormuz, testing the durability of the Beijing détente. Putin arrives in China this week with more leverage on Power of Siberia 2 than he has had in years, though Xi retains the structural upper hand given diversified supply options.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, February 27, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="#" class="nav-link  active">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../daily.html">‹ Daily archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, February 27, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-body">US equity markets are heading into the month-end under pressure, with S&P 500 futures off 0.35% as February draws to a close. The benchmark is on course for its largest monthly decline since April, down roughly 0.4% on the month, a striking contrast to European and emerging-market outperformance. The underperformance reflects the twin concerns that have defined February: stretched valuations in AI-adjacent equities and growing recognition that AI's disruptive potential may compress margins and pricing power across the economy. Among individual names, Block surged as much as 27% in extended trading after Jack Dorsey's fintech announced it would cut approximately 4,000 employees — nearly half its workforce — framing the reduction as an AI-driven productivity bet. Dell gained 9.8% on an outlook for AI server sales that exceeded estimates, underscoring that infrastructure demand remains robust even as software sentiment wavers. CoreWeave tumbled 11% after reporting a larger-than-expected loss alongside elevated capital expenditure guidance. Duolingo fell 24% in premarket after a below-consensus full-year outlook triggered downgrades from Morgan Stanley, JPMorgan, and Evercore ISI. The most notable market development in February may ultimately be the Treasury rally. US government bonds returned 1.5% for the month, with long-dated securities gaining 4% — their best monthly performance in roughly a year. The flight-to-quality bid reflects elevated geopolitical uncertainty and AI-related equity volatility, and appears to confirm that the $30 trillion Treasury market retains its role as the primary haven asset despite periodic debate about US fiscal sustainability. On the trade policy front, reporting reveals a $112 billion gap between Chinese export data and US import data for 2025 — suggesting that up to a quarter of goods shipped from China may have circumvented existing tariffs through fraud, shell-company routing, and customs undervaluation. This has material implications: compliant US manufacturers face a structural pricing disadvantage, and the revenue and reshoring rationale underlying the tariff regime is partially undermined.</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-body">China's yuan ended its longest winning streak since 2010 after the People's Bank of China moved to temper the currency's appreciation by removing the 20% reserve requirement on foreign-currency forward contracts, effective March 2. The adjustment lowers the cost of bearish derivative positions, signaling that authorities view excessive yuan strength as a risk to exporters and a potential aggravant of already-entrenched deflationary pressures. Currency-option markets nonetheless continue to price in further yuan gains, with traders positioning for a move toward 6.50 per dollar by year-end — suggesting the PBoC's signal has not fully dislodged bullish conviction. Domestic consumption data from the Lunar New Year holiday offered a mixed signal. China recorded 596 million tourist trips over the nine-day break, 95 million more than a year earlier, and total domestic tourism spending reached a record. However, per-trip expenditure of 1,348 yuan was marginally below the prior year. The divergence between volume and per-capita spending is consistent with a consumer that is mobile but cautious — and with the deflationary environment reflected in unusually cheap airfares and hotel rates even in popular destinations like Harbin. It would be premature to interpret the holiday data as a consumption inflection point. Japan's political economy is drawing increasing scrutiny. Prime Minister Sanae Takaichi this week nominated two reflationist academics to forthcoming Bank of Japan board openings, reinforcing concerns that she intends to constrain the pace of rate normalization. The yen and JGBs fell on the announcement. Notably, former BOJ Governor Haruhiko Kuroda — himself the architect of Japan's decades-long easing experiment — has called publicly for rate hikes and warned that the yen may be "somewhat too weak." The tension between Takaichi's fiscal and monetary preferences and the BOJ's tightening trajectory represents a developing risk for Japanese markets. Separately, South Korea's National Pension Service posted an 18.82% return in 2025, its strongest ever, driven by semiconductor and AI-related equity gains, though foreign funds sold a record net $4.7 billion of Kospi stocks on Friday after the benchmark's near-50% year-to-date run.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-body">European equities continue to outperform their US counterparts in what has become the dominant cross-regional market theme of early 2026. The Stoxx Europe 600 rose 0.18% Friday and is set to close February with an 8th consecutive monthly gain — the longest winning streak since 2013 — ending the month up 3.7%. The region's relative insulation from AI disruption risk, alongside a cyclical recovery that some argue is underappreciated, appears to be drawing capital from US equity allocations. European companies in the Stoxx 600 have announced €85.7 billion in share buybacks year-to-date through February, the highest ever for the January-February period, according to Barclays data. The collapse of London-based Market Financial Solutions has created an acute problem for several Wall Street institutions. Barclays has approximately £600 million in exposure, Atlas roughly £400 million, and Jefferies around £100 million. The situation adds to a broader narrative of stress in parts of the private credit and non-bank lending ecosystem, consistent with the Apollo Global Management fund that separately cut its dividend and marked down asset values this week. On the UK political front, the Green Party won the Gorton and Denton by-election in Manchester with 40.7% of the vote; Reform UK placed second with 28.7%, and Labour trailed third with 25.4%. The result illustrates the two-front pressure on Keir Starmer's government from both the progressive left and the nationalist right. Chancellor Rachel Reeves is expected to deliver a deliberately low-key economic update next week, with gilt issuance projected to be reduced — an outcome markets are likely to receive constructively given recent concerns about UK fiscal sustainability. Inflation data from the eurozone's second and fourth largest economies surprised to the upside. French inflation quickened more than anticipated in February, and Spanish inflation accelerated unexpectedly, complicating the ECB's path toward further easing and reinforcing the case for caution at forthcoming policy meetings.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">The most consequential cross-regional dynamic remains the state of US-Iran relations and its implications for oil markets. US and Iranian officials concluded a further round of nuclear talks in Geneva on Thursday, agreeing to reconvene as soon as next week. The diplomatic channel remains open, but the context is extraordinary: Iran's nuclear facilities were struck by the US last June, a second US carrier strike group is reportedly already in Israeli waters, and Tehran is simultaneously preparing for a potential war while attempting to negotiate. Oil markets appear to price a deal as the less likely outcome, with Brent futures around $70 per barrel — up roughly 19% year-to-date — reflecting a meaningful geopolitical risk premium. OPEC+ is set to meet Sunday, and delegates indicate the group will likely agree to resume the output increases it suspended in Q1. The group's ability to consider this option reflects a combination of factors: supply disruptions in Kazakhstan, North America, and Russia have trimmed the theoretical glut, and Chinese strategic reserve purchases have absorbed additional barrels. Whether the supply overhang is as large as the IEA and JPMorgan project remains genuinely uncertain, with several US shale executives arguing the surplus will arrive later — or not at all. Pakistan declared "open war" with Afghanistan after cross-border strikes killed over 130 people, adding a further geopolitical fault line in a region already under strain. China meanwhile removed nine military lawmakers from its National People's Congress, shrinking the military delegation to its smallest size since at least 1974, in an apparent continuation of Xi Jinping's defense establishment purge. On energy transition, US renewable power generation hit a record 1,162 terawatt-hours in 2025 — a 10% year-on-year increase representing 26% of total US electricity output — despite the Trump administration's sustained policy headwinds for the sector. The economics of wind and solar continue to drive deployment independent of subsidy status, with Wood Mackenzie projecting renewables will account for nearly one in three US electrons by 2030.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

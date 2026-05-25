@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jan 19 – Jan 25, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Nav */
+.nav {
+  background: #040505;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.nav-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 14px; flex-shrink: 0;
+}
+.nav-title {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-right: auto;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* Page shell */
+.page { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* Brief header (on individual brief pages) */
+.brief-hdr {
+  background: #040505;
+  padding: 32px 48px 28px;
+  border-radius: 4px 4px 0 0;
+}
+.brief-hdr-inner {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.brief-logo {
+  font-size: 20px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date {
+  font-size: 24px; font-weight: 300; color: #fff;
+  letter-spacing: -0.3px; line-height: 1.2;
+}
+.brief-hdr-meta { text-align: right; }
+.brief-meta-label {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; margin-bottom: 4px;
+}
+.brief-issue { font-size: 10px; letter-spacing: 1px; color: #5597cb; }
+
+/* Accent bar */
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+
+/* Card (wraps header + content) */
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.card-body { padding: 36px 48px; }
+
+/* Region section */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 36px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 14px;
+}
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px;
+}
+.para-body {
+  font-size: 15px; line-height: 1.75; color: #333;
+  margin-bottom: 16px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* Archive list page */
+.section-hdr {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin: 0 0 16px 0;
+}
+.archive-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.archive-item {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.archive-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.archive-link {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 20px;
+}
+.archive-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.archive-date { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.archive-regions { font-size: 11px; color: #999; }
+.archive-chevron { font-size: 14px; color: #ccc; }
+
+/* Landing page sections */
+.latest-label {
+  font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+  color: #999; font-weight: 600; margin-bottom: 16px;
+}
+.mode-tabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.mode-tab {
+  font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 8px 16px; border-radius: 20px; border: 1px solid #ddd;
+  color: #666; font-weight: 600;
+  transition: all 0.15s;
+}
+.mode-tab:hover { border-color: #5597cb; color: #5597cb; }
+.mode-tab.active { background: #5597cb; border-color: #5597cb; color: #fff; }
+
+/* Back link */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+/* Page title for archive pages */
+.page-title {
+  font-size: 28px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 28px;
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">M</div>
+  <span class="nav-title">The Macro Brief</span>
+  <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="daily.html" class="nav-link">Daily</a><a href="#" class="nav-link  active">Weekly</a><a href="monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Jan 19 – Jan 25, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    
+<div class="region" style="border-color:#5597cb;">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <p class="para-title" style="color:#5597cb;">Institutional Posture Toward the New Administration</p>
+<p class="para-body">The most notable US-facing development of the week was not a data release or Fed communication but a signal about how Wall Street is choosing to navigate the early Trump administration. At a private Davos breakfast attended by senior executives from BlackRock, TPG, and Temasek, participants reportedly discussed consequential US policy shifts — including the administration's stated interest in Greenland — while avoiding direct attribution to President Trump even in a closed-door setting. The episode crystallizes a pattern of studied discretion that appears to be hardening into institutional practice among major asset managers.</p>
+<p class="para-title" style="color:#5597cb;">Analytical Opacity and Market Functioning</p>
+<p class="para-body">The implications for market functioning deserve attention. The Trump administration's opening weeks have produced a wide dispersion of potential outcomes across trade, fiscal, and foreign policy — all of which carry direct asset price implications. If the institutions best positioned to model those outcomes are self-censoring their analysis to manage reputational or political risk, the quality of client-facing research may be quietly degrading at precisely the moment when rigorous scenario framing matters most. The practical effect may be a widening gap between privately held views and published analysis, with candid assessments reserved for closed-door conversations rather than distributed research.</p>
+<p class="para-title" style="color:#5597cb;">Weekend Lull and the Week Ahead</p>
+<p class="para-body">Saturday's source flow reflected the weekend calendar, offering no incremental information on Federal Reserve policy, the January FOMC meeting trajectory, Treasury issuance dynamics, credit spreads, or earnings season progression. The bifurcated consumption pattern that has characterized the post-pandemic cycle — upper-income households continuing to support services inflation through premium experiential spending while lower-quintile cohorts remain under pressure — was visible in consumer lifestyle data, with wellness venues, high-end family travel, and connected health hardware all showing continued expansion. Apple's wearables franchise and the broader connected-health category remain structurally relevant within large-cap tech, though no incremental data on unit economics was available. The week ahead warrants close attention given the scheduled advance Q4 GDP print and PCE inflation data, both of which will bear on the Fed's near-term optionality. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <p class="para-title" style="color:#e07b39;">Coverage Gap and Monitoring Priorities</p>
+<p class="para-body">Substantive Asia-Pacific newsflow was absent from the available source material across the week. Rather than extrapolate from stale context, we flag the gap explicitly and identify the items warranting closest attention as primary sources resume. PBoC liquidity operations and the trajectory of the yuan's reference rate remain central to near-term China positioning, particularly against the backdrop of US-China trade and technology friction that has been a standing feature of the macro environment. Onshore equity flows and any further "national team" intervention signals will be relevant to gauging the durability of recent stabilization in Chinese equities.</p>
+<p class="para-title" style="color:#e07b39;">Japan, Korea, and the Broader Region</p>
+<p class="para-body">Bank of Japan communication ahead of its next policy meeting continues to be a key variable, with implications for JGB yields, USD/JPY positioning, and the carry trade complex more broadly. Korean export data and semiconductor demand signals from major Korean and Taiwanese fabricators remain an important read on global technology capex cycles. In India, pre-budget positioning and foreign institutional investor flows deserve monitoring as the fiscal calendar advances. Australian Q4 CPI remains the proximate driver of RBA rate expectations and warrants attention when released.</p>
+<p class="para-title" style="color:#e07b39;">Geopolitical Standing Items</p>
+<p class="para-body">Cross-Strait military activity, North Korean developments, and the trajectory of US-China relations under the new administration are standing geopolitical items. How sovereign wealth funds — including Singapore's Temasek, whose Davos presence this week was noted — calibrate US exposure in the current policy environment is a question that will likely sharpen over coming months. Normal regional coverage will resume when source material permits. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <p class="para-title" style="color:#4a9e6b;">Davos and the Communications Chilling Effect</p>
+<p class="para-body">The most substantive European-facing development of the week emerged from Davos, where the cautious communications environment shaped by concern over the Trump administration's reception of critical commentary was directly relevant to European observers. At the private breakfast involving BlackRock, TPG, and Temasek, the reported reluctance to name the administration openly — even in private — carries particular resonance for European policymakers and asset managers who have their own exposure to US policy risk on trade, NATO burden-sharing, and geopolitical posture. If the US-headquartered institutions best positioned to assess Washington's policy trajectory are choosing opacity over candor, the analytical gap may fall disproportionately on investors without direct access to private briefings.</p>
+<p class="para-title" style="color:#4a9e6b;">European Policy Risk in the US Context</p>
+<p class="para-body">The combination of an assertive US foreign policy posture, ongoing questions about NATO financing, and the potential for trade friction with Europe has created a complex risk environment for European corporates and sovereigns. Whether European institutions — less directly exposed to Trump's political attention and therefore with less reputational risk in speaking candidly — will fill the analytical void left by more cautious US counterparts is an open question. The incentive to do so may be growing.</p>
+<p class="para-title" style="color:#4a9e6b;">Weekend Coverage Gap</p>
+<p class="para-body">Saturday's available source material offered no substantive content on eurozone macro data, ECB policy signaling, UK political developments, gilt or bund markets, peripheral spreads, or individual European corporate news. Consumer trend data suggested continued strength in European wellness and hospitality spending, with premium experiential formats gaining share against traditional on-premise alcohol consumption — a pattern with marginal implications for European hospitality operators and on-trade beverage volumes, but not actionable at the index level from qualitative signals alone. A fuller European briefing will resume as the macro data calendar and earnings season flow normalizes through the final week of January. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-title" style="color:#8b5cf6;">Institutional Self-Censorship as a Market Signal</p>
+<p class="para-body">The dominant cross-cutting theme to emerge from Davos this week is the degree to which US political dynamics are now shaping not just investment decisions but the candor with which those decisions are discussed — even among sophisticated professionals in ostensibly private settings. The private breakfast convened by executives from BlackRock, TPG, and Temasek illustrates the dynamic clearly. When major global asset allocators become reluctant to openly model the consequences of US policy — across trade, territorial ambitions, and geopolitical posture — the transmission of risk assessment through financial markets may become less efficient. Price discovery depends in part on the aggregation of informed views; institutional self-censorship, if it becomes widespread, could widen the gap between publicly observable sentiment and privately held convictions.</p>
+<p class="para-title" style="color:#8b5cf6;">Greenland as a Geopolitical Variable</p>
+<p class="para-body">The Greenland reference warrants attention as a signal in its own right. That a senior executive felt the administration's territorial rhetoric notable enough to raise, yet sufficiently sensitive to do so anonymously, suggests the market is beginning to assign non-trivial probability to scenarios that would have seemed implausible in prior cycles. How that probability is being priced — particularly in Arctic-adjacent energy assets, Danish sovereign instruments, and NATO-linked defense equities — is a question the available source material does not resolve.</p>
+<p class="para-title" style="color:#8b5cf6;">Macro Setup Heading Into Late January</p>
+<p class="para-body">The broader macro setup entering the final week of January remains shaped by several unresolved tensions. The durability of any risk premium in Brent following recent Gulf developments, the degree to which the Fed, ECB, and BOJ policy paths continue to diverge into the spring meeting cycle, and the read-through from Chinese activity data to industrial commodity demand all warrant close monitoring. Weekend source flow was dominated by consumer lifestyle material, offering no incremental information on energy markets, monetary policy signaling, or geopolitical developments. The continued expansion of premium experiential spending in advanced economies — wellness, high-end travel, connected health hardware — remains consistent with the services-over-goods consumption pattern of the post-pandemic cycle, though whether this composition persists as labor markets soften remains to be seen. Substantive cross-cutting analysis will resume with Monday's session open and any weekend geopolitical developments captured in subsequent dispatches.</p>
+</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

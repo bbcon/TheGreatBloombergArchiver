@@ -1,0 +1,7 @@
+Germany's ongoing military buildup is generating tangible economic reverberations across the domestic economy. While details in the available coverage remain limited, the scale of the fiscal reorientation — driven by NATO pressure and the changed European security environment — appears sufficient to reshape industrial demand patterns, labor markets in defense-adjacent sectors, and potentially medium-term fiscal trajectories. The Bundesbank and European fiscal authorities will need to assess how defense spending interacts with the ECB's policy stance, particularly if it proves inflationary at the margin.
+
+No significant ECB policy decisions were reported in this period, though the broader European energy cost environment — elevated in part due to the Iran conflict's effect on shipping fuel availability and crude markets — continues to bear on the inflation outlook. The spillover from African shipping fuel shortages, noted in context of the Iran war, may affect European supply chains that transit those routes, though the direct magnitude is unclear from available reporting.
+
+No major UK-specific developments or individual European corporate stories were prominent in the source material for this period.
+
+---

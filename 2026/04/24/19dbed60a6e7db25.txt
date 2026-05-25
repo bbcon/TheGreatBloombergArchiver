@@ -1,0 +1,249 @@
+Subject: Deepseek’s new model
+Date: Fri, 24 Apr 2026 09:33:08 +0000
+
+China’s DeepSeek Unveils New Model a Year After Shock Launch
+Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-04-24/china-s-deepseek-unveils-new-model-a-year-after-shock-launch>
+ <https://www.bloomberg.com/asia>
+
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=17838423&m=11b724c487f61753eb1a7a4a5f3ef261&p=04242026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=17838423&m=11b724c487f61753eb1a7a4a5f3ef261&p=04242026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+A year after DeepSeek upended Silicon Valley with an open source AI model that 
+mimics the process of human reasoning, the Chinese companyhas rolled out 
+<https://www.bloomberg.com/news/articles/2026-04-24/deepseek-unveils-newest-flagship-a-year-after-ai-breakthrough?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ preview versions of a new flagship model.
+
+The Chinese startup unveiled the V4 Flash and V4 Pro series, touting top-tier 
+performance in coding benchmarks and advancements in reasoning and agentic 
+tasks. DeepSeek singled out a technique which it said increases the ability of 
+an AI platform to remember queries across long conversations. It also pushed 
+the 1 million-token context window — a leap that allows entire codebases or 
+long documents to be sent as a single prompt.
+
+The V4 arrives more than a year after the Hangzhou-based startup ignited a 
+trillion-dollarstock market selloff 
+<https://www.bloomberg.com/news/articles/2025-01-27/nasdaq-futures-slump-as-china-s-deepseek-sparks-us-tech-concern?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ with the release of the R1, which rivaled the performance of cutting-edge AI 
+systems from companies like OpenAI but was purportedly built for a fraction of 
+the cost.
+
+Chinese chipmakers rallied Friday as investors bet the new model 
+<https://www.bloomberg.com/news/articles/2026-04-22/deepseek-in-talks-to-raise-at-20-billion-value-the-information?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ will support demand for local chips.
+
+—Richard Frost
+
+Keep track of the twists and turns — and the global fallout — of the war with 
+Iran here <https://www.bloomberg.com/latest/war-with-iran>.
+
+What You Need to Know Today
+
+A US-sanctioned supertanker laden with Iranian oil appeared to be attempting 
+to cross the Strait of Hormuz on Friday, with traffic through the waterway 
+otherwise at a virtual standstill.
+
+The Yuri, carrying 2 million barrels of crude loaded from Kharg Island, 
+re-appeared on ship-tracking platforms Kpler and Vortexa off Sirri Island 
+earlier this week, after having stopped signaling its location for days. The 
+tanker then began heading toward Hormuz late Thursday, and has just sailed past 
+Larak Island.The progress 
+<https://www.bloomberg.com/news/articles/2026-04-24/us-sanctioned-supertanker-with-iranian-oil-tries-hormuz-transit?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ of the very-large crude carrier suggests that Tehran is still keen to test 
+Washington’s resolve to maintainits blockade 
+<https://www.bloomberg.com/sessions/2026-04-23/live-q-amp-a-can-asia-s-green-transition-survive-the-iran-war-and-climate-pushback>
+ of the strait.
+
+Oil output from Persian Gulf nations has been running 14.5 million barrels a 
+day below pre-war levels this month, according to Goldman Sachs, which 
+estimated any resumption would take months.
+
+The region-wide total is 57% lower than before the outbreak of the Iran war, 
+analysts including Daan Struyven said in a note. A possible restoration would 
+likely take “a few months 
+<https://www.bloomberg.com/news/articles/2026-04-24/goldman-says-persian-gulf-oil-supply-is-57-below-pre-war-levels?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260424>
+,” a scenario based on a full-and-safe reopening of the Strait of Hormuz and no 
+renewed strikes, they said.
+Oil tankers and cargo ships line up in the Strait of Hormuz.Photographer: 
+Altaf Qadri/AP
+Trump Talks Up Iran Blockade as Israel-Lebanon Truce Extended
+
+The US increased pressure on Iran with its naval blockade, as it seeks to get 
+Tehran to agree to talks, while Israel and Lebanon are set to extend a 
+ceasefire for three weeks.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-04-24/trump-talks-up-iran-blockade-as-israel-lebanon-truce-extended>
+Indonesian sovereign wealth fund Danantara is in talks to buy a stake in the 
+world’sbiggest nickel mine <bbg://news/stories/TDZNKLKJH6VA> from France’s 
+Eramet, the latest move by President Prabowo Subianto to consolidate natural 
+resources under the control of the state.
+
+The fund is in talks to buy all or part of the French firm’s 38.7% stake in PT 
+Weda Bay Nickel, according to people familiar with the matter. Discussions are 
+at an early stage and the deal may not happen, the people said, declining to be 
+named discussing private information.
+
+TSMC shares climbed to a record after Taiwan’s financial regulator eased 
+limits on single-stock fund holdings, a move that JPMorgan said could drawmore 
+than $6 billion 
+<https://www.bloomberg.com/news/articles/2026-04-24/tsmc-shares-surge-as-taiwan-lifts-single-stock-limit-for-funds?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ of inflows. Shares of the chipmaker gained as much as 5.1%.
+
+Taiwan’s Financial Supervisory Commission said on Thursday it’s planning to 
+relax a long-standing rule capping money managers from putting more than 10% of 
+a fund’s net asset value into any stock.
+
+Italians’ Fear of Buying Stocks Is Costing the Country Billions
+
+Italy is locked into a failing investment strategy that is costing families 
+billions of euros and holding back efforts to get their economy growing.
+Read more 
+<https://www.bloomberg.com/news/features/2026-04-24/italy-s-fear-of-buying-stocks-is-costing-the-country-billions>
+India has criticized an article shared by US President Donald Trump on social 
+media that termed the South Asian nationa “hellhole,” 
+<https://www.bloomberg.com/news/articles/2026-04-24/india-condemns-trump-social-media-post-calling-nation-hellhole?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260424>
+ straining ties that were improving after a year of tensions over tariffs and 
+geopolitical differences.
+
+Trump’s Truth Social posted the transcript of a talk-show that argued against 
+US birthright citizenship and accused immigrants from countries like India and 
+China of exploiting the provision. It also alleged that Indians in the US 
+technology companies did not hire white Americans.
+
+Coming soon: Get the AI Today newsletter 
+<https://www.bloomberg.com/account/newsletters/ai-today> — chronicling the 
+disruptions and threats of AI on businesses, workers, governments and economies 
+with analysis from Bloomberg’s global newsroom.
+
+
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=17838423&m=11b724c487f61753eb1a7a4a5f3ef261&p=04242026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=17838423&m=11b724c487f61753eb1a7a4a5f3ef261&p=04242026&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+What You’ll Need to Know Tomorrow
+
+Markets
+
+Collapsing Volatility Turbocharges Returns Across Carry Trades
+ 
+<https://www.bloomberg.com/news/articles/2026-04-24/collapsing-volatility-turbocharges-returns-across-carry-trades>
+Opinion
+
+Musk Is Chasing the Smart AI Money With a $60 Billion Deal
+ 
+<https://www.bloomberg.com/opinion/articles/2026-04-24/spacex-ai-musk-is-chasing-the-smart-money-with-60-billion-cursor-deal>
+Pursuits
+
+There’s Never Been a Better Time to Invest in Rare Bourbon
+ 
+<https://www.bloomberg.com/news/articles/2026-04-24/tariffs-overproduction-create-american-whiskey-investment-opportunity>
+Markets
+
+Behind the 40,000% Stock Surge That’s Mystifying Traders in Turkey
+ 
+<https://www.bloomberg.com/news/articles/2026-04-24/behind-the-40-000-stock-surge-that-s-mystifying-traders-in-turkey>
+Wealth
+
+Citadel Sends Warning Shot to NYC After Mamdani Blasts Billionaire Griffin
+ 
+<https://www.bloomberg.com/news/articles/2026-04-23/citadel-sends-warning-shot-to-new-york-after-mamdani-blasts-ken-griffin>
+Economics
+
+Bank of England Official Says Share Prices Don’t Reflect Risks
+ 
+<https://www.bloomberg.com/news/articles/2026-04-24/bank-of-england-official-says-share-prices-don-t-reflect-risks>
+Opinion
+
+Chelsea Gives Private-Equity Ball a Bad Name
+ 
+<https://www.bloomberg.com/opinion/articles/2026-04-24/chelsea-calls-into-question-boehly-clearlake-private-equity-model>
+For Your Commute
+
+Trump Stumbled Into a Global Economic War. Xi Jinping Was Ready
+
+As the US and Chinese leaders prepare to meet, the Iran conflict underscores 
+Beijing’s resilience and the limits of Washington’s leverage.
+Read more 
+<https://www.bloomberg.com/news/features/2026-04-24/iran-war-trump-to-meet-xi-as-balance-of-power-shifts-to-beijing>
+Bloomberg.com subscribers are invited to nominate candidates for the inaugural 
+VivaTech x Bloomberg Rising Star Award, to be presented in Paris on June 18. 
+Chosen by the Bloomberg subscriber community, the Rising Star Award honors an 
+emerging founder, technologist, academic or creator whose work is already 
+demonstrating meaningful early impact. It celebrates individuals whose ideas, 
+innovation and leadership are helping shape the future of technology.Submit a 
+nomination here 
+<https://events.bloombergevents.com/event/VivaTech_Bloomberg_Awards/summary>.
+
+More from Bloomberg
+
+Enjoying Evening Briefing? Check out these newsletters:
+
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india> for key 
+news before the trading day starts there
+ * Singapore Edition 
+<https://www.bloomberg.com/account/newsletters/singapore-edition>, India Edition
+ 
+<https://www.bloomberg.com/account/newsletters/india-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+ andHong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+ for insights into some of Asia’s most dynamic economies
+ * Next China 
+<https://www.bloomberg.com/account/newsletters/next-china?utm_medium=email&utm_source=newsletter&utm_campaign=singaporeedition>
+ for dispatches from within the world’s second-largest economy on where China 
+stands now — and where it’s going next
+ * Breaking News Alerts 
+<https://www.bloomberg.com/account/newsletters/breaking-news-alerts?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+ for the biggest stories from around the world, delivered to your inbox as they 
+happen
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+ for the latest political news and analysis from around the globe
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac>
+.
+ * MORE: Explore live streaming news and interviews, documentaries, reporter 
+analysis and more, all in one place. Check outBloomberg.com/videos 
+<https://www.bloomberg.com/videos>.
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://bsky.app/profile/bloomberg.com> <https://x.com/business> 
+<https://www.instagram.com/bloombergbusiness/> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+
+
+You received this message because you are subscribed to Bloomberg’s Evening 
+Briefing Asia newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=NLshare> to 
+get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://www.bloomberg.com>
+Contact Us <https://www.bloomberg.com/help/?s=newsletters>Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/NBfBjTTjBYPZMtBtXUFE1LxNj77zoeiQAKdcXq3Neu8-H1bETXrF4SkZSIkz-O9o9TTJvem6OSs7BR7eSiTHyVRhG9WhwluM9ozk9uIMA4R12r18y0q8DJMMgRkzs9u8uYkS4Z207lVsRQhQFXN2oveBo_u_yFdJS1tckHslFFVdmYKJyx5-KCg8LfnZTalul6NIwzR5EKJ8D7BhDiVYas0A1YKZ-BuuzZI1a7-Nna2ilMpyUzbGbnUsB2t8rpd9lemA9s7eEHAD4f7UzT6WdGWDA5q94cWWK_ug2w3PkVlJWT40zXXvpZX0R-C-cXi11PuHycyVgFkcKZBT8BAkoNsQ4eTNfV2X/qLQRu1LA2NH-I7xBeQe-G0R8mhkwSNYR/20>
