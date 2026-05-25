@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,19 +238,19 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">US equity futures were modestly lower Friday, with S&P 500 futures off 0.6%, as the Iran war's implications for monetary policy continued to weigh on risk appetite. The most significant development for US markets was the Federal Reserve's posture: Chair Jerome Powell offered no indication that rate hikes are on the table but gave equally little comfort to those expecting cuts, emphasizing that the inflationary impact of tariffs needs to dissipate before the Fed can ease. Futures markets have now fully repriced the 2026 path, eliminating expectations for any rate reductions this year after previously pricing two cuts. Separately, Fed policymakers revised their median year-end headline inflation estimate to 2.7% from 2.4%. On the legal and institutional front, top Justice Department officials are rallying behind a US attorney's challenge to Fed Chair Powell's authority, with the White House declining to oppose the effort — a development with potentially significant implications for central bank independence that warrants close monitoring. In corporate news, FedEx climbed roughly 10% in premarket trading after raising its earnings forecast, providing a modest counterpoint to the broader market anxiety. Super Micro tumbled 22% after federal prosecutors charged a co-founder with illegally diverting Nvidia-powered servers to China, a high-profile case that highlights ongoing concerns around AI technology export compliance. Options expiration Friday threatened to amplify volatility in an already turbulent tape; Goldman Sachs's trading desk noted that clients who had anticipated a quick resolution to the Iran war are increasingly doubtful, with some now anticipating either a market correction or a prolonged 2022-style grind lower. The US 10-year Treasury yield rose to approximately 4.30%, with the bond selloff reflecting a global reassessment of the rate path as energy-driven inflation concerns mount. Treasury Secretary Scott Bessent floated the idea of lifting sanctions on Iranian crude already at sea — roughly 140 million barrels by his estimate — as the administration sought tools to cap oil prices. The practical impact appears limited, however, as virtually all Iranian crude is purchased by Chinese refiners, and broader sanctions infrastructure remains intact.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">Asian markets were broadly weaker Friday, with the MSCI Asia benchmark off 0.4% and the Hang Seng declining 0.9%, as investors awaited clarity on the war's trajectory over the weekend. The most consequential regional development came from China, where the deflationary outlook is shifting materially. With Brent crude above $100 per barrel, economists at Citigroup, Goldman Sachs, and Macquarie now project that Chinese producer prices could turn positive as soon as March, potentially ending a deflationary streak that began in 2022 — one of the longest experienced by any major economy since World War II. The key uncertainty is whether the resulting inflation reflects genuine demand recovery or purely cost-push dynamics; the latter would offer companies little pricing power and may compress margins further rather than restore them. Alibaba and Tencent combined lost approximately $66 billion in market value over roughly 24 hours after results from both companies disappointed investors seeking a clear path to AI monetization. Alibaba's quarterly net income fell 67%, its worst performance since early 2024, partly reflecting heavy promotional spending. Xiaomi fell 8.6% in Hong Kong on concerns about EV profitability. Meanwhile, Nvidia CEO Jensen Huang confirmed the company is ramping production of H200 AI accelerators for Chinese customers following the Trump administration's reversal on tech export controls — a meaningful shift that reflects the broader improvement in US-China relations. The Trump-Xi summit, originally planned for later this month, has been postponed to approximately mid-May. Beijing appears quietly relieved, given concerns that hosting Trump while the Iran war continues could be construed as implicit endorsement of US military action against a Chinese partner. The trade truce remains intact, and a Paris meeting between senior officials last weekend appeared constructive. However, a pending $14 billion US arms package for Taiwan — potentially one of the largest ever — represents a significant latent irritant. India's rupee weakened past 93 per dollar to a record low, reflecting vulnerability to elevated crude prices given the country imports approximately 90% of its oil. Nomura projects the currency could reach 96 per dollar by end-June. The Reserve Bank of Australia delivered a split-decision rate hike, citing the inflation risks from the energy shock.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-body">European sovereign bond markets came under significant pressure this week, with UK 10-year gilt yields rising to their highest level since 2008 following the Bank of England's Thursday statement that it "stands ready to act" against rising inflation. The BoE voted unanimously to hold rates, but the hawkish shift in tone — Governor Andrew Bailey explicitly noting that the prior expectation of scope to cut has changed — drove a sharp repricing. UK gilt volatility is now a focal point for global fixed income investors, compounded by February borrowing data that came in above forecast due to a surge in debt-interest costs. The European Central Bank's posture has shifted similarly. Governing Council member Joachim Nagel told Bloomberg Friday that a rate hike as early as April is conceivable if energy-driven inflation risks materialize, and the ECB has dropped language describing policy as being in a "good place." Money markets are now pricing two quarter-point ECB hikes this year. The policy pivot echoes the post-Ukraine inflation episode of 2022, which Nagel explicitly referenced. Bloomberg Economics estimates March inflation across advanced economies is running approximately 0.4 percentage points above pre-conflict projections. At the EU Brussels summit, leaders called for a moratorium on strikes against energy infrastructure, with Italian Prime Minister Meloni described as particularly animated about the severity of the energy situation. European officials are simultaneously navigating fatigue from US-related crises, and there are signs that governments are reconsidering their posture toward China as a more predictable trade partner — a strategic reorientation that is still nascent but appears to be gaining momentum. In corporate news, Unilever confirmed it has received an offer from McCormick for its food division, valued by Barclays at approximately €28-31 billion. The deal, if completed, would represent the largest restructuring in Unilever's near-century history, pivoting the group toward beauty and personal care.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-body">Three weeks into the US-Israeli military campaign against Iran, the conflict has entered a potentially pivotal moment. Israel's strike on Iran's South Pars gas field — the largest natural gas installation in the world — prompted Iran to inflict significant damage on a Qatari LNG hub, with Qatar indicating two affected trains could remain offline for up to five years. That escalation appears to have prompted a degree of recalibration on all sides. Prime Minister Netanyahu stated Israel would no longer target energy infrastructure and said the war would end faster than people expect; Iran's foreign minister signaled that recent restraint was deliberate. Whether this constitutes a durable de-escalation or tactical repositioning remains to be seen. Brent crude, which surged to $119 per barrel on Thursday, pulled back to approximately $108-110 on Friday following Netanyahu's remarks, still well above $100. The Strait of Hormuz remains closed to commercial shipping, and Europe's largest naval powers stated that reopening the waterway during active hostilities would require a deeply complex multinational capability that is not currently feasible. The Pentagon is reported to have requested an additional $200 billion from Congress to fund ongoing operations. Gold fell approximately 7% on the week — the largest weekly decline since March 2020 — and is on pace for its worst monthly performance since 2008. The move reflects the global monetary policy repricing, as higher-for-longer rates erode the appeal of non-yielding assets. ETF outflows have exceeded 60 tons over three weeks. In Southeast Asia, the oil shock is accelerating EV adoption, with BYD and VinFast reporting surging demand in the Philippines and Vietnam respectively. Asian buyers are also absorbing record volumes of US crude, with April loadings reaching approximately 60 million barrels — the most since 2023 — as buyers seek alternatives to disrupted Persian Gulf supply. US officials have ruled out banning oil and gas exports, and the administration's Iran sanctions relief proposal is widely viewed as operationally complex and unlikely to provide near-term price relief at scale.</p>
 </div>
@@ -263,6 +264,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

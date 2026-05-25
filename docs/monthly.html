@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="index.html" class="nav-link">Latest</a><a href="daily.html" class="nav-link">Daily</a><a href="weekly.html" class="nav-link">Weekly</a><a href="#" class="nav-link active">Monthly</a></div>
 </nav>
 <div class="page">
@@ -236,7 +237,7 @@ a { color: inherit; text-decoration: none; }
   </button>
   <div class="accordion-body">
     <div class="accordion-content">
-      <div class="region" style="border-color:#5597cb;">
+      <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Equity Market Dynamics</p>
 <p class="para-body">US equity markets traced a turbulent arc across April, opening the month roughly 8% below the S&P 500's pre-war peak before staging one of the more striking recoveries recorded in recent decades. By mid-month the index had closed above 7,000 for the first time since January, capping a 12.33% gain over just 14 trading sessions — a pace of appreciation seen only four times this century, with the Nasdaq 100 extending its winning streak to 12 consecutive sessions. The rally's foundations warrant scrutiny, however: fewer than half of S&P 500 members traded above their 50-day moving averages at the index's record, volume ran approximately 11% below the six-month average, and earnings estimate revisions were declining even as multiples expanded. Analysts drew the closest historical parallel to March 2000 in terms of valuation timing, a comparison that should give pause. The behavioral explanation may be more compelling than the fundamental one: investors conditioned by prior episodes of rapid rebound appear reluctant to hold short positions through stress events. By late April, the Philadelphia Semiconductor index extended what appeared to be an 18-session winning streak — the longest in the index's history — though at trailing price-to-earnings multiples near 60 times, its durability remains contingent on continued hyperscaler capital commitment.</p>
@@ -249,7 +250,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#5597cb;">Fiscal Policy and Legal Developments</p>
 <p class="para-body">The administration's tariff posture generated consequential legal and fiscal developments. The Supreme Court's earlier invalidation of emergency-powers tariffs, combined with a Court of International Trade order mandating approximately $160 billion in refunds to importers, represents a substantive constraint on executive trade authority. Trump subsequently signaled that companies pursuing those refunds might face implicit political consequences — a development that received less attention than geopolitical headlines but carries meaningful rule-of-law implications. Treasury Secretary Bessent confirmed tariff rates may be restored to pre-court levels by July. Republican lawmakers are advancing capital gains tax cuts, complicating fiscal arithmetic at a moment when 30-year Treasury yields are pressing toward 5%. Fitch warned that the US debt burden remains far above other AA-rated sovereigns. The Atlanta Fed found only 20% of firms incorporated the One Big Beautiful Bill's capex provisions into planning, echoing limited uptake after the 2017 tax cuts. Key congressional Republicans appeared poised to break with the White House over a proposed 44% increase to the Pentagon budget, a rare act of intra-party defiance that may signal softening executive influence ahead of November midterms. ---</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-title" style="color:#e07b39;">China: Relative Resilience and Structural Bifurcation</p>
 <p class="para-body">China entered April as a relative outperformer among major Asian markets, with Chinese equities having declined approximately 5.5% from the onset of hostilities against roughly 10% drawdowns in Korea, Japan, and India. First-quarter GDP subsequently expanded 5.0% year-on-year — the strongest pace in three quarters — beating consensus expectations and suggesting limited direct conflict spillover. The composition of that growth warrants scrutiny, however. Industrial output grew 5.7% in March while retail sales rose only 1.7%, missing forecasts. Factory-gate prices exited deflation in March, with PPI rising 0.5% year-on-year after a 0.9% decline in February, an inflection partly attributable to the global energy surge. EV and hybrid exports surged 140% year-on-year in March to a record 349,000 units, and lithium-ion battery shipments rose 34% in the first quarter, while domestic auto sales remained under pressure — BYD's home sales fell more than 40% — illustrating the persistent bifurcation between China's export competitiveness and subdued internal demand. The Canton Fair in Guangzhou offered a sobering ground-level view: Middle Eastern buyers, who had increasingly substituted for absent American customers since the pandemic, were conspicuously absent due to the conflict and flight disruption, with exporters describing 2026 as potentially the worst in memory.</p>
@@ -262,7 +263,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#e07b39;">Japan, India, and Regional Dynamics</p>
 <p class="para-body">Japan's Shunto spring negotiations secured average wage increases exceeding 5% for a third consecutive year, with base pay recording its largest year-on-year gain in more than 33 years, and five-year inflation breakevens reached 2.7%. Yet the Bank of Japan delivered a hawkish hold in late April on a 6-3 vote — the most divided outcome under Ueda's tenure — and the yen weakened toward 160 per dollar, prompting the first direct intervention since 2024, purchasing yen after dollar-yen reached levels consistent with prior thresholds. Analysts cautioned that intervention offers only temporary stabilization given Japan's structural dependence on now-materially-more-expensive imported energy. India faced acute pressure throughout the month: foreign investors sold $17.8 billion in equities over 23 consecutive sessions, a record outflow pace, and the RBI's imposition of a trading ban on its $149 billion offshore rupee market — while delivering a rate hold — may deter the foreign investors it has sought to attract. Sun Pharmaceutical's $11.75 billion acquisition of Organon marked one of India's largest outbound corporate transactions. Every one of the world's 50 hottest cities in the final week was located in India, with McKinsey estimating heat-related productivity losses could reach $250 billion. The Xi-KMT Chairwoman meeting in early April — the first by a sitting KMT leader in a decade — carried explicit geopolitical signaling ahead of the anticipated Trump-Xi summit in mid-May, with Taiwan's $40 billion defense expansion stalled in its legislature and a $14 billion US arms deal reportedly awaiting White House approval. ---</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">Growth and Stagflationary Dynamics</p>
 <p class="para-body">Europe's economic configuration deteriorated meaningfully across April, converging toward a combination of energy-driven inflation and decelerating growth that presents central banks with genuinely difficult choices. Eurozone PMI data slipped into contraction territory for the first time since late 2024 in preliminary April readings, driven by a steep services decline as war-driven energy costs and eroding consumer confidence fed through. Germany's ZEW investor expectations index collapsed to -17.2 in April from -0.5 in March — its lowest level in more than three years and well below consensus — and Germany's leading economic institutes cut their 2026 growth forecast to less than half their prior projection, warning that potential growth may approach zero in the medium term. The government subsequently halved its own 2026 growth forecast to 0.5%, a significant revision from projections made when Chancellor Merz took office promising a "year of growth." The Ifo Institute's business expectations index fell to its lowest since 2023, and first-quarter eurozone GDP, released in late April, fell short of consensus. Germany's €500 billion infrastructure stimulus fund may represent the primary buffer preventing outright contraction, per Ifo President Fuest, but its disbursement timeline means it offers limited immediate support.</p>
@@ -275,7 +276,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#4a9e6b;">UK Politics and Corporate Developments</p>
 <p class="para-body">Prime Minister Starmer faced a prolonged political crisis over the Peter Mandelson vetting controversy, with former senior official Olly Robbins testifying that Downing Street was "dismissive" of concerns raised during the vetting process. Starmer survived a parliamentary confidence vote but the episode constitutes a costly distraction, with Labour projected to lose approximately 1,850 seats in May local elections — a performance that would raise credible questions about his political durability. London's youth unemployment reached approximately one in four 16-to-24 year-olds, with graduate job postings falling from roughly 13,000 in 2019 to just over 2,000, a dynamic attributed to AI-driven hiring retrenchment. On corporate developments: BP reported adjusted net income of $3.2 billion in the first quarter, more than double the year-earlier figure; ASML raised its full-year sales forecast to €36–40 billion, with its CEO noting supply cannot meet demand "for the foreseeable future"; UBS beat all estimates with first-quarter net income of $3.04 billion; and LVMH's fashion and leather goods division saw first-quarter sales fall, with the conglomerate's shares having declined 28% in the first quarter alone — the worst start to a year in its history — serving increasingly as a proxy for global confidence. Hermès shares fell as much as 14% in a single session in late April, its largest single-day decline on record. Lufthansa cancelled approximately 20,000 short-haul flights over six months in response to jet fuel prices equivalent to approximately $196 per barrel. ---</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">Strait of Hormuz: The Defining Variable</p>
 <p class="para-body">The near-closure of the Strait of Hormuz remained the single most consequential variable across all asset classes and regional economies throughout April. Under normal conditions approximately 135 vessels transited daily; that figure fell to fewer than six per day on average in early April, and by late April only a single Pakistan-flagged tanker had completed an exit with crude cargo since the blockade's formal imposition. Brent crude surpassed $107 per barrel following Trump's address in early April, briefly reaching $126 in late April after Axios reported Trump was scheduled to receive a briefing on new military options, before settling near $112 per barrel by month-end — representing a peak-to-trough range that reflects the extraordinary sensitivity of price discovery to diplomatic signals. WTI closed above $100 per barrel for the first time since hostilities began in early April, and Dated Brent briefly surged above $140 on Tuesday of the penultimate week before falling toward $120 as ceasefire optimism briefly prevailed. By the final week, Goldman Sachs estimated Persian Gulf oil output was running approximately 14.5 million barrels per day below pre-war levels — roughly 57% below pre-conflict volumes — and approximately 800 vessels remained stranded in the Persian Gulf.</p>
@@ -300,7 +301,7 @@ a { color: inherit; text-decoration: none; }
   </button>
   <div class="accordion-body">
     <div class="accordion-content">
-      <div class="region" style="border-color:#5597cb;">
+      <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Tariff Architecture in Transition</p>
 <p class="para-body">The defining US macro development across March was a wholesale restructuring of the trade policy framework. The Supreme Court's invalidation of IEEPA-based tariffs mid-month, followed by the administration's rapid pivot to a 10% global levy under Section 122 of the Trade Act of 1974, left an estimated $170 billion in contested duties the subject of more than 1,500 refund lawsuits filed by mid-month. Legal scholars broadly questioned whether the Section 122 threshold — requiring evidence of "fundamental international payments problems" — is met, though courts are unlikely to move within the 150-day expiry window. Treasury Secretary Bessent's characterization of refund claims as "corporate welfare" signaled the administration's combative posture. Separately, a fresh Section 301 investigation targeting over a dozen economies including China, the EU, Mexico, India, and Taiwan was filed late in the month, with a public hearing set for May 5. The Committee for a Responsible Federal Budget estimated the IEEPA invalidation reduces government revenue by $1.7 trillion through 2036, with the replacement levy recouping approximately $925 billion.</p>
@@ -315,7 +316,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#5597cb;">Macro Backdrop and Consumer</p>
 <p class="para-body">The macro context entering March was already mixed: 2025 GDP growth confirmed at 2.2%, the slowest since the post-COVID expansion, with core inflation ending 2025 at 3%. February payrolls, released at the start of the second week, recorded the first private-sector decline in five years, while February CPI printed a benign 2.5% year-on-year core — relief that proved short-lived given PCE dynamics. University of Michigan consumer sentiment fell to a three-month low in the preliminary March reading, January consumer spending was essentially flat, and KB Home lowered full-year guidance citing the conflict as a contributing factor. Goldman Sachs projected unemployment rising to 4.6% by year-end from 4.4% in February, and the OECD projected US inflation reaching 4.2% in 2026. What remains unresolved at month-end is whether the energy shock proves transitory — contingent on Hormuz reopening — or persistent enough to transform the current stagflation tension into a genuine contraction, a question the Fed cannot yet answer and on which the range of plausible outcomes remains unusually wide. ---</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-title" style="color:#e07b39;">Regional Tariff Arithmetic and Early Trade Disruption</p>
 <p class="para-body">Asia's month opened with significant reconfiguration of its US trade exposure. The Supreme Court's early-month invalidation of IEEPA tariffs reduced average US levies on Chinese goods from 32% to approximately 24%, with the Asia-wide weighted average falling from roughly 20% to 17%, per Morgan Stanley estimates. Hong Kong's Hang Seng China Enterprises index rallied 2.65% on the first Monday of the month. The subsequent 10% global Section 122 tariff created a more complex winners-and-losers map, with India — which had been advancing toward an interim deal — postponing its trade mission citing uncertainty over the new framework's legal durability. By month-end, a pending $14 billion US arms package for Taiwan had emerged as a significant latent irritant, and a fresh Section 301 investigation targeting South Korea, India, Taiwan, and others added further trade complexity. Preparatory talks in Paris between Bessent, USTR Greer, and Vice Premier He Lifeng laid the ground for a Trump-Xi summit, originally planned for late March, then postponed to approximately May 14–15.</p>
@@ -330,7 +331,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#e07b39;">India and Southeast Asia</p>
 <p class="para-body">India's position grew increasingly complex. New Delhi had been reducing Russian oil purchases under US pressure, pivoting toward Gulf supply — precisely the channels most disrupted by the Hormuz closure. Washington's one-month sanctions waiver allowing Indian refiners to resume Russian crude purchases provided material relief, though it simultaneously illustrated India's acute energy exposure. The rupee weakened past 93 per dollar to a record low, with Nomura projecting 96 by end-June; over 330 million households relying on LPG saw delivery times stretch from five to 25 days in some regions. A US submarine attack on the Iranian frigate IRIS Dena off Sri Lanka mid-month — following the ship's participation in an Indian Navy-hosted fleet review — created a diplomatically fraught situation, forcing Prime Minister Modi to call for "dialog and diplomacy" while facing pointed questions about sovereignty in India's own maritime neighborhood. The Philippines declared a national energy emergency, warned of potential aviation grounding due to jet fuel shortages, and is reportedly considering setting aside South China Sea territorial disputes to explore cooperative oil exploration with Beijing — a geopolitically significant pivot. Southeast Asian governments imposed emergency conservation measures: Thailand ordered civil servants to work from home, the Philippines shifted to a four-day government work week, and Vietnam faces potential airfare increases of up to 70%. What remains unresolved across the region at month-end is whether the Hormuz disruption proves temporary — enabling a return to prior growth trajectories — or persistent enough to accelerate structural energy transitions and force durable geopolitical realignments. ---</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">Equity Markets: From Outperformance to Reversal</p>
 <p class="para-body">March opened with European equities completing what had been the dominant cross-regional theme of early 2026. The Stoxx Europe 600 closed February with an eighth consecutive monthly gain — its longest winning streak since 2013 — up 3.7% for the month, with European companies announcing €85.7 billion in share buybacks in the January–February period, the highest ever for that period per Barclays data. US borrowers simultaneously issued record volumes of euro-denominated reverse Yankee bonds, attracted by yields approximately 170 basis points below comparable US-denominated issuance. That picture reversed sharply from the second week onward as the Iran conflict's energy implications became clear. European natural gas futures surged as much as 52% in a single session in the second week — the largest intraday gain since the 2022 crisis — following Iranian drone attacks on Qatar's Ras Laffan LNG facility. By the final week, European gas prices had risen more than double pre-conflict levels. France's CAC declined 7.6% in March and Switzerland's SMI fell 8.1%, while the Stoxx 600 ended the month under sustained pressure. The iTraxx Europe investment-grade index reached its highest level since May, and the Crossover index crossed 300 basis points for the first time since June.</p>
@@ -343,7 +344,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#4a9e6b;">Industrial Policy and Corporate News</p>
 <p class="para-body">European industrial policy underwent a substantive shift. Brussels finalized a draft industrial act with strict local-content criteria favoring European firms in public procurement and requiring some foreign competitors to share technology and hire locally — a meaningful departure from the free-trade framework governing EU industrial policy for decades. The European Parliament trade chief moved to freeze ratification of the EU-US trade agreement pending clarification of Washington's revised policy framework. US warnings against "Made in Europe" content rules added bilateral friction. In corporate news, HSBC reported full-year pretax profit of $29.9 billion, surpassing expectations and sending shares up 5.4% in London; the bank is separately weighing cuts to approximately 20,000 roles as part of an AI-driven restructuring. UniCredit launched a $40 billion bid for Commerzbank, easing the path toward potential full acquisition. Unilever confirmed evaluation of a food asset separation with McCormick reportedly offering for the division — valued by Barclays at €28–31 billion, potentially the company's largest-ever restructuring. Adidas fell 7.6% in Frankfurt after a profit forecast that missed on tariff and currency headwinds. Novo Nordisk rose 3.5% after US regulators moved against copycat GLP-1 drugs. Germany's €600 billion defense spending program is generating tangible stimulus, with defense suppliers reporting record order books. What remains unresolved at month-end is whether Europe faces a rerun of 2022's energy-driven stagflation — with the ECB forced to choose between credibility and growth — or whether the conflict de-escalates quickly enough to contain the damage. The answer depends almost entirely on the Strait of Hormuz. ---</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">The US-Iran Conflict: Scope and Trajectory</p>
 <p class="para-body">The defining event of March 2026 — and the organizing variable for virtually every global asset class by month-end — was the US-Israeli military campaign against Iran's nuclear infrastructure, which commenced over the final weekend of February. The conflict escalated rapidly and non-linearly: within the first week, satellite imagery had confirmed active Iranian efforts to conceal and harden nuclear sites, a NATO AWACS aircraft in Turkey shifted operational focus from Russia to Iran, and Trump's overnight video address acknowledged the possibility of US casualties. The killing of Ayatollah Ali Khamenei in a US-Israeli strike in the second week — the most direct US targeting of a foreign head of state in the modern era — triggered a succession to his son Mojtaba Khamenei, with deep IRGC ties, who vowed to keep Hormuz effectively closed. By the third week, the conflict had expanded geographically: Iranian missiles and drones struck Saudi Arabia, Kuwait, Bahrain, and UAE infrastructure; Israel struck Iran's South Pars gas field; a US submarine sank the Iranian frigate IRIS Dena off Sri Lanka in the first American submarine attack on a surface vessel since World War II; and Dubai International Airport briefly halted operations following drone strikes. Trump extended a 48-hour ultimatum on energy infrastructure strikes by five days in the final week, citing diplomatic contact, then extended it a further ten days to April 6. Iran publicly rejected US overtures, while Wall Street Journal and New York Times reports suggested back-channel Omani intermediation — a contradictory signaling environment that reflects genuine uncertainty about Iran's internal decision-making following the deaths of multiple senior officials. Prediction markets placed a 52% probability on the conflict extending beyond April 30.</p>
@@ -368,7 +369,7 @@ a { color: inherit; text-decoration: none; }
   </button>
   <div class="accordion-body">
     <div class="accordion-content">
-      <div class="region" style="border-color:#5597cb;">
+      <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Monetary Policy in Transition</p>
 <p class="para-body">The dominant theme across February was the Federal Reserve's succession dynamic and its interaction with increasingly complex inflation data. President Trump's nomination of Kevin Warsh on the final Friday of January set the tone for the month: Wall Street's initial characterization of Warsh as a relative hawk sat in direct tension with Trump's persistent demand for lower rates, and Warsh's subsequent public alignment with the president provided only partial reassurance given his institutional record. Senate confirmation appears probable, but the operative question — how Warsh balances political pressure against the Fed's credibility — remained unresolved through month-end. The FOMC minutes released in the final week of February came in more hawkish than the market had anticipated, with several members suggesting rates may need to rise if inflation remains elevated. This tone sat awkwardly against constructive disinflation signals: the trimmed mean and median CPI reached their lowest readings since 2021, and January CPI averaged 2.16% across the twelve large metros tracked by the BLS. Futures markets pushed the next anticipated cut to July following the stronger-than-expected January payrolls print released in the second week of the month, though two cuts remain priced for the full year — an assumption that may face further tests. The delayed PCE release on the final Friday of February carried unusual weight given that core PCE had been running near 3%.</p>
@@ -379,7 +380,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#5597cb;">Fiscal and Labor Dynamics</p>
 <p class="para-body">New CBO projections showed net interest payments rising from $1 trillion in 2026 to $2.1 trillion by 2036, reaching 4.6% of GDP — a figure that alone exceeds Treasury Secretary Bessent's 3% total deficit target for 2029. Q3 GDP was revised to a 4.4% annualized pace, and Bank of America projected front-loaded 2026 growth, citing approximately $135–140 billion in fiscal stimulus and post-shutdown normalization tailwinds. Against this, consumer confidence registered its weakest reading in over a decade despite real wage gains of 3.8% year-on-year in December — a disconnect the Goldman Sachs housing analysis helps contextualize: the bottom income quintile now spends 55% of income on rent, and combined down payment plus first-year mortgage costs in major metros have risen to 160–200% of annual income from 90–120% in 2000. The partial government shutdown that ended in early February added noise to the labor data; the January payrolls print of 130,000 jobs added — released with a delay — was the strongest monthly gain in over a year. AEI and Brookings researchers separately estimated the US may have experienced net negative immigration in 2025, a potential labor-supply headwind whose full implications for trend growth remain to be seen. ---</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-title" style="color:#e07b39;">Japan: Political Tailwinds and Structural Tension</p>
 <p class="para-body">Prime Minister Sanae Takaichi's snap election victory early in the month delivered the LDP's largest postwar single-party mandate and set the dominant regional narrative for February. The Nikkei 225 surged nearly 4% on the Monday following the result and added a further 2.8% the following session, with the yen strengthening to ¥153 from near ¥160 in January and 30-year JGB yields falling roughly 40 basis points from their January highs by mid-month — a rare equity-up, bond-stable combination the new prime minister requires to validate her fiscal expansion agenda. Takaichi's formal re-election in parliament came with pledges of strategic investment and active fiscal policy, and Tokyo announced it would invest up to $36 billion in US oil, gas, and critical minerals projects as the first concrete tranche of the $550 billion framework agreed with the Trump administration. The structural tension, however, is unresolved: planned fiscal expansion against a 230% debt-to-GDP backdrop, combined with implicit pressure on the Bank of Japan to delay further rate normalization, draws uncomfortable comparisons to the UK's 2022 Truss episode in some analyst framing. A hawkish BOJ board member nonetheless signaled by late month that conditions for the next hike could align by spring, and Takaichi's forthcoming nominations of two BOJ board members — filling the seats of dovish members — will be closely parsed by bond and currency markets.</p>
@@ -390,7 +391,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#e07b39;">The Australia Outlier and Regional Policy Divergence</p>
 <p class="para-body">The Reserve Bank of Australia delivered the first rate hike among major central banks in 2026, with services inflation proving more persistent than anticipated and the RBA's deputy governor reiterating late in the month that Australian inflation remains "too high." The decision stands in marked contrast to the ECB's disinflation undershoot and the Fed's unresolved succession dynamics, underscoring how post-Covid synchronization is fading across the region. Japan's manufacturing PMI remained in expansionary territory for a third consecutive month, though Q4 GDP had expanded just 0.2% annualized, complicating the BOJ's normalization path. Mainland Chinese retail flows into gold, silver, copper, and tin — driven by limited domestic investment alternatives — meaningfully amplified the metals cycle's volatility through the month; China's top four gold ETFs recorded nearly $1 billion of outflows on a single Tuesday early in the month, and Shanghai copper futures registered record January volumes. ---</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">UK Political Crisis: Deterioration and Partial Stabilization</p>
 <p class="para-body">The United Kingdom's political trajectory was the most volatile in the region through February. Prime Minister Keir Starmer entered the month already under pressure from within his parliamentary party over his association with Peter Mandelson, whose appointment as US ambassador has been complicated by documented links to Jeffrey Epstein. Parliament voted to compel disclosure of related documents in the opening weeks. The crisis intensified in mid-month when Starmer's chief of staff and communications head resigned and Scottish Labour leader Anas Sarwar publicly called for Starmer to stand down — a statement that drove gilt yields higher, though the market reaction remained an order of magnitude below the 2022 Truss episode, with sterling holding up and the curve avoiding dislocation. By mid-month Starmer had secured temporary reprieve through cabinet backing, and prediction markets priced his departure by end-June rather than imminently. The successor question may prove more consequential for fixed income than the current leadership itself: the most plausible candidates sit to Starmer's left and are perceived as more fiscally expansive. Macro data compounded the pressure: fourth-quarter GDP barely expanded, UK unemployment rose to its highest level since the pandemic, and wage growth eased — collectively prompting traders to fully price half a point of Bank of England rate cuts by year-end, with March increasingly discussed as a live meeting. Against this, the UK recorded its largest budget surplus on record late in the month, boosted by surging capital gains tax receipts — a brief fiscal reprieve that does not resolve the underlying structural constraints Chancellor Reeves faces.</p>
@@ -401,7 +402,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#4a9e6b;">Geopolitical and Energy Risks</p>
 <p class="para-body">Gas inventories are on track to exit winter more depleted than in 2025, with German storage roughly a quarter full and little financial incentive via summer-winter price spreads to incentivize refilling. Chancellor Merz courted Middle Eastern energy suppliers to diversify German dependence on US LNG — a notable strategic pivot — and simultaneously indicated openness to revising or delaying the EU's carbon market, driving the steepest drop in EU carbon prices since 2022. French customs data showed Q4 2025 US tariffs weighing materially on exports: spirits shipments fell 47%, wine 39%, and perfumes and cosmetics 25%. At the Munich Security Conference late in the month, European officials were reportedly reassessing the continent's nuclear deterrent posture following what attendees described as a sobering recalibration of US security commitments — a geopolitical undercurrent whose market implications remain, at this stage, difficult to quantify. ---</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">US-Iran: The Month's Most Consequential Unresolved Risk</p>
 <p class="para-body">The US-Iran confrontation dominated global risk sentiment through February, moving through several distinct phases without resolution. The month opened with the US Navy shooting down an Iranian drone heading toward an American aircraft carrier in the Arabian Sea, driving Brent toward $68 per barrel in the first week. Iran subsequently confirmed nuclear talks scheduled in Muscat, and Brent declined — briefly — as diplomatic signals provided partial offset to the military posturing. Indirect talks in Geneva in the final week concluded on a cautiously constructive note, with Iran's delegation expected to return with detailed proposals within two weeks; President Trump nonetheless stated Iran has ten to fifteen days at most to reach an agreement. Brent surged 4.3% mid-final-week to re-cross $70 per barrel, with WTI trading near $66 — close to a six-month high — as military optionality remained explicitly on the table and a second aircraft carrier was deployed to the region. Iran's calibrated scheduling of Strait of Hormuz naval exercises even as talks were underway in Geneva illustrated the deliberate two-track strategy both sides appear to be running. South Korea's Sinokor group accumulated roughly 120 VLCCs over the month, pushing benchmark VLCC earnings above $120,000 per day — a more than fourfold increase — a market signal that traders are positioning for a potential regime change in tanker dynamics regardless of the diplomatic outcome. Whether diplomacy retains genuine viability remains the single most consequential near-term variable for global energy and risk markets.</p>
@@ -424,7 +425,7 @@ a { color: inherit; text-decoration: none; }
   </button>
   <div class="accordion-body">
     <div class="accordion-content">
-      <div class="region" style="border-color:#5597cb;">
+      <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Fed Chair Nomination Reshapes the Rate Outlook</p>
 <p class="para-body">The defining development of January arrived on Friday of the final week when President Trump nominated Kevin Warsh to succeed Jerome Powell as Federal Reserve Chair upon Powell's term expiration in May. The appointment introduces a tension that will likely define US monetary policy discourse through mid-year: Trump has consistently demanded lower interest rates, yet Warsh's institutional record — as a former Fed governor historically critical of accommodative policy — suggests a more orthodox disposition. Warsh has moved publicly to align with the president's views, but market participants are appropriately skeptical that political alignment translates mechanically into dovish outcomes, particularly given FOMC composition constraints and the structural limits on unilateral rate action. Senate confirmation appears probable but not certain, leaving the operative uncertainty not in the confirmation outcome but in the substance of policy once Warsh assumes the chair. Earlier in the month, sell-side institutions across more than 60 firms had already flagged that the Fed may have less room to ease than front-end pricing implied, given sticky inflation dynamics and sustained AI and fiscal capex impulse. The Warsh nomination sharpens that uncertainty considerably. Senate confirmation hearings and any early signals about Warsh's actual policy posture will be the next meaningful inputs; until then, investors should treat Fed governance as an additional source of term premium rather than a resolved variable.</p>
@@ -435,7 +436,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#5597cb;">Venezuela and Labor Market Dynamics</p>
 <p class="para-body">The week of January 5th produced the month's most actionable US credit development: the rapid repricing of Venezuelan sovereign and PDVSA bonds following Maduro's ouster, with bondholders capturing roughly $4 billion in single-day mark-to-market gains early in the period. Trump's pledge of US capital deployment into Venezuelan oil infrastructure drew renewed engagement from Wall Street distressed desks, private capital sponsors, and energy majors including Chevron. For Gulf Coast refiners configured for heavy-sour grades, a credible multi-year restoration of Venezuelan output would be structurally supportive. Execution risk remains substantial: the political transition is not consolidated, sanctions mechanics are unformalized, and capital requirements are large relative to realistic near-term recovery timelines. Separately, reporting through the month highlighted structural shifts in hiring practices, with firms stress-testing new headcount against automation alternatives — a pattern reinforcing the view that any payroll deceleration reflects structural labor substitution alongside cyclical caution, complicating the Fed's read on slack. Q4 earnings season had not yet fully progressed by month-end; large bank results and the advance GDP and PCE prints due in the final days represent the primary remaining January data catalysts. ---</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-title" style="color:#e07b39;">China's Surplus Recycling and Its Global Spillovers</p>
 <p class="para-body">The most analytically significant Asia-Pacific development of January was reporting in the third week of an estimated $1.2 trillion in Chinese capital flowing into global markets, reflecting cumulative trade surplus generation over recent quarters. The gap between recorded export proceeds and onshore FX settlement suggests Chinese exporters and corporates continue to park dollar receipts offshore — a pattern consistent with persistently soft renminbi expectations and apparent PBoC tolerance for a managed, gradual currency adjustment. The offshore redirection of these flows into dollar deposits, gold, and foreign securities has plausibly contributed to compressed term premia in developed-market sovereigns and to the resilience of risk assets despite elevated real rates. The domestic policy implication is equally significant: as long as surpluses remain unconverted, the liquidity impulse from external trade is attenuated onshore, reinforcing the case for additional fiscal or monetary support. Whether this dynamic persists or reverses — as would occur if CNY expectations shift materially or capital account controls tighten — remains a primary watching item for global allocators. Attribution at this scale is inherently imprecise, but the directionality of the flow appears sufficiently sustained to warrant systematic monitoring.</p>
@@ -446,7 +447,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#e07b39;">North Asian Technology and Trade Exposure</p>
 <p class="para-body">The persistence of the AI capex theme through January remains directly consequential for North Asian technology supply chains. Taiwan, South Korea, and Japan — where semiconductor, equipment, and advanced packaging names have been principal beneficiaries of the US AI investment cycle — stand to see continued order flow provided the capex cycle sustains. The Trump administration's interventionist posture toward corporate America, including the prospect of electricity cost reallocation onto hyperscalers, represents a specific tail risk to AI infrastructure spending that would transmit through order books to North Asian suppliers. The broader pattern of direct presidential engagement with individual CEOs and companies — reported midmonth — appears to be influencing the strategies of Asian executives with significant US exposure, though the efficacy of accommodation approaches across different cultural and institutional contexts remains untested. Bloomberg also flagged 2026 as likely another difficult year for global trade, a material concern for export-dependent Asian economies. Japanese equities received favorable mention in wealth adviser surveys in the final week, with managers citing value characteristics as a relative alternative to stretched US mega-cap technology — a flow dynamic that would support the Nikkei provided yen volatility remains contained. Substantive reporting on BoJ policy, Korean export data, Indian fiscal positioning, Southeast Asian developments, and Australian CPI was absent from January's available source material; these remain primary items for February monitoring. ---</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">ECB Policy: Risks Accumulating Around the Baseline</p>
 <p class="para-body">European-specific macro data and ECB communications were largely absent from January's available source material, limiting the granularity of regional analysis. The most relevant strand from the sell-side consensus assembled early in the month is the prevailing view that inflation will prove stickier than current pricing implies, introducing meaningful two-way risk around the front end of the EUR curve. The ECB entered 2026 with markets pricing a continued, if shallow, easing path; if disinflation stalls amid AI-related capex impulses and fiscal support, Bund yields may struggle to rally despite softer growth signals, and peripheral spreads could face episodic widening should terminal rate expectations drift higher. The degree to which euro-area inflation dynamics decouple from the US — given Europe's weaker underlying demand and more advanced wage normalization — remains an open and important question that January flash CPI releases were expected to begin illuminating, though no data outcomes were captured in available material.</p>
@@ -457,7 +458,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#4a9e6b;">Venezuela, Energy Names, and Structural Industry Themes</p>
 <p class="para-body">The potential rehabilitation of Venezuelan crude production carries specific relevance for European energy names. Repsol and Eni both retain legacy exposures to Venezuelan joint ventures and would be among the more directly affected European names should sanctions architecture be dismantled in an orderly fashion. The sequencing and legal treatment of prior claims — including expropriation arbitration awards and claims on defaulted PDVSA paper held by European investors — remain unresolved. Separately, reporting midmonth that the Trump administration is moving to shift electricity costs onto hyperscalers could redirect data center capex toward European jurisdictions offering more accommodative cost structures, including Ireland, the Nordic markets, and the Frankfurt corridor, with consequent implications for local utilities, grid operators, and real estate developers. In European retail, the continued expansion of Aldi's US footprint and the broader discount grocery dynamic remain consistent with structural trends in European retail, where value formats have gained durable share. Consumer data through the final weekend pointed to continued strength in European wellness and hospitality spending, with premium experiential formats gaining share against traditional on-premise alcohol consumption. The property fund stress flagged in Canadian real estate — where locked-up redemptions were reported in the third week — carries recognizable parallels to the gating episodes seen across European open-ended property vehicles in 2023–24 and merits monitoring as a tail risk, particularly in Germany and the UK. UK-specific political, fiscal, and gilt market developments were not substantively represented in January's source material. ---</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">The Venezuela Inflection: Energy, Credit, and Geopolitical Realignment</p>
 <p class="para-body">The month's most consequential cross-regional development was Venezuela's abrupt return to investable status following Maduro's ouster in the first week of January. Sovereign and PDVSA bondholders captured roughly $4 billion in single-day mark-to-market gains early in the period, with the move reflecting optionality on restructuring rather than near-term cash flows. President Trump's pledge of US capital deployment into Venezuelan oil infrastructure — with energy majors including Chevron, private capital sponsors, and Wall Street distressed desks beginning preliminary assessments — represents a potential multi-year supply-side development of directional global significance. Venezuela holds the world's largest proved crude reserves, though current output is a fraction of its early-2000s peak; a credible reinvestment program would, over time, add incremental heavy-sour barrels, applying marginal pressure to the medium-term oil curve and benefiting refiners configured for that grade. The near-term price impact appears limited given lead times involved. Material uncertainties include the political transition's durability, the mechanics of sanctions relief, layered creditor claims from defaulted sovereign and PDVSA debt, and the competing positions of Chinese and Russian creditors whose cooperation — or lack thereof — will shape any restructuring outcome. For China specifically, the shift from sanctions-era discounted barrel arrangements to a more competitive landscape if US-aligned buyers and majors regain formal access represents a marginal but non-trivial shift in crude procurement dynamics. Broader contagion into Asian risk premia from the Venezuelan bond rally appeared unlikely given the trade's idiosyncratic character.</p>
@@ -479,6 +480,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

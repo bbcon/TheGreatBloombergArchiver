@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,7 +238,7 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Bond Market Pressures Mount as Warsh Prepares to Take Fed Helm</p>
 <p class="para-body">The selloff in US Treasuries deepened, with 10-year yields reaching 4.63% — the highest since February — and 30-year yields approaching levels not seen since 2007. Citigroup's Jim McCormick flagged 5.5% as the next focal point for the long bond. The move reflects a confluence of pressures: war-driven inflation concerns following the Strait of Hormuz disruption, with April headline CPI at 3.8% year-over-year (the firmest reading since 2023); persistent fiscal supply; sustained AI-related capex; and continued labor market resilience. The timing is awkward for Kevin Warsh, whose Fed swearing-in is scheduled for Friday. UBS's Jonathan Pingle suggested Warsh would likely prefer lower rates but faces credibility constraints given the inflation backdrop, and may instead frame policy around protecting AI investment rather than aggressively easing. S&P 500 futures fell 0.3% and Nasdaq 100 futures dropped 0.6% in pre-market trade, with tech leading declines.</p>
@@ -248,7 +249,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#5597cb;">Positioning Signal</p>
 <p class="para-body">BofA's latest fund manager survey showed a record monthly jump in equity allocations and the sharpest cash drawdown since February 2024 — readings strategist Michael Hartnett characterized as near-complete "bull capitulation," with early June flagged as ripe for profit-taking contingent on yield trajectory.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-title" style="color:#e07b39;">Putin arrives in Beijing as energy leverage shifts</p>
 <p class="para-body">Vladimir Putin landed in Beijing today for his first foreign trip of the year, accompanied by an unusually heavyweight delegation including five deputy prime ministers, central bank Governor Elvira Nabiullina, and the heads of major state enterprises. Moscow is hoping that Middle East-driven energy turmoil — with Brent near $110 and the Strait of Hormuz constrained — will soften Beijing's position on pricing for the long-stalled Power of Siberia 2 pipeline. The optics, however, favor Xi. Putin arrives weakened by a record Ukrainian drone strike on Moscow over the weekend and fresh from Xi's own summit with Donald Trump, at which Xi reportedly suggested Putin may come to regret the invasion. With Russian gas largely shut out of Europe and the economy heavily dependent on Chinese demand, Beijing has room to play hardball, though both sides will likely emphasize their "no-limits" partnership.</p>
@@ -259,12 +260,12 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#e07b39;">Other notable items</p>
 <p class="para-body">President Marcos reiterated that the Philippines would likely be drawn into any Taiwan conflict, a stance that will irritate Beijing. Indian carriers including Air India and IndiGo have asked state refiners to defer jet fuel price hikes until the Iran conflict subsides. Australia secured supplementary jet fuel from China and urea from Brunei, while the RBA flagged elevated risk of inflation expectations becoming unanchored.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">European Daily Briefing — May 19, 2026</p>
 <p class="para-body">European equities advanced modestly against an otherwise risk-off global backdrop, with the Stoxx Europe 600 rising 0.8% even as US and Asian markets retreated on inflation concerns linked to the Middle East conflict. Brent crude eased to around $110 a barrel after President Trump deferred a planned strike on Iran at the request of Gulf allies, though sovereign bond markets across the region remain under pressure. UK gilts extended Monday's gains following Andy Burnham's commitment to preserve existing fiscal rules, while G7 finance officials are reportedly acknowledging that the energy-driven inflation shock they had hoped to avoid now appears likely to persist. EU officials convene today in a critical push to finalize legislation implementing the trade framework agreed with Washington nearly a year ago, with Trump's July 4 deadline approaching and the threat of auto tariffs rising from 15% to 25% should Brussels fall short. The timing is unfavorable: European industry is already absorbing the energy shock from the Iran conflict, and Ryanair's Michael O'Leary warned of potential corporate casualties among European airlines if Hormuz disruptions continue. In parallel, the EU is weighing new defensive measures against Chinese import volumes ahead of a June leaders' summit, with Beijing already signaling it would retaliate against the pending Nuctech subsidy probe. UK political dynamics continue to shape gilt pricing. Burnham, the frontrunner to succeed Keir Starmer, ruled out any loosening of self-imposed borrowing limits — a signal aimed at reassuring markets wary of a leftward fiscal shift, though it may disappoint Labour's left flank. Separately, IFS data showed only 50.6% of UK 16-24 year-olds in payrolled work at end-2025, down from 54.9% in late 2022, while April recorded the sharpest employer job cuts since the pandemic's onset. In corporate news, Standard Chartered announced plans to eliminate roughly 8,000 support roles over four years as it integrates AI, with CEO Bill Winters framing the move as capital substitution rather than pure cost reduction. Germany formally launched the privatization of Uniper, opening what could become Europe's largest utility transaction this year. LVMH's Marc Jacobs disposals and reported Gucci-Alpine F1 sponsorship talks underscore continued repositioning across the luxury sector.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">Iran Standoff and Energy Markets</p>
 <p class="para-body">President Trump said he called off a planned strike on Iran after Saudi Arabia and other Gulf allies asked for more time to pursue diplomacy, though he offered no detail on targets or terms beyond a demand for "no nuclear weapons." Brent slipped 1.8% to around $110/barrel and WTI eased to $108 on the news, but the relief was modest given that the Strait of Hormuz remains restricted. Washington issued a fresh monthlong waiver permitting sales of Russian crude already loaded on tankers, an unusual concession aimed at containing fuel costs. Knock-on effects are widening: Singapore's state LNG buyer has secured non-Middle East cargoes through year-end, Indian carriers are lobbying refiners to delay jet fuel hikes, and Ryanair's CEO warned of corporate casualties among European airlines if the chokepoint persists.</p>
@@ -285,6 +286,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

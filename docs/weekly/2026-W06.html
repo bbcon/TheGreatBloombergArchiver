@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="#" class="nav-link active">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,7 +238,7 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Equity Markets and the AI Rotation</p>
 <p class="para-body">US equities experienced a pronounced factor rotation during the week, with the S&P 1500 Software index declining more than 17% year-to-date as concerns mounted that AI tools are disrupting rather than augmenting incumbent software business models. The term "SaaSpocalypse" entered market parlance. AMD fell 7.3% in pre-market Monday before closing down 17% post-earnings, while Thomson Reuters dropped as much as 20% on concerns over Anthropic's legal workflow tool. Alphabet beat Q4 revenue estimates but guided 2026 capital expenditure to as much as $185 billion against a consensus near $120 billion, with shares falling 3.3% pre-market Wednesday. Qualcomm declined 9% and Arm 6.6% on softer outlooks. Amazon tumbled approximately 8% Thursday after disclosing $200 billion in planned 2026 AI-related capex. The aggregate implied spend from Alphabet, Amazon, Meta, and Microsoft now approaches $650 billion — a scale with few historical analogs. On the upside, Silicon Labs surged 33% on reports of a $7 billion Texas Instruments acquisition approach, and Enphase rallied 21% on a revenue beat. Breadth remained constructive: roughly two-thirds of S&P 500 constituents advanced Wednesday, the equal-weighted index hit a record, and Value outperformed Momentum by the widest margin since the November 2020 vaccine data. Nvidia's earnings later this month loom as a critical test of whether the software selloff represents rational repricing or overreaction.</p>
@@ -246,7 +247,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#5597cb;">Macro Backdrop and Affordability</p>
 <p class="para-body">Q3 GDP was revised to a 4.4% annualized pace, the strongest in two years. Bank of America projects front-loaded 2026 growth, citing roughly $135–140 billion in fiscal stimulus equivalent to approximately 0.6% of disposable income, plus a 0.5–1 percentage point boost from post-shutdown normalization in Q1. AEI and Brookings researchers estimate the US may have experienced net negative immigration in 2025, with 2026 projections ranging from a 185,000 gain to a 925,000 decline — a development with potential labor-supply and trend-growth implications. Consumer confidence registered its weakest reading in over a decade despite real wage gains of 3.8% year-on-year in December. Goldman research highlights housing as the binding constraint: the bottom income quintile now spends 55% of income on rent, and combined down payment plus first-year mortgage costs in major metros have risen to 160–200% of annual income from 90–120% in 2000. Separately, the administration set aside $12 billion to establish a critical-minerals strategic stockpile, extending its industrial policy footprint into materials security and carrying downstream implications for domestic mining and processing equities. Western utilities — PG&E, Edison International, and Xcel Energy — remained in focus as a La Niña-driven warm, dry winter elevated wildfire risk; Xcel executed preventative shutoffs in Colorado affecting more than 50,000 customers, and Edison faces hundreds of lawsuits tied to last year's Eaton fire. ---</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-title" style="color:#e07b39;">Technology Selloff Spreads to the Region</p>
 <p class="para-body">The global technology rout that erased close to $1 trillion from an iShares software ETF over seven sessions extended into Asian trading early in the week, with Samsung Electronics tumbling and a Hang Seng gauge of Chinese technology shares approaching bear-market territory. The Nasdaq 100 fell roughly 4.6% over three sessions — its worst run since April — driven by concern over hyperscaler capex and AI disruption of incumbent software models. AMD's 17% post-earnings decline, combined with cautious guidance from Qualcomm and Arm citing potential memory-component shortages, weighed on regional chipmakers. By Friday, Asian equities had steadied, with Bitcoin recovering more than 3% from a low near $60,000 in Asian hours, and precious and base metals finding tentative footing. Against the risk-off backdrop, Baidu's announcement of its first-ever dividend alongside a $5 billion buyback represented a notable shift in capital-return posture from Chinese large-cap internet names.</p>
@@ -255,7 +256,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#e07b39;">Japan and Southeast Asian Political Risk</p>
 <p class="para-body">Prime Minister Sanae Takaichi's LDP-led coalition was projected to comfortably clear the 233 seats required for a majority in Sunday's lower-house election, though the result itself constitutes event risk for regional rates and yen positioning given her expansionary fiscal instincts and comments on currency weakness, which she partially walked back. The Topix rally has increasingly been underpinned by governance reform — rising dividends, accelerating buybacks, and re-rating of long-discounted sectors. Elsewhere in the region, Moody's cut Indonesia's outlook to negative, citing fiscal risks, prompting an unusually pointed public rebuke of Citi economists by Jakarta's finance ministry. The Philippines posted its weakest non-pandemic growth in 15 years. India's RBI held rates, citing improved visibility from a developing US trade framework; Indian exporters face an 18% tariff rate once a joint statement is finalized, though a constructive outcome would benefit IT and pharmaceutical names. BYD's Hong Kong shares extended a selloff that has erased over $60 billion in market value since May. Australia's Reserve Bank delivered the first rate hike among major central banks in 2026, with markets pricing a further increase as services inflation proved more persistent than anticipated. ---</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">Monetary Policy: ECB Holds, BOE Divided</p>
 <p class="para-body">The week's most consequential policy development was the Bank of England's Thursday decision to hold rates on a notably close 5-4 vote, signaling a more divided committee than consensus had anticipated and leaving open the possibility of a resumption of easing in coming meetings — only one of 32 economists surveyed had expected a cut. Governor Andrew Bailey subsequently appeared to endorse market pricing of a roughly 50% probability of a March cut, shifting policy risk toward the labour market where softening signs have accumulated. Sterling and short sterling will remain sensitive to incoming wage and employment data. The ECB held rates as expected and Governing Council member Yannis Stournaras downplayed concerns about the euro's recent appreciation, characterizing the move as one being monitored rather than warranting alarm. Euro-area inflation continued to run below the ECB's 2% target, sharpening the policy debate; if the undershoot persists into the spring projection round, markets will likely lean toward pricing additional accommodation. This sits in some tension with firmer activity signals: German factory orders unexpectedly rose at their fastest pace in two years, reinforcing tentative signs of manufacturing recovery in an economy that closed 2025 with stronger-than-expected growth.</p>
@@ -264,7 +265,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#4a9e6b;">Corporate Developments</p>
 <p class="para-body">Novo Nordisk plunged as much as 20% in Copenhagen Monday — among the largest single-day declines in the company's history — after forecasting a steep decline in sales, providing concrete evidence that competitive dynamics in GLP-1 obesity drugs are deteriorating faster than the sell-side had modeled. The move carries outsized implications for Denmark's equity index given Novo's index weight. Stellantis fell as much as 24% in Milan Thursday — a record intraday decline — after announcing €22 billion in charges tied to unwinding its EV strategy, including model cancellations and supplier compensation; the writedown joins similar moves at Ford, GM, and Porsche. Shell missed Q4 expectations with adjusted net income of $3.26 billion, down 11% year-on-year, though it maintained its $3.5 billion quarterly buyback. UBS announced a $3 billion buyback alongside an earnings beat, reinforcing the constructive narrative around large-cap European banks. Thomson Reuters fell as much as 20% during the week on AI disruption concerns. The proposed Rio Tinto–Glencore tie-up collapsed within 24 hours, reportedly over price, with Glencore shares falling roughly 11%. French customs data showed Q4 2025 US tariffs weighing materially on exports: spirits shipments fell 47%, wine 39%, and perfumes and cosmetics 25%. Chancellor Merz courted Middle Eastern energy suppliers to diversify German dependence on US LNG, a notable strategic pivot. ---</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">Risk Asset Unwind: Rotation or Correction?</p>
 <p class="para-body">The week's defining market dynamic was a synchronized retreat from crowded trades spanning US equities, precious metals, base metals, and crypto — yet underlying breadth suggested rotation rather than wholesale capitulation. Silver fell as much as 17% intraday Tuesday to around $74/oz, extending a five-day decline approaching 40% that unwound speculative excess built on Citigroup's earlier call for $150 silver. Gold declined as much as 3.5% Wednesday before stabilizing. Bitcoin slid below $70,000 mid-week, reaching $60,033 briefly in Asian trading Thursday — down more than 42% from its October peak — before recovering toward $66,000. Michael Burry warned of a self-reinforcing "death spiral" risk in Bitcoin. Gold's relative resilience versus crypto reinforced the thesis that bullion is absorbing safe-haven flows tied to deficit and policy concerns rather than digital assets. The metals complex's structural drivers — central-bank accumulation, dollar diversification, and strategic demand for copper, rare earths, and other inputs tied to grid and AI infrastructure — appear intact beneath the speculative froth; Shanghai copper futures recorded their highest-ever monthly volumes in January. Asian sessions showed tentative stabilization on Friday, though characterizing the move as a durable bottom would be premature.</p>
@@ -283,6 +284,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

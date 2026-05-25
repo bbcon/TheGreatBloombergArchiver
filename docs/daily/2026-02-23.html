@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,19 +238,19 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">The dominant US macro development of the day is the aftermath of the Supreme Court's ruling invalidating President Trump's IEEPA-based tariffs, and the administration's rapid pivot to replacement levies. Trump signed an executive proclamation imposing a 10% global tariff under Section 122 of the Trade Act of 1974, subsequently raising it to 15% over the weekend. The legal foundation appears fragile: Section 122 permits duties only in response to "fundamental international payments problems," a threshold most economists do not believe the US currently meets. The IMF's former chief economist Gita Gopinath stated plainly that the US does not face such a problem, and former Treasury official Jay Shambaugh noted that a genuine balance-of-payments crisis would be reflected in dollar weakness and capital flight — neither of which is occurring. Legal challenges appear likely, though courts may move too slowly to constrain tariffs that expire in 150 days. S&P 500 futures fell approximately 0.3% on the day, with market participants pricing in continued policy uncertainty rather than relief from the court ruling. Treasury Secretary Bessent characterized the IEEPA tool as "instantaneous" leverage now lost, while flagging what he termed a "draconian alternative" — the option of complete trade embargoes. Analyst commentary emphasizes that Trump retains an array of coercive instruments beyond formal tariff authority, including sector-specific duties, regulatory threats, and financial access. A major winter storm named Hernando has paralyzed the US Northeast, with 41 million people facing blizzard conditions. More than 10,000 flights were canceled through Tuesday, with Delta suspending operations at LaGuardia, JFK, and Boston Logan. US natural gas futures jumped nearly 7% as heating demand surged. The storm is among the most severe on record for the New York area and will likely weigh on near-term regional economic activity. Kevin Warsh, Trump's expected nominee for Federal Reserve chair, continues to attract attention; Bloomberg Economics analysis of his public statements confirms a marked shift from hawkish positioning in 2009–2011 toward dovish messaging since 2025.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">The Supreme Court's invalidation of Trump's IEEPA tariffs has materially shifted the regional trade calculus. China emerges as the clearest beneficiary: Morgan Stanley estimates average US levies on Chinese goods fall to 24% from 32%, while the Asia-wide weighted average tariff rate drops to approximately 17% from 20%. Chinese equities in Hong Kong rallied 2.65% on the session, with the Hang Seng China Enterprises index among the stronger performers globally. Mainland China and Japan markets were closed for holidays, limiting broader regional price discovery. The geopolitical significance extends beyond the tariff arithmetic. President Xi Jinping is scheduled to host Trump in Beijing beginning March 31, and the court ruling has meaningfully altered the negotiating dynamic. Xi enters those discussions with Chinese export volumes running at full capacity, average levies reduced, and a US counterpart stripped of his most flexible coercive instrument. Whether Beijing opts to capitalize on this position or maintains its measured posture to avoid fresh friction ahead of the summit remains to be seen. India presents a more complicated picture. New Delhi had been advancing toward an interim trade deal with Washington, but Indian officials postponed the relevant trip to the US following the court ruling, citing uncertainty over the new tariff framework's legal durability. South Korea, by contrast, is demonstrating resilience: the Bank of Korea told parliament that the semiconductor cycle is exhibiting unusual strength, and exports jumped 47% in the first 20 days of February on a working-day-adjusted basis. The central bank expects "significantly higher" GDP growth in 2026 relative to 2025. South Korean President Lee Jae Myung's market reform agenda continues to attract attention, with the Kospi having gained 115% since he took office in June, supported by corporate governance improvements that have broadened shareholder returns.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-body">European markets opened softer, with the Stoxx Europe 600 declining 0.24%, as the continent grappled with the implications of a reshuffled US tariff regime. The European Parliament's trade chief Bernd Lange moved to freeze ratification of the EU-US trade agreement pending clarification from Washington on its revised policy framework — a significant step that signals the fragility of arrangements negotiated under the now-invalidated IEEPA tariffs. ECB President Christine Lagarde warned that Trump's latest moves risk disrupting the EU-US trade "equilibrium" and could pose a fresh headwind to the eurozone economy. German business confidence brightened more than anticipated, providing some offset to the broader uncertainty. Chancellor Friedrich Merz is visiting China, where he signaled a notably sharper line than his predecessors, warning German business leaders against deepening investments there and indicating that government backing would not be forthcoming if those investments soured. The shift reflects a broader reassessment of Germany's China exposure, though it sits in some tension with the economy's ongoing need for export markets. In France, President Macron appointed David Amiel as budget minister in a cabinet reshuffle that drew criticism from opposition parties. Macron separately wrote to Trump requesting the lifting of sanctions on French and EU officials, including former Commissioner Thierry Breton, while France summoned US Ambassador Charles Kushner over comments related to a domestic violent incident. On corporate news, Johnson Matthey shares fell 17% after Honeywell reduced its offer price for the company's Catalyst Technologies business. JD Sports rose 4.4% after announcing a £200 million shareholder buyback. A significant governance failure at the VZB pension fund — a Berlin-based professional fund for dentists — has drawn scrutiny to Germany's Versorgungswerke system, which manages roughly €300 billion in assets, after an estimated €1.1 billion in losses from concentrated illiquid exposures.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-body">The overarching theme across global markets is the uncertainty created by the collapse of Trump's IEEPA tariff framework and the contested legal legitimacy of its Section 122 replacement. The practical consequence is a reconfiguration of relative tariff burdens: countries such as China, India, and Brazil, which faced elevated reciprocal levies, now converge toward the new 15% global rate, while prior beneficiaries — notably the UK and Australia — lose their preferential 10% arrangements. The British Chambers of Commerce estimates UK exporters face up to £3 billion in additional costs, affecting some 40,000 companies. Indonesia signed a bilateral deal with the US just last Thursday, leaving its status uncertain within days of the agreement. Oil markets remain focused on the Iran risk premium. Brent crude has gained approximately 18% year-to-date, trading above $70 per barrel, driven in part by fears of US military action against Iranian nuclear infrastructure. Trump stated last week that Iran had 10–15 days to reach a deal, while also noting he is considering limited strikes. US-Iran nuclear talks are scheduled to resume Thursday in Geneva, with Iranian Foreign Minister Araghchi meeting US envoy Steve Witkoff. Analysts and traders caution that a sustained oil price rally requires an actual supply disruption — prior episodes of elevated tension, including last June's Israeli strikes, produced short-lived price moves. US forces in the region are at their largest deployment in over two decades, widening the range of potential outcomes, but the base case among commodity market participants remains diplomatic engagement rather than kinetic escalation. Gold moved toward its highest level of the month as investors sought haven assets amid trade and geopolitical uncertainty. Bitcoin fell more than 2%, trading near $66,000, extending a decline of more than 40% from its peak and raising questions about the asset's investment thesis at a time of otherwise supportive institutional and regulatory conditions. Private equity returned distributions equivalent to just 14% of net asset value in 2025 — the second-lowest since 2008 — with $3.8 trillion in unsold assets weighing on the industry, according to Bain. Blue Owl Capital's decision to gate one of its private credit funds has intensified scrutiny of the $1.8 trillion sector, with some observers drawing comparisons to pre-2008 credit market dynamics.</p>
 </div>
@@ -263,6 +264,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

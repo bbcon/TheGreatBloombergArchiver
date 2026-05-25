@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,19 +238,19 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">The S&P 500 and Nasdaq 100 reached all-time highs on April 16, completing a roughly 10% and 14% rally respectively from their March 30 closing levels — one of the fastest such moves recorded since 1950. The advance is analytically unusual: prior recoveries of this magnitude and speed have typically occurred from deeply oversold levels following prolonged bear markets or acute crises. The closest historical parallel, by earnings multiple and timing, appears to be March 2000. Analysts attribute the rally partly to behavioral conditioning from last year's Liberation Day episode, when traders who sold early missed a rapid rebound, making investors more reluctant to hold short positions through the Iran conflict. The structural shift toward passive and retail "buy-the-dip" participants reinforces this dynamic. Valuations remain stretched by most conventional measures. The 10-year Treasury yield sits at approximately 4.3%, and Robert Shiller's excess CAPE yield — which subtracts the bond yield from the equity earnings yield — implies below-average prospective decade returns. First-quarter earnings estimates have declined during the rally, not risen, making the multiple expansion harder to justify on fundamental grounds. On monetary policy, the Federal Reserve situation remains unresolved and politically charged. Trump reiterated his threat to dismiss Jerome Powell if he remains as chairman past his May term expiration. The Justice Department continues to pursue its building-renovation probe despite a court ruling characterizing it as without merit. Senator Thom Tillis has blocked Kevin Warsh's confirmation pending resolution of the legal matter. Notably, Treasury Secretary Scott Bessent has now signaled twice in two days that he understands the case for the Fed to hold rates steady while awaiting clarity on the war's inflationary impact — a marked shift from his prior advocacy for cuts, and one that implicitly provides political cover for Warsh to avoid an embarrassing dissent on his first FOMC vote. The Fed's Beige Book described an economy in suspension, with no near-term catalyst to move in either direction. Markets are pricing near-zero probability of a June rate change. A federal antitrust jury found Live Nation illegally monopolized the live events industry, setting the stage for a potential structural breakup of the company.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">China's first-quarter GDP expanded 5.0% year-on-year, the strongest pace in three quarters, powered by manufacturing and exports. The result exceeded consensus expectations and suggests limited direct economic spillover from the Iran conflict so far. However, the data expose a persistent structural imbalance: industrial output grew 5.7% in March while retail sales rose only 1.7%, falling short of forecasts and signaling that domestic consumption has not meaningfully recovered. The two-speed economy — robust on the supply side, fragile on the demand side — remains a central policy challenge. Taiwan Semiconductor Manufacturing Company delivered a first-quarter profit surge of 58% and raised its full-year revenue growth guidance to above 30%, reinforcing its role as the primary proxy for global AI infrastructure investment. TSMC's market capitalization now exceeds $1.7 trillion, and Taiwan's total equity market value has overtaken the UK's to become the seventh largest globally at $4.14 trillion. The Taiex has gained 17% this month, and South Korea's Kospi has rallied approximately 23%, recovering sharply from an 18% two-day decline at the onset of the Iran war. BlackRock has flagged Korean equities as a preferred position given AI-driven earnings momentum. Japan's Finance Minister Satsuki Katayama, speaking after bilateral discussions with Treasury Secretary Bessent in Washington, warned she was prepared to take "bold action" to support the yen. The statement was widely interpreted as a direct intervention threat; the absence of pushback from Bessent is being read as implicit US tolerance for possible currency-market action. Macro hedge funds in China suffered notable losses in March. Bridgewater's All Weather Plus strategy fell 5.6% between late February and early April, trimming its first-quarter return to 3.9%. Shanghai Longlife's Macro Hedging No. 1 fund — 2025's top performer with a 153% return — declined 25% in March. The peer-group average loss was 6.3%, the worst on record.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-body">The European Central Bank appears likely to hold rates unchanged at its upcoming meeting, according to people familiar with internal deliberations. Policymakers are choosing to defer judgment on whether the Iran conflict's economic fallout warrants a monetary policy response, with tighter financing conditions credited for keeping inflation expectations anchored in the near term. Bank of England Governor Andrew Bailey struck a similar note, signaling no urgency to adjust rates given the difficulty of assessing the war's full economic impact. Eurozone inflation in March came in slightly above the preliminary estimate, but this appears insufficient on its own to shift the ECB toward tightening. Elsewhere in European markets, easyJet shares fell sharply — their steepest single-session decline since 2022 — after the airline warned of a first-half loss attributable to travel disruptions stemming from the conflict. Pimco indicated it sees value in European bonds following the war-driven selloff, suggesting some institutional buyers view current yield levels as attractive entry points. Hungary's Orbán government suffered a meaningful electoral defeat, triggering what is being described in markets as a "euro convergence trade" — investors positioning for a potential shift in Budapest's economic policy orientation toward greater EU alignment. At Monte dei Paschi di Siena, shareholders voted to reinstate ousted CEO Luigi Lovaglio, with nearly 50% of attending shareholders supporting the candidate list that included his reappointment, against roughly 39% for the board-backed alternative proposing Fabrizio Palermo. The outcome represents a significant defeat for the outgoing board. The BBC announced plans to cut up to 2,000 positions, approximately 10% of its workforce, as part of a structural transition led by incoming Director General Matt Brittin.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-body">The defining macro tension of the moment is the divergence between policymaker pessimism and market optimism. At the IMF-World Bank spring meetings in Washington this week, the emerging consensus among officials was that investors are materially underestimating the economic damage from the Iran war. Qatar's Finance Minister described current market conditions as "the tip of the iceberg," and participants broadly expect structural consequences — higher costs, longer trade routes, elevated geopolitical risk premiums — to persist well beyond any ceasefire. Global Trade Alert has tracked more than 250 distinct government policy responses since hostilities began on February 28, the large majority of which are liberalizing import measures, energy subsidies, or demand-reduction programs, particularly across Asia. The response is notably broad-based rather than sectoral, reflecting the diffuse nature of the supply disruption. The Strait of Hormuz remains effectively closed, now entering its third day of formal US blockade activity. Two Iran-sanctioned vessels — the LPG carrier G Summer and the VLCC Hong Lu — were observed transiting a new route between Iran's Larak and Qeshm islands into the Persian Gulf, suggesting Tehran is testing alternative corridors. The US and Iran are reportedly considering a two-week ceasefire extension to allow further negotiations. The aluminum market has entered what JPMorgan characterizes as a structural supply "black hole." Iranian strikes on smelters in Abu Dhabi and Bahrain at the end of March caused production losses that will take at least a year to recover, pushing London Metal Exchange prices to four-year highs above $3,600 per ton. JPMorgan now forecasts prices could reach $4,000 per ton — approaching the 2022 all-time high — as the market faces its largest supply deficit in over 25 years. The shortage falls disproportionately on Western manufacturers, for whom Chinese and Russian supply remains largely inaccessible due to sanctions and tariffs. Food security represents a slower-moving but potentially more consequential transmission channel. Gulf-region countries account for at least 30% of global fertilizer supply, including urea, ammonia, and diammonium phosphate. A Farm Bureau survey finds over 70% of US farmers cannot currently afford sufficient fertilizer. Price effects will emerge with a harvest-cycle lag, and a prolonged conflict risks compounding input cost inflation with yield reductions, amplifying food price pressures globally. The US Justice Department has opened a probe into fertilizer and farm input pricing practices. WTI crude was trading near $92.50, with Brent around $95.</p>
 </div>
@@ -263,6 +264,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

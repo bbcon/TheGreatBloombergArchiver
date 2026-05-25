@@ -235,29 +235,38 @@ Produce four regional briefings from the source material below, one per region:
 
 Format your response exactly as:
 ## US
-[content]
+• [key point 1]
+• [key point 2]
+• [key point 3]
+
+**[Section Title]**
+[paragraph text]
 
 ## Asia
-[content]
+• [key point 1]
+...
 
 ## Europe
-[content]
+• [key point 1]
+...
 
 ## Global
-[content]
+• [key point 1]
+...
 
 Rules:
-- Each paragraph must have a short bold title on its own line (e.g. **Monetary Policy**), followed by the paragraph text.
-- Write in flowing paragraphs (no bullet points or numbered lists).
+- Begin each regional section with 3–5 bullet points (• character, one per line) capturing the most important developments. Bullets appear immediately after the ## heading, before the first bold section title.
+- After the bullets, each paragraph must have a short bold title on its own line (e.g. **Monetary Policy**), followed by the paragraph text.
+- Write paragraphs in flowing prose. No bullet points within the narrative sections.
 - {length_instruction}
-- If coverage for a region is thin or absent, write exactly: "No significant coverage for this period."
+- If coverage for a region is thin or absent, write exactly: "No significant coverage for this period." (no bullets needed).
 - Do not add any text before "## US" or after the Global section.
 
 ---
 
 {content}"""
 
-    max_tokens = {"daily": 3000, "weekly": 5000, "monthly": 7000}[mode]
+    max_tokens = {"daily": 3500, "weekly": 5500, "monthly": 8000}[mode]
     message = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=max_tokens,

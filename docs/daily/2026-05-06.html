@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,19 +238,19 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">US equity markets extended their rally to yet another all-time record for the S&P 500, though the composition of the advance warrants scrutiny. Factor analysis shows quality stocks — characterized by stable earnings and strong balance sheets — have been consistent underperformers since Liberation Day, while momentum and liquidity factors continue to dominate. Goldman Sachs strategist commentary flags "yellow flags" in the thinness of the rally. The advance appears driven by animal spirits and abundant liquidity rather than fundamental re-rating, leaving it potentially vulnerable to any deterioration in the macro or geopolitical backdrop. On the technology earnings front, AMD surged approximately 17% in premarket trading after raising its sales forecast, and Super Micro Computer gained 19% on a strong report. The AI investment thesis received further validation as Alphabet raised nearly $17 billion in debt to fund data center buildout. Nvidia, by contrast, has fallen 9% over the past six sessions and is the worst performer in the Philadelphia semiconductor index year-to-date, as customers including Alphabet, Amazon, and Intel develop credible competing chip architectures — though there is limited evidence yet of material market share loss. On fiscal and data integrity matters, two consequential developments emerged. Former Treasury Secretary Mnuchin stated plainly there is no "break-the-glass" solution to the US debt problem, pushing back on Hank Paulson's call for emergency planning, while acknowledging rising risk premiums in long-dated Treasuries. The CBO projects federal debt reaching 108% of GDP by 2030. Separately, new research suggests the politically motivated dismissal of Bureau of Labor Statistics chief Erika McEntarfer correlated with approximately $20 billion in foregone industrial investment — a figure 25 times the BLS annual budget — as executives reportedly grew less willing to commit capital amid eroding confidence in government data. The SEC's proposal to end mandatory quarterly earnings reporting remains in a 60-day comment period, with multiple alternative frameworks under consideration.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">Asian equities delivered one of the more striking single-session moves in recent memory. A gauge of Asian shares rose 2.6% to a record high, led by South Korea's Kospi, which surged more than 6% as Samsung Electronics rallied 14-16% to cross a $1 trillion market capitalization — only the second Asian company to achieve that threshold. The re-rating reflects a market judgment that memory's role in the AI infrastructure stack is structural rather than cyclical, with Samsung sitting at the intersection of chipmaking and data infrastructure expansion. AI-related names across the region followed suit, with the liquidity and momentum factors particularly pronounced. The yen rallied as much as 1.8% against the dollar, reigniting speculation of Japanese official intervention — the second potential episode since April 30. Goldman Sachs analysts estimate Japan retains sufficient reserves for roughly 30 intervention episodes at last week's scale, though officials are expected to conserve firepower for more strategically effective moments. The yen remains approximately 9% weaker against the dollar over the past twelve months. Geopolitically, Japan's deployment of 1,400 combat troops to the Philippines for joint Balikatan drills — including a ship-sinking exercise in the South China Sea — marks the first such deployment since World War II and signals a meaningful shift in Tokyo's willingness to project military power proximate to China. In China, Foreign Minister Wang Yi hosted Iran's Abbas Araghchi and urged Tehran to continue negotiations, ahead of the Trump-Xi summit expected next week where the Iran war will be a central agenda item. Indonesia tightened foreign currency purchase limits to $25,000 from $50,000 to support a beleaguered rupiah. In India, a five-week administrative halt on gold and silver imports has pushed domestic bullion prices higher and raised shortage concerns in the world's second-largest gold market.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-body">European markets processed a complex set of signals on May 6. UK 30-year gilt yields reached 5.78% — the highest level since 1998 — as inflation and fiscal concerns keep the UK in the crosshairs of sovereign debt markets. Thursday's UK local elections carry meaningful political risk for Prime Minister Keir Starmer; Labour is on course to record its lowest share of London voters in over a century, with Reform and the Greens gaining ground. Analysts note that poor results could sharpen intra-party challenges to Starmer's leadership, adding another layer of uncertainty to an already strained fiscal picture. In Germany, Chancellor Friedrich Merz — who entered office one year ago with sweeping ambitions to revitalize the economy and anchor European leadership — is, by most assessments, struggling on all three fronts. His coalition faces questions about longevity, and he has already ruled out forming a minority government should it collapse. The diplomatic backdrop worsened after Trump announced US troop withdrawals from Germany in response to Merz's public criticism, underscoring how transatlantic tensions constrain European policy space. On corporate earnings, Novo Nordisk surged approximately 9% after its new Wegovy pill drove quarterly sales growth and the company guided for a smaller-than-expected revenue decline. Infineon's revenue outlook beat expectations on AI-driven power chip demand. BMW's earnings declined, reflecting intense pricing competition in China. In central bank governance, French President Macron nominated Emmanuel Moulin, a close adviser, to head the Banque de France and take a seat on the ECB's Governing Council. Separately, the EU reiterated its demand that Washington adopt the main elements of their trade deal by July and respect prior commitments, including a 15% tariff ceiling, as US Ambassador Puzder warned 25% tariffs on European vehicles could arrive "relatively soon."</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-body">The dominant cross-cutting theme remains the US-Iran conflict and the tentative signals pointing toward a negotiated resolution. President Trump suspended "Project Freedom" — the US-led naval operation to escort stranded vessels through the Strait of Hormuz — citing a request from mediator Pakistan and what he described as "great progress" toward a comprehensive agreement. Axios reported the two sides are working toward a one-page memorandum of understanding to frame subsequent nuclear negotiations. The operation had produced the opposite of its intended effect: while two ships were escorted out on Monday, US forces repelled multiple Iranian drone, missile, and fast-attack boat strikes, and Iran struck an oil terminal in Fujairah, UAE. The path to a durable settlement remains uncertain. Oil markets reacted sharply. WTI crude fell nearly 10% on the day, dropping below $100 a barrel from a peak near $112 a month ago, though December 2026 WTI futures remained around $77 — approximately 8% above early April levels — suggesting markets do not yet price a near-term, sustained reopening of the Strait. US shale producers are nonetheless responding: Diamondback Energy's CEO signaled an "inflection point," with the Permian Basin expected to add as many as 30 rigs. Exxon plans a 12% production increase. US gasoline prices topped $4.50 per gallon for the first time since July 2022. Chinese aluminum and metal exports are rising materially, benefiting from the Middle East supply disruption and clean-tech demand. Microsoft is reportedly weighing abandonment of its 2030 hourly clean-energy matching target — a significant retreat from commitments made before the AI era — as data center power demand and natural gas's appeal grow. This dynamic is not isolated to Microsoft: across major hyperscalers, reported carbon emissions have risen 23-64% versus pre-ChatGPT baselines, underscoring a widening tension between AI infrastructure expansion and corporate climate commitments that has yet to find a credible resolution framework.</p>
 </div>
@@ -263,6 +264,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

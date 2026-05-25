@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,19 +238,19 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">Donald Trump's State of the Union address, delivered Tuesday evening, offered a defiant defense of his economic record while introducing limited new policy substance. The president declared the US is "back bigger, better, richer and stronger than ever before" at a moment when public skepticism of his economic stewardship is rising and consumer sentiment has softened. Notably, Trump made no direct mention of China — the first time in two decades a sitting president has omitted the country from the annual address, a striking rhetorical choice given the centrality of trade policy to his agenda. He was also measurably milder in his criticism of the Supreme Court justices who recently struck down many of his signature tariffs, with several present in the chamber. On the policy margin, Trump proposed new tax-advantaged retirement savings accounts for workers without employer-sponsored plans, with a government match of up to $1,000 annually — a modest fiscal gesture unlikely to move macro aggregates materially. In equity markets, US futures were marginally higher as investors awaited Nvidia's quarterly results after the close, the most consequential single earnings event in the current AI-valuation debate. S&P 500 fourth-quarter earnings growth came in at approximately 13%, roughly six percentage points above expectations, and yet the index has declined 1.7% over the six-week earnings window — tied for its worst earnings-season performance in ten quarters — suggesting valuation and policy uncertainty are dominating fundamental signals. Workday fell 9.2% in premarket trading on a subscription revenue miss, HP dropped 5% on a disappointing profit outlook citing tariffs and rising memory-chip costs, while Cava gained 9% on above-consensus 2026 guidance. First Solar slid 14% on a sales shortfall. The Warner Bros. Discovery-Paramount media consolidation dynamics evolved further, with Warner Bros. signaling a new $31-per-share Paramount Skydance offer could produce a superior outcome to its existing Netflix arrangement, without withdrawing that recommendation. Stripe is separately reported to be exploring an acquisition of some or all of PayPal, a combination that would reshape the payments landscape significantly if pursued. Bitcoin's price structure remained technically fragile, with Glassnode data showing 19 of the first 22 days in February recorded net realized losses. Approximately 45% of circulating supply sits underwater relative to acquisition cost, creating a persistent ceiling on rallies as distressed holders sell into any recovery.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">Asian equity markets posted strong gains, with the Nikkei 225 rising 2.20% to 58,583 and the South Korean Kospi advancing 1.91% to 6,084. The session reflected a broader rotation dynamic that has defined 2026 year-to-date: investors are concentrating capital in Asian hardware manufacturers perceived as infrastructure beneficiaries of AI, while retreating from US-listed software and services names exposed to AI disruption risk. Taiwan Semiconductor is up 30% year-to-date, Samsung Electronics has surged 70%, and SK Hynix has gained 57%. Overseas investors purchased a net $2.77 billion of Taiwan equities on Tuesday, the largest single-day foreign inflow since December 2005, extending a six-day buying streak. South Korea's total equity market capitalization has risen to $3.76 trillion, surpassing France to rank ninth globally — having already overtaken Germany in late January. German Chancellor Friedrich Merz arrived in Beijing on his first official visit since taking office last May, framing the trip around balanced engagement with a country that serves simultaneously as strategic rival and indispensable trading partner. "It would be a mistake for us to seek to decouple ourselves from China," Merz said before departure. The visit carries a note of economic asymmetry: Germany's trade dependence on China has deepened, German investment in China reached a four-year high in 2025, and Berlin is increasingly reliant on Chinese critical materials for industrial production. Merz will hold separate meetings with President Xi Jinping and Premier Li Qiang. Both sides signaled an appetite for improved relations, though trade frictions and mineral supply chains remain unresolved structural tensions. Hong Kong's Financial Secretary Paul Chan delivered the city's annual budget, reporting a consolidated surplus of HK$2.9 billion — a material turnaround from the HK$67 billion deficit originally forecast — enabling pledges of technology spending and tax relief for over two million residents. Singapore banks drew $61 billion in new wealth inflows from Asian high-net-worth clients, underscoring the city-state's continued role as a regional wealth management hub. China separately warned it will take "all necessary measures" if the US proceeds with fresh tariffs tied to an ongoing probe into a 2020 trade deal. Meanwhile, a record $112 billion discrepancy between Chinese reported export data and US Customs arrival figures for 2025 suggests that as much as a quarter of China-origin shipments may have bypassed US tariff controls — complicating both revenue collection and any analytical assessment of the bilateral trade relationship. South Korea's fertility rate rose for a second consecutive year, a rare positive signal for a country with the world's lowest birth rate.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-body">HSBC reported full-year pretax profit of $29.9 billion, surpassing analyst expectations and sending shares up 5.4% in London trading. The result was underpinned by strong performance in the wealth division, consistent with CEO Georges Elhedery's strategic pivot toward asset and wealth management as part of a broader institutional overhaul. The bank's bonus pool rose 10% to $3.93 billion, the highest in at least a decade, reflecting both the earnings outperformance and Elhedery's deliberate move toward a more performance-differentiated, Wall Street-style compensation structure. HSBC derives the bulk of its earnings from Asia, and its shares reached a record following the results. Diageo fell 5.8% after the spirits group cut its full-year organic net sales guidance for the second time this fiscal year, now projecting a decline of 2-3%. The company continues to face demand weakness in both the US and China, illustrating how exposure to discretionary consumer spending in two of the world's largest economies creates compounding risk in the current environment. Aston Martin separately announced plans to reduce its workforce by approximately 20%, citing Trump's tariffs as a complicating factor in an already-difficult operational turnaround. Germany's fourth-quarter GDP data showed a long-anticipated recovery taking hold, driven by domestic spending, though trade remained a drag — a pattern consistent with the broader structural challenge Merz is navigating. Factory orders have shown a distinct improvement in recent months, jumping in December by the most in two years, and business confidence as measured by the Ifo institute rose more than expected this month. Merz's government loosened Germany's constitutional debt brake earlier in his term to fund a substantial defense and infrastructure investment program, and early indicators suggest some economic benefit is beginning to materialize, though the trajectory remains uncertain. Spain's housing situation deteriorated further into structural dysfunction, with government eviction protections due for another one-year extension. Critics argue the measures have created perverse incentives for tenants to halt rent payments, stranding tens of thousands of property owners in illegally occupied homes with limited legal recourse. A secondary market of specialist firms promising rapid removal of occupants has emerged, charging several thousand euros per engagement. French President Macron accepted the resignation of Louvre president Laurence des Cars following October's high-profile museum heist.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-body">President Trump's Iran warnings dominated geopolitical attention on Wednesday. In his State of the Union address, Trump accused Iranian officials of pursuing "sinister ambitions" to reconstitute their nuclear program following US airstrikes last year, while simultaneously reiterating interest in a diplomatic resolution. The dual messaging — military threat and negotiating posture — reflects a deliberate ambiguity, though it adds to mounting evidence of a US military buildup in the Middle East. NATO's AWACS surveillance aircraft stationed in Turkey have reportedly shifted their operational focus from Russia to Iran. The prospect of an armed escalation appears to be influencing energy markets: supertanker earnings have risen to their highest level in years, with traders pricing a non-trivial risk that conflict could disrupt oil flows through the Strait of Hormuz. Trump's special envoy Steve Witkoff and Jared Kushner are scheduled to hold fresh talks with Iranian officials in Geneva on Thursday, keeping a diplomatic channel open even as military preparations appear to be advancing. On the energy transition, Bloomberg Opinion's Javier Blas argued that "net zero" has effectively been abandoned as a political commitment, noting that mentions have collapsed in rich-nation energy communiqués while global demand for oil, gas, and coal stands at all-time highs. His projection — that emissions may stabilize in the 25,000-30,000 million metric ton range by 2050, well above zero — represents an implicit acknowledgment that the 2050 target is no longer operationally credible under current policy trajectories. Renewable electricity capacity is nonetheless expected to continue expanding; the divergence between clean power growth and overall emissions reduction illustrates the core tension in the transition narrative. China's Belt and Road Initiative appears to be entering a new expansionary phase after a period of retrenchment. Data cited by advisory firm Teneo shows total BRI-related engagements reached an all-time high of $214 billion in 2025, with both average deal size and geographic reach at record levels, concentrated in central Asia, energy, metals, and technology. The "small-but-beautiful" era declared in 2021 appears to have been a Covid-era artifact rather than a structural recalibration. UBS raised its worst-case private credit default scenario to 15%, up from 13% issued less than a month ago, citing "rapid, severe AI disruption" as a clearer catalyst than previously modeled. The revision underscores the degree to which AI disruption risk has migrated from equity market narratives into credit analysis, with implications for the $1.8 trillion private credit complex.</p>
 </div>
@@ -263,6 +264,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

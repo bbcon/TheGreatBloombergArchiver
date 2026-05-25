@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,24 +238,24 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Wall Street's 2026 Outlook: Growth With Caveats</p>
 <p class="para-body">The consensus emerging from sell-side and asset manager outlooks for 2026 — synthesized across more than 60 institutions including Goldman Sachs, JPMorgan Wealth Management, and the BlackRock Investment Institute — points to modest optimism tempered by an unusual set of macro tensions. The dominant theme is that continued AI-related capital expenditure, combined with supportive government policy, is extending the cycle at a stage when growth would typically be moderating. This dynamic underpins constructive equity views, though forecasters broadly caution that valuations leave limited margin for execution missteps in the AI complex. The corollary, however, is that inflation is unlikely to return cleanly to target. A sustained capex impulse, fiscal support, and tight labor conditions are expected to keep price pressures sticky through the year, which in turn implies that the Federal Reserve may have less scope to deliver the easing currently embedded in front-end pricing. This sets up a recurring source of volatility: if growth and inflation data continue to surprise to the upside, market expectations for policy accommodation will likely need to be repriced. The asymmetry favors caution on duration positioning. On the dollar, the consensus leans toward continued depreciation, reflecting a combination of narrowing rate differentials, fiscal trajectory concerns, and ongoing reserve diversification. The view is not uniform, and the path will depend heavily on the relative pace of Fed easing versus other G10 central banks. Private assets, meanwhile, are expected to continue gaining share of institutional allocations, though questions around liquidity, valuation marks, and vintage performance remain unresolved.</p>
 <p class="para-title" style="color:#5597cb;">Assessment</p>
 <p class="para-body">The setup for 2026 contains genuine internal tensions — AI-driven growth optimism sitting alongside sticky inflation and a softer dollar call. Investors should expect these narratives to compete for primacy depending on the data flow, with the first major test arriving with January CPI and the next FOMC meeting. Otherwise, US-specific newsflow today is light.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-title" style="color:#e07b39;">Asia-Pacific Daily Briefing — January 6, 2026</p>
 <p class="para-body">Coverage in today's source material is notably thin for the Asia-Pacific region. The single available item is Bloomberg's annual compilation of 2026 Wall Street outlooks, which offers limited but relevant read-throughs for Asian markets and capital flows. The consensus across more than 60 institutions — including Goldman Sachs, JPMorgan Wealth Management, and the BlackRock Investment Institute — points to modest optimism for global risk assets, supported by continued AI-related capital expenditure and accommodative government policy. For Asia, this framework carries several implications worth flagging, though none are addressed directly in the source material and should be treated as inference rather than reported view. First, the widely held call for further dollar depreciation, if realized, would be supportive for Asian FX and could ease financial conditions across the region, particularly for economies with dollar-denominated liabilities and import-sensitive inflation profiles such as India, Indonesia, and the Philippines. It would also reduce pressure on the PBOC to defend the yuan's reference rate and may facilitate portfolio inflows into Chinese assets, though structural concerns around China's growth model and property sector remain unresolved. Second, the view that inflation will prove stickier than markets expect — and that central banks may have less room to ease than priced — is relevant for the BOJ's normalization trajectory, the RBA's policy path, and emerging Asian central banks that have generally been waiting on the Fed. A shallower Fed cutting cycle would constrain regional easing. Third, the persistence of the AI capex theme remains directly consequential for North Asian technology supply chains, particularly Taiwan, South Korea, and Japan, where semiconductor and equipment names have been the principal beneficiaries. Bloomberg also flags 2026 as likely another difficult year for global trade — a material concern for export-dependent Asian economies, though specifics are not provided in today's material. We will revisit these themes as more granular regional reporting becomes available.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">European Macro & Markets Briefing — January 6, 2026</p>
 <p class="para-body">Today's available source material is thin on Europe-specific content, comprising primarily a global 2026 outlook compilation rather than dedicated regional reporting. With that caveat, several cross-asset themes from consensus Wall Street views carry direct implications for European markets and policymakers. The most relevant strand for euro-area investors is the prevailing house view that inflation will prove stickier than current pricing implies, constraining central bank flexibility. For the ECB, which entered 2026 with markets pricing a continued — if shallow — easing path, this introduces meaningful two-way risk around the front end of the EUR curve. If the consensus is correct that disinflation stalls amid AI-related capex and fiscal impulses, Bund yields may struggle to rally despite softer growth signals, and peripheral spreads could face episodic widening should terminal rate expectations drift higher. The degree to which euro-area inflation dynamics decouple from the US — given Europe's weaker underlying demand and more advanced wage normalization — remains an open question worth monitoring through the January flash CPI releases. The widely-held call for continued dollar weakness is mechanically supportive of EUR/USD and, by extension, a headwind for euro-area exporters already contending with subdued external demand and persistent competitiveness concerns in autos and chemicals. A stronger euro would also assist the ECB's disinflation objective at the margin, potentially complicating the stickier-inflation thesis for the bloc specifically. For European equities, the constructive global risk backdrop — predicated on AI capex and accommodative policy — has historically benefited the region's cyclicals and financials, though the index composition remains less exposed to the AI theme than US benchmarks. Whether 2026 delivers the earnings catch-up that European multiples have long anticipated remains to be seen. UK-specific political and market developments are not addressed in today's source material.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">Wall Street's 2026 Consensus: Modest Optimism with Embedded Tensions</p>
 <p class="para-body">The sell-side's compiled outlooks for 2026 — drawing on more than 60 institutions including Goldman Sachs, JPMorgan Wealth Management, and the BlackRock Investment Institute — coalesce around a cautiously constructive base case, though one with notable internal tensions worth flagging for cross-asset positioning. The dominant thread is that AI-related capital expenditure and accommodative government policy continue to supply growth impulse at what is, by conventional metrics, a late stage of the business cycle. This unusual configuration — fiscal and secular investment tailwinds extending an aging expansion — is the analytical centerpiece of most house views. The corollary, widely acknowledged, is that disinflation may stall short of central bank targets. Sticky services inflation and resilient demand appear to leave less room for monetary easing than rates markets currently price, setting up a potential repricing risk should the data validate the consensus view rather than the curve. On currencies, the modal call remains for continued dollar depreciation, consistent with expectations of narrowing rate differentials, persistent twin deficits, and ongoing reserve diversification. This view, however, sits in some tension with the sticky-inflation thesis: if the Fed has less room to cut than markets expect, the dollar's path lower becomes less straightforward. Investors should treat the dollar-bearish consensus with appropriate skepticism given this internal inconsistency in the broader narrative. Private assets are expected to continue gaining share of institutional allocations, extending a multi-year trend, though valuation dispersion and exit-channel constraints remain unresolved questions. The framing of 2026 as "another rocky year" for global trade — against a backdrop of unresolved tariff regimes and supply-chain reconfiguration — suggests that the macro tape will likely be driven as much by policy shocks as by cyclical data. Coverage today is otherwise light on geopolitical and energy-specific developments; we will revisit oil, Iran, and Hormuz dynamics as the news flow resumes.</p>
@@ -269,6 +270,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

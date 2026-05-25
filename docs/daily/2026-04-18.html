@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,19 +238,19 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">Utility bills are emerging as a defining issue heading into the 2026 midterm elections, with electricity costs having nearly doubled for many American households over the past several years. The confluence of AI data center buildout, grid upgrade expenditures, tariff pass-throughs, and energy market disruption linked to the Iran conflict has driven power prices higher at rates not seen in decades. Democrats who campaigned explicitly on household energy affordability swept key races in New Jersey, Virginia, and Georgia in late 2025, providing a template that challengers are now deploying against incumbent Republicans defending a narrow House majority. Pennsylvania's 7th District, where a former utility employee is running against Republican Representative Ryan Mackenzie, illustrates the dynamic: bipartisan agreement on the problem dissolves into sharp disagreement over solutions. President Trump acknowledged the issue in his February State of the Union address — the first time a president has explicitly framed rising electricity bills as a consumer concern in that forum — though his proposed remedy, requiring tech companies to build their own power plants, remains more aspiration than policy. The midterm environment appears to be shaping up around kitchen-table economics rather than ideological abstraction, a terrain historically more favorable to the opposition party. On defense and climate adaptation, a notable institutional divergence is apparent within the Trump administration. Secretary Hegseth has moved aggressively to eliminate explicit climate language from Pentagon mission statements and cancel climate-related research, yet the Defense Department continues to advance large-scale infrastructure hardening at military installations. Tyndall Air Force Base in Florida — damaged to the tune of nearly $5 billion by Hurricane Michael in 2018 — is being rebuilt with flood-resistant structures, reinforced roofing, and coastal protection features. The framing has shifted from "climate resilience" to "operational readiness," a semantic adjustment that has proved sufficient to preserve funding. Close to $400 billion in federal assets, predominantly Defense Department holdings, face elevated coastal flood risk, providing a practical rationale that transcends the political debate.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">China's economy posted stronger-than-expected first-quarter growth, driven in significant part by an export surge as manufacturers moved to front-run US tariff escalation. While the headline figure offered reassurance, the composition of growth raises questions about durability: domestic consumption remains subdued relative to the export contribution, and the tariff environment that incentivized the front-loading may itself constrain external demand in coming quarters. Beijing's 15th five-year plan, approved in March, provided additional clarity on the government's long-term orientation, including a measured approach to climate commitments that analysts characterize as prioritizing energy security alongside emissions reduction rather than accelerating the transition. The plan signals continued state direction of industrial policy, with implications for capital allocation across technology, manufacturing, and energy sectors. India's position in the evolving US-China technology decoupling faces fresh complications. Controls on Chinese technology exports are creating friction for Indian manufacturers attempting to scale production in sectors such as electronics and battery components — industries that New Delhi has identified as central to its manufacturing ambition. India simultaneously published its own climate plan for 2035, which observers assess as cautious relative to the pace of emissions growth the country is experiencing. The broader theme across both economies is one of managed transition under significant resource and geopolitical constraint, rather than transformational acceleration. Elsewhere in the region, Japan and South Korea continue to navigate the twin pressures of dollar strength — partly a function of US tariff uncertainty — and domestic inflation dynamics that complicate central bank communication. No material policy shifts were signaled this week from either the Bank of Japan or the Bank of Korea.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-body">Hungary's political transition following Peter Magyar's decisive victory in the April 12 parliamentary election carries consequences well beyond a country of fewer than 10 million people. Magyar and his Tisza party secured what appears to be a parliamentary supermajority, reducing Viktor Orbán's Fidesz to a rump opposition after 16 years in power. The practical implications for the European Union are immediate and significant: Orbán's Hungary had held up approximately €90 billion in EU support for Ukraine, repeatedly exercising veto power to block measures requiring unanimity. With Magyar signaling a sharp reorientation toward Brussels — including an aspiration to eventually adopt the euro — that obstruction may lift, potentially unlocking both the Ukraine aid package and broader EU decision-making that had been paralyzed. The scale of the shift invites comparison to earlier inflection points in European integration, though the analogy should not be overextended. Magyar inherits an economy that has consistently underperformed regional peers Poland and the Czech Republic since 2010, having been shaped by what one Macquarie strategist characterized as "unchecked executive power through erosion of institutional pillars." Hungary's dependence on Russian energy imports and its existing commercial ties to Asian battery manufacturers — a legacy of Orbán's industrial policy — will constrain the pace and character of reorientation. Magyar is unlikely to exit Russian gas supply arrangements quickly, and veto rights over EU decisions may prove too useful a tool to abandon entirely even under new leadership. Nevertheless, the political signal carries weight. Brussels now faces fewer internal obstacles to cohesion on Russia policy, Ukraine support, and the broader question of EU strategic autonomy. The episode also illustrates that the right-wing nationalist model Orbán represented — and which Washington under the current administration has sought to promote across Europe — is not electorally invulnerable when economic mismanagement becomes the dominant voter concern.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-body">The intersection of the US-Iran conflict and global energy markets continues to represent the most consequential near-term macro risk across regions. The source material references "war in Iran" as actively disrupting global energy markets, contributing to gasoline price increases that are feeding into household affordability stress in the United States and, almost certainly, in energy-importing economies elsewhere. The Strait of Hormuz — through which a substantial share of global oil flows — remains a focal point of supply vulnerability, though the precise operational status and risk of escalation remains unclear from available reporting. What is apparent is that energy price volatility is already transmitting into consumer prices and political dynamics with notable speed. The Pentagon's quiet continuation of climate adaptation work at military installations — rebranded as "resilience" and "readiness" rather than climate response — reflects a broader tension playing out across governments: the gap between political positioning on climate and the practical decisions driven by asset exposure and operational necessity. Close to $400 billion in US federal assets face elevated flood risk; similar pressures apply to infrastructure across coastal Asia and Europe. China and India's recently published climate plans both signal a decade of cautious incrementalism rather than accelerated transition, suggesting that global emissions trajectories are unlikely to shift materially in the near term despite the scale of physical risk accumulating. On global monetary policy, divergence across major central banks remains a structuring theme, though no fresh policy decisions were signaled this week. The combination of trade-related inflation pressure in the US, export-driven cyclical support in China, and gradually easing inflation in parts of Europe creates an environment in which rate path convergence remains distant — a condition that tends to sustain dollar volatility and complicate capital allocation across emerging markets.</p>
 </div>
@@ -263,6 +264,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

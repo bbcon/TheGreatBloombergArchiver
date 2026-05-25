@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,19 +238,19 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">The defining domestic policy dimension of Saturday's joint US-Israel strikes on Iran is the political risk they carry for President Trump ahead of November midterm elections. Trump, who campaigned on an America-first, anti-interventionist platform, has now presided over the ousting of Venezuelan President Maduro, strikes on Iran's nuclear facilities in June, Christmas Day strikes on Nigeria, and now a direct assault on Iran itself. The cumulative weight of these actions represents a substantial departure from the MAGA orthodoxy that propelled him to power, and polling already suggests Republicans face a difficult path to retaining both chambers of Congress. The immediate domestic economic concern is energy prices. Oil has already risen nearly 20% this year on US-Iran tensions, and any further spike will translate directly into higher gasoline prices at a moment when many American households are already feeling financially pressured. Trump acknowledged in his overnight video address that US casualties are possible — an admission that, if casualties materialize, will intensify pressure from a public that has historically grown weary of open-ended military commitments. The fiscal and monetary policy implications remain secondary to the geopolitical shock for now, though sustained energy price elevation would complicate the Federal Reserve's effort to maintain its current rate trajectory. On corporate news, Berkshire Hathaway's PacifiCorp faces approximately $55 billion in wildfire-related claims, with the utility's credit rating already sitting one notch above junk at S&P. Greg Abel, penning his first annual letter as Buffett's successor, inherits a materially complex liability picture as climate-driven wildfire risk intensifies across the American West. PacifiCorp has reached roughly $2.2 billion in settlements to date and is actively lobbying multiple state legislatures for liability caps, following the legislative template established in California and Utah.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">The Iran strikes carry immediate implications for Asian economies through two channels: energy import costs and regional security spillovers. Asia's largest economies — China, Japan, South Korea, and India — are all major importers of Middle Eastern crude, much of which transits the Strait of Hormuz. Iran has threatened to close the strait, and Bloomberg Economics estimates that a full closure could push oil to $108 per barrel. For Japan and South Korea, which have limited domestic energy production, such a scenario would represent a significant terms-of-trade deterioration. India, which had resumed meaningful purchases of discounted Iranian crude, faces both supply disruption and price risk simultaneously. China's position is particularly complex. Beijing is Iran's largest oil trading partner and has maintained economic ties that circumvent Western sanctions. The US-Israel strikes place China in a diplomatically awkward position: condemnation risks straining relations with Washington at a moment when trade tensions are already elevated, while silence signals acquiescence to unilateral military action that Beijing has consistently opposed on principle. The People's Bank of China this week was reportedly taking steps to stem yuan appreciation, a reminder that China's record $1.2 trillion trade surplus continues to generate currency pressure even as President Xi publicly advocates for a more prominent global role for the renminbi. On the reserve currency question, Xi's reiterated ambitions for the yuan as a global reserve asset face structural barriers that the Iran shock does nothing to resolve. Foreign ownership of Chinese government bonds has declined to just under $400 billion, compared with $9.3 trillion of foreign-held Treasuries, reflecting the persistent impediments of capital controls, limited market liquidity, and a banking sector that holds rather than trades fixed income. The ECB's new repo facility for foreign central banks and euro-zone governments' rhetorical support for a broader euro role similarly face fragmentation constraints, with German Bund annual trading volumes representing less than two weeks of equivalent US Treasury turnover.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-body">European airspace was disrupted materially on Saturday as Israel and Gulf states closed their airspace following the onset of US-Israel strikes on Iran, with Emirates suspending all Dubai flight operations. The immediate European economic exposure runs primarily through energy: the eurozone is a large net importer of oil and gas, and a sustained rise toward $108 per barrel — the Bloomberg Economics estimate under a Hormuz closure scenario — would exert renewed inflationary pressure on an economy the ECB has only recently guided toward its 2% target. The ECB's strategic positioning is consequently complicated. Having spent the past two years managing the inflation shock partly attributable to energy price volatility following Russia's invasion of Ukraine, policymakers now face the possibility of another energy-driven cost-push episode. Whether that would alter the ECB's rate path depends heavily on the duration and severity of the oil shock — a point Christine Lagarde and her colleagues will be acutely aware of as they assess incoming data over coming weeks. On the reserve currency front, the ECB this month unveiled a repo facility extending euro liquidity to most foreign central banks, representing the institution's most concrete step yet toward promoting the euro's international role. The initiative has drawn support across euro-zone governments and the European Parliament, and Italy's central bank governor Fabio Panetta and even Bundesbank President Joachim Nagel have indicated openness to a European sovereign bond that would create a liquid pan-European benchmark asset. However, the structural barriers remain formidable: fragmented national bond markets mean German Bund trading volumes in all of 2024 amounted to roughly €6.74 trillion, less than two weeks of US Treasury turnover. The EU's economy commissioner Valdis Dombrovskis also cautioned that a stronger international euro role carries exchange rate appreciation implications that European exporters would need to absorb.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-body">Saturday's joint US-Israel strikes on Iran represent the most consequential geopolitical development in recent memory for global energy markets and supply chain stability. Iran produces approximately 5% of global oil supplies, and roughly one-fifth of global oil flows transit the Strait of Hormuz. Tehran responded rapidly by launching missiles at US military bases in Qatar, Bahrain, and the UAE, closing Iranian airspace, and prompting Gulf states and Israel to do the same. Emirates suspended all Dubai operations. Bloomberg Economics estimates that a Hormuz closure could push oil to $108 per barrel from levels already up nearly 20% year-to-date on US-Iran tensions. OPEC+ is reportedly considering a larger-than-expected supply increase when key members meet Sunday, which may represent a partial offset, though the group's capacity to compensate for Hormuz disruption is limited by logistics rather than production. Risk assets responded defensively. Bitcoin fell as much as 3.8% to $63,038 and Ether declined 4.5% to $1,835, erasing approximately $128 billion in digital asset market value in the immediate aftermath. The broader implication for global monetary policy divergence is that a sustained energy price shock complicates the easing cycles underway or anticipated across multiple central banks, including the ECB and several Asian central banks, by reintroducing an inflationary impulse that policymakers had largely treated as resolved. The dollar's reserve currency status appears further entrenched by the episode, at least in the near term. Despite sustained "sell America" rhetoric, global investors continue to accumulate dollar-denominated assets, and the structural barriers facing both the euro and yuan as alternatives — capital controls, market fragmentation, and inadequate liquidity depth — remain unresolved. As US Treasury Secretary Scott Bessent has noted, reserve currency status carries the burden of currency appreciation that neither Beijing nor Brussels has demonstrated willingness to fully absorb.</p>
 </div>
@@ -263,6 +264,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

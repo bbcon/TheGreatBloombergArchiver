@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,19 +238,19 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">US equity markets enter a pivotal stretch of earnings season with the fundamental picture remaining broadly constructive, even as the geopolitical backdrop grows more complex. With slightly over a third of S&P 500 companies having reported first-quarter results, the beat rate stands at approximately 80%, above the historical average of 77%, while the aggregate earnings surprise of roughly 12% materially exceeds the typical 7% premium. Societe Generale estimates that 12-month forward profits are now approximately $600 billion higher than four months ago — a 12% revision that would represent the largest upward revision on record outside a post-recession recovery. The concentration of those gains, however, is notable: semiconductors alone account for some 43% of the 2026 consensus profit upgrade, with IT hardware and energy together explaining close to 98% of the extraordinary revision. Wednesday's hyperscaler earnings reports from Microsoft, Alphabet, Meta, and Amazon will be consequential. Ahead of those results, shares of SoftBank fell sharply in Tokyo following a Wall Street Street Journal report that OpenAI recently missed its internal targets for new users and sales, dragging down correlated names including Oracle, CoreWeave, and AMD in pre-market trading. Microsoft and OpenAI also formally ended their exclusivity arrangement, a development that may reshape the competitive AI partnership landscape. The Federal Reserve's policy meeting, which begins today, is widely expected to produce a hold. The decision itself may be less consequential than the tone adopted by Chair Powell in his subsequent press conference, given the currency implications for the yen and the broader signal it would send about the Fed's tolerance for elevated inflation driven by the oil shock. Analysts from BCA Research note that while the US economy's structural tendency supports earnings growth, projecting continued 20% profit expansion heading into year seven of the cycle requires assumptions that have no modern precedent, AI tailwinds notwithstanding. Credit markets remain supportive, with investment-grade and high-yield spreads near their tightest since the Global Financial Crisis.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">The Bank of Japan delivered what markets are characterizing as a hawkish hold, keeping its benchmark rate unchanged at 0.75% in a 6-3 vote — the most divided outcome under Governor Ueda's tenure. Three board members, including the usually consensus-leaning Junko Nakagawa, voted to raise rates immediately, and Bloomberg Economics now assigns high probability to a hike at the June meeting. The yen briefly strengthened through 159 per dollar before reversing as Ueda's press conference introduced caveats around the bank's baseline outlook and dollar buying resumed alongside rising oil prices. The currency's near-term trajectory now depends substantially on the tone of Powell's Wednesday remarks; a hawkish signal could push the yen through the psychologically significant 160 level. Political constraints on the BOJ remain meaningful. Prime Minister Sanae Takaichi's administration — aligned with the late Shinzo Abe's reflation legacy — has appointed two dovish board members, with a second joining in June, complicating the central bank's normalization path even as inflationary pressures from energy costs and a weak exchange rate accumulate. South Korea's equity market has emerged as the year's strongest performer among major indices, with the Kospi rising approximately 60% and total market capitalization surpassing the UK's at $4.04 trillion. Samsung Electronics reported a 755% year-on-year profit increase in the March quarter, and Samsung and SK Hynix together now represent 42% of Kospi capitalization, up from 28% two years ago — a concentration that amplifies both momentum and tail risk. Labor tensions are building: thousands of Samsung employees rallied over the weekend demanding higher wages, with the union threatening an 18-day strike beginning May 21. China's Politburo pledged to counter external shocks and enhance energy security, citing better-than-expected first-quarter growth. Moody's upgraded China's credit outlook to stable. Separately, Beijing is pressing Meta to unwind its $2 billion acquisition of AI startup Manus, a degree of extraterritorial commercial intervention that, if executed, would represent a significant escalation in China's assertiveness over cross-border technology deals.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-body">European equity markets are finding limited upside as the war-driven energy shock intersects with deteriorating growth prospects. Euro-area consumer inflation expectations jumped across the board in March, complicating the ECB's policy calculus at a moment when the region is simultaneously absorbing higher energy costs, weak demand, and growing recession risk. Analysts note that European stocks' brief period of outperformance relative to the US has faded, with stronger US growth and technology-driven market gains pulling capital away from the region. UK politics remains turbulent. Prime Minister Keir Starmer faces a parliamentary vote today on whether to open a formal investigation into his assurances that due process was followed in appointing Peter Mandelson as ambassador to Washington. While Starmer's allies expect to win the vote, the prolonged controversy — which has run alongside several hours of committee hearings on Mandelson's security vetting — constitutes a costly distraction less than two weeks before local elections seen as a meaningful test of his leadership. King Charles III has arrived in Washington for a state visit, a trip freighted with uncertainty about the durability of the UK-US special relationship under the current US administration. On corporate earnings, BP reported adjusted net income of $3.2 billion in the first quarter, more than double the year-earlier figure and ahead of the $2.64 billion analyst consensus, as surging oil prices and market volatility drove strong oil trading results. Barclays' trading division, by contrast, failed to match the outsized revenues generated by Wall Street peers during the same period of elevated volatility. In European M&A, EssilorLuxottica heir Leonardo Maria Del Vecchio agreed to buy out two siblings' stakes in family holding company Delfin for approximately €10 billion. UK Lords separately called for a substantially larger fiscal headroom, adding to Starmer's domestic policy pressures.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-body">Oil markets continued to tighten on Tuesday, with Brent crude rising as much as 2.9% to $111.32 per barrel — a seventh consecutive day of gains and the highest level in several weeks. The proximate driver remains the US blockade of the Strait of Hormuz, now approaching two months in duration. Analytics firm Kpler estimates Iran has 12 to 22 days of remaining storage capacity at current production rates before it must begin curtailing output, while US Treasury Secretary Scott Bessent indicated some well shutdowns may have already begun. Six to eight supertankers are clustered near Chabahar port in the Gulf of Oman, just outside the blockade perimeter. A single LNG tanker appeared to traverse the Strait of Hormuz on Tuesday, the first such transit since the conflict began, though it remains unclear whether this represents a durable development or an isolated incident. Diplomatic activity continues without resolution. Iran submitted a peace proposal that the White House confirmed is under active consideration, though US officials described persistent red lines around Tehran's nuclear program. Iranian Foreign Minister Araghchi completed a diplomatic tour that included a meeting with Vladimir Putin in St. Petersburg — a signal not lost on Washington. The contrast with the 2015 nuclear negotiations is sharp: those talks involved career diplomats, multilateral frameworks, and exhaustive document review; the current process is being managed by figures whose backgrounds are in real estate, and has been disrupted twice by military strikes. The economic ramifications are broadening. Oxford Economics estimates global goods trade will expand just 2.5% in 2026, roughly half the 4.9% pace recorded in 2025, with the oil shock alone potentially subtracting 0.6% to 0.9% from world trade volumes. A Dallas Fed survey found 35% of Texas manufacturers are already feeling direct negative impact from the war. Partially offsetting the macro drag, the oil shock is accelerating EV adoption: European consumers purchased 206,200 electric vehicles in March, a 44% year-on-year increase, while South Korean EV sales more than doubled. Chinese EV and hybrid exports reached a record, rising 140% from the prior year — a dynamic that simultaneously reflects the energy crisis and China's growing competitive position in global auto markets. BlackRock Investment Institute warned that elevated inflation driven by the oil shock means long-term government bond yields are likely to remain structurally higher, and that traditional equity-bond diversification relationships may no longer hold.</p>
 </div>
@@ -263,6 +264,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

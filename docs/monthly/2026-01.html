@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="#" class="nav-link active">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,7 +238,7 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Fed Chair Nomination Reshapes the Rate Outlook</p>
 <p class="para-body">The defining development of January arrived on Friday of the final week when President Trump nominated Kevin Warsh to succeed Jerome Powell as Federal Reserve Chair upon Powell's term expiration in May. The appointment introduces a tension that will likely define US monetary policy discourse through mid-year: Trump has consistently demanded lower interest rates, yet Warsh's institutional record — as a former Fed governor historically critical of accommodative policy — suggests a more orthodox disposition. Warsh has moved publicly to align with the president's views, but market participants are appropriately skeptical that political alignment translates mechanically into dovish outcomes, particularly given FOMC composition constraints and the structural limits on unilateral rate action. Senate confirmation appears probable but not certain, leaving the operative uncertainty not in the confirmation outcome but in the substance of policy once Warsh assumes the chair. Earlier in the month, sell-side institutions across more than 60 firms had already flagged that the Fed may have less room to ease than front-end pricing implied, given sticky inflation dynamics and sustained AI and fiscal capex impulse. The Warsh nomination sharpens that uncertainty considerably. Senate confirmation hearings and any early signals about Warsh's actual policy posture will be the next meaningful inputs; until then, investors should treat Fed governance as an additional source of term premium rather than a resolved variable.</p>
@@ -248,7 +249,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#5597cb;">Venezuela and Labor Market Dynamics</p>
 <p class="para-body">The week of January 5th produced the month's most actionable US credit development: the rapid repricing of Venezuelan sovereign and PDVSA bonds following Maduro's ouster, with bondholders capturing roughly $4 billion in single-day mark-to-market gains early in the period. Trump's pledge of US capital deployment into Venezuelan oil infrastructure drew renewed engagement from Wall Street distressed desks, private capital sponsors, and energy majors including Chevron. For Gulf Coast refiners configured for heavy-sour grades, a credible multi-year restoration of Venezuelan output would be structurally supportive. Execution risk remains substantial: the political transition is not consolidated, sanctions mechanics are unformalized, and capital requirements are large relative to realistic near-term recovery timelines. Separately, reporting through the month highlighted structural shifts in hiring practices, with firms stress-testing new headcount against automation alternatives — a pattern reinforcing the view that any payroll deceleration reflects structural labor substitution alongside cyclical caution, complicating the Fed's read on slack. Q4 earnings season had not yet fully progressed by month-end; large bank results and the advance GDP and PCE prints due in the final days represent the primary remaining January data catalysts. ---</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-title" style="color:#e07b39;">China's Surplus Recycling and Its Global Spillovers</p>
 <p class="para-body">The most analytically significant Asia-Pacific development of January was reporting in the third week of an estimated $1.2 trillion in Chinese capital flowing into global markets, reflecting cumulative trade surplus generation over recent quarters. The gap between recorded export proceeds and onshore FX settlement suggests Chinese exporters and corporates continue to park dollar receipts offshore — a pattern consistent with persistently soft renminbi expectations and apparent PBoC tolerance for a managed, gradual currency adjustment. The offshore redirection of these flows into dollar deposits, gold, and foreign securities has plausibly contributed to compressed term premia in developed-market sovereigns and to the resilience of risk assets despite elevated real rates. The domestic policy implication is equally significant: as long as surpluses remain unconverted, the liquidity impulse from external trade is attenuated onshore, reinforcing the case for additional fiscal or monetary support. Whether this dynamic persists or reverses — as would occur if CNY expectations shift materially or capital account controls tighten — remains a primary watching item for global allocators. Attribution at this scale is inherently imprecise, but the directionality of the flow appears sufficiently sustained to warrant systematic monitoring.</p>
@@ -259,7 +260,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#e07b39;">North Asian Technology and Trade Exposure</p>
 <p class="para-body">The persistence of the AI capex theme through January remains directly consequential for North Asian technology supply chains. Taiwan, South Korea, and Japan — where semiconductor, equipment, and advanced packaging names have been principal beneficiaries of the US AI investment cycle — stand to see continued order flow provided the capex cycle sustains. The Trump administration's interventionist posture toward corporate America, including the prospect of electricity cost reallocation onto hyperscalers, represents a specific tail risk to AI infrastructure spending that would transmit through order books to North Asian suppliers. The broader pattern of direct presidential engagement with individual CEOs and companies — reported midmonth — appears to be influencing the strategies of Asian executives with significant US exposure, though the efficacy of accommodation approaches across different cultural and institutional contexts remains untested. Bloomberg also flagged 2026 as likely another difficult year for global trade, a material concern for export-dependent Asian economies. Japanese equities received favorable mention in wealth adviser surveys in the final week, with managers citing value characteristics as a relative alternative to stretched US mega-cap technology — a flow dynamic that would support the Nikkei provided yen volatility remains contained. Substantive reporting on BoJ policy, Korean export data, Indian fiscal positioning, Southeast Asian developments, and Australian CPI was absent from January's available source material; these remain primary items for February monitoring. ---</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">ECB Policy: Risks Accumulating Around the Baseline</p>
 <p class="para-body">European-specific macro data and ECB communications were largely absent from January's available source material, limiting the granularity of regional analysis. The most relevant strand from the sell-side consensus assembled early in the month is the prevailing view that inflation will prove stickier than current pricing implies, introducing meaningful two-way risk around the front end of the EUR curve. The ECB entered 2026 with markets pricing a continued, if shallow, easing path; if disinflation stalls amid AI-related capex impulses and fiscal support, Bund yields may struggle to rally despite softer growth signals, and peripheral spreads could face episodic widening should terminal rate expectations drift higher. The degree to which euro-area inflation dynamics decouple from the US — given Europe's weaker underlying demand and more advanced wage normalization — remains an open and important question that January flash CPI releases were expected to begin illuminating, though no data outcomes were captured in available material.</p>
@@ -270,7 +271,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#4a9e6b;">Venezuela, Energy Names, and Structural Industry Themes</p>
 <p class="para-body">The potential rehabilitation of Venezuelan crude production carries specific relevance for European energy names. Repsol and Eni both retain legacy exposures to Venezuelan joint ventures and would be among the more directly affected European names should sanctions architecture be dismantled in an orderly fashion. The sequencing and legal treatment of prior claims — including expropriation arbitration awards and claims on defaulted PDVSA paper held by European investors — remain unresolved. Separately, reporting midmonth that the Trump administration is moving to shift electricity costs onto hyperscalers could redirect data center capex toward European jurisdictions offering more accommodative cost structures, including Ireland, the Nordic markets, and the Frankfurt corridor, with consequent implications for local utilities, grid operators, and real estate developers. In European retail, the continued expansion of Aldi's US footprint and the broader discount grocery dynamic remain consistent with structural trends in European retail, where value formats have gained durable share. Consumer data through the final weekend pointed to continued strength in European wellness and hospitality spending, with premium experiential formats gaining share against traditional on-premise alcohol consumption. The property fund stress flagged in Canadian real estate — where locked-up redemptions were reported in the third week — carries recognizable parallels to the gating episodes seen across European open-ended property vehicles in 2023–24 and merits monitoring as a tail risk, particularly in Germany and the UK. UK-specific political, fiscal, and gilt market developments were not substantively represented in January's source material. ---</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">The Venezuela Inflection: Energy, Credit, and Geopolitical Realignment</p>
 <p class="para-body">The month's most consequential cross-regional development was Venezuela's abrupt return to investable status following Maduro's ouster in the first week of January. Sovereign and PDVSA bondholders captured roughly $4 billion in single-day mark-to-market gains early in the period, with the move reflecting optionality on restructuring rather than near-term cash flows. President Trump's pledge of US capital deployment into Venezuelan oil infrastructure — with energy majors including Chevron, private capital sponsors, and Wall Street distressed desks beginning preliminary assessments — represents a potential multi-year supply-side development of directional global significance. Venezuela holds the world's largest proved crude reserves, though current output is a fraction of its early-2000s peak; a credible reinvestment program would, over time, add incremental heavy-sour barrels, applying marginal pressure to the medium-term oil curve and benefiting refiners configured for that grade. The near-term price impact appears limited given lead times involved. Material uncertainties include the political transition's durability, the mechanics of sanctions relief, layered creditor claims from defaulted sovereign and PDVSA debt, and the competing positions of Chinese and Russian creditors whose cooperation — or lack thereof — will shape any restructuring outcome. For China specifically, the shift from sanctions-era discounted barrel arrangements to a more competitive landscape if US-aligned buyers and majors regain formal access represents a marginal but non-trivial shift in crude procurement dynamics. Broader contagion into Asian risk premia from the Venezuelan bond rally appeared unlikely given the trade's idiosyncratic character.</p>
@@ -291,6 +292,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

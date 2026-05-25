@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="#" class="nav-link active">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,7 +238,7 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Federal Reserve at the Crossroads</p>
 <p class="para-body">The Federal Reserve's March 19 FOMC meeting was the week's defining event for US markets. The committee voted 11-1 to hold the benchmark rate at 3.5%–3.75%, but Chair Jerome Powell's press conference generated significant volatility in its own right. Powell made clear that rate cuts remain contingent on demonstrated inflation progress — a bar that appears increasingly distant given the concurrent pressures of tariff-driven price acceleration and an escalating Middle East energy shock. The Fed's preferred core inflation gauge ran at an estimated 3% in February, a full percentage point above target, and core PPI rose to a three-year high, indicating the pipeline was already accelerating before the Strait of Hormuz blockade. Powell acknowledged "meaningful" internal movement toward fewer cuts and explicitly noted that colleagues had raised the possibility that the next move could be a hike. Futures markets repriced sharply: from two cuts anticipated earlier in the year to zero by week's end. The S&P 500 recorded its largest Fed-day decline since 2024 on Wednesday.</p>
@@ -248,7 +249,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#5597cb;">Equities and Corporate News</p>
 <p class="para-body">US equity futures edged higher early in the week on Monday, with S&P 500 contracts up 0.6%, but sentiment deteriorated markedly as the week progressed. By Friday, futures were off 0.6% amid Iran war uncertainty and the Fed's hawkish tilt, with Goldman Sachs's trading desk noting that clients who had anticipated a quick resolution to the conflict are increasingly doubtful. FedEx climbed roughly 10% on Friday after raising its earnings forecast, providing a modest counterpoint. Super Micro tumbled 22% after federal prosecutors charged a co-founder with illegally diverting Nvidia-powered servers to China. Meta rose approximately 3% early in the week on reports of a $27 billion cloud infrastructure deal with Nebius. Lululemon fell roughly 2% after forecasting a second consecutive year of profit declines, while DocuSign rose after beating earnings. The US 10-year Treasury yield rose to approximately 4.30% by week's end. New York Governor Hochul's proposal to delay the state's 2030 emissions reduction target to 2040, citing energy affordability pressures, illustrated the political difficulty of sustaining decarbonization commitments when fuel costs are acute — a notable signal from a reliably Democratic state. ---</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-title" style="color:#e07b39;">China: Resilience and Risk</p>
 <p class="para-body">China's January–February economic data released Monday surprised to the upside, with industrial production rising 6.3% year-on-year — the fastest pace since September — and retail sales and fixed-asset investment both exceeding forecasts. The data offered an encouraging snapshot of domestic momentum building before the Iran conflict's full weight could register. By midweek, however, the structural risk was becoming clearer: Jefferies' Christopher Wood argued that Chinese mainland equities remain among the most defensible in the current environment, citing robust domestic renewable capacity, battery storage, and reserve buffers as relative insulation. FGE NexantECA indicated Beijing is close to drawing on its estimated 1.4 billion barrels of commercial oil reserves as the Strait of Hormuz disruption persists. Citigroup, Goldman Sachs, and Macquarie economists projected Chinese producer prices could turn positive as soon as March, potentially ending a deflationary streak dating to 2022 — though the key uncertainty is whether such inflation reflects genuine demand recovery or purely cost-push dynamics that could compress margins further.</p>
@@ -259,7 +260,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#e07b39;">Southeast Asia and India</p>
 <p class="para-body">South Korea's Kospi surged 5% on Wednesday after authorities moved to restrict publicly listed companies from listing certain subsidiaries, a governance reform that drove Samsung Electronics up 7% after the company signaled a potential shift toward multi-year memory chip contracts. India's rupee weakened past 93 per dollar to a record low, with Nomura projecting the currency could reach 96 per dollar by end-June and Goldman Sachs projecting it could reach 95 over the next year. India imports approximately 90% of its oil, and Prime Minister Modi secured safe passage for two LPG tankers through Hormuz while simultaneously managing US relations — a difficult bilateral balance with state elections in April approaching. Indonesia's central bank delivered a hawkish hold while tightening foreign-exchange regulations to defend the rupiah, which is down approximately 14% in March. Pakistan's airstrikes on Kabul, which the Taliban government says killed at least 400 people at a drug treatment hospital, represent a serious separate escalation risk in the region that attracted alarm from the EU and China alike. ---</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">Central Banks Pivot Hawkish</p>
 <p class="para-body">The week's central bank decisions across Europe represented the most significant monetary policy repricing in the region since the 2022 energy shock. The ECB held its key rate at 2.0% on Thursday, in line with consensus, but dropped language describing policy as being in a "good place" and shifted its forward guidance materially. Traders are now fully pricing two ECB hikes this year — a dramatic reversal from the easing trajectory that prevailed before the conflict began. Governing Council member Joachim Nagel stated Friday that a hike as early as April is conceivable if energy-driven inflation risks materialize, explicitly referencing the post-Ukraine 2022 episode. The Bank of England similarly held rates, but Governor Andrew Bailey's explicit statement that "the prior expectation of scope to cut has changed" drove a sharp repricing in gilts. UK 10-year yields rose to their highest level since 2008, with the move amplified by February borrowing data that came in above forecast due to a surge in debt-interest costs. Sweden's Riksbank also held. The direction of travel across European central banks is now unmistakably toward tighter policy.</p>
@@ -270,7 +271,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#4a9e6b;">Corporate News</p>
 <p class="para-body">UniCredit launched a $40 billion bid for Commerzbank that would allow the Italian lender to increase its shareholding beyond the 30% threshold, easing the path toward a potential full acquisition. Unilever confirmed it is evaluating a separation of its food assets and has received an offer from McCormick for that division, valued by Barclays at approximately €28–31 billion — potentially the largest restructuring in the company's near-century history. HSBC announced it is weighing cuts to approximately 20,000 roles as part of an AI-driven restructuring of its middle and back offices. Logitech fell 5.7% in Zurich after a UBS downgrade on weaker gaming market signals, while HelloFresh dropped 9.6% in Frankfurt after issuing guidance materially below analyst expectations. Prudential Plc reported an increase in new business profit and announced an additional $1.2 billion share buyback. Italy's Giorgia Meloni government is consulting on restarting nuclear energy production as a long-term response to the country's elevated energy prices. ---</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">Strait of Hormuz: Escalation and Tentative Signals</p>
 <p class="para-body">The defining development across global markets this week was the continued closure of the Strait of Hormuz, now entering its fourth week, combined with a significant escalation mid-week and the first tentative signals of possible recalibration by week's end. Israel struck Iran's South Pars gas field on Thursday — the first attack on Iranian energy production facilities in the conflict — and Iran responded by striking Qatar's Ras Laffan Industrial City, causing "extensive damage" and sparking fires; two affected LNG trains are expected to remain offline for up to five years. Additional Iranian strikes hit a gas facility in Abu Dhabi, set ablaze two Kuwaiti oil refineries, and caused damage near a Saudi refinery. Tehran explicitly designated energy facilities in Qatar, Saudi Arabia, and the UAE as "legitimate targets." By Friday, however, Prime Minister Netanyahu stated Israel would no longer target energy infrastructure and said the war would end faster than people expect, while Iran's foreign minister signaled that recent restraint was deliberate. Whether this constitutes a durable de-escalation or tactical repositioning remains genuinely uncertain.</p>
@@ -291,6 +292,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

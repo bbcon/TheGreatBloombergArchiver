@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="#" class="nav-link active">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,7 +238,7 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Macro Backdrop: Inflation Anxiety Eclipses Easing Narrative</p>
 <p class="para-body">The dominant US theme this week was the bond market's accelerating repricing of the inflation outlook, as the closure of the Strait of Hormuz approached its three-month mark and the Iran war showed no clear path to resolution. Thirty-year Treasury yields rose to 5.19% on Tuesday, the highest level since June 2007, while 10-year yields touched 4.63% on Monday before easing modestly later in the week. The selloff reflected a convergence of factors: persistent energy-driven inflation concerns, expanding fiscal deficits, and a substantive reassessment of the Federal Reserve's policy path. Fed funds futures, which in late February implied a rate of approximately 2.8% by mid-2027, now price in a rate above 4%, with traders assigning roughly a 70% probability to a quarter-point hike by December.</p>
@@ -252,11 +253,11 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#5597cb;">Fiscal and Political Context</p>
 <p class="para-body">Senate Republicans pushed back on the administration's proposed $1.8 billion account to compensate alleged</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">The week was defined by the collision of two macro forces shaping Asia: the ongoing Iran war and the energy shock emanating from a closed Strait of Hormuz, and the increasingly concentrated AI-driven rally in regional equity markets. The two narratives pulled in opposite directions, leaving policymakers and investors to navigate sharply divergent outcomes across the region. China's economy showed broad-based weakness in April data released Monday, with retail sales rising just 0.2% year-on-year — the weakest reading since December 2022 — while industrial production expanded 4.1% and fixed-asset investment unexpectedly contracted 1.6% year-to-date. Car sales fell 15% and gold and jewelry sales declined 21%. The figures undershot every economist estimate surveyed by Bloomberg and prompted renewed calls for stimulus, though Beijing has thus far appeared reluctant to act. Separately, the previous week's Trump-Xi summit was reassessed by analysts as a "placeholder" exchange: China committed to $17 billion in annual US agricultural purchases through 2028 and to establishing trade and investment boards, but specifics remained vague, and the Boeing-related disappointment weighed on aircraft-linked names. Putin's visit to Beijing on Tuesday-Wednesday delivered atmospherics but no announced breakthrough on the Power of Siberia 2 pipeline. Xi publicly urged against any resumption of US strikes on Iran, while Russia's leverage in the gas negotiations appeared diminished — China retains alternative supply via Central Asia and robust domestic coal and renewables, and Beijing has folded the pipeline into its five-year plan on its own terms. The energy shock continued to ripple through the region. Japan's PM Takaichi reversed her earlier stance and instructed the finance ministry to compile an extra budget of roughly $19 billion, including revived energy subsidies; the 30-year JGB yield surged as much as 20 basis points Monday to its highest level since the tenor's 1999 debut. Japan's Q1 GDP, reported Tuesday, surprised to the upside at 2.1% annualized. Friday's CPI print showed core inflation slowing to a four-year low, complicating the BOJ's path. Thailand announced a 200 billion baht ($6.1 billion) cost-of-living package. India's rupee approached 97 per dollar, prompting the RBI to weigh rate hikes, FX swaps, and overseas dollar-raising measures reminiscent of its 2013 taper-tantrum playbook. Foreign outflows from Indian equities accelerated, and Reliance's Jio IPO hit roadblocks tied to war-driven volatility. Indonesia delivered the week's largest policy surprise. Bank Indonesia hiked the policy rate 50 basis points Wednesday to 5.25% — double consensus — to defend the rupiah. Hours earlier, President Prabowo announced that exports of palm oil, thermal coal, and ferro-alloys (totaling over $65 billion annually) would be routed through a new state-controlled entity under sovereign wealth fund Danantara. The Jakarta Composite fell 3.5% Tuesday and is down roughly 26% year-to-date, the world's worst major benchmark. Moody's flagged risks to confidence, and even senior Danantara officials were reportedly blindsided. The contrast with North Asian equities was stark. South Korea's Kospi, up 73% year-to-date and the world's best performer, fell more than 3% Tuesday before surging 8.4% Thursday after Samsung reached an eleventh-hour deal with its union — averting a strike — and Nvidia's earnings catalyzed a regional tech rally. Samsung chip employees stand to receive average bonuses of approximately $340,000. Taiwan's Taiex rose 3.4% Thursday; SK Hynix gained nearly 8%, pushing its market value toward $910 billion. Korean and Japanese export data for the first 20 days of May showed chip shipments up 202% and 44% respectively year-on-year, evidence that the AI capex cycle continues to insulate North Asian trade from the energy shock — though concentration risk is acute, with Samsung and SK Hynix accounting for two-thirds of the Kospi's 2026 gain. Geopolitically, President Lai used his two-year anniversary spe</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">Eurozone activity contracts as energy shock bites</p>
 <p class="para-body">The clearest signal of the week came from Thursday's flash purchasing managers' indices, which showed euro-area composite activity falling to 47.5 in May from 48.8 in April — the second consecutive month below the 50 contraction threshold and the weakest reading in two and a half years. France deteriorated sharply to its lowest level since 2020, while Germany's composite reading was broadly stable. The European Commission concurrently projected the bloc would experience its fastest inflation since 2023. Against this backdrop, Belgian ECB Governor Pierre Wunsch indicated a June rate hike is likely, and Christine Lagarde, questioned in Paris during the G-7 finance ministers' meeting on Monday, acknowledged the bond-market gyrations were "always my job" to monitor. The contrast with prior easing expectations is stark: the energy shock from the closure of the Strait of Hormuz, now approaching its third month, is forcing a broad reassessment across European central banks, with markets pricing further tightening rather than the cuts anticipated earlier this year.</p>
@@ -269,7 +270,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#4a9e6b;">Corporate developments</p>
 <p class="para-body">UK M&A activity continued its surge, with year-to-date target value reaching roughly $150 billion — a more than 250% increase and the strongest since 2015. Standard Chartered named Manus Costello CFO Monday and announced plans Tuesday to eliminate close to 8,000 support roles by 2030 through AI adoption; CEO Bill Winters subsequently apologized for characterizing the change as replacing "lower-value human capital." The planned Estée Lauder–Puig acquisition of Charlotte Tilbury collapsed on Thursday over compensation terms. Germany launched the privatization of Uniper, potentially Europe's largest utility transaction this year. The Council of Experts on Climate Change warned Germany is likely to miss its 2030 emissions target by up to 100 million tons of CO2, with the Merz coalition having abandoned the renewable heating mandate. ##</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">The Hormuz Premium Hardens Into a Macro Regime</p>
 <p class="para-body">What began nearly three months ago as an acute supply disruption has, by the close of week 21, settled into something resembling a structural condition. The Strait of Hormuz remained largely closed throughout the week, with commercial shipping reduced to limited Iranian-linked movements. Iran said on Friday that Washington's latest proposal had partly bridged differences, but Supreme Leader statements on retaining near-weapons-grade uranium and a reported Iran-Oman plan for a permanent toll regime in the strait undermined hopes of imminent resolution. President Trump called off a planned strike on Tuesday at the request of Gulf allies seeking more time for diplomacy, then by week's end threatened renewed action. NATO began discussions on potential intervention to reopen the waterway if it remained closed into early July. Oil prices reflected the oscillation between escalation and de-escalation rather than any directional conviction. Brent traded above $111 on Monday before falling 5.6% on Wednesday on diplomatic optimism, then climbing back toward $105 by Friday. WTI ended the week near $98. Goldman Sachs estimated global visible inventories were drawing down at 8.7 million barrels per day in May — nearly double the average pace since the conflict began — and US crude stocks including the SPR fell by a record 17.8 million barrels in the latest weekly print. Rapidan Energy warned that sustained closure through August could push Brent toward $130. A consensus is forming among market participants around $100 as the likely cap over the next year, with demand destruction expected to do the rebalancing work that supply cannot.</p>
@@ -290,6 +291,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

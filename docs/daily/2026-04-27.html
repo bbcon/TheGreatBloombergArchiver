@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,19 +238,19 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">The most consequential domestic development heading into this week is the resolution of the Fed leadership impasse. Senator Thom Tillis dropped his blockade of Kevin Warsh's nomination to chair the Federal Reserve after the Justice Department ended its criminal investigation of incumbent Chair Jerome Powell. The episode illustrates how institutional guardrails, however imperfect, retained enough force to produce an orderly outcome. Warsh, who carries both Wall Street and Fed credentials, is widely viewed as the most market-compatible nominee the administration could credibly advance. The remaining uncertainty concerns Powell's own intentions. His term as chair expires next month, but his governor's seat runs two more years. Whether he elects to remain as a governor — a decision that now appears less certain given the collapse of the legal pressure campaign against him — is likely to be the most closely watched subtext at Wednesday's FOMC meeting. The meeting itself is broadly expected to produce an unchanged rate decision, though markets will parse the statement for signals that sustained energy cost pressures are shifting the committee's reaction function. Equity markets enter the week at record highs, but the composition of the rally warrants scrutiny. The Philadelphia Semiconductor index has gained 47% over 18 consecutive positive sessions since markets perceived a thaw in the Iranian standoff — the longest winning streak in the index's history. At a trailing price-to-earnings multiple of roughly 60 times, valuations are elevated and appear to price in substantial margin expansion premised on chipmakers' pricing power over hyperscaler customers. That thesis faces a near-term test: Alphabet, Amazon, Meta, and Microsoft all report Wednesday, with Apple following Thursday. If any of these companies signal restraint in capital expenditure on chips, the feedback loop sustaining the semiconductor rally could weaken. University of Michigan consumer sentiment fell to 49.8 in April, its lowest reading since data collection began in 1978, suggesting the macro backdrop outside of equity markets remains more fragile than headline index levels imply.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">Asian equity markets advanced approximately 1.2% on Monday following an Axios report indicating Iran had transmitted a new proposal to Pakistan — the primary mediator — suggesting willingness to reopen the Strait of Hormuz in exchange for a lifting of the US port blockade, with nuclear negotiations deferred to a later phase. MSCI's emerging markets index reached a record level, and the regional technology gauge surged 3.3% to an all-time high, reflecting the same AI-driven semiconductor enthusiasm driving US markets. Taiwanese and South Korean indices, both heavily weighted toward chipmakers, have materially outperformed the US market over the eighteen months since the 2024 election. China featured prominently across several distinct developments. Beijing blocked Meta's $2 billion acquisition of agentic AI startup Manus, citing concerns over technology leakage to the US. The decision comes as Beijing tightens oversight of domestic AI firms and signals continued wariness about foreign acquisition of strategic technology assets. Separately, China's tax authorities launched a sweeping crackdown on circular invoicing practices in the metals trading sector, rattling copper, aluminum, and silver traders in Shanghai who rely on such invoices for bank financing. The State Taxation Administration framed the investigation as targeting fraudulent activity that has artificially inflated economic output measures. Economists have also sharply upgraded forecasts for China's import growth, now expecting it to surpass export expansion for the first time since 2021 — a development that, if sustained, could moderate political pressure over the bilateral trade balance. The US sanctioning of Hengli Petrochemical's Dalian refinery, one of China's largest private "teapot" operators, marks an escalation in Washington's effort to interdict Iranian oil revenues. Beijing's likely response — condemning the sanctions while maintaining de facto tolerance of private-sector flows — represents a calibrated posture that avoids a direct confrontation while protecting China's energy security interests. How Beijing responds formally will be watched ahead of an anticipated Trump-Xi meeting next month. In India, Sun Pharmaceutical agreed to acquire Organon for approximately $11.75 billion on an enterprise basis, marking one of the largest outbound acquisitions in Indian corporate history.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-body">Germany's economic outlook continues to deteriorate, with the government last week halving its 2026 growth forecast to 0.5% — a significant downward revision from projections made when Chancellor Merz took office promising a "year of growth." The Iran war's disruption to energy markets is the proximate cause, though Germany entered 2026 already burdened by structural competitiveness challenges. The Ifo Institute's business expectations index fell to its lowest level since 2023, while eurozone PMI data slipped into contraction territory with delivery times and input price inflation rising at their fastest pace since 2022 — consistent with mounting stagflationary pressure. Thursday's first-quarter GDP release will offer an early quantitative read on the damage, though economists expect the full impact to emerge in subsequent quarters given that hostilities began mid-period. Germany's €500 billion infrastructure stimulus fund may be the primary buffer preventing outright contraction, per Ifo President Clemens Fuest. King Charles III arrived in Washington Monday for a four-day state visit, including bilateral meetings with President Trump, a White House banquet, and an address to a joint session of Congress. The visit comes as UK-US relations are under strain, against the backdrop of a weekend shooting at the White House Correspondents' Dinner. Prime Minister Starmer faces his own domestic pressures: Labour appears set to lose control of the Welsh Parliament for the first time since its formation in 1999, with May 7 local election results expected to be broadly unfavorable for the government. In European corporate and financial developments, Germany was reported to have sounded out European banks earlier this year to serve as potential white knights in defense of Commerzbank against UniCredit's ongoing takeover approach. Bayer is seeking a favorable Supreme Court ruling today that could limit the scope of Roundup weedkiller litigation that has cost the company more than $10 billion. S&P cut credit ratings for Belgium and Slovakia and placed Finland on negative watch, reflecting fiscal deterioration partly linked to elevated energy costs. Lufthansa has cancelled approximately 20,000 flights over the next six months in response to the surge in jet fuel prices — an early and visible sign of the war's operational consequences for European aviation.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-body">The Strait of Hormuz remains effectively impassable, with Polymarket odds placing the probability of a full reopening by end-April at zero and end-of-May odds also unfavorable — implying the world's most critical oil artery could remain closed for a third consecutive month. Iran's Foreign Minister Araghchi traveled to Moscow on Monday to coordinate with President Putin after the weekend's second round of US-Iran peace talks failed to materialize despite Pakistani mediation efforts. Tehran's latest proposal — conveyed through Islamabad — calls for reopening the strait in exchange for a US lifting of its port blockade, with nuclear negotiations separated into a distinct later track. Washington's response remains to be seen. Oil markets reflect the unresolved standoff. Brent crude traded near $108 per barrel Monday, up roughly 2.5%, while WTI rose above $96. Goldman Sachs raised its fourth-quarter Brent forecast to $90 per barrel — up nearly $30 from pre-conflict projections — though spot prices remain elevated well above that level. December crude futures have settled near or above $80, suggesting markets are pricing a protracted disruption. The aviation sector is among the most acutely exposed: Delta Air Lines' fuel costs have doubled in a month, adding an estimated $2.5 billion to quarterly expenses. Lufthansa's 20,000-flight reduction is an early industry response; broader route cancellations appear likely if conditions persist into the peak summer travel season. The US escalated its campaign to isolate Iranian oil revenues by sanctioning Hengli Petrochemical's Dalian refinery, the first time Washington has targeted a major Chinese private refiner. The move is designed to raise the cost to Beijing of continued Iranian crude purchases, though China's likely response involves calibrated ambiguity rather than compliance. Separately, the US and EU announced an agreement to coordinate on critical minerals supply chains and reduce dependence on Chinese rare earths — a strategically significant step even if implementation details remain to be defined. The first international conference on transitioning away from fossil fuels convened in Santa Marta, Colombia, drawing more than 50 countries; the Iran war's disruption to energy markets has lent the gathering added urgency, though translating ambition into binding commitments remains the central challenge.</p>
 </div>
@@ -263,6 +264,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

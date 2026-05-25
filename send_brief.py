@@ -145,7 +145,9 @@ def get_logo_html(size: int = 40) -> str:
 
 def region_html(region: str, text: str) -> str:
     color = REGION_COLORS[region]
-    pairs = parse_paragraphs(text)
+    # Strip leading • bullet lines — email generates its own cross-regional bullets
+    stripped = "\n".join(l for l in text.splitlines() if not l.strip().startswith("•"))
+    pairs = parse_paragraphs(stripped)
 
     body_html = ""
     for title, body in pairs:

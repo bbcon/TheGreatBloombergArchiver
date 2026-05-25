@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,19 +238,19 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-body">Financial markets entered the week's final session under pressure from a confluence of geopolitical and monetary policy concerns. S&P 500 futures traded 0.44% lower as of early Friday, with WTI crude at $84.46 — up over 4% on the day — deepening concerns about the inflationary trajectory. The setup is politically awkward for the Trump administration: prior to the Iran conflict, the president appeared to be achieving his stated market preferences of lower oil, lower yields, and a weaker dollar. All three have now reversed. The dollar has reclaimed safe-haven status, Treasury yields edged higher to 4.163% on the 10-year, and gasoline pump prices reached their highest level under Trump's presidency at $3.32 per gallon. The Federal Reserve faces a familiar dilemma. With Jerome Powell at the helm, the institution's institutional instinct appears to be patience — the same posture it adopted during the tariff-driven inflation episode last year. Bloomberg Economics' Anna Wong argues the oil shock will create an "asymmetric easing bias": near-term headline inflation rises, but consumer spending on non-energy goods contracts, ultimately pushing unemployment higher. For now, hawkish voices appear to be prevailing within the FOMC. The monthly US jobs report released Friday provided an additional data point for policymakers to assess, with a stronger reading potentially further deferring rate cut expectations. On the fiscal side, the Supreme Court's invalidation of Trump's IEEPA-based tariffs continues to reverberate. The Committee for a Responsible Federal Budget estimates the ruling reduces government revenue by $1.7 trillion through 2036. The administration's replacement 10% levy would recoup approximately $925 billion, leaving a meaningful gap even if escalated to 15%. Federal debt accumulation continues on any modeled trajectory. On the corporate side, Marvell Technology surged 12% in premarket trading on accelerating data center demand, while Gap fell 6% on a disappointing Old Navy performance. Trump also dismissed Homeland Security Secretary Kristi Noem, naming Oklahoma Senator Markwayne Mullin as her replacement, raising questions about FEMA's leadership continuity ahead of the spring disaster season.</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-body">China's annual National People's Congress dominated regional attention this week, with Premier Li Qiang delivering a government work report that set the growth target at its lowest level since 1991. While the headline figure signals diminished ambition, Chinese officials framed the target as more credible and achievable than prior years, reflecting a deliberate pivot toward "quality" growth and deflation elimination — officials made their strongest commitment yet to ending deflationary conditions in 2026. Defense spending rose 7%, the slowest pace since 2022. The work report's characterization of US-China trade relations was notably upbeat, suggesting Beijing's leadership enters the upcoming Trump visit in Beijing with confidence in their negotiating position. Preparatory meetings between He Lifeng, Scott Bessent, and Jamieson Greer are expected in Paris next week, with potential deliverables including Boeing aircraft purchases, soybean commitments, and the fentanyl tariff framework. The Iran conflict's regional spillover is generating significant stress in Asian markets. Global funds sold a net $11 billion of emerging Asian equities excluding China this week — the largest outflow since March 2022 — with Taiwan absorbing $7.9 billion in withdrawals, South Korea $1.6 billion, and India approximately $1.3 billion. The US Treasury's temporary waiver allowing Indian refiners to resume Russian oil purchases provided some relief to New Delhi, though it simultaneously highlighted India's strategic exposure: a US submarine sank the Iranian frigate IRIS Dena off Sri Lanka after it had participated in an Indian Navy-hosted exercise, placing Modi in a diplomatically untenable position between Washington and Tehran. On China-Taiwan dynamics, Beijing has not dispatched military aircraft near Taiwan for seven consecutive days — the longest such absence since Taiwan began regular disclosure of PLA activity — a development whose significance remains unclear. Meanwhile, three Filipino nationals were detained for allegedly leaking sensitive South China Sea operational data to Beijing, heightening regional security concerns. The Bank of Japan remains on a rate-hiking path, with a former official placing April move odds at 50/50, even as the Iran conflict injects additional uncertainty into the global outlook.</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-body">European markets remained under mild pressure, with the Stoxx Europe 600 declining 0.28% amid the broader risk-off tone generated by the continuing Iran conflict. The most consequential regional development lies not in equities but in monetary policy signaling: the European Central Bank's policy trajectory appears to be shifting, with traders now fully pricing in a 2026 rate hike as the oil price surge fans inflation concerns. Bundesbank President Joachim Nagel was unambiguous on Thursday, stating that the inflation impact of the Iran war currently outweighs the growth drag — a view that, if shared by the broader Governing Council, would represent a meaningful pivot from the easing posture of recent quarters. Euro-area fourth-quarter GDP was simultaneously revised lower than initially reported, with trade weighing on output, creating a stagflationary tension that policymakers will need to navigate carefully. Germany provided a rare constructive energy datapoint: unusually strong solar generation in March, with installations feeding over 40 gigawatts into the grid for five consecutive days, has helped cap domestic electricity prices even as global energy markets surge. The episode illustrates the buffering capacity of domestic renewable generation during external supply shocks — a dynamic likely to reinforce policy arguments for accelerated energy transition investment across the continent. Bloomberg Opinion's Marcus Ashworth separately argued this environment represents an opportune moment for the EU to pursue joint bond issuance. The UK confronted a longer-term structural concern: London's child population is declining at the fastest pace in Britain, with the under-10 cohort falling by 99,100 between 2013 and 2023 even as total population rose by 506,000. The capital's fertility rate has dropped below 1.2 births per woman, well below the England and Wales average of 1.41. The demographic implications for school infrastructure, public services, and long-run fiscal capacity are material. Spain also emerged as a flashpoint in the Iran war's diplomatic fallout, with the Trump administration threatening to cut off LNG exports to Madrid after Spain denied access to military bases — a threat that, if executed, would expose Spain to higher marginal gas procurement costs.</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-body">The US-Israel military campaign against Iran entered its seventh day with no evident de-escalation, reshaping energy markets, financial flows, and geopolitical alignments simultaneously. Iranian missiles and drones struck at least five countries across the Gulf region, including Saudi Arabia, Kuwait, and Bahrain, while Israeli airstrikes continued on Tehran. The Strait of Hormuz has effectively ceased functioning as an oil transit corridor — only two commercial vessel transits were recorded in the preceding 24-hour period and no oil shipments passed through at all. Goldman Sachs flagged the plausibility of Brent crossing $100 per barrel if low flows persist for another five weeks; Brent has already rallied approximately 18% on the week, with US diesel futures on track for a weekly gain exceeding 40%. The Trump administration has ruled out deploying Treasury to trade oil futures to suppress prices, at least for now, while the temporary waiver on Indian purchases of Russian crude represents a tactical release valve that simultaneously benefits Moscow's war finances at a moment when sanctions were beginning to bite meaningfully. The conflict is forcing central banks globally to confront another supply-side inflation shock in what has become a structurally shock-prone decade — Covid, the Russia-Ukraine war, mercantilist trade disruptions, and now a Middle East regional war have each required difficult monetary policy judgments under uncertainty. The IMF's Kristalina Georgieva warned that a sustained 10% increase in energy prices would push global inflation up 40 basis points and shave 0.1-0.2% from growth. Traditional safe-haven assets have behaved anomalously: gold has declined and is trading at a steep discount in Dubai, while Treasuries have also sold off, leaving the dollar as the primary haven vehicle. Geopolitically, Russia has emerged as the clearest early beneficiary of the conflict. India's return to Russian crude purchasing — with buyers paying premiums for stranded cargoes — replenishes the Kremlin's revenue stream at a critical juncture. The UAE and Gulf financial hubs face reputational and operational pressure as their image as stable commercial anchors is tested. Meanwhile, a new scientific study published in Geophysical Research Letters provides the first statistically significant evidence of an acceleration in global warming, with the planet warming at approximately 0.35°C per decade since 2015, nearly double the average rate between 1970 and 2015 — a finding that adds long-term structural urgency to energy transition debates even as immediate policy attention is consumed by the conflict.</p>
 </div>
@@ -263,6 +264,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>

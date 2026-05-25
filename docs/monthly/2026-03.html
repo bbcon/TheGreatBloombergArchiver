@@ -17,7 +17,7 @@ a { color: inherit; text-decoration: none; }
 /* ── Nav ── */
 .nav {
   background: #040505;
-  padding: 0 48px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   height: 56px;
@@ -25,6 +25,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
 }
 .nav-logo {
   font-size: 17px; font-weight: bold; color: #fff;
@@ -32,13 +33,22 @@ a { color: inherit; text-decoration: none; }
   background: #1a1a2e;
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  margin-right: 14px; flex-shrink: 0;
+  flex-shrink: 0;
 }
-.nav-title {
-  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-  color: #5597cb; font-weight: 600; margin-right: auto;
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
 }
-.nav-links { display: flex; gap: 4px; }
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
 .nav-link {
   font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
   color: #888; padding: 8px 14px; border-radius: 4px;
@@ -57,38 +67,54 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 2px; margin-bottom: 12px;
 }
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
 .para-title {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 1.2px; margin-bottom: 4px;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
 }
+.para-title:first-of-type { margin-top: 0; }
 .para-body {
-  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 16px;
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
 }
 .para-body:last-child { margin-bottom: 0; }
 
 /* ── Accordion ── */
 .accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-
 .accordion-item {
-  background: #fff;
-  border-radius: 4px;
+  background: #fff; border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+  overflow: hidden; transition: box-shadow 0.2s;
 }
 .accordion-item:has(.accordion-trigger.open) {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
-
 .accordion-trigger {
   width: 100%; background: none; border: none; cursor: pointer;
   display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px; text-align: left;
-  transition: background 0.15s;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
 }
 .accordion-trigger:hover { background: #fafbfc; }
 .accordion-trigger.open { background: #f5f8fd; }
-
 .accordion-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: #5597cb; flex-shrink: 0;
@@ -97,18 +123,15 @@ a { color: inherit; text-decoration: none; }
 .accordion-meta { font-size: 11px; color: #bbb; }
 .accordion-chevron {
   font-size: 18px; color: #ccc; flex-shrink: 0;
-  transition: transform 0.2s ease, color 0.2s;
-  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
 }
 .accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
-
 .accordion-body { display: none; border-top: 1px solid #f0f0f0; }
 .accordion-body.open { display: block; }
-.accordion-content {
-  padding: 28px 40px 32px;
-}
+.accordion-content { padding: 28px 40px 32px; }
 .accordion-content .region { margin-bottom: 24px; }
 .accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
 
 /* ── Archive page header ── */
 .page-title {
@@ -116,53 +139,36 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.5px; margin-bottom: 6px;
 }
 .page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
-
 .empty-state {
-  color: #999; font-size: 14px;
-  background: #fff; border-radius: 4px;
-  padding: 48px; text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 /* ── Landing page ── */
 .landing-hero {
-  background: #040505;
-  padding: 36px 48px 32px;
+  background: #040505; padding: 36px 48px 32px;
   border-radius: 4px 4px 0 0;
 }
 .landing-hero-label {
   font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
   color: #5597cb; font-weight: 600; margin-bottom: 8px;
 }
-.landing-hero-date {
-  font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2;
-}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
 .landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
-
 .accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
-
 .landing-card {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  margin-bottom: 32px;
-  overflow: hidden;
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
 }
 .landing-card-body { padding: 32px 48px; }
-
 .archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
 .archive-nav-card {
-  flex: 1; min-width: 160px;
-  background: #fff; border-radius: 4px;
-  padding: 20px 24px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   transition: box-shadow 0.15s, transform 0.15s;
   display: flex; flex-direction: column; gap: 6px;
 }
-.archive-nav-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-1px);
-}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
 .archive-nav-label {
   font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
   color: #5597cb; font-weight: 600;
@@ -173,18 +179,13 @@ a { color: inherit; text-decoration: none; }
 /* ── Permalink brief pages ── */
 .card {
   background: #fff; border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 32px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
 }
-.brief-hdr {
-  background: #040505; padding: 32px 48px 28px;
-  border-radius: 4px 4px 0 0;
-}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
 .brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
 .brief-logo {
   font-size: 17px; font-weight: bold; color: #fff;
-  font-family: Georgia, serif;
-  background: #1a1a2e;
+  font-family: Georgia, serif; background: #1a1a2e;
   width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -204,14 +205,14 @@ a { color: inherit; text-decoration: none; }
 }
 .back:hover { color: #5597cb; }
 
-@media (max-width: 600px) {
-  .nav { padding: 0 16px; }
-  .nav-title { display: none; }
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
   .page { padding: 24px 16px 60px; }
   .landing-hero { padding: 24px 20px; }
-  .landing-card-body { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
   .accordion-content { padding: 20px; }
-  .card-body { padding: 24px 20px; }
   .brief-hdr { padding: 24px 20px; }
 }
 </style>
@@ -220,7 +221,7 @@ a { color: inherit; text-decoration: none; }
 
 <nav class="nav">
   <a href="../index.html" class="nav-logo">M</a>
-  <span class="nav-title">The Macro Brief</span>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
   <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="#" class="nav-link active">Monthly</a></div>
 </nav>
 <div class="page">
@@ -237,7 +238,7 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="accent"></div>
   <div class="card-body">
-    <div class="region" style="border-color:#5597cb;">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
   <p class="region-name" style="color:#5597cb;">US</p>
   <p class="para-title" style="color:#5597cb;">Tariff Architecture in Transition</p>
 <p class="para-body">The defining US macro development across March was a wholesale restructuring of the trade policy framework. The Supreme Court's invalidation of IEEPA-based tariffs mid-month, followed by the administration's rapid pivot to a 10% global levy under Section 122 of the Trade Act of 1974, left an estimated $170 billion in contested duties the subject of more than 1,500 refund lawsuits filed by mid-month. Legal scholars broadly questioned whether the Section 122 threshold — requiring evidence of "fundamental international payments problems" — is met, though courts are unlikely to move within the 150-day expiry window. Treasury Secretary Bessent's characterization of refund claims as "corporate welfare" signaled the administration's combative posture. Separately, a fresh Section 301 investigation targeting over a dozen economies including China, the EU, Mexico, India, and Taiwan was filed late in the month, with a public hearing set for May 5. The Committee for a Responsible Federal Budget estimated the IEEPA invalidation reduces government revenue by $1.7 trillion through 2036, with the replacement levy recouping approximately $925 billion.</p>
@@ -252,7 +253,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#5597cb;">Macro Backdrop and Consumer</p>
 <p class="para-body">The macro context entering March was already mixed: 2025 GDP growth confirmed at 2.2%, the slowest since the post-COVID expansion, with core inflation ending 2025 at 3%. February payrolls, released at the start of the second week, recorded the first private-sector decline in five years, while February CPI printed a benign 2.5% year-on-year core — relief that proved short-lived given PCE dynamics. University of Michigan consumer sentiment fell to a three-month low in the preliminary March reading, January consumer spending was essentially flat, and KB Home lowered full-year guidance citing the conflict as a contributing factor. Goldman Sachs projected unemployment rising to 4.6% by year-end from 4.4% in February, and the OECD projected US inflation reaching 4.2% in 2026. What remains unresolved at month-end is whether the energy shock proves transitory — contingent on Hormuz reopening — or persistent enough to transform the current stagflation tension into a genuine contraction, a question the Fed cannot yet answer and on which the range of plausible outcomes remains unusually wide. ---</p>
 </div>
-<div class="region" style="border-color:#e07b39;">
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
   <p class="region-name" style="color:#e07b39;">Asia</p>
   <p class="para-title" style="color:#e07b39;">Regional Tariff Arithmetic and Early Trade Disruption</p>
 <p class="para-body">Asia's month opened with significant reconfiguration of its US trade exposure. The Supreme Court's early-month invalidation of IEEPA tariffs reduced average US levies on Chinese goods from 32% to approximately 24%, with the Asia-wide weighted average falling from roughly 20% to 17%, per Morgan Stanley estimates. Hong Kong's Hang Seng China Enterprises index rallied 2.65% on the first Monday of the month. The subsequent 10% global Section 122 tariff created a more complex winners-and-losers map, with India — which had been advancing toward an interim deal — postponing its trade mission citing uncertainty over the new framework's legal durability. By month-end, a pending $14 billion US arms package for Taiwan had emerged as a significant latent irritant, and a fresh Section 301 investigation targeting South Korea, India, Taiwan, and others added further trade complexity. Preparatory talks in Paris between Bessent, USTR Greer, and Vice Premier He Lifeng laid the ground for a Trump-Xi summit, originally planned for late March, then postponed to approximately May 14–15.</p>
@@ -267,7 +268,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#e07b39;">India and Southeast Asia</p>
 <p class="para-body">India's position grew increasingly complex. New Delhi had been reducing Russian oil purchases under US pressure, pivoting toward Gulf supply — precisely the channels most disrupted by the Hormuz closure. Washington's one-month sanctions waiver allowing Indian refiners to resume Russian crude purchases provided material relief, though it simultaneously illustrated India's acute energy exposure. The rupee weakened past 93 per dollar to a record low, with Nomura projecting 96 by end-June; over 330 million households relying on LPG saw delivery times stretch from five to 25 days in some regions. A US submarine attack on the Iranian frigate IRIS Dena off Sri Lanka mid-month — following the ship's participation in an Indian Navy-hosted fleet review — created a diplomatically fraught situation, forcing Prime Minister Modi to call for "dialog and diplomacy" while facing pointed questions about sovereignty in India's own maritime neighborhood. The Philippines declared a national energy emergency, warned of potential aviation grounding due to jet fuel shortages, and is reportedly considering setting aside South China Sea territorial disputes to explore cooperative oil exploration with Beijing — a geopolitically significant pivot. Southeast Asian governments imposed emergency conservation measures: Thailand ordered civil servants to work from home, the Philippines shifted to a four-day government work week, and Vietnam faces potential airfare increases of up to 70%. What remains unresolved across the region at month-end is whether the Hormuz disruption proves temporary — enabling a return to prior growth trajectories — or persistent enough to accelerate structural energy transitions and force durable geopolitical realignments. ---</p>
 </div>
-<div class="region" style="border-color:#4a9e6b;">
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
   <p class="region-name" style="color:#4a9e6b;">Europe</p>
   <p class="para-title" style="color:#4a9e6b;">Equity Markets: From Outperformance to Reversal</p>
 <p class="para-body">March opened with European equities completing what had been the dominant cross-regional theme of early 2026. The Stoxx Europe 600 closed February with an eighth consecutive monthly gain — its longest winning streak since 2013 — up 3.7% for the month, with European companies announcing €85.7 billion in share buybacks in the January–February period, the highest ever for that period per Barclays data. US borrowers simultaneously issued record volumes of euro-denominated reverse Yankee bonds, attracted by yields approximately 170 basis points below comparable US-denominated issuance. That picture reversed sharply from the second week onward as the Iran conflict's energy implications became clear. European natural gas futures surged as much as 52% in a single session in the second week — the largest intraday gain since the 2022 crisis — following Iranian drone attacks on Qatar's Ras Laffan LNG facility. By the final week, European gas prices had risen more than double pre-conflict levels. France's CAC declined 7.6% in March and Switzerland's SMI fell 8.1%, while the Stoxx 600 ended the month under sustained pressure. The iTraxx Europe investment-grade index reached its highest level since May, and the Crossover index crossed 300 basis points for the first time since June.</p>
@@ -280,7 +281,7 @@ a { color: inherit; text-decoration: none; }
 <p class="para-title" style="color:#4a9e6b;">Industrial Policy and Corporate News</p>
 <p class="para-body">European industrial policy underwent a substantive shift. Brussels finalized a draft industrial act with strict local-content criteria favoring European firms in public procurement and requiring some foreign competitors to share technology and hire locally — a meaningful departure from the free-trade framework governing EU industrial policy for decades. The European Parliament trade chief moved to freeze ratification of the EU-US trade agreement pending clarification of Washington's revised policy framework. US warnings against "Made in Europe" content rules added bilateral friction. In corporate news, HSBC reported full-year pretax profit of $29.9 billion, surpassing expectations and sending shares up 5.4% in London; the bank is separately weighing cuts to approximately 20,000 roles as part of an AI-driven restructuring. UniCredit launched a $40 billion bid for Commerzbank, easing the path toward potential full acquisition. Unilever confirmed evaluation of a food asset separation with McCormick reportedly offering for the division — valued by Barclays at €28–31 billion, potentially the company's largest-ever restructuring. Adidas fell 7.6% in Frankfurt after a profit forecast that missed on tariff and currency headwinds. Novo Nordisk rose 3.5% after US regulators moved against copycat GLP-1 drugs. Germany's €600 billion defense spending program is generating tangible stimulus, with defense suppliers reporting record order books. What remains unresolved at month-end is whether Europe faces a rerun of 2022's energy-driven stagflation — with the ECB forced to choose between credibility and growth — or whether the conflict de-escalates quickly enough to contain the damage. The answer depends almost entirely on the Strait of Hormuz. ---</p>
 </div>
-<div class="region" style="border-color:#8b5cf6;">
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
   <p class="region-name" style="color:#8b5cf6;">Global</p>
   <p class="para-title" style="color:#8b5cf6;">The US-Iran Conflict: Scope and Trajectory</p>
 <p class="para-body">The defining event of March 2026 — and the organizing variable for virtually every global asset class by month-end — was the US-Israeli military campaign against Iran's nuclear infrastructure, which commenced over the final weekend of February. The conflict escalated rapidly and non-linearly: within the first week, satellite imagery had confirmed active Iranian efforts to conceal and harden nuclear sites, a NATO AWACS aircraft in Turkey shifted operational focus from Russia to Iran, and Trump's overnight video address acknowledged the possibility of US casualties. The killing of Ayatollah Ali Khamenei in a US-Israeli strike in the second week — the most direct US targeting of a foreign head of state in the modern era — triggered a succession to his son Mojtaba Khamenei, with deep IRGC ties, who vowed to keep Hormuz effectively closed. By the third week, the conflict had expanded geographically: Iranian missiles and drones struck Saudi Arabia, Kuwait, Bahrain, and UAE infrastructure; Israel struck Iran's South Pars gas field; a US submarine sank the Iranian frigate IRIS Dena off Sri Lanka in the first American submarine attack on a surface vessel since World War II; and Dubai International Airport briefly halted operations following drone strikes. Trump extended a 48-hour ultimatum on energy infrastructure strikes by five days in the final week, citing diplomatic contact, then extended it a further ten days to April 6. Iran publicly rejected US overtures, while Wall Street Journal and New York Times reports suggested back-channel Omani intermediation — a contradictory signaling environment that reflects genuine uncertainty about Iran's internal decision-making following the deaths of multiple senior officials. Prediction markets placed a 52% probability on the conflict extending beyond April 30.</p>
@@ -303,6 +304,25 @@ function toggleAccordion(btn) {
   body.classList.toggle('open', !isOpen);
   btn.classList.toggle('open', !isOpen);
 }
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
 </script>
 </body>
 </html>
