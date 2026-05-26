@@ -1,0 +1,12 @@
+• Taiwan's stock market overtook India in total market capitalization, driven primarily by TSMC's sustained rally on AI semiconductor demand.
+• South Korea's Kospi surged 2.6%, bucking the cautious tone in broader Asian markets.
+• China moved to restrict overseas travel for top AI professionals at firms including Alibaba and DeepSeek, in what appears to be a material escalation of technology-security controls.
+• Japan's net external assets rose to an all-time high of ¥561.8 trillion, yet the country slipped to third-largest creditor nation as China's net external position grew faster.
+
+**China: AI Controls and Physical Robotics**
+Beijing's decision to impose overseas travel restrictions on strategically important AI personnel represents a notable shift in posture — less an isolated measure than part of a broader effort to prevent talent and intellectual property from migrating abroad. The move coincides with growing recognition, articulated by analysts at Alpine Macro and Barclays, that China's advantages in physical AI — manufacturing scale, rare-earth dominance, and actuator supply chains — may be more durable than its current gap in large language models. Barclays estimates that the "brawn" component, dominated by actuators reliant on magnetic rare earths, accounts for roughly 50% of humanoid production costs, a segment where China's industrial base is difficult to challenge in the near term. Chinese IT stocks have now outperformed even the US tech sector under Trump's second term, which appears to partly reflect this reappraisal.
+
+**Japan and South Korea**
+Japan's net external asset position reached a record ¥561.8 trillion at end-2025, yet the country now ranks third globally after Germany and China. The structural shift reflects the faster accumulation of China's overseas net position rather than any deterioration in Japan's. Separately, South Korea announced plans to develop nuclear-powered submarines under the "Jangbogo-N" program, with initial deployment targeted for the late 2030s. Officials framed the initiative as both a response to North Korea's submarine-based nuclear capabilities and a long-term industrial anchor for shipbuilding, nuclear energy, and defense manufacturing — sectors that stand to benefit from sustained government procurement.
+
+---

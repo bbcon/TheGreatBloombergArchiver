@@ -1,0 +1,12 @@
+• Bund yields and inflation breakevens fell sharply on Monday as prospects of a Hormuz deal raised hopes of easing energy-cost pressures, though fresh US strikes on Iran have since partially reversed the move.
+• ECB rate-hike expectations moderated, with markets paring back bets on three hikes this year following the shift in the oil outlook.
+• ECB's Isabel Schnabel told Reuters the ECB should hike rates in June, while Governing Council member Villeroy noted second-round inflation effects have not yet materialized.
+• Italy's governing coalition claimed an unexpected mayoral victory in Venice, a modest but politically meaningful win for Prime Minister Meloni two months after a referendum defeat.
+
+**ECB Policy and the Hormuz Effect**
+The potential Hormuz deal created an abrupt reassessment of European macro risks on Monday, given that Europe — as a large net oil importer — has been disproportionately exposed to the supply disruption. Citi's economic surprise indexes showed a striking divergence between European and US macro performance over the past three months, consistent with the asymmetric impact of the conflict. Bund yields and inflation expectations both moved sharply lower, and ECB rate expectations softened accordingly. The tension within the Governing Council is now visible: Schnabel's call for a June hike sits uncomfortably alongside Villeroy's observation that second-round effects have yet to materialize, and the uncertainty over whether any Hormuz deal will hold complicates both positions. European banks are also in focus after a report that lenders have offloaded risk on $500 billion of corporate loans — a transaction volume drawing regulatory scrutiny.
+
+**UK and Political Landscape**
+UK markets were closed for the Monday holiday, limiting the immediate domestic reaction to the oil-market moves. Political commentary centered on speculation over the next Treasury Secretary, with former energy secretary Ed Miliband identified by some in Westminster circles as a possible candidate — a suggestion that met with notable skepticism from political analysts who view the field as stronger elsewhere. In Spain, a developing graft probe involving former Prime Minister Zapatero has introduced fresh uncertainty around the governing coalition's stability ahead of elections, as the investigation unsettles the alliance supporting current Prime Minister Sánchez.
+
+---

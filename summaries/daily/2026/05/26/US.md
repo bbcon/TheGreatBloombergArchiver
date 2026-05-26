@@ -1,0 +1,12 @@
+• US equity futures extended gains (+0.6% for S&P 500 futures) even as fresh US strikes on Iranian targets injected renewed uncertainty into ceasefire negotiations.
+• The Fed's first full week under Chair Kevin Warsh began with markets pricing rate hikes by early 2027, reversing expectations from just three months ago when cuts were the consensus.
+• The PCE price index — the Fed's preferred inflation gauge — is due Thursday, with consensus expecting a reading approaching 4%, driven primarily by energy costs.
+• MSCI momentum stocks are on track for their strongest two-month outperformance versus the broad market on record, with AI mania identified as the dominant driver.
+
+**Federal Reserve and Monetary Policy**
+Kevin Warsh was sworn in as Fed Chair on Friday, and markets have wasted little time pricing the implications. Traders now assign high probability to the first rate hike arriving by March 2027, a complete reversal from the rate-cut expectations that prevailed in late February. The 5s30s Treasury spread has compressed to its tightest level in a year, reflecting a "higher for longer" repricing at the front end. Warsh received rare license from President Trump at his swearing-in — "don't look at me, just do a great job" — though whether that deference persists under political pressure remains to be seen. Thursday's PCE reading, expected near 4%, will be the week's pivotal data point: a significant upside surprise could accelerate the timetable for tightening.
+
+**Equity Markets and Momentum**
+US equity futures held gains despite the Iran-related volatility in crude, suggesting markets are treating the overnight strikes as tactically defensive rather than strategically escalatory. The more consequential story may be the momentum trade itself: MSCI's global momentum gauge has outperformed the ACWI by 17 percentage points since end-March, the best two-month run in three decades of data. Bank of America's Michael Hartnett characterized the environment as "bubbly," noting retail mania and compressed volatility. The risk is straightforward — crowding in a narrow set of AI-linked winners leaves the market highly sensitive to any inflation or earnings shock that forces the Fed's hand more aggressively than current pricing implies.
+
+---
