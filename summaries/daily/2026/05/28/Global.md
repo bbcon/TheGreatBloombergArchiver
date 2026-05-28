@@ -1,0 +1,13 @@
+• Brent crude advanced to approach $97 after US forces struck Iranian drone launch units near the Strait of Hormuz; WTI had fallen 5.5% the prior session on deal optimism
+• Trump declared no single nation would control the Strait, articulating a maximalist US position that complicates negotiation
+• Gold has shed nearly 20% from its late-January peak and trades around $4,490, with UBS trimming its year-end forecast to $5,500
+• Israel deepened operations in southern Lebanon as Hezbollah deployed fiber-optic-guided drones to counter Israeli electronic warfare capabilities
+
+**US-Iran: Stasis and Its Costs**
+The conflict has entered a phase of costly stasis. The US characterises its strikes as defensive and insists the ceasefire remains nominally intact, yet the exchange of drone and missile fire signals the fragility of that framework. Trump's public positioning — "maybe we have to go back and finish it" — reflects the bind he faces: Iranian demands for financial relief and an end to hostilities sit in direct tension with Republican hawks pressing for a more decisive outcome. The longer this continues, the greater the risk that second-order economic effects — food and energy inflation, shipping cost pass-through — accumulate to a degree that becomes politically harder to manage, even in the absence of a market-based forcing mechanism.
+
+**Oil Markets**
+The crude market is operating in a high-volatility, news-driven regime. Wednesday's sharp decline on deal optimism was almost entirely reversed in Asian trade following the renewed strikes, illustrating how thin the informational basis for large directional moves remains. Brent near $97 is consistent with meaningful but not yet acute pressure on global growth; the threshold for genuine macro damage likely lies higher, though the path there has become easier to envisage if negotiations stall further.
+
+**Gold and Precious Metals**
+Gold's inability to sustain a safe-haven bid despite ongoing geopolitical risk is analytically significant. Rising real yields, dollar strength since the conflict began, and the unwind of speculative positioning built during 2025's exceptional run are the proximate explanations. The deeper issue may be that investors are pricing a resolution — or at least pricing out a catastrophic escalation — more confidently than the headlines suggest. UBS's revised $5,500 year-end forecast and ByteTree's framework linking gold to real yield dynamics both point to a consolidation phase that could extend for twelve months or more before any durable recovery takes hold.
