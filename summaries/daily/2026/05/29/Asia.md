@@ -1,0 +1,16 @@
+• South Korea's Kospi surged 3.6% on the day and 24% for the month, driven by a Samsung and SK Hynix rally so large that some funds are being forced to sell positions that have breached concentration limits.
+• Taiwan raised its 2026 GDP growth forecast to 9.6% from 7.7%, a meaningful beat citing AI-driven demand for semiconductors and tech goods.
+• Huawei unveiled "LogicFolding," a chip architecture it claims can enable 1.4nm-equivalent performance by 2031 without EUV lithography, sending SMIC and Hua Hong shares sharply higher.
+• Japan's two-year bond yield rose after a lukewarm auction, extending the pressure on JGB markets that has drawn renewed intervention warnings from Finance Minister Katayama.
+• China's export prices rose at the sharpest pace in three years, reflecting both commodity pass-through and the tech export boom.
+
+**Huawei Semiconductor Breakthrough**
+The most consequential technology development of the period is Huawei's public disclosure of its LogicFolding architecture at a chip conference in China. Presented by semiconductor chief He Tingbo, the technology seeks to improve chip performance by shortening internal data-transmission distances rather than shrinking transistors — an approach designed explicitly to circumvent China's inability to procure ASML's EUV machines. The company targets 1.4nm-equivalent chip production by 2031, roughly three years behind TSMC's current roadmap. Bloomberg Intelligence notes that if commercially viable, this would help Chinese AI firms maintain competitiveness despite Nvidia export restrictions. Material engineering hurdles remain — heat dissipation, manufacturing complexity, and economic scale — but the market reaction was immediate, with SMIC and Hua Hong shares soaring. The disclosure matters geopolitically as well: it bolsters the argument, previously advanced by Nvidia's Jensen Huang, that export controls may accelerate rather than prevent Chinese semiconductor self-sufficiency.
+
+**Korea and Taiwan Equity Surge**
+Samsung and SK Hynix have driven South Korea's Kospi to a 24% monthly gain — an extraordinary move for a major index — on the back of the global AI infrastructure buildout. The rally has become self-reinforcing for MSCI's emerging-markets index, which gained 7.8% in May to an all-time high, with AI component makers as the primary engine. Taiwan's upward GDP revision to 9.6% for 2026 reinforces that the semiconductor cycle remains in full expansion, and Lenovo's Hong Kong-listed shares gained 105% in May on AI server growth prospects.
+
+**China Capital Controls and Geopolitics**
+Beijing launched what sources describe as its biggest crackdown on offshore capital flows in decades, which directly hit online brokerage Futu: its founder lost $1.7 billion in a single day, representing a quarter of his net worth. Chinese Foreign Minister Wang Yi visited Ottawa — the first such visit in a decade — reflecting a deliberate diplomatic realignment as Canada diversifies away from US dependency, exchanging EV tariff reductions for lower Canadian agricultural levies. In the South China Sea, ship-tracking data reveal intensifying Chinese coast guard activity around the Spratly Islands, raising the risk of confrontation with Vietnam.
+
+---

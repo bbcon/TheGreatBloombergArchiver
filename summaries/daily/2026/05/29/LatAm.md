@@ -1,0 +1,11 @@
+• The US announced it will designate Brazil's two main organized-crime groups — Primeiro Comando da Capital and Comando Vermelho — as terrorist organizations, a move likely to reignite tensions between Washington and President Lula.
+• Venezuela opposition leader María Corina Machado expressed willingness to negotiate with the interim government on a path to presidential elections, a potential opening backed by Washington.
+• Industrial metals posted their best monthly performance since January, benefiting commodity-exporting economies across the region.
+
+**Brazil-US Political Friction**
+The US designation of Brazil's two largest criminal organizations as terrorist entities is the most consequential LatAm development of the period. The move gives US law enforcement expanded tools to pursue international financial flows linked to PCC and CV, but carries significant diplomatic cost: Lula has consistently resisted framing Brazilian organized crime through a counterterrorism lens, and any perception of US interference in domestic security matters is politically toxic in Brasília. The relationship between Trump and Lula was already strained by trade policy and ideological divergence; this designation adds a new source of bilateral friction at a moment when Brazil is deepening its own commodity export relationships with China. The macro implications are indirect but real — political turbulence in Brazil tends to widen sovereign spreads and weaken the real, though neither move has been confirmed in available data for this period.
+
+**Venezuela and Regional Politics**
+Machado's signal of willingness to negotiate on a path to elections is a meaningful shift in tone, suggesting Washington's pressure campaign may be producing some movement at the margins. The broader regional picture is shaped by the commodity cycle: industrial metals' best monthly performance since January benefits Chile, Peru, and Colombia through terms-of-trade improvement, providing some offset to the tighter global financial conditions implied by higher US rates. The China-Canada rapprochement, including reduced EV tariffs, is a reminder that Beijing's commercial outreach in the Western Hemisphere is broadening, with potential implications for trade competition in agricultural and resource markets where LatAm producers compete.
+
+---

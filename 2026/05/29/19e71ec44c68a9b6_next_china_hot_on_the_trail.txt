@@ -1,0 +1,337 @@
+Subject: Next China: Hot on the Trail
+Date: Fri, 29 May 2026 04:09:28 +0000
+
+Huawei Aims to Narrow China’s Semiconductor Gap With the US
+Huawei aims to make advanced chips – and close the gap with the US – with its 
+own special tech ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-05-29/huawei-aims-to-narrow-china-s-semiconductor-gap-with-the-us?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ 
+<https://www.bloomberg.com/asia?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+
+ 
+<https://sli.bloomberg.com/click?s=1149229&li=18328137&m=11b724c487f61753eb1a7a4a5f3ef261&p=05292026040928&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149229&li=18328137&m=11b724c487f61753eb1a7a4a5f3ef261&p=05292026040928&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Hello, this is Allen Wan in Shanghai.
+
+Huawei is trying to take a great leap forward to narrow the tech gap between 
+it and industry leader Taiwan Semiconductor Manufacturing Co.
+
+The Chinese maker of smartphones and chips says it has potentially achieved a 
+breakthrough in making advanced semiconductors 
+<https://www.bloomberg.com/news/articles/2026-05-25/huawei-touts-chipmaking-breakthrough-to-shorten-gap-with-tsmc?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ without cutting-edge equipment through its own “LogicFolding” technology.
+
+That approach can boost the performance of a chip by optimizing data 
+transmission speed.
+
+It is a way to compete against chipmakers such as TSMC, Samsung Electronics 
+and Intelwithout needing to shrink transistors 
+<https://www.bloomberg.com/news/articles/2026-05-27/what-to-know-about-huawei-s-new-ai-chipmaking-plan-logicfolding-tech?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+, a process that requires extreme ultraviolet lithography machines made by 
+Dutch supplier ASML. China can’t get that equipment, widely considered 
+essential for production of advanced semiconductors that power the most 
+sophisticated AI models.
+
+If Huawei succeeds — a big if — it and manufacturing partner Semiconductor 
+Manufacturing International Corp. could narrow TSMC’s five-year lead in the 
+most advanced chips.
+
+Success would also show that efforts by the US to expand export restrictions 
+on China have failed to curtail its progress and instead bolster arguments made 
+by people like Nvidia CEO Jensen Huang that curbs could just spur rivals to 
+accelerate their own development.
+
+Chinese authorities have yet to allow the import of Nvidia’s AI chips from the 
+US, though there have been reports ofsmuggling of advanced semiconductors 
+<https://www.bloomberg.com/news/articles/2026-05-27/taiwan-said-to-suspect-nvidia-chips-smuggled-to-china-via-japan?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ through countries such as Malaysia and even Japan.
+ 
+<https://www.bloomberg.com/news/videos/2026-05-26/huawei-touts-chip-breakthrough-to-shorten-gap-with-tsmc-video?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+WATCH 
+<https://www.bloomberg.com/news/videos/2026-05-26/huawei-touts-chip-breakthrough-to-shorten-gap-with-tsmc-video?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+: Huawei touts chipmaking breakthrough to narrow gap with TSMC.
+Huawei’s possible breakthrough represents a boon for President Xi Jinping’s 
+self-sufficiency drive. China’sincreasingly bifurcated economy 
+<https://www.bloomberg.com/news/articles/2026-05-27/china-s-industrial-profits-surge-at-fastest-in-over-two-years?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ has drawn strength from the tech boom, with overseas sales of semiconductors 
+and computers accounting for about half of its export growth in April.
+
+The LogicFolding technology was revealed by Huawei’s semiconductor chief He 
+Tingbo during a rare public appearance at a chip conference this week. It is 
+based on Huawei’s Tau Scaling Law, a principle that aims to rivalMoore’s Law 
+<https://www.investopedia.com/terms/m/mooreslaw.asp>, the guideline for the 
+global chip industry.
+
+Moore’s Law, named after Intel co-founder Gordon Moore, says that the number 
+of transistors in a chip will roughly double about every two years, though many 
+in the industry including He say the cadence has been slowing in recent years.
+
+Tau Scaling seeks to move away from the industry model of improving 
+performance through ever-shrinking transistors, and instead, shorten the 
+distance that data must travel inside a processor.
+
+Huawei’s He said that the Kirin mobile chips to be launched this fall will be 
+the first to adopt the LogicFolding architecture. It plans to start making the 
+equivalent of 1.4-nanometer chips by 2031 with this technology, just three 
+years behind TSMC’s plans for mass production.
+
+Besides engineering challenges, including manufacturing complexity, heat 
+dissipation and power delivery, it remains to be seen whether the technology 
+can be deployed economically and at scale.
+ 
+<https://www.bloomberg.com/news/videos/2026-05-06/ai-is-pushing-chipmaking-to-its-limits?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+WATCH 
+<https://www.bloomberg.com/news/videos/2026-05-06/ai-is-pushing-chipmaking-to-its-limits?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+: AI is pushing chipmaking to its limits.
+Nevertheless, it would be foolish to count out China’s national champion again.
+
+Written off as a top smartphone maker after the US cut it off from American 
+suppliers in 2019, it later staged a comeback andelectrified the chip industry 
+in the process 
+<https://www.bloomberg.com/news/videos/2023-09-04/new-huawei-mate-60-pro-smartphone-disassembled-video?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ by unveiling the Mate 60 Pro housing a 7-nanometer processor made by SMIC.
+
+During a trek around Guangdong province in 2023, I discovered Huawei had built 
+secret semiconductor-fabrication facilities 
+<https://www.bloomberg.com/news/articles/2023-08-23/huawei-building-secret-chip-plants-in-china-to-bypass-us-sanctions-group-warns?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ that allowed the blacklisted company to skirt US sanctions and further the 
+nation’s tech ambitions.
+
+Investors reacted under the belief that Huawei’s latest idea could work, 
+sending shares of Chinese semiconductor stocks like SMIC and Hua Hong soaring.
+
+The Huawei technology, “once fully developed, promises to boost the 
+performance of China’s future AI chips,” Bloomberg Intelligence senior analyst 
+Robert Lea wrote in a note. This would help Chinese tech firms “maintain 
+competitiveness, despite export restrictions on advanced Nvidia chips.”
+ 
+<https://www.bloomberg.com/news/audio/2026-05-26/big-take-asia-indonesia-s-free-meals-rattle-investors-podcast?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+What We’re Reading, Listening to and Watching:
+
+ * Listen to a Podcast 
+<https://www.bloomberg.com/audio?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ thatunpacks Trump’s anti-weaponization fund 
+<https://www.bloomberg.com/news/audio/2026-05-27/big-take-unpacking-trump-s-anti-weaponization-fund-podcast?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ * Watch a Weekly Documentary 
+<https://www.bloomberg.com/weekly-docs?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ onwhy the SpaceX IPO is unlike any other 
+<https://www.bloomberg.com/news/videos/2026-05-28/why-the-spacex-ipo-is-unlike-any-other?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ * Read an analysis article on how Trump’s Iran bind is deepening 
+<https://www.bloomberg.com/news/articles/2026-05-27/trump-s-iran-bind-deepens-with-hormuz-shut-and-hawks-pushing-war?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ with Hormuz shut and hawks pushing war
+ * Dig into a Big Take 
+<https://www.bloomberg.com/bigtake?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ on the ship-tracking data revealingthe hidden risk of a China-Vietnam showdown 
+<https://www.bloomberg.com/graphics/2026-south-china-sea-tensions-vietnam/?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ ... and one on how the Swiss Alpsreckon with the threat of collapsing glaciers 
+<https://www.bloomberg.com/graphics/2026-swiss-glacier-collapse-risk/?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ * Read how the AI Boom is fueling a record $14.5 billion in borrowing by 
+Taiwan’s tech firms 
+<https://www.bloomberg.com/news/articles/2026-05-28/ai-boom-fuels-record-14-5-billion-in-taiwan-tech-firm-borrowing?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ * Here’s an Opinion 
+<https://www.bloomberg.com/opinion?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ piece onhow Japan should spend its soaring defense budget 
+<https://www.bloomberg.com/opinion/articles/2026-05-27/japan-s-military-budget-should-prioritize-ai-naval-power-and-alliances?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ * And for the weekend, read a Pursuits 
+<https://www.bloomberg.com/pursuits?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ story on howthe $300-a-month gym is Gen Z’s social club 
+<https://www.bloomberg.com/news/articles/2026-05-27/gyms-are-replacing-bars-bars-in-gen-z-s-social-and-dating-lives?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ 
+<https://sli.bloomberg.com/click?s=868642&stpe=default&li=18328137&m=11b724c487f61753eb1a7a4a5f3ef261&p=05292026040928&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868642&stpe=default&li=18328137&m=11b724c487f61753eb1a7a4a5f3ef261&p=05292026040928&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Cities of the Future
+
+The Chinese government is rarely short on ambition.
+
+In what might be one of the most ambitious projects of all, it plans to 
+seamlessly integrate nine major cities in Guangdong province with Hong Kong and 
+Macau to create a megapolis of almost 100 million people, despite clashing 
+legal and financial systems.
+
+If successful, the so-called Greater Bay Area would serve as part of a larger 
+transformation planned for China’s economy 
+<https://www.bloomberg.com/news/articles/2026-05-26/china-has-a-plan-to-fuse-its-major-cities-into-megaregions?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+, which includes creating 19 megaregions to fuse hundreds of millions of people 
+into urban engines of knowledge and labor.
+
+In this documentary, Bloomberg Originals explains how the historic gamble 
+could supercharge the country’s ascent while being a possible blueprint for 
+humanity’s future.
+
+The plan has been tossed around for a decade, and it’s only been in recent 
+years that visible progress can be seen. Besides new bridges and airports, 
+there are now rail links that cut what had been serious travel times to no more 
+than a short commute.
+ 
+<https://www.bloomberg.com/news/videos/2026-05-26/china-s-plans-for-an-urban-super-city-video?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+WATCH 
+<https://www.bloomberg.com/news/videos/2026-05-26/china-s-plans-for-an-urban-super-city-video?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+: China’s plans for an urban super city
+It now takes just 14 minutes to arrive in Hong Kong’s bustling Kowloon area 
+from Shenzhen’s business district. On any given weekend, more than 700,000 Hong 
+Kongers cross the border into the tech hub to take advantage of everything from 
+cheaper dim sum to foot massages.
+
+Key to the success of the plan is the Northern Metropolis project, a 
+megadevelopment in the former British colony that aims to turn a rural area 
+into a tech hub with affordable housing. The project faces significant 
+obstacles, including skepticism from local developers and the displacement of 
+thousands of farmers and villagers, as well as threats to wildlife habitats.
+
+While examples such as Indonesia’s new capital city of Nusantara 
+<https://www.bloomberg.com/news/articles/2026-05-26/iran-s-khamenei-says-no-going-back-for-middle-east-rocked-by-war?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ arguably cast doubt on large-scale, government-driven planning, China is 
+determined to prove that if a super city is built, people will come.
+ 
+<https://www.bloomberg.com/games/pointed?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+Rough Day
+
+$1.7 billion
+
+That’s how much online brokerage tycoon Leaf Li lost in a single day 
+<https://www.bloomberg.com/news/articles/2026-05-25/china-trading-tycoon-loses-1-7-billion-in-one-day-after-curbs?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+, representing a quarter of his fortune after Beijingcracked down on 
+cross-border stock trading 
+<https://www.bloomberg.com/news/articles/2026-05-28/china-targets-billions-in-offshore-stock-trading-in-biggest-crackdown-in-decades?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ to tighten control over capital outflows. The majority of his wealth is 
+derived from his stake in US-listed brokerage Futu.
+
+Behind the Great Firewall
+
+A weekly look at the big water cooler news in China.
+
+Again?
+
+That was the sentiment of some in China after a coal mine disaster killed 82 
+people 
+<https://www.bloomberg.com/news/articles/2026-05-24/china-coal-mine-blast-tests-limits-of-xi-s-energy-security-push?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+, left two missing and sent about 120 others to the hospital.
+
+Again, as in: Didn’t dozens of people just get killed in a fireworks factory 
+blast 
+<https://www.bloomberg.com/news/newsletters/2026-05-08/the-china-us-relationship-is-steady-which-suits-xi-and-trump-just-fine?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ a few weeks ago?
+
+Again, as in: Another coal mine accident 
+<https://www.bloomberg.com/news/newsletters/2026-05-26/china-coal-mine-blast-exposes-limits-of-nationwide-safety-drive?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ in China?
+
+Well, yes. A gas explosion at the Liushenyu coal mine in the northern province 
+of Shanxi on May 22 was the worst such disaster in China in 17 years, prompting 
+shock and fury online.
+
+There’s been a drop in the frequency and scale of coal mine accidents over the 
+past decade but many people were still appalled by details from state media 
+about glaring safety failures. These included a woeful initial undercounting of 
+the number of people trapped underground.
+
+“It’s only been a few days since the Liuyang explosion,” one person wrote on 
+Weibo. “Didn’t the whole country organize workplace safety inspections? Why 
+hasn’t Shanxi done anything?”
+Rescuers gather at the site of the Liushenyu coal mine following the accident.
+Photographer: Wei Liang/China News Service/VCG/Getty Images
+Much of the anger has focused on the private company operating the mine. Some 
+people also accused local officials of failing to spot dangerous work practices 
+before disaster struck.
+
+Discrepancies in the official account of how many miners were underground at 
+the time of the explosion left some incensed. Local authorities initially said 
+that 201 people had safely escaped and only eight had died.
+
+The reality was a lot grimmer. A local official later said the company had 
+failed to keep an accurate account of the people on duty, resulting in the 
+inaccurate figures.
+
+“When the accident happened, they couldn’t even get an accurate headcount,” 
+one person said on Douyin. “It just shows how chaotic their safety management 
+is.”
+
+State media says miners are required to use facial recognition tech when they 
+pass through security gates and carry location-tracking devices into mines. Yet 
+at the time of the blast, only 124 out of 247 people were in compliance.
+
+That gap fueled questions over whether the mine was employing unregistered 
+workers to boost production. State media also reported that the mine operator 
+had opened tunnels that were left off official maps, going so far as to hide 
+them during official inspections.
+
+Many of these issues obviously hinder rescue efforts, prompting some internet 
+users to render harsh judgments.
+
+“This is not an accident but rather murder cloaked in a veneer of regulatory 
+compliance,” said a Weibo user.
+
+— Allen Wan, Nectar Gan, Edwin Chan, Stephen Stapczynski, Philip Glamann
+
+More From Bloomberg
+
+Enjoying Next China? Check out these newsletters:
+
+ * NEW: Get the AI Today newsletter 
+<https://www.bloomberg.com/account/newsletters/ai-today?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ — chronicling the disruptions and threats of AI on businesses, workers, 
+governments and economies with analysis from Bloomberg’s global newsroom
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD052926_CN&utm_term=260529&utm_content=4828>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ for key news and movers before the trading day starts in that fast-growing 
+economy
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD052926_CN&utm_term=260529&utm_content=4828>
+ for the latest political news and analysis from around the globe
+ * Markets Daily China 
+<https://www.bloomberg.com/account/newsletters/china-markets?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD052926_CN&utm_term=260529&utm_content=4828>
+ for a daily Chinese-language briefing and audio broadcast of what’s moving 
+markets
+ * Hong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD052926_CN&utm_term=260529&utm_content=4828>
+ for what you need to know from the Asian finance hub
+ * Breaking News Alerts 
+<https://www.bloomberg.com/account/newsletters/breaking-news-alerts?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD052926_CN&utm_term=260529&utm_content=4828>
+ for the biggest stories from around the world, delivered to your inbox as they 
+happen
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD052926_CN&utm_term=260529&utm_content=4828>
+ to get the most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Next China 
+newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/next-china?source=NLshare&cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/next-china?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBD052926_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260529&utm_content=4828>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/Gk7o2HYVr3bZCSaggCtBayYABK2XIjutWhkXDBK_BPPGw0lcawSTGQWZIOsW5A4eZyrasbpKrJh3AKsDKA7850uVuVUeEhrcIoIpojV4-xxtyrpZLRIjBYK5E9_GdVRcybO--jpigsyybIph_VccPlPzUBANz4QHcKB7mM_PU0xTlsosDIRIIztnUEAChSok1j59Vx6YWBjD6eXm96fxFX9ajXhNmY8DrduEQz0nBag4xitxit2OEZ_Zu1X0i3OmhFvL29kSGj-dJTITvINFoA3jDaQrbXSc1daWDg6tYZhrXp9hZCXOfIMmIKaFGpwImaGA6zXFn_F896kAcTSQL2HezeGWemfc/kicClk_OH866luQi4bUOvrUkAcy2RJ8o/21>
