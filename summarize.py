@@ -28,16 +28,24 @@ SUMMARIES_DIR = BASE_DIR / "summaries"
 
 REGIONS = {
     "US": (
-        "United States — Federal Reserve and US monetary policy, US politics and fiscal policy, "
-        "US equity and credit markets, US corporate news, and North American macro developments."
+        "United States — US macro data releases (GDP, inflation, employment, PMIs) and whether they beat "
+        "or missed consensus, Federal Reserve and monetary policy, US politics and fiscal policy, "
+        "US equity and credit markets, and US corporate news."
     ),
     "Asia": (
-        "Asia-Pacific — with a strong focus on China (economy, policy, markets, capital flows, geopolitics), "
-        "plus Japan, South Korea, India, Southeast Asia, and Australia."
+        "Asia-Pacific — macro data releases and consensus surprises for China, Japan, South Korea, India, "
+        "and Southeast Asia; central bank policy; capital flows and currency moves; "
+        "equity and credit markets; corporate news; and geopolitics."
     ),
     "Europe": (
-        "Europe — eurozone macro and ECB policy, UK politics and markets, individual European economies, "
+        "Europe — eurozone and country-level macro data (GDP, CPI, PMIs, unemployment) versus consensus, "
+        "ECB and Bank of England policy, UK politics, individual European economies, "
         "and European corporate news."
+    ),
+    "LatAm": (
+        "Latin America — macro data releases and consensus surprises for Brazil, Mexico, Argentina, Colombia, "
+        "Chile, and the broader region; central bank policy; commodity dynamics; currency moves; "
+        "equity markets; and political economy developments."
     ),
     "Global": (
         "Global — cross-cutting themes that span multiple regions: oil markets and energy, "
@@ -49,6 +57,15 @@ REGIONS = {
 SYSTEM_PROMPT = """\
 You are a senior macro analyst writing institutional research for sophisticated professional investors, \
 in the style of Goldman Sachs research. Your tone is measured, analytical, and precise.
+
+Structure and emphasis:
+- Lead with economics. For each region, begin with the most important macro data releases of the period — \
+GDP, inflation, employment, PMIs, trade — and explicitly state whether each print beat, missed, or met \
+consensus. Use specific numbers: "CPI rose 3.8% YoY, above the 3.5% consensus." Economic momentum and \
+data surprises are the primary story.
+- Markets follow macro. After economic data, cover market developments (equities, rates, credit, FX) and \
+what they signal about the economic picture. Market moves without an economic anchor are less useful.
+- Top-down framing: start from the macro environment, then what it implies for sectors, assets, and policy.
 
 Writing guidelines:
 - Neutral, analytical language by default: fell/rose, declined/gained, increased/decreased.
@@ -230,7 +247,7 @@ def generate_all_regions(
 
     user_prompt = f"""{period_instruction(target, mode)}
 
-Produce four regional briefings from the source material below, one per region:
+Produce five regional briefings from the source material below, one per region:
 {region_blocks}
 
 Format your response exactly as:
@@ -250,13 +267,17 @@ Format your response exactly as:
 • [key point 1]
 ...
 
+## LatAm
+• [key point 1]
+...
+
 ## Global
 • [key point 1]
 ...
 
 Rules:
-- Begin each regional section with 3–5 bullet points (• character, one per line) capturing the most important developments. Bullets appear immediately after the ## heading, before the first bold section title.
-- After the bullets, each paragraph must have a short bold title on its own line (e.g. **Monetary Policy**), followed by the paragraph text.
+- Begin each regional section with 3–5 bullet points (• character, one per line) capturing the most important developments. The first bullet should highlight the key macro data print of the period (with the actual number and whether it beat/missed consensus). Bullets appear immediately after the ## heading, before the first bold section title.
+- After the bullets, each paragraph must have a short bold title on its own line (e.g. **Monetary Policy**), followed by the paragraph text. Lead with economic data paragraphs before market paragraphs.
 - Write paragraphs in flowing prose. No bullet points within the narrative sections.
 - {length_instruction}
 - If coverage for a region is thin or absent, write exactly: "No significant coverage for this period." (no bullets needed).
@@ -266,7 +287,7 @@ Rules:
 
 {content}"""
 
-    max_tokens = {"daily": 3500, "weekly": 5500, "monthly": 8000}[mode]
+    max_tokens = {"daily": 4500, "weekly": 7000, "monthly": 10000}[mode]
     message = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=max_tokens,
@@ -282,7 +303,7 @@ def parse_regions(text: str) -> dict[str, str]:
     current_region = None
     buffer = []
     for line in text.splitlines():
-        if line.startswith("## ") and line[3:].strip() in REGIONS:
+        if line.startswith("## ") and line[3:].strip() in REGIONS.keys():
             if current_region:
                 results[current_region] = "\n".join(buffer).strip()
             current_region = line[3:].strip()

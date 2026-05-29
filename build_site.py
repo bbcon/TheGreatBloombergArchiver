@@ -21,11 +21,12 @@ BASE_DIR = Path(__file__).parent
 SUMMARIES_DIR = BASE_DIR / "summaries"
 DOCS_DIR = BASE_DIR / "docs"
 
-REGIONS = ["US", "Asia", "Europe", "Global"]
+REGIONS = ["US", "Asia", "Europe", "LatAm", "Global"]
 REGION_COLORS = {
     "US":     "#5597cb",
     "Asia":   "#e07b39",
     "Europe": "#4a9e6b",
+    "LatAm":  "#c0392b",
     "Global": "#8b5cf6",
 }
 
