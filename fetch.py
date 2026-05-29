@@ -7,6 +7,7 @@ are always covered). Already-archived IDs in saved_ids.txt are skipped.
 """
 
 import os
+import re
 import base64
 import argparse
 from datetime import datetime, timedelta
@@ -113,7 +114,8 @@ def main():
         )
         os.makedirs(day_folder, exist_ok=True)
 
-        filepath = os.path.join(day_folder, f"{msg_id}.txt")
+        slug = re.sub(r'[^a-zA-Z0-9]+', '_', subject).strip('_').lower()[:60]
+        filepath = os.path.join(day_folder, f"{msg_id}_{slug}.txt")
         body = extract_body(msg["payload"])
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(f"Subject: {subject}\nDate: {date_str}\n\n{body}")
