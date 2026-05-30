@@ -1,0 +1,9 @@
+• Taiwan overtook India as the world's fifth-largest stock market, a milestone reflecting sustained equity inflows and the island's dominant position in global semiconductor supply chains.
+• China has begun restricting overseas travel for its top AI professionals, a signal of tightening state control over strategic human capital amid intensifying technology competition with the West.
+• Kazakhstan is positioning itself as a transit and trade hub, making a strategic bet on its geographic centrality as supply chains continue to fragment along geopolitical lines.
+
+**Equity Markets**
+Taiwan's ascent to the fifth-largest equity market globally is a notable structural development. The move reflects both the market's absolute performance and a relative derating of Indian equities, which have faced headwinds from elevated domestic valuations and intermittent foreign outflows. The milestone underscores how the global semiconductor investment cycle — anchored in Taiwan — continues to concentrate capital in a geographically concentrated and geopolitically exposed node. Whether that premium is sustainable in the context of cross-strait tensions remains an open question for investors with long duration exposure.
+
+**Technology and Capital Controls**
+China's travel restrictions on leading AI professionals represent an escalation in Beijing's effort to prevent talent diffusion to Western firms and research institutions. The policy appears consistent with a broader pattern of treating advanced technology expertise as a strategic national asset, analogous to export controls on semiconductor equipment. The near-term effect may be to slow cross-border knowledge transfer, though enforcement efficacy and second-order effects on China's ability to attract and retain global talent domestically remain uncertain.
