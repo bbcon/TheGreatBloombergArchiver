@@ -236,9 +236,9 @@ def generate_all_regions(
 ) -> dict[str, str]:
     """Single API call producing all 4 regional summaries. Returns {region: text}."""
     length_instruction = {
-        "daily": "~300 words per region. Prioritize the 3-4 most consequential developments; omit minor stories.",
-        "weekly": "~500 words per region. Synthesize how themes evolved across the period.",
-        "monthly": "~700 words per region. Identify dominant themes and what remains unresolved.",
+        "daily": "250 words per region — treat this as a hard limit. Cover only the 2-3 most consequential developments; omit everything else.",
+        "weekly": "400 words per region — treat this as a hard limit. Synthesize how themes evolved; cut anything that does not add new information beyond what the bullets already capture.",
+        "monthly": "400 words per region — treat this as a hard limit. Identify the 2-3 dominant themes; omit secondary stories entirely rather than covering them briefly.",
     }[mode]
 
     region_blocks = "\n".join(
@@ -287,7 +287,7 @@ Rules:
 
 {content}"""
 
-    max_tokens = {"daily": 4500, "weekly": 7000, "monthly": 10000}[mode]
+    max_tokens = {"daily": 2500, "weekly": 3500, "monthly": 3500}[mode]
     message = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=max_tokens,
