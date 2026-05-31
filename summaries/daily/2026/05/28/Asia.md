@@ -1,16 +1,18 @@
-• Asian equities slid from record highs after renewed US strikes on Iranian targets pushed Brent crude toward $97
-• The yuan is on course for a sixth consecutive quarterly gain against the dollar, its longest winning streak since 2013, supported by AI-driven export demand
-• China expelled a Dutch naval frigate near the Paracel Islands in a rare South China Sea incident
-• South Korea's Kospi fell 0.5%; the Bank of Korea's incoming governor signaled a hawkish pivot, pointing to rate increases ahead
-• NIO shares rallied after unveiling the ES9, its largest electric SUV to date
+• Asian equities slid from record highs as Brent crude approached $97/barrel following renewed US strikes on Iranian targets near the Strait of Hormuz; South Korea's Kospi fell 0.5%.
+• The yuan is on course for a sixth consecutive quarterly gain against the dollar — its longest winning streak since 2013 — driven by AI-related export demand and a structural shift in China's trade composition.
+• Bank of Korea's new governor signaled a hawkish shift, pointing to rate hikes ahead in a notable departure from recent dovish policy.
+• Nio shares rallied after unveiling the ES9, China's largest electric SUV to date, a six-seat model targeting the premium domestic market.
+
+**Monetary Policy**
+The Bank of Korea's new governor delivered a hawkish pivot, signaling rate increases ahead — a significant shift in tone from the prior easing bias. The move appears consistent with persistent inflationary pressures from elevated energy costs tied to the Hormuz disruption, and may reflect concern that a weakening won would amplify imported inflation. Goldman Sachs's Korea desk separately flagged leveraged ETFs tied to Korean equities as potential volatility accelerators in a market that has already reached record highs.
 
 **China: Currency and Trade**
-The yuan's sustained appreciation reflects a structural shift in China's export composition. AI infrastructure investment globally is generating demand for Chinese hardware and components, providing Beijing with greater tolerance for a stronger currency than in previous cycles — a notable departure from the mercantilist posture of the post-GFC era. The People's Bank appears comfortable allowing this appreciation to continue, viewing it partly as a signal of economic confidence at a moment of broader geopolitical friction.
+The yuan's six-quarter rally against the dollar — a streak not seen since 2013 — reflects a structural evolution in China's export mix. AI-related capital goods and technology exports have surged alongside the global investment boom in data center infrastructure, generating sustained dollar inflows and making Beijing more comfortable tolerating a stronger currency. This is a materially different dynamic from prior yuan strength episodes, which were typically driven by manufacturing trade surpluses alone.
 
-**South China Sea Tensions**
-China's expulsion of the Dutch frigate HNLMS De Ruyter near the Paracel Islands — the vessel had been conducting freedom-of-navigation operations and participating in joint drills with the Philippines — adds a further friction point to an already complex Indo-Pacific picture. The incident is a reminder that while US military attention remains concentrated on the Gulf, contested maritime boundaries in the western Pacific continue to generate episodic tensions that could escalate with limited warning.
+**Geopolitics and South China Sea**
+China expelled a Dutch naval frigate, the HNLMS De Ruyter, from waters near the Paracel Islands, citing violations of Chinese airspace by the ship's helicopter. The incident is a rare direct confrontation between Chinese and European naval forces and underscores the contested nature of South China Sea boundaries. The De Ruyter had recently participated in joint exercises with Philippine forces — a detail likely to amplify Beijing's objections. Separately, the US has deepened military coordination across the western Pacific, deploying additional missile systems, fighter jets, and expanding joint training, even as European NATO allies explore greater strategic autonomy.
 
-**Regional Macro**
-The Bank of Korea's incoming governor's hawkish signals represent a meaningful shift for a central bank that spent much of 2024–25 in an easing posture. Inflation pressures partly traceable to elevated energy costs appear to be driving the recalibration. Meanwhile, Asia-Pacific's wealthy households remain structurally underprepared for generational wealth transfer: only 27% of high-net-worth individuals surveyed across the region have a full succession plan in place, with Japan, Hong Kong, Malaysia, and the Philippines among the least prepared markets.
+**Corporate**
+Nio's ES9 launch — China's largest electric SUV — drove a share price rally and signals the company's ambition to compete at the premium end of the domestic EV market, where margins are more defensible than in the mass segment.
 
 ---
