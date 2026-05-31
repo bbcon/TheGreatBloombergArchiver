@@ -61,7 +61,7 @@ jobs:
         run: python3 summarize.py --date "${{ steps.date.outputs.today }}" --mode daily
 
       - name: Send daily email
-        if: steps.daily.outcome == 'success'
+        if: steps.daily.outcome == 'success' && github.event.schedule == '15 11 * * 1-5'
         run: python3 send_brief.py --mode daily --date ${{ steps.date.outputs.today }}
 
       # Weekly: Saturday only. --force because the week ends on Sunday (period_end > today).

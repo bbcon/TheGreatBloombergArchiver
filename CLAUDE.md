@@ -74,7 +74,7 @@ Summaries follow a **top-down, economics-first** structure:
 
 **Schedule:**
 - Mon–Fri at 13:15 CEST (11:15 UTC): fetch + daily summary + send
-- Saturday at 13:15 CEST (11:15 UTC): fetch + daily + weekly summary + send; also monthly if last day
+- Saturday at 13:15 CEST (11:15 UTC): fetch + daily summary (generated but not sent) + weekly summary + send; also monthly if last day
 - Note: clocks shift in winter (CET = UTC+1), so the local time becomes 12:15 CET in winter.
 
 **What runs each day:**
