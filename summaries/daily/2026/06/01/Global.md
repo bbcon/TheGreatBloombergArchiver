@@ -1,0 +1,12 @@
+• Brent crude rose 3.4% to $94.18 and WTI gained 2.7% to $89.75 as US-Iran peace talks over the weekend showed no meaningful progress on a draft agreement.
+• Prediction markets have nearly abandoned hope of Strait of Hormuz reopening in June; long-dated oil futures suggest a lasting but not catastrophic supply disruption.
+• The Philadelphia Semiconductor Index is on pace for its best quarter ever, up 69% in two months, raising legitimate questions about AI bubble dynamics.
+• A "super El Niño" with 82% probability of forming by end-July and 67% chance of becoming a strong or very strong event threatens to compound existing inflationary and commodity pressures.
+
+**Strait of Hormuz and Oil Markets**
+
+Three months into the US-Iran conflict, the strategic picture has not improved. Iran's forces retain the ability to constrain Strait of Hormuz traffic despite the destruction of its formal military assets, and this weekend's skirmish near the waterway confirms the ceasefire remains unstable. An interim deal — likely involving a roughly two-month extension with Iranian reopening of the strait in exchange for US lifting its port blockade — has been discussed, but exchanges over the weekend indicated no meaningful progress. Qatar has signaled openness to a temporary transit toll as a negotiating mechanism. The EU's consideration of a Russian oil price cap freeze is a direct consequence of elevated oil prices, and reflects how the Middle East conflict is reshaping European energy policy. Capital Economics suggests China's inventory drawdown may delay global oil price pressure until Q3, providing a temporary buffer.
+
+**AI and the Global Capital Cycle**
+
+The AI investment boom is functioning as a near-complete offset to war-related macro headwinds in financial markets. The semiconductor complex — Micron up more than 3x, SK Hynix +260%, Samsung +165% year-to-date — now includes three companies each with market capitalizations above $1 trillion. SpaceX is preparing to launch a $75 billion IPO at a $1.8 trillion valuation, large enough that index providers are rewriting benchmark entry rules in anticipation. HSBC's Neumann warns that the AI-driven export boom in Asia is narrow and concentration risk is rising. Separately, a looming LNG supply wave from 2026–2030, partly delayed by Hormuz closures, is expected to result in a prolonged glut — adding a deflationary counterforce to near-term energy inflation.
