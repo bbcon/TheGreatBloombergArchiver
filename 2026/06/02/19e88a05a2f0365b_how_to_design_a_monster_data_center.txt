@@ -1,0 +1,257 @@
+Subject: How to design a monster data center
+Date: Tue, 02 Jun 2026 13:57:46 +0000
+
+Data Centers Now Use So Much Power, Their Designs Are Changing
+Huge power demand is forcing a rethink ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-06-02/data-centers-now-use-so-much-power-their-designs-are-changing?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ 
+<https://www.bloomberg.com/green?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=18386912&m=11b724c487f61753eb1a7a4a5f3ef261&p=06022026135746&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=18386912&m=11b724c487f61753eb1a7a4a5f3ef261&p=06022026135746&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Energy demand is already straining power grids, and that’s leading AI players 
+to reimagine the data center from the ground up.
+
+Today’s newsletter looks at the efficiency drive 
+<https://www.bloomberg.com/graphics/2026-ai-data-center-redesign/?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ aiming to shrink the 30% of power that’s currently not going towards 
+generating AI — and that’s amplifying data centers’ carbon footprint. 
+Meanwhile, a judgepreliminarily blocked 
+<https://www.bloomberg.com/news/articles/2026-06-01/judge-blocks-trump-administration-from-breaking-up-climate-research-center?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ the dismantling of the National Center for Atmospheric Research in the US.
+
+Subscribe to Bloomberg to get unlimited access 
+<https://www.bloomberg.com/subscriptions?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ to all our stories.
+
+High-power redesigns
+
+By Emily Forgash 
+<https://bloomberg.com/authors/AW4BeVx3KeQ/emily-forgash?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ andRachael Dottle 
+<https://bloomberg.com/authors/AU1nEMcaHjc/rachael-dottle?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+
+A new generation of ever more powerful artificial intelligence chips is 
+pushing data centers to their limits.
+
+These “AI factories,” which gobble up enough power to keep the lights on in 
+millions of homes, threaten to put more pressure on electricity prices in the 
+US and expand AI’s carbon footprint.
+
+This is forcing a reckoning among AI players, who are now having to reimagine 
+how data centers are designed, built and powered 
+<https://www.bloomberg.com/graphics/2026-ai-data-center-redesign/?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+.
+
+“This is a constant pursuit of finding every ounce of efficiency that we can 
+sort of squeeze out of that power envelope,” says Dion Harris, Nvidia’s senior 
+director of high performance computing and AI hyperscale infrastructure 
+solutions.
+
+And power demand keeps growing. The industry is bracing for chips that bring 
+racks closer to 1 megawatt — or enough to power 750 US homes on average.
+
+Right now, around 30% of the power flowing into data centers is not going 
+towards generating AI – it gets used up by cooling systems that keep servers 
+from overheating and by electricity traveling long distances across sprawling 
+campuses.
+
+That is amplifying carbon emissions from data center energy use given 
+operators are increasingly relying on natural gas and coal-fired plants to 
+power their projects.
+
+Microsoft Corp., for example, is considering whether to delay or abandon its 
+ambitious clean-energy targets as it tries to remove hurdles that could hold it 
+back in the AI race, people familiar with the matter told Bloomberg last month.
+
+Nvidia and others are rolling out new equipment that consolidates the process 
+of converting power from the grid into a usable current to power chips. This 
+saves space and can improve energy efficiency from 20% to 27%, according to 
+advanced manufacturing and AI infrastructure company Flex Ltd.
+
+These reimagined power systems can serve as a climate measure, especially when 
+combined with efforts to use cleaner energy sources. Another potential benefit 
+of switching to them is that data centers can more easily be connected to 
+renewable energy.
+
+China, for example, already builds data centers in regions generating excess 
+renewable energy. The US is nowhere near having extra renewable energy, but 
+operators are looking to batteries and solar power to help run data centers, 
+even as they still have to rely on gas power to do most of the heavy lifting.
+
+Power system upgrades are front of mind for AI players. Nvidia, for one, has 
+promised to release new, more powerful chips about once a year. GE Vernova 
+Inc., which makes data center power equipment, is already seeing strong demand 
+from hyperscalers for 800 volt DC systems.
+
+“Everybody is asking us to provide solutions for the next orders to come,” 
+says Philippe Piron, chief executive officer of GE Vernova’s electrification 
+segment.
+Read more 
+<https://www.bloomberg.com/graphics/2026-ai-data-center-redesign/?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=18386912&m=11b724c487f61753eb1a7a4a5f3ef261&p=06022026135746&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=18386912&m=11b724c487f61753eb1a7a4a5f3ef261&p=06022026135746&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Hidden costs
+
+2 million tons
+
+Amount of cement required for US data centers 
+<https://www.bloomberg.com/news/articles/2026-01-26/the-us-data-center-buildout-has-a-hidden-source-of-carbon-emissions?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ through 2030, according to environmental nonprofit RMI
+
+Shareholder pressure
+
+“In the AI race, tech giants risk undermining their climate commitments 
+<https://www.bloomberg.com/news/articles/2026-05-21/shareholders-press-big-tech-over-ai-energy-use-and-climate-goals?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ at precisely the moment disciplined, long-term decision-making matters most”
+
+Andrea Ranger
+
+Director of shareholder advocacy at Trillium Asset Management
+
+Judge blocks NCAR dismantling
+
+By Eric Roston 
+<https://www.bloomberg.com/authors/AQdgGkZhizQ/eric-roston?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+
+A judge has temporarily blocked 
+<https://www.bloomberg.com/news/articles/2026-06-01/judge-blocks-trump-administration-from-breaking-up-climate-research-center?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ the National Science Foundation from dismantling the National Center for 
+Atmospheric Research, or NCAR, a globally significant weather and climate 
+research center based in Boulder, Colorado.
+The NCAR in Boulder, Colorado.Photographer: Jen Lobo/iStock Editorial/Getty 
+Images
+Senior US District Judge R. Brooke Jackson on Monday granted a preliminary 
+injunction to the University Corporation for Atmospheric Research, a consortium 
+of institutions that manages NCAR.
+
+The consortium sued the National Science Foundation in March, after the 
+federal agency — which provides much of NCAR’s budget — announced plans to 
+break apart the center’s functions. The lawsuit specifically challenged plans 
+to remove supercomputer facilities in Wyoming from under the consortium’s 
+management.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-06-01/judge-blocks-trump-administration-from-breaking-up-climate-research-center?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+This week’s Zero listen
+
+
+Zero
+
+Countries Plotting the End of Fossil Fuel Era
+ 
+<https://www.bloomberg.com/news/audio/2026-05-27/zero-countries-plotting-the-end-of-fossil-fuel-era-podcast?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+A meeting of ministers and climate envoys in Colombia last month hoped to 
+bring progress to the world’s commitment on transitioning away from fossil 
+fuels. This week on Zero, Tzeporah Berman, chair of the Fossil Fuel 
+Non-Proliferation Treaty Initiative, tells Akshat Rathi what the conference 
+achieved and where it goes next.
+
+Listen now 
+<https://links.message.bloomberg.com/s/c/b7S8nnQtpjWsUk6VKUPVC7hUYvFWrQgX3HZXdHIDI6V3pJn3NAGY3QSKkMa8eg5AzbC13nMoKUr046hudnvOrq-iUaa8mzv1aHDUvCTEN3vwFOgl7sBWna8-nC_yd3tucy5F6lN5oDi29asNr1LtjzUD3RsZY_8zeOJ9J9yxckFl9Y7ErtEdenU2FQNoaXUmW5SkoIp0A5rORfialj8p06CY0YJVmrZsx-Y7NY9gWXcm1xEDtPpVlInrjE5KRZs9sVaUiOltEhIUYHRt18TvK46BKbgWHOnM-rjXmL8qaWYxYmszfkUVoeOUyKaKjz6A0epdp1niAUv3SLd9obfHuWXDBfVo4qbAeeLR3E4/1dn7z467Eg2ow0XyV_l5Grlgg_1HaDqz/21?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+, and subscribe onApple 
+<https://links.message.bloomberg.com/s/c/PTr_wQai6WQor2zlezNVIAAb8QiWKl2UHT_7K4v0s8Ix8S-0I-vrAlvYH2cl5cewgpCMjclqcFlrJROQrAF6e1nJDIF_1vYRn0e7yCXkipzgC_XVSoCuzbhL13faoSsa9Z8g90OvJ9fDuODP8Q9sf_tKY9nJfV_mbI1phx5ZJxctwKuzedD0Qm6br4SxSQMwj8aHNCaEjPZ5W2vsmNOybiv421nulf4hnp6_PPdbpm_IeqCFLdHsOtm57eBWKRL-Ubyl-RMnbwNzJhA90ItfwpiCs-FF5lZ0Ku4QJYGiKUxUw5fxyKBqXyaKz6mG5JQESOZkKw/juWRcVfDYnyLUvlPqua6uqiBtb6BkqfW/21?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+,Spotify 
+<https://links.message.bloomberg.com/s/c/Dxw4XDkjpqZXb4Wt7tXINvMGmlCK97wUPehF1Cu964PvSYnYVEZs1K6BdM5xjqoY5AnciJ2BzY5fBP2ZNjX6tuYidu8rf7aPzZ5iddve0F3VoOlKm7RrNz85Csggo9n2-pK6JvVmsz2HIsBmzuvGCaXAudUa1H9kcX23MWVRJYPPeCWK1mtd_88qCRWltnGQKL5P1I6MhFqHU64oh-vZ96GHF-DbTfOOAT1pJSadtRwTbeFAzn6WXxlT3I17sFEer3Xl21nMiD_PPquWb4JT4eStrz_aJp0SWjY1AFB3tQf0ynJKxcduQswQGytb159HT32x141-NuBD_Griix5eevUR5hAQ/i0iYekdqZeSP5MG7scUfTRmYtRwuDbYk/21?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ orYouTube 
+<https://links.message.bloomberg.com/s/c/32DPLJYdUbZykP_6lPdpBLobaVIk73QWn-QwQuK7TGDxiDcyO2xsm8VkGCZT_kEAnRtW3VTg_1xXrPPga1-Cqw0XwQT3-eW2JQHO004nW3BlK47MbKrP_bBrDbP_AHnu3rdBMCZnCfoOcsOCTajvye5S-Ul2Q7PSEnt0_yPyS6c7EARbcRGBSaYGhjjF5klODMOhUWGwCc-7_L37cjnrH8-CzoSVa9MBqON2IVhpbTy0cEP0g1Yk6LXQ-IxuqKU9ZZDD4OS7gTjlHjGBYWtQwpIWteKHe5AlisqQB7QnLD2pc1Oiu6uV3D6-StZl6Ik92tiXqR5db7zGpGSXbauTrkpp_Ufe/J2Ld5XFp_y-1iQKZ5uuGOqus3JG4oIyU/21?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ to get new episodes of Zero every Thursday.
+
+Bloomberg Opinion
+
+Opinion
+
+Europe needs a USB-C to counter China’s EV truck threat
+
+You can thank Brussels’ bureaucrats for the gradual disappearance of the 
+tangled web of mobile-phone charging cables in your desk drawer. If only the EU 
+could be as far-sighted in regulating its biggest battery-powered devices: 
+trucks.
+Read more 
+<https://www.bloomberg.com/opinion/articles/2026-06-01/europe-needs-a-usb-c-solution-to-electric-trucks?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+More from Green
+
+China’s solar industry launches space alliance
+
+It’s a potential new avenue for growth in an industry beset by terrestrial 
+overcapacity.
+ 
+<https://www.bloomberg.com/news/articles/2026-06-02/china-s-solar-industry-launches-space-alliance-with-few-details?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+Schroders renewable unit targets AI assets
+
+The technology is fueling a surge in electricity demand.
+ 
+<https://www.bloomberg.com/news/articles/2026-06-02/schroders-renewable-unit-targets-ai-assets-as-power-demand-soars?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+EDP said to start stake sale of Iberia Solar assets
+
+The Portuguese utility is selling a €200m minority stake, according to people 
+with knowledge of the matter.
+ 
+<https://www.bloomberg.com/news/articles/2026-06-01/edp-said-to-start-200-million-stake-sale-of-iberia-solar-assets?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+Princeton endowment backs out of oil and gas divestment pledge
+
+Four years ago, the fund said it would exit such holdings as way to move 
+toward a net-zero portfolio.
+ 
+<https://www.bloomberg.com/news/articles/2026-06-01/princeton-endowment-backs-out-of-oil-and-gas-divestment-pledge?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily&cmpid=BBD060226_GREENDAILY&utm_term=260602&utm_content=5104>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily&cmpid=BBD060226_GREENDAILY&utm_term=260602&utm_content=5104>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily&cmpid=BBD060226_GREENDAILY&utm_term=260602&utm_content=5104>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily&cmpid=BBD060226_GREENDAILY&utm_term=260602&utm_content=5104>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare&cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBD060226_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260602&utm_content=5104>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/u_9ii7O7LutIktQ8UiS4tuG9Ay6RJbyLaAi7rVO6bl-HOUsluDxKrhzPUKG8wPldzc79oCUNoAqv3mZCZ_HKPdFUOdvYt8VgVw6Va6F1ko73ATu3HsIOQCpuHfoyrUueLSNC6Z9kC1lcHmhO43ohjNmWXkFjGKO4bnk2r82I836L3ImbsrvQq4FfAc4A9wJtxiX9pNfRWVuF9JKD7dw1Mzs7D2T71qXS-ZlrTkLVs7W7WZC2bLGSBibliJzo1w8UCuQv1eSnkOiJCRZ84EQrQ-gTDxNtXO-byRQmsM7F9j8EK4kLDVQbJ1STyWm7ZPX1uglQ1vID-616v9FvyL60pFXnYLquO0kq/Kl-SloznaaICTG2oDwA2mh5PwIzm_86k/21>

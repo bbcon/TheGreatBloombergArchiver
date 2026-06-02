@@ -1,0 +1,15 @@
+• ISM Manufacturing PMI rose to its highest level in four years in May, beating consensus and signaling a meaningful acceleration in factory activity, with new orders and production both firming.
+• Alphabet announced an $80 billion equity offering — including a $10 billion Berkshire Hathaway investment — to fund AI capital expenditure, representing one of the largest equity raises in history for a public company.
+• Anthropic filed confidentially for an IPO as early as this fall, with OpenAI reported to be preparing its own filing; combined with SpaceX's imminent listing, the three transactions could raise approximately $200 billion.
+• Bitcoin fell below $70,000 for the first time in two months, extending a decline of nearly 45% from its $120,000-plus peak, amid Iran ceasefire uncertainty and capital rotation into semiconductor equities.
+
+**Manufacturing and Economic Momentum**
+May's ISM Manufacturing PMI printed above the expansion threshold at its strongest reading in four years, driven by firmer new orders and production. The White House cited this as validation for its industrial policy, simultaneously announcing targeted reductions in steel and aluminum tariffs — cutting rates on select agricultural and industrial goods to 15% from 25% — to incentivize domestic investment. However, the same ISM report showed manufacturing employment has remained in contraction since September 2023, illustrating a familiar tension: output is recovering while labor market gains in the sector remain elusive. Non-farm payrolls and CPI data for May, due imminently, will be pivotal in determining whether economic momentum is broad-based or concentrated.
+
+**AI Capital Markets**
+The AI fundraising cycle has reached a scale that is beginning to test conventional capital market assumptions. Alphabet's $80 billion equity offering is exceptional for an established public company; Goldman Sachs estimates corporate buybacks will reach $1.3 trillion this year, providing some offset to the estimated $675 billion in new equity supply from IPOs and follow-ons. Near-term dilution risk appears manageable, though history suggests lockup expiries in 2027–2028 could generate a more significant supply overhang. Marvell Technology surged 26% in premarket trading after Nvidia CEO Jensen Huang's endorsement, and Hewlett Packard Enterprise rallied 24% on a bullish AI-driven sales outlook.
+
+**Federal Reserve**
+A Brookings Institution paper by Christina and David Romer offered a nuanced assessment of the Powell Fed, praising its institutional independence while warning that cutting rates since 2024 — with inflation persistently above 2% and unemployment near historic lows — risks losing sight of the broader inflation picture. With 30-year Treasury yields having recently topped 5% and a strong ISM print arriving, the risk of renewed upward pressure on rates is real.
+
+---
