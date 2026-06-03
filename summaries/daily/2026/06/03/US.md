@@ -1,0 +1,15 @@
+• April JOLTS job openings surged to their highest pre-pandemic level, with vacancies again exceeding the number of unemployed workers — a clear beat relative to recession fears.
+• The Trump administration proposed new tariffs of at least 10% on imports from roughly 60 trading partners, including the EU, UK, Canada, and Mexico, and 12.5% on China, Japan, and others, reviving the protectionist agenda the Supreme Court had struck down.
+• The S&P 500 extended its winning streak to nine consecutive sessions, driven almost entirely by AI-related technology names.
+• Real personal income has declined 0.6% over the past year, a pace Goldman Sachs describes as rarely seen outside of recession, even as headline labor market data remains resilient.
+
+**Labor Market**
+April JOLTS data released Tuesday showed job openings surging back to their highest pre-pandemic level, with the US once again registering more than one vacancy per unemployed worker. The print stands in stark contrast to recession-adjacent signals elsewhere in the data. Real personal income has fallen 0.6% over the past year on Goldman Sachs estimates — a threshold historically associated with downturns — while gasoline costs have risen roughly 44% since late February, adding approximately $200 per month to household fuel bills. Treasury Secretary Bessent acknowledged the burden while arguing it is transitory, a framing that will face scrutiny at Senate and House hearings Wednesday and Thursday. The May payrolls report, due Friday, is forecast to show average hourly earnings growth of 3.4% year-over-year, below prevailing inflation readings.
+
+**Trade Policy**
+The administration's new tariff proposal, structured under a Section 301 forced-labor investigation, calls for a 10% levy on most major partners and 12.5% on China, India, Japan, South Korea, Brazil, and Switzerland. Bloomberg Economics estimates the effective US tariff rate would rise by only 0.5 percentage point from its current 10.7% level if implemented after the expiring Section 122 tariffs lapse in late July — a relatively modest increment. A second 301 probe targeting industrial overcapacity is expected shortly, with analysts flagging potential stacking of duties as the key risk.
+
+**Equity Markets**
+The S&P 500's nine-session winning streak is attributable almost entirely to the technology sector, which has outperformed the ex-tech S&P 500 by 33% over the past three months — the strongest relative quarter for tech on record. Marvell Technology extended its recent rally in premarket trading following Nvidia CEO Jensen Huang's prediction the company would reach a $1 trillion valuation. SpaceX separately announced plans to raise $75 billion in what would be the largest IPO on record, pricing shares at $135 ahead of any formal roadshow.
+
+---
