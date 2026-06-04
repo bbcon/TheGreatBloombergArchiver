@@ -1,0 +1,16 @@
+• US petroleum inventories including strategic reserves fell for a 10th consecutive week to their lowest since 2004, raising the risk of a price shock if summer demand or hurricane disruptions reduce the buffer further.
+• A fragile Israel-Lebanon ceasefire was announced contingent on Hezbollah withdrawal from southern Lebanon, pushing oil modestly lower, but Iran stated there has been "no tangible progress" in broader peace talks with Washington.
+• Washington's new tariff framework — framed around forced labor — raises the effective US tariff rate by approximately 0.5 percentage points, covering economies representing 99% of US imports in 2024.
+• The Iran war is accelerating structural energy transitions in Asia and Europe, with more than 20 nations fast-tracking renewables deployment in response to fossil fuel supply disruptions.
+
+**Oil Markets and Hormuz**
+
+Brent crude remains just below $100 per barrel, with December futures turning upward even as near-term prices dipped on ceasefire news. The underlying supply picture is deteriorating: US diesel stocks are near 2003 lows and risk falling to a critical 20-day supply threshold by August, according to Goldman Sachs. Vitol confirmed that gasoline inventories globally are well below seasonal norms. With hurricane season approaching and the strategic reserve buffer largely depleted, the margin for error in global oil markets is narrow. The ceasefire announcement provided only modest relief given Iran's explicit statement that broader negotiations have stalled.
+
+**Energy Transition Acceleration**
+
+The Iran war is functioning as a structural catalyst for clean energy deployment across Asia and Europe, analogous to the role Russia's Ukraine invasion played for European gas diversification. The Philippines fast-tracked more than 30 renewable projects; Pakistan's LNG-fired generation fell 80% year-on-year in April. China's exports of solar panels, EVs, and related electrotech reached record levels in March and April. The IEA identifies more than 20 nations making irreversible structural shifts in their energy mix. In parallel, soaring US power demand from AI data centers is straining PJM Interconnection — the nation's largest grid operator — with federal officials now openly discussing a potential breakup if governance reforms fail.
+
+**Monetary Policy Divergence**
+
+The global monetary picture is increasingly asymmetric. The BOJ appears set to hike toward 1%, Australia's central bank is seeing early evidence its hikes are transmitting, and the Fed faces mounting pressure from energy-driven inflation — with FOMC communications under new Chairman Kevin Warsh potentially becoming more concise. Subdued readings in Switzerland, Sweden, and the Czech Republic support holds in those economies. The dollar index reached its highest level in nearly a month on tariff announcements and geopolitical uncertainty, reinforcing the dollar's safe-haven status despite the US being the proximate source of both trade and geopolitical disruption.
