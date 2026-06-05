@@ -1,0 +1,13 @@
+• China's Caixin manufacturing PMI slowed in May, adding to evidence that economic momentum is softening; Bloomberg Economics holds its 2026 China GDP forecast at 4.5%.
+• South Korea's Kospi fell 5.5% on Friday — foreigners sold more than $10 billion of Korean equities this week — the steepest weekly foreign exit on record for the index.
+• China intensified its capital outflow crackdown, with HSBC and AIA shares tumbling after reports that some banks suspended mainland clients' Hong Kong account openings for overseas investment.
+• India's rupee fell to a record low, prompting coordinated RBI and government measures including eased foreign access to bonds and reduced capital gains taxes on FII bond investments.
+• Xi Jinping is scheduled to travel to Pyongyang on June 8–9 for his first visit to North Korea since 2019.
+
+**China: Capital Controls and Trade Tensions**
+Beijing's crackdown on cross-border capital flows is deepening in scope. Regulators have threatened to confiscate "illegal gains" from unlicensed overseas brokers operating on the mainland, while tax authorities are pursuing wealthy individuals on unreported offshore investment income. Citic Securities estimates the campaign could affect up to HK$250 billion ($32 billion) of Hong Kong-domiciled assets. Private banks including UBS have postponed mainland events; non-essential travel by Hong Kong-based private bankers is being discouraged. The backdrop is striking: resident capital outflows reached an estimated record $807 billion in 2025, partly a consequence of the domestic property slump reducing onshore investment appeal. Separately, the US proposed a 12.5% tariff rate on Chinese goods under a forced-labor import investigation — a development Beijing dismissed as "political manipulation" and analysts at Bloomberg Economics say is unlikely to derail China's export engine in the near term, though further stacked duties from a parallel overcapacity probe could test Beijing's patience ahead of an expected Xi-Trump White House meeting in September.
+
+**Korea and India**
+The Kospi's 5.5% single-session decline caps a week in which foreign investors liquidated over $10 billion of Korean equities — a pace that appears without recent precedent and reflects broad de-risking from AI-linked names globally. In India, coordinated RBI-government action to stabilize the rupee — down roughly 6% against the dollar year-to-date — drew comparisons to the 2013 taper-tantrum response playbook.
+
+---
