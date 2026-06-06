@@ -1,0 +1,10 @@
+• Colombia's first-round presidential election produced a significant surprise: right-wing outsider Abelardo de la Espriella won and heads into the June 21 runoff as the favorite, extending a regional rightward political pattern.
+• Brazil faces a dual tariff exposure — a 12.5% forced-labor levy and a separate 25% unfair trade practices rate — with President Lula immediately reframing the threat politically as "TariFlávio" ahead of elections.
+• Venezuela's oil production has surged approximately 45% in three months to around 1.2 million barrels per day following Maduro's January removal, with Exxon and ConocoPhillips in active re-entry talks and Chevron committed to raising output 50% by end-2027.
+• Mexico's USMCA-compliant goods retain their tariff exemption under the new US framework, providing structural insulation, but President Sheinbaum's hardening posture toward Washington introduces near-term political risk for nearshoring sentiment.
+
+**Colombia: Political Realignment**
+De la Espriella — a celebrity attorney running on a pro-Trump, law-and-order platform — effectively dismantled the traditional Uribista conservative movement while positioning himself against the left's Iván Cepeda in the June 21 runoff. Investors consider Cepeda more radical than outgoing President Gustavo Petro, meaning a de la Espriella victory would likely be received as market-constructive at the margin. The result extends the rightward regional pattern seen previously in Brazil, Argentina, and Chile, and would strengthen US hemispheric alignment if confirmed. Post-election rhetoric was inflammatory on both sides, underscoring political fragility ahead of the second round.
+
+**Venezuela: Supply Diversification Premium**
+Venezuela's oil trajectory has shifted materially since January. Acting President Delcy Rodríguez moved rapidly to reform oil and gas laws, signal royalty flexibility, and engage the Trump administration — which responded with cabinet-level visits. Operating costs on existing fields of approximately $8/barrel imply substantial margins at current Brent prices above $90.
