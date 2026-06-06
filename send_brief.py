@@ -76,6 +76,31 @@ def bold_to_strong(text: str) -> str:
     return re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', text)
 
 
+def extract_bullets(text: str) -> list[str]:
+    """Pull the leading • lines from a summary block."""
+    bullets = []
+    for line in text.splitlines():
+        s = line.strip()
+        if s.startswith("•"):
+            bullets.append(s.lstrip("•").strip())
+        elif bullets:
+            break  # first non-bullet line ends the block
+    return bullets
+
+
+def strip_leading_bullets(text: str) -> str:
+    """Remove the leading • block so prose paragraphs can be parsed separately."""
+    past_bullets = False
+    result = []
+    for line in text.splitlines():
+        if line.strip().startswith("•"):
+            past_bullets = True
+        else:
+            if past_bullets or result:
+                result.append(line)
+    return "\n".join(result)
+
+
 def parse_paragraphs(text: str) -> list[tuple[str | None, str]]:
     """Parse markdown into (title, body) pairs.
     Handles:
@@ -146,9 +171,23 @@ def get_logo_html(size: int = 40) -> str:
 
 def region_html(region: str, text: str) -> str:
     color = REGION_COLORS[region]
-    # Strip leading • bullet lines — email generates its own cross-regional bullets
-    stripped = "\n".join(l for l in text.splitlines() if not l.strip().startswith("•"))
-    pairs = parse_paragraphs(stripped)
+    region_bullets = extract_bullets(text)
+    pairs = parse_paragraphs(strip_leading_bullets(text))
+
+    bullets_block = ""
+    if region_bullets:
+        items = "".join(
+            f'<tr>'
+            f'<td style="padding:0 0 8px 0;vertical-align:top;width:14px;">'
+            f'<span style="color:{color};font-weight:700;font-size:14px;">›</span></td>'
+            f'<td style="padding:0 0 8px 10px;font-size:13px;line-height:1.55;color:#444444;">'
+            f'{b}</td></tr>'
+            for b in region_bullets
+        )
+        bullets_block = (
+            f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+            f'style="margin:0 0 20px 0;">{items}</table>'
+        )
 
     body_html = ""
     for title, body in pairs:
@@ -169,25 +208,38 @@ def region_html(region: str, text: str) -> str:
         f'<tr><td style="border-left:3px solid {color};padding-left:20px;">'
         f'<h2 style="margin:0 0 16px 0;font-size:13px;font-weight:700;'
         f'text-transform:uppercase;letter-spacing:2px;color:{color};">{region}</h2>'
+        f'{bullets_block}'
         f'{body_html}'
         f'</td></tr></table>'
     )
 
 
 def generate_bullets(summaries: dict[str, str], mode: str) -> list[str]:
-    """Ask Claude for 5 key bullets from the combined regional summaries."""
+    """Return top-level bullets focused on the global picture.
+
+    Prefers the bullet lines already curated in Global.md (which are cross-regional
+    by design). Falls back to asking Claude if Global bullets are absent or sparse.
+    """
+    if "Global" in summaries:
+        bullets = extract_bullets(summaries["Global"])
+        if len(bullets) >= 3:
+            return bullets
+
+    # Fallback: generate global-focused bullets via Claude
     combined = "\n\n".join(f"=== {r} ===\n{t}" for r, t in summaries.items())
     period = {"daily": "today", "weekly": "this week", "monthly": "this month"}[mode]
     client = anthropic.Anthropic()
     msg = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=300,
+        max_tokens=400,
         messages=[{
             "role": "user",
             "content": (
                 f"From the macro summaries below, extract exactly 5 key bullet points "
-                f"covering the most important developments {period} across all regions. "
-                f"Each bullet must be one concise sentence (max 20 words). "
+                f"covering the most important global-level developments {period}. "
+                f"Focus on cross-regional themes, major geopolitical events, and globally "
+                f"significant market moves. "
+                f"Each bullet must be one concise sentence (max 25 words). "
                 f"No bold, no markdown, no numbering — plain sentences only.\n\n{combined}"
             ),
         }],
