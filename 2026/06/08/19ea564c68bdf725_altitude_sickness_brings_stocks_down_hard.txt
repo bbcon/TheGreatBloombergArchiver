@@ -1,0 +1,280 @@
+Subject: Altitude sickness brings stocks down — hard
+Date: Mon, 08 Jun 2026 04:01:45 +0000
+
+Points of Return 
+ To get John Authers’ newsletter delivered directly to your inbox, sign up 
+here. US payrolls expand in a big way for the third month in a row 
+
+View in browser <https://bloom.bg/4unmFHJ> 
+ <https://bloom.bg/3PQnxXk> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=18466076&m=11b724c487f61753eb1a7a4a5f3ef261&p=06082026040145&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=18466076&m=11b724c487f61753eb1a7a4a5f3ef261&p=06082026040145&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/3RSUfrC> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ * US payrolls <https://bloom.bg/4obzIdQ> expand in a big way for the third 
+month in a row. 
+ * Markets gave up on fed funds cuts <https://bloom.bg/4axllLa> this year — 
+and Trump spoke out against hikes <https://bloom.bg/4euDnQA>. 
+ * Tech stocks suffer a massive (and overdue) one-day selloff 
+<https://bloom.bg/4g47HCS>. 
+ * S&P steps back from letting SpaceX straight into the S&P 500  once it floats
+ <https://bloom.bg/4aBSaGT>. 
+ * AND: Another installment of  neglected masterpieces 
+<https://bloom.bg/3Q2W4lg>. 
+
+
+
+Altitude H-IPO-xia
+
+When pilots or mountaineers ascend too high too fast, they risk  altitude 
+hypoxia <https://bloom.bg/43hcBoH>. With the supply of oxygen to the brain 
+limited, blood pressure can drop. In extreme cases, fatal cerebral or pulmonary 
+edemas can result. To avoid this terrifying condition, ascend slowly. Once 
+patients are hypoxic, the imperative is to descend, quickly.
+
+Markets are suddenly looking hypoxic, with a drastic selloff Friday on Wall 
+Street followed by more dizzying losses to openAsian trading 
+<https://bloom.bg/4exqDrB> for this week. Forthcoming IPOs, led by Elon Musk’s 
+SpaceX, threaten to intensify the condition as the market struggles to absorb a 
+welter of shares in the rarefied atmosphere.
+
+This does look like a case of altitude sickness. The Nasdaq 100 has been 
+further above its 50-day moving average, a measure of the short-term trend, 
+than at any time since 2002. This “overbought” state contributed to the brutal 
+selloff:
+
+Extreme valuations foster such conditions. Judged as a multiple of their 
+sales, the recent sharp increase in semiconductors’ profit forecasts has taken 
+the SOX index to an infeasible extreme. The level of the valuation and the 
+speed with which it was reached look hypoxic:
+
+Momentum strategies — buying what has been winning — suffered their worst day 
+since Liberation Day. This was primarily about cutting back on the stocks that 
+had gained most altitude:
+
+Good news announced Friday provided the catalyst for the excitement. US 
+non-farm payrolls grew by 170,000 in May, the third month in succession of 
+significant gains despite the ongoing war in Iran. Unemployment spent 2024 and 
+2025 teetering on the brink of recession, and theSahm Rule 
+<https://bloom.bg/3QtGGym> (named for Bloomberg Opinion colleague, economist 
+Claudia Sahm) briefly showed that unemployment was rising fast enough to 
+trigger a recession. That’s no longer an imminent risk:
+
+This implies that the Federal Reserve no longer has any need to cut rates for 
+the sake of the jobs market. Traders in overnight index swaps reacted 
+accordingly. This chart is derived from Bloomberg’s World Interest Rate 
+Probabilities function. It shows the projected course of fed funds at the 
+beginning of the year, and on Feb. 27, the eve of the war, compared to 
+projections immediately before and after the unemployment data. The war, and 
+the inflation risks in its wake, had already convinced markets that the Fed 
+would not be cutting more — even under new Chair Kevin Warsh. That’s now 
+hardened into confidence that rate hikes are coming:
+
+In some ways, this is an overreaction. Nothing about the employment report 
+suggests any need to raise rates. This was a pointPresident Donald Trump 
+<https://bloom.bg/4euDnQA> made as he applied pressure on Warsh not to hike — 
+and Warsh can now be seen to help him merely by leaving rates on hold.
+
+Next week’s inflation numbers, should they show another sharp increase, might 
+make it far harder for Warsh to resist hikes. That’s in the future. On Friday, 
+the shift in Fed expectations was more than enough to bring a sharp correction 
+for a market already suffering from altitude sickness. The upward trend remains 
+in place, and if there’s any imminent catalyst to break it, it comes from the 
+forthcoming IPOs.
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=18466076&m=11b724c487f61753eb1a7a4a5f3ef261&p=06082026040145&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=18466076&m=11b724c487f61753eb1a7a4a5f3ef261&p=06082026040145&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+Elon Musk, the Contradictions of Indexing and IPOxia
+
+The IPO of Elon Musk’s rockets-to-Twitter-to-Grok conglomerate Space 
+Exploration Technologies Corp. is almost upon us, and it’s a huge deal. There’s 
+not much to add to the debate over one of the most consequential and 
+controversial market flotations of all time, but it does seem to have performed 
+a valuable service of shining a light on the internal contradictions of passive 
+investing.
+
+It’s hard to be meaningfully passive when you’re more than half the market (as 
+Rob Arnott of Research Affiliates pointed out):
+
+As of last week, there is now  a $1 trillion exchange-traded fund 
+<https://bloom.bg/4xftD4i>, and as Apollo Group’s Torsten Slok shows, there are 
+now more ETFs than stocks:
+
+Passive funds are obliged to buy all stocks in the index they track — but not 
+any others. As they account for more than half the market, that means a lot 
+depends on whether index providers decide to include a new stock. Some retail 
+investors might be very disappointed if they discover their passive fund didn’t 
+automatically give them exposure to a company worth more than $1 trillion. 
+Others, particularly given Elon Musk’s growing ability to divide opinion into 
+fanatics and haters, might be distressed to find they’d bought more. So how do 
+index providers deal with it?
+
+Nasdaq decided <https://bloom.bg/3SaivFD> it would relax its prior rules 
+requiring an IPO to wait until the annual December reconstitution before it 
+could be included in the Nasdaq 100. There will now be quarterly 
+reconstitutions, with a fast-track for companies whose total market cap (not 
+their float) would put them in the top 40 of the index, to enter after seven 
+trading days. That should mean that SpaceX will be in the Nasdaq 100, tracked 
+by the QQQ ETF, by the end of June. It also means a huge extra source of demand 
+for their shares, at whatever price they’ve reached.
+
+But S&P DowJones Indices <https://bloom.bg/4vryGNk> on Friday announced that 
+it will keep its existing IPO rules, requiring them to trade for a year before 
+they can join the S&P 500. OpenAI and Anthropic won’t be in the S&P until late 
+2027. SpaceX might wait longer, because S&P also requires new members to be 
+making a profit, which it has yet to do.
+
+S&P did relax rules to allow swift entry to its total market indexes. So 
+“passive” managers are giving their clients an active choice: the Nasdaq 100 or 
+a total-market index if you want to dive straight in to this year’s IPOs, and 
+the S&P 500 if you’d rather wait until they’re established as public companies.
+
+S&P’s decision is the crucial one <https://bloom.bg/43ZI0vX>. The S&P 500 is 
+the most widely followed index, tracked by both of the two largest ETFs. It has 
+long had a culture of trying to produce indexes that people will want to track, 
+rather than measures of more academic interest. The S&P 600 small-cap index, a 
+rival to the better-known Russell 2000, illustrates the difference. The Russell 
+is based strictly on market cap. S&P imposes requirements that companies have 
+turned a profit before they’re included. Both contain useful information. But 
+S&P’s is the superior investment, because it performs slightly better. Over 
+years, that difference compounds:
+
+S&P should be thanked for its decision, which ought to mute some of the 
+potential excesses of demand. For the longer term, though, there will still be 
+plenty of involuntary demand for SpaceX. The passive industry must deal with 
+the fact that its investors have just learned that their investments cannot be 
+truly passive.
+
+
+A Bit Too Far
+
+Bitcoin is not in a happy place. Amid Friday’s fallout, it fell below $60,000 
+<https://bloom.bg/4fw33xt>, more than 50% down from its 2025 record high. It’s 
+back where it was five years ago, when institutional adoption was almost 
+non-existent, and the current pro-crypto regulatory framework was absent. 
+Losses among other digital assets are more pronounced: Ethereum is down about 
+65% from its high last August. Aggregate crypto market cap, which peaked at 
+$4.38 trillion in October, has plunged by about $2 trillion:
+
+In the near term, Bitcoin’s loss of its safe-haven appeal suggests that peace 
+in Iran (lookingincreasingly unlikely <https://bloom.bg/4eb4gI0> after 100 days 
+of war) would help. It’s not the only putative refuge to suffer a major reverse 
+during the conflict, with silver and gold <https://bloom.bg/4om7iOw> giving up 
+their gains from earlier in the year:
+
+The question now is where crypto might find a floor. A prolonged selloff would 
+breathe new life into skeptics’ view that Bitcoin’s intrinsic value (if it has 
+one) is far closer to zero than proponents admit. But there are limits. Despite 
+selling his Bitcoin, billionaire investor Mark Cuban argues that fears it could 
+hit zero may be exaggerated:
+
+I’m not saying it goes to zero. I’m saying its whole value is built on supply 
+and demand, with a little premium for payments.
+
+Even if calamity is ruled out, protracted lackluster performance is possible. 
+BCA Research’s Felix Vezina-Poirier points to widening divergence from the 
+equity market:
+
+AI stocks have offered crypto-like returns with a clearer narrative, likely 
+drawing some risk-chasing and momentum flows away from the crypto market.
+
+Bitcoin ETFs have seen more than $4 billion in outflows in the last two weeks, 
+while Michael Saylor’s Strategy’s first Bitcoin sale since 2022 added another 
+symbolic blow. As BCA shows, crypto winters tend to last longer than investors 
+expect:
+
+Longview Economics’ Chris Watling points out Bitcoin’s track record as a 
+leading indicator of market liquidity over the past decade. Its highly 
+speculative nature has often made it an early gauge of changing liquidity 
+conditions, with broader risk assets following its lead:
+
+If this relationship still holds, Watling offers three potential explanations. 
+Either the correlation between Bitcoin and broader market liquidity has broken 
+down; digital gold is signaling an S&P 500 correction; or the market narrative 
+is correct, and Bitcoin’s weakness reflects Saylor’s shift at Strategy. Watling 
+considers the last possibility unlikely.
+
+Stephane Ouellette of FRNT Financial suggests <https://bloom.bg/4g5iuN5> that 
+SpaceX’s IPO is emerging as a destination for former HODLers (Hold On for Dear 
+Life) seeking a speculative thrill. Combine that with crypto investors’ 
+tendency to sell into every perceived rally <https://bloom.bg/43hP9Yv>, and 
+HODLers’ ranks are fast shrinking.
+
+—Richard Abbey
+
+
+
+ Survival Tips 
+
+
+
+Some more underrated classics from readers. For most under-the-radar Beatles 
+song, maybeFlying <https://bloom.bg/4dUtBar> or Rain <https://bloom.bg/4dqv9sj>
+; then you could tryThunder and Rainbows  <https://bloom.bg/4eafs7I>by Martyn 
+Joseph,The Things We’ve Handed Down <https://bloom.bg/4xfRwss> by Marc Cohn, 
+Winter Sky <https://bloom.bg/4fwO1rg> by Big Country, Fred Jones, Pt. 2 
+<https://bloom.bg/4e9YoPg> by Ben Folds, Follow You Follow Me 
+<https://bloom.bg/3QnRcqW> by Genesis, and Why I Love Country Music 
+<https://bloom.bg/3QawKJX> by Lloyd Cole and the Commotions (personally I 
+nearly included Lloyd Cole’sJennifer She Said <https://bloom.bg/3QtGGOS> — 
+they’re much underrated). Many thanks and one final call for nominations. Have 
+a great week everyone.
+
+More From Bloomberg Opinion
+
+ * Japan <https://bloom.bg/4fsLiix> Is Becoming the Superpower of the Middle 
+Powers: Hal Brands 
+ * Want a Friend in the AI Age? Get a Dog <https://bloom.bg/4g3H0yb>: Adrian 
+Wooldridge 
+ * What If the Next Big AI Trade <https://bloom.bg/4e8zqjs> Isn’t in the US? 
+Jonathan Levin 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/FQWjchxVesoxUIOPyqZ0qhLxOmlf-0aRibAYtqEZ9u-HtbmHTIIZlwJ3XUtRUtBbeJ-xQqfF0CuoFrEbhXa0ToEQtToF1yJlPmqk3-ew-3M87cPvcqbq-VpK7u91YzSG9PMhv8hv9DXN1veAlbQnUsraCFV5ojmoLcSFxodOhX5_ifNVBwObfe0Ztz8Ru5hkBe-7FxbgYSq_nLG-yiedNpL2qIf2qRhLRZD6Mka1LnKlGoKikzlYJ9n6G9wr3q39E3kgH1HnOi662PbpKu8Q29g8xkUn2IunQhcZG5mNXxcG5BVfyqmJaqXDim1vmSEz-h4247PXfA_O0g8tqWH3tt3wEZcg2UNF/ssj-e_QjjctjEeXeuZaxN_vqhgGFJ6bV/21>
