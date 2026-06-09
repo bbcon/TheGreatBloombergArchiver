@@ -1,0 +1,277 @@
+Subject: Japan still can't escape the old normal
+Date: Tue, 09 Jun 2026 04:01:52 +0000
+
+Points of Return 
+ To get John Authers’ newsletter delivered directly to your inbox, sign up 
+here. Boing! Dip-buyers helped tech stocks recoup about half of Fr 
+
+View in browser <https://bloom.bg/4unWbWA> 
+ <https://bloom.bg/4ecl7Ky> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=18482713&m=11b724c487f61753eb1a7a4a5f3ef261&p=06092026040152&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=18482713&m=11b724c487f61753eb1a7a4a5f3ef261&p=06092026040152&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/4vCv37i> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ * Boing! Dip-buyers helped  tech stocks <https://bloom.bg/4vCv3UQ> recoup 
+about half of Friday’s selloff. 
+ *  Japan’s yen <https://bloom.bg/4ed9Wl1> remains above 160 per dollar even 
+as bond yields surge and stocks fall. 
+ *  Global private equity buyouts <https://bloom.bg/4vu21Xs> dropped 70% in 
+the first quarter. 
+ * OpenAI is joining the  IPO <https://bloom.bg/4urokw6> party. 
+ * Deferred capital gains taxes for ETFs cost Uncle Sam $48 billion 
+<https://bloom.bg/4um69aM> per year. 
+ * AND: Don’t forget to fill in your World Cup brackets. (BRKT <GO>) 
+
+
+
+A Yen for Intervention
+
+Japan’s economic Great Normalization <https://bloom.bg/3QxI9Up> is hitting 
+some perilous frontiers. That almost certainly means a rate hike from the Bank 
+of Japan next week, and possibly another attempt at currency intervention by 
+the Ministry of Finance — but it’s not clear that either would help the country 
+return to normal.
+
+Monday saw the 10-year Japanese government bond yield, deliberately held at 
+zero for many years under the BOJ’s former policy ofyield curve control 
+<https://bloom.bg/4vzbahj>, go back above 2.7%. The yen held above 160 per 
+dollar, a level that has previously prompted the government to intervene:
+
+These are copper-bottomed reasons for the BOJ to hike next week, which is now 
+priced as a near-inevitability. But the bank is dragging its feet. At the 
+year’s outset, traders expected a hike by now, and the projection for two hikes 
+by year-end is unchanged:
+
+A hike would make sense because the rise in short-term rates hasn’t come close 
+to catching up either with other countries or with Japan’s own inflation. This 
+is how target rates and 10-year inflation breakevens compare with the US:
+
+In such circumstances, a hike won’t do much to shore up the yen. Mansoor 
+Mohi-Uddin of Bank of Singapore argues that a sustained yen rebound “will 
+require the BOJ to lift interest rates above inflation” to ensure positive 
+returns for yen-buyers.
+
+This is unlikely. Inflation appears to have returned, but the question is 
+clouded by the recent price spike for rice, Japan’s staple food. That has died 
+down after core inflation as usually expressed in Japan — excluding fuel and 
+fresh food — rose above 4%. When all food was excluded, however, a more 
+conventional version of core inflation never reached 3% and is now close to 
+dropping back through 1%. It’s still not clear that Japan’s deflationary slump 
+has been beaten:
+
+Further, long yields are rising and failing to strengthen the currency — a 
+combination familiar from emerging markets crises when a government’s ability 
+to pay its debts comes into question. Japan has a huge overhang of debt, more 
+than double gross domestic product, and the expansive policies of Prime 
+Minister Sanae Takaichi could increase it. The BOJ’s continuing intervention in 
+the bond market limits how far yields are rising.
+
+“What would be a bond market crisis without the BOJ has morphed into a 
+currency crisis,” argues Robin Brooks of the Brookings Institution. “One way or 
+another, Japan’s debt overhang is making itself felt.”
+
+The signal Japan needs to send is that it recognizes debt is a problem. It can 
+do that with a wave of privatizations and sales of domestic assets. In my view, 
+markets would reward that with a stronger yen and lower yields, i.e. exactly 
+what Japan needs. FX interventions signal exactly the opposite.
+
+That’s unlikely, in part because a weak yen suits many people, even if it 
+stokes social concerns by making it easier for foreigners (particularly 
+Chinese) to gobble up Japanese assets. Jesper Koll, who publishes the Japan 
+Optimist newsletter, thinks the yen is heading for 200 and points out that 
+inflation is the “lazy policymakers’ best shot of getting down debt-to-GDP,” 
+(so aggressive hikes look very unlikely).
+
+Further, Koll argues that a weak yen boosts companies’ earnings — for every 10 
+yen of depreciation, Japan Inc. gets a windfall of around 8% to listed 
+companies’ earnings, he says, with approximately 65% of their earnings coming 
+from either exporting or offshore production.
+
+The equity market has calmed down since the burst of excitement around 
+Takaichi’s landslide <https://bloom.bg/4v2gSZk> election victory in February. 
+That’s in great part because of the Iran war’s effect on such a large energy 
+importer, but it does suggest that a big rally for the yen at this stage could 
+hurt stocks:
+
+How the government deals with pressure on the yen will cut to the heart of the 
+greatest issues with Takaichi <https://bloom.bg/3QcOEvN>. She’s prepared to 
+force through reforms to revive the corporate sector and spend money on 
+boosting the economy. But as a strong supporter of the late Premier Shinzo Abe, 
+she’s also perceived to be tied to his policies of a weak yen and intervention 
+to keep bond yields down.
+
+Provided you can handle the currency risk, Japanese equities at the moment 
+look very attractive — they’re nowhere near as expensive as the US even though, 
+in local currency terms, their earnings have been growing faster over the last 
+decade:
+
+This is because the corporate governance reforms started by Abe are at last 
+having a serious impact, which should have a major effect on both earnings and 
+valuations. This chart is from the GMO fund management group:
+
+GMO’s Rick Friedman and John Thorndike <https://bloom.bg/4e6AYu5> published a 
+rallying call to stay invested:
+
+Japan is not in the late innings of a trade. It is still in the middle innings 
+of a long game, one that increasingly rewards selectivity, engagement, and 
+active ownership rather than broad market exposure... The influence of reforms 
+has gained momentum at the company level and does not depend on a benign macro 
+or geopolitical environment. 
+
+There is much to be said for this, and the quieting of interest in the 
+Takaichi Trade <https://bloom.bg/4ofDlzr> in the last few months has created a 
+new opening to get involved. But bargain-hunters may need to hedge the yen 
+before they do so.
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=18482713&m=11b724c487f61753eb1a7a4a5f3ef261&p=06092026040152&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=18482713&m=11b724c487f61753eb1a7a4a5f3ef261&p=06092026040152&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+Keeping It Private
+
+Private equity has a record-high pile of dry powder — cash waiting to be put 
+to work. That might justify optimism about the global industry's outlook. But 
+the metric, a useful gauge of investor appetite, tells only part of the story. 
+Look at actual buyout activity, and artificial intelligence — the same force 
+behind arecord proliferation of unicorns <https://bloom.bg/43rMzPB> — appears 
+to be dampening any attempt to light it. Bain & Co. says technology is largely 
+responsible for a 70% plunge in global deal value in the first quarter, with 
+fewer large software deals completed:
+
+Growing doubts about software valuations in the face of AI disruption might 
+explain this. It’s certainly affected them in the public market. But there’s 
+more to it, as these problems long predate the AI boom. 
+
+Even before ChatGPT, firms were finding it harder to sell companies at a 
+profit and return capital to investors. Then they were derailed by last year’s 
+tariff brinkmanship under President Donald Trump, which weighed on raw 
+materials costs, narrowed portfolio margins, and complicated exit strategies. 
+Now, the Iran war, software disruption, and private credit’s problems are a 
+trio of headwinds, according to Bain’s Rebecca Burack:
+
+Amid the new bout of uncertainty, bid-ask spreads have widened, investment 
+committees have pulled back, and exit momentum has stalled out. Select 
+transactions continue to clear — and at high prices — but mostly those 
+involving A-plus assets.
+
+There’s little improvement in other measures of private-equity health. Holding 
+periods for portfolio companies have stretched to six or seven years, up from 
+three to four during the industry’s heyday, according to Burack. Those longer 
+periods raise the bar for returns. PE firms once needed roughly 5% annual 
+earnings growth over the life of an investment to generate a 2.5-times return. 
+Now, that figure has climbed to about 12%.
+
+The picture looks different from the perspective of deal volume. According to 
+With Intelligence,AI-related deal activity <https://bloom.bg/4uHYAM9> nearly 
+doubled between 2023 and 2025:
+
+The plunge in deal values underscores skepticism about valuations in 
+AI-dominated sectors. Investors fear overpaying for businesses whose models 
+could soon be disrupted. Enthusiasm for AI as an investment opportunity is 
+increasingly matched by a desire to mitigate its risks.
+
+Ropes & Gray note that capital is increasingly gravitating 
+<https://bloom.bg/43jHpFl> toward industries with more visible cash flows and 
+lower disruption risk. Sectors benefiting from this rotation include 
+professional services, financials and construction. Sponsors have also steadily 
+raised their investment in outsourcing, compliance and infrastructure, which 
+offer more predictable demand than sectors grappling with the software reset:
+
+Geopolitical uncertainty is another headwind. KPMG’s Carole Streicher says 
+tariffs, inflation and other sources of uncertainty are forcing a return to 
+cautious underwriting. Dry powder is going toward high-conviction, top-tier 
+transactions:
+
+To capture these capital-intensive opportunities, firms are increasingly 
+forming consortiums with sovereign wealth and institutional investors. These 
+collaborative investments are highly thematic, targeting scarce, “must-own” 
+assets where strategic importance matches financial returns.
+
+Managers must also contend with pressure from investors who want liquidity, a 
+challenge that is becoming harder to ignore. Last week,Partners Group Holding AG
+ <https://bloom.bg/4vwJKss> reported a pickup in redemption requests across its 
+evergreen funds from private-wealth clients. It capped withdrawals in one 
+vehicle at 5% of net asset value per quarter after redemption requests surged 
+to an estimated 9.8% in the second quarter.
+
+This growing tension between long-term investments and demands for return of 
+cash suggests that the turnaround has much further to go.
+
+—Richard Abbey
+
+
+
+ Survival Tips 
+
+
+
+Many of us feel menaced by AI, which threatens to help us get far more work 
+done. Thankfully, Bloomberg has an antidote that should keep you blissfully 
+distracted and unproductive. Our new function BRKT <GO> lets you fill out 
+brackets for the entire World Cup. In this year’sabsurdly over-expanded 
+tournament <https://bloom.bg/4oe2hr4>, there are 147 games to predict, many of 
+which won’t take place if your earlier picks don’t pan out. Only a few 
+countries ever win the cup, but recent semifinalists have included Morocco, 
+South Korea, Turkey and Bulgaria. Someone will sneak through, and with five 
+knockout rounds that could go to penalty shoot-outs, this tournament will be 
+particularly unpredictable. You have until Thursday to fill in the brackets, 
+and then you can sprawl on a sofa and watch the whole thing. I fear that FIFA 
+may havekilled the goose <https://bloom.bg/4odU8mq> that lays the golden eggs, 
+but here’s hoping I’m wrong. And it still beats work.
+
+More From Bloomberg Opinion
+
+ * The ‘Assimilate or Go Home’ <https://bloom.bg/4vARCcm> Crowd Could Use a 
+History Lesson: Justin Fox 
+ * Ford’s AI Rally <https://bloom.bg/43nz6sa> Recalls the Excesses of the 
+Dot-Com Bubble: Liam Denning 
+ * Brace for a Flood of Oil <https://bloom.bg/43VtTYy> as Soon as Hormuz 
+Reopens: Javier Blas 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/zPVVs2k9otRACCmnjHqnvf112NwA_E_xupQMEVN8O7hcvlj33OwYzntdWp7uxDbZFzpbePQUrJtu-58r1Z7SIAZpmjBmP71IsmS-TdXxtOWECTqN4gQNH9OhC_zLfWIF49D-r2maBUJfeWRB29M_Qi_S6QxH32OpXD87_VlPdGFokS5So_bs0ndis5cVfGB3iStVqmk9WR9i0fqHMykowvydWPjBMYV-cUY3ka3sQHGZ2AfdvY5b6irvBp9IcJ6P__dAFQuTwy3rL5DtoJOW1dyGWFNpLVaorCv1KZPba2ofwAK8t4ujGqC6vvko5oLg9cmLtgdS6ivF1rw0o-YJuJiAY4FzbrU9/AD0HMfail5Ry5gWphgMfeJS_PQDN5Dqy/21>

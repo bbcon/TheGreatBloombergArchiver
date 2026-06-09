@@ -1,0 +1,11 @@
+• Bloomberg Economics estimates Brexit has cost the UK economy between 2% and 4% of GDP, with the central estimate of 2.5% equating to approximately £30 billion in forgone annual tax revenue; political debate on reversing Brexit is now mainstream.
+• German factory orders fell more than expected in April, adding to concerns the eurozone's largest economy may contract in the second quarter; German industrial production did, however, grow for the first time since the Iran war began.
+• GSK is in advanced talks to acquire Nuvalent, a cancer treatment biotech, for between $9 billion and $10 billion, in one of the larger European M&A transactions of the year.
+
+**Brexit Economic Assessment**
+Ten years after the referendum, Bloomberg Economics has published a comprehensive analysis concluding that Brexit has durably reduced UK output. Since 2016, UK growth has run at roughly half the pace of Italy and Spain, and slower than France — a reversal of the pre-referendum trend in which the UK outperformed most major European economies. No partial reversal — rejoining the customs union, a Swiss-style bespoke agreement, or single market re-entry for goods — would restore more than half the lost output, given the political constraint of excluding automatic freedom of movement. Prime Minister Starmer, having previously avoided the topic, has signaled commitment to closer European ties, though the political path remains heavily contested with Brexit-aligned opposition forces.
+
+**German Economy**
+The German data remain contradictory. Factory orders declining more than expected in April points to continued weakness in the industrial base, consistent with the view that the Iran war's energy cost shock is disproportionately pressuring Germany's manufacturing-heavy economy. The partial offset — industrial production growing for the first time since the conflict began — suggests stabilization rather than recovery. The balance of evidence appears consistent with a second-quarter contraction, though the outcome remains uncertain.
+
+---

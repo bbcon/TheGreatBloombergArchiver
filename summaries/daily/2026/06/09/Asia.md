@@ -1,0 +1,11 @@
+• China's May exports rose 19.4% year-on-year, beating the 15% consensus, driven by a 66% surge in computer and parts shipments and a 111% jump in integrated circuit sales — the fastest pace of chip export growth since 2013.
+• Bank Indonesia delivered a surprise 25 basis point rate hike to 5.5%, its second increase in as many months, as the rupiah remains down approximately 8% year-to-date and the Jakarta Composite has fallen roughly 35% — the worst equity performance globally.
+• South Korea's Kospi surged 8.2% on Tuesday after falling more than 8% Monday, with 90-day volatility rising to its highest since 1998; authorities announced crackdowns on speculative foreign exchange trading.
+
+**China Trade**
+China's May trade data materially exceeded expectations across the board. The 19.4% export gain, above the 15% consensus, was led almost entirely by AI-related hardware, with computer exports up 66% — the fastest since 2010 — and integrated circuit sales abroad surging 111%. Exports to the US rose nearly 36%, the strongest pace since 2021, reflecting the partial normalization of bilateral trade following last year's tariff truce. Imports surged 27%, leaving a trade surplus of $105.4 billion, the largest since January. Bloomberg Economics noted the figures partly reflect favorable base effects but concluded they allay fears that the Iran war is materially damaging China's export engine. Separately, Beijing is preparing a 2 trillion yuan ($295 billion) five-year plan to build a nationwide network of AI data centers operated primarily by state-owned telecommunications firms.
+
+**Indonesia and Korea**
+Bank Indonesia's inter-meeting rate hike underscores the severity of the country's financial market stress. Foreign investors have withdrawn more than $3.5 billion from Indonesian equities in 2026, and the rupiah's 8% decline has eroded reserves. President Prabowo's populist policy signals — including direct control over commodity exports — appear to be the primary driver of investor unease, with the Iran war serving as an amplifying factor. Tuesday's hike provided short-term support to equities and the currency, though bonds extended their selloff. Korea's extreme intraday volatility, with leveraged ETFs exacerbating moves in underlying securities, prompted regulatory intervention.
+
+---

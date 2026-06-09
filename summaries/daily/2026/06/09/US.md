@@ -1,0 +1,12 @@
+• US two-year Treasury yields surged to their highest level in over a year, signaling that markets expect the Federal Reserve to tighten rather than ease — a pointed message for incoming Fed Chair Kevin Warsh ahead of his first policy meeting next week.
+• OpenAI confidentially filed for a US IPO, working with Goldman Sachs and Morgan Stanley on a potential fall listing; SpaceX's offering was reported heavily oversubscribed.
+• A federal judge struck down the Trump administration's $100,000 H-1B visa application fee, providing relief to technology companies dependent on skilled foreign workers.
+• Bank of America Securities warned investors to "take profits," citing 17 of 20 valuation metrics showing the S&P 500 as statistically expensive; S&P 500 futures nonetheless advanced approximately 0.4%.
+
+**Monetary Policy and Rates**
+The US rates market is sending an unambiguous signal to the incoming Federal Reserve leadership: policy is not restrictive enough. Yields on two-year Treasuries rose to their highest in over a year following last week's strong jobs print, with traders now pricing at least one quarter-point rate hike as soon as October. The move reflects a growing conviction that an AI-induced demand boom risks overheating the economy, putting Kevin Warsh in the uncomfortable position of inheriting a tightening bias at his very first FOMC meeting — while President Trump publicly continues to press for lower rates. The tension between political pressure and market signals represents a meaningful institutional challenge for the new chair.
+
+**Equity Markets and Corporate News**
+US equity futures extended Monday's rebound, with the Nasdaq 100 gaining approximately 0.8% in early trading as the AI trade recovered roughly half of Friday's selloff. The IPO pipeline is accelerating: OpenAI's confidential filing follows Anthropic's similar move last week, and SpaceX's offering is reportedly oversubscribed by multiples. Bank of America's cautionary note — citing a growing accumulation of bear market signposts — introduces a note of tension against the prevailing optimism. GSK's $10.6 billion acquisition of Nuvalent added to corporate activity, driving Nuvalent shares sharply higher.
+
+---
