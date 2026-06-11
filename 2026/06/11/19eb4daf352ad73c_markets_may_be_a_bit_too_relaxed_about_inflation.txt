@@ -1,0 +1,286 @@
+Subject: Markets may be a bit too relaxed about inflation
+Date: Thu, 11 Jun 2026 04:05:05 +0000
+
+Points of Return 
+ To get John Authers’ newsletter delivered directly to your inbox, sign up 
+here. Headline inflation in the US topped 4% — but spared any nast 
+
+View in browser <https://bloom.bg/4v5P8mH> 
+ <https://bloom.bg/4upmdZp> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=18517458&m=11b724c487f61753eb1a7a4a5f3ef261&p=06112026040504&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=18517458&m=11b724c487f61753eb1a7a4a5f3ef261&p=06112026040504&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/4uxBKGS> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ * Headline inflation <https://bloom.bg/4uvgmC3> in the US topped 4% — but 
+spared any nasty surprises. 
+ * Thus the Fed is expected to hold next week — after the  ECB hikes 
+<https://bloom.bg/43uTkjH> on Thursday. 
+ *  Oracle <https://bloom.bg/4vKGvxO>’s announcement of increasing capex was 
+greeted with a 7% selloff after-hours. 
+ * In case you forgot:  SpaceX <https://bloom.bg/4v9lZXQ> goes public on 
+Friday. 
+ * AND: Much more important, the  World Cup <https://bloom.bg/4e2tsSo> starts 
+Thursday. 
+
+
+
+Core Blimey!
+
+Nothing to see here. US consumer price inflation topped 4% last month for the 
+first time in three years — but the market reaction was minimal. That’s partly 
+because energy inflation is such a large part of the problem, and the most 
+recent news flow from Iran tends to be more important for prospects on that 
+front than backward-looking data. Also, core inflation as usually defined — 
+excluding food and energy — rose but came in below expectation.
+
+And most importantly, for the traders, the numbers were immediately adjudged 
+not to be bad enough to put an outright raise in the fed funds rateon the table 
+for Kevin Warsh <https://bloom.bg/3SxqJI4>’s first meeting as chairman of the 
+Federal Open Market Committee next week. That would have been a scary prospect, 
+but at this point there’s a perceived virtual certainty that rates will stay on 
+hold. Market-based inflation predictions, whether measured by swaps or bond 
+breakevens, continued to fall and clearly suggest that this shock from Iran, 
+just like last year’s from tariffs before it, will prove transitory:
+
+While all are valid reasons, the market might be taking these numbers a tad 
+too calmly. To start, this is the breakdown of inflation into its four main 
+components, as produced by Bloomberg’s trusty ICAN function:
+
+The rise in the energy component is obviously important, but services remain 
+obdurately high, while food inflation — politically salient these days — hasn’t 
+gone away. These numbers rule out a rate cut.
+
+More to the point, alternative measures of core inflation signal that pressure 
+is rising. The Fed’s favored “supercore” of services excluding housing is 
+rising sharply, while the Atlanta Fed’s gauge of sticky price inflation, 
+covering products whose prices take time to change and are difficult to cut, 
+has risen above 3%. Both the trimmed mean, excluding outliers in either 
+direction such as oil and averaging the rest, and the median also rose and are 
+higher than CPI excluding food and fuel. There’s firm upward pressure to prices:
+
+Look deeper and some interesting trends emerge. This is about the point when 
+last year’s tariffs should begin to drop out of year-on-year comparisons, and 
+that does indeed seem to be happening. Core goods are most directly affected by 
+protectionist levies, and have seen outright deflation for most of this century 
+thanks to globalization. Standing at zero ahead of the Liberation Day levies, 
+core goods inflation never reached 2% and is now declining. This certainly 
+looks like a victory for those who said the fuss over tariffs was always 
+overdone:
+
+A more worrying point, which also shows up in the rise of “supercore,” is that 
+it’s growing hard to attribute the inflation issue to shelter. Changes in 
+housing costs tend to arrive in the index with a lag, as they include all 
+leases in effect rather than just those signed over the preceding month. That 
+meant a predictable bump and then decline in the headline numbers — but at this 
+point CPI excluding shelter is above 4%. Even though Zillows’s measure of 
+rental inflation continues to decline, it’s hard to see any improvement coming 
+from this direction:
+
+And the data also reveal what appears to be a lasting positive effect of the 
+pandemic. For decades, college tuition fees rose at more than inflation without 
+fail. That ended in the run-up to Covid, as colleges priced themselves out of 
+the market and Americans began to reassess whether they needed a degree. 
+Tuition inflation has run below the overall index without a break since 2020:
+
+Colleges may have left it too late to bring their prices into line, but if 
+there’s one area where the pandemic might have had a lasting positive effect on 
+the cost of living, that would be it. For examples of deeper damage, look to 
+small business.
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=18517458&m=11b724c487f61753eb1a7a4a5f3ef261&p=06112026040504&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=18517458&m=11b724c487f61753eb1a7a4a5f3ef261&p=06112026040504&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+A Small Business Problem
+
+If inflation threatens the US economy, it does so through the small businesses 
+that make up its backbone. This strain is reflected in deteriorating sentiment 
+(despite the enthusiasm that many small business executives have for the Trump 
+administration’s agenda). May’s National Federation of Independent Business’ 
+small business optimism index slipped below expectations, and gave up all its 
+gains since Trump was elected:
+
+The Middle East crisis is the most important driver of this pessimism. While 
+input costs rise, not all businesses can pass them on to customers, leaving 
+them to navigate between survival and profitability. Outside the post-pandemic 
+shock, the NFIB’s index of prices is its highest since 1981:
+
+More than a third of businesses had hiked selling prices, while another third 
+planned to raise them. With more than 70% of small-business owners reporting 
+that supply-chain disruptions are weighing on their operations, geopolitical 
+uncertainty is having an effect. It’s most evident in hiring plans, which 
+unsurprisingly took a hit, while capex is at its lowest since 2009.
+
+Troy Ludtka of SMBC Nikko Securities points out that the NFIB prices survey 
+has historically led inflation inflection points by nine months. That currently 
+suggests that a reacceleration is underway:
+
+Despite these underlying strains, larger businesses have held up well. Oxford 
+Economics’ Michael Pearce attributes their resilience to scale; larger firms 
+can more easily navigate uncertainties over tariffs and energy costs. Greater 
+access to capital enables them to deploy artificial intelligence more rapidly. 
+To quote NFIB’s Chief Economist Bill Dunkelberg, “despite the enthusiasm around 
+AI, the overall picture is divided.”
+
+More small business owners are struggling with significant and unpredictable 
+hikes in fuel prices, which are more challenging for small businesses to pass 
+on to their customers compared to their larger corporate competitors.
+
+Meanwhile, the picture for the biggest players grows ever more exciting. 
+
+—Richard Abbey
+
+
+Immoveable Object, Irresistible Force 
+
+The selloff for the biggest names in AI continues, but it’s hard to call it a 
+correction. The Nasdaq 100 is down 7% from its peak last week, but still up 12% 
+for the year, and above its 50-day moving average. And it’s doing this even 
+though the war in Iran, which drove a sharp selloff three months ago, isheating 
+up again <https://bloom.bg/3QzffTR>.
+
+Oracle Corp. <https://bloom.bg/4vKGvxO>, the software group trying to reinvent 
+itself as an AI hyperscaler, has been on an even more exciting ride. Its 
+announcement that it had devoted yet more capex to building out data centers 
+than thought drove a 10% selloff after the market closed on Wednesday. It’s 
+down 25% since its peak last week. But the headlong rally before then left much 
+room for adjustment:
+
+Providers of AI infrastructure are obviously in good shape while capex 
+continues like this (although semiconductor stocks have sold off 12% from their 
+own peak). But the market is beginning to wonder where the money will come from 
+to pay for them. The divisions between winners and losers could grow more 
+extreme if expenditure grows as some on Wall Street now expect. Goldman Sachs’ 
+Ryan Hammond argued:
+
+Consensus 2027 hyperscaler capex estimates are too conservative. Analyst 
+estimates imply hyperscaler capex will equal $920 billion in 2027, representing 
+a sharp deceleration in growth from 84% in 2026 to 22% in 2027. We estimate 
+that if incremental investment reaches 2-3% of GDP, similar to the build-out of 
+railroads and autos, hyperscaler capex would reach roughly $1.1 trillion in 
+2027 (45% growth).
+
+If this is right, we can expect more lurches like Oracle’s latest selloff. The 
+imminent arrival of new companies that offer a play on AI (likeSpaceX 
+<https://bloom.bg/3Qves6q> on Friday) also churns the waters as would-be buyers 
+have to make room in their portfolios.
+
+The tech boom obscures the Iran war’s market impact. The latest news is on the 
+face of it very bad, with hostilities appearing to be their worst since the 
+ceasefire started two months ago. But the events in Hormuz — wheretraffic 
+remains minimal <https://bloom.bg/4utQ0QK> — have progressively less effect on 
+the stock market, or even on oil. This is how the price of Brent for delivery 
+in December, and in July next year, has moved. There’s no great return to 
+normal, and amid the volatility is a discernible continuing upward trend — but 
+it doesn’t seem consistent withdire warnings of an economic slump 
+<https://bloom.bg/43XcIGa> as inventories run down and the world feels the full 
+effects.
+
+And, of course, the war hasn’t thwarted a barn-burning rally in stocks since 
+the start of April. Energy stocks blasted upward in March, at the expense of 
+everyone else. Now, remarkably, they’ve done exactly as well as the rest of the 
+market under Trump 2.0:
+
+The oil and AI shocks both have diffuse economic effects far beyond the 
+sectors directly involved in them, which makes it impossible to gauge which is 
+the more powerful. But a crude way to account for the AI boom does suggest that 
+it’s masking the impact of the war.
+
+The following chart covers major world equity markets as measured by MSCI, 
+excluding the chip-rich South Korea and Taiwan, and for the US excluding tech 
+from the S&P 500. All are down since Feb. 27, the last day of trading before 
+war broke out:
+
+This isn’t close to the nightmare market scenarios that seemed plausible in 
+early March, but it also suggests that the war is creating more of a drag than 
+many assume. Escalation in the Middle East, or a tumble in AI capex, would put 
+this to the test — one that all will want to avoid.
+
+
+
+ Survival Tips 
+
+
+
+It’s about to kick off. For the next 40 days, the world’s eyes turn to North 
+America for the biggest ever World Cup. Despite everything, nothing beats it. 
+The game itself is gloriously dramatic, and contrasting styles and strategies 
+are clearer than in the club game. Yes, the quality is a tad lower than the 
+elite clubs (because they can generally pick squads more talented man-for-man 
+than even the World Cup winner, and the players have much more opportunity to 
+build an understanding). But the fact that it matters so much to everyone 
+taking part more than compensates.
+
+For podcasts to get you into the mood, and to follow throughout the 
+tournament, my favorites (which will tend to have a pro-England bias, sorry 
+about that) includeAfter the Whistle <https://bloom.bg/4vGLGyG>, featuring 
+Coach Beard from Ted Lasso,The Rest Is Football <https://bloom.bg/3Qzm2Np> 
+(steered by 1986 Golden Boot-winner Gary Lineker, and now appearing on 
+Netflix), and the grand historical sweep ofOur Copa <https://bloom.bg/3ShF37s>. 
+The Guardian’sFootball Weekly <https://bloom.bg/3See0Kf> is unfailingly 
+intelligent, and my old colleague Simon Kuper does a brilliant job of covering 
+the importance of the Cup to the world inGood Seats Still Available 
+<https://bloom.bg/4at1Pzx>.
+
+I think Spain will probably will win. As for the greatest team goals ever in 
+the tournament, trythis <https://bloom.bg/4vaMPPm>, this 
+<https://bloom.bg/4aEyJ04> and this <https://bloom.bg/4um9Mxv>. And let's hope 
+to avoid controversy as ugly asthis <https://bloom.bg/4vaMR9W> and this 
+<https://bloom.bg/4vaMRqs>.
+
+More From Bloomberg Opinion
+
+ * SpaceX <https://bloom.bg/3Qves6q> Owns a Real Business That Makes Big 
+Money: Chris Hughes 
+ * China Is Planning for AI’s Job Shock <https://bloom.bg/4vFsv8k>. America 
+Isn’t: Catherine Thorbecke 
+ * Jensen Huang <https://bloom.bg/4v3sJX5> Is Talking Up His Suppliers. It’s 
+Worrying: Shuli Ren 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/BjsuXz3PsTjU1OtX9NsEhQSShnCZpSl4hGpjq-8WbEi5ylLSVfFwUOVopHhDM8LCZ5xkUCXUiKFOuXIkuHB57pRYrNZuPoyuTcvM95_jmUSpoq71qia2DCuvzm-Fy08w1MVhVtHZG7i8qmFz-JvYFWcaehsNw36lW6jNWsV_V4EmCFlbNpqvkfbdhn9ciMM8HzcIW8VUPPUmDZDGHu4JMoGBeOEPaOOPDfa9wsSy4Z2e2YTGebHbXdZJsKw8IUIxXo591SDSXPs-LnuhXm6hH_lJA2UHiDU2KNcCC8RJMI5Vts_8BhId2JqK4LYigMH4hhxQYwRnNo0b8lAzaDymdxLrN2KloHVq/YJ_XNgjEd7D2ZJB0a5He9F2KvjYLrgo4/21>

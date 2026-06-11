@@ -1,0 +1,192 @@
+Subject: Energy Daily: US nuclear milestone
+Date: Thu, 11 Jun 2026 12:07:13 +0000
+
+US Nuclear Power’s Technological ‘Rebirth’ Will Take Some Time
+The first small-reactor startup in a government program achieves a 
+self-sustaining reaction. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-06-11/us-nuclear-power-s-technological-rebirth-will-take-some-time?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+ 
+<https://www.bloomberg.com/industries/energy?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=18523267&m=11b724c487f61753eb1a7a4a5f3ef261&p=06112026120712&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=18523267&m=11b724c487f61753eb1a7a4a5f3ef261&p=06112026120712&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Welcome to our guide to the commodities driving the global economy. Today, 
+reporter Will Wade digs into a milestone achieved by an American nuclear 
+startup.
+
+The Trump administration has been hailing the “rebirth of America’s nuclear 
+industry” after a reactor startup reached akey milestone 
+<https://www.bloomberg.com/news/articles/2026-06-04/us-says-antares-small-nuclear-reactor-reaches-criticality?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+.
+
+Antares Nuclear Inc. is developing the new and unproven technology for small 
+nuclear power plants, which could be used much more widely than traditional 
+large-scale facilities. They are of particular interest to power-hungry AI data 
+centers.
+
+Last week, Antares achieved a self-sustaining fission reaction known as “
+zero-power fueled criticality 
+<https://www.energy.gov/articles/department-energy-celebrates-first-advanced-reactor-criticality?utm_source=chatgpt.com>
+.” It shows the company’s design can produce a steady release of energy — 
+enough for a single LED light bulb for now.
+
+But it will be quite some time before this tiny flow of energy can be scaled 
+up to fulfill the US Department of Energy’s boast of a “nuclear renaissance.”
+
+“It’s different from proving commercial viability,” says Chris Gadomski, chief 
+nuclear analyst at BloombergNEF. “They’re not going to be creating power 
+tomorrow.”
+
+The US nuclear industry has been stagnating for decades. The country has added 
+just three traditional reactors this century. No new commercial-scale projects 
+are under construction today despite great interest from President Donald Trump 
+and several states.
+
+The US hasn’t managed to commercialize the small modular reactors, or SMRs, 
+that have tantalized hyperscalers with their potential to provide clean 
+round-the-clock power for AI data centers. No such power plants are installed 
+in the country today.
+
+In this context, Antares has taken an unequivocally important step for US 
+efforts to revive its nuclear industry.
+
+It is the first company to achieve criticality under an Energy Department 
+program initiated last year after Trump returned to the White House. The goal 
+is to get two more firms to achieve the same thing with their SMR designs by 
+July 4.
+
+Oklo Inc., a next-gen nuclear company that includes OpenAI’s Chief Executive 
+Officer Sam Altman as an investor, said it’s targeting criticality by that 
+date. Valar Atomics Inc., another startup, is pushing to produce electricity at 
+a low level by next month.
+
+For Antares, the next steps include ramping up reactors to full power and then 
+connecting turbines to convert the energy into electricity.
+
+It’s aiming to deliver very small reactors for military bases in 2028, but 
+next-gen nuclear technologies for commercial use are unlikely within Trump’s 
+term.
+
+“People don’t realize how challenging it is,” Gadomski said.
+
+—Will Wade, Bloomberg News
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=18523267&m=11b724c487f61753eb1a7a4a5f3ef261&p=06112026120712&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=18523267&m=11b724c487f61753eb1a7a4a5f3ef261&p=06112026120712&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Chart of the day
+
+The Strait of Hormuz is a major conduit for fertilizer trade and its 
+near-closure sent prices soaring. India paid more than $900 per ton to procure 
+supply in April. Costs have sincefallen to half 
+<https://www.bloomberg.com/news/articles/2026-06-10/india-fertilizer-offers-fall-in-sign-of-improving-global-supply?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+ of that level, a sign that supply strain from the war in Iran is starting to 
+ease.
+
+Top stories
+
+Oil erased an earlier increase as concerns over fresh attacks 
+<https://www.bloomberg.com/news/articles/2026-06-10/latest-oil-market-news-and-analysis-for-june-11?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+ between the US and Iran were offset by signs of rising oil flows through the 
+Strait of Hormuz and depressed Chinese consumption.
+
+Gold whipsawed after renewed hostilities in the Middle East raised inflation 
+risks 
+<https://www.bloomberg.com/news/articles/2026-06-10/gold-falls-for-third-day-as-us-launches-fresh-strikes-on-iran?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+, while copperinched lower 
+<https://www.bloomberg.com/news/articles/2026-06-11/copper-falls-to-three-week-low-on-flareup-in-us-iran-fighting?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+ on fears of slower economic growth.
+
+A Greek buyer of liquefied natural gas said it’s becoming more difficult 
+<https://www.bloomberg.com/news/articles/2026-06-11/greek-lng-buyer-says-long-term-us-deals-getting-more-difficult?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+ to secure long-term deals with US suppliers, after the Iran war upended the 
+global market.
+
+Lee Raymond, the former head of Exxon Mobil Corp. who oversaw the biggest 
+corporate merger in the history of the oil industry and was derided as “the 
+Darth Vader of global warming,”has died 
+<https://www.bloomberg.com/news/articles/2026-06-10/lee-raymond-exxon-ceo-who-doubted-climate-change-dies-at-87?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+ at age 87.
+
+More than 100 days into the Iran war, crude is still below $100 a barrel. 
+Reconciling this with the sheer scale of the supply loss requiresdigging into 
+<https://www.bloomberg.com/opinion/articles/2026-06-11/oil-prices-10-reasons-why-oil-is-still-below-100-a-barrel?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+ the plumbing of the global market, writes Bloomberg Opinion’s Javier Blas.
+
+BNEF today
+
+The European Union has proposed new legislation to triple data center capacity 
+in the bloc and shift away from foreign companies. Yet the gap between 
+intentions and delivery remains substantial, with most early-stage plans 
+speculative, or facing delays in grid connections or permits, according to 
+BloombergNEF. The initiative would require total live capacity to reach 
+approximately 25.7GW by the early 2030s, up from 8.6GW currently.
+
+Coming up
+
+Bloomberg Sustainable Business Summit: Business leaders and investors gather 
+in Singapore on July 22 to discuss risk, energy strategy and competitive 
+advantage in a shifting global landscape.Learn more here 
+<https://events.bloomberglive.com/event/SBS_2026_SG/summary?RefId=Newsletters&rt=923zdvJbAEuEHssxwMk-qw&utm_campaign=sbs_sg_2026&utm_medium=newsletters&utm_source=marketing>
+.
+
+More from Bloomberg
+
+ * Economics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT061126_ENERGY&utm_term=260611&utm_content=5420>
+ for what the changing landscape means for policymakers, investors and you
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT061126_ENERGY&utm_term=260611&utm_content=5420>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Green Daily 
+<https://www.bloomberg.com/account/newsletters/green?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT061126_ENERGY&utm_term=260611&utm_content=5420>
+ for the latest in climate news, zero-emission tech and green finance
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT061126_ENERGY&utm_term=260611&utm_content=5420>
+ for daily insights into supply chains and global trade
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT061126_ENERGY&utm_term=260611&utm_content=5420>
+ to get most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Energy 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/elements?source=NLshare&cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/elements?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBBXT061126_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260611&utm_content=5420>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/EBStu4pzb991vT-w8GBvfiLdwzeChtO4x6U0u-SmEciV4hk_jJfRfl3M9H46wQEViqLCam1G8UsYj6TR7isfiTdrEqJdJWC3KQSUhuS9m0cd5XV2RLjAXe8VYhAXdp68I2Uj10rx0eHszGOVpaRemI4HeA2NVgDEE-3-KZ352t-EJjuc_Ef51hCGiF-xUiyYhXu-2FHLqZ3Kf6w2jSyQBhIzfUam68GpY7Uzg0vBYhjm_E6fltNedAUGlN61IlT_fg5XhgRKdax5Wll7WEWlxHmK1G8fi1WsC-CcENvG_G3IPIoLDFrJwWU_8TKfLgRIEDXJ2ub7RCfX6nPlhiTrJ7xyIq7lViJM/UUJCx936Eh7RNVEtGBqZ1S2ORN66gTr6/21>

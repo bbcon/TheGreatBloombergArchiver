@@ -1,0 +1,12 @@
+• The US conducted strikes against Iran for a second consecutive day, targeting surveillance systems, air-defense sites, and communications networks; Trump warned of further strikes unless Tehran agrees to an interim ceasefire extension and Hormuz reopening.
+• Brent crude traded near $92/barrel, with December forward contracts reflecting continued upward pressure but not a disorderly spike; oil has remained below $100/barrel for more than 100 days of conflict.
+• Fertilizer prices, which peaked above $900/ton in April following Hormuz near-closure, have since fallen roughly 50%, suggesting some supply-chain normalization.
+• The FIFA 2026 World Cup kicked off in Mexico City, with protests at the Azteca Stadium and broader domestic opposition adding political complexity to the opening.
+
+**Iran Conflict and Energy Markets**
+
+The second consecutive day of US strikes against Iran marks a material deterioration from the April ceasefire, which has, in the assessment of multiple analysts, effectively collapsed. Yet commodity markets have absorbed the renewed escalation with notable composure: Brent reversed early gains and traded lower, and forward curves reflect elevated but not catastrophic price expectations. The explanation appears to lie in three factors — rising Hormuz traffic signals, drawdown of strategic inventories, and market confidence that the conflict will not escalate to full-scale regional war. That confidence remains an assumption, not an established fact, and represents the principal tail risk to the global macro outlook.
+
+**Monetary Policy Divergence and AI Capital Flows**
+
+The ECB's anticipated hike, the Fed's hold, and Turkey's unchanged rates collectively illustrate growing divergence among major central banks, each calibrating against different combinations of war-induced inflation, growth risk, and domestic demand dynamics. Bond market participants at KKR and elsewhere are warning that long-duration government securities no longer offer reliable shock-absorbing properties in an environment where inflation risks are structurally higher. Meanwhile, Goldman Sachs estimates hyperscaler capex could reach $1.1 trillion in 2027 — implying 45% growth versus the 22% consensus — a figure that, if realized, would have significant implications for electricity demand, nuclear investment timelines, and global capital allocation.
