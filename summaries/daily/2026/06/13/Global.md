@@ -1,0 +1,9 @@
+• The US-Israel war with Iran has delivered a significant negative shock to energy-importing Asian economies; the World Bank estimates two-thirds of global economies face adverse impacts.
+• Morgan Stanley estimates global AI capex at $805 billion in 2026, rising to $1.12 trillion in 2027 — demand that appears likely to exceed available supply capacity.
+• Asian current-account surpluses of potentially historic scale are set to be recycled into US direct investment, representing a structural shift from the Treasury-purchase-dominated "Asian savings glut" of prior decades.
+
+**Energy and Geopolitics**
+The US-Israel conflict with Iran remains the primary geopolitical risk variable shaping global macro conditions, with energy price implications particularly acute for oil-importing Asian economies. The World Bank's assessment — that two-thirds of global economies face economic damage — reflects the breadth of the shock's transmission through energy costs, trade finance, and confidence channels. The full economic magnitude remains uncertain and will depend on conflict duration and Strait of Hormuz disruption severity.
+
+**AI as a Global Macro Variable**
+The AI investment cycle has graduated from a sector-level theme to a macroeconomic force. Its effects are now visible in national GDP forecasts, current-account balances, capital flow patterns, and central bank communications across multiple regions simultaneously. The concentration of supply capacity in Taiwan and South Korea, combined with US export controls limiting Chinese access, is producing a lopsided geographic distribution of economic benefit — one that raises policy questions around surplus recycling, domestic investment absorption, and the potential hollowing out of manufacturing in capital-exporting Asian economies.
