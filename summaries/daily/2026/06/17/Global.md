@@ -1,0 +1,9 @@
+• A 14-point draft US-Iran memorandum of understanding has emerged ahead of an expected Friday signing; Iran would be permitted to resume oil exports immediately and access a $300 billion development fund
+• Brent crude fell below $79 per barrel — its lowest in more than three months — extending a four-session decline of approximately 15% on expectations that Strait of Hormuz reopening will unlock substantial new supply
+• G7 leaders agreed that no single country should supply more than 60% of member nations' critical mineral imports by 2030, a direct response to Chinese dominance of the supply chain
+
+**Oil and the Iran Deal**
+The contours of the agreement represent a meaningful near-term supply shock: two oil tankers that had been diverted toward Africa have already reversed course toward the Middle East in anticipation of the Strait reopening. However, analysts caution that sovereign bond markets should not price in a sustained relief rally — 10-year Treasury yields have risen nearly half a percentage point since the war began, driven primarily by real yields rather than inflation expectations, suggesting fiscal concerns are as significant a driver as energy prices. The deal's durability and implementation timeline remain uncertain.
+
+**Monetary Policy Divergence**
+The global rate outlook is fragmenting. The BOJ is tightening and ending QE; the ECB is signaling additional hikes despite falling energy prices; the Fed is on hold with an uncertain forward path under Warsh; Sweden and Chile held rates; Brazil's COPOM met Wednesday; Norway and Switzerland were expected to hold Thursday; while Indonesia and the Philippines faced potential hikes. The common thread across developed markets is that sovereign borrowing costs are unlikely to fall materially for the remainder of 2026 — fiscal deficits, residual inflation, and structural spending pressures keep term premiums elevated regardless of energy price relief.
