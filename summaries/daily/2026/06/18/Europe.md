@@ -1,0 +1,11 @@
+• UK core CPI came in below consensus, easing pressure on the Bank of England ahead of its June meeting; the MPC voted to hold Bank Rate unchanged in a split decision, with market pricing now implying only one additional hike this year versus three previously.
+• The Bank of England decision follows the ECB in holding rates, while Norway and Switzerland also kept borrowing costs unchanged; Czech policymakers were weighing a potential first rate hike since 2022.
+• UK political uncertainty has risen as the Makerfield by-election — held June 18 — is seen as a likely pathway for Greater Manchester Mayor Andy Burnham to challenge Prime Minister Keir Starmer; prediction markets assign Burnham a 70% probability of becoming prime minister by year-end.
+
+**UK Inflation and Monetary Policy**
+UK core CPI printed below expectations, with the measure now running below its US equivalent despite the UK's heavier exposure to energy import costs — a somewhat counterintuitive outcome reflecting the partial easing of energy-related price pressures as Hormuz reopens. The softer data, combined with declining oil prices, shifted the MPC's calculus: only one dissenter (Chief Economist Huw Pill) had voted for a hike at the prior meeting, and the additional support for tightening that had been anticipated did not materialise. Market pricing compressed from three projected hikes to one. Notably, UK rate expectations have been tracking oil prices with unusual fidelity, suggesting the path for monetary policy remains heavily contingent on the durability of the Hormuz-driven energy price decline.
+
+**UK Political Outlook**
+A Burnham victory in Makerfield — the most probable outcome per available polling and prediction markets — would likely precipitate a Labour leadership contest, introducing a period of policy uncertainty. Burnham's stated skepticism of bond market discipline and interest in utility nationalisation have attracted scrutiny, though gilt markets appear to have partially priced political risk, with UK sovereign yields already trading above US Treasuries. The disciplining precedent of the 2022 Truss episode is likely to constrain any incoming government's fiscal ambitions, limiting the practical consequences of a leadership transition.
+
+---
