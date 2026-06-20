@@ -1,0 +1,15 @@
+• UK core CPI held below consensus in May, easing near-term Bank of England tightening pressure; the MPC voted to hold Bank Rate with market pricing compressing from three projected hikes to one.
+• BMW guided full-year profit margins as low as 1%, citing weak Chinese demand and Middle East disruption; shares fell 6.5% Wednesday, dragging Mercedes-Benz down 3.1% and Volkswagen 2.0%.
+• Andy Burnham won the Makerfield by-election Thursday with 24,927 votes versus Reform UK's 16,000, opening a formal path to challenge Prime Minister Starmer; UK gilts fell on the result.
+• Goldman Sachs characterized sterling as the most overvalued currency in the G10.
+
+**ECB and Monetary Policy**
+Despite falling oil prices following the Hormuz ceasefire, ECB officials pushed back firmly against assumptions that energy relief removes the case for further tightening. Chief Economist Philip Lane defended this month's hike — the first developed-market tightening in response to war-driven inflation — arguing the conflict has inflicted durable economic damage that cannot be quickly unwound. Overnight index swap markets imply more than one additional hike by year-end. The stagflationary bind remains genuinely unresolved: one analyst framed the risk starkly, noting Europe risks hiking itself into recession while the US ends up with the more entrenched inflation problem. ECB updated projections show both higher inflation and weaker growth, with inflation revisions more pronounced.
+
+**Bank of England and UK Politics**
+UK core CPI printed below expectations, and the MPC voted to hold Bank Rate in a split decision, with Chief Economist Huw Pill the sole dissenter seeking a hike. Rate expectations collapsed from three projected increases to one. UK rate expectations have been tracking oil prices with unusual fidelity, suggesting the monetary path remains heavily contingent on Hormuz durability. Burnham's decisive by-election victory Thursday materially raises the probability of a Labour leadership contest. A formal challenge requires at least 81 parliamentary supporters to trigger a confidence vote; Starmer has committed to remaining in post. For markets, political uncertainty arrives alongside already-strained fiscal dynamics. The Bundesbank separately published research estimating demographic aging has suppressed German annual growth by approximately 0.4 percentage points per year over the past decade, rising to 0.6 percentage points in coming years.
+
+**Autos and Corporate**
+BMW's profit warning crystallizes a sector-wide vulnerability: European automakers face simultaneous pressure from softening Chinese demand, Middle East supply-chain disruption costs, and an accelerating structural shift to EVs where Chinese manufacturers hold a cost advantage. French President Macron refused to withdraw France's digital services tax despite Trump's threat of retaliatory wine tariffs, setting up a bilateral confrontation at the Evian G7. Rathbones shares fell 16% in London after the wealth manager disclosed £60 million in additional remediation costs following a regulatory review.
+
+---
