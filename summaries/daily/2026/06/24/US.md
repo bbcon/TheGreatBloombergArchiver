@@ -1,0 +1,12 @@
+• No major US macro data releases on the day; markets were driven by tech positioning and the anticipation of Micron Technology's fiscal Q3 earnings report after the close.
+• The S&P 500 momentum ETF suffered its second-worst session since Liberation Day on Tuesday; futures stabilized Wednesday, with S&P 500 futures +0.1% and Nasdaq 100 futures +0.5% as of early morning.
+• Treasury Secretary Bessent signaled confidence in Fed Chair Kevin Warsh and predicted inflation will continue to retreat; the 10-year yield edged lower to 4.48%.
+• FedEx shares fell 6.7% premarket after reporting earnings that beat consensus on profit but flagged trade-policy headwinds and MD-11 fleet groundings; Cerebras Systems dropped 14% after its annual sales forecast missed elevated investor expectations.
+
+**Tech Earnings and Market Positioning**
+Tuesday's tech-led selloff originated in Seoul but arrived on Wall Street with force. The Philadelphia Semiconductor Index recorded its largest single-day decline since June 5, with Micron — now accounting for nearly one-fifth of the S&P 500's year-to-date gain after a roughly 270% advance — falling 13%. Goldman Sachs partner Bobby Molavi flagged the danger explicitly, noting that whether active, passive, hedge funds, or quant strategies, "everyone is effectively getting longer AI by the day," creating co-correlation risk that "feels great on the way up, but can be extremely dangerous on the unwind." The SOX index, despite Tuesday's move, remains more overbought relative to its 200-day moving average than at any point since the dot-com peak. Micron's after-close report carries unusual gravity: consensus EPS for the quarter has risen 645% over twelve months, and options markets are pricing a 10% swing in either direction.
+
+**Monetary Policy and Macro Backdrop**
+Bessent's remarks offered a constructive macro framing: inflation appears to be cooling and the Fed's policy trajectory, under Warsh, retains official confidence. US diesel prices fell below $5 per gallon for the first time since mid-March as oil extended declines, providing a tangible disinflationary impulse that, if sustained, supports the broader narrative of easing price pressures without requiring additional Fed action.
+
+---

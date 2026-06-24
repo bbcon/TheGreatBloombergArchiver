@@ -1,0 +1,256 @@
+Subject: Megawatts and models
+Date: Wed, 24 Jun 2026 09:02:05 +0000
+
+AI’s New Arms Race: Power, Data Centers and Capital
+Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-06-24/ai-s-new-arms-race-power-data-centers-and-capital?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ 
+<https://www.bloomberg.com/asia?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=18700203&m=11b724c487f61753eb1a7a4a5f3ef261&p=06242026090205&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=18700203&m=11b724c487f61753eb1a7a4a5f3ef261&p=06242026090205&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+AI’s next phase is looking a lot less like software and a lot more like 
+infrastructure. In Hong Kong, Chinese model maker Zhipu is weighing a
+multibillion-dollar share sale 
+<https://www.bloomberg.com/news/articles/2026-06-24/zhipu-considers-multibillion-dollar-share-sale-in-hong-kong-after-2-000-gain?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ just months after its IPO, people familiar said, as it rides a staggering 
+2,000% stock surge that has pushed its valuation past $128 billion. The move 
+would give the company fresh firepower to fund model development and global 
+expansion, underscoring just how aggressively investors are rewarding AI growth 
+stories, even asquestions linger 
+<https://www.bloomberg.com/news/newsletters/2026-06-23/wall-street-chip-wreck-triggers-ai-bubble-fear-evening-briefing-americas?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ around profitability and competition.
+
+At the same time, the scramble for AI’s most critical input — power — is 
+accelerating. SoftBank founder Masayoshi Son said the company isseeking a stake 
+<https://www.bloomberg.com/news/articles/2026-06-24/bytedance-seeks-20-billion-in-its-largest-ever-offshore-loan?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ in Tokyo Electric Power, betting that control over electricity generation 
+could become a strategic advantage in the race to build AI data centers. Son’s 
+message was clear: securing energy is now as important as securing chips, with 
+SoftBank pursuing massive data center projects from Ohioto France 
+<https://www.bloomberg.com/news/articles/2026-05-11/softbank-s-son-in-talks-for-major-data-center-project-in-france?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ and, eventually, Japan.
+
+And if the first phase of the AI boom was about models, the next may be about 
+who owns the infrastructure.Interest is mounting 
+<https://www.bloomberg.com/news/articles/2026-06-23/asian-stocks-set-to-extend-ai-chip-fueled-selloff-markets-wrap?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ in Stack Infrastructure’s Asia-Pacific data center portfolio, with 
+BlackRock-backed AIP, Brookfield and KKR among the suitors, said people 
+familiar. The deal could fetch more than$30 billion 
+<https://www.bloomberg.com/news/articles/2026-05-06/blue-owl-data-center-operator-weighs-options-including-30-billion-asia-sale?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+, sources had previously said.
+
+Investors are piling into the power, data centers and infrastructure that make 
+the technology possible. In essence, the AI gold rush is moving down the stack.
+
+—Jui Chakravorty 
+<https://www.bloomberg.com/authors/AXD7_0-0mSE/jui-chakravorty?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+
+What You Need to Know Today
+
+SK Hynix is looking to raise 45.45 trillion won ($29.4 billion) by selling 
+depositary receipts onthe Nasdaq exchange 
+<https://www.bloomberg.com/news/articles/2026-06-24/sk-hynix-looks-to-raise-29-4-billion-with-new-us-lising?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+. The South Korean company, a leading maker of high-bandwidth memory, expects 
+trading to start on July 10. Its Seoul-listed shares have climbed more than 
+300% this year. The move puts SK Hynix alongside a growing list of tech giants 
+and investors raising ever-larger war chests to fund AI ambitions, reinforcing 
+that in today’s boom, capital is becoming as critical as code.
+
+Separately, ByteDance is preparing to tap lenders for what could be its 
+biggest offshore loan yet, sources said, a roughly $20 billion borrowing. The 
+TikTok parent is weighingup to $70 billion 
+<https://www.bloomberg.com/news/articles/2026-05-27/bytedance-weighs-capex-of-as-much-as-70-billion-in-ai-push?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ in AI-related spending this year, with data centers and infrastructure high on 
+the agenda.
+
+Meanwhile Japan’s corporate borrowing spree is showing no signs of slowing. 
+NTT is preparing 
+<https://www.bloomberg.com/news/articles/2026-06-24/ntt-plans-10-billion-bond-in-biggest-from-asian-firm-this-year?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ a roughly $10 billion multi-currency bond sale, sources said, which would rank 
+as the largest global bond offering by an Asian company this year. The deal 
+comes amid arush of overseas fundraising 
+<https://www.bloomberg.com/news/articles/2026-06-23/nomura-joins-sony-in-powering-big-week-for-japanese-bond-sales?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ by Japanese firms as low credit spreads and strong investor appetite keep 
+capital flowing. With trillions being poured into AI infrastructure and 
+companies hunting for growth, the message from debt appears to be that money is 
+still cheap enough for big ambitions.
+
+RBI Governor Says It Is Premature to Discuss Rate Hikes
+
+India’s central bank Governor Sanjay Malhotra pushed back against expectations 
+for future interest-rate increases, saying it was “premature” to discuss the 
+policy outlook given ongoing geopolitical uncertainties.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-06-24/rbi-in-wait-and-watch-mode-as-us-iran-talk-peace-governor-says?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+China is turning its dominance in critical minerals into a pressure point for 
+Japan 
+<https://www.bloomberg.com/news/articles/2026-06-23/xi-pressures-takaichi-by-throttling-key-mineral-exports-to-japan?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+. Shipments of key materials including tungsten and rare-earth magnets have 
+slowed sharply, or stopped altogether, after Prime Minister Sanae Takaichi’s 
+comments on Taiwan angered Beijing. The curbs stop short of an outright 
+embargo, but they’re already forcing Japanese manufacturers to dip into 
+stockpiles and hunt for alternatives. Earlier this month, Takaichi said Japan
+remains open to dialogue 
+<https://japan.kantei.go.jp/105/speech/202606/0617naigai.html> with China, a 
+reminder that in an era of geopolitical rivalry, supply chains can be just as 
+powerful as sanctions.
+
+Elon Musk’s latest financial maneuver shows just how much faith investors 
+still have in his empire. SpaceXsold $25 billion 
+<https://www.bloomberg.com/news/articles/2026-06-23/spacex-draws-89-billion-demand-for-debut-high-grade-bond-sale?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ of investment-grade bonds, folding together debt from X and cash-burning AI 
+venture xAI while lowering the group’s overall interest costs. The deal drew as 
+much as $89 billion in orders, giving Musk a cheaper way to fund an 
+increasingly expensive AI push. In effect, SpaceX is using the strength of 
+Starlink and its rocket business to bankroll xAI’s ambitions, turning one of 
+Wall Street’s messiest debt stories into a fresh source of firepower for the AI 
+race.
+
+Tencent Testing New AI Agent for WeChat Workplace App
+
+Tencent is preparing to launch an AI agent for its Slack-like enterprise 
+communication app, intensifying a high-stakes battle among Chinese tech giants 
+to lock users into their ecosystems in the post-ChatGPT era.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-06-24/tencent-tests-deepseek-powered-ai-agent-for-wechat-corporate-app?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+The Bank of Japan is keeping the door open to more rate hikes. Governor Kazuo 
+Uedareiterated 
+<https://www.bloomberg.com/news/articles/2026-06-24/boj-s-ueda-reiterates-risk-of-inflation-exceeding-2-target?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ that inflation risks remain tilted to the upside and said policymakers will 
+continue tightening if economic and price trends stay on track. The message 
+reinforces last week’s move to lift rates to their highest level since 1995, 
+even as officials keep a close eye on risks ranging from the conflict in Iran 
+to a stubbornly weak yen. For now, the BOJ is signaling that Japan’s long era 
+of ultra-easy money isn’t coming back anytime soon.
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=18700203&m=11b724c487f61753eb1a7a4a5f3ef261&p=06242026090205&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=18700203&m=11b724c487f61753eb1a7a4a5f3ef261&p=06242026090205&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+What You’ll Need to Know Tomorrow
+
+Markets
+
+Leveraged Korea ETFs Sold Estimated $6 Billion of Shares in Rout
+ 
+<https://www.bloomberg.com/news/articles/2026-06-24/leveraged-etfs-sell-6-billion-of-korean-chip-stocks-bi-says?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+Markets
+
+Adani Bets on India Energy Security With Nuclear Power Project
+ 
+<https://www.bloomberg.com/news/articles/2026-06-24/adani-bets-on-india-energy-security-with-nuclear-power-project?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+Markets
+
+Cracks in AI Narrative Seem More Serious This Time: Taking Stock
+ 
+<https://www.bloomberg.com/news/articles/2026-06-24/cracks-in-ai-narrative-seem-more-serious-this-time-taking-stock?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+Green
+
+France Records Hottest Day Ever as European Heat Wave Deepens
+ 
+<https://www.bloomberg.com/news/articles/2026-06-24/france-records-hottest-day-ever-as-european-heat-wave-deepens?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+Markets
+
+Rheinmetall Tumbles as Germany Said to Shelve Warships Contract
+ 
+<https://www.bloomberg.com/news/articles/2026-06-24/rheinmetall-tumbles-as-germany-said-to-shelve-warships-contract?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+Green
+
+Londoners Complain of ‘Unbearable Heat’ in City’s Modern Housing
+ 
+<https://www.bloomberg.com/news/articles/2026-06-24/londoners-complain-of-unbearable-heat-in-city-s-modern-housing?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+Markets
+
+New Hedge Funds Are Using AI Bots to Rival Industry Giants
+ 
+<https://www.bloomberg.com/news/articles/2026-06-24/new-hedge-funds-are-using-ai-bots-to-rival-industry-giants?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+For Your Commute
+
+Americans Are Embracing a New Way to See Europe: On Foot
+
+Seeking slower travel, fewer crowds and more meaningful encounters, Americans 
+are flocking to self-guided walking holidays across Europe, from the Camino de 
+Santiago to the Dolomites.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-06-22/americans-embrace-camino-de-santiago-dolomites-european-walking-holidays?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+More from Bloomberg
+
+Enjoying Evening Briefing? Check out these newsletters:
+
+ * New: Get the On Books newsletter 
+<https://www.bloomberg.com/account/newsletters/on-books?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ from Bloomberg Weekend for reviews and recommendations to expand your 
+thinking. Also:Weather Watch 
+<https://www.bloomberg.com/account/newsletters/weather-watch?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ — Get an edge on the risks of the changing climate with Bloomberg’s global 
+team of reporters
+ * Coming soon: Get Next Japan 
+<https://www.bloomberg.com/account/newsletters/next-japan?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ for an inside view of the forces reshaping Japan, and what’s next for its 
+businesses, markets and consumers.
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260624&utm_content=5879>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ for key news before the trading day starts there
+ * Singapore Edition 
+<https://www.bloomberg.com/account/newsletters/singapore-edition?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+,India Edition 
+<https://www.bloomberg.com/account/newsletters/india-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260624&utm_content=5879>
+ andHong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260624&utm_content=5879>
+ for insights into some of Asia’s most dynamic economies
+ * Next China 
+<https://www.bloomberg.com/account/newsletters/next-china?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260624&utm_content=5879>
+ for dispatches from within the world’s second-largest economy on where China 
+stands now — and where it’s going next
+ * Breaking News Alerts 
+<https://www.bloomberg.com/account/newsletters/breaking-news-alerts?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260624&utm_content=5879>
+ for the biggest stories from around the world, delivered to your inbox as they 
+happen
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260624&utm_content=5879>
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://bsky.app/profile/bloomberg.com> <https://x.com/business> 
+<https://www.instagram.com/bloombergbusiness/> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+
+
+You received this message because you are subscribed to Bloomberg’s Evening 
+Briefing Asia newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=NLshare&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260624&utm_content=5879>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/hwW7K-T5C13iRfwcjF-piw2oRG4Wg7vlomU84S60Rk857gjA-zuG0JwRVbNQD00pkvh2TG81OTfue9Ic-rH6QzrZ9PThw1Lazv3hnhEBYZLsxQR0Fa63qc2Dl1BZ8gvfixVg1aWkkmOL5dDyPJQNxw45OCI6odm26NAeVaVVjj_9exm0i6CXvf-gLqCv8DzQVR0nAmo3x-e8XuLnF6e4b2htigOtVzoWxepcRbUGnLP67PrtYM3VHljvSeSEwzzUJxSvb02luuDPKPUeOYPZR_BHhPM3zdzrkgg7uchNuNvgwih_rA5UtMLL5XY7GaCaG7hEXwG3poR817i83qY2U16OlmNte8nT/3kRLthhbOMPmCT5hwmieLOOIH8kM1Ikp/22>

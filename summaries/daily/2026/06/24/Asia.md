@@ -1,0 +1,12 @@
+• SK Hynix fell more than 13% in Seoul on Tuesday after flagging a shift toward general-purpose DRAM, triggering an estimated $6 billion in forced selling by leveraged single-stock ETFs; the Kospi recovered 3.3% Wednesday.
+• SK Hynix separately announced plans to raise approximately $29.4 billion (45.45 trillion won) via Nasdaq depositary receipts, targeting a July 10 listing start — which would rank among the five largest share sales on record.
+• Bank of Japan Governor Kazuo Ueda reiterated that inflation risks remain tilted to the upside and that further tightening is warranted if economic and price conditions hold, reinforcing last week's rate increase to the highest level since 1995.
+• China has effectively halted most tungsten shipments to Japan, with rare-earth magnet flows falling to their lowest since May 2025, in apparent retaliation for Prime Minister Takaichi's Taiwan comments.
+
+**Korea: Leverage Amplifies Volatility**
+The immediate catalyst for Tuesday's global tech selloff was SK Hynix's disclosure that it was shifting focus toward general-purpose DRAM — a lower-margin segment — which traders interpreted as a signal that the premium AI-memory cycle may be maturing. The scale of the reaction was amplified by leveraged single-stock ETFs: Korean regulators, who recently permitted such instruments domestically, publicly expressed regret at having done so. A double-leveraged Hynix ETF traded in Hong Kong would have translated the 13.2% decline into roughly a 26.4% loss for holders. The episode raises structural questions about the role of leveraged products in concentrating and accelerating market dislocations.
+
+**Japan and China: Policy and Supply-Chain Tensions**
+The BOJ's continued hawkish signaling stands in contrast to most major central banks and reflects genuine domestic inflation dynamics rather than policy theater. Meanwhile, China's mineral export restrictions on Japan represent a calibrated escalation short of a full embargo but already sufficient to force Japanese manufacturers into stockpile drawdowns and alternative sourcing. NTT's planned $10 billion multi-currency bond sale — the largest global bond offering by an Asian company this year — illustrates that credit conditions remain accommodative enough for large-scale capital deployment despite the geopolitical backdrop.
+
+---
