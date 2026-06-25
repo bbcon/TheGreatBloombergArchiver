@@ -1,0 +1,9 @@
+• Brent crude fell below $72.48 per barrel — erasing all wartime gains — as tanker flows through the Strait of Hormuz recovered, with Goldman Sachs estimating Gulf exports running at nearly two-thirds of normal levels.
+• Gold dropped below $4,000 per ounce (down ~29% from January peak); Bitcoin fell to $59,023, its lowest since October 2024; the DXY dollar index closed at a 14-month high.
+• Trump stated that Iranian tolls on Strait of Hormuz shipping would constitute a red line, introducing a new potential friction point even as the broader peace process advances.
+
+**Oil and the Strait of Hormuz**
+The speed of oil's decline has surprised observers. Brent has now retraced its entire wartime premium in four sessions, driven by a rapid normalization of tanker routing and an inundation of Middle Eastern and African supply offers reaching buyers simultaneously. Fertilizer exports through the Strait have also recovered materially. The macroeconomic implications are complex: the energy-price relief is disinflationary at the margin, but Apollo's Torsten Slok raises the possibility that a rapid drop in oil prices functions as an effective tax cut, adding demand impulse to an economy that may already be running above potential — potentially net-inflationary.
+
+**Debasement Trade and Monetary Policy**
+The structural unwinding of the debasement trade represents the most consequential cross-asset shift of the period. Fed Chair Warsh's hawkish positioning has anchored the dollar and compressed gold and crypto simultaneously. Standard Chartered's Steven Englander attributes the dollar's strength primarily to real and nominal rate differentials, and expects the Fed on hold while the ECB cuts once in H1 2027 — a divergence that sustains dollar strength. Whether inflation proves transitory post-Hormuz or proves entrenched in non-energy categories will determine the durability of this repricing. That question remains genuinely open.
