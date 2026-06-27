@@ -1,0 +1,12 @@
+• Eurozone composite PMI rose to 49.5 in June, above the 48.5 consensus and up from 48.5 in May, though remaining below the expansion threshold for a third consecutive month.
+• UK Prime Minister Keir Starmer resigned Monday, with Andy Burnham emerging as near-certain successor after winning the Makerfield by-election and rivals withdrawing; gilts and sterling showed no acute stress.
+• Europe recorded its worst heatwave on record, with temperatures 5°C–12°C above seasonal averages across France, Germany, Italy, and Spain; French nuclear curtailments pushed evening electricity prices to their highest since the 2022 energy crisis.
+• Rheinmetall shares fell 17% — their sharpest single-session decline in a year — after Germany signaled withdrawal of a major warships contract.
+
+**Economic Data**
+The June eurozone composite PMI beat consensus at 49.5, offering tentative evidence that the region is absorbing the dual headwinds of Iran-related inflation and broader confidence deterioration. The data does not signal recovery — contraction territory persists — but the direction provides modest reassurance. Germany's Ifo business climate brightened slightly in June. Rhine water levels fell sharply during the heatwave, forcing barges below half capacity and disrupting fuel shipments to western Germany and the Netherlands — a supply-side risk that could weigh on July PMIs. French nuclear curtailments and near-record UK and German electricity prices are generating a demand shock that partially offsets the disinflationary impulse from lower oil prices.
+
+**UK Political Transition**
+Starmer's departure — on the tenth anniversary of the Brexit referendum — marks the sixth prime ministerial change since 2016. Burnham inherits constrained fiscal space: the gilt market's 2022 reaction to Liz Truss remains a binding constraint on any new government's ambitions, and several of Burnham's advisers have previously argued for looser fiscal rules. Mizuho's Jordan Rochester noted that any "whiff of fiscal laxity gets punished by the gilt market," a dynamic that likely disciplines pace rather than preventing change. The absence of a drawn-out leadership contest has reduced the risk of unfunded commitments accumulating during a vacuum period. Bank of England rate-cut expectations are firming as falling oil prices and declining short-term inflation expectations reduce pressure for further tightening, though the heatwave-related energy price surge introduces a near-term complication.
+
+---

@@ -1,0 +1,9 @@
+• China's retail sales posted the first YoY contraction since 1990 (excluding the pandemic), raising questions about the sustainability of global consumer demand anchored in emerging markets.
+• Russia is reported to be considering a diesel export ban amid supply disruptions linked to strikes on energy infrastructure in Ukraine.
+• South Africa is experiencing an anti-immigrant wave linked to economic discontent, illustrating how demand weakness and unemployment in emerging markets translate into political instability.
+
+**China's Structural Demand Problem as a Global Risk**
+The most consequential cross-regional theme this week is China's deepening consumer stagnation and what it implies for the global growth outlook. An economy representing roughly 18% of global GDP that is running consumer spending growth on par with the United States — despite a per-capita income roughly one-sixth the size — represents a significant drag on global aggregate demand. For commodity exporters across Latin America, Africa, and Southeast Asia, the implications are material: Chinese import demand for consumer goods and construction-linked materials faces a structurally weaker trajectory absent a decisive policy pivot toward household income support. Beijing has shown no indication of pursuing such a pivot, with fiscal policy reportedly tightening even as domestic demand softens.
+
+**Energy Market Disruption**
+Russia is reportedly mulling a diesel export ban in response to Ukrainian strikes on energy infrastructure, a development that — if implemented — would tighten European and emerging market diesel supply at a moment when energy markets remain sensitive to geopolitical disruption. The situation warrants monitoring, though no formal policy announcement has been confirmed.
