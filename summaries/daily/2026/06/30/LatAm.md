@@ -1,0 +1,9 @@
+• Venezuela's earthquake death toll surpassed 1,700 following twin tremors last week, with a subsequent 5.1-magnitude aftershock complicating search-and-rescue operations.
+• Keiko Fujimori narrowly won Peru's presidential election, becoming the country's first female president; her platform combined iron-fist security policies with market-friendly economic plans.
+• Latin America's battery-storage market is entering a new phase, with annual additions forecast to exceed 5 GWh by 2028 from 817 MWh in 2024; Chile leads, with Brazil and Mexico expanding.
+
+**Peru Political Transition**
+Fujimori's victory in her fourth presidential bid adds Peru to a regional pattern of electorates gravitating toward security-focused, economically orthodox candidates. For copper markets — Peru is among the world's largest producers — her market-friendly orientation is broadly constructive, though her track record in office and ongoing legal challenges merit monitoring. The result follows similar right-of-center swings in other Latin American elections and reflects voter prioritization of security over redistributive economics.
+
+**Venezuela Crisis**
+The humanitarian situation in Venezuela has deteriorated sharply following last week's earthquakes. With a death toll exceeding 1,700 and ongoing aftershocks hampering relief efforts, the disaster compounds pre-existing economic and political fragility. The broader regional macro picture remains shaped by commodity dynamics: Latin America's energy storage buildout is accelerating, driven by Chile's solar boom, with Brazil and Mexico increasingly contributing to capacity expansion — a structural shift with longer-term implications for the region's power economics.

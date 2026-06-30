@@ -1,0 +1,9 @@
+• China's official manufacturing PMI rose to 50.3 in June, beating the Bloomberg consensus estimate, marking four consecutive months of expansion — the longest such streak since early 2022.
+• The yen breached 161.95 per dollar, its weakest level since Christmas Eve 1986, despite a record ¥11.73 trillion intervention between April and May that failed to reverse the trajectory.
+• South Korea unveiled an $880 billion investment plan in chip manufacturing and AI infrastructure; Japan is pursuing a $2.3 trillion 14-year blueprint targeting AI, semiconductors, and defense.
+
+**China Manufacturing**
+China's June PMI beat underscores the resilience of its export-oriented industrial base through the Iran war period. Booming exports have provided a sustained buffer, and the recent decline in oil prices — as Strait of Hormuz traffic partially resumes — should reduce input costs for manufacturers in coming months. However, a separate report noted that Chinese equities are trailing global peers by the widest margin since 2001, as domestic investors remain underexposed to the global AI boom. Tencent has responded by ramping up share buybacks after losing approximately $309 billion in market value since October.
+
+**Yen and Intervention**
+The yen's slide to four-decade lows reflects persistent interest-rate differentials: even after the Bank of Japan's most recent hike — its highest benchmark rate in 31 years — rates remain deeply negative in real terms relative to US and European peers. Japan's Finance Minister offered measured verbal warnings but stopped short of "bold action" language, suggesting intervention may not be imminent. The combination of rising Japanese government bond yields and a weakening currency is unusual and may signal deteriorating confidence in Japan's fiscal trajectory. HSBC warns the dollar rally could turn "explosive" in H2 if the Fed signals additional tightening.
