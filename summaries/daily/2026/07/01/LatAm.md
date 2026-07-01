@@ -1,0 +1,7 @@
+• The US raised Argentina's tariff-free beef export quota to 100,000 tons annually, a development that may support Argentine export revenues even as domestic beef consumption has fallen to record lows — 47.5 kg per capita over the past year — due to rising local prices.
+• Venezuelan opposition leader María Corina Machado remains stranded in Panama following twin earthquakes last week that killed nearly 2,000 people, with her attempts to reenter Venezuela unsuccessful amid ongoing political repression.
+
+**Argentina Trade and USMCA Dynamics**
+The expanded beef quota is a modest but concrete benefit for Argentina at a moment when domestic consumption has been structurally compressed by inflation. The bilateral arrangement with Washington fits a broader pattern of the Trump administration deploying market access as diplomatic currency. Meanwhile, the USMCA review process — launched on the agreement's sixth anniversary — threatens to impose a meaningful drag on confidence and investment across Canada and Mexico, with Oxford Economics explicitly revising down its forecasts for all three North American economies. The spillover for Latin American exporters competing with or supplying into the North American value chain warrants monitoring.
+
+---

@@ -1,0 +1,9 @@
+• Global M&A reached $2.6 trillion in H1, up approximately 30% year-over-year, with 38 deals above $10 billion — the most in any six-month period on record.
+• Goldman Sachs projects the global oil market will swing back into oversupply as Strait of Hormuz traffic recovers and the Iran war's supply disruption fades; Brent crude is still up 19.8% YTD.
+• US-Iran technical talks are advancing, with Kushner and Witkoff reporting positive discussions in Qatar; a durable ceasefire remains uncertain.
+
+**Energy and Geopolitics**
+The US-Iran negotiations represent the most consequential near-term variable for global energy markets. Brent crude's 19.8% YTD gain reflects the supply shock premium from Hormuz disruption; Goldman's oversupply forecast suggests significant downside to oil prices if a lasting agreement is reached. Simultaneously, the EU methane regulation dispute — with the US, Qatar, Algeria, and Nigeria demanding revisions before January 1 compliance kicks in — introduces a new fault line in transatlantic energy relations. Given the EU's dependence on US LNG for nearly two-thirds of its imports and a $750 billion committed energy purchasing agreement with Washington, energy security considerations are likely to force a European compromise on the methane rules.
+
+**AI Capital Concentration**
+The cross-regional pattern most defining H1 2026 is the extreme concentration of capital flows into AI semiconductor hardware — at measurable expense to software, broader emerging markets ex-Korea and Taiwan, and non-tech fixed investment. BCA Research estimates US tech capex now exceeds 7% of GDP in real terms, above the 2000 dot-com peak of 5% in nominal terms and comparable to housing-bubble shares of GDP that historically preceded sharp corrections. Whether this represents productive investment or malinvestment remains the central unresolved question for global markets in H2.

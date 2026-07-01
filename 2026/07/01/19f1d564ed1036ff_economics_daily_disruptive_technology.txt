@@ -1,0 +1,245 @@
+Subject: Economics Daily: Disruptive technology
+Date: Wed, 01 Jul 2026 11:00:20 +0000
+
+AI Productivity Hopes Collide With Job and Market Worries
+OpenAI’s chief economist has soothing words on AI’s employment impact, but job 
+cuts are happening. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-07-01/ai-productivity-hopes-collide-with-job-and-market-worries?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ 
+<https://www.bloomberg.com/economics?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=18801056&m=11b724c487f61753eb1a7a4a5f3ef261&p=07012026110019&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149059&li=18801056&m=11b724c487f61753eb1a7a4a5f3ef261&p=07012026110019&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+I’m Craig Stirling 
+<https://bloomberg.com/authors/ADPk2FZPZ1s/craig-stirling?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+, a senior editor in Frankfurt. Today along with Jana Randow 
+<https://bloomberg.com/authors/APgqIL003O8/jana-randow?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ andAlexander Weber 
+<https://bloomberg.com/authors/ARIuualk5XM/alexander-weber?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ on the ground at the European Central Bank’s retreat in Portugal, we’re 
+looking at the economic impact of AI. Send us feedback and tips to
+ecodaily@bloomberg.net <mailto:ecodaily@bloomberg.net>. And if you aren’t yet 
+signed up to receive this newsletter, you can do sohere 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=ecointro&cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+.
+
+Top Stories
+
+ * US negotiators Steve Witkoff and Jared Kushner held positive talks 
+<https://www.bloomberg.com/news/articles/2026-06-30/witkoff-kushner-had-positive-talks-with-local-leaders-us-says?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ and progress is being made with Iran, a senior administration official said.
+ * The US government removed foreign access restrictions 
+<https://www.bloomberg.com/news/articles/2026-06-30/us-government-lifts-restrictions-on-anthropic-s-fable-5-model?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ on Anthropic PBC’s Fable 5 artificial intelligence model, clearing it for 
+wider distribution.
+ * Coming up: Federal Reserve Chair Kevin Warsh, ECB President Christine 
+Lagarde, Bank of England GovernorAndrew Bailey 
+<https://www.bloomberg.com/news/articles/2026-06-30/boe-s-bailey-says-oil-shock-frustrates-policy-with-economy-weak?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ and Bank of Canada chief Tiff Macklemspeak in Sintra 
+<https://www.ecb.europa.eu/press/conferences/html/20260629_ecb_forum_on_central_banking.en.html>
+.
+Disruptive Technology
+
+Ronnie Chatterji, OpenAI’s chief economist, had soothing words to offer this 
+week to anyone worried about the employment threat posed by AI.
+
+“My dad was an economist also in 1985 — his job was very exposed to the 
+personal computer,”the academic told 
+<https://www.bloomberg.com/news/articles/2026-06-30/ai-won-t-be-substitute-for-human-workers-openai-economist-says?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ the ECB’s annual symposium in Sintra. “But instead of using a punch card in a 
+big room in a mainframe computer to run regressions, now he could run them on 
+his computer. And it was a compliment to his work over time that made him more 
+productive.”
+
+Chatterji argues that AI won’t necessarily substitute jobs. Recurring fears 
+that it will do so weredramatically articulated in February 
+<https://www.bloomberg.com/news/articles/2026-03-18/ai-job-loss-fears-show-how-tech-narratives-move-markets?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ in a Substack essay by Citrini Research that caused a brief market panic.
+
+While no-one is much the wiser 
+<https://www.bloomberg.com/news/articles/2026-03-25/ai-use-in-switzerland-isn-t-killing-that-many-jobs-yet-snb-says?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ now on how AIwill affect economies 
+<https://www.bloomberg.com/news/articles/2026-06-30/weak-hiring-is-hurting-young-workers-more-than-ai-study-says?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+, change is starting to be seen in US employment numbers.As we explain here 
+<https://www.bloomberg.com/news/articles/2026-07-01/tech-and-finance-sectors-losing-28-000-jobs-monthly-show-ai-impact-on-labor?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+, a decline in payrolls in the financial-activities and information sectors — 
+where AI adoption rates have been fastest — has accelerated in 2026, to 28,000 
+per month on average, based on government data.
+
+“It’s certainly making an impact as we speak in a way that no technology has 
+before,” said John Challenger, chief executive officer at Challenger, Gray & 
+Christmas.
+
+His firm, which tracks layoff plans, found almost 102,000 announced job cuts 
+attributed to AI so far this year.
+
+The technology’s impact is likely to feature back in Sintra again during the 
+closing panel with Fed ChairKevin Warsh 
+<https://www.bloomberg.com/news/articles/2026-06-27/warsh-makes-debut-on-the-global-stage-with-the-class-of-2008?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+, after several sessions already spent exploring every aspect.
+
+Bundesbank President Joachim Nagel 
+<https://www.bloomberg.com/news/articles/2026-07-01/ecb-s-nagel-says-he-s-keeping-options-open-for-next-two-meetings?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ emphasized upsides on Wednesday, telling Bloomberg Television’sFrancine Lacqua 
+<https://www.bloomberg.com/authors/ADjSGHlNUSk/francine-lacqua?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ he’s “very positive that AI is bringing us more productivity.”
+ 
+<https://www.bloomberg.com/news/videos/2026-07-01/ecb-s-nagel-to-stay-open-minded-for-jul-sept-meetings-video?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+Beyond the direct economic impact, worries abound. On Tuesday, Sarah Breeden, 
+a Bank of England deputy governor, cited the danger of AI agents causing “
+market meltdown 
+<https://www.bloomberg.com/news/articles/2026-06-30/boe-s-breeden-warns-ai-agents-risk-triggering-market-meltdowns?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+.”
+
+The associated investment boom is another concern. ECB official Isabel 
+Schnabel raised the theme of “a financial bubble driven by AI,” following Bank 
+for International Settlements warningsearlier this week 
+<https://www.bloomberg.com/news/articles/2026-06-27/warsh-makes-debut-on-the-global-stage-with-the-class-of-2008?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+.
+
+Tobias Adrian, a senior official at the International Monetary Fund, had mixed 
+messages to offer there. On the one hand, a recent AI-led selloff in stocks 
+means companies aren’t as overvalued as they were, he said. But debt is another 
+matter.
+
+“What is quite worrisome from a financial stability perspective is that the 
+major tech firms are starting to leverage up,”Adrian said 
+<https://www.bloomberg.com/news/articles/2026-06-30/ai-leverage-is-more-worrying-than-valuations-imf-s-adrian-says?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+, highlighting a “potential maturity mismatch” that could arise. “It’s really 
+the underlying profitability that is the key financial stability issue.”
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=18801056&m=11b724c487f61753eb1a7a4a5f3ef261&p=07012026110019&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868592&stpe=default&li=18801056&m=11b724c487f61753eb1a7a4a5f3ef261&p=07012026110019&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+The Best of Bloomberg Economics
+
+ * China’s manufacturing sector capped its strongest quarter 
+<https://www.bloomberg.com/news/articles/2026-07-01/china-factory-activity-grows-less-than-expected-survey-shows?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ in almost six years even as the underlying economy remains fragile.
+ * Euro-area inflation 
+<https://www.bloomberg.com/news/articles/2026-07-01/euro-zone-inflation-slows-more-than-expected-as-oil-retreats?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ came in lower than expected. Germany’sJoachim Nagel 
+<https://www.bloomberg.com/news/articles/2026-07-01/ecb-s-nagel-says-he-s-keeping-options-open-for-next-two-meetings?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ and Austria’sMartin Kocher 
+<https://www.bloomberg.com/news/articles/2026-07-01/ecb-s-kocher-says-the-next-decisions-will-be-either-hike-or-hold?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ still are mulling interest-rate hikes, whileMartins Kazaks 
+<https://www.bloomberg.com/news/articles/2026-06-30/ecb-faces-no-urgency-to-hike-rates-again-in-july-kazaks-says?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ and Slovenia’sPrimoz Dolenc 
+<https://www.bloomberg.com/news/articles/2026-06-30/ecb-s-dolenc-sees-no-urgency-to-hike-if-energy-markets-stay-calm?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ are in no rush.
+ * Japanese Prime Minister Sanae Takaichi set a target for growing output 
+<https://www.bloomberg.com/news/articles/2026-06-30/takaichi-sets-target-for-nominal-gdp-of-6-8-trillion-in-2040?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ to a value of $6.8 trillion in nominal GDP by 2040 as she champions her vision 
+for astrong economy 
+<https://www.bloomberg.com/news/articles/2026-06-30/japan-s-manufacturer-mood-improves-to-highest-level-since-2018?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+.
+ * In trade news, a countdown 
+<https://www.bloomberg.com/news/articles/2026-07-01/usmca-limbo-looms-with-trump-cool-on-his-2-trillion-a-year-deal?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ to the expiry of the US-Mexico-Canada Agreement will begin, and South Korea’s 
+exportsextended a strong run 
+<https://www.bloomberg.com/news/articles/2026-07-01/s-korea-s-exports-stay-strong-as-ai-boom-fuels-chips-demand?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+.
+ * South Africa 
+<https://www.bloomberg.com/news/articles/2026-06-30/inflation-expectations-rise-before-south-africa-rate-decision?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+’s central bank governor said inflation expectations have risen, signaling
+further tightening 
+<https://www.bloomberg.com/news/articles/2026-07-01/kganyago-signals-south-africa-could-hike-rates-again-this-month?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ may be needed.
+ * The UK’s defense plan leaves several hard choices for Andy Burnham 
+<https://www.bloomberg.com/news/articles/2026-07-01/gilt-market-is-giving-burnham-a-pass-for-now-says-aegon-s-lynch?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ to make if he becomes prime minister, including how to close a£5 billion hole 
+<https://www.bloomberg.com/news/articles/2026-06-30/squeezed-uk-defense-plan-leaves-many-hard-choices-to-burnham?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ in his first budget.
+Need-to-Know Research
+
+A Bank of Korea experiment with a unified ledger proved that the two-tier 
+structure of money — with the central-bank kind that serves as an anchor and 
+commercial deposits as principal means of payment — carries over into the 
+tokenized world.
+
+Project Hangang, named after the river Han that flows through Seoul, also 
+demonstrated that this can be done at scale, without forcing a choice between 
+public trust and private-sector dynamism, economists including Governor Hyun 
+Song Shin wrotein a paper 
+<https://www.ecb.europa.eu/pub/pdf/sintra/ecb.forumcentbankpub2026_Shin_paper.en.pdf>
+ prepared for the ECB’s Sintra conference.
+
+The trial — featuring live transactions using tokenized wholesale central bank 
+money and commercial bank deposits — ran for three months from April to June 
+2025. It involved some 80,000 users and 12,000 selected merchants and was among 
+the first to take place in a real-world operating environment.
+
+According to the authors, it offered useful lessons on design choices. 
+Interoperability between existing large-value payment systems and the ledger 
+must be secured, they highlight, and the legal nature of the wholesale CBDC 
+issued on it defined.
+
+Ensuring an adequate supply of intraday liquidity is also critical as the 
+tokenization of government bonds advances and settlement volumes on the ledger 
+grow, Shin and colleagues wrote.
+
+More from Bloomberg
+
+Enjoy Economics Daily?
+
+ * Read more economic stories 
+<https://www.bloomberg.com/markets/economics?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+Plus, here are some newsletters we think you might like
+
+ * Fault Lines 
+<https://bbgevent.app/economics-subscribe/?utm_source=Newsletter>, Bloomberg 
+Economics’ daily geoeconomics newsletter, delivers a midday check on how 
+geopolitical tectonic shifts are shaping the global economy and markets.
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=nef&cmpid=BBD070126_NEF&utm_term=260701&utm_content=5953>
+ for daily insights into supply chains and global trade
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=nef&cmpid=BBD070126_NEF&utm_term=260701&utm_content=5953>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=nef&cmpid=BBD070126_NEF&utm_term=260701&utm_content=5953>
+ for the latest in politics from around the globe
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=nef&cmpid=BBD070126_NEF&utm_term=260701&utm_content=5953>
+.
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Economics 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=NLshare&cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBD070126_NEF&utm_campaign=nef&utm_medium=email&utm_source=newsletter&utm_term=260701&utm_content=5953>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/FvQMXfTNJ7zdJIGyizhm33lt8xwHvSLtvpEIvyVx1KtFFZaGwFQDDQMZYhvZxXaPYCTeblt_9xnA6w6TojFlMhZ7NBHBtkHV7aD4F8yzWGzbtOGNO2NuGvE5AkjTlso_MXZeCa7k9wQmw5W8lO5mu9rZWYGuNfXpw1rzm15uOTlHW6vETV-Fcqlknj303FjBCCke82dgoNXvTGk72d3taysGuUbqKkeO0ozr0B8C3UAFdzeP1ocj_xKN9FF7modo9pNXv_nyr-iHowczHP8sqpJDwNqqH_H2sCSni75p3oSoJjFEEzTSJUt9ln1DcbEGzPJbjXtMpU8vxt0nMwwpmIsOYlASMBCx/EpIjEWp7gQxqET6TSQEKMFV7WMdbn6nB/22>
