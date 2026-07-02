@@ -1,0 +1,6 @@
+• The US decision not to renew USMCA, opting instead for annual reviews, represents the most consequential development for the region, creating structural uncertainty for Mexico's export-dependent economy.
+
+**USMCA Uncertainty**
+Washington's announcement that it will not seek a clean renewal of the US-Mexico-Canada Agreement — citing "substantial issues" with the deal — opens an indeterminate annual review process with no clear procedural rules. For Mexico, which relies on the USMCA framework to underpin roughly $500 billion in bilateral trade with the United States, the shift introduces material risk across the automotive, agriculture, and manufacturing sectors. President Sheinbaum's government must now navigate negotiations whose scope, timing, and political temperature will reset each year, overlapping with migration, fentanyl, and broader bilateral friction. The announcement landed amid World Cup celebrations, creating an awkward contrast between the symbolic North American co-hosting partnership and the underlying fracture in trade relations. Argentine beef exporters meanwhile are increasingly redirecting shipments toward the US market over China, as domestic price pressures compress local consumption.
+
+---
