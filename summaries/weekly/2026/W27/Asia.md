@@ -1,0 +1,16 @@
+• China's official manufacturing PMI rose to 50.3 in June on Monday, beating Bloomberg consensus and marking four consecutive months of expansion — the longest streak since early 2022.
+• South Korea's Kospi fell 7.9% on Thursday in its sharpest single-day decline in months before recovering 5.8% on Friday, reflecting extreme AI-driven volatility amplified by a $13 billion leveraged ETF in Hong Kong.
+• The yen breached 161.95 per dollar on Tuesday, its weakest level since Christmas Eve 1986, despite a record ¥11.73 trillion intervention between April and May.
+• South Korea announced a coordinated $880 billion investment program in chips, AI data centers, and robotics; Japan unveiled a $2.3 trillion 14-year blueprint across AI, semiconductors, and defense.
+• Foreign investors extended an equity exodus from Korea to eight consecutive sessions, with the won weakening toward its softest level since 2009.
+
+**China: Macro and Capital Markets**
+China's June PMI beat underscores the resilience of its export-oriented industrial base through the Iran war period. However, the headline masks fragility in domestic demand, and Chinese equities are trailing global peers by the widest margin since 2001 as domestic investors remain underexposed to the global AI boom. The Hang Seng China Enterprises Index entered technical bear market territory, down more than 20% from its October peak. Beijing's late-May crackdown on Hong Kong-based online brokers appears designed to limit capital outflows as domestic interest rates grind lower, complicating the picture for institutional investors who continue to accumulate Chinese equities on valuation grounds. The PBoC's below-consensus overnight rate setting earlier in the week signaled a continued accommodation bias, even as advisers flagged divergence between high-tech outperformance and sluggish consumption.
+
+**Korea's Structural Volatility**
+The Kospi's near-doubling in H1 — driven overwhelmingly by Samsung and SK Hynix on AI-driven memory demand — proved acutely vulnerable to Thursday's selloff, triggered by Meta's announcement of an external cloud infrastructure business raising overcapacity concerns. The CSOP SK Hynix 2x leveraged ETF in Hong Kong, now $13 billion and the largest of its kind globally, mechanically amplified intraday swings. The won's slide to 2009 lows is spilling across regional FX markets, reinforcing broader dollar reassertion. South Korea's transition to 24-hour won trading — central to its MSCI developed-market reclassification bid — arrives at a delicate moment.
+
+**Japan and Regional Divergence**
+The yen's slide to four-decade lows reflects persistent rate differentials: even after the Bank of Japan's most recent hike to a 31-year high, real rates remain deeply negative relative to peers. Japan's Finance Minister offered measured verbal warnings but stopped short of "bold action" language. Prime Minister Takaichi's visit to New Delhi produced over 100 business agreements covering semiconductors, energy, and critical minerals — a concrete operationalization of the Japan-India strategic alignment, with China's simultaneous expansion of export controls on Japanese firms adding urgency to Tokyo's diversification push.
+
+---

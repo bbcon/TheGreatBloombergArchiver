@@ -1,0 +1,16 @@
+• June nonfarm payrolls came in materially below consensus on Thursday, the most significant US data print of the week, prompting a decline in two-year Treasury yields and a 1.4% gain in gold on the same day.
+• May core PCE inflation rose well above the 3% Fed target — the sharpest non-pandemic reading in roughly two decades — beating consensus concerns and predating any Iran-related oil relief.
+• The S&P 500 closed H1 up 9.6%, its best quarter since 2020, with futures at 7,507 as Q3 began; the Magnificent Seven declined 1.9% YTD as investors rotated toward semiconductor hardware.
+• The Supreme Court ruled 5-4 on Tuesday that President Trump cannot immediately remove Fed Governor Lisa Cook, reinforcing central bank independence in principle while prompting the administration to explore alternative removal pathways.
+• Washington confirmed it will not renew USMCA, opting instead for annual reviews — materially raising trade uncertainty across $1.6 trillion in North American commerce.
+
+**Inflation and the Fed**
+May core PCE, the Federal Reserve's preferred inflation gauge, printed well above the 3% target — the sharpest non-pandemic reading in approximately two decades — reinforcing Chair Kevin Warsh's hawkish posture. Warsh used his debut at the ECB's Sintra forum to abandon forward guidance explicitly, a stance the market absorbed through bear-flattening of the yield curve, with two-year yields rising faster than tens through midweek. Richmond Fed President Barkin warned separately that AI infrastructure buildout represents an independent inflationary force, even as one-year inflation swaps fell on expectations of oil-price pass-through — a confidence that appears premature given US gasoline prices remain roughly 20% above year-ago levels. The June payrolls miss on Thursday materially shifted this picture: hiring decelerated sharply below consensus, reducing near-term rate-hike expectations and prompting Bloomberg Economics to defer cuts to 2027. JOLTS openings for May had earlier moved back above pre-pandemic highs, underscoring how quickly the labor market narrative shifted within a single week.
+
+**Fed Independence**
+The Supreme Court's narrow 5-4 ruling on Tuesday that Cook deserved procedural due process before removal — rather than permanent protection — has paradoxically emboldened the administration. Trump allies are now treating the decision as a procedural roadmap, and the composition of the Fed's Board of Governors remains genuinely uncertain heading into H2. The companion ruling granting the president broad authority to dismiss officials at the SEC and CFTC carries direct implications for crypto regulation and financial oversight.
+
+**Markets and Trade**
+Equities closed their strongest quarter since 2020, though beneath the headline the rotation was significant: chip-equipment names gained 3–5% on Monday on South Korea's AI investment announcement, while Alphabet shed 6% in June following an $85 billion equity raise and AI researcher departures. Bitcoin fell to a 21-month low, down 33.3% in H1, as Fed hawkishness eroded the debasement trade; gold dropped 14% in Q2, its worst quarter since 2013, before recovering 1.4% on Thursday's payrolls miss. The USMCA non-renewal landed mid-week, introducing a structural layer of uncertainty for manufacturers operating North American supply chains.
+
+---

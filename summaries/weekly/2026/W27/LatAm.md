@@ -1,0 +1,16 @@
+• Venezuela's twin earthquake death toll surpassed 1,700 by Tuesday, with a subsequent 5.1-magnitude aftershock complicating relief operations and acting President Delcy Rodríguez managing an unusual diplomatic opening from approximately two dozen aid-contributing nations.
+• Washington's decision not to renew USMCA — opting for annual reviews instead — represents the most consequential development for the region, creating structural uncertainty for Mexico's export-dependent economy.
+• Keiko Fujimori narrowly won Peru's presidential election, becoming the country's first female president on a market-friendly, security-focused platform.
+• Argentina's cabinet chief resigned Saturday following months of corruption allegations, the most significant departure from the Milei administration since taking office; a subsequent poll found a majority of Argentines disapprove of his handling of the scandal.
+• Brazil and India appear in analysts' "sweet spot" of low inflation and positive growth momentum, a relative bright spot versus developed markets.
+
+**Venezuela Crisis and Diplomacy**
+The disaster has created an unusual diplomatic opening for Rodríguez, who has welcomed aid from approximately two dozen countries — including Trump-aligned governments in Argentina, El Salvador, and Ecuador alongside traditional partners Cuba, China, and Iran. The US pledged aid, search-and-rescue teams, and temporary sanctions relief for earthquake-related transactions through October 23. Whether Rodríguez can convert this moment of relative international engagement into durable political legitimacy remains uncertain; nearly half of Venezuelans surveyed prioritize new elections over reconstruction, and opposition pressure from exiled leader María Corina Machado — stranded in Panama — remains a real constraint.
+
+**USMCA and Mexico**
+Washington's announcement that it will not seek a clean USMCA renewal opens an indeterminate annual review process for Mexico, which relies on the framework to underpin roughly $500 billion in bilateral trade with the United States. Oxford Economics has explicitly revised down forecasts for all three North American economies. The announcement landed amid World Cup celebrations, creating a sharp contrast between the symbolic North American co-hosting partnership and the fracture in trade relations. Argentine beef exporters, meanwhile, are redirecting shipments toward the US market following Washington's decision to raise the tariff-free export quota to 100,000 tons annually, even as domestic Argentine beef consumption has fallen to record lows of 47.5 kg per capita.
+
+**Peru and Argentina**
+Fujimori's victory in her fourth presidential bid adds Peru to a regional pattern of electorates prioritizing security and economic orthodoxy. For copper markets — Peru is among the world's largest producers — her market-friendly orientation is broadly constructive, though ongoing legal challenges merit monitoring. In Argentina, the Adorni corruption scandal has dealt a measurable blow to Milei's approval at a moment when political cohesion is central to sustaining the fiscal adjustment underpinning the stabilization program.
+
+---

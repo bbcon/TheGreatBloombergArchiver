@@ -1,0 +1,16 @@
+• Euro-area flash CPI came in below consensus on Tuesday, reducing near-term pressure on the ECB to resume tightening; ECB Governing Council member Kazaks stated the bank is "in no rush" to hike in July.
+• Spain's June CPI printed at 3.6% — above expectations — while Italy came in at 3.1%, below consensus; France recorded 2.0%, ahead of the eurozone-wide flash estimate of 3.0%.
+• ECB President Lagarde declined to rule out departing her role early to participate in French politics on Thursday, introducing an element of institutional uncertainty into eurozone monetary policy.
+• Germany's CDU-SPD coalition agreed on €10 billion in annual income tax relief and a labor market reform package, with Chancellor Merz projecting GDP growth above 1% in 2027 against a current forecast of 0.5% for 2026.
+• France recorded approximately 1,000 excess deaths last week from a heat wave sweeping east through Germany, Italy, Hungary, and the Balkans.
+
+**ECB Policy**
+The ECB convened at Sintra from a position of relative confidence compared to its 2022 appearance, having led G7 peers with a rate hike following the Iran war's energy shock. The softer-than-expected eurozone CPI print on Tuesday — combined with retreating oil prices as Middle East peace talks advanced — has reduced the probability of a July hike. Kazaks explicitly confirmed this posture, though Bundesbank President Nagel and Austria's Kocher indicated they remain open to further tightening, reflecting a divided governing council. Chief Economist Lane warned of lingering second-round inflation effects from the energy spike and declined to pre-commit to a path. Lagarde's comments on a possible early departure introduce a non-trivial institutional risk heading into the second half, as any leadership transition could affect the pace of further policy adjustment.
+
+**Bank of England**
+Governor Bailey struck a notably dovish tone at Sintra, emphasizing growth weakness over above-target inflation — a framing that contrasts with rate-setter Catherine Mann's openness to an "activist" hike if inflation expectations fail to improve. UK companies plan to raise prices by 4% over the coming year, double the 2% target, suggesting the MPC's hold at 3.75% reflects genuine uncertainty rather than comfort. The UK's defense investment plan detailing £5 billion in drone spending reflects a fiscal commitment that may add modestly to medium-term inflationary pressure.
+
+**Germany and Structural Themes**
+The German reform package — pension adjustments, labor market measures, and €10 billion in annual tax relief — represents a meaningful shift in Europe's largest economy toward fiscal stimulus. Whether the implementation timeline delivers on Merz's 2027 projections remains uncertain, but the directional change is significant. Spain's solar overcapacity, meanwhile, illustrates renewable investment risk: wholesale prices have gone deeply negative during peak hours, asset values are falling sharply, and several projects are for sale at steep discounts — while consumers benefit from some of Europe's lowest power prices, roughly half German levels.
+
+---
