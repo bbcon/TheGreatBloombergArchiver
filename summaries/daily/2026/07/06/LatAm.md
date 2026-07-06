@@ -1,0 +1,7 @@
+• Brazil's Senator Flávio Bolsonaro is distancing himself from US trade measures previously associated with his family's lobbying efforts on behalf of his father, suggesting the tariff fallout is becoming an electoral liability for the conservative opposition.
+• Norway's 2-1 World Cup defeat of Brazil — secured by a Haaland brace — produced no direct economic implications but carries symbolic weight in a tournament hosted partly across the Americas.
+
+**Trade and Political Economy**
+Brazil's political landscape is registering the downstream effects of Trump's tariff campaign. Flávio Bolsonaro's effort to separate himself from measures his family actively lobbied for reflects polling sensitivity around US trade policy and its perceived costs to Brazilian exporters. The USMCA annual review mechanism triggered by Washington last week adds a layer of regional trade uncertainty, though its immediate practical effects on South American economies are limited. The broader concern for commodity-dependent LatAm economies remains the trajectory of global growth and oil prices — WTI traded at $68.30, down 0.6% on Monday — as OPEC+ production normalization post-Hormuz raises the prospect of a supply-demand imbalance that would pressure export revenues across the region.
+
+---
