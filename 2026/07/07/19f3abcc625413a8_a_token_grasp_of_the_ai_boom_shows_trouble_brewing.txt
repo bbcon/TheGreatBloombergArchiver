@@ -1,0 +1,288 @@
+Subject: A token grasp of the AI boom shows trouble brewing
+Date: Tue, 07 Jul 2026 04:01:16 +0000
+
+Points of Return 
+ To get John Authers’ newsletter delivered directly to your inbox, sign up 
+here. Chipmaker stocks enjoyed a rebound after the long American w 
+
+View in browser <https://bloom.bg/4vg7EIc> 
+ <https://bloom.bg/4gZ14lQ> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=18867138&m=11b724c487f61753eb1a7a4a5f3ef261&p=07072026040116&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=18867138&m=11b724c487f61753eb1a7a4a5f3ef261&p=07072026040116&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/4f6Wlfn> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ *  Chipmaker stocks <https://bloom.bg/4f0aP0F> enjoyed a rebound after the 
+long American weekend. 
+ *  Samsung Electronics <https://bloom.bg/3QGHCjj>’ latest profits rose 
+19-fold — that would help. 
+ * En garde!  France’s budget process <https://bloom.bg/4wzu5Jz> is getting 
+started and will be difficult. 
+ * FIFA has opted for a  deals-based order <https://bloom.bg/4eZuPAn>, rather 
+than a rules-based one. 
+ * AND: Great American songs (whether or not  Balogun should have played 
+<https://bloom.bg/4wzy4WB>). 
+
+
+
+More Than a Token <https://bloom.bg/4eSsC9K> 
+
+Amid the ever-growing array of metrics of the artificial-intelligence boom, 
+one relatively useful, straightforward measure tracks how much is being spent 
+on large language models. Why not just count the total number oftokens 
+<https://bloom.bg/3QZN8gM> — the tiny packets of data that are the building 
+blocks of AI models — people buy to use them? It’s as close to anAI 
+<https://bloom.bg/4f0ocO7> currency as we currently have, and while it might 
+not ultimately prove the best gauge of the technology’s trajectory, it’s a 
+real-time gauge ofAI companies <https://bloom.bg/4f3WSP6>’ pricing power. On 
+this basis, the Silicon Data Token Expenditure Index <https://bloom.bg/4vbCIc1>
+’s plunge from record highs offers signs of trouble brewing beneath the surface:
+
+Bloomberg News colleagues Jan-Patrick Barnert and Michael Msika point out  here
+ <https://bloom.bg/4vcyUXV> that this doesn’t mean that AI is getting cheaper. 
+As the gauge blends prices and usage, a dip could reflect either falling list 
+prices, a shift in demand toward cheaper models, or a softening in how much 
+buyers are willing to pay. Only weeks ago, the index was trading at twice its 
+level from late last year, even as the price of a single token had plunged by 
+more than 90% since 2023.
+
+For now, veteran bullish technology investor Louis Navellier argues that high 
+token prices could be pushing users toward lower-cost alternatives, 
+particularly Chinese offerings, and dampening enthusiasm for all things AI. 
+What does this signal for the broader AI trade in the near-term? Not a great 
+deal, he argues:
+
+I do not want investors to worry about the selloff in AI and data 
+center-related stocks. In my opinion, the big news is that the order backlogs 
+for AI and data center-related companies surged to nearly a three-year backlog, 
+so the data center boom is expected to persist at least through 2029.
+
+Meanwhile, Navellier’s expectations align with the sense that investors 
+looking to find AI winners will ultimately gravitate toward hyperscalers such 
+as Microsoft Corp. (currently down 28% from the all-time high it set last 
+October), Amazon.com Inc., and Meta Platforms Inc., given the strength of their 
+core businesses. As Bank of America Corp.’s Savita Subramanian demonstrates in 
+this chart, the AI arms race of the last two years has had an extraordinary 
+effect on their free cash flows. Virtually all of the cash these companies 
+produce is now going to capital expenditures (meaning chips):
+
+As investors have grasped that these companies now depend on capital as much 
+as old-line industrials, eliminating a key perceived advantage that the tech 
+sector has enjoyed for decades, so their share have stalled. Attention has 
+naturally turned to the massive sums they have to pay to the chipmakers of the 
+SOX semiconductors index:
+
+Morgan Stanley’s Michael Wilson argues that chips’ momentum will fade as 
+investors grow increasingly wary of their ballooning valuations, rising 
+competition, and potential overcapacity — and remember the potential payoff 
+from massive AI investments for hyperscalers:
+
+I expect the hyperscalers now to stabilize; that’s what’s been going on in the 
+last couple of weeks, and the semiconductor stocks are going to correct… That’s 
+a good development. You can’t have this divergence continue; it’s not 
+sustainable.
+
+The likelihood remains that AI will positively affect productivity, which 
+should ultimately drive the technology’s attractiveness — even if competition 
+pushes down prices for cost-sensitive consumers. A recent Boston Consulting 
+Group paper by Matthew Kropp and his team analyzed token consumption at more 
+than 100 public technology companies with more than $500 million in trailing 
+12-month revenue. It concluded that tokens multiply what knowledge workers can 
+produce, much as the assembly line did for manufacturing:
+
+The firms pulling ahead are redesigning their processes around AI, with people 
+applying expertise to direct and improve the system. These companies operate at 
+a pace and scale that human-only organizations cannot match.
+
+Ultimately, they find that if the winners get it right, they’ll create 
+workflows that improve organically as AI becomes better, faster, and cheaper, 
+and the rewards could be significant. The following chart shows that the 
+pattern amongBCG’s survey <https://bloom.bg/4gpvhdM> is already consistent with 
+productive token use translating into an advantage:
+
+For all AI’s promise, the path to realizing significant productivity 
+improvements isn’t straightforward. Citadel’s Frank Flight argues that the 
+journey will be more selective and cost-conscious than markets once assumed. 
+That is relevant for asset prices:
+
+The key variable is not productivity alone, but the elasticity of demand for 
+the tasks and services whose costs are falling. Where demand is elastic, 
+AI-enabled efficiency gains can expand output enough to raise demand for 
+complementary factors of production, such as labor.
+
+Over the medium term, Flight notes that improvements in model efficiency and 
+power infrastructure can offset some of today’s physical constraints. He argues 
+that markets, however, should avoid anchoring themselves to a world in which AI 
+is ubiquitous, frictionless, and immediate — even though that is close to what 
+eventually happened after the introduction of the internet.
+
+Ultimately, a more plausible path is one of uneven diffusion: Frontier 
+deployment concentrated where the returns justify the computing power, broader 
+adoption shaped by cost and capacity, and asset prices periodically forced to 
+reconcile ambition with physical constraints. Put differently, the period of 
+vertical ascent is probably over.
+
+—Richard Abbey
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=18867138&m=11b724c487f61753eb1a7a4a5f3ef261&p=07072026040116&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=18867138&m=11b724c487f61753eb1a7a4a5f3ef261&p=07072026040116&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+French Encore
+
+French politics is just beginning to appear on the horizon. Last week,  the 
+nation set the date <https://bloom.bg/4gpvlKy> for next year’s presidential 
+election as April 18, with a second round — needed in the almost-certain event 
+that nobody tops 50% — taking place two weeks later. Predictions of aPax Macron 
+<https://bloom.bg/3QD0rnu> era fizzled years ago, but for all the incumbent’s 
+unpopularity at home, international investors might well prefer him to his 
+successors.
+
+Emmanuel Macron’s political authority has never recovered from his disastrous 
+decision two years to call snap legislative elections. The same is true of 
+French assets. Those elections created a parliamentary logjam with three blocs 
+each commanding about a third of the seats. French stocks underperformed 
+dramatically during that political crisis. They have more quietly continued 
+their slide over the last year:
+
+A similar pattern is visible in bond markets, where the yield on French OATS 
+continues to inch higher, and in the process restrict the fiscal room for 
+maneuver. Perceived political risk, viewed in the extra yield on OATS compared 
+to German bunds,leapt when Macron called the election <https://bloom.bg/4vj1ZkH>
+ and has stayed high during the period of deadlock that followed:
+
+Driving the bond market is France’s troubled fiscal situation 
+<https://bloom.bg/4wzu5Jz>. The political impasse has stymied any attempts to 
+make significant improvements. Morgan Stanley’s Jean-Francois Ouvrard and Jens 
+Eisenschmidt suggest that the central government balance for the first five 
+months of this year shows a deterioration from 2025, while there are also risks 
+from local governments and social security. It now forecasts a public deficit 
+of 5.2% of gross domestic product for the year (up from 5.1%). This compares 
+with 5.1% last year, and the government’s 2026 cut target of 5.0%.
+
+Today, the “public finances alert committee” (comite d’alerte des finances 
+publiques) will meet, and Budget Minister David Amiel <https://bloom.bg/4gZ14Cm>
+ set the scene by commenting that all indicators were “flashing red” and France 
+was“sitting on a barrel of gunpowder.” <https://bloom.bg/4eWQtVT> A budget 
+needs to be presented to parliament in October, in a process that will be 
+difficult.
+
+If that is the concrete effect of political stasis, next year might bring a 
+drastic departure in a direction that the market detests. After Marine Le Pen 
+of the far-right Rassemblement National ran Macron close in 2017 and 2022, 
+there appears a strong chance that the party might finally win power next year. 
+It’s not clear whether Le Pen will be allowed to run, but the combined 
+prediction market odds for her and party leaderJordan Bardella 
+<https://bloom.bg/4f0ofth> show that they’re seen with a solid chance of about 
+one in three, better than any other single party:
+
+A fractured left includes a number of candidates, such as the far-left veteran 
+Jean-Luc Melenchon, who would also alarm investors, while it is hard to see 
+voters endorsing anyone promising to continue with Macron’s hugely unpopular 
+agenda.
+
+The market is (relatively) calm about the prospect of an RN victory for two 
+broad reasons. First, French markets have steadily been pricing in higher 
+political risk for a while, so there’s less need for some sudden discontinuous 
+lurch once the result is known. Second, experience elsewhere suggests to all 
+and sundry that hard-right parties can and should be more pragmatic once in 
+office.
+
+ Brexit in the UK <https://bloom.bg/4fqi2HF> makes leaving the EU altogether 
+look far less attractive. In Italy, the anti-European and populist coalition of 
+the populist-left Five Star movement and populist-right League, which came to 
+power in 2018, crashed and burned after it confronted the EU over budget rules. 
+Giorgia Meloni, prime minister of the Fascist-descended Brothers of Italy, has 
+moderated the tone and overseen a period of stability that eliminated the 
+country’s perceived political risk compared to France:
+
+Put all these factors together, and markets are treating France’s intractable 
+political difficulties as reason to withdraw steadily, rather than flee in 
+fright. The odds are that events between now and next spring’s elections will 
+test thatsang-froid.
+
+
+
+ Survival Tips 
+
+
+
+Some more Americana songs, not necessarily in honor of Folarin Balogun: 
+Jefferson Airplane <https://bloom.bg/49W1kym>’s “Volunteers of America,” Grand 
+Funk Railroad <https://bloom.bg/4ws01iT>’s “We’re an American Band,” Neil Young 
+<https://bloom.bg/4f5WTCk>’s “Home on the Range,” C.W. McCall 
+<https://bloom.bg/4f2q9tB>’s “Convoy,” Frank Sinatra <https://bloom.bg/3R2DJ8m>
+’s “The House I Live In,”Lenny Kravitz <https://bloom.bg/4gIkpYD>’s “American 
+Woman,”The Cult <https://bloom.bg/4f0qRY9>’s “American Gothic,” Stephen Wilson 
+Jr <https://bloom.bg/4gZ14SS>.’s (totally different) “American Gothic,” Charlie 
+Haden <https://bloom.bg/4aDQKMj>’s “Going Home” (his take on Dvorak’s “New 
+World Symphony”) and theVillage People <https://bloom.bg/3HiCDAo>’s “Go West.”
+
+Meanwhile, as it’s impossible not to think about the World Cup at present, 
+songsFIFA should have borne in mind <https://bloom.bg/4bcObRr> when changing 
+the rules on the fly might include the Human League’sI Am the Law 
+<https://bloom.bg/4w7YJtP> and Livin’ Joy’s Follow the Rules 
+<https://bloom.bg/4eWQwkx>. Any more? And for a prescient take on the way this 
+glorious celebration of international diversity and competition could so 
+quickly become an ugly international incident, try reading George Orwell’s The 
+Sporting Spirit <https://bloom.bg/4gjN4D0>, published in 1945 after a Soviet 
+football team had played a number of English clubs in a goodwill tour. “Sport 
+is frankly mimic warfare,” he said, and football is “a game in which everyone 
+gets hurt and every nation has its own style of play which seems unfair to 
+foreigners.” Painfully true and eternally worth reading.
+
+More From Bloomberg Opinion
+
+ * Trump’s Meddling Threatens Warsh <https://bloom.bg/4f3WOyQ>’s Fed 
+Leadership: Jonathan Levin 
+ * America’s Battlefield Dominance <https://bloom.bg/44Nyyw6> Is Under Serious 
+Threat: Max Hastings 
+ * Michael Burry Is Right About Memory Chipmakers <https://bloom.bg/44Nyz38>: 
+Shuli Ren 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/yOyMWsGYnwvXeW6M1uaaIe8wK9Tf7FWwxbgzgQBRYVjw4AtLhfLdleMrQb3f3vKkGHLWnn6t-Zewz02fmcXSekwPv_i7xtr4l6cfpqqUtJwok7qCYHY6j9Ic1LmV8GpgZp61J1TFtJBR0gE8WOaF8mOBxb0JuTGXUmXStPjH2rPRw34CLzXJnKC1QxSrXgKyFmgeUrgKaB1cQGcwfrruyhbrLTDuDt4Cdj1Sr-mI3UJE7n3fQXgMAsmuSt9uVobCW6AtHLlCvF3nYRqsqi6DO9hqzK66E72uA_po0cDOwVYVNUS5bd288nEiZzZjSfzCMVUBKh5Z6-W7m4YzxbmhTtlE-11R5JMS/pYSrkJCXsJqvQP053-cn7LMVDKG2BEnl/22>
