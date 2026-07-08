@@ -1,0 +1,281 @@
+Subject: Iran can’t help gloating, and oil prices go up
+Date: Wed, 08 Jul 2026 04:11:46 +0000
+
+Points of Return 
+ To get John Authers’ newsletter delivered directly to your inbox, sign up 
+here. The US is launching a new wave of military strikes on Iran. 
+
+View in browser <https://bloom.bg/3SNOHiI> 
+ <https://bloom.bg/4ybe9P0> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=18883369&m=11b724c487f61753eb1a7a4a5f3ef261&p=07082026041146&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=18883369&m=11b724c487f61753eb1a7a4a5f3ef261&p=07082026041146&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/4yeMVY8> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ * The US is launching a  new wave <https://bloom.bg/4yavCr0> of  military 
+strikes on Iran <https://bloom.bg/4y8GtSf>. 
+ *  Oil prices <https://bloom.bg/4vMWVWN> and bond yields rebounded upward in 
+response. 
+ *  Chipmakers fell <https://bloom.bg/4fntnsR> again, inflicting more pain on 
+momentum traders. 
+ *  Marine Le Pen <https://bloom.bg/4vTLXyT> is running for president — and  
+Nigel Farage <https://bloom.bg/4bbVicQ> is calling a byelection. 
+ * AND: Music for  Trump and FIFA <https://bloom.bg/4y9cMAn>. 
+
+
+
+Mission Still Unaccomplished
+
+Iran is back in the news. Following Iranian attacks on tankers in the Strait 
+of Hormuz, the US renounced the waivers that had allowed the country to start 
+selling its oil once more, and then announced afresh wave of military strikes 
+<https://bloom.bg/4y8GtSf>.
+
+Coming late in the East Coast afternoon, the news had a predictable effect on 
+markets <https://bloom.bg/4y6cz17>, pushing bond yields up. The 10-year 
+Treasury gained 8.2 basis points to hit 4.55%, while crude had its greatest 
+rise since June 1, with Brent gaining 3.01%. This punctured optimism that 
+inflation had been licked — although it was surprising that there was such 
+confidence in the first place. Brent prices for December delivery, and the 
+average price paid by US consumers at the pump, had been declining but remained 
+some 25% higher for the year:
+
+That calm reflected a belief that flows would resume, and were based on 
+confidence that the US would not escalate the war into a broader land conflict. 
+That assumption looks well-founded, and makes it harder for the US to threaten 
+retaliation against moves that close the Strait of Hormuz. As the Bloomberg 
+News Trends count of stories on the terminal from all sources shows, mentions 
+of the Strait had on Monday had dropped to their lowest since the war started:
+
+This was premature. Tankers are indeed moving through the Strait, but 
+Bloomberg’s count of crossings shows that traffic is still far below normal and 
+had begun to dwindle again: 
+
+Market-based inflation forecasts had come down sharply; one-year swaps are now 
+at 2.23%, compared to 2.5% on the eve of the war. But consumers feel 
+differently. The New York Federal Reserve’s regular consumer survey 
+<https://bloom.bg/3SOgcIS> shows they are braced for 3.67% inflation over the 
+next year, the highest since 2023, and higher than at any point in the decade 
+leading up to the pandemic:
+
+Jean Ergas of Tigress Financial Partners suggested that the victory 
+celebrations had always been premature. “Crude futures are falling because we 
+are getting rid of one-off excess capacity. But not everyone wants to send 
+their ships through Hormuz.”
+
+He suggested that VAR (Value at Risk) metrics should be replaced by OAR (Oil 
+at Risk), as tanker operators felt it necessary to cross the Strait in convoys 
+and pay for the privilege. Meanwhile, Iran made a show of strength with the 
+funeral of former Supreme Leader Ali Khamenei, which demonstrated the regime 
+remained intact and unchanged.
+
+Iran seems really keen to show the world that the  US has lost 
+<https://bloom.bg/4eQrfK5>. That more or less guarantees that volatility will 
+continue, and markets will need to readjust.
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=18883369&m=11b724c487f61753eb1a7a4a5f3ef261&p=07082026041146&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=18883369&m=11b724c487f61753eb1a7a4a5f3ef261&p=07082026041146&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+Bad Times for Big Mo
+
+The switchback for oil came as markets continued a startling reverse over the 
+key trade in artificial intelligence and the chips needed to build it. Samsung 
+Electronics Co. announced spectacularly strong earnings 
+<https://bloom.bg/4voGOxD>, to be greeted by a selloff that brought its 
+price/earnings multiple down to its biggest discount to the MSCI World on 
+record:
+
+Semiconductors are traditionally regarded as a cyclical business, which means 
+low multiples, but returning to the lowest p/e ratio since 2019 suggests an 
+overreaction in sentiment.
+
+All of this has created much pain for the quantitative investing community, 
+who make their bread and butter from momentum — the tendency for winning stocks 
+to keep winning while losers keep losing. It’s prone to occasional sharp 
+reversals, and it’s suffering a serious one now. This is how the 
+exchange-traded funds for the S&P 500 Momentum index (including the winners) 
+has fared compared to the S&P 500 Equal-Weight index, a measure of the average 
+stock. This has been brutal:
+
+What’s unusual is the lack of an external trigger. The last big momentum 
+shocks were triggered by the Covid-19 shutdowns, and then the arrival of the 
+vaccines that allowed a return to normality. Nothing so dramatic is happening 
+at present.
+
+There are various ways to measure momentum, but they agree this is a big 
+event. This is how a “long the winners/short the losers” trade in technology 
+stocks has fared over the last decade. (If on the terminal, open this in GP to 
+view it on a log scale.):
+
+Breaking the trade into its component parts, the nerves afflicting the winners 
+among the semiconductor stocks are obviously important, but the baskets kept by 
+Goldman Sachs show that the rise in the losers has also been problematic for 
+the quants:
+
+Globally, Societe Generale SA’s Andrew Lapthorne shows that it’s the losers’ 
+recovery that’s really creating difficulties. While this is primarily a US 
+phenomenon, the revival of previous losers in Japan and Europe has also caught 
+out the quants:
+
+Source: Societe Generale SA 
+Lapthorne commented that such periods “inevitably trigger accusations of 
+‘quant unwinds’— when the laggards rally, momentum strategies tend to be caught 
+on the wrong side of the move, and this often exacerbates the situation.” When 
+there are numerous overlapping themes, and all involve recovery for stocks that 
+had been doing badly, it will be tough on quants. As these portfolios mostly 
+are not very leveraged, there shouldn’t be serious systemic consequences, but 
+the situation could easily have further to roll.
+
+
+US vs. MCA, Round Two
+
+Sadly the US <https://bloom.bg/4ePkhFd>, Mexico <https://bloom.bg/4y5odtb> and 
+ Canada <https://bloom.bg/4y9jVkd> are no longer in the wonderful World Cup 
+they’re hosting. All perished in the round of 16. That frees them to focus on 
+last week’s news from theUS Trade Representative <https://bloom.bg/4yfYGh0> 
+announcing that the US-Mexico-Canada Agreement (USMCA) won’t be renewed. From 
+now on, terms of trade between the three nations of North America will be 
+renegotiated each year.
+
+That’s not great, but the relatively muted market reaction suggests the 
+decision wasn’t entirely shocking, especially given Washington’s hardline 
+attitude on tariffs. The Mexican and Canadian currencies barely budged. 
+Bloomberg Economics’ indexes of trade policy uncertainty — based on news 
+coverage — stayed low:
+
+The six-year-old pact, <https://bloom.bg/48sY2Su> successor to the North 
+American Free Trade Agreement (NAFTA), was due for a joint review beginning 
+July 1. It governs roughly $2 trillion annually in goods and services. US 
+imports from Mexico have surged since it was signed, helping to deal with the 
+sharp fall in imports from China:
+
+The deal’s future was always going to face pushback from Washington. Under the 
+terms signed during Donald Trump’s first term, the countries can agree to 
+extend it for another 16 years, or put it on a 10-year path toward expiration. 
+The US could also withdraw with six months’ notice. While a catastrophic exit 
+seems unlikely, what lies ahead is unclear. The ambiguity, Rafael Ch of Signum 
+Global Advisors argues, was deliberate:
+
+By not specifying that it is selecting option two – that is, put the deal on a 
+10-year track toward sunsetting, with formal annual reviews in the meantime, 
+the Trump administration is implicitly suggesting that it may still pursue 
+option three (full termination) if its demands are not met.
+
+That keeps Mexico and Canada under pressure from both Washington and their own 
+domestic stakeholders, who will push their governments toward concessions to 
+restore certainty. Ch points out that Mexican headlines frame the US decision 
+as Mexico’s failure.
+
+A potent pain point for Canada and Mexico is the risk that uncertainty will 
+hold businesses back from making investments. This isn’t good for the US, 
+either. Oxford Economics’ Michael Pearce argues:
+
+It’s not clear to me that Canada and Mexico’s loss is necessarily America’s 
+gain, but the logic of the administration will be that it works in that way, in 
+that it prevents firms from investing with that long-term certainty. We’ve seen 
+that reflected in the recent decision by Toyota to relocate some truck 
+production from Mexico to a plant in Texas, which will be used as evidence of 
+that.
+
+With the auto industry alone accounting for almost 18% of US trade with its 
+neighbors, according to the American Automotive Policy Council, concerns that a 
+protracted review could present headwinds for carmakers are justified. Ongoing 
+negotiations between the US and Mexico underscore the importance of the auto 
+industry to the core of this agreement.
+Vehicles awaiting export from the Port of Veracruz. Photographer: Brett 
+Gundlock/Bloomberg 
+Rules of origin <https://bloom.bg/4vKylps>, which determine where a product is 
+made and whether it qualifies for preferential tariff treatment, are another 
+thorny issue. The USMCA currently requires 75% of the “regional value content” 
+for passenger vehicles and light trucks to be sourced from North America.
+
+Pearce notes that the administration wants to raise that threshold to 82%, 
+with 50% of a vehicle’s value produced in the US. Paradoxically, that could 
+encourage automakers to build outside the US using the least expensive 
+components they can find to reduce the value of imported vehicles to a point 
+where paying tariffs is a better deal than complying with USMCA rules — and run 
+counter to Trump’s quest to reestablish America as a manufacturing powerhouse. 
+The one certainty: These neighborly negotiations will be fraught.
+
+—Richard Abbey
+
+
+
+ Survival Tips 
+
+
+
+To win an election, the new popular strategy is to present yourself as a 
+victim of the “establishment.”Marine Le Pen <https://bloom.bg/4vTLXyT> seems 
+intent on doing this now that a French court has given her a suspended prison 
+sentence for embezzlement, allowing her to campaign wearing an electronic 
+monitor. In Britain, Nigel Farage responded to corruption allegations by 
+proclaiming himself a target of a stitch-up and resigning his seat in 
+Parliament so that he can win a new mandate. “This will be a 
+people-versus-the-establishment byelection,” he says.“It’s a chance to stick 
+two fingers up <https://bloom.bg/4y7nozM> to the entire establishment.’’ 
+
+Except the establishment won’t show up. All the major parties dismissed it as 
+a transparent stunt and refused to put up a candidate. Farage might want 
+attention, but he’ll have to settle for a battle of ideas with perennial 
+contenderCount Binface <https://bloom.bg/4eQoZT7>, which is about what he 
+deserves. For Farage and Le Pen,this song many of you nominated to commemorate 
+Trump’s intervention in the World Cup <https://bloom.bg/4y147Qy> seems 
+appropriate.
+
+More From Bloomberg Opinion
+
+ * Zuckerberg and Musk’s AI Failure <https://bloom.bg/4foQfIA> Club Has Its 
+Perks: Parmy Olson 
+ * Nigel Farage <https://bloom.bg/3QYtzWm>’s Desperate Gamble May Well Be the 
+End: Rosa Prince 
+ * Where’s the Oil Price <https://bloom.bg/3SMps05> Headed? Only China Knows: 
+Javier Blas 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/qIh82qAQNQbEo0udp_5KGSeRpi02VwtoRAeBlTQJGZGPZeWH_TkFI7kTiXCpYBohM4snJNc-0gfLAY42D9KAS_IKH1AerLexwS7Pciap9FAtwtjWMccqlL7X2QxOoeTMHnhDIE7P7zBjlXKpPMm7TOQtRjyblFsRxloLXRvQNnsuGkYJPVnheICHEwGUx4sXemXzLsiwFuKBx71DiMiXw-FmDuWteMURIEdJitHvM9KHpoKWr4dWpVkU67zwT4xZhCZToFvvAi7dyoXlh2iYpr9WlcZxskJCNAcPLS9MQItgNtwrtgcX9REAyof_cq3XYbCo06YBMVffxgjhU0dcouhdJLtI6u53/AHI3sx80JdogjKceR00ZiofNzIhgNUUv/22>
