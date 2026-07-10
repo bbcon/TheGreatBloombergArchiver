@@ -1,0 +1,11 @@
+• Refined fuel markets are tightening materially despite crude prices nearly erasing their wartime rally — refinery margins surged to their highest since 2022 in early July, per the IEA.
+• US-Iran technical talks are continuing despite two days of clashes that strained the ceasefire and brought Strait of Hormuz tanker traffic to a near-standstill.
+• Goldman Sachs finds carry trade conditions the most compelling since 2000, reflecting elevated global interest rate differentials and persistent dollar strength.
+
+**The Oil Market Bifurcation**
+
+The IEA's July report highlights an increasingly bifurcated oil market: crude supplies have recovered as Gulf exports resumed under an interim peace arrangement, but refined product and LPG exports from the region remain below 50% of prewar levels, with key export-oriented refineries not yet operational. This structural divergence is driving crack spreads — the margin between crude input costs and refined output prices — to their highest since 2022, creating inflationary pressure at the consumer level even as headline crude benchmarks stabilize. Brent traded near $76 per barrel. The summer driving season in the US compounds supply constraints on the product side. Ukrainian strikes on Russian refineries are a secondary amplifying factor, as Moscow has redirected crude exports while restricting diesel shipments.
+
+**Geopolitical Risk and Monetary Divergence**
+
+The US-Iran ceasefire remains fragile. Technical-level talks are ongoing, but two days of renewed clashes demonstrated the vulnerability of the arrangement. The IEA explicitly warned that resumed hostilities risk derailing efforts to rebuild global oil inventories later this year. Separately, global monetary policy divergence is generating notable currency dynamics: New Zealand's dollar reached a three-week high after hawkish RBNZ signals and strong manufacturing data, while the yen remains structurally pressured despite Tokyo's domestic-investment push. Goldman Sachs' assessment that carry trades face their best conditions since 2000 reflects the breadth of global rate differentials — a dynamic that may persist as long as the Fed holds rates elevated and smaller economies cycle independently.
