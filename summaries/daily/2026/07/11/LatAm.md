@@ -1,0 +1,5 @@
+• Citigroup flagged a risk of debt reprofile in Senegal following a political rupture, though this falls outside the core LatAm universe.
+• Mexican auto industry concerns are rising that Toyota's reported US production shift may set a broader trend, threatening a key pillar of Mexico's export economy.
+
+**Mexico Manufacturing Risk**
+The potential replication of Toyota's shift of production capacity toward the United States poses a structural risk to Mexico's automotive sector, which accounts for a significant share of the country's export revenues and manufacturing employment. Should other Japanese or multinational automakers follow suit — drawn by US trade policy incentives or tariff considerations — Mexico's role as a preferred nearshoring destination could face meaningful headwinds. The full scope of this risk remains to be seen, but it warrants close monitoring given the sector's weight in Mexican GDP and its sensitivity to US trade policy.

@@ -1,0 +1,6 @@
+• Vietnam's trade surplus with the US ranked second-largest among all bilateral imbalances in May, elevating trade tension risk ahead of Lam's planned UN General Assembly visit in September.
+• The AI investment rotation — boosting Chinese equities while pressuring Korean stocks — illustrates how capital is repricing technology leadership assumptions across Asia.
+• Vietnam's "multidirectional diplomacy" strategy, welcoming investment from both the US and China simultaneously, faces growing stress as geopolitical bifurcation intensifies.
+
+**Trade and Geopolitical Realignment**
+Vietnam's emergence as a major FDI destination encapsulates a broader global dynamic: manufacturing supply chains continue to diversify away from China, yet Chinese firms are themselves relocating operations to Vietnam to circumvent direct export restrictions — a layering of economic interests that complicates the binary framing of decoupling. President Trump's repeated identification of Vietnam's bilateral surplus with the US as problematic adds a further policy risk dimension. Meanwhile, South China Sea territorial tensions between Vietnam and China persist beneath the surface of diplomatic engagement, illustrating that economic interdependence and strategic rivalry can coexist — though not indefinitely without friction.

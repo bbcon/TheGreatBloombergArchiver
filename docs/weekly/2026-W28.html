@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jul 06 – Jul 12, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="#" class="nav-link active">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Jul 06 – Jul 12, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>FOMC minutes (Wednesday) delivered a hawkish surprise: "a few" members saw a case for an immediate rate hike at Kevin Warsh's first meeting as chair, with "almost all" indicating policy firming would be warranted if inflation remained elevated.</li><li>The May trade deficit widened to its largest since March 2025, with imports rising 3.3% and exports falling 3.2%, missing expectations and raising downside risk to Q2 GDP.</li><li>Manufacturing employment stood 38,000 below year-ago levels as of Monday, undermining the tariff-driven industrial revival narrative.</li><li>Trump declared the Iran ceasefire "over" on Wednesday, triggering fresh US strikes on more than 80 Iranian sites and a sharp repricing across rates, energy, and equities.</li><li>Five of the six largest US banks are due to report Tuesday of the following week, with consensus anticipating near-record equity trading revenues amid months of sustained market volatility.</li></ul>
+<p class="para-title" style="color:#5597cb;">Manufacturing and Trade Policy</p>
+<p class="para-body">The gap between the administration's tariff revival narrative and underlying factory data widened further this week. The May trade deficit — the broadest available — showed export weakness concentrated in nonmonetary gold, likely reflecting the unwind of tariff-driven stockpiling flows from Switzerland; stripping out gold, goods exports still declined 2.4%. Bloomberg Economics flagged downside risk to Q2 GDP from the widening gap. On the policy front, the US Trade Representative opened a three-day hearing on forced-labor tariff investigations covering 60 countries, with 10%–12.5% additional duties flagged. The existing 10% global tariff baseline expires July 24th, creating the next major trade policy inflection point. Total extra tariffs paid by US businesses and consumers since March 2025 have reached $317 billion.</p>
+<p class="para-title" style="color:#5597cb;">Monetary Policy</p>
+<p class="para-body">The June FOMC minutes were the week's most consequential domestic policy development. "Most participants" identified scenarios — AI-driven demand, Middle East conflict, tariff effects — in which inflation would remain elevated and "some policy firming would likely be warranted." The directional signal is unambiguous: the next rate move is now more likely up than down. The transmission mechanism reinforcing that posture is refined products: the gasoline crack spread sat near $57 per barrel, close to its highest since June 2022, with diesel crack spreads also materially elevated. The 10-year Treasury yield rose from 4.46% Monday to 4.58% by Thursday, partially retracing after the ceasefire collapse.</p>
+<p class="para-title" style="color:#5597cb;">Markets and Corporate News</p>
+<p class="para-body">The AI trade experienced its first meaningful sentiment inflection of the cycle. Samsung's record quarterly operating profit — beating consensus by roughly 6% — triggered a sell-the-news response in Seoul that cascaded into US premarket trading, with Micron down 5.1%, Western Digital off 5.6%, and Seagate declining 4.4% on Tuesday. Morgan Stanley argued the divergence between chipmakers and hyperscalers was unsustainable and characterized the semiconductor correction as a healthy rebalancing. Amazon's $25 billion bond offering on Wednesday attracted demand of only 1.6 times deal size, well below the year's four-times average, suggesting appetite for hyperscaler credit may be cooling. The KBW Bank Index has risen 13% year-to-date, outpacing the S&P 500's 10% gain, ahead of major bank earnings. Vertex Pharmaceuticals agreed Tuesday to acquire Crinetics Pharmaceuticals for $10 billion in cash, its largest deal on record, to expand into endocrinology. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Samsung Electronics reported Q2 operating income of 89.4 trillion won ($58 billion), beating consensus by approximately 6% on Tuesday, yet shares fell more than 10% in Seoul, triggering a circuit-breaker pause as the Kospi dropped 5.3% and entered a technical bear market.</li><li>SK Hynix raised $26.5 billion on Friday in the largest-ever US first-time share sale by a foreign company, with the deal more than seven times oversubscribed.</li><li>China's June CPI core slipped to 1.0% on Thursday while PPI fell 0.3% month-on-month — its first monthly decline since July 2025 — signaling that domestic demand remains soft even as export activity holds firm.</li><li>New Zealand's Reserve Bank raised its Official Cash Rate 25 basis points to 2.5% on Wednesday — its first hike in three years — and signaled further tightening may be required.</li><li>Vietnam's Q2 GDP printed at 8.4% YoY on Saturday, materially above consensus and among the strongest readings in emerging Asia, as registered FDI reached $34.65 billion through end-June, up 61% YoY.</li></ul>
+<p class="para-title" style="color:#e07b39;">Korea: Record Earnings, Deteriorating Sentiment</p>
+<p class="para-body">Samsung's Q2 results — operating income of 89.4 trillion won on revenue exceeding 171 trillion won, more than doubling year-on-year — represented the company's strongest quarter on record, yet the market response was unambiguous. Shares fell as much as 10% Tuesday, SK Hynix slid 6%, and the Kospi's intraday decline triggered a circuit-breaker pause. By Wednesday the index had extended its drawdown from last month's peak to 20%, entering a technical bear market. The episode appears to signal that Korean equities, after more than doubling on AI-driven enthusiasm, are priced for sustained outperformance rather than merely record results, leaving little margin for any moderation in hyperscaler capital expenditure cycles. Capital rotated sharply toward Chinese internet names: Alibaba surged 13% after a pre-earnings analyst briefing, and the MSCI China Index gained 7% in July through week's end. Reports that DeepSeek and Zhipu are developing proprietary AI chips provided additional catalyst.</p>
+<p class="para-title" style="color:#e07b39;">China: Stalling Reflation and Strategic Signals</p>
+<p class="para-body">June inflation data present a nuanced macro picture. The month-on-month PPI decline signals that China's reflation momentum is fading despite a widening trade surplus, and a growing number of analysts estimate Q2 GDP growth may have slipped below the lower bound of the official 4.5%–5.0% target. The People's Bank of China expanded its RMB Business Facility to 500 billion yuan on Tuesday, doubling its size to promote offshore yuan liquidity through Hong Kong. Geopolitically, China's test of a submarine-launched ICBM into the Pacific on Friday — likely a JL-3 variant — drew expressions of "grave concern" from Japan and condemnation from Australia, signaling continued development of a credible nuclear second-strike capability.</p>
+<p class="para-title" style="color:#e07b39;">Regional Policy and Capital Markets</p>
+<p class="para-body">New Zealand's 25-basis-point hike to 2.5% reflected above-target inflation and is consistent with the post-Iran-war upward shift in global rate trajectories. Goldman Sachs revised its yen forecast to 165 per dollar from 155 on Monday, citing fiscal pressures and a Bank of Japan tightening path too gradual to compress rate differentials; the yen traded at 161.9 at week's open before recovering modestly on Friday after Japan's finance minister called on pension funds, including the ¥293.6 trillion GPIF, to increase domestic asset allocations. Vietnam's 8.4% Q2 GDP print reinforced its position as one of the world's fastest-growing economies, prompting a World Bank upgrade to upper-middle income status, though credit-to-GDP ratios among the highest in emerging Asia and off-quota credit lines for major developers raise financial stability concerns warranting close monitoring. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>French fiscal deterioration continued, with Morgan Stanley forecasting a 2026 public deficit of 5.2% of GDP on Tuesday — above both last year's 5.1% outturn and the government's 5.0% target — as the budget alert committee described all fiscal indicators as "flashing red."</li><li>UK 10-year gilt yields rose 10 basis points to 4.95% on Wednesday — the highest level in nearly a month — after Trump declared the Iran ceasefire "over" and fresh US strikes revived rate-hike expectations.</li><li>Marine Le Pen confirmed on Wednesday she will contest France's 2027 presidential election despite an upheld embezzlement conviction, maintaining her status as polling frontrunner.</li><li>Volkswagen brought a restructuring plan potentially eliminating up to 100,000 jobs and closing four German factories before the supervisory board on Thursday.</li><li>Andy Burnham secured nominations from 322 of 403 Labour MPs on Friday, effectively resolving the UK party leadership contest in a single day.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">French Fiscal and Political Pressure</p>
+<p class="para-body">The French government's public finances alert committee convened Tuesday against a deteriorating fiscal backdrop. Central government balances through May have worsened year-on-year, with risks compounding from local governments and social security. OAT spreads over Bunds remain elevated relative to pre-2024 levels, reflecting a persistent political risk premium. A budget must be presented to parliament in October, a process that will be contentious given the three-way parliamentary impasse. Le Pen's confirmation Wednesday that she will run in 2027 — her appeal to the highest court delaying sentence enforcement — keeps the policy discontinuity risk alive, though markets appear to have been gradually pricing elevated political risk rather than awaiting a discrete catalyst.</p>
+<p class="para-title" style="color:#4a9e6b;">German Economy</p>
+<p class="para-body">Factory orders data released Monday offered a cautiously encouraging signal, rebounding after months of suppressed activity during the Strait of Hormuz closure. German industrial production rose for a second consecutive month, and export data showed an unexpected rise in May for the fourth consecutive month, driven by a sharp rebound in US-bound shipments. The sequential improvement is meaningful but partial: the Hormuz re-escalation midweek reintroduces energy supply uncertainty that could interrupt the recovery. Chancellor Merz is seeking to align positive data momentum with structural policy action ahead of the autumn legislative calendar.</p>
+<p class="para-title" style="color:#4a9e6b;">Industrial Restructuring and Corporate Developments</p>
+<p class="para-body">Volkswagen's supervisory board meeting Thursday on a plan to eliminate up to 100,000 positions and close four factories represents one of the most consequential corporate decisions in European industry this year, reflecting EV transition pressures, softening Chinese demand, and an uncompetitive cost base. Separately, EasyJet — weakened by jet fuel inflation during the Iran war — attracted a competing Apollo Global Management offer on Friday, sending shares 14% higher as a bidding war with Castlelake emerged. Ireland's tech sector employment fell nearly 11% YoY in Q1, with Meta cutting approximately 20% of its Irish workforce as AI-driven restructuring accelerates, creating tension with the tax-incentive model that attracted US multinationals. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>The USMCA non-renewal was confirmed Wednesday by the US Trade Representative, leaving approximately $2 trillion in annual trilateral trade subject to annual renegotiation; the Mexican peso showed limited immediate reaction.</li><li>A USTR Section 301 hearing targeting Brazil — covering digital commerce, ethanol, intellectual property, and deforestation — ran through its second day Tuesday, signaling Washington treats Brazil as a multi-issue negotiation requiring structural concessions.</li><li>Colombia's president-elect Abelardo De la Espriella suspended transition meetings with the outgoing Petro administration on Wednesday, while outgoing President Petro declared he does not recognize his successor's legitimacy, heightening uncertainty ahead of the August 7 handover.</li><li>Peru's central bank held its benchmark rate at 4.25% for a tenth consecutive meeting on Thursday, signaling policymakers view a recent inflation uptick as transitory.</li></ul>
+<p class="para-title" style="color:#c0392b;">USMCA and Mexico Manufacturing Risk</p>
+<p class="para-body">The Trump administration's decision not to renew the USMCA introduces sustained uncertainty rather than immediate rupture. By declining the 16-year extension option, Washington retains implicit leverage to pursue full termination if demands — including raising regional vehicle content thresholds from 75% to 82% and requiring 50% US-sourced value — are not met. The auto sector, representing nearly 18% of US-Mexico-Canada trade, faces the sharpest near-term exposure. Toyota's announced shift of some truck production from Mexico to Texas was cited as validating the approach. Oxford Economics cautions that the arrangement may suppress cross-border investment irrespective of formal outcomes. A broader replication of that production shift by other multinationals would pose a structural risk to Mexico's automotive export base.</p>
+<p class="para-title" style="color:#c0392b;">Brazil Trade Exposure</p>
+<p class="para-body">Brazil faces a distinctive bilateral trade risk profile. The USTR investigation spans electronic payments infrastructure, ethanol market access, IP enforcement, and deforestation compliance — suggesting a multi-issue negotiation rather than a targeted dispute. Flávio Bolsonaro appeared at the hearing to defend Brazilian commercial interests while simultaneously distancing himself from tariff measures his family previously lobbied for, reflecting polling sensitivity to US trade policy's perceived costs.</p>
+<p class="para-title" style="color:#c0392b;">Colombia and Regional Dynamics</p>
+<p class="para-body">De la Espriella's razor-thin electoral mandate complicates governance of a country facing near-term fiscal stress, structural electricity shortages, and intensifying narco-trafficking security threats. His alignment with Washington may deliver bilateral support but carries conditionality risks. Peru's tenth consecutive hold at 4.25% is consistent with a regional pattern of monetary authorities in hold mode following aggressive tightening cycles, though any sustained fuel-price passthrough from Hormuz disruptions could complicate that stance. Venezuela's oil output has risen approximately 20% since Maduro's arrest, with additional barrels flowing to the US Gulf Coast — a modest positive supply offset for regional energy balances. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude rose more than 6% on Wednesday — the largest single-day gain since late April — after Trump declared the Iran ceasefire "over" and US forces struck more than 80 Iranian sites; Brent traded near $78 on Thursday, up approximately 11.6% on the week, before easing toward $76 by Friday.</li><li>Bloomberg Economics estimates the US-Iran war has permanently shifted global central bank rate trajectories upward by as much as 50 basis points through 2028 relative to pre-war projections.</li><li>A Qatari LNG tanker was struck by a projectile while exiting the Strait of Hormuz on Tuesday, the first such attack on a Qatari vessel since the war began; European natural gas prices rose as much as 6% on the session.</li><li>OPEC+ ratified the return of more than 900,000 barrels per day since the conflict began but faces a potential oversupply problem as Middle East exports recover faster than Asian buyers require; WTI fell to $68.30 at week's open before recovering sharply.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Oil Market Structure and Hormuz</p>
+<p class="para-body">The week's central macro development was the collapse of the June 17 ceasefire. US forces struck approximately 90 Iranian military targets across two consecutive days, Iran retaliated with missiles and drones against US bases in Kuwait and Bahrain, and observable Strait of Hormuz crossings among larger vessels fell to their lowest levels since before the interim agreement. The IEA's July report highlighted an increasingly bifurcated oil market: crude supplies had partially recovered, but refined product and LPG exports from the region remain below 50% of pre-war levels as key export-oriented refineries stay offline. This structural divergence drove crack spreads to their highest since 2022, creating inflationary pressure</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

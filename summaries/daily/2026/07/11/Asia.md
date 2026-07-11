@@ -1,0 +1,9 @@
+• Vietnam's Q2 GDP printed at 8.4% YoY, materially above consensus and among the strongest readings in emerging Asia.
+• Registered foreign direct investment in Vietnam reached $34.65 billion through end-June, up 61% YoY, reflecting accelerating "China-plus-one" inflows.
+• An AI-driven rotation trade sent Korean equities lower while Chinese stocks surged, per Bloomberg reporting.
+
+**Growth Momentum**
+Vietnam's latest GDP reading of 8.4% YoY — which trounced expectations — has reinforced the country's position as one of the world's fastest-growing economies, prompting the World Bank to upgrade it to "upper-middle income" status. President To Lam is targeting nearly 12% expansion in H2 2026, underpinned by Resolution 168, a state-led investment framework assigning ambitious output targets to every ministry and province. The government also unveiled a $2.5 trillion, 100-year master plan for Hanoi, including a major Red River urban corridor.
+
+**Financial Stability Risks**
+The scale of ambition carries material risks. Vietnam's credit-to-GDP ratio is already among the highest in emerging Asia, and the State Bank of Vietnam has introduced off-quota credit lines for major developers including Vingroup, Sun Group, and Masterise — an arrangement that raises transparency concerns. Oxford Economics has flagged overheating risks; SSI Securities' chief economist notes that "rising leverage, greater credit concentration and structural funding pressures warrant close monitoring." The central bank is balancing a 15% credit growth target against dong stability and inflation containment — a tension that remains unresolved.

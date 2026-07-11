@@ -1,0 +1,8 @@
+• Brent crude rose more than 6% on Wednesday — the largest single-day gain since late April — after Trump declared the Iran ceasefire "over" and US forces struck more than 80 Iranian sites; Brent traded near $78 on Thursday, up approximately 11.6% on the week, before easing toward $76 by Friday.
+• Bloomberg Economics estimates the US-Iran war has permanently shifted global central bank rate trajectories upward by as much as 50 basis points through 2028 relative to pre-war projections.
+• A Qatari LNG tanker was struck by a projectile while exiting the Strait of Hormuz on Tuesday, the first such attack on a Qatari vessel since the war began; European natural gas prices rose as much as 6% on the session.
+• OPEC+ ratified the return of more than 900,000 barrels per day since the conflict began but faces a potential oversupply problem as Middle East exports recover faster than Asian buyers require; WTI fell to $68.30 at week's open before recovering sharply.
+
+**Oil Market Structure and Hormuz**
+
+The week's central macro development was the collapse of the June 17 ceasefire. US forces struck approximately 90 Iranian military targets across two consecutive days, Iran retaliated with missiles and drones against US bases in Kuwait and Bahrain, and observable Strait of Hormuz crossings among larger vessels fell to their lowest levels since before the interim agreement. The IEA's July report highlighted an increasingly bifurcated oil market: crude supplies had partially recovered, but refined product and LPG exports from the region remain below 50% of pre-war levels as key export-oriented refineries stay offline. This structural divergence drove crack spreads to their highest since 2022, creating inflationary pressure

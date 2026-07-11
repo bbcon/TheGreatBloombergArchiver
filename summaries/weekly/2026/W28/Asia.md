@@ -1,0 +1,19 @@
+• Samsung Electronics reported Q2 operating income of 89.4 trillion won ($58 billion), beating consensus by approximately 6% on Tuesday, yet shares fell more than 10% in Seoul, triggering a circuit-breaker pause as the Kospi dropped 5.3% and entered a technical bear market.
+• SK Hynix raised $26.5 billion on Friday in the largest-ever US first-time share sale by a foreign company, with the deal more than seven times oversubscribed.
+• China's June CPI core slipped to 1.0% on Thursday while PPI fell 0.3% month-on-month — its first monthly decline since July 2025 — signaling that domestic demand remains soft even as export activity holds firm.
+• New Zealand's Reserve Bank raised its Official Cash Rate 25 basis points to 2.5% on Wednesday — its first hike in three years — and signaled further tightening may be required.
+• Vietnam's Q2 GDP printed at 8.4% YoY on Saturday, materially above consensus and among the strongest readings in emerging Asia, as registered FDI reached $34.65 billion through end-June, up 61% YoY.
+
+**Korea: Record Earnings, Deteriorating Sentiment**
+
+Samsung's Q2 results — operating income of 89.4 trillion won on revenue exceeding 171 trillion won, more than doubling year-on-year — represented the company's strongest quarter on record, yet the market response was unambiguous. Shares fell as much as 10% Tuesday, SK Hynix slid 6%, and the Kospi's intraday decline triggered a circuit-breaker pause. By Wednesday the index had extended its drawdown from last month's peak to 20%, entering a technical bear market. The episode appears to signal that Korean equities, after more than doubling on AI-driven enthusiasm, are priced for sustained outperformance rather than merely record results, leaving little margin for any moderation in hyperscaler capital expenditure cycles. Capital rotated sharply toward Chinese internet names: Alibaba surged 13% after a pre-earnings analyst briefing, and the MSCI China Index gained 7% in July through week's end. Reports that DeepSeek and Zhipu are developing proprietary AI chips provided additional catalyst.
+
+**China: Stalling Reflation and Strategic Signals**
+
+June inflation data present a nuanced macro picture. The month-on-month PPI decline signals that China's reflation momentum is fading despite a widening trade surplus, and a growing number of analysts estimate Q2 GDP growth may have slipped below the lower bound of the official 4.5%–5.0% target. The People's Bank of China expanded its RMB Business Facility to 500 billion yuan on Tuesday, doubling its size to promote offshore yuan liquidity through Hong Kong. Geopolitically, China's test of a submarine-launched ICBM into the Pacific on Friday — likely a JL-3 variant — drew expressions of "grave concern" from Japan and condemnation from Australia, signaling continued development of a credible nuclear second-strike capability.
+
+**Regional Policy and Capital Markets**
+
+New Zealand's 25-basis-point hike to 2.5% reflected above-target inflation and is consistent with the post-Iran-war upward shift in global rate trajectories. Goldman Sachs revised its yen forecast to 165 per dollar from 155 on Monday, citing fiscal pressures and a Bank of Japan tightening path too gradual to compress rate differentials; the yen traded at 161.9 at week's open before recovering modestly on Friday after Japan's finance minister called on pension funds, including the ¥293.6 trillion GPIF, to increase domestic asset allocations. Vietnam's 8.4% Q2 GDP print reinforced its position as one of the world's fastest-growing economies, prompting a World Bank upgrade to upper-middle income status, though credit-to-GDP ratios among the highest in emerging Asia and off-quota credit lines for major developers raise financial stability concerns warranting close monitoring.
+
+---
