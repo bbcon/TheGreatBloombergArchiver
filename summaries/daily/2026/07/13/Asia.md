@@ -1,0 +1,12 @@
+• SK Hynix plunged a record 15% in Seoul following its US listing, driving an 8.9% decline in the Kospi — the index's most extreme volatility since the 1998 Asian financial crisis, having now fallen 28% from its June high.
+• TSMC Q2 revenue rose 36% YoY to NT$1.27 trillion, meeting elevated expectations and reaffirming AI chip demand.
+• Japan's yen weakened 0.4% to 162.36 per dollar after Reuters reported no formal GPIF asset allocation overhaul is planned, tempering the impact of Finance Minister Katayama's earlier call for domestic reinvestment.
+• Indian equities attracted over $1 billion in foreign inflows last week, with Goldman Sachs forecasting further purchases.
+
+**Korean Markets**
+The MSCI Korea Index has fallen 28% from its June high, and a measure of 60-day price swings has reached its highest level since February 1998 — exceeding even the 2008 financial crisis. Circuit breakers have been triggered seven times this year, against six in the prior 25 years. The proximate catalyst Monday was rotation out of Korean-listed shares into SK Hynix's newly listed US ADRs, combined with concerns about AI spending sustainability. The irony is notable: SK Hynix raised $26.5 billion in what was the largest-ever US listing by a foreign company, and its CEO reiterated that memory-chip shortages will likely persist beyond 2030. Samsung, which surged 19-fold in profits last quarter, fell nearly 11%. Structural factors — single-stock ETF leverage amplification and the outsized combined weight of SK Hynix and Samsung — appear to be magnifying moves beyond what fundamentals alone would justify.
+
+**Japan and Capital Flows**
+The yen's brief strengthening on Finance Minister Katayama's pension repatriation signal reversed after Reuters reported that no formal GPIF allocation overhaul is imminent. Deutsche Bank's strategists argue the yen's persistent weakness reflects the gap between Japanese short-term rates and global peers, with overnight index swaps pricing rates at only 1.2% by year-end. Thirty-year JGB yields already exceed equivalent German bunds despite the ECB having tightened far more aggressively — a tension that may signal continued pressure on the BOJ to accelerate its pace of normalization. Indian equities, by contrast, are benefiting from regional reallocation, drawing $1.3 billion in net foreign buying in the four days through July 9.
+
+---
