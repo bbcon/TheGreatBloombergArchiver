@@ -1,0 +1,11 @@
+• China's Q2 GDP grew 4.3% year-on-year, the slowest pace since at least 1992 outside the pandemic, missing consensus and prompting Morgan Stanley, Goldman Sachs, and ANZ to cut full-year forecasts.
+• South Korea's Kospi surged 6.2% on Wednesday after the soft US CPI print, but remains the worst-performing major index globally this month following a 25% peak-to-trough decline.
+• SK Hynix's US-listed ADRs trade at a 51% premium to Seoul shares, illustrating dangerous structural distortions driven by leveraged ETFs and margin concentration.
+
+**China: Growth Slowdown**
+China's second-quarter GDP expansion of 4.3% year-on-year represented the weakest reading in more than three years and came in below consensus. Property investment fell 18% in the first half from a year earlier — its steepest decline on record — while fixed-asset investment contracted 5.7%, worsening from the 4.1% decline recorded through May. Moody's Analytics described domestic demand as "the economy's weakest link," and Bloomberg Economics argued that higher oil prices from the US-Iran conflict represent only a "ripple" for China given its lower import dependency and currency stability, leaving deflation as a structural domestic demand problem requiring a domestic demand cure.
+
+**South Korea: Volatility and Leverage Risks**
+Korean President Lee Jae Myung acknowledged that the market was "quite unstable" following a historically rapid surge that itself created the conditions for a sharp correction. Leveraged ETFs tracking SK Hynix and Samsung have been identified as amplifiers of volatility, with regulators directed to prepare follow-up measures. Smart money outflows preceded the retail-driven collapse: tech funds recorded $9.3 billion in weekly outflows through late June, and BlackRock's iShares MSCI South Korea ETF suffered a record $2.7 billion monthly outflow in May. The ADR premium for SK Hynix — at 51% above the Seoul-listed price — reflects structural impediments to arbitrage rather than fundamental divergence.
+
+---
