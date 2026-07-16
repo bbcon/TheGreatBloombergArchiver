@@ -1,0 +1,12 @@
+• Brent crude traded near $84–$85/barrel after the US struck a sanctioned supertanker deep inside the Persian Gulf near Iran's main oil export terminal—the first such vessel strike since reimposing the blockade.
+• Prediction markets now assign less than 50% probability to normal Hormuz traffic resuming by year-end, a sharp deterioration from earlier in July.
+• Asian spot LNG prices climbed to their highest level since March as traders priced in prolonged corridor disruption.
+• A Pew Research Center survey found more countries view China favorably than the US for the first time in nearly 20 years, reflecting a collapse in US favorability linked to tariffs, Greenland demands, and the Iran conflict.
+
+**Hormuz Escalation**
+
+The US decision to strike a supertanker deep within the Persian Gulf—well beyond the Strait of Hormuz itself—may signal a meaningful expansion of enforcement scope. The operation near Kharg Island, Iran's primary crude export terminal, raises the operational stakes considerably: prior interdiction activity had been concentrated near the strait's mouth, and this strike suggests US forces are now prepared to contest Iranian shipping throughout the Gulf. India's subsequent order barring its seafarers from Hormuz transits illustrates the cascading effects on the human infrastructure of global trade. The IEA's executive director warned the global economy faces a renewed challenge if the disruption extends beyond several weeks—a threshold that prediction markets suggest is increasingly likely to be breached.
+
+**Macro Implications of Prolonged Disruption**
+
+The tension between backward-looking June data—which showed moderating inflation and a cooling labor market—and the forward trajectory of energy prices is the central analytical challenge across asset classes. June PPI's headline improvement was heavily energy-driven; with Brent now 33% above its start-of-year level and prediction markets pricing persistent disruption, the question of whether businesses must eventually pass higher input costs to consumers reasserts itself. Fund managers surveyed by BofA in early July adopted a "no landing" base case and reduced cash to levels that historically trigger contrarian sell signals—a positioning established on assumptions that may prove too optimistic if the Hormuz situation deteriorates materially. The dollar's trajectory adds a further layer of complexity: structurally overvalued by broad consensus, supported near-term by geopolitical haven flows, but increasingly undermined by narrowing yield differentials.

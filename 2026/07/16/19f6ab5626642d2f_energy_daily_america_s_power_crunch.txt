@@ -1,0 +1,186 @@
+Subject: Energy Daily: America’s power crunch
+Date: Thu, 16 Jul 2026 11:34:57 +0000
+
+US Power Grid Faces Defining Test for AI Boom
+America’s biggest grid has failed to procure enough power, calling into 
+question AI’s rapid buildout ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-07-16/us-power-grid-faces-defining-test-for-ai-boom?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ 
+<https://www.bloomberg.com/industries/energy?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=18995282&m=11b724c487f61753eb1a7a4a5f3ef261&p=07162026113457&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=18995282&m=11b724c487f61753eb1a7a4a5f3ef261&p=07162026113457&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Welcome to our guide to the commodities driving the global economy. Today, 
+reporter John Ainger explores America’s struggle to secure enough power for its 
+sprawling, energy-hungry data centers.
+
+It’s crunch time for the operator of America’s biggest power grid.
+
+PJM Interconnection LLC’s latest auction to procure electricity once again 
+failed to attract enough supply commitments to guarantee reliable grid 
+performance in the coming years.
+
+The shortfall comes against a backdrop of booming demand 
+<https://www.bloomberg.com/news/articles/2026-05-12/biggest-us-grid-may-be-too-large-to-function-regulator-says?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ from massive data centers, and raises the stakes for an emergency process 
+expected to kick off in September.
+
+That mechanism is aimed at getting AI hubs to cover the costs 
+<https://www.bloomberg.com/news/articles/2026-01-15/trump-to-direct-key-us-grid-operator-to-hold-emergency-auction?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ of securing their future energy needs, plugging a projected shortage before 
+the situation spirals out of control.
+
+The problem is that demand from data centers is surging faster 
+<https://www.bloomberg.com/graphics/2025-ai-data-centers-electricity-prices/?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ than new generation is being built, and politicians and consumer advocates are 
+loath to see residential customers shoulder the burden of expansion costs.
+An Amazon Web Services data center in Sterling, Virginia.Photographer: 
+Bloomberg
+PJM plans a two-step process 
+<https://www.pjm.com/-/media/DotCom/committees-groups/cifp-rbp/2026/20260416/20260416-item-05---pjm-reliability-backstop-procurement-proposal---paper.pdf>
+: bilateral contracting, followed by a special auction to clear any remaining 
+capacity needs. Success is crucial to avoid a supply gap that PJM’s own 
+projections suggest could reach the equivalent of 60 nuclear reactors in the 
+next decade.
+
+This week’s regular auction ended more than 6 gigawatts short of what’ll be 
+needed in the year beginning June 2028, even as total supply coststied a record 
+<https://www.bloomberg.com/news/articles/2026-07-14/largest-us-grid-misses-power-supply-goal-amid-rampant-ai-surge?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+. A PJM spokesperson said it’s confident it can meet the challenge.
+
+But time is running out. If the backstop procedure is to start in September, 
+PJM must submit plans to the Federal Energy Regulatory Commission by the end of 
+this month. As things currently stand, it’s not even clear yet how the process 
+will work.
+
+PJM serves one out of every five Americans — as well as Northern Virginia’s 
+famous Data Center Alley — and is under intense pressure tokeep costs down 
+<https://www.bloomberg.com/news/articles/2026-05-14/data-centers-drive-76-rise-in-power-bills-on-largest-us-grid?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ for consumers. FERC has scheduled a conference on July 23 to discuss the 
+grid’s future.
+
+PJM’s “progress has been uneven and uncertain, and it’s unclear to us if these 
+efforts will be sufficient to satisfy the concerns of politicians,” Scotiabank 
+analysts led by Andrew Weisel wrote in a note. The “outlook remains clear as 
+mud.”
+
+—John Ainger, Bloomberg News
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=18995282&m=11b724c487f61753eb1a7a4a5f3ef261&p=07162026113457&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=18995282&m=11b724c487f61753eb1a7a4a5f3ef261&p=07162026113457&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Chart of the day
+
+Benchmark Brent crude traded near $85 a barrel 
+<https://www.bloomberg.com/news/articles/2026-07-15/latest-oil-market-news-and-analysis-for-july-16?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ after the US completed moreairstrikes against Iran 
+<https://www.bloomberg.com/news/articles/2026-07-16/iran-us-skirmishes-worsen-as-hormuz-shipping-traffic-dwindles?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ and hit a supertanker near the Islamic Republic’s main export terminal deep 
+inside the Persian Gulf. Earlier, Tehran struck ships in the Strait of Hormuz, 
+spooking shippers and prompting a dip in observable traffic.
+
+Top stories
+
+The global economy faces a renewed challenge 
+<https://www.bloomberg.com/news/articles/2026-07-16/iea-boss-warns-global-economy-in-peril-if-hormuz-crisis-persists?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ if the conflict that’s choked Hormuz isn’t resolved in a matter of weeks, said 
+International Energy Agency Executive Director Fatih Birol.
+
+BHP Group Ltd. posted solid full-year production 
+<https://www.bloomberg.com/news/articles/2026-07-15/bhp-s-iron-ore-copper-output-slip-as-top-miner-plans-for-growth?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ but warned copper output is set to fall. Meanwhile, workers at the company’s 
+Port Hedland operations in Western Australiastaged a strike 
+<https://www.bloomberg.com/news/articles/2026-07-16/bhp-iron-ore-workers-stage-first-port-hedland-strike-since-2000?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+.
+
+The Chinese government has another of the big Australian iron ore miners 
+<https://www.bloomberg.com/news/articles/2026-07-15/china-turns-on-the-australian-iron-ore-miner-it-helped-grow?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ in its sights, ratcheting up pressure on Fortescue Ltd. after negotiations 
+stalled over a supply agreement.
+
+TotalEnergies SE reported another quarter of bumper oil trading 
+<https://www.bloomberg.com/news/articles/2026-07-16/totalenergies-flags-strong-oil-trading-as-iran-war-roils-market?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ after the Iran war upended crude markets, but warned of underperformance in 
+its gas business.
+
+Iran has US President Donald Trump in a headlock over the Strait of Hormuz, 
+but Tehran risksoverplaying its hand 
+<https://www.bloomberg.com/opinion/articles/2026-07-16/strait-of-hormuz-iran-risks-overplaying-its-hand-on-oil-chokepoint?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+, writes Bloomberg Opinion’s Javier Blas.
+
+BNEF today
+
+Solar project owners are adding batteries in markets saturated with renewable 
+energy, aiming to protect revenue at times when the grid is flooded with cheap 
+power. A record 87 gigawatts of solar capacity built last year was co-located 
+with energy storage, according to BloombergNEF. That’s a quarter of all the 
+solar plants installed.
+
+Coming up
+
+Bloomberg Sustainable Business Summit: Business leaders and investors gather 
+in Singapore on July 22 to discuss risk, energy strategy and competitive 
+advantage in a shifting global landscape.Learn more here 
+<https://events.bloomberglive.com/event/SBS_2026_SG/summary?RefId=Newsletters&rt=923zdvJbAEuEHssxwMk-qw&utm_campaign=sbs_sg_2026&utm_medium=newsletters&utm_source=marketing>
+.
+
+More from Bloomberg
+
+ * Economics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT071626_ENERGY&utm_term=260716&utm_content=6572>
+ for what the changing landscape means for policymakers, investors and you
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT071626_ENERGY&utm_term=260716&utm_content=6572>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Green Daily 
+<https://www.bloomberg.com/account/newsletters/green?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT071626_ENERGY&utm_term=260716&utm_content=6572>
+ for the latest in climate news, zero-emission tech and green finance
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT071626_ENERGY&utm_term=260716&utm_content=6572>
+ for daily insights into supply chains and global trade
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT071626_ENERGY&utm_term=260716&utm_content=6572>
+ to get most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Energy 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/elements?source=NLshare&cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/elements?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBBXT071626_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260716&utm_content=6572>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/Hw_kfoVdQk5hjBlRC4QPUO5x7G1NQr3MRacrfO_sOOZ8ujA0OD97Wdf9pOcGYCP6Rb8N_7rckx3S7fj30iGIiAA9e4JbSTGpww9t1Oq3Gm1TAxBnluM_YKrmDdfHII9mEAE5VkksKqcqxWd3JGOME9U2z8n0AwT7KdkHNqv7iI58tFtclf8mElTFm_jxfC7AWK86Vj7HWLZ2jVDm-gc3TyjGYP13sdEyWDowsTIcHwz7HIGn66APk871-u-RHpz1Hlp0OarDal83cifGiDohrI_cFu8v0iYnXTB5XX0Djr_mmtajO4KePJboHCTnv2neUr2feipJNjA1HD8c8jNmFW1_F2SmDg02/12C589YyOOG-kUPogF8uC7ApMWr7pnyQ/22>
