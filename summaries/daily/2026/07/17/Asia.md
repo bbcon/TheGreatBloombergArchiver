@@ -1,0 +1,12 @@
+• Japan's Nikkei 225 fell 4.2%, entering technical correction territory, as memory chipmaker Kioxia extended its decline to 52% from its June peak — the sharpest illustration of the regional AI valuation unwind.
+• China's Q2 GDP grew 4.3% YoY, missing the government's target range and below consensus, with domestic demand components uniformly weak while exports reached a record $412 billion in June.
+• China's GDP deflator turned positive for the first time in three years, but the shift appears driven by oil-shock cost inflation rather than demand revival — a distinction economists are characterizing as "bad inflation."
+• President Xi Jinping made his first personal appearance at the World AI Conference in Shanghai, using the platform to position China as an open, collaborative alternative to US technology governance, while signing 29 nations into a China-led AI cooperation organization.
+
+**China Macro**
+The Q2 GDP miss at 4.3% — below the government's approximate 5% target — underscores the structural imbalance in China's economy. Fixed-asset investment recorded what data describe as a historic contraction, and consumer spending barely expanded. The positive GDP deflator reading is technically a milestone after three years of economy-wide deflation, but it reflects higher raw material costs from the Iran-linked oil shock rather than restored consumer pricing power, widening margins between upstream commodity producers and downstream manufacturers. Exports remain the primary growth engine, with semiconductor shipments rising at triple-digit rates for a second consecutive month on higher prices. Goldman Sachs estimates roughly 1.8 trillion yuan in undeployed government bond issuance quota remains available as a fiscal buffer.
+
+**AI Geopolitics and Markets**
+Xi's appearance at the World AI Conference — an elevation from prior years when he sent a deputy — signals Beijing's intent to shape global AI governance commercially and diplomatically. The launch of the World Artificial Intelligence Cooperation Organization, with 29 member nations including Brazil and Indonesia, formalizes that ambition. Chinese startup Moonshot's Kimi K3 model, described as rivaling top OpenAI and Anthropic offerings, contributed to the regional equity selloff by prompting investors to question US AI capex assumptions. TSMC fell 7.3% despite reporting earnings that beat estimates, and Taiwan's Taiex shed 6.5% — its largest single-day decline since April 2025. DeepSeek is reportedly preparing for an IPO as soon as this year.
+
+---
