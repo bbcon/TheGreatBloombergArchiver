@@ -1,0 +1,9 @@
+• Turkey received the second-largest IMF growth downgrade among G20 economies in 2026, exceeded only by Saudi Arabia, as the US-Iran conflict drives energy import costs higher.
+• The US-Iran conflict is reshaping energy trade routes, with pipeline bypass proposals through Syria gaining traction as alternatives to Strait of Hormuz exposure.
+• Turkey's strategic positioning — bridging NATO, the Islamic world, and regional conflict mediation — is strengthening even as near-term economic damage accumulates.
+
+**US-Iran Conflict: Economic Spillovers**
+The ongoing US-Iran conflict is generating asymmetric economic damage across the global economy. Energy-importing nations are most exposed: Turkey, which relies heavily on imported oil and gas, faces a widening trade deficit, pressure on central bank reserves, and inflation running above 30% — itself now harder to suppress given elevated energy costs. The IMF's downgrade cycle, which has affected most of the world since the conflict began, reflects the breadth of the indirect transmission channels, including trade finance, tourism, and sentiment.
+
+**Geopolitics: Turkey's Strategic Premium**
+Turkey's role as a conflict mediator — maintaining channels to Moscow, opposing the Iran campaign within NATO, and backing Syria's post-civil-war government — has translated into tangible diplomatic gains. President Trump's public praise of Erdoğan at the July NATO summit and his commitment to revisiting F-35 sanctions mark a meaningful thaw. Aselsan's rise to Turkey's most valuable company, at over $40 billion, illustrates how geopolitical demand for defense capability is reshaping corporate valuations in emerging markets. The durability of Turkey's strategic premium depends heavily on the trajectory of surrounding conflicts.
