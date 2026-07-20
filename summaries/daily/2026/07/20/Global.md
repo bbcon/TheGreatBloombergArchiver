@@ -1,0 +1,10 @@
+• The US conducted its ninth consecutive day of airstrikes on Iran, targeting military installations and communications networks; visible tanker traffic through the Strait of Hormuz has ground to a near standstill, with Iran continuing to strike US bases across the Gulf region.
+• Brent crude breached $90 intraday before retreating to approximately $88 following reports that mediators had proposed a 10-day cessation of strikes; WTI futures rose 2.5% to $84.53 before easing.
+• The US Strategic Petroleum Reserve is at its lowest level since 1983 following the March emergency release, materially limiting the buffer available for a second intervention.
+• Ukrainian strikes on Russian refineries have cut processing rates to their lowest in over two decades; the Caspian Pipeline Consortium terminal on the Black Sea has suspended oil loadings.
+
+**Strait of Hormuz**
+The conflict has entered a structurally more dangerous phase. The shuttle-tanker system that had been quietly sustaining some Persian Gulf oil flows was dealt a significant blow after UAE-linked vessels were struck last week. With the US summer driving season now in full swing, gasoline prices have topped $4/gallon and diesel exceeds $5, while refining crack spreads have hit records. Morgan Stanley warns European diesel inventories are on course for multiyear lows by year-end. The cushions that absorbed the initial February shock — global supply surplus, full strategic reserves, and seasonally weak demand — have all diminished.
+
+**Geopolitics and Trade**
+Russia received diplomatic support from North Korea, with Pyongyang's top diplomat visiting Moscow, while Ukraine launched what its foreign minister described as the largest ballistic missile barrage on Kyiv since the invasion began. China's rare-earth magnet exports to the US remain well below pre-trade-war levels despite the nominal truce, sustaining concerns in Washington about supply chain vulnerability. Pension funds globally are grappling with tail-risk climate scenarios, and the Ebola outbreak in the Democratic Republic of Congo is drawing new travel restrictions that aid organizations warn could hamper containment efforts.
