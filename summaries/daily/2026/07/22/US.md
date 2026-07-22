@@ -1,0 +1,11 @@
+• Alphabet's Q2 cloud business performance is the key earnings catalyst of the day, with S&P 500 profit guidance momentum climbing to a record high in Bloomberg Intelligence data going back to 2011.
+• Trump announced a 100% tariff on generic drugs, giving manufacturers two years to relocate production to the US before duties take effect in August 2028, rising to 200% a year later.
+• US futures pointed modestly lower ahead of Alphabet's report, with broader market tone cautious amid widening US strikes on Iran and renewed tariff announcements.
+
+**Earnings Season**
+A week into the second-quarter reporting season, corporate results appear to be providing a stabilizing counterweight to geopolitical anxiety. S&P 500 companies are on track to report 26% profit growth in Q2 — among the strongest readings outside of post-recession recoveries — while profit guidance momentum has reached a record high, with more companies raising outlooks than cutting them. MSCI Europe constituents are on track for a better-than-expected 12% earnings gain. Super Micro surged 19% in premarket trading after reporting a record order backlog, while Pegasystems fell 17% after missing estimates. Alphabet's results, due after the close, are the central focus: investors are scrutinizing Google Cloud's growth trajectory as the primary test of whether AI infrastructure spending is generating measurable returns.
+
+**Trade and Fiscal Policy**
+The Trump administration's pharmaceutical tariff announcement adds a new dimension to an already complex trade landscape. The 100% duty on generic drugs — with a two-year compliance window — targets reshoring of production currently concentrated in India and other low-cost manufacturing hubs. Separately, the administration is reportedly preparing fresh levies on dozens of economies by Friday to ensure tariff coverage remains intact as stopgap 10% duties lapse. The effective US tariff rate had been gradually declining from its Liberation Day peak; these moves may signal a reversal of that drift.
+
+---

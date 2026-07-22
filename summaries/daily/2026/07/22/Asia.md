@@ -1,0 +1,11 @@
+• Brent crude surged 30% this month to above $95/barrel, driving the Japanese yen past 163 per dollar — its weakest level since 1986 — and forcing central bank intervention across multiple Asian economies.
+• Bank Indonesia held its benchmark rate unchanged on Wednesday after lifting rates 100 basis points in recent months; the Philippine central bank intervened directly in currency markets after the peso fell to a record low.
+• China's tech stocks rebounded sharply, rising approximately 9%, after authorities signaled market support measures.
+
+**Currency and Central Bank Stress**
+Asia's oil-importing economies are facing a compounding bind: rising crude prices denominated in dollars are widening trade and current account deficits, depressing currencies and forcing central banks to choose between defending exchange rates and supporting growth. Japan's Finance Minister Satsuki Katayama warned Wednesday that authorities stand ready to act on the yen, and Bank of Japan officials are reportedly open to accelerating rate hikes beyond current consensus expectations — a significant policy signal given the currency's 40-year low. Indonesia's central bank, having already raised rates aggressively, held steady. The Reserve Bank of India sold dollars earlier this week to support the rupee as it approached record lows.
+
+**India Political Risk**
+A student protest movement originating as a satirical social media account — the "Cockroach Janta Party" — has escalated into one of India's largest street demonstrations in years, drawing comparisons to Gen Z-led political movements elsewhere in South Asia. Protesters initially demanded the resignation of the education minister following exam scandals, but grievances have broadened to encompass unemployment and corruption. Police used tear gas and batons against demonstrators who attempted to march on Parliament. Prime Minister Modi faces a difficult calculation: a heavy-handed response risks alienating young urban voters, while permitting further escalation carries its own political risks.
+
+---

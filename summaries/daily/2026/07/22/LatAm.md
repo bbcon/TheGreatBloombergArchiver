@@ -1,0 +1,6 @@
+• Moody's upgraded Argentina's sovereign credit rating for the third time in under three months, further validating President Javier Milei's economic reform program.
+
+**Argentina Sovereign Trajectory**
+The pace of Argentina's credit rehabilitation is notable. Three sovereign upgrades in less than three months from Moody's reflects market recognition that Milei's fiscal consolidation and deregulation agenda has durability beyond initial skepticism. The upgrade sequence suggests external creditors are increasingly willing to price in continued policy adherence rather than treating reform as fragile. Whether the improvement in credit metrics translates into meaningful investment inflows — and sustained disinflation — remains the central question for the economic outlook. Nicaragua's Daniel Ortega announced the abolition of elections this week, an authoritarian retrenchment that highlights the divergent political trajectories within the region, though it carries limited direct market implications.
+
+---
