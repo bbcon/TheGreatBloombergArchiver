@@ -1,0 +1,268 @@
+Subject: From Napoleon to Moonshot, China is doing it again
+Date: Thu, 23 Jul 2026 04:39:58 +0000
+
+Points of Return 
+ To get John Authers’ newsletter delivered directly to your inbox, sign up 
+here. China’s Moonshot has shocked the AI industry. Alphabet was p 
+
+View in browser <https://bloom.bg/4yGXBz0> 
+ <https://bloom.bg/4pvJgAY> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=19086146&m=11b724c487f61753eb1a7a4a5f3ef261&p=07232026043958&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=19086146&m=11b724c487f61753eb1a7a4a5f3ef261&p=07232026043958&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/3TbKHZu> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ * China’s  Moonshot <https://bloom.bg/4yI6nN9> has shocked the AI industry. 
+ *  Alphabet was punished <https://bloom.bg/4pyQSTx> in after-hours trading 
+for planning to raise capex. 
+ *  Crude oil is now up 36% <https://bloom.bg/4fiPhO4> since July 2 as the  
+Middle East situation <https://bloom.bg/4fgkMIH> worsens. 
+ *  Tesla’s second-quarter profits <https://bloom.bg/4gSoGc2> were 37% below 
+Wall Street forecasts in a huge miss. 
+ * AND: Don’t get fooled by randomness as the Sox streak ends… 
+
+
+
+China Shakes the World
+
+“Let China sleep <https://bloom.bg/4fNfch0>, for when she wakes, she will 
+shake the world.” So, allegedly, said Napoleon — although it looks likeone of 
+those quotes never actually uttered <https://bloom.bg/3TaDhWp> by the famous 
+person to whom it was attributed. It doesn’t much matter, as whoever said it 
+was right. China Shakes the World <https://bloom.bg/4hr2Ufp> became the title 
+of a book by James Kynge explaining how the country pulled off its first great 
+economic shock, as millions of rural people poured into the cities to work in 
+the huge new manufacturing industries.
+
+That shock meant lower prices for everyone else, but also contributed to the 
+ills of inequality and an increasingly K-shaped economy that have dogged the 
+West for a generation. China no longer dominates attention in the same way, but 
+it may now be shaking the world again, this time from a profoundly different 
+position.
+
+One impact came this week when the so-called “national team” 
+<https://bloom.bg/4ftMG2u> — a group of investment organizations beholden to 
+the government — started buying shares in bulk, particularly in tech.
+
+Like chipmakers in South Korea and Taiwan, Chinese tech groups had been on a 
+volatile ride culminating in a 30% slide in July. Once the national team 
+started buying, the rally was instant. The CSI-300 tech sector soared 9% on 
+Tuesday for its best day since Sept. 27, 2024, when the leadership made a much 
+ballyhooed“whatever-it-takes” <https://bloom.bg/4pwJvvG> statement of intent to 
+stimulate the economy.
+
+This latest action fits into a new and slightly subtler plan for the state to 
+intervene selectively in sectors that can boost China’s competitiveness. It’s a 
+significant change from the huge investments in infrastructure that drove the 
+first shock, and in line with a marked shift of emphasis in thelatest Five-Year 
+Plan <https://bloom.bg/3Tf2lvm>. Led in previous iterations by attempts to 
+build demand, this analysis from Alpine Macro and Oxford Economics shows that 
+China intends to concentrate on turning itself into a technological powerhouse 
+by 2030:
+
+Anemic Economy and Stock Market
+
+The new approach might be needed to rescue a stock market that’s been in 
+serious decline. Chinese stocks rallied sharply compared to the rest of the 
+emerging world in 2020 as it was able to reopen swiftly after the pandemic 
+broke out in Wuhan. But after that came Xi Jinping’s crackdown on the private 
+sector, most famously intervening to stop the IPO of Ant Group, prompting fund 
+managers to label the country “uninvestable.” Thedraconian 
+<https://bloom.bg/4hr2Qwb>  Zero-Covid <https://bloom.bg/3Rx0NML> lockdown 
+policy to check the omicron variant did further damage.
+
+Stocks rallied after the leadership unveiled stimulus measures nearly two 
+years ago, and gained again after the startling DeepSeek large language model 
+prompted a rethink of whether the US was really dominant in artificial 
+intelligence. But since then, underperformance has continued:
+
+This is partly because of how well the big chipmakers in Taiwan and South 
+Korea have done, but it can’t be attributed to valuations. The country is now 
+trading at a slight premium to the rest of EM:
+
+Rather, the problem is that the domestic economy is anemic and over-reliant on 
+AI to drive specific exports. As Larry Hu of Macquarie points out, China’s 
+shipments of products needed for AI infrastructure have surged:
+
+Once again, western demand for China’s manufactures remains strong. Hu argues 
+that this is exacerbating inequality:
+
+Strong exports have made China’s two-speed economy even more pronounced. It's 
+because Beijing follows the “Just Enough” rule: doing just enough to meet the 
+growth target. As the strong track (exports) gets stronger, the weak track 
+(consumption) has to get weaker.
+
+Yan Wang of Alpine Macro agrees, saying that the two-speed economy is a 
+“deliberate policy choice,” as Beijing now views technology as the key to 
+lifting productivity and improving living standards.
+
+This year, growth has been further hampered by the war in Iran. China has 
+reduced oil imports <https://bloom.bg/4pCdVNa> massively to weather the 
+situation, making itself what Hu calls the “swing factor” in global oil prices. 
+Imports are now back to where they were in 2016:
+
+Some of this has come from tapping inventories, while reduced demand for 
+travel has brought down retail fuel sales by 10% by volume this year. But Hu 
+points out that 60% of the second-quarter slowdown in industrial production was 
+concentrated in the oil supply chain. China has an interest in bringing the 
+conflict to an end.
+
+The Innovation Shock
+
+Against this difficult backdrop, the evidence grows stronger that China is 
+creating what Wang calls a “parallel tech universe” that can compete with the 
+US on AI and other advanced technologies. He points out that China launched an 
+orbital booster recovery rocket earlier this month, only the second country to 
+achieve this.ChangXin Memory Technologies <https://bloom.bg/3Rng2I7> last week 
+raised almost $10 billion in a Shanghai IPO, the biggest mainland floatation 
+since 2010. And crucially, the startup Moonshot AI has launched theKimi K3 model
+ <https://bloom.bg/4wiim26>, which shocked established US competitors with its 
+quality.
+
+This confirms a trend. The amount of US traffic directed to Chinese models has 
+now almost caught their American rivals. The turnaround has happened inside 18 
+months, as this Alpine Macro chart shows. At the start of 2025, AI was almost 
+synonymous with OpenAI and ChatGPT in the way that Google stands for internet 
+search. No longer:
+
+A big reason, naturally, is price. Chinese models are far cheaper than the 
+offerings from US champion Anthropic PBC:
+
+But they needed to reach a certain level of quality before their low prices 
+could help them. As this Stanford survey suggests, US models are still slightly 
+superior, but the gap has almost been closed:
+
+This shakes the notion of US superiority, but doesn’t necessarily inhibit the 
+waves of money flowing into building out American data centers. Bank of 
+America’s equity researchers suggest that cheap prices are more about a choice 
+of business model for the Chinese. They also expand the demand for memory chips 
+and computing capacity.
+
+A rival ecosystem is developing that has generally been achieved with far less 
+intense use of capital. The counterpoint is stark for the US, where Google 
+owner Alphabet Inc. beat second-quarter expectations but then saw its shares 
+sell off sharply once it announced that it intended toincrease capital 
+expenditures <https://bloom.bg/4pyQSTx> still further:
+
+The irony is that China and the US appear to be changing places 
+<https://bloom.bg/4wB8VLD>. Louis-Vincent Gave of Gavekal says:
+
+When it comes to AI capital spending, China has turned out to be far less 
+Chinese than one might have anticipated. For an obvious reason: Because of US 
+sanctions on high-end semiconductors, Chinese companies did not have the option 
+to throw vast amounts of money in a bid to become the biggest AI provider 
+(otherwise they most likely would have!). Instead, Chinese companies had to 
+find workarounds, whether through open-sourcing software, stacking less 
+powerful and cheaper local chips, investing more in China’s electricity grid…
+
+US corporates are throwing capital around Chinese-style. DeepSeek and now 
+Moonshot suggest that the new, capital-disciplined model might be working 
+pretty well.
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=19086146&m=11b724c487f61753eb1a7a4a5f3ef261&p=07232026043958&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=19086146&m=11b724c487f61753eb1a7a4a5f3ef261&p=07232026043958&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+One Chokepoint to Another
+
+If you need a primer on the Middle East, we can provide a two-minute video 
+<https://bloom.bg/3TbKEwM> explaining the significance of Iran’s attempt to add 
+a threat to blockade the Bab el-Mandeb passage to the Red Sea to its ongoing 
+campaign to halt traffic in the Strait of Hormuz:
+ <https://bloom.bg/3TbKEwM> 
+Mandeb is less important for oil, but instead threatens to hit containerized 
+shipping hard because it controls access to Suez. If Iran’s Houthi allies in 
+Yemen can close it, then shipping between Europe and Asia will have to go 
+around the entire African continent, and globalization takes another serious 
+knock.
+
+How serious is such a risk? The two chokepoints are about the same size, and 
+recent history shows that the Houthis can exert quite an effect. In the early 
+days of the war in Gaza, in late 2023, their attacks on shipping drove a fall 
+of more than 50% in the container vessels crossing the waterway. The plunge was 
+comparable to Iran’s campaign against tankers through the Persian Gulf 
+<https://bloom.bg/4fgkMIH>:
+
+Polymarket bettors now put the odds that Mandeb is effectively closed by the 
+end of this year at 33%, so the Houthi scenario is still far from a base case. 
+But it’s a growing risk that has put upward pressure on oil prices. The average 
+price of a gallon at the pump in the US is now back up to $4.06, having 
+bottomed at $3.78 two weeks ago. Gasoline futures have rebounded 19%. Best to 
+pay attention.
+
+
+
+ Survival Tips 
+
+
+
+In baseball, as in markets, I refuse to be fooled by randomness 
+<https://bloom.bg/4vIM6UI>. The Red Sox have just matched their franchise 
+record (set in 1946 by a team that included Ted Williams) by winning15 games in 
+a row <https://bloom.bg/4vP0jjh>. The Orioles have now ended the streak, so I 
+get to offer up songs byTaylor Swift <https://bloom.bg/4ftvjPn> rather than 
+Ringo Starr <https://bloom.bg/4wimmzN>. So many consecutive wins is extremely 
+implausible; it’s only been done 23 times in the history of major league 
+baseball. This one has rested on all kinds ofentertaining flukes and comebacks 
+<https://bloom.bg/4pzhJ1D>. But I’m not sure I’m that excited. The Red Sox 
+don’t have anyone half as good asWilliams <https://bloom.bg/4pxImE6>, and they 
+are at present only three games above .500. It’s been fun, but some consistency 
+and excellence of the kind that leads to a championship would be a better. 
+Streaks are a distraction. Sorry if I’m a curmudgeon; does anyone have any 
+great and meaningful streaks to offer in reply?
+
+More From Bloomberg Opinion
+
+ * The World’s Dumbest Tariff <https://bloom.bg/4wm7RuS> Just Got a Lot 
+Dumber: Robert Burgess 
+ * Ukraine’s War Effort <https://bloom.bg/3TjW4ys> Just Got a Reboot: Marc 
+Champion 
+ * The Most Important Stock Decision <https://bloom.bg/4ywaifX> You’ll Make 
+This Year: Shuli Ren 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/HnFz6sBG31SLMKkAvdl2aqZRvHlJNH69l1Xl8VueGICQioZ5pkg7uO1n9evsT_zubqMat4HEmeO6krJVO9oB3CP4STFFrErwDVgQgxJRJxMUvKYdLNK0-xpQ_dNoYMc34-Ru6DRnf4UQhzbCh4okvSUH3-hZUFDp3z7fmppe599LPrme2FMUxjDkWNM3ytQp0fHPvg2pF67nCGBxRkC6HyWfp5supBRBxvxXBZ9mMOk9wTiliuPT4dSzYUbZuOlc40i9DFJSEHb5GSufiZ7IHo1WzcsFLeuM4aRvV_iyU5b7Jd6J7AAmzXvxAqHiRZSASSdcSo6pIYEbLLjmMKrF5oIbek6_rypo/pGT_IkxjB_Ir9iWPkWP3ObIUk3AXdym7/22>

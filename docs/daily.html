@@ -226,8 +226,60 @@ a { color: inherit; text-decoration: none; }
 </nav>
 <div class="page">
 <p class="page-title">Daily Briefs</p>
-<p class="page-subtitle">151 briefs</p>
+<p class="page-subtitle">152 briefs</p>
 <ul class="accordion">
+<li class="accordion-item">
+  <button class="accordion-trigger" onclick="toggleAccordion(this)">
+    <span class="accordion-dot"></span>
+    <span class="accordion-date">Thursday, July 23, 2026</span>
+    <span class="accordion-meta">US · Asia · Europe · LatAm · Global</span>
+    <span class="accordion-chevron">›</span>
+  </button>
+  <div class="accordion-body">
+    <div class="accordion-content">
+      <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Tesla Q2 profit missed Wall Street consensus by 37%, while Alphabet beat earnings estimates but guided capex as high as $205 billion, triggering a 4.2% premarket selloff in its shares.</li><li>The US 30-year Treasury yield held above 5% for a 12th consecutive session — the longest such run since 2007 — as AI-linked corporate debt issuance competes with Treasuries for long-duration buyers.</li><li>S&P 500 futures declined 0.4%, with the Philadelphia Semiconductor Index down 13% month-to-date, as investors reassess the durability of AI-driven capital spending.</li></ul>
+<p class="para-title" style="color:#5597cb;">Corporate Earnings</p>
+<p class="para-body">Tesla's second-quarter results delivered the session's starkest disappointment: net profit fell 37% below consensus as spending on AI and robotics initiatives surged to $5.8 billion, producing the company's first cash burn in two years. Shares fell 6.1% premarket. Alphabet presented a more ambiguous picture — the Google parent beat revenue expectations on the strength of Cloud, but the announcement of capital expenditures potentially exceeding $200 billion this year reignited concern about returns on AI investment. ServiceNow gained 7.8% on better-than-expected bookings, while Texas Instruments fell 5.2% on a disappointing sales outlook.</p>
+<p class="para-title" style="color:#5597cb;">Rates and Fiscal</p>
+<p class="para-body">The 30-year Treasury yield at 5.16% reflects a structural shift in long-duration demand: over $500 billion in AI-linked corporate issuance is competing directly with Treasuries for the same pool of pension and insurance buyers. Separately, Trump administration officials are privately exploring whether a review of the SVB failure could provide legal grounds to remove Fed Governor Michael Barr, escalating tensions around Federal Reserve independence. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>South Korea's economy grew faster than consensus in Q2, driven by the AI-fueled semiconductor boom; Samsung and SK Hynix rose on expectations of continued AI infrastructure spending.</li><li>China's "national team" state investment organizations intervened in equities, driving the CSI-300 tech sector up 9% — its best single session since September 2024.</li><li>Japanese two-year government bond yields reached their highest level since 1995 at just below 1.5%; a majority of economists still expect the Bank of Japan to hold until December.</li></ul>
+<p class="para-title" style="color:#e07b39;">China: Technology and Domestic Economy</p>
+<p class="para-body">China's Moonshot AI startup launched the Kimi K3 model, which drew immediate comparisons to leading US systems in quality benchmarks while pricing significantly below American rivals. A White House official accused Moonshot of improperly using US AI models and Nvidia chips in its development, adding a geopolitical dimension to what is increasingly a parallel technology ecosystem. Domestically, the economy remains under pressure: the Iran conflict has reduced Chinese oil imports to 2016 levels, and 60% of the Q2 slowdown in industrial production was concentrated in the oil supply chain. Beijing simultaneously closed a "1+N" offshore refinancing loophole used by distressed property developers, tightening an already constrained sector.</p>
+<p class="para-title" style="color:#e07b39;">Southeast Asia</p>
+<p class="para-body">Indonesian equities approached bull-market territory, rallying 20% from their early-June low following S&P's reaffirmation of the country's credit rating and supportive Bank Indonesia policy — though the index remains down approximately 26% year-to-date and foreign investors are net sellers. The Philippine peso continued to test its record low of 61.75 per dollar, with the Bangko Sentral ng Pilipinas intervening to limit volatility amid shrinking reserves and rising oil import costs. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>The European Central Bank held interest rates unchanged, as expected, preserving the option for a further increase in September as elevated commodity prices sustain inflationary pressure.</li><li>STMicroelectronics fell 15% in Paris after guiding Q3 revenue below analyst expectations, underscoring divergent performance within the European semiconductor space.</li><li>Nestle declined 7% in Zurich after reporting weaker-than-expected volumes in North America, disappointing investors awaiting a turnaround under the new CEO.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">ECB Policy</p>
+<p class="para-body">The ECB's decision to hold was fully anticipated by markets, with Bloomberg Economics characterizing the September meeting as the probable venue for a final rate increase in this tightening cycle, contingent on commodity prices remaining elevated. The Stoxx Europe 600 fell 0.8%, reflecting broader risk-off sentiment tied to rising energy costs and earnings disappointments rather than any policy surprise.</p>
+<p class="para-title" style="color:#4a9e6b;">UK Politics and Paris Finance</p>
+<p class="para-body">New Prime Minister Andy Burnham marked his first week in office with a package of cost-of-living measures, including tax reductions on pubs and live-music venues. Separately, a court ruling that Marine Le Pen may contest next year's French presidential election has unsettled London-to-Paris banking relocations: many financiers who moved following Brexit are now weighing further relocation to Dubai or Milan as French tax incentives begin to expire, representing a meaningful if slow-moving risk to Paris's post-Brexit financial hub ambitions. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazilian presidential candidate Flávio Bolsonaro denied links to a banking scandal after reports surfaced that his law firm received funds connected to Banco Master, adding uncertainty to the October election outlook.</li><li>Michelle Bachelet, former Chilean president, is among the candidates for UN Secretary-General, representing the region in a competitive and politically complex selection process.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil Political Risk</p>
+<p class="para-body">The Banco Master allegations against Bolsonaro represent the most consequential near-term development for Latin American political economy. As the primary challenger to President Lula ahead of October, any sustained credibility damage could reshape the electoral calculus, though Bolsonaro's explicit denials and the indirect nature of the reported connection leave the situation unresolved. Brazilian markets will remain sensitive to further reporting on this issue.</p>
+<p class="para-title" style="color:#c0392b;">Regional Context</p>
+<p class="para-body">No major macro data releases or central bank decisions of note emerged from Brazil, Mexico, Argentina, Colombia, or Chile in this period. The dominant external variable for the region remains energy prices: Brent approaching $100 per barrel has divergent implications, benefiting hydrocarbon exporters while pressuring oil-importing economies and their central banks. Currency pressures and fiscal dynamics will warrant close monitoring as the energy situation develops. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude rose 4.8% to $98.59, approaching $100 per barrel, after Houthi militants struck two Saudi oil tankers in the Red Sea — crude is now up approximately 36% since early July.</li><li>Polymarket odds place a 33% probability on effective closure of the Bab el-Mandeb strait by year-end, a scenario that would force Asia-Europe container shipping around the African continent.</li><li>McKinsey's global balance sheet report found US equities at 2.4 times corporate net assets — the highest ratio since at least the early 1990s — with more than one-third of US equity liabilities held by foreign entities.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Energy and Shipping</p>
+<p class="para-body">The Houthi strikes on Saudi tankers in the Red Sea represent a meaningful escalation, extending the Iran conflict's disruption from the Strait of Hormuz — the primary crude chokepoint — to Bab el-Mandeb, through which container traffic flows to the Suez Canal. Bloomberg Intelligence estimates a sustained Red Sea blockade could lift energy shipping rates by at least 30%. Container lines including Maersk and Hapag-Lloyd, which had begun cautiously restoring Red Sea routing, may be forced back onto the longer Cape of Good Hope diversion. DP World's concurrent announcement of new deepwater terminals on the UAE's Gulf of Oman coast — explicitly designed to bypass Hormuz — illustrates how infrastructure investment is beginning to adapt to a structurally more dangerous maritime environment.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary Policy Divergence</p>
+<p class="para-body">The global rates picture continues to diverge in ways consistent with the "new macro regime" described by Moody's: Japanese two-year yields at their highest since 1995, US 30-year yields at their longest sustained run above 5% since 2007, and UK 30-year yields near multi-decade highs. The common thread is structurally higher inflation expectations and elevated investment demand, which is narrowing fiscal space and compressing the room governments have to absorb future shocks. The ECB's hold today, against this backdrop, reflects caution rather than confidence that the cycle is complete.</p>
+</div>
+    </div>
+  </div>
+</li>
 <li class="accordion-item">
   <button class="accordion-trigger" onclick="toggleAccordion(this)">
     <span class="accordion-dot"></span>
