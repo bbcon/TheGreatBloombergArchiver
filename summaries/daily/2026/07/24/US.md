@@ -1,0 +1,12 @@
+• The Magnificent Seven lost $797 billion in market value Thursday — their largest single-day decline since April 2025 — as Alphabet and Tesla capex plans stoked AI spending skepticism, even as Intel surged on better-than-expected revenue guidance.
+• Trump announced broad new tariffs of 10%–12.5% on imports from roughly 60 economies, the administration's most sweeping move yet to reconstruct the tariff wall previously struck down by the Supreme Court.
+• Market-implied probability of a Fed rate hike at next week's meeting has risen to one-in-three, even as economists continue to expect the next move will be a cut.
+• Investment-grade government bond yields globally hit 3.68% — the highest since the 2008 financial crisis — as energy price pressures and geopolitical risk repriced the rate outlook.
+
+**Tariff Escalation**
+The Trump administration announced duties of 10%–12.5% on roughly 60 economies, its broadest tariff action yet. Trading partners subject to forced-labor restrictions — including the UK, Canada, and India — face 10% levies; EU and Taiwan goods are capped at 10%, while Switzerland and Japan face up to 12.5%. The scope of the move signals a deliberate reconstruction of a tariff framework that was partially dismantled by the Supreme Court. Near-term economic consequences remain difficult to quantify, though the measures are directionally inflationary and create additional uncertainty for business investment planning.
+
+**Equity and Rates**
+Thursday's equity rout was centered on the Magnificent Seven, where Alphabet and Tesla's elevated capex disclosures reinforced concerns that AI infrastructure spending may not translate into near-term earnings accretion. Intel provided a notable counterpoint, with its revenue forecast exceeding Wall Street estimates by a wide margin, underscoring sustained data-center demand. The broader rates complex is under pressure: the global investment-grade yield at 3.68% represents a significant tightening of financial conditions, and the one-in-three implied probability of a Fed hike next week marks a material shift from prior market pricing, though the consensus among economists remains that the Fed's next move will be an easing.
+
+---

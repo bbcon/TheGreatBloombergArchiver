@@ -1,0 +1,12 @@
+• Euro-area private-sector activity improved substantially more than expected in July, with consumer inflation expectations declining significantly — data points that complicate the ECB's hawkish internal lean.
+• ECB officials kept rates unchanged Thursday but privately signaled readiness to hike in September unless the inflation outlook improves markedly; some policymakers considered an immediate increase.
+• Europe's summer heat wave has produced an estimated 20,000 excess deaths to date, with Spain declaring a national state of emergency over wildfires near Madrid — the first such declaration on record.
+• UK consumer confidence recovered to pre-war levels in July, per GfK, supported by the World Cup and Prime Minister Burnham's living-cost commitments.
+
+**ECB Policy**
+The ECB's Thursday decision to hold rates was reached quickly — President Lagarde noted the meeting concluded by approximately 10:15 a.m. — but the internal deliberations were more substantive than the outcome suggests. Some members raised the possibility of an immediate hike on a day when Brent crude briefly touched $100 per barrel. Officials subsequently signaled to Bloomberg that a September increase is the baseline unless incoming data or a de-escalation of Middle East tensions materially improves the inflation picture. The public messaging remains deliberately ambiguous: Bundesbank President Nagel declined to pre-commit, noting the volume of data due before September. Lagarde added uncertainty of her own by pledging to remain in post only through the end of 2026, implicitly opening the question of succession for European governments.
+
+**Heat Wave and Economic Impact**
+Europe's heat emergency is transitioning from a humanitarian concern to a measurable economic variable. One estimate places the cost of a single week of extreme UK heat at £1.15 billion in lost working hours, rising to £2.36 billion when infrastructure failures are included. ING's Carsten Brzeski noted that the thermometer has effectively become a leading economic indicator. Spain's wildfire state of emergency near Madrid and August's historically worse heat profile suggest the economic drag is likely to intensify before it abates. The political dimension is also shifting, with France's National Rally — historically skeptical of climate science — now acknowledging the need to engage seriously with the evidence.
+
+---
