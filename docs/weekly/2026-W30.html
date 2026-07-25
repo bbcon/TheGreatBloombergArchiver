@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jul 20 – Jul 26, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="#" class="nav-link active">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Jul 20 – Jul 26, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Q2 S&P 500 EPS growth is tracking at 26% YoY — well above what ISM PMI readings alone would imply — though the Magnificent Seven shed $797 billion in market value on Thursday, their largest single-day decline since April 2025.</li><li>Alphabet beat revenue estimates but guided capex as high as $205 billion for 2026, while Tesla Q2 profit missed consensus by 37%; both prints reignited concern about AI infrastructure return horizons.</li><li>Trump announced 10%–12.5% tariffs on roughly 60 economies on Thursday — the administration's broadest simultaneous trade action yet — and separately imposed a 100% duty on generic drugs with a two-year compliance window.</li><li>US 30-year Treasury yields held above 5% for a 12th consecutive session, the longest such run since 2007; market-implied probability of a Fed hike at next week's meeting rose to one-in-three.</li></ul>
+<p class="para-title" style="color:#5597cb;">Earnings Season</p>
+<p class="para-body">Two weeks into Q2 reporting, S&P 500 companies are tracking 26% profit growth — among the strongest readings outside post-recession recoveries — with profit guidance momentum reaching a record high in Bloomberg Intelligence data. Ex-technology, the remaining S&P 500 cohort is projected to contribute 9.1 percentage points to aggregate growth, per Deutsche Bank's Binky Chadha, reflecting a cyclical rebound as ISM manufacturing returned to expansionary territory. Consumer discretionary is on track for high-single-digit EPS growth, suggesting households have largely absorbed eighteen months of tariff and energy-driven price pressure. The central risk, per ClearBridge Investments, remains a material deterioration in labor markets. Intel provided the week's most constructive datapoint, with revenue guidance exceeding consensus by a wide margin, underscoring sustained data-center demand even as hyperscaler capex guidance unnerved investors elsewhere.</p>
+<p class="para-title" style="color:#5597cb;">AI Capex and Market Structure</p>
+<p class="para-body">Alphabet's announcement of potential capital expenditures exceeding $200 billion — against prior expectations closer to $165 billion — crystallized investor anxiety about AI investment returns. Tesla compounded the mood: net profit fell 37% below consensus as spending on AI and robotics reached $5.8 billion, producing the company's first cash burn in two years. The Magnificent Seven's $797 billion single-day loss on Thursday reflected a rotation dynamic already visible for weeks: the Philadelphia Semiconductor Index fell 13% month-to-date after rallying 105% from its March low to its June peak. Beneath index stability, the momentum factor experienced its largest drawdown since the pandemic, amplified by leveraged single-stock ETF participation and post-Russell rebalancing flows. Forward S&P 500 multiples near 20x leave earnings revisions doing the heavy lifting to justify current valuations.</p>
+<p class="para-title" style="color:#5597cb;">Monetary Policy and Fiscal</p>
+<p class="para-body">Federal Reserve policy remains genuinely unsettled. Chairman Kevin Warsh's inflation-watch posture had briefly priced in a July hike, but two benign inflation prints shifted expectations — before energy and tariff dynamics partially reversed that move. Money market funds shortened weighted average maturity to 40 days from 45 days in mid-May, a tactical defensive repositioning reflecting the absence of a clear policy signal. The 30-year Treasury yield at 5.16% partly reflects over $500 billion in AI-linked corporate issuance competing directly with Treasuries for pension and insurance buyers. Trump administration officials are also reportedly exploring whether a review of the SVB failure could provide legal grounds to remove Fed Governor Michael Barr, adding a political dimension to an already complex policy environment. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>China Q2 GDP grew 4.3% YoY on Tuesday, missing the official 4.5%–5.0% target range and prompting the State Council to pledge full-year goal attainment through maximized fiscal deployment.</li><li>South Korea's Kospi fell 4.5% Monday to its lowest since late April, later recovering 3.6% Tuesday, tracking for its widest monthly divergence from Hong Kong's Hang Seng since the Kospi's 1983 launch.</li><li>Japan's core CPI rose 1.6% in June; the yen weakened to approximately ¥164 per dollar — its weakest since the 1980s — forcing Finance Ministry warnings of intervention.</li><li>Moonshot AI launched Kimi K3, a 2.8 trillion-parameter open-weight model; a White House official alleged it was trained using banned Nvidia chips, adding geopolitical dimensions to what is increasingly a parallel AI ecosystem.</li></ul>
+<p class="para-title" style="color:#e07b39;">China Macro and Policy</p>
+<p class="para-body">The 4.3% Q2 growth miss forced Beijing into explicit damage control. Electronics and IT contributed 1.4 percentage points to last quarter's growth, illustrating how the AI hardware boom is buffering broader domestic weakness in fixed-asset investment and consumer spending. The Iran conflict has reduced Chinese oil imports to 2016 levels, and 60% of Q2's industrial production slowdown was concentrated in the oil supply chain. Beijing simultaneously closed a "1+N" offshore refinancing loophole used by distressed property developers, tightening an already constrained sector. KKR and AEW Capital Management are both reportedly seeking to exit Chinese real estate holdings at 40–50% losses, illustrating the continued depth of property sector distress.</p>
+<p class="para-title" style="color:#e07b39;">State Intervention in Markets</p>
+<p class="para-body">Beijing's response to the AI stock selloff was notably broad-based. State-linked ETFs absorbed record inflows — the ChinaAMC STAR 50 ETF attracted an estimated 13.8 billion yuan in a single session on Friday — while China Reform Holdings, China Chengtong Holdings, and major insurers including China Life committed to fresh equity purchases. The STAR 50 subsequently surged nearly 11% in one session. The intervention appears motivated by preserving investor confidence ahead of CXMT's $9.8 billion IPO and supporting capital formation for strategic technology sectors. Whether it produces durable gains or merely delays price discovery remains unresolved. Michael Burry disclosed short positions in Nvidia, Applied Materials, and the SOXX ETF while adding to Hong Kong-listed longs.</p>
+<p class="para-title" style="color:#e07b39;">Currency Stress and Southeast Asia</p>
+<p class="para-body">Asia's oil-importing economies face a compounding bind: rising dollar-denominated crude prices are widening current account deficits, depressing currencies, and forcing central banks into difficult trade-offs. Bank Indonesia held its benchmark rate unchanged Wednesday after lifting rates 100 basis points in recent months, while the Philippine central bank intervened directly after the peso fell to a record low. India's RBI sold dollars to support the rupee as it approached a record low. Japan's Finance Minister Katayama warned Wednesday that authorities stand ready to act on the yen. TSMC initiated discussions with clients on price increases of 5%–10% for 2027 advanced and mature nodes — a potential earnings tailwind but also a signal of persistent supply-side pricing power. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>UK 10-year gilt yields rose 8.1 basis points on Tuesday, breaching 5% for the first time since 2008, as markets assessed incoming Prime Minister Andy Burnham's fiscal credibility.</li><li>UK CPI fell to its lowest level in over a year on Wednesday, driven by cheaper motor fuel and food, though analysts caution the disinflation impulse may prove short-lived given energy dynamics.</li><li>The ECB held rates unchanged on Thursday as expected, with President Lagarde signaling September remains live for a further increase; some policymakers reportedly considered an immediate hike as Brent briefly touched $100.</li><li>Euro-area private-sector activity improved substantially more than expected in July on Thursday, with consumer inflation expectations declining — data points that complicate the ECB's hawkish internal lean.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">UK Political Transition</p>
+<p class="para-body">Andy Burnham's arrival at 10 Downing Street — Britain's seventh prime minister in a decade — was accompanied by an immediate gilt market test. Tuesday's 8.1 basis point rise in 10-year yields, taking them above 5%, signals investors are withholding full confidence pending concrete fiscal signals. The appointment of John Healey as chancellor was calibrated to convey restraint, though his prior resignation over inadequate defense spending implies upward budget pressure on the military remains a live constraint. Burnham's first announced measure — scrapping a 5% tax on energy bills from October — reflects political imperatives around cost-of-living relief that sit in tension with gilt market demands for consolidation. The spread between UK gilt yields and German bunds has widened to nearly two percentage points, a structural credibility discount constraining whatever fiscal room Burnham might claim.</p>
+<p class="para-title" style="color:#4a9e6b;">ECB and Corporate Developments</p>
+<p class="para-body">The ECB's hold was reached quickly — Lagarde noted the meeting concluded around 10:15 a.m. Thursday — but internal deliberations were more substantive than the outcome implies. September's decision will be conditioned on two additional inflation prints, a Q2 GDP reading, and business surveys. Lagarde's pledge to remain in post only through end-2026 introduced an additional uncertainty by implicitly opening the succession question. In European corporate news, Airbus rose 6.6% in Paris on Wednesday after forecasting it can nearly double operating profit by 2029 as production bottlenecks ease. STMicroelectronics fell 15% in Paris on Thursday after guiding Q3 revenue below expectations. Nestle declined 7% in Zurich on Thursday on weaker-than-expected North American volumes. Ryanair shares fell as much as 6.7% after a 34% decline in first-quarter profit, with management citing Iran-conflict-driven oil prices and forced fare cuts. Europe's summer heat wave has produced an estimated 20,000 excess deaths to date, with Spain declaring a national state of emergency over wildfires near Madrid on Thursday — the first such declaration on record. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Moody's upgraded Argentina's sovereign credit rating for the third time in under three months on Wednesday, further validating President Milei's fiscal consolidation program.</li><li>Brazil's Flávio Bolsonaro faces compounding political headwinds: courts barred him from visiting his father on Monday, new allegations tied his law firm to Banco Master funding, and a fresh police probe was opened during the week.</li><li>Trump's 10%–12.5% tariff regime announced Thursday applies to Latin American trading partners, with inflationary and investment consequences that remain difficult to fully quantify at the country level.</li></ul>
+<p class="para-title" style="color:#c0392b;">Argentina Sovereign Trajectory</p>
+<p class="para-body">Three Moody's upgrades in under three months reflect growing external creditor conviction that Milei's fiscal consolidation and deregulation agenda has durability beyond initial skepticism. The pace of rehabilitation is notable: the upgrade sequence suggests markets are increasingly willing to price in policy adherence rather than treating reform as inherently fragile. Whether improved credit metrics translate into meaningful investment inflows and sustained disinflation — Argentina's central test — remains the key open question for the economic outlook.</p>
+<p class="para-title" style="color:#c0392b;">Brazil Political Risk and Regional Dynamics</p>
+<p class="para-body">The Bolsonaro campaign's operational difficulties are accumulating at a sensitive point in the electoral cycle. New allegations linking the candidate's law firm to Banco Master funding, combined with a fresh police investigation and strained family political dynamics, increase execution risk for what had been a credible opposition candidacy ahead of October. Brazilian assets remain sensitive to further developments, as political uncertainty typically translates into spread widening in a market already attentive to fiscal dynamics. The broader regional backdrop is shaped by elevated global oil prices — a net positive for Colombia and Brazil as producers but a headwind for oil-importing economies — and by the stronger dollar environment, which is compressing export margins for coffee and banana producers concentrated in Colombia, Ecuador, and Central America. Mexico's USMCA review timeline, if confirmed by its top diplomat in Washington, would provide a meaningful near-term anchor for trade and investment sentiment, though the growing fleet of Chinese-made trucks in Mexico has complicated tariff-relief negotiations. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude rose approximately 36% in July, surpassing $95 intraday on Wednesday and approaching $100 on Thursday following Houthi attacks on Saudi tankers in the Red Sea — a second simultaneous chokepoint disruption alongside the near-complete closure of the Strait of Hormuz.</li><li>Goldman Sachs estimates Brent could rally above $120/barrel in Q4 if Hormuz disruptions persist; its base case remains $80, though Brent traded near $98.59 on Thursday.</li><li>Global investment-grade bond yields hit 3.68% on Thursday — their highest level since the 2008 financial crisis — as energy prices and geopolitical risk repriced the global rates outlook.</li><li>Trump announced 10%–12.5% tariffs on roughly 60 economies on Thursday and invoked the 1930 Smoot-Hawley Act for 50% duties on select Canadian goods on Tuesday, signaling that tariff escalation remains an active bilateral tool.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Strait of Hormuz and Energy Supply</p>
+<p class="para-body">The conflict has entered a structurally more dangerous phase. Tanker transits through the Strait of Hormuz, which carries approximately 20% of global seaborne oil trade, fell to near zero on Tuesday — compared with a pre-war average of approximately 80 per day. Persian Gulf flows have reportedly dropped below 45% of pre-war levels, per Goldman Sachs. The US Strategic Petroleum Reserve sits at its lowest level since 1983, materially limiting the buffer available for a second intervention. Thursday's Houthi strikes on Saudi tankers in the Red Sea introduced a second chokepoint: Bab el-Mandeb, through which container traffic flows to the Suez Canal. Polymarket odds assign a 33% probability to effective Bab el-Mandeb closure by year-end. Bloomberg Intelligence estimates a sustained Red Sea blockade could lift energy shipping rates by at least 30%. US gasoline crossed $4 per gallon and diesel exceeded $5, while refining crack spreads hit records. Asian LNG imports rose 12% month-on-month in China as Qatari supply disruptions via Hormuz forced buyers to spot markets — Pakistan's state buyer paid approximately $21.88 per million BTU for a late-July shipment, among the highest prices since 2022. Morgan Stanley warns European diesel inventories are on course for multiyear lows by year-end.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary Policy Divergence</p>
+<p class="para-body">The global rates landscape is growing structurally more complex. Japanese two-year yields reached their highest level since 1995 at just below 1.5%, with a majority of economists still expecting the Bank of Japan to hold until December even as yen weakness to multi-decade lows intensifies pressure for acceleration. UK 30-year yields are near multi-decade highs. US 30-year Treasuries have sustained their longest run above 5% since 2007. The ECB is privately leaning toward a September hike driven by energy-price inflation, even as Thursday's euro-area activity and inflation expectations data complicated that posture. The Federal Reserve faces market pricing of a one-in-three probability of a hike next week while economist consensus still points to the next move being a cut. The divergence reflects fundamentally different domestic inflation dynamics layered on a shared energy shock — a configuration that typically produces meaningful currency volatility and cross-border capital flow realignment.</p>
+<p class="para-title" style="color:#8b5cf6;">Trade and Geopolitics</p>
+<p class="para-body">Trump's invocation of the 1930 Smoot-Hawley Act against Canada on Tuesday — targeting consumer goods while exempting energy</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
