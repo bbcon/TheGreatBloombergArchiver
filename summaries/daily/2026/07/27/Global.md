@@ -1,0 +1,10 @@
+• Brent crude fell as much as 7.4% to below $90/bbl Monday morning after the US paused its 13-day strike campaign against Iran for a second night; Iran signaled restraint and engaged Oman in Strait of Hormuz talks
+• G7 central banks — Fed Wednesday, Bank of England Thursday, Bank of Japan Friday — face a common dilemma: oil-driven inflation resurgence against slowing growth
+• European wildfires have displaced over 300,000 people across France and Spain, with the Gironde blaze threatening Bordeaux; climate scientists link intensifying fire seasons to anthropogenic warming
+• El Niño conditions may push monthly global average temperatures above 2°C above pre-industrial levels for the first time on record
+
+**Oil Markets and the Hormuz Question**
+The weekend ceasefire pause produced an immediate relief rally, but energy market analysts are cautious about its durability. The five-month conflict has already produced structural shipping disruptions: Asian buyers are rerouting Saudi crude via the Suez Canal and around Africa, adding weeks to transit times. Iran has explicitly stated there is no change to the status of the Strait of Hormuz, and Houthi forces have demonstrated the capacity to extend pressure to the Red Sea and Bab el-Mandeb. Global crude inventories are low, and any renewed escalation could push Brent back above $100 rapidly. The market ceasefire may be fleeting.
+
+**Monetary Policy Divergence**
+The simultaneous hawkish pivot across the Fed, ECB, Bank of England, and Bank of Japan — each confronting energy-driven inflation from different starting points — represents a notable moment of G7 policy convergence, even if the degree of tightening varies. Japan's Finance Ministry jawboning of domestic pension funds toward JGB investment adds an unconventional dimension, reflecting the fiscal strain of elevated yields on the world's largest sovereign debt burden. Treasury Secretary Bessent's articulation of US government "market signaling" as an investment direction tool suggests similar financial repression considerations are present, if not yet explicit, in Washington.
