@@ -1,0 +1,11 @@
+• UBS net income beat consensus comfortably; Deutsche Bank fixed-income trading revenue surged in Q2, outperforming most US peers; Standard Chartered announced a $1 billion buyback after earnings exceeded estimates.
+• Western Europe's fourth heat wave since late May is bringing temperatures up to 41°C to southwest France; wildfires in the Gironde have prompted evacuation of ~4,000 people; the Rhine River is approaching a 36-year low water level, threatening inland barge traffic for energy and industrial inputs.
+• UK Prime Minister Andy Burnham faces a by-election in Greater Manchester — his former mayoralty — providing an early public verdict on his national leadership; a NIESR study warns UK public services face a £24 billion funding squeeze this parliamentary term from energy and inflation pressures.
+
+**European Bank Earnings**
+European financials delivered a constructive earnings session. UBS's net income beat expectations by a comfortable margin, and the bank announced a $3 billion share buyback through mid-2027 — a signal of balance sheet confidence. Deutsche Bank's fixed-income trading unit outperformed most Wall Street peers, a notable result in a quarter marked by macro volatility. Standard Chartered similarly beat estimates and returned capital via a $1 billion buyback. The results contrast with the more cautious signals from luxury: Kering surged 10% as Gucci sales topped estimates, suggesting early signs of a turnaround, while Hermès fell 10% after its leather goods division missed — indicating that the luxury recovery remains uneven.
+
+**Climate and Infrastructure Stress**
+The Rhine water level approaching a 36-year low represents an emerging but underappreciated economic risk. The river functions as the arterial supply chain for chemical plants, refineries, steel foundries, and coal-fired power stations across Switzerland, Germany, and France. If barge traffic halts, the knock-on effects on industrial output — already under pressure from high energy costs and weak Chinese demand — could be material. The coincidence of wildfire risk in southwest France and drought-driven logistics disruption in the Rhine basin underscores that climate-related supply shocks are becoming a recurring feature of the European economic calendar rather than exceptional events.
+
+---

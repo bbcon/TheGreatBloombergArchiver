@@ -1,0 +1,16 @@
+• Fed decision day under Chairman Kevin Warsh: consensus expects a hold, but markets pricing roughly one-in-three odds of a hike — among the most uncertain FOMC outcomes in years.
+• US housing weakening: 30-year mortgage rate rose to 6.7%, an 11-month high; S&P CoreLogic Case-Shiller national home price gains are now trailing inflation; AEI Housing Center reports price appreciation at just 1.6% in June.
+• Broad equity rotation intensifies: equal-weighted S&P 500 reached an all-time high while the Nasdaq 100 sits ~10% below its June 2 peak; momentum underperformed value by 10 percentage points in July alone.
+• US merchandise trade deficit narrowed in June as a broad-based decline in imports — including a pullback in capital goods — outpaced a slide in exports.
+• Ford rose 4.1% pre-market after raising its full-year profit outlook on strong SUV sales; Microsoft and Meta report after the bell, with AI capex scrutiny the central investor focus.
+
+**Federal Reserve**
+Markets are bracing for one of the more consequential and opaque FOMC decisions in recent memory. Chairman Kevin Warsh has deliberately abandoned the forward-guidance framework, leaving investors without the usual pre-meeting signals. Bloomberg's survey of over 100 economists is nearly unanimous for a hold, but the underlying conviction is low. Warsh's congressional testimony this month — in which he dismissed a soft inflation print and warned "there's plenty of work to do" — has kept a hike firmly in play. The Fed's preferred core PCE gauge is expected to show a 0.2% monthly gain for June, with the year-on-year rate at approximately 3.3%, still well above the 2% target. A hike would cement Warsh's inflation-fighting credibility; a hold risks dissents and questions about follow-through. Either outcome should clarify how to interpret his public communications going forward.
+
+**Equity Markets and Rotation**
+The unwind of AI momentum has accelerated. The top 25 Russell 1,000 performers from H1 — predominantly semiconductor and AI infrastructure names — are down an average of 36% in July, while last year's 25 worst performers have gained an average of 14% this month. Apple reached a $5 trillion market cap, overtaking Nvidia. The rotation reflects both valuation mean-reversion and a structural shift: Barclays warns that 2026 may be the first year in decades when net equity supply turns positive, as hyperscalers fund capital expenditure via share issuance rather than debt. SpaceX's record IPO — the largest in history — may have marked the sentiment peak. OpenAI and Anthropic IPO timelines are slipping as investor appetite fades.
+
+**Housing**
+The housing market continues to act as a drag rather than a driver of growth. The 30-year mortgage rate at 6.7% is suppressing both existing-home sales and new construction, while the "lock-in effect" keeps supply constrained. The NAR Housing Affordability Index is near its worst reading since before the 2006 housing crash. This is not a financial crisis analogue, but it is a meaningful headwind to GDP and household wealth formation.
+
+---

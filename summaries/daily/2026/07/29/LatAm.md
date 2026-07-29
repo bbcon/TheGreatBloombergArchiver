@@ -1,0 +1,11 @@
+• Chile's central bank held its benchmark rate unchanged at 4.5%, citing fresh volatility in global oil prices and recent domestic data surprises — a more cautious posture than the easing trajectory some market participants had anticipated.
+• Brazil's presidential campaign is facing a novel legal and political test after Jair Bolsonaro used an AI-generated video to appear at his son Flávio's campaign launch despite court orders banning him from political communications; Lula's campaign has filed a legal challenge with the electoral court.
+• Peru's newly inaugurated President Keiko Fujimori pledged fiscal sustainability, regulatory reform to attract investment, and expanded social transfers for elderly poor — a balancing act designed to break the country's pattern of early presidential crises.
+
+**Chile: Monetary Policy**
+The Banco Central de Chile's decision to hold at 4.5% reflects genuine uncertainty about the external environment rather than domestic conditions alone. The combination of elevated and volatile oil prices — driven by Middle East conflict — and data surprises in recent months has complicated the easing calculus. Chile's copper-dependent fiscal position makes it additionally sensitive to global commodity dynamics. Codelco's chairman separately acknowledged another difficult production year, effectively abandoning the goal of returning to pre-pandemic output by decade's end — a meaningful negative for the country's medium-term export revenue outlook.
+
+**Brazil: Political Economy**
+The Bolsonaro AI video episode is consequential beyond its novelty. It directly tests whether Brazil's electoral court — now led by justices Bolsonaro himself appointed — will enforce the same aggressive disinformation standards it applied in 2022. The Lula campaign's framing of this as "the most heavily litigated election since Brazil's return to democracy" appears credible given the structural asymmetry: the incumbent must rely on an institution whose composition has shifted against him. The Trump administration's stated interest in monitoring the Brazilian electoral process adds a further geopolitical dimension to what is already a high-stakes domestic contest ahead of October.
+
+---

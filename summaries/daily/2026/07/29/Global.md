@@ -1,0 +1,6 @@
+• WTI crude surged approximately 5% to ~$83/barrel at the Asian open after the US intercepted an Iranian attack on military bases; US and Saudi forces subsequently struck Iran-backed militants in Iraq — ending a multi-day lull in hostilities and meaningfully raising the risk of renewed full-scale conflict.
+• QatarEnergy extended force majeure on LNG shipments from Ras Laffan into September; Pakistan and Bangladesh have spent a combined $1.9 billion on spot LNG cargoes since the conflict began — roughly double what contracted volumes would have cost.
+• The Rhine River is approaching its lowest water level in 36 years due to drought, threatening barge traffic for coal, fuel oil, and industrial inputs across Germany, Switzerland, and France — a fourth simultaneous stress point for global energy logistics alongside the Strait of Hormuz, Red Sea, and Panama Canal.
+
+**Middle East Conflict and Energy Markets**
+The resumption of direct US-Iran hostilities following a brief pause removes the tentative diplomatic optimism that had briefly pressured oil prices lower. The IRGC's claim to have struck three tankers
