@@ -1,0 +1,8 @@
+• Saudi Arabia's economy posted its deepest quarterly contraction since the Covid-19 pandemic, driven by a sharp decline in oil output — a relevant benchmark for Gulf and commodity-linked dynamics affecting Latin American exporters.
+• The IMF and Bolivia reached a staff-level agreement on a new $1.9 billion program, providing a financing anchor for one of the region's most fiscally stressed sovereigns.
+• US Senate candidates in Iowa and Nebraska are amplifying farmer discontent as the combined cost of the Iran war and tariffs weighs on agricultural supply chains with direct relevance to Brazilian and Argentine export competition.
+
+**Regional Policy and Commodity Dynamics**
+Bolivia's IMF agreement, while modest in absolute terms, is significant for a country with depleted foreign reserves and constrained access to external financing. The terms remain to be finalized, and implementation risk is non-trivial. Separately, the ongoing US-Iran conflict's impact on energy prices — WTI near $84–85 per barrel — continues to exert a meaningful terms-of-trade effect across the region: net oil exporters including Colombia and Brazil benefit at the margin, while energy-importing economies face sustained import cost pressure. The Philippines reported record June exports driven by electronics — a positive read for Asian manufacturing, with indirect implications for Latin American commodity demand from Asia.
+
+---

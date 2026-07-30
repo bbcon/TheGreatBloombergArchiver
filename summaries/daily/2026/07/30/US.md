@@ -1,0 +1,11 @@
+• The FOMC held the federal funds rate unchanged at 3½–3¾%, despite three dissenting votes for a hike — the sixth such three-way dissent in 30 years — generating sharp market volatility.
+• Fed Chair Warsh's press conference triggered a significant yield curve steepening, with the 30-year Treasury yield rising to its highest level since 2007, while two-year yields fell.
+• Microsoft surged ~9% after trimming capital expenditure guidance to $175 billion and reporting Azure cloud revenue growth of 43%; Meta fell ~10% after free cash flow dropped to $784 million, its lowest in nearly four years.
+
+**Federal Reserve**
+The FOMC's hold was not itself the surprise — markets had assigned a meaningful but non-dominant probability to a hike. The market disruption originated in Warsh's 45-minute press conference, where he declined to explain why the three dissenting votes for a hike were overruled, offered no reaction function for future meetings, and made statements characterized by JPMorgan's Michael Feroli as failing to "specify how he intended to achieve his stridently asserted inflation resolve." The result was one of the sharpest post-meeting yield curve steepenings in decades: the 30-year touched its highest since 2007, signaling bond market skepticism that the Fed will contain inflation over time, while the two-year fell as traders scaled back near-term hike expectations. The S&P 500 closed down 1.5%.
+
+**Corporate Earnings**
+The divergence between Microsoft and Meta crystallized a key AI investment debate. Microsoft's decision to cut full-year capex estimates by $15 billion — to $175 billion — was received as evidence of capital discipline, while Azure's 43% revenue growth, pushing annual sales above $100 billion for the first time, validated spending to date. Meta's trajectory was the inverse: free cash flow fell to $784 million, its lowest in four years, as Zuckerberg raised the lower bound of his capex guidance to $130 billion. Credit markets are also signaling concern, with CDS spreads widening on Oracle and SpaceX and Oracle's 2054 bond yields approaching 7.8%.
+
+---
