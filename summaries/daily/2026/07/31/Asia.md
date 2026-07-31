@@ -1,0 +1,12 @@
+• China's manufacturing PMI unexpectedly contracted in July for the first time in five months, missing consensus, while construction fell to its weakest reading since the onset of the pandemic — both prints adding to evidence of broadening economic deceleration.
+• South Korea's Kospi surged 18% on Friday, partially recovering from a 17% three-day collapse, as forced selling in chip stocks appeared to exhaust itself.
+• The Bank of Japan held its benchmark rate at 1%, as expected, but upgraded its economic assessment, warned of upside inflation risk, and drew a dissent from one board member favoring an immediate hike.
+• Chinese chipmaker CXMT surged 466% in its trading debut, becoming China's largest onshore-listed company.
+
+**China: Macro and Technology**
+The July PMI contraction — China's first in five months — was the week's most consequential regional data release, arriving alongside a construction sub-index at its weakest since the pandemic. The combination suggests that AI investment and export resilience have not been sufficient to offset weakness in domestic demand and the property-linked construction sector. Beijing is likely to face intensified pressure to expand fiscal stimulus. Against this softening backdrop, CXMT's market debut was a symbolic counterpoint: the domestic DRAM chipmaker's 466% first-day gain channeled massive capital into China's semiconductor ambitions, with spillover benefits reaching investors from provincial governments to DeepSeek's founder. The US tightened curbs on foreign-made robotics this week — widely read as targeting China — extending the pattern of American export controls meeting Chinese technological progress in an escalating cycle.
+
+**Japan: BOJ and the Yen**
+The BOJ's hold at 1% was fully anticipated, but the hawkish framing — including an upgraded economic view and a dissenting vote for an immediate hike — pushed markets to price virtually every future meeting as live. Separately, Japanese authorities intervened in currency markets to support the yen, which had weakened to levels last seen in 1986. The intervention appears to have had US backing. Prime Minister Takaichi's political position is under pressure: the weak yen fuels imported inflation, eroding her approval ratings, while rising yields complicate her plans for fiscal expansion including a proposed cut in food sales tax.
+
+---
