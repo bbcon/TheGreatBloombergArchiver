@@ -1,0 +1,12 @@
+• Chile's central bank held its benchmark rate unchanged at 4.5% on Monday, citing global oil price volatility and domestic data surprises — a more cautious posture than some market participants anticipated.
+• Brazil recalled its ambassador to Argentina after President Milei publicly attacked President Lula and a Brazilian Supreme Court justice, the sharpest bilateral deterioration yet between Mercosur's two largest members.
+• Keiko Fujimori was inaugurated as Peru's president on Tuesday — the ninth head of state in a decade — pledging fiscal sustainability and regulatory reform.
+• The IMF and Bolivia reached a staff-level agreement on a $1.9 billion program, providing a financing anchor for one of the region's most fiscally stressed sovereigns.
+
+**Chile and Regional Monetary Policy**
+The Banco Central de Chile's hold at 4.5% reflects genuine external uncertainty rather than domestic conditions alone. Brent crude's roughly 20% July gain — the largest monthly move since March — creates a direct terms-of-trade complication for policy calibration. Colombia's central bank is expected to hike for a second consecutive month, sustaining a regional divergence: oil exporters including Colombia and Brazil benefit at the margin from elevated energy prices, while energy-importing economies face sustained import cost pressure. Codelco's chairman separately acknowledged another difficult production year, effectively abandoning the goal of returning to pre-pandemic output by decade's end — a meaningful negative for Chile's medium-term export revenue.
+
+**Brazil-Argentina and Regional Politics**
+The ambassador recall is the starkest escalation yet in the Lula-Milei relationship. Beyond the diplomatic optics, sustained tension between Mercosur's two largest members complicates the bloc's trade negotiations, including the long-delayed EU-Mercosur agreement. In Brazil, Bolsonaro's use of an AI-generated video to appear at his son's campaign launch despite court-ordered communications bans tests whether the electoral court will enforce disinformation standards consistently — with the Trump administration's stated interest in monitoring the process adding a geopolitical dimension. Peru's Fujimori inauguration offers a potential break from institutional fragility, though nine heads of state in a decade suggests structural constraints on governance continuity that no single administration easily overcomes.
+
+---

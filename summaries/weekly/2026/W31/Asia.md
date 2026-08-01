@@ -1,0 +1,16 @@
+• South Korea's Kospi fell as much as 17% over three sessions through Tuesday before surging 18% on Friday, as forced selling in chip names appeared to exhaust itself — the week's most dramatic single-market move in the region.
+• SK Hynix reported a six-fold quarterly profit surge on Tuesday but missed analyst expectations, falling 19% on the day; Samsung's chip operating income rose 250-fold YoY on Wednesday, yet also declined.
+• China's manufacturing PMI unexpectedly contracted in July on Friday for the first time in five months, missing consensus, while construction fell to its weakest reading since the pandemic.
+• The Bank of Japan held at 1% on Friday but upgraded its economic assessment and drew a hawkish dissent, pushing markets to price virtually every future meeting as live.
+• Bank Indonesia Governor Perry Warjiyo resigned abruptly for "personal reasons," triggering immediate selling in the rupiah, Indonesian equities, and bonds.
+
+**South Korea: Market Dislocation**
+SK Hynix's Tuesday results encapsulate the tension now defining AI-exposed equity markets. A six-fold profit increase would ordinarily be celebrated; instead, the miss versus elevated expectations — combined with a $31 billion annual capex commitment — intensified overcapacity fears. South Korean authorities called an emergency government meeting, with Finance Minister Koo Yun-cheol acknowledging regulators should have scrutinized leveraged single-stock ETF products more carefully before their May launch. The Kospi has fallen roughly 40% from its June peak, reflecting both global AI sentiment reversal and domestic product proliferation.
+
+**China: Decelerating Fundamentals**
+Friday's PMI contraction — China's first in five months — was the week's most consequential regional data release. Combined with Q2 GDP growth of 4.3%, the slowest since late 2022, and industrial profits rising 15.1% YoY in June versus 21.1% in May, the data collectively describe an economy where AI investment and export resilience have not offset domestic demand weakness and property-linked construction deterioration. Local governments have deployed only 47% of their H1 special bond quota, suggesting fiscal impulse may be smaller than budgeted. Beijing faces intensifying pressure to expand stimulus, though no major initiative appears imminent.
+
+**Japan and Indonesia**
+The BOJ's Friday hold was fully anticipated, but the hawkish framing — including an upgraded economic assessment and a dissenting vote for an immediate hike — reinforced that every future meeting is live. Japanese authorities intervened in currency markets to support the yen, which had weakened to levels last seen in 1986, apparently with US backing. Indonesia's central bank leadership transition introduces policy uncertainty at a sensitive juncture; whether Warjiyo's departure reflects political interference in monetary policy under President Prabowo or a genuine personal decision remains unclear, but investors repriced Indonesian assets lower immediately.
+
+---

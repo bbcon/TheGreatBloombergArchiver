@@ -1,0 +1,16 @@
+• The FOMC held the federal funds rate unchanged at 3½–3¾% on Wednesday, drawing three dissenting votes for a hike — the sixth three-dissent outcome in 30 years — and sparking sharp bond market volatility.
+• Core PCE tracked near 3.3% YoY, well above the 2% target, while weekly jobless claims fell to their lowest level since 1969, sustaining the case for further tightening.
+• The 30-year Treasury yield hit its highest level since 2007 on Thursday following Chair Warsh's press conference; the S&P 500 closed down 1.5% on Wednesday.
+• Microsoft surged roughly 9% on Thursday after trimming capex guidance to $175 billion and reporting 43% Azure growth; Meta fell ~10% after free cash flow dropped to its lowest in nearly four years.
+• Apple warned of chip supply shortages Thursday, guiding revenue below consensus; Amazon AWS extended cloud revenue acceleration to a fifth consecutive quarter.
+
+**Federal Reserve**
+The FOMC's hold was not itself the market-disrupting event. Chair Warsh's 45-minute Wednesday press conference — in which he declined to explain why three dissenting hike votes were overruled and offered no reaction function for future meetings — produced one of the sharpest post-meeting yield curve steepenings in decades. JPMorgan's Michael Feroli noted Warsh failed to "specify how he intended to achieve his stridently asserted inflation resolve." The 30-year Treasury touching its highest since 2007 signals long-duration investors are skeptical the Fed will contain inflation over time. Bloomberg's pre-meeting survey of over 100 economists had been nearly unanimous for a hold, but conviction was low: Citadel Securities had publicly argued a surprise hike would strengthen institutional credibility, and the market's one-in-three hike pricing going into Wednesday reflected genuine uncertainty.
+
+**Earnings and the AI Capex Debate**
+A meaningful narrative shift appears underway. Microsoft's decision to cut full-year capex by $15 billion was rewarded with its largest single-day market cap gain since 2008; Meta's opposite trajectory — raising its capex floor to $130 billion as free cash flow fell to $784 million — was punished. The five largest hyperscalers collectively plan roughly $740 billion in AI investment for 2026, a figure markets are increasingly unwilling to accept on faith. Microsoft now trades near 19 times forward earnings versus a 10-year average of 27. Apple's supply shortage warning added an upstream dimension: AI hardware demand is generating memory cost dislocations that even the world's largest consumer technology company cannot absorb without guidance consequences.
+
+**Housing and Rotation**
+The 30-year mortgage rate reached 6.7% — an 11-month high — on Tuesday, with S&P CoreLogic Case-Shiller national home price appreciation trailing inflation and the AEI Housing Center reporting gains of just 1.6% in June. The NAR Affordability Index is near its worst reading since before the 2006 housing peak. Meanwhile, equity rotation accelerated: the equal-weighted S&P 500 reached an all-time high by Thursday while the Nasdaq 100 sat roughly 10% below its June 2 peak, with momentum underperforming value by 10 percentage points in July alone.
+
+---
