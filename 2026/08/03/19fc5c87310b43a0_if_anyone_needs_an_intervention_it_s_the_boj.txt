@@ -1,0 +1,283 @@
+Subject: If anyone needs an intervention, it's the BOJ
+Date: Mon, 03 Aug 2026 04:01:13 +0000
+
+Points of Return 
+ Why is the BOJ sitting it out? 
+
+View in browser <https://bloom.bg/3TpVn6X> 
+ <https://bloom.bg/4w43Dak> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=19229693&m=11b724c487f61753eb1a7a4a5f3ef261&p=08032026040112&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=19229693&m=11b724c487f61753eb1a7a4a5f3ef261&p=08032026040112&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/4fB4ZV3> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ * Both Japan and  the US <https://bloom.bg/4fMD2YW> are intervening to  
+strengthen the yen <https://bloom.bg/4fMe3oD>. 
+ * Real  Treasury yields <https://bloom.bg/4fIcvMw> have hit a post-2008 high 
+after last week’s Fed meeting. 
+ *  Volatility is extraordinary <https://bloom.bg/4w43DqQ> (especially  in 
+Seoul <https://bloom.bg/4w8in7P>), but the AI rally is intact. 
+ *  Oil fell <https://bloom.bg/4ySHG0n> once Trump delayed further attacks 
+<https://bloom.bg/3S9TryX> (again) for peace talks with Iran (again). 
+ * AND: A warning to show some  situational awareness 
+<https://bloom.bg/4z00viu> when naming a hedge fund. 
+
+
+
+All Hands on Yen 
+
+Over the past four years, Japan’s Ministry of Finance has made a habit of 
+intervening to support the yen. It hasn’t helped, yet last week’s episode felt 
+different. It produced a big turnaround, and this time the ministry had help 
+from a significant quarter — US Treasury SecretaryScott Bessent 
+<https://bloom.bg/3SdH98N>. But it needs the Bank of Japan’s assistance as well:
+
+With the currency near its weakest in four decades, the intervention led to 
+the strongest level since May. Since buying yen in September 2022 — the first 
+such operation since 1998 — the ministry has spent at least $255 billion 
+without stemming the tide. That conservative figure doesn't include last week, 
+pending the official amount.
+
+This matters beyond Japanese shores because the carry trade — the strategy of 
+borrowing in yen and parking in a higher-yielding currency like the Mexican 
+peso — has been an ultra-reliable source of profits. Over five years, it has 
+strongly beaten even the S&P 500’s total return. A big yen appreciation might 
+prompt the carry trade to unwind, as it did to chaotic effect two years ago. 
+Last week’s move has already jolted the carry trade out of what had been a 
+startlingly steady upward trend:
+
+These actions are growing more frequent precisely because they are ever less 
+impactful. Those betting against the yen know that the ministry’s resources are 
+finite, and that Japan is in a poor fiscal position. Four years ago, the market 
+reportedly viewed around 145 yen per dollar as Tokyo’s line in the sand. The 
+latest intervention suggests that threshold has shifted closer to 160, 
+underscoring investors’ growing willingness to test authorities’ resolve.
+
+Washington’s uncharacteristic support — which seems to have included rate 
+checks <https://bloom.bg/4vZvI2j> and selling euros to buy yen — is potentially 
+a big deal and sends a powerful signal. Mizuho Bank’s Masayuki Nakajima argues 
+that this reflects Washington’s growing concern over the risks of further 
+depreciation, or that rising volatility in Japanese bonds could spill over into 
+US Treasuries:
+
+But US involvement remains problematic. Robin Brooks of the Brookings 
+Institution, a long-term skeptic of Japanese efforts to prop up the yen, points 
+out:
+
+US participation raises more questions than answers, especially the very odd 
+news that the US sold euros to buy yen. This kind of twist in my opinion 
+undercuts the efficacy of US participation, because it invariably will have 
+markets wondering why the US didn’t just fund yen buying out of dollars. FX 
+intervention is a confidence game. The last thing you want is to give markets 
+any kind of reason to ask questions.
+
+What of the Bank of Japan? In June, it raised its policy rate to 1% — the 
+highest since 1995. But it stayed on hold last week, and only one more hike is 
+expected this year. Expectations have stayed relatively constant even as 
+markets have priced in increases for other central banks following the oil 
+supply shock. The yen weakening has been almost exactly in line with the 
+widening gap between the BOJ and the Fed:
+
+Prime Minister Sanae Takaichi, who received a massive electoral mandate six 
+months ago, has anadverse stance <https://bloom.bg/3U9AbSI> on policy 
+tightening as she goes for growth.
+
+The timing and magnitude of the ministry’s action — with the estimated $52.8 
+billion <https://bloom.bg/4pT0E2I> spent on July 31 marking the largest 
+single-day intervention on record — suggest a new level of resolve. What the 
+BOJ does next is critical. Not long ago, the oil shock (Japan is an energy 
+importer) combined with the weak yen to suggest renewed inflationary pressure. 
+But the numbers remain ambiguous, with last year’s big spike possibly 
+attributable to the bad rice harvest. The case for hawkishness isn’t clear from 
+the latest data:
+
+As Bloomberg Opinion colleague Gearoid Reidy points out 
+<https://bloom.bg/45GtTfS>, Governor Kazuo Ueda failed to provide meaningful 
+forward guidance when the market was desperate for it. Jesper Koll, the 
+long-term Tokyo-based investment banker who publishes theJapan Optimist 
+<https://bloom.bg/3JSLdXy> newsletter, was scathing:
+
+The fact that, thank you, Governor Ueda tells us with great confidence he sees 
+Japan inflation re-accelerating to above 2% in the second half of Japan’s 
+fiscal year got undermined immediately by his lack of action. So why exactly 
+are you not hiking if you’re so confident? Could it be that Japan’s financial 
+system is so weak that accelerated rate hike would trigger a possible banking 
+crisis? 
+
+Koll, an optimist, and Brooks, a skeptic, agree that even this level of 
+intervention won’t work on its own. For Brooks, the yen is falling “because 
+Japan’s high public debtprevents <https://bloom.bg/45HLCUd> the country from 
+allowing yields to rise freely.” With bonds kept capped, the yen becomes the 
+main symptom of “a debt crisis that’s getting papered over.”
+
+Koll thinks Takaichi’s aggressive pursuit of growth will probably work, but 
+agrees that the likely path of the yen is weaker. He suspects that the BOJ is 
+holding off because of worries about the secondary banking system, but that the 
+new fiscal policy is almost guaranteed, ultimately, to be inflationary. Thus, 
+risks are still asymmetrically tilted toward an even weaker yen.
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=19229693&m=11b724c487f61753eb1a7a4a5f3ef261&p=08032026040112&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=19229693&m=11b724c487f61753eb1a7a4a5f3ef261&p=08032026040112&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+AIncredible Volatility
+
+After ChatGPT’s 2022 debut, investors first rewarded companies building AI 
+models, and then those supplying them, led by chipmakers. Then they got nervous 
+about the spending involved, leading to extraordinary goings-on last week.
+
+It’s hard to know where to start, but Microsoft Corp. might be a good place. 
+Having been out of favor, its latest earnings induced quite a turnaround; 
+market cap rose more than $600 billion in two days as it rejoined the $3 
+trillion club. This time last year, though, it was in the $4 trillion club:
+
+After driving earnings growth, this FactSet chart (which doesn’t include the 
+latest wave of results) showed Big Tech ceding its leadership:
+
+The Nasdaq 100 was down 11% from its peak before Microsoft’s results generated 
+a rally powerful enough to reverse the S&P 500 Equal Weight Index’s 
+outperformance. After two months of “broadening,” the market narrowed again:
+
+One strong quarter for Microsoft cannot settle broader questions about 
+hyperscalers’ capital spending. The brutal reception for Meta Platforms Inc. 
+and Alphabet Inc. showed that anyone overspending will be punished, even if 
+they produced strong earnings. Matt Rowe, a portfolio manager at Man Group, 
+sums up anxiety:
+
+Investors’ attitude right now is they’re overexposed to the equity category 
+generally. They know it… So there’s been a lot of discussion around portfolio 
+hedging and how to remain long, but put some kind of a net under this risk.
+
+That accords with what Viktor Shvets of Macquarie Group calls a series of 
+“rolling bubbles” that will inflate and deflate across AI derivatives. Shocks 
+from China, in the form of DeepSeek and Moonshot AI’s Kimi 3 models, achieved 
+on tighter budgets, ignited doubts about the wisdom of hyperscalers’ spending:
+
+China’s AI breakthroughs <https://bloom.bg/4yYrvyQ> are hard to ignore, as 
+they’ve shown the ability to innovate at a fraction of the cost. Shvets sees 
+Beijing playing a key role across the entire AI space, preventing monopolies 
+and creating new opportunities by turning everything into AI plays.
+
+The reshuffling within the sector isn’t over. Shares in semiconductor and 
+memory chipmakers pulled back last month, followed by a remarkable rebound in 
+the last few days. Most dramatically, South Korea’s Kospi gained 17% on Friday 
+alone in almost unfathomable volatility:
+
+Amid overall confusion both in the US and in emerging markets, chips have 
+still doubled in value this year — but it’s not clear that the latest 
+convulsions mean the start of a durable rebound:
+
+Jason Pride of Glenmede notes that the semiconductor industry is still 
+inherently cyclical. “When times are good, profits are really thick. When times 
+are just a little bit thinner, profits can actually be surprisingly weak.”
+
+Ordinarily, investors would try to time a rotation from cyclicals to 
+defensives, but Shvets argues against that. Conventional style rotations, he 
+says, now offer neither returns nor a hedge. It’s better to look for where the 
+bubble will roll next:
+
+Backing the revolution, searching for new breakouts, minimizing deflating past 
+winners while diversifying across a range of themes is the only rational 
+response. Billions will rapidly turn into trillions and vice versa. This is not 
+Buffett’s or Burry’s world.
+
+Picking the next winners and losers won’t get any easier. Sadly, for now, even 
+the best large language models can’t tell us that.
+
+—Richard Abbey
+
+
+We Need to Talk About Kevin
+
+Kevin Warsh raised more questions than he answered at his press conference 
+<https://bloom.bg/4fJzfx7> last Wednesday. Non-farm payrolls this week, and 
+interventions from other Fed officials, might clarify things. For now, two 
+points.
+
+First, Warsh confused people, but the point of not offering guidance is that 
+the market forms its own view from the data, and the projected course of 
+interest rates at the end of the week was barely changed:
+
+Second, something is afoot in long-term yields, which suggests possible damage 
+to the Fed’s credibility. The 30-year TIPS (Treasury Inflation-Protected 
+Security) yield has only ever been higher for a few days at the worst of the 
+2008 crisis. That’s not good:
+
+
+
+ Survival Tips 
+
+
+
+Last week’s volatility received a push from the hedge fund Situational 
+Awareness, <https://bloom.bg/4qcMpX3> which got into trouble, unwound some big 
+AI positions <https://bloom.bg/4z00viu>, and submitted to a rescue from Citadel 
+<https://bloom.bg/4yLrCNU> for pennies on the dollar. It’s unclear whether it 
+was more a symptom or cause of the volatility and (full disclosure) I haven’t 
+had the time to do a full analysis. We’ll return during the week ahead.
+
+BUT: One tip for survival is clear. If you don’t want your financial vehicle 
+to be a famous blowout, don’t tempt fate with its name. We’ve hadLong-Term 
+Capital Management <https://bloom.bg/3RETDWR> (seized up because it was so 
+short-term); Archegos (“leader from the front” in Greek); and Enron entities 
+with Star Wars-themed names like Jedi LP, Kenobe Inc. and Obe-1 Holdings that 
+proved incapable of using The Force. Situational Awareness wasn’t aware of its 
+situation. Thanks to Academy’s Peter Tchir for these suggestions. A name like 
+Trying to Get Right Slightly More Than I Get Wrong LLP might work better. Any 
+other nominations?
+
+More From Bloomberg Opinion
+
+ *  AI <https://bloom.bg/4fRKh24> Will Make Our Politics Even More Emotional: 
+Adrian Wooldridge 
+ *  Tesla Without China <https://bloom.bg/4fVPLJg> Would Help Musk, Not Its 
+Investors: Liam Denning 
+ *  AI’s Wildest Spenders <https://bloom.bg/4g74wKm> Are Hitting the 
+Accelerator: Chris Bryant 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/rcZBlVD-gmnjOifhWkEDnz2YZswUlzMJC6vlNyq-XY30voYsmt_xcKRRfXLCurm8fvfoQ9jNuHXo4Iir0EL15IhrFPT_ejyUVtwu727bMSfcZVsww75JqVB7ePYPz8o1hyt0MP6Yi41ri-5UnqGgs4F5ns08p6ai-HZhVn3qqBtxddy_KaEH5zuoqQunu7M9h_fQ-G1UtpeyJdzdiADjCmQsirdJafNrQUGqwWGyIpnDdftDhMNyBqsFfxNkBFP3g2EocwDYiBQn0xrAdcg6I8dDkWSB6CNSKoapNZwuh7egwWmEr_Hf2EtEDyqZx1JJGuwUPYIHCWjB7-5OMoDwnn53Nb5bF19g/i5GnajK73CicT__ZWpnr7My8g13L05N1/23>
