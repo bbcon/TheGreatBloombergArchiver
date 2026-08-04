@@ -1,0 +1,265 @@
+Subject: China heats up AI race
+Date: Tue, 04 Aug 2026 09:19:42 +0000
+
+Chinese AI Models Gain on US Rivals in a Cascade of Debuts
+Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-08-04/chinese-ai-models-gain-on-us-rivals-in-a-cascade-of-debuts?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ 
+<https://www.bloomberg.com/asia?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=19247822&m=11b724c487f61753eb1a7a4a5f3ef261&p=08042026091941&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=19247822&m=11b724c487f61753eb1a7a4a5f3ef261&p=08042026091941&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+When it comes to Chinese AI, every development brings angst along with 
+excitement. A flurry of model launches from the country’s AI sector israpidly 
+narrowing the gap with Silicon Valley 
+<https://www.bloomberg.com/news/articles/2026-08-04/china-s-ai-blitz-creates-death-zone-for-rival-us-model-makers?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ and making companies — read: US rivals — without frontier-pushing technology 
+or market-breaking pricing.
+
+Alibaba became the latest in a parade of Chinese debuts hitting the top of 
+global benchmarks with its Qwen3.8-Max this week, its most advanced model to 
+date that appeared to match or exceed Anthropic’s flagship Fable 5. Two weeks 
+earlier, Moonshot AI’s Kimi K3 showed performance comparable to the priciest US 
+options built on a much humbler budget, sparking freshquestions over the 
+effectiveness of US chip sanctions 
+<https://www.bloomberg.com/news/articles/2026-07-17/what-is-moonshot-ai-why-china-s-new-model-is-roiling-markets?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ intended to slow China’s tech ascent.
+
+And they are not the only ones. What was once an isolated shockwave is now a 
+cascade of unexpected depth — delivering not just low-cost alternatives, but 
+high-end capabilities in reasoning, coding and complex tasks that give OpenAI 
+and its US peers real competition.
+
+On the flip side, China is growing anxious that Anthropic’s Mythos could be 
+wielded 
+<https://www.bloomberg.com/news/articles/2026-08-03/china-is-getting-more-anxious-about-mythos-before-trump-meets-xi?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ against the world’s second-biggest economy, adding a volatile new issue to 
+already heightened tensions before a planned summit between Xi Jinping and 
+Donald Trump. Officials in Beijing areconcerned about the cyber capabilities of 
+Mythos 
+<https://www.bloomberg.com/news/videos/2026-08-04/china-anxious-about-mythos-ahead-of-trump-xi-meeting-video?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ and other AI frontier models developed by US companies, seeing the potential 
+for them to be used as an offensive weapon, people familiar with the matter 
+said.
+
+The race is heating up.
+
+— 
+<https://www.bloomberg.com/authors/AEu_HIqQe4U/stephanie-phang?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Stephanie Phang 
+<https://www.bloomberg.com/authors/AEu_HIqQe4U/stephanie-phang?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+
+What You Need to Know Today
+
+The first US-Japan coordinated purchases of yen in decades was “a signal of 
+friendship,” according to President Donald Trump. “The Trump administration 
+delivers for America’s trusted partners,” Treasury Secretary Scott Bessent 
+said. Most observers doubt it was so simple. Analysts say there area range of 
+US interests at stake 
+<https://www.bloomberg.com/news/articles/2026-08-04/bessent-s-yen-rescue-to-boost-us-pressure-on-japan-trade-rates?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ in helping Japan pull the yen back from near four-decade lows against the 
+dollar. Meanwhile, watch out forwhether the yen can strengthen beyond 155 per 
+dollar 
+<https://www.bloomberg.com/news/articles/2026-08-04/after-historic-intervention-155-emerges-as-yen-s-next-big-test?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+, a threshold strategists view asthe key test for the rally’s staying power 
+<https://www.bloomberg.com/news/videos/2026-08-04/bofa-japan-determined-to-break-yen-at-155-video?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325#:~:text=Shusuke%20Yamada%2C%20Chief%20Japan%20FX%20and%20Rates%20Strategist,with%20Shery%20Ahn%20on%20Bloomberg%3A%20The%20Asia%20Trade.>
+. Already, theyen has given back some 
+<https://www.bloomberg.com/news/articles/2026-08-03/stock-market-today-dow-s-p-live-updates?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ of its recent advance that was triggered by US and Japanese intervention.
+
+HSBC will consider boosting its bonus pool for bankers if strong performance 
+continues, CEO Georges Elhedery said. The London-headquartered bankannounced a 
+fresh stock buyback 
+<https://www.bloomberg.com/news/articles/2026-08-04/hsbc-to-consider-hiking-bonus-pool-if-performance-keeps-up?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ and raised its cost-cutting target as it reported quarterly earnings that beat 
+estimates. Its pretax profit for the three months through June rose to $10.1 
+billion, bolstered by gains in banking and wealth revenue. Watch theinterview 
+with Elhedery here 
+<https://www.bloomberg.com/news/videos/2026-08-04/hsbc-s-elhedery-on-buybacks-and-vision-for-bank-overhaul-video?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+.
+
+Prabowo Eyes Bank Indonesia Chief Aligned With His Goals
+
+Granted independence after the 1997 Asian financial crisis, Indonesia’s 
+central bank remained one of the few institutions to retain autonomy since 
+Prabowo Subianto became president two years ago. Now it looks set to fall more 
+directly under his sway.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-08-03/prabowo-eyes-indonesia-central-bank-chief-aligned-with-his-goals?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+India will seek parliamentary approval for tax changes to spur foreign 
+investment and local manufacturing, according to people with knowledge of the 
+matter, as Prime Minister Narendra Modi works to refocus the administration on 
+his economic agenda after recent student protests. Read more aboutthe bills 
+that lawmakers will seek to clear here 
+<https://www.bloomberg.com/news/articles/2026-08-04/modi-seeks-sweeping-tax-cuts-for-electronics-firms-global-funds?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+. Modi has been taking a series of steps to stem outflows and support the 
+rupee, and urgency has built after the US-Iran war to cushion the economy and 
+make it resilient to external shocks.
+
+Apple exceeded $10 billion in annual sales in India for the first time last 
+fiscal year, underscoring surging demand for its pricey devices in a market 
+where it’s steadily ramping up its retail network. Revenue grew at double-digit 
+percentage rate in the 12 months through March from about $9 billion a year 
+earlier, a person familiar with the matter told Bloomberg News. Apple’smarquee 
+iPhones accounted for a significant majority of the sales 
+<https://www.bloomberg.com/news/articles/2026-08-04/apple-s-india-sales-top-10-billion-on-widening-retail-push?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+, while demand for iPads and MacBooks also rose, the person said.
+
+Hormuz Traffic at a Trickle as Ship Attacks Heighten Concerns
+
+Observable traffic transiting the Strait of Hormuz remained at a trickle as 
+attacks on vessels and Iranian threats heightened safety concerns for 
+shipowners and crews considering a trip through the waterway.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-08-04/hormuz-traffic-at-a-trickle-as-ship-attacks-heighten-concerns?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Saudi Aramco reported a 33% increase in second-quarter profit as it benefited 
+from a war-driven surge in oil prices, while keeping exports flowing through a 
+pipeline that bypasses the Strait of Hormuz. Adjusted net income rose to $33.4 
+billion, from $25.2 billion a year earlier, beating analysts’ profit estimates 
+of $31.1 billion compiled by Bloomberg. Benchmark Brent crude averaged almost 
+$97 a barrel during the quarter, as the closure of Hormuz caused the biggest 
+oil supply disruption in history. That generated rising profits for Aramco as it
+redirected most exports to the Red Sea 
+<https://www.bloomberg.com/news/articles/2026-08-04/aramco-profit-jumps-33-as-us-war-with-iran-boosts-oil-prices?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+, but now it faces further risks as Yemen’s Houthi group threatens to attack 
+tankers using that route.
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=19247822&m=11b724c487f61753eb1a7a4a5f3ef261&p=08042026091941&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=19247822&m=11b724c487f61753eb1a7a4a5f3ef261&p=08042026091941&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+What You’ll Need to Know Tomorrow
+
+Technology
+
+Huawei’s Top Scientist Warns of Chip Limit Nvidia Will Soon Face
+ 
+<https://www.bloomberg.com/news/articles/2026-08-04/huawei-s-top-scientist-warns-of-chip-limit-nvidia-will-soon-face?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Investing
+
+Big AI Bets Divide Venture Capital, Leaving Smaller Funds Behind
+ 
+<https://www.bloomberg.com/news/features/2026-08-04/big-ai-bets-divide-venture-capital-leaving-smaller-funds-behind?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Cars
+
+Toyota Unveils $6.3 Billion Buyback, Raises Profit Outlook
+ 
+<https://www.bloomberg.com/news/articles/2026-08-04/toyota-unveils-6-3-billion-buyback-raises-profit-outlook-earnings-auto?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Bloomberg Opinion
+
+Keep It Simple and Look to the Earnings
+ 
+<https://www.bloomberg.com/opinion/newsletters/2026-08-04/stock-swings-keep-it-simple-and-look-to-the-earnings?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Deals
+
+India Eyes Up to $3.3 Billion in Insurance Giant Stake Sale
+ 
+<https://www.bloomberg.com/news/articles/2026-08-03/india-seeks-to-raise-at-least-1-3-billion-in-lic-share-sale?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Markets
+
+Race for Diaspora Dollars Pumps Up India’s Bond, Loan Markets
+ 
+<https://www.bloomberg.com/news/articles/2026-08-04/race-for-diaspora-dollars-pumps-up-india-s-bond-loan-markets?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Energy
+
+Oil Advances as Trump Touts Iran Negotiations and Hormuz Flows
+ 
+<https://www.bloomberg.com/news/articles/2026-08-03/latest-oil-market-news-and-analysis-for-aug-4?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+For Your Commute
+
+Asia’s Energy-Starved Nations Go Dark as Hormuz Tensions Drag On
+
+The Iran conflict has hit countries least equipped to absorb a global shock.
+Keep reading 
+<https://www.bloomberg.com/news/features/2026-08-03/asia-s-energy-starved-nations-go-dark-as-hormuz-tensions-drag-on?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Get more: Check out Bloomberg’s Emerging, a monthly podcast series hosted by 
+Menaka Doshi and Haslinda Amin on the rising economies shaping the global 
+future. You can watch ithere 
+<https://www.bloomberg.com/btv/series/bloomberg-emerging?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ or listen on iHeart <https://www.iheart.com/podcast/1119-emerging-338347317>, 
+Apple <https://podcasts.apple.com/us/podcast/emerging/id6788408143>, Amazon 
+<https://music.amazon.com/podcasts/cbcdeabc-26d1-4daa-b1ee-92a0411584fe/emerging>
+,or Spotify <https://open.spotify.com/show/033LpKgmjTCANHGFyfR6x7>.
+
+More from Bloomberg
+
+Enjoying Evening Briefing? Check out these newsletters:
+
+ * On Books 
+<https://www.bloomberg.com/account/newsletters/on-books?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+, from Bloomberg Weekend, for reviews and recommendations to expand your 
+thinking. Also:Weather Watch 
+<https://www.bloomberg.com/account/newsletters/weather-watch?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ to get an edge on the risks of the changing climate
+ * Next Japan 
+<https://www.bloomberg.com/account/newsletters/next-japan?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ for an inside view of the forces reshaping Japan, and what’s next for its 
+businesses, markets and consumers
+ * AI Today 
+<https://www.bloomberg.com/account/newsletters/ai-today?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ for a chronicle of the disruptions and threats of AI on businesses, workers, 
+governments and economies
+ * Money 
+<https://www.bloomberg.com/account/newsletters/money?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ for insights, ideas and tools for doing more with your money
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260804&utm_content=7325>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ for key news before the trading day starts there
+ * Singapore Edition 
+<https://www.bloomberg.com/account/newsletters/singapore-edition?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+,India Edition 
+<https://www.bloomberg.com/account/newsletters/india-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260804&utm_content=7325>
+ andHong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260804&utm_content=7325>
+ for insights into some of Asia’s most dynamic economies
+ * Next China 
+<https://www.bloomberg.com/account/newsletters/next-china?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260804&utm_content=7325>
+ for dispatches from within the world’s second-largest economy on where China 
+stands now — and where it’s going next
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260804&utm_content=7325>
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://bsky.app/profile/bloomberg.com> <https://x.com/business> 
+<https://www.instagram.com/bloombergbusiness/> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+
+
+You received this message because you are subscribed to Bloomberg’s Evening 
+Briefing Asia newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=NLshare&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260804&utm_content=7325>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/Qq4Wfy8ADpo5zKwnLTYQqV26mjcrTOJrRRDRPkL8PEJzvWhKc4LQmNXRbLdiQcm1HvpyABvKjFqGUGTz8oT_mmUo4_dLNcG_3Va4F2UFk3v132dRIkhGQxjR5hHLri5zlqefIFTTBauV65AsrvEUK2PqXtkMxxtLXHHR_jtq3ZasAkt3NLrjiaSGQ1I9Ys9JSKCPhfFTdTxk5OvtNmD18YJTyn8Tk3Zc3IsDEiMqk28jT6jLcc2cn83Yvnw1RU_-kLUD61OXtT5X9w_zQlrYFZku3ipDNJJ0GFl1-bjagBY-EkRR_ftj5kDcHXRzMoYBmjHvCsm96qVw3zK96G5eO4vBoKViRW2d/brYlkY0MNQ9epkzyar9VyP5FO6HHcL1u/23>
