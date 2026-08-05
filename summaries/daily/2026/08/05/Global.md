@@ -1,0 +1,11 @@
+• Brent crude fell 11% from Monday's open on growing optimism over a Strait of Hormuz deal, though the Houthis issued fresh shipping threats, partially reversing the move.
+• A strengthening El Niño is on track to become the most powerful in 76 years, posing compounding risks to economies already strained by the Iran conflict.
+• Former senior officials from the UK, France, Germany, and Russia met in Vienna last month to explore conditions for Ukraine peace talks.
+
+**Hormuz and Energy Markets**
+
+The emerging framework — in which Iran and Oman would reopen the Strait under fees framed as ecological and management charges rather than tolls — appears close to formal announcement. The US pulled back from a planned military offensive over the weekend, which analysts interpret as a signal that Washington lacks the political will to escalate further, particularly as November midterms approach. Analysts describe the arrangement as strategically costly but practically payable: it effectively monetizes a critical global chokepoint without US military action, while reducing the uncertainty that has weighed most heavily on markets. Inflation swaps have declined sharply since the deal began taking shape, and the S&P 500 has returned to all-time highs. Whether the arrangement holds — and whether Iran can be deterred from escalating its demands — remains genuinely uncertain.
+
+**El Niño and Climate Risk**
+
+The convergence of a record-strength El Niño with a global economy already stressed by conflict-related supply disruptions represents a meaningful tail risk. Emerging markets face the most direct exposure, with food security, hydropower generation, and inflation all vulnerable. Europe's own climate stress is evident in record-low Rhine and Danube levels, which are simultaneously constraining industrial output and threatening nuclear power generation. These events are not isolated — they reflect a structural shift in climate conditions that is broadening the range of economies and supply chains exposed to weather-related disruption.
