@@ -1,0 +1,11 @@
+• Colombia inaugurated Abelardo de la Espriella as president, who campaigned on fiscal austerity and zero-tolerance crime policy amid a widening budget deficit and deteriorating security environment.
+• The Trump administration sanctioned eight additional Cuban officials, including military personnel linked to China and Russia.
+• Mexican authorities detained former governor Ángel Aguirre over concealment of evidence in the 2014 Ayotzinapa student disappearances case.
+
+**Colombia's New Government**
+Colombia's inauguration of President De la Espriella marks the region's latest rightward turn, but the governing environment he inherits is structurally challenging. A widening fiscal deficit, persistent inflation, a deteriorating security situation, and a congress outside his coalition's control constrain his room for maneuver from the outset. His agenda draws explicitly from Milei's austerity playbook and Bukele's security model, yet the regional experience — including in Argentina, Peru, and Chile — suggests that electoral mandates for change do not automatically translate into governing capacity. Critically, proximity to Washington has provided less material support than anticipated; the White House has demonstrated limited appetite for underwriting allied governments' economic or security challenges, leaving De la Espriella largely without an external backstop.
+
+**Regional Political Economy**
+China alleged US interference in Argentina after American embassy officials opposed a Huawei telecoms contract expansion — an episode illustrating the intensifying US-China competition for influence in Latin America. The Trump administration's continued pressure on Cuba via targeted sanctions reflects ongoing use of economic tools in the region. These developments collectively reinforce a picture of Latin America navigating competing external pressures — US ideological alignment on one side, Chinese economic engagement on the other — with limited leverage to extract concrete benefits from either.
+
+---
