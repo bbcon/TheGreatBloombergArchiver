@@ -1,0 +1,11 @@
+• AI-related trade deficit in computers, accessories, and semiconductors approached $400 billion over the trailing 12 months through June, nearly triple the level of two years prior — no consensus figure, but the scale marks a structurally significant external imbalance.
+• Tech sector effectively exempt from tariff regime that applies to most other import categories, creating a notable internal inconsistency in the administration's trade strategy.
+• Fed economists warn the equipment import surge "shows little sign of abating," raising prospects of a prolonged deterioration in the current account.
+
+**AI Import Surge and Trade Deficit Dynamics**
+
+June trade data revealed the full scale of the AI buildout's import footprint: the combined US deficit in computers, accessories, and semiconductors has nearly tripled over two years, approaching $400 billion on a trailing 12-month basis. This figure understates the true drag, as data center construction also requires substantial imports of cooling systems and power equipment. A Minneapolis Fed study by economist Michael Waugh found that while tariffs on data center kit have risen modestly — primarily on power and cooling devices rather than core computing hardware — the effective rate remains a fraction of what most other import categories face. Supply chains have shifted toward Taiwan and Mexico, with Chinese market share declining sharply, but domestic production capacity has not meaningfully expanded.
+
+**Policy Tension**
+
+The administration's stated long-term goal of promoting "full-stack AI export packages" sits uneasily alongside the import intensity of current AI investment, which the Coalition for a Prosperous America estimates at 70–90% of total AI investment value. Fed economists caution the resulting current-account deterioration may persist longer than typical technology-driven investment cycles, which historically unwind over "several quarters." Whether US AI services surpluses — annual telecom and information services surplus exceeded $20 billion through March, roughly double the 2023 level — can offset the goods deficit remains an open question.

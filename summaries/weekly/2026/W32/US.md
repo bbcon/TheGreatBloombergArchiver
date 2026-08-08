@@ -1,0 +1,16 @@
+• July ISM Manufacturing beat consensus, posting its fastest expansion in over four years on strong production, new orders, and hiring — a clear positive surprise for the economic outlook.
+• July nonfarm payrolls (released Friday) carried consensus near 80,000, against a June print of 57,000; the asymmetric read-through created significant uncertainty around Fed policy heading into the September meeting.
+• The AI-related trade deficit in computers, accessories, and semiconductors approached $400 billion on a trailing 12-month basis through June, nearly triple the level of two years prior — a structurally significant external imbalance.
+• The S&P 500 reached a new all-time high on Tuesday, recovering $3.5 trillion in Nasdaq 100 market cap over four sessions, driven by blowout hyperscaler earnings and Hormuz deal optimism.
+• Real 30-year Treasury yields hit their highest since 2008, raising mortgage costs and adding to economic headwinds even as equity markets held near records.
+
+**Economic Data**
+July ISM Manufacturing printed above consensus — the fastest expansion in over four years — on broad-based gains in production, employment, and new orders. The result was a notable positive surprise given headwinds from elevated oil prices and tight financial conditions. June trade data was more sobering: the overall deficit narrowed 5.6% to $73.3 billion as imports fell for the first time this year, but the bilateral gap with China widened, and the AI buildout's import footprint has nearly tripled the tech-sector deficit over two years. Fed economists warned that equipment import demand shows little sign of abating, raising the prospect of a prolonged current-account deterioration that services surpluses — though growing — may not fully offset.
+
+**Monetary Policy**
+Fed Chair Warsh's mixed post-meeting communication left markets without clear guidance. ISM services data showed elevated price pressures, and the New York Fed's three-year consumer inflation expectations reached their highest since 2022, while long-run five-year/five-year breakevens held near 2% — a divergence that reflects an unresolved tension rather than a resolved one. Warsh's reported review of reducing scheduled meetings from eight to six adds further uncertainty. St. Louis Fed President Musalem reinforced the hawkish case on Thursday, while Trump publicly reiterated his preference for lower rates, underscoring the political dimension around policy.
+
+**Equity and Credit Markets**
+Q2 EPS growth of 47.4% year-on-year provided the fundamental anchor for the rally. Microsoft and Amazon drove the initial rebound; Palantir surged 14.8% after hours on Tuesday on raised commercial guidance. AMD fell 8.4% on a soft outlook, and storage names Sandisk and Western Digital declined 8.9% and 15% respectively on Friday after disappointing revenue guidance. BofA's sentiment gauge reached its most extreme bullish reading since 2021 — a potential contrarian signal, though elevated positioning alone does not determine near-term direction. A sophisticated wave of voice-phishing attacks targeted major hedge funds including Point72, Millennium, and Citadel during the week.
+
+---

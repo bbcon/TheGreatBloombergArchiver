@@ -1,0 +1,16 @@
+• China July exports surged 23.9% year-on-year on Thursday, sharply above consensus, led by chip shipments (+117%) and computer exports (+67%) — contrasting starkly with a services PMI of 50.4, the softest in nearly two years.
+• The ADB cut its 2026 developing Asia GDP growth forecast to 4.9% from 5.1% on Monday and raised its inflation outlook to 4.3% from 3.6%, citing sustained Hormuz-related damage.
+• The joint US-Japan yen intervention — the largest single-day operation on record at $52.8 billion — was losing traction by Thursday, with USD/JPY retreating to 158.40 from a post-intervention peak of 155.23.
+• South Korea's Kospi fell 4.6% on Wednesday after Sandisk's disappointing guidance rippled through memory names, extending the index's decline from its June peak to 31%.
+• Philippine Q2 GDP expanded just 2.3% year-on-year on Thursday, missing the 2.9% consensus by a significant margin.
+
+**China: Trade Strength Against Domestic Softness**
+China's export data delivered a striking macro contrast: external demand — particularly for technology hardware tied to the global AI buildout — remains robust, while the domestic economy continues to soften. Manufacturing PMI contracted unexpectedly in July for the first time in five months, and the services PMI barely held in expansion at 50.4. Beijing has designated domestic consumption a 2026 priority, but structural reform on that scale is a multi-year undertaking. Alibaba's release of Qwen3.8-Max — built on 2.4 trillion parameters and ranking competitively against US frontier models — reinforces the view that Chinese AI development is narrowing the capability gap at materially lower computational cost, intensifying geopolitical friction ahead of a planned Trump-Xi summit in late September.
+
+**Japan, Korea, and Currency Pressure**
+The $52.8 billion intervention on July 31 — the first coordinated US-Japan operation since 2011 — has not held. By Thursday the yen had surrendered nearly half its gains, reflecting unchanged structural headwinds: a wide rate differential, Japan's debt dynamics, and persistent carry demand. Treasury Secretary Bessent encouraged Japan to utilize the Fed's FIMA Repo facility to extend firepower, a move former officials regard as unconventional. The September BOJ meeting remains the critical decision point; overnight index swaps implied roughly 60% probability of a hike. South Korea sits at the epicenter of the AI hardware cycle's volatility: the Kospi's 31% drawdown from peak reflects deteriorating confidence in the durability of memory demand, even as full-year earnings growth is forecast at 220%.
+
+**Southeast Asia and India**
+Southeast Asia manufacturing PMI rose to 52.8 in July — its fastest expansion since the Hormuz conflict began — bucking the softness in China. The RBI held its benchmark rate unchanged for the fourth consecutive meeting, trimming its inflation forecast while nudging up its growth outlook, reinforcing India's status as a regional growth anchor. The Philippines, by contrast, faces the dual challenge of the slowest growth and fastest inflation among Southeast Asia's major economies after its Q2 miss.
+
+---

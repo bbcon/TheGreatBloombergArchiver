@@ -1,0 +1,5 @@
+• Deforestation pressure from Brazil's Amazon conservation efforts appears to be displacing agricultural encroachment into Bolivia, raising regional ecological and political economy concerns.
+
+**Amazon Spillover Dynamics**
+
+Reporting indicates that Brazil's intensified rainforest protection measures may be producing an unintended cross-border consequence: agricultural and extractive activity is migrating into Bolivia rather than being curtailed. This dynamic illustrates the limits of unilateral conservation policy in geographically contiguous ecosystems and may complicate regional climate diplomacy. The economic dimensions — land use pressure, commodity production incentives — remain the primary drivers, and a record El Niño is reported to be compounding stress on fragile regional economies already squeezed by elevated commodity price volatility linked to the US-Iran conflict.

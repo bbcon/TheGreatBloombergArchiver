@@ -1,0 +1,14 @@
+• Brazil's central bank cut interest rates during the week, diverging from Mexico, Colombia, and Chile, which held — reflecting differentiated inflation profiles across the region.
+• Colombia inaugurated President Abelardo de la Espriella on Friday, who campaigned on fiscal austerity and zero-tolerance crime policy, inheriting a widening deficit and deteriorating security environment.
+• Argentina's central bank renewed its approximately $19 billion currency swap line with the People's Bank of China for five years on Thursday, securing a critical reserve buffer through the 2027 presidential election.
+
+**Brazil: Monetary Easing and Political Risk**
+Brazil's rate cut marks a continuation of its easing cycle, supported by relative disinflation progress versus regional peers. The political backdrop, however, adds complexity: Brazil formally accused Washington and Buenos Aires of interfering in its October presidential election, complicating trade and diplomatic relationships at a sensitive moment. President Lula faces a tight contest against Senator Flávio Bolsonaro, whose ties to Trump and Milei have geopolitical dimensions. A Bolsonaro victory would represent the most consequential shift in Latin American political alignment in years.
+
+**Argentina**
+Argentina's reserve position remains structurally vulnerable. The China swap renewal stabilizes the near-term position without requiring fresh IMF engagement but deepens Beijing's financial footprint. Milei's foreign land-ownership liberalization bill was diluted by lawmakers mid-week amid public backlash, reflecting the limits of executive momentum against nationalist sentiment. Chinese EV sales are surging — BYD entered the top-ten seller rankings after Milei implemented a 50,000-unit annual tariff-free quota — illustrating how cheap imports are serving as a deliberate disinflationary tool, even as hard-currency reserve adequacy remains a latent concern.
+
+**Colombia and Regional Dynamics**
+De la Espriella's governing environment is structurally challenging from the outset: a congress outside his coalition, persistent inflation, and deteriorating security constrain the austerity and Bukele-style security agenda he campaigned on. Washington has demonstrated limited appetite for underwriting allied governments' economic or security challenges, leaving him without a meaningful external backstop. Across the region, El Niño's strengthening — potentially the most powerful in 76 years — poses material risks to agricultural output and energy systems; Peru's anchovy fishery disruption and Colombia's energy infrastructure pressure are early, tangible costs.
+
+---

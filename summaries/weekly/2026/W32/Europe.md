@@ -1,0 +1,15 @@
+• German factory orders rose 3.1% in June on Wednesday, beating consensus after a downwardly revised 0.3% gain in May, strengthening the case for a tentative industrial recovery.
+• European natural gas storage fell to its lowest seasonal level in nearly two decades, while the Rhine dropped to its lowest water level in approximately 150 years — compounding energy stress heading into the heating season.
+• The US Treasury's sale of euros to fund yen intervention without prior ECB notification prompted senior European officials to describe the move as an unprecedented breach of G7 coordination norms.
+• More than 25,000 people have died from extreme heat across Europe this year, with another heat wave forecast for the following week.
+
+**Germany and Macro Momentum**
+June factory orders — up 3.1% month-on-month, led by mechanical engineering and data-processing equipment — represent the period's most important European macro print and the clearest evidence that Germany's industrial recovery may be gaining traction. ING estimates that severely restricted Rhine navigation reduces German industrial production by up to 1% in an affected month, which creates a meaningful near-term downside risk to translating new orders into output. Bundesbank President Nagel's reported progress toward the ECB leadership adds a domestic political dimension; a Bundesbank veteran at the helm would likely reinforce the institution's hawkish orientation at a moment when European inflation dynamics remain unsettled.
+
+**Climate and Energy Stress**
+Europe's energy system is under simultaneous, compounding pressure. The Rhine at 150-year lows disrupts barge transport of chemicals, oil products, and coal along the Rotterdam-to-Ruhr corridor. High river temperatures have forced French nuclear plants offline, while Hungary's Paks facility shut temporarily after the Danube fell critically low — briefly pushing Hungarian power prices above €500/MWh. Romanian authorities deployed military explosives to redirect Danube flows to the Cernavoda nuclear plant. Nordic hydro reserves are depleted. Belgium became wholly dependent on Russian LNG in July, a politically sensitive development given the EU's planned Russian LNG ban in 2027. Gas storage at a 20-year seasonal low leaves Europe with limited buffer.
+
+**Politics and Corporate**
+Germany's fractured political landscape — with the AfD positioned for strong state election gains in September and Berlin's Left party leading on affordability — reflects persistent social strain. Spain's Ceuta enclave crossing triggered demands from Berlin and Rome for restored border control, while Prime Minister Sánchez faces deepening political isolation. In corporate news, HSBC's Q2 pretax profit of $10.1 billion beat consensus on Monday, with a $1 billion buyback announced. Lufthansa fell 11% on Monday after abandoning capacity growth plans on fuel volatility. Zalando sank 17% mid-week on weaker-than-expected sales, consistent with ECB research showing eurozone households have curtailed spending.
+
+---
