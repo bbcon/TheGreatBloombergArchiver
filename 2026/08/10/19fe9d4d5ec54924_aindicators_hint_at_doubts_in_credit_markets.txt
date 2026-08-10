@@ -1,0 +1,297 @@
+Subject: AIndicators hint at doubts in credit markets
+Date: Mon, 10 Aug 2026 04:01:03 +0000
+
+Points of Return 
+ To get John Authers’ newsletter delivered directly to your inbox, sign up 
+here. The S&P 500 starts the week at an all-time high, up 13.3% fo 
+
+View in browser <https://bloom.bg/4qf8NyY> 
+ <https://bloom.bg/3REuJXt> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=19323151&m=11b724c487f61753eb1a7a4a5f3ef261&p=08102026040102&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=19323151&m=11b724c487f61753eb1a7a4a5f3ef261&p=08102026040102&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/4fW1YNW> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ * The  S&P 500 <https://bloom.bg/4wP5fpo> starts the week at an all-time 
+high, up 13.3% for the year. 
+ *  US payrolls <https://bloom.bg/3SjQCLT> dropped slightly last month,  
+bringing down rate hike fears <https://bloom.bg/4xPWCeD> with them. 
+ * There’s still no deal on the  Strait of Hormuz <https://bloom.bg/4hoWfCO>. 
+ *  Berkshire Hathaway <https://bloom.bg/4huniN3> has made its biggest share 
+buyback since 2021. 
+ * AND: Streaks might matter in  sport <https://bloom.bg/4g6NGKB> — but not in 
+ pop music <https://bloom.bg/4cui1Bs>. 
+
+
+
+AIndicators
+
+Investors have awakened to the financial risks of the artificial intelligence 
+buildout, and they have a deep well of precedent to draw on. Like all 
+transformational technologies, it must be financed with borrowed money long 
+before it can generate a return. More than 150 years ago, financierJay Cooke 
+<https://bloom.bg/4hSWxBW>’s ambitious campaign to fund the  Northern Pacific 
+Railroad <https://bloom.bg/3SoviVx> began to unravel not because railroads were 
+a bad idea, but because the bonds financing it traded at steep discounts for 
+months. His firm’s collapse triggered thePanic of 1873 
+<https://bloom.bg/4g0d3gK>. As Alberto Gallo of Andromeda Capital Management 
+points out, history is full of worthy projects that weren’t worthy investments:
+
+These projects benefited the wider population later on but ended up bringing 
+insufficient financial rewards to their initial capital providers, especially 
+when capital was in the form of credit.
+
+Today’s debt-financed AI buildout isn’t necessarily destined for the same 
+reckoning. But credit markets have a habit of registering doubt before broader 
+markets and should be heeded. Spreads revealed mounting strain long before 
+newspapers declared a financial panic in 1873. They are performing much the 
+same function today. As Barclays shows, main AI players’ credit spreads have 
+risen sharply in recent weeks. It’s not clear whether this is temporary or the 
+start of something consequential, but July’s huge turbulence, which has 
+nonetheless left the S&P 500 at a fresh all-time high, leaves both 
+interpretations open:
+
+Virtually nothing matters more to markets at present than the AI buildout. 
+It’s such a sudden and massive stimulus for the US that it has shifted 
+macroeconomic data. Columbia Business School’sStijn Van Nieuwerburgh 
+<https://bloom.bg/4wOdOAK> argues that without it, the US would be in 
+recession. He estimates AI infrastructure investment at roughly 2.8% of GDP — 
+larger than therailroad boom <https://bloom.bg/4xvseWn> — and it’s projected to 
+keep rising:
+
+Will credit markets permit spending on the scale that AI’s backers want? 
+Points of Return is starting a monitor of metrics of credit market confidence 
+in AI, and in spending itself. We’ll call it AIndicators (brand names are 
+always good) and hope this will be useful in the months ahead. Feedback will be 
+gratefully accepted as we try to get this right.
+
+Spreads aren’t signaling a crisis just yet. Their recent widening nevertheless 
+suggests investors are demanding greater compensation for financing the AI 
+buildout. State Street Investment Management’s Michael Arone argues the 
+spending boom is reaching a mature phase, even if capital expenditures keep 
+rising:
+
+Credit is quietly repricing the AI boom: Spreads are wider and yields higher, 
+not at crisis levels, but enough to show investors want to be paid for the risk 
+that big AI spenders may not be the eventual winners.
+
+CapEx
+
+The concentration of debt financing is hard to ignore. The big five 
+hyperscalers – Amazon.com Inc., Alphabet Inc., Meta Platforms Inc., Microsoft 
+Corp. and Oracle Corp. – are expected to spend more than $1 trillion on capex 
+next year. That figure begins to approach the Pentagon’sproposed $1.5 trillion 
+expenditure <https://bloom.bg/3TNkeBI>:
+
+An expenditure of that magnitude will inevitably move bond and corporate 
+credit markets. Barclays strategists Dominique Toublan and Andrew Keches find 
+that six tech groups (the five above plus SpaceX) account for 8.4% of the 
+duration-times-spread (DTS) – which combines a bond portfolio’s credit spread 
+with its interest-rate duration to measure overall spread risk – of the US 
+investment-grade corporate bond market, based on data through July 31. By 
+comparison, the six largest banks — historically far more important to credit — 
+account for just 7.3% of the Bloomberg US Corporate Bond Index’s DTS:
+
+Cash Flow
+
+Hyperscalers’ free cash flows have fallen, giving them much less room for 
+maneuver. Hence investors’ demand for proof that the model is paying off, and 
+willingness to punish any slippage. Alphabet reported negative free cash flow 
+in its latest quarter, for the first time since going public more than two 
+decades ago. Meta Platforms disappointed as its second-quarter free cash flow 
+plunged 91% year-over-year to $784 million. Others weren’t immune, although the 
+complaint that Apple hasn’t done enough on AI does have the corollary that it 
+still enjoys very healthy free cash flows:
+
+Stock Markets
+
+Meanwhile, stock markets constantly reassess who will profit most. Since 
+ChatGPT’s 2022 debut, investors have successively rewarded companies building 
+AI models, then those supplying the infrastructure, and those making the chips 
+to power it. That’s now turned into unease about whether they can ever earn an 
+adequate return.
+
+So far this year, concerns that soaring capital spending was depriving the 
+companies of free cash flow have combined with worries about profits to curb 
+the Magnificent Seven stocks. Blowout second-quarter earnings, particularly for 
+Microsoft, which had lagged badly, reignited some enthusiasm:
+
+Winners and Losers
+
+The spending weighing on cash flows will pay for itself if demand for 
+computing power increases as the hyperscalers hope. But past industrial 
+revolutions suggest linear extrapolation won’t necessarily happen. Drawing 
+parallels to telecoms in the late 1990s, Man Group’s Matt Rowe argues some 
+degree of overinvestment in AI infrastructure is inevitable. What matters is 
+how it’s financed and absorbed by credit markets:
+
+You’re going to see some M&A, partnerships, some failure, and ultimately more 
+consolidation and prices coming down… I think we’re partway through that. We 
+haven’t seen any marquee failures, but seeing credit spreads widen could be the 
+next phase of the cycle.
+
+If the evidence investors seek doesn’t arrive or proves unconvincing, they’ll 
+probably do what they’ve done throughout the AI cycle: pivot toward areas with 
+stronger near-term fundamentals (as in the recent boom in chipmakers), rather 
+than abandon AI altogether. This could favor “pick-and-shovel” firms involved 
+in data center construction, memory chips, or providing power infrastructure:
+
+Token Usage
+
+The bottom line is whether people use the product once it’s ready, and what 
+they pay for it. InField of Dreams <https://bloom.bg/4wQqze8> terms, the 
+industry is building it; will they come? A Federal Reserve study published in 
+April estimates that AI adoption among US businesses reached 18% by the end of 
+2025, pointing to substantial room for further expansion. Demand tells a 
+similar story. Data fromOpenRouter <https://bloom.bg/4bGL2K2>, which tracks 
+consumption of tokens (the basic units of text processed by large language 
+models), show usage has more than tripled since January:
+Source: OpenRouter 
+Does soaring token usage necessarily translate into soaring revenues for 
+providers of foundational models? Not quite. The LLM Token Expenditure Index, 
+which measures the effective expenditure on large language models by combining 
+token prices and usage, reveals the disconnect. As token volumes surge, falling 
+prices and migration toward cheaper models suggest monetization has not kept 
+pace with adoption:
+
+What Next?
+
+
+In the near term, the greatest risks come from rising long-term Treasury 
+yields, and the possibility of tighter monetary policy by the Fed. This could 
+make life harder for those who borrowed most heavily.
+
+JPMorgan estimates that $4.1 trillion of the $5.5 trillion in AI capex will be 
+debt-financed, so rate hikes would essentially pile on the costs of this 
+buildout, putting a spoke in the wheels of the massive investment cycle.
+
+Historically, hyperscalers have been very profitable and had no difficulty 
+funding most investment from their own balance sheets using cash flows, equity 
+and traditional debt markets. The AI buildout has forced them to look beyond 
+conventional financing.
+
+Columbia Business School’s Van Nieuwerburgh argues that while these financing 
+structures have protected the mega caps’ balance sheets, they may be shifting 
+risks elsewhere. Their opacity, he says, makes it hard to assess where leverage 
+sits — and whether a reverse for AI could trigger losses across the broader 
+economy:
+
+We were making the exact same argument in the financial crisis when we talked 
+about mortgage-backed securities… The argument was instead of having all these 
+mortgages sit on bank balance sheets, why don’t we securitize them and spread 
+them to other parts of the financial system that have less leverage. What we 
+didn’t appreciate at the time is that a lot of that risk transfer actually 
+didn’t take place and the banks kept, often through the back door, exposures to 
+these structures.
+
+We will update the AIndicators in due course.
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=19323151&m=11b724c487f61753eb1a7a4a5f3ef261&p=08102026040102&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=19323151&m=11b724c487f61753eb1a7a4a5f3ef261&p=08102026040102&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+Jobs
+
+This is not a normal US labor market. Jobs data published Friday showed 
+payrolls fell slightly last month. Companies aren’t hiring. But initial jobless 
+claims, our best real-time monitor of layoffs, were spectacularly low. There’s 
+minimal firing to go with the lack of hiring:
+
+The unemployment rate remains low, barely higher than immediately before the 
+pandemic. This isn’t about demographics, as it’s also true of the joblessness 
+rate among people of prime working age. Exclude the Covid spike, driven by 
+causes outside the economic cycle, and the jobs market looks far less cyclical 
+than it was historically:
+
+The payrolls data have helped calm expectations of rate hikes. This isn’t the 
+stuff of which intense inflationary pressure is made:
+
+But the overall picture is that the labor market gives very little reason to 
+alter monetary policy in either direction. This comment from Carl Weinberg of 
+High Frequency Economics sums it up:
+
+Recently laid-off workers are finding jobs as fast as the economy is creating 
+new ones. That suggests the labor market is still balanced. When claims reach 
+300,000 or 400,000, give us a call, and we will start to worry that layoffs 
+have risen to levels consistent with a recession. Until then… relax.
+
+Monetary policy will depend more on inflation, next installment due Wednesday 
+<https://bloom.bg/4cuhY8K>.
+
+
+
+ Survival Tips 
+
+
+
+On the subject of streaks: I wrote a jaded note on the Boston Red Sox’ 15-game 
+winning streak, which tied an 80-year-old record, suspecting it was driven by 
+randomness. OK, I got that wrong. The streak had a tangible effect on their 
+confidence, and they’ve just completed another nine-game streak.
+
+But streaks still count for naught in pop charts. The UK’s current number one 
+Rein Me In <https://bloom.bg/3U83yF7> has stayed there a record 20 weeks. 
+There’s nothing wrong with it — but nothing special to explain such longevity.
+Previous holders of this record <https://bloom.bg/4xvsgNZ> were also anodyne, 
+but many benefited from movie tie-ins:Everything I Do <https://bloom.bg/45d5heK>
+ by Bryan Adams (Robin Hood, Prince of Thieves), Whitney Houston’s I Will 
+Always Love You <https://bloom.bg/3S4YiBo> (The Bodyguard) and Love Is All 
+Around <https://bloom.bg/4xmnTEU>(Four Weddings and a Funeral). The same 
+exercise for the US Billboard chart yields another line-up ofbland fare 
+<https://bloom.bg/3U6nEQ1>. Any thoughts why? Have a great week everyone.
+
+More From Bloomberg Opinion
+
+ * Permabear Michael Burry <https://bloom.bg/4g3xpWG> Ignores a Crucial Fact 
+About US Stocks: Jonathan Levin 
+ * Western Allies Are About To Fail Ukraine <https://bloom.bg/4xsTfK2>, Again: 
+Marc Champion 
+ * Nolan Changed ‘The Odyssey’ <https://bloom.bg/45d53Eq> to Make a Point 
+About Leadership: Gautam Mukunda 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter. <https://bloom.bg/3FFDj1N>
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/PdjW6KtRsx3C23pTSiQR1z-x088w_7q--50neYI5Z_5Hu_OrOIvfkD36YPUcPRdx3J6HyApLFRzw0c0tIJn7G8Wjob1frlxG2gyTkgx-Odr1-q-pmS4DEQ14mpoRpuxVRM3e4syjr3VwJX0HFZNtVgPg4cQ2O4LBgxb_hipaFGeg7VsSLcWOpDLjWnPVo_FhhqlR4N_WhYfdGFCJkxK7f--s58aKegbmjDOAz8CF-hs6zxfCb3fxAnBhkW9rL893E-TEsJfavHZoOTDPG7sNPwZ5oH3sP-QzHrZ3QaSacz5a-hmOH-U17IJlAv-g_nDgzb7QFkPyk3Exahqdyox1538r6XjeYi33/5F8ctxPyyznMdEfxFKkQf1ocGvw3mx_s/23>
