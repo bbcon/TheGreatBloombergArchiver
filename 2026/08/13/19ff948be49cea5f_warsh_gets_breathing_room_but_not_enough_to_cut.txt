@@ -1,0 +1,282 @@
+Subject: Warsh gets breathing room, but not enough to cut
+Date: Thu, 13 Aug 2026 04:02:00 +0000
+
+Points of Return 
+ To get John Authers’ newsletter delivered directly to your inbox, sign up 
+here. US inflation was no higher or lower than expected in July. M 
+
+View in browser <https://bloom.bg/3TT6uWg> 
+ <https://bloom.bg/3TJJvwN> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=19378388&m=11b724c487f61753eb1a7a4a5f3ef261&p=08132026040159&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=19378388&m=11b724c487f61753eb1a7a4a5f3ef261&p=08132026040159&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/4hwKjyK> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ *  US inflation <https://bloom.bg/4qaRGOx> was no higher or lower than 
+expected in July. 
+ *  Markets <https://bloom.bg/4gaBPuM> see minimal chance that the Fed hikes 
+more than once this year. 
+ *  Democratic Socialists <https://bloom.bg/3S2gegg> stall — improving 
+Democrats’ chance to win the Senate. 
+ * Copper is back challenging  all-time highs <https://bloom.bg/4hwKkmi>. 
+ * AND: Music for an  eclipse <https://bloom.bg/3Sw28DV>. 
+
+
+
+Chronicle of a Hike Foretold
+
+US inflation has blindsided us many times since the pandemic. July 2026 was 
+not one of them. Very unusually, both headline and core inflation (excluding 
+food and energy) came inexactly as expected <https://bloom.bg/4qaRGOx> by a 
+consensus of economists. Falls in services and energy inflation helped bring 
+the headline down, but it remains above 3%. Here is our regular breakdown into 
+the four main inflation components, which you can reproduce with ECAN <GO> on 
+the terminal:
+
+The alternative measures of core or underlying inflation that we regularly 
+monitor all declined. That applies to the trimmed mean (excluding outlying 
+components in either direction), the median, an index of products and services 
+whose prices are “sticky” or difficult to reduce, and the Federal Reserve’s 
+favored “supercore” (services excluding shelter). But while the decline is good 
+news, theuncomfortable bad news <https://bloom.bg/4g7Is0R> remains that all 
+remain above 2.5%, as they have been ever since the pandemic.
+
+This is a marked change from the decade before Covid-19. If the Fed’s new 
+chairmanKevin Warsh <https://bloom.bg/4qbd1ra> is serious about treating 2% as 
+a target, it’s difficult to see that the central bank can go much longer 
+without taking some concrete measure to get there — which would mean hiking 
+rates.
+
+Not only was this a predictable report, then, but it also required a classic 
+economist’s “on the one hand and on the other” response. Here’s Josh Hirt of 
+Vanguard:
+
+This CPI report is reassuring because it confirms that some of the inflation 
+pressures we saw earlier this year have begun to ease. At the same time, we’re 
+not yet at a point where inflation is clearly returning to the Fed’s target.
+
+The lack of surprises confirmed the prior belief that there was no 
+justification whatever for rate cuts. Carl Weinberg of High Frequency Economics 
+put this clearly:
+
+So… great… headline figures matched expectations. Disinflation is not 
+particularly apparent in core CPI since the start of the war with Iran. It was 
+all but invisible before the war. There is no case in this report for FOMC 
+policymakers to cut interest rates. 
+
+Combine this with labor market reports suggesting the US is operating at full 
+employment <https://bloom.bg/4g7SpLI>, and the only path for rates is upward. 
+That’s still the market’s base case, but there’s increasing certainty that 
+there will be only one more hike this year:
+
+This is probably about right. Warsh cannot delay action much longer, but these 
+numbers are sufficiently benign that he can get away without a hike at the next 
+meeting.
+
+Meanwhile, one detail from the report should demonstrate how much the 
+revolutionary goings-on in technology have complicated the job of predicting 
+price levels. For a generation, the prices of both software and devices have 
+followed a steady downward path. But software has suddenly stopped getting 
+cheaper.
+
+AI might well be disinflationary in the long run. But in the short run?
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=19378388&m=11b724c487f61753eb1a7a4a5f3ef261&p=08132026040159&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=19378388&m=11b724c487f61753eb1a7a4a5f3ef261&p=08132026040159&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+Up to a Point <https://bloom.bg/4g7EAgl>, Lord Copper
+
+Copper has been on a remarkable six-week rally that has brought it to an 
+all-time high for the fourth time this year. Its course has still been largely 
+horizontal since May, but strong fundamentals suggest it should only be a 
+matter of time before it jets off again. That in part is because the drivers of 
+the copper price are changing:
+
+For decades, a robust Chinese economy has meant strong demand from copper’s 
+largest consumer, and translated into strong prices. Beijing’s economic woes 
+have weakened that correlation, and the metal is fueling its latest rally 
+elsewhere.
+
+China hasn’t lost its influence over prices, of course. But there and beyond, 
+the ongoing massive AI buildout is a huge factor in the demand shift. Copper is 
+required in power distribution, cooling systems, server interconnects, and 
+building wiring. All told, the metal is said to account for approximately 6% of 
+total data-center capital expenditure. S&P Global Research forecasts copper 
+demand just for data centers will increase from 1.1 million metric tons last 
+year to 2.5 million by 2040:
+
+But AI-related demand is dwarfed by the huge energy transition — encompassing  
+electric vehicles <https://bloom.bg/4i6JxIU>, renewables, and grid 
+infrastructure. In general, EVs require nearly three times as much copper as 
+conventional cars, and their rapidly growing sales add to demand. Global EV 
+sales last year were 25% higher than total new-car sales in the US, the world's 
+second-largest new-car market.
+
+Altogether, global copper demand is expected to shoot up by about 50%, rising 
+to 42 million metric tons by 2040. Meanwhile,supply is expected to fall short 
+<https://bloom.bg/3RNExOZ> by as much as 10 million. Freedom Broker argues that 
+this will be driven by declining ore grades, limited large-scale discoveries — 
+even as the global copper exploration budget has increased in recent years — 
+and extended project development timelines averaging 17 years from discovery to 
+production:
+
+The first chapter of any economics textbook establishes that the price will go 
+up a lot if these predictions for supply and demand come true. Beyond the 
+long-term structural deficit, Washington’s tariffs on certain copper products 
+exacerbate rising prices. The US now imposes a 50% duty on semi-finished and 
+derivative copper products while, for now, exempting refined copper cathodes. 
+That could change following a Commerce Department review, which could pave the 
+way for tariffs of 15% in 2027 and 30% in 2028. Societe Generale’s Michael 
+Haigh notes the market has begun toprice this risk <https://bloom.bg/4hwKkmi>:
+
+US copper inflows hit a 12-year high in mid-2026 as traders rushed to 
+stockpile ahead of a possible tariff, and the policy direction looks firmly 
+skewed toward more duties rather than fewer, with the Commerce Department 
+simultaneously expanding Section 232 coverage to new derivative products and 
+opening entirely new metal fronts.
+
+This all adds to the upward pressure on overall inflation indexes. There 
+should be beneficiaries, most obviously the major producers Chile and Peru, 
+whose equity markets have historically tracked the red metal closely. This 
+helps to explain the rally in their stock markets over the past six weeks. 
+International investors tend to treat both nations as though they are very 
+large copper mines:
+
+Further rises could have a profound impact on both economies. Bank of 
+America’s Ezequiel Aguirre forecasts copper above $16,000 a ton by the middle 
+of next year — a further 10% increase from here. As about 30% of Peruvian 
+annual export revenues come from copper, that should help bring real gross 
+domestic product growth to 4.4%.
+
+—Richard Abbey
+
+
+Blue Wave
+
+The dog days will soon be over <https://bloom.bg/4fVDsOg>, as US politics is 
+about to provide a new wave of market turbulence. Midterms come in November, 
+and history suggests that a wave for Democrats should be close to inevitable. 
+Presidents in their second term always suffer major losses in Congress, and 
+with both chambers finely balanced that should normally mean a Democratic clean 
+sweep.
+
+That would be true even without the unpopular war in Iran, and even if 
+President Donald Trump didn’t have the lowest approval rating of his time in 
+office. But the path to a blue wave isn’t smooth. The problem for the Democrats 
+is the Senate, where they are defending the majority of the seats up for 
+election this time (and were last on the ballot in 2020, a good year for 
+Democrats when Joe Biden won the presidency). They need to flip four seats in 
+the full chamber. That’s a heavy lift, made harder by the party’s own internal 
+ructions.
+
+On prediction markets, their chances were seen to dip severely when their 
+original nominee in Maine, a blue state held by the Republican veteran Susan 
+Collins, was forced to withdraw after sexual assault allegations. Insurgent 
+campaigns by a range of avowed Democratic Socialists in other states, notably 
+Michigan, did further damage to their prospects.
+
+But in the last two weeks, the Democratic Socialists have sustained reverses. 
+Combine that with thelatest model from the highly influential poll aggregator 
+Nate Silver <https://bloom.bg/4hwWJql> that finds even Texas leaning toward the 
+Democrats, and prediction markets are back to betting on a blue Senate:
+
+The critical races are in far-flung corners of the country, in states that 
+have little in common — from Alaska and Maine to Texas and Iowa — so the 
+picture will stay confused and the odds are bound to shift frequently between 
+now and November.
+
+While a blue wave is no better than a 50-50 shot, a wave of stock market 
+volatility seems much more likely. Vol tends to be seasonal, and generally 
+increases from now until the election. This chart from Barclays Equities 
+Tactical Strategies overlays the course of the VIX volatility so far this year 
+with the average over the last 10 years. The pattern is obvious:
+
+To some extent, the extraordinary AI boom has so far insulated against 
+domestic and international political uncertainty under Trump 2.0, but Barclays’ 
+Alexander Altmann cautions this might not last:
+
+Bear in mind that AI has become a weaponized political topic now, it also may 
+not be plain sailing for the tech bulls between now and the elections in early 
+November.
+
+The last 18 months have seen a US president exercise power in an 
+unprecedentedly unencumbered way. On the most salient issues for markets, 
+support from Congress has either been irrelevant or a given. There’s a risk 
+that will soon change, and markets will start to try to price that risk.
+
+
+
+ Survival Tips 
+
+
+
+Europeans marveled today at a total eclipse of the sun. The Washington Post 
+has offeredthis 77-song playlist <https://bloom.bg/4qj0eTQ> to commemorate the 
+occasion. Here it ison Spotify <https://bloom.bg/4zlsNEi>. Unaccountably, it 
+doesn’t includeCast No Shadow <https://bloom.bg/4gacOQE> by Oasis (“As he faced 
+the sun he cast no shadow”) orThe Whole of the Moon <https://bloom.bg/4hx4axW> 
+by The Waterboys (“I saw the crescent while you saw the whole of the moon”) or 
+Mike Oldfield’sMoonlight Shadow <https://bloom.bg/4gsI4eJ>. We had some 
+Survival Tips on songs about the moon back in April to celebrate the astronauts 
+on Artemis II, and did discover there were a lot of them. You can find those 
+newslettershere <https://bloom.bg/45XcGPt>, here <https://bloom.bg/4hwn5ZM>, 
+here <https://bloom.bg/4fUyj99> and here <https://bloom.bg/4g7qxaz>. If only 
+the Post had been able to crowd-source its playlist from Points of Return 
+readers…
+
+More From Bloomberg Opinion
+
+ * Return to the ‘Trust Us’ Days of Central Banking <https://bloom.bg/4gh2Blw>
+? No Thanks: Jonathan Levin 
+ * Putin <https://bloom.bg/4fZrEJm> Can’t Break Down NATO’s Door. He’s Trying 
+the Window: James Stavridis 
+ * Don’t Buy Zuckerberg <https://bloom.bg/3RJRFog>’s ‘Good Guy of AI’ Act: 
+Dave Lee 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/O1d0N4qSwsgeP4BjAZkaPEwkN8bVw_hnFL_Us2qibGcwDEORTxJRo9BSYkDwgX6cA0UiEAF9KM_jn7lAb9f_1wSbnIKDU8jCpJXmNKQ4DHe_UzkR4ToRUmdbO2tM-jSlBRuATNQhvYDEWTQ3zXmFuuaHuMGGu5UOJIHmnBuOy7js7kt2dTcDGYkSPH7ywphKTvFPtRb5MKqu0qNl09vkuw6bQouJ0J3gweuneBs5mRi0vje-6FGegC28IvVbg-HApg_OzVcgMGZnx2EMohlHiXDETNRzKbnrcsUTgckUhd0eeKaM7-IB16I2iOjVI0w7FAjhKKotYj8GuwdPmbnO-_PCVjKVq1-z/NWf9L4kX05vyciJHBqGEwfTKWK1xenRR/23>
