@@ -1,0 +1,269 @@
+Subject: Markets are serene in their summer Sargasso Sea
+Date: Mon, 17 Aug 2026 04:00:50 +0000
+
+Points of Return 
+ To get John Authers’ newsletter delivered directly to your inbox, sign up 
+here. S&P 500 volatility has dropped to its lowest of the year. In 
+
+View in browser <https://bloom.bg/4xaC1Sk> 
+ <https://bloom.bg/4qqYJmE> 
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=19430212&m=11b724c487f61753eb1a7a4a5f3ef261&p=08172026040050&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=19430212&m=11b724c487f61753eb1a7a4a5f3ef261&p=08172026040050&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ <https://bloom.bg/4y4Fl1p> 
+
+
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://bloom.bg/43nyEeA>.
+
+
+Today’s Points:
+
+ * S&P 500  volatility <https://bloom.bg/4g4g7tS> has dropped to its lowest of 
+the year. 
+ * Investors are bracing for rate hikes  outside the US 
+<https://bloom.bg/4ql29a9>. 
+ * Covert flows through  Hormuz <https://bloom.bg/4qiQgln> have kept Brent 
+crude at $85 per barrel. 
+ * Despite everything,  emerging-market debt <https://bloom.bg/4qpK9Ma> is on 
+a great run. 
+ * AND: Some comedies and  a podcast <https://bloom.bg/4gbGdv3>. 
+
+
+
+Wide Sargasso Markets
+
+The Sargasso Sea <https://bloom.bg/4xKad6P>, an elliptical area of the 
+Atlantic around Bermuda, is a model for global markets in the depths of this 
+hot summer. An area of relative calm caused by the space between four major 
+Atlantic currents, it’shome for Sargassum seaweed <https://bloom.bg/4idrTmQ> 
+and mating ground for plentiful fish. It continues to be a sea without a 
+shoreline as waves are whipped up all around.
+
+So it is with financial markets. It’s hard to believe from the intensity and 
+anger of political debates, within the US and beyond, but they’ve left a space 
+during the summer doldrums for remarkable stability. Exhibit A) is Bloomberg’s
+financial conditions index, <https://bloom.bg/4qhA6bH> which gauges whether it 
+is relatively easy or hard to raise finance from a range of market metrics. 
+Initiated in 1990, it has never shown conditions easier than they were at the 
+close on Friday:
+
+Among the currents reinforcing safe conditions for financing is dwindling 
+stock market volatility. Rather than irrational exuberance, as excoriated by
+Alan Greenspan <https://bloom.bg/4xB6fgM>, it looks like irrational equanimity 
+<https://bloom.bg/4g35BD8>. The VIX index <https://bloom.bg/4g0IVTX>, gauging 
+volatility by investors’ positions in the options market to guard against 
+turbulence in the S&P 500, is at its most relaxed for 2026. It’s only closed 
+lower than this on a handful of occasions since Donald Trump was reelected:
+
+And this isn’t (just) about excessive confidence in the buildout of artificial 
+intelligence. That is of huge importance, of course, and in the last few weeks 
+both credit and equity investors have shown signs of having second thoughts. 
+But several broad indexes designed to limit the impact of AI made all-time 
+highs last week. This is true of Bloomberg’s measure of the “other 493” 
+large-cap stocks, excluding the Magnificent Seven platform groups; of the 
+equal-weighted version of the S&P 500 in which all stocks, including Nvidia 
+Corp., have only a 0.2% weighting; and of the S&P 500 excluding tech:
+
+So it’s evident that something beyond the direct impact of the AI investments 
+is buoying equities. That would be corporate fundamentals in the form of 
+earnings per share and revenues, which enjoyeda phenomenal quarter 
+<https://bloom.bg/3TRTu39> and seem set fair for the rest of the year. 
+Semiconductors and financials have raised earnings far faster than revenues as 
+they expand margins, which may yet create its own problems, but strong earnings 
+growth on the back of solid sales repeats across many sectors:
+
+Earnings like this go a long way to calm nerves. Beyond that, can we attribute 
+the calm to the summer doldrums? With earnings season winding down, and most of 
+the key economic data for the month already published, the diary for this week 
+has no potential market-moving events that we can see coming. The closest 
+approach could be the publication of the minutes to the last Federal Open 
+Market Committee meeting, due Wednesday. Nvidia’s results and the Jackson Hole 
+central banking conference, both potential market movers, aren’t until next 
+week. People are on vacation. It’s hot. No wonder nothing much happens in the 
+dog days of August.
+
+This is a fair argument, but it isn’t always thus. There’s a long history of 
+August shocks, thanks to big news — Saddam Hussein’s invasion of Kuwait (1990), 
+the coup against Gorbachev in the Soviet Union (1991), Russia’s debt default 
+(1998), Standard & Poor’s downgrade of US sovereign debt (2011) or China’s 
+botched devaluation (2015). Internally-generated market mayhem includedthe 
+desperation of August 2007 <https://bloom.bg/4qiiuwi> as the subprime crisis 
+took shape, and the 2024 meltdown of the Japanese carry trade.
+
+This year, the spasm of nerves around the AI trade briefly had the potential 
+to turn into such an event but has desisted. Japanese currency intervention 
+hasn’t sparked another major carry trade unwind. And by being rather 
+disappointing, data have calmed the notion that the Federal Reserve will be 
+tightening straight away. The economy is strong enough for companies to make 
+money; and the negative surprises suggest it’s not so strong that the Fed will 
+need to hike rates, which counts as good news:
+
+As for the obvious geopolitical risks, there is a belief — correct or 
+otherwise — that the market has a handle on them, and that they are less than 
+catastrophic. That applies to the situation in theStrait of Hormuz 
+<https://bloom.bg/4qiQgln>, and also to trade policy. News that the US is 
+levying a new wave of tariffs hasn’t stopped Bloomberg’s index of global trade 
+policy uncertainty, built on natural language processing analysis of press 
+coverage, dropping to one of its lowest levels of the Trump era:
+
+Whether markets are right to be this confident is another question. Meanwhile, 
+the greatest risk, also diminished slightly by the slowdown in the recent data, 
+comes frombonds <https://bloom.bg/3RvjkWd>. The notion that Treasury investors 
+might finally revolt against ever higher fiscal deficits and force yields far 
+higher has been around for years. Real 10-year yields have threatened to break 
+out but remain just below 2.5%. If they rise to take out the post-crisis high 
+of 2.516%, set three years ago, that could shatter the calm:
+
+But as it stands, Great Earnings + Goldilocks Economic Data + Absence of News 
+= Continued Calm. Just likeeels must leave the Sargasso 
+<https://bloom.bg/3SAxGIU>, this cannot go on indefinitely, but with any luck 
+these vintage doldrums have another couple of weeks left in them.
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=19430212&m=11b724c487f61753eb1a7a4a5f3ef261&p=08172026040050&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=19430212&m=11b724c487f61753eb1a7a4a5f3ef261&p=08172026040050&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+Emerging Glitters
+
+Beyond the US, emerging markets’ resilience — amid elevated geopolitical risks 
+— also looks increasingly entrenched. The cohort hasn’t been immune to the 
+disruptions of the past two years, but it’s shown an increasingly impressive 
+ability to maneuver through them.Emerging markets ex-China 
+<https://bloom.bg/4qnrGQc> equity funds attracted nearly $7 billion of net 
+inflows in the first half, the strongest six-month period on record and a sharp 
+reversal from 2025’s outflows, according to Morningstar:
+
+A similar measure, from the Institute of International Finance, tracking 
+non-resident flows into EM equity reinforces this resilience. Equity outflows 
+in July narrowed sharply following a massive selloff in response to the Iran 
+conflict. Net portfolio flows reached about $19 billion last month, reversing 
+$18 billion outflows in the previous two months:
+
+Despite all the adversity, the headline numbers show that EM is repaying its 
+investors:
+
+Is it reasonable to assume they can maintain this resilience? As Points of 
+Return notedhere <https://bloom.bg/4xL29mw>, commodities like copper have 
+provided a tailwind in Latin America, but that comes nowhere close 
+totechnology. South Korea and Taiwan, home to big chipmakers, are being treated 
+as pure AI plays. Their year-to-date total returns of at least 60% have lifted 
+overall returns, and also disguised lackluster performance elsewhere in the 
+emerging universe:
+
+Morningstar’s Daniel Haydon urges investors not to chase momentum and remain 
+mindful of valuations:
+
+Those choosing index tracking strategies should be aware of market 
+concentration, which in some respects resemble a thematic emerging markets tech 
+fund. For example, TSMC (c.20%), Samsung Electronics (c.8%), and SK Hynix (6%) 
+make up a significant proportion of Emerging Market ex-China indexes.
+
+Another positive driver is the weaker dollar, which flatters emerging assets 
+when priced in dollars while also making it cheaper to pay dollar-denominated 
+debts:
+
+This follows a prolonged period of serious and persistent EM currency 
+weakness. Capital Economics’ William Jackson argues:
+
+The Iran war started when most EMs had historically strong external balance 
+sheets. FX reserves have remained high, while exports have been strong and 
+demand has slowed after some post-pandemic overheating, narrowing current 
+account deficits. As a result, we think most EM currencies should weather a 
+period of dollar strength pretty well.
+
+In the credit universe, although the extra spread that investors require for 
+EM dollar-denominated debt compared to US corporate credit persists, the 
+American advantage is rapidly narrowing. On a duration-adjusted basis, the gap 
+is now the narrowest on record, a convergence that is notable because EM and US 
+corporate credit have historically moved closely together. Bloomberg 
+Intelligence’s Damian Sassower says this shows that investors demand far less 
+compensation now for taking emerging-market credit risk:
+
+
+For EM borrowers, this is significant. The penalty for being an EM credit is 
+growing less pronounced, even as global investors distinguish between the risks 
+of individual markets. Meanwhile, local currency debt (for those who could 
+stomach exchange rate risk) outperformed the benchmark Bloomberg Global 
+Aggregate Bond Index:
+
+Gains driven by currency appreciation across the developing world give 
+investors another reason to look beyond conventional developed market bonds as 
+they navigate renewed price pressures, higher energy costs, and divergent 
+central bank paths. This confluence of forces is unlikely to dissipate while 
+inflationary pressures stemming from the Iran war constrain the Fed’s room to 
+ease. Put differently, the summertime conditions that are making life easier 
+for US investors also add to the case to investing in the emerging world. At 
+least as long as they last.
+
+—Richard Abbey
+
+
+
+ Survival Tips 
+
+
+
+Last week, I was lucky enough to talk to Kai Ryssdal on NPR’s Marketplace to 
+attempt to answer the question:“Why are financial markets strong in spite of 
+the war in Iran?” <https://bloom.bg/4gbGdv3> I think it was an interesting 
+conversation and I hope you might enjoy it.
+
+If you aspire to something a little more relaxing, I’ve actually found the 
+time to watch a bunch of movie comedies from beginning to end in the last week. 
+You might tryNirvanna the Band, the Show, the Movie <https://bloom.bg/4qnCM7Q> 
+(which has nothing at all to do with Kurt Cobain — it’s a gloriously surreal 
+Canadian take onBack to the Future), Little Miss Sunshine 
+<https://bloom.bg/4qlJBXy> (getting to it late, but it’s a work of small-scale 
+genius and very moving), and Meryl Streep letting her hair down inMamma Mia 
+<https://bloom.bg/4iakjtd>. It doesn’t pretend to be anything it isn’t and it’s 
+darn good fun. Have a good week everyone.
+
+More From Bloomberg Opinion
+
+ * Amazon <https://bloom.bg/4qgWzpi> Is an ESG Stalwart. Soon It Will Be a 
+Polluter: Mark Gongloff 
+ * Trump’s Expansion of Executive Privilege <https://bloom.bg/4g2Xzdr> Would 
+Invite More Corruption: Noah Feldman 
+ * Why Chinese Citizens Are Far More Optimistic About AI 
+<https://bloom.bg/3TZHJru> Than Americans: Grace Shao 
+
+
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter <https://bloom.bg/3FFDj1N>.
+
+Like Bloomberg's Points of Return? Subscribe for unlimited access 
+<https://bloom.bg/3FLuZxt> to trusted, data-based journalism in 120 countries 
+around the world and gain expert analysis from exclusive daily newsletters like
+Markets Daily <https://bloom.bg/4c59SCc> or Odd Lots <https://bloom.bg/4lb40eY>.
+
+
+
+
+Like getting this newsletter?  Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_medium=email&utm_source=newsletter&utm_campaign=authers&utm_content=tout-points-of-return&utm_term=>
+ for unlimited access to trusted, data-driven journalism and subscriber-only 
+insights.
+
+Want to sponsor this newsletter? Get in touch here 
+<https://www.bloombergmedia.com/contact/?utm_medium=email&utm_source=newsletter&utm_campaign=authers>
+.
+
+
+ You received this message because you are subscribed to Bloomberg's Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://bloom.bg/3BCgev0> to get it in your inbox. 
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com <https://bloom.bg/41BzmUH> 
+Contact Us <https://bloom.bg/3PWd74F>  Bloomberg L.P.
+731 Lexington Avenue,
+New York, NY 10022 
+
+ <https://bloom.bg/4kguDNP>  <>  <https://bloom.bg/40s7Jfd>  
+<https://links.message.bloomberg.com/s/eh/I0kfspPXQhp7dPHidQB_FBKHvCScJV5QRBRftm2urqcf7e-A_bGFaFdR3r-30NDMYQcEQepf87s4SAc8St9YCSDbfIg9Py8KRKfCotftwK7ASmy7qoq-UQfkWlS98BSDQ38GdfqkKXYzbRT6hOc2NcXa_yDHSS1ufcHEQpN11D-vIp21ntujc6A6lJM-akNP3maLV4pRU1cfEuyY8--52RmqWh3NZ-9TX1HTGyLUSmFBd_Rp202jP-q2_ZFMSwARidOKZsiIEIBZutbrWfWdbg4GINA_In2QZq-tTluQALaEkX4VbKaU9zEBC-_zy0CIw7AKhCCCPUbxavRTH5an3NmB2ib2s6Ez/ZNMA0IvNYVDHgJJ01ScIH_RSpm80kmHm/23>
