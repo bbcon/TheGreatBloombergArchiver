@@ -1,0 +1,219 @@
+Subject: Supply Lines: Importer data demands
+Date: Thu, 20 Aug 2026 11:00:19 +0000
+
+US Seeks Importer, Company Data to Build Up Trade Enforcement
+US Customs is warning importers to make sure the information on file is 
+accurate or risk penalties ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-08-20/us-seeks-importer-company-data-to-build-up-trade-enforcement?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ 
+<https://www.bloomberg.com/economics?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+
+ 
+<https://sli.bloomberg.com/click?s=1149074&li=19490722&m=11b724c487f61753eb1a7a4a5f3ef261&p=08202026110018&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149074&li=19490722&m=11b724c487f61753eb1a7a4a5f3ef261&p=08202026110018&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+The Trump administration offered a glimpse at how it plans to improve trade 
+enforcement, starting with a closer look at who is importing goods into the US.
+
+A Federal Register filing published Wednesday gives importers 30 days to 
+confirm that their “accurate and complete” information — including physical 
+address, email address and phone number — is on file with Customs and Border 
+Protection.
+
+If by Sept. 18 an importer’s Form 5106 
+<https://www.cbp.gov/sites/default/files/2026-06/cbp_form_5106.pdf> is 
+inaccurate or incomplete, CBP will immediately void the associated “Importer Of 
+Record” number, effectively barring them from bringing goods into the US, the
+notice warned 
+<https://www.federalregister.gov/documents/2026/08/19/2026-16911/accuracy-of-importer-of-record-data-submitted-to-cbp>
+.
+
+CBP’s scrutiny of importers marks an initial step in the implementation of an 
+executive order President Donald Trump signed in June. Former CBP auditor Tom 
+Jesukiewicz said better data on importers will lay the groundwork for better 
+enforcement.
+
+Read More: Trump Order Directs Customs to Crack Down on Tariff Cheats 
+<https://www.bloomberg.com/news/articles/2026-06-03/trump-signs-order-directing-customs-crackdown-amid-trade-gaps?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+
+“Before CBP can address transshipment, origin, valuation, bonding or 
+collectability, it has to know who the importer is, where it operates and who 
+is responsible,” said Jesukiewicz, who retired recently after four decades as 
+an auditor in CBP’s Office of Trade and is consulting part time.
+
+“They want to get the information up front, know who they’re dealing with and 
+secure the risk,” he said.
+
+Shell Companies
+
+Wednesday’s notice is a call to action for the hundreds of thousands of 
+importers registered with the agency. It also specifies that customs brokers 
+filing on behalf of importers should provide their client’s information, not 
+provide their own — a common practice. It also takes aim at shell company 
+importers by barring the use of registered agents and P.O. boxes, for example.
+
+The White House acknowledges that historically high duties on imports have 
+increased the incentive to move production to countries with lower tariff rates 
+— which is not illegal. The high-stakes trade war has also increased the 
+incentive to cheat, and last week the White Housedetailed an AI tool 
+<https://www.bloomberg.com/news/articles/2026-08-13/trump-trade-enforcers-deploy-ai-to-crack-down-on-tariff-dodging?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ it’s developing to “detect, deter and prevent” tariff evasion.
+
+That tool needs more data.
+
+Jesukiewicz pointed out that the CBP’s importer identity form also includes 
+optional fields for data on company structure, beneficial ownership and company 
+officers, and said he’d be surprised if those details stay optional.
+
+Read More: Tariff-Dodging Settlements Underscore DOJ Focus on Trade Fraud 
+<bbg://news/stories/TJYJP9RKV2VO>
+
+Armed with more information, CBP can establish risk profiles and determine 
+which importers are in good standing. Those factors will allow the agency to 
+assign larger bond requirements to riskier importers, for example.
+
+“CBP will need to determine good standing, risk tier and bond sufficiency,” he 
+said. “Year established, beneficial ownership, related companies, responsible 
+officers, incorporation information, banking relationships, anticipated import 
+activity and domestic assets all become relevant.”
+
+—Laura Curtis <https://www.linkedin.com/in/laurakcurtis/> in Los Angeles
+
+Bloomberg’s Tariff Tracker 
+<https://links.message.bloomberg.com/s/c/iqayc_at-WgA5Re_Ff_7SaRAHux33jS94k3vJlVmehBPK3oJd_1aZIZaMuWUMHMdmt6hN2cMwHyR01S7IurFH9rUqv4QqESisw4qZl2wGVt9-VASyBWKSmVSM1TdSiv5WbMKN-RAi89zuPZ_7kN33qtz5vyuQYIkKcArlfIgHpmfkX4kr6KNLdns8rWFA9la5gO_Ug3heWPQi5Eymgr-NSab-HzoVrkXfGQ2aZ9YdcgXHt4IcuVDM4KnjwJfy6TfXTl2F1lMW3UU-mg7Q1IxyMHkeKzTs-voCEGmOe3MbNcyOEfKTrbDTxZNJOW_Q_PTrLtX1IkrE5RTeaQ9dImBG4SQW5dPscnzYERFrVbBD1ns9LryOiIY5BuIABZR9hV8m96_MGFLJL_WpRMTHU_vbYoojvhgnnL8A7tNPKUojFpfeWJKhuO2ZANS8jlViHxZFm5JpYaNCkfGEfZtLbwtFOEQ1L27lL3Dw4nPLhNthdEgKPvWd7ntR3g-4vv2eCyKubu4aH2uW_BaYrOHAgwiu55OfLjmk91HR9tYWYYmw2GeVdtvoYdFT9sED56LGSUWrmq8HSdvnzkDHoAn1wrnIFBAnikxCS8Vtkcj-b12pjhsXENsgImGk0RxEDlfmRpg_8f3DEXp4T16zynBwtmcJOj9ti9tTi6qbi_GPL00n2PD6ySE8WRo710QupcTxo8FcwHbTEzgEcBK-L2w_Vn1BYvAolHqZmx4sAzOZ6RtWeXgxJKu1mpL64lXI14IIdcGp83IjhihWfzo_SfG9Q4rDgsIsP-sp8_QEZUK8Wba7UyuhliPrv6iqrIDSjsH0KLzGI4oZhUvvgB4KExTdvsUSKT6RcUktk9OI0idoMd9faJOZl4srDyptgVsDqs7ktzr8hNSJ1w5PX36yejY4KqPYt-MDEGfH5kJ81WL2x7Y5BE8HKITLiIRQZUejx11figJN_JXwBTzH0Zg7IbA822htu7j9dgMyxUR_HFfc0VAcVcL3RdBAMvpphNVlP9KBPielARazDr0Mq-1PfCqmZlNezjFRez6P-BlHeUoMMw0IaGf8oAz7-ZVO-IXjL20kZg-BDWMQxQbBwZsEJzNQpxO8wErBDuDnFMUVJt8_m9bNYQkjGqfCT_sGF0/UzqrxusEa-Rt9XDgQVtLaGRYZtM9F3bB/23?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ follows all the twists and turns of global trade wars.Click here 
+<https://links.message.bloomberg.com/s/c/mVebhsYh25isFiUvwITv46oreqMI4xmjOhZCrVGRKE8jKqkwfy2M6jcVa6BDHFjxmwFAwR23MARcENycgaG2TTN-QRG8n-y51hSlu32TTEAg-F-I8McKctcghJearSZhUgH8tEHmGap_bFyrk4Fk9zLHWNKnjBHNZ-4n5QUcOjjBOeVSgYDm-O8mL4qA75qeq3tqzBZcmaGyJVK-FQY8CUDTwxOeN4RDRmwtt94C9EDWjyFQ17B7tAJiorseaAllvRQ7KNUjw43jDSvd0rGLLtROwywqsanVwRyB_i18YznEJ0-5vm50dqg6UwYSd8MAAsROpA/6Qp4-i-eH6SHMmy9qTLpuBjx7VRlROj_/14?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ for more of Bloomberg.com’s most-read stories about trade, supply chains and 
+shipping. Subscribe toFault Lines 
+<https://links.message.bloomberg.com/s/c/ugqSBxDYKrgFMPCxpavprACUi4u-yFu6eckg7MxyPaiqmGyx9nR6RCC0EI4aDefDgxrT1V1ne7wZbf_FGMIxVI7orb7umvNvFBEsDjM4V6GTSq4tdyOFn_G4N9fZHfrn9FwvuKcJVGxFHQJdP5vPE7pDXWIgPP9RNWZYWvpL4L1aLXaKNLheJJ1mmyGHzRQRzBfIVWBJsG2AysC9yrxAND60g0YrIz00Y-TiQjuy12uKwXDO_x5Y2mTBOuXFTVmLj30jPdjc5incSbLMfWY-F9g9HH9baz0vtdLWtUFyu3cl5PJPSft3AaY0qmX3rolNPqoAPRt7xuazwvt6/MlcZpaIcuHbU0DPByEMVCjPvvGqcDyiB/20?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+, a Bloomberg Economics newsletter about how geoeconomics is reshaping business 
+and markets.
+
+ 
+<https://sli.bloomberg.com/click?s=868612&stpe=default&li=19490722&m=11b724c487f61753eb1a7a4a5f3ef261&p=08202026110018&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868612&stpe=default&li=19490722&m=11b724c487f61753eb1a7a4a5f3ef261&p=08202026110018&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Charted Territory
+
+Autos and chips 
+<https://www.bloomberg.com/news/articles/2026-08-20/japan-s-exports-grow-at-fastest-pace-since-2022-on-cars-chips?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ | Japan’s export growth accelerated to the fastest pace since 2022, fueled by 
+robust demand for chips and cars and a yen that weakened to a 40-year low. The 
+value of exports rose 23.2% in July from a year earlier, accelerating from a 
+19.3% gain in June, the Finance Ministry reported.
+
+Today’s Must Reads
+
+ * The tentative trade deal 
+<https://www.bloomberg.com/news/articles/2026-08-19/us-said-to-halve-tariffs-on-canada-steel-aluminum-in-trade-deal?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ between the US and Canada would lower tariffs on certain Canadian exports of 
+steel and aluminum to 25% and cut duties on Canadian auto exports to 15%. 
+Canadian companiesface uncertainty 
+<https://www.bloomberg.com/news/articles/2026-08-19/anxious-manufacturers-await-canada-us-deal-to-avoid-50-tariffs?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ as Trump delayed a deadline to finalize a deal. Prime Minister Mark Carney is 
+working to end Canada’spartial ban 
+<https://www.bloomberg.com/news/articles/2026-08-19/carney-asks-canada-premiers-to-end-us-booze-ban-as-part-of-deal?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ on the retail sale of American alcoholic beverages.
+ * China is using new legal powers 
+<https://www.bloomberg.com/news/articles/2026-08-19/china-criticizes-eu-over-extraterritorial-reach-in-jd-com-probe?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ to block European Union scrutiny of alleged state support for its companies, 
+adding friction ahead of an October deadline to resolve outstanding trade 
+disputes. China criticized the EU for its use of the Foreign Subsidies 
+Regulation to probe JD.com planned €2.2 billion takeover of German electronics 
+retailer Ceconomy.
+ * Norway is bracing for more tariffs 
+<https://www.bloomberg.com/news/articles/2026-08-20/norway-readies-for-more-us-tariffs-after-trade-talks-in-dc?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ from the Trump administration after talks on trade in Washington. The US has 
+launched investigations targeting the EU, Norway and 14 others over structural 
+manufacturing and overcapacity.
+ * One of Trump’s top allies in Latin America is visiting China 
+<https://www.bloomberg.com/news/articles/2026-08-19/ecuador-courts-chinese-money-while-teaming-up-with-us-military?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ this week, trying to secure long-term investments from the US rival.
+ * The US Department of Commerce made a preliminary determination that Mexican 
+producers areselling strawberries <bbg://news/stories/TJZ1IST96OSL> at 
+below-market rates, a ruling that may lead to more expensive fruit for American 
+consumers.
+ * Nangle Zheng, Strategic Investment Director at LeadShine Technology, says 
+China has shortened the development cycle forhumanoid robots 
+<https://www.bloomberg.com/news/videos/2026-08-20/leadshine-s-zheng-on-china-s-robotics-supply-chain-video?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ from years to just months.
+On the Bloomberg Terminal
+
+ * Commercial transits through the Strait of Hormuz are projected to remain 
+suppressed at around 5% of prewar baseline throughput after the Aug. 17 
+expiration of the 60-day US-Iran ceasefire.
+ * North American rail traffic <> rose 4.9% in the week ended Aug. 15, based 
+on data from the Association of American Railroads. Improved US-Canada trade 
+negotiations could bode well for commodity demand and consistency, according to 
+Bloomberg Intelligence.
+ * For Bloomberg Economics trade analysis: BECO MODELS TRADE <>.
+ * Click here <> for Bloomberg Intelligence’s Tariff Matrix.
+ * Run SPLC <bbg://screens/SPLC> after an equity ticker on Bloomberg to show 
+critical data about a company’s suppliers, customers and peers.
+ * Use the AHOY <bbg://screens/AHOY> function to track global commodities 
+trade flows.
+ * See DSET CHOKE <bbg://screens/DSET%20CHOKE> for a dataset to monitor 
+shipping chokepoints.
+ * For freight dashboards, see BI RAIL <bbg://screens/BI%20RAIL>, BI TRCK 
+<bbg://screens/BI%20TRCK> and BI SHIP <bbg://screens/BI%20SHIP> and BI 3PLS 
+<bbg://screens/BI%203PLS>
+ * Click HERE <bbg://screens/NI%20SPLC> for automated stories about supply 
+chains.
+ * On the Bloomberg Terminal, type NH FWV <bbg://screens/NH%20FWV> for 
+FreightWaves content.
+ * See BNEF <bbg://screens/BNEF> for BloombergNEF’s analysis of clean energy, 
+advanced transport, digital industry, innovative materials, and commodities.
+Like Supply Lines?
+
+Don’t keep it to yourself. Colleagues and friends can sign up here 
+<https://www.bloomberg.com/account/newsletters/supply-lines?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+. We also publishEconomics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+, a briefing on the latest in global economics.
+
+For even more: Follow @economics <https://twitter.com/economics> on Twitter and
+subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_source=newsletter&utm_medium=email&utm_campaign=trade&cmpid=BBD082026_TRADE&utm_term=260820&utm_content=7738>
+ for unlimited access to trusted, data-driven journalism and gain expert 
+analysis from exclusive subscriber-only newsletters.
+
+How are we doing? We want to hear what you think about this newsletter. Let 
+our trade tsar know <mailto:brmurray@bloomberg.net>.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Supply 
+Lines newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/supply-lines?source=NLshare&cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/supply-lines?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBD082026_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=260820&utm_content=7738>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/dNMasNPU-xYoFAtqutaTzWsp3F4yxVAbFk8XlxkQ7pGPlhX_LlD_0dD15Vmsa6rz-kmt6gPtNkmMM823GRezR6nth8qZ98A1QWmZgAyN2rjRhsh2pTd18B3QFY3hMz-uXT8VY7A8RZbDiL0o8atoEn3rzLufF6o_fZxJC8khIPq4uiUJddWSBHyR7UbKe2Rt1Gl4NpSJSoFsU2KQci3DIVBmZrIlWBSj7m7zF7fUiVWYMNluN0rvKPO0kFWGeQR17hnfmzOtXEcxa53lRKWdf2ltqWM-7fJNTE92VNWGySyBSbqAE0KyIUxDUQcYn7nEhPPuJHKA_p32S2yyVv17c5vq8BZsi6SS/e8BjF9MuZcfk8mO0ifw8Wjag4NC-P6WQ/23>
