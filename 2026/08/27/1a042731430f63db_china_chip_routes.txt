@@ -1,0 +1,248 @@
+Subject: China chip routes
+Date: Thu, 27 Aug 2026 09:00:27 +0000
+
+US Probes Chip Shipments to China as Nvidia Eyes $13 Billion AI Deal
+Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-08-27/us-probes-chip-shipments-to-china-as-nvidia-eyes-13-billion-ai-deal?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ 
+<https://www.bloomberg.com/asia?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=19587034&m=11b724c487f61753eb1a7a4a5f3ef261&p=08272026090027&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=19587034&m=11b724c487f61753eb1a7a4a5f3ef261&p=08272026090027&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+The fight over AI chips is moving beyond the chipmakers. The US government is 
+investigating 
+<https://www.bloomberg.com/news/articles/2026-08-27/us-probes-apex-logistics-over-alleged-nvidia-ai-chip-smuggling?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ Singapore-based Apex Logistics for its suspected role in smuggling Nvidia AI 
+chips to China, people familiar with the matter said, in what may result in the 
+first action against a transportation company for allegedly participating in 
+the illegal semiconductor trade.
+
+Even though Washington imposed export controls in 2022 over fears the 
+technology could benefit Beijing’s military, this is a significant widening of 
+Washington’s enforcement perimeter: from who makes the chips to who moves them.
+
+Nvidia, meanwhile, is pushing further into the AI stack. According to news 
+reports, the company is nearing a roughly $13 billionacquisition of Hugging Face
+ 
+<https://www.bloomberg.com/news/articles/2026-08-27/nvidia-discussed-buying-ai-startup-hugging-face-insider-says?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+, the widely used platform for sharing AI models, extending adealmaking spree 
+<https://www.bloomberg.com/news/articles/2026-08-20/nvidia-to-pay-ai-startup-poolside-a-6-billion-license-newcomer-says?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ across chips, software and infrastructure. The timing is interesting: Nvidia 
+just forecast roughly70% revenue growth 
+<https://www.bloomberg.com/news/articles/2026-08-26/nvidia-estimate-topping-forecast-fails-to-wow-investors?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ in fiscal 2028. For a company already at the center of the AI economy, 
+apparently the center isn’t enough.
+
+—Jui Chakravorty 
+<https://www.bloomberg.com/authors/AXD7_0-0mSE/jui-chakravorty?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+
+What You Need to Know Today
+
+Nvidia isn’t the only chipmaker racing to keep up. Japan’s Kioxia plans a new 
+chip fab 
+<https://www.bloomberg.com/news/articles/2026-08-27/kioxia-plans-new-chip-facility-in-japan-to-meet-ai-memory-demand?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ with partner Sandisk to produce higher-end NAND for data centers, sources 
+said, as surging AI workloads drive a global memory crunch and push up costs 
+across the tech industry. The pair will seek Japanese government subsidies for 
+the expansion, joining a capex race that is drawing in Samsung and SK Hynix as 
+Big Tech locks up supply years in advance. The bet is that AI demand stays hot. 
+The risk, as ever in memory, is building into the next glut.
+
+The oil squeeze at Hormuz is easing, not because the conflict has, but because 
+Gulf producers are getting better at working around it. Sources said Kuwait and 
+Qatar haverestored crude exports 
+<https://www.bloomberg.com/news/articles/2026-08-27/kuwait-and-qatar-add-to-growing-oil-flows-getting-through-hormuz?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ to about 70% of pre-war levels, joiningthe UAE 
+<https://www.bloomberg.com/news/articles/2026-08-06/uae-s-adnoc-defies-hormuz-risks-to-keep-crude-flowing-to-global-market?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ and Saudi Arabia in using costly “shuttle” trades to move barrels through the 
+strait and transfer them to other vessels beyond it. Some 7 to 8 million 
+barrels a day are now making it out, roughly double mid-July levels, helping 
+pull Brent back to around $87 from above $120 in late April.
+
+Glacier Collapse, Avalanche Likely Fueled Deadly Nepal Flood
+
+The Himalayan region is warming faster than the global average, leading to 
+rapid glacial melting and elevated disaster risks.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-08-27/what-fueled-the-deadly-flash-floods-on-the-nepal-china-border?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+Even as Gulf producers find ways to keep oil moving through Hormuz, Washington 
+islooking for new ways 
+<https://www.bloomberg.com/news/articles/2026-08-26/us-aims-to-revive-civil-war-era-court-to-claim-iran-oil-as-prize?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ to tighten the screws on Iran. The Justice Department is preparing to revive 
+prize courts, a largely dormant system of maritime law last used more than a 
+century ago, to speed the seizure of Iranian tankers and cargo and allow the US 
+to sell the oil, sources said. Proceeds will flow to the Treasury. The move 
+could strengthen the blockade and help offset the cost of the war, but it is 
+almost certain to face legal challenges, not least because modern US courts 
+have virtually no experience with the system.
+
+India’s central bank is stepping up its defense of the rupee as higher oil 
+prices put renewed pressure on the currency, sources said. Flush with $73 
+billion of fresh dollar inflows since June, the Reserve Bank of India has 
+shifted from stepping in mainly during sharp currency swings tointervening more 
+routinely 
+<https://www.bloomberg.com/news/articles/2026-08-27/rbi-is-showing-up-whenever-rupee-weakens-in-intervention-shift?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ whenever the rupee weakens. It spent$7 billion 
+<https://www.bloomberg.com/news/articles/2026-07-30/inr-usd-india-central-bank-sold-about-7-billion-to-defend-rupee-on-friday?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ in a single day last month. The pressure hasn’t disappeared: higher oil prices 
+are widening India’s current-account deficit while a narrowing rate gap with 
+the US is pulling capital away. But the new strategy appears to be buying some 
+calm, with near-term rupee volatility close to a 10-month low.
+
+HSBC Mulls Restructuring Singapore Units to Simplify Operations
+
+HSBC is planning to overhaul its Singapore operations by combining its major 
+banking services under one entity to streamline the structure, according to 
+people familiar with the matter.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-08-27/hsbc-mulls-restructuring-singapore-units-to-simplify-operations?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+The Aussie is becoming hedge funds’ favorite side of the trans-Tasman trade. 
+Options bets that it will outperform the kiwi havesurged to the highest 
+<https://www.bloomberg.com/news/articles/2026-08-27/israel-plans-to-expand-its-navy-to-secure-vulnerable-trade-routes?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ this year after hotter-than-expected Australian inflation revived expectations 
+ofanother RBA rate hike 
+<https://www.bloomberg.com/news/articles/2026-08-26/economists-see-rba-rate-hike-as-early-as-september-after-hot-cpi?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+, potentially as soon as September. On the other side, New Zealand’s Nov. 7 
+election is adding uncertainty, with a Labour victorypotentially restoring 
+<https://www.bloomberg.com/news/articles/2026-08-23/new-zealand-labour-opposition-vows-to-restore-rbnz-dual-mandate?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ the RBNZ’s dual inflation-and-employment mandate.
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=19587034&m=11b724c487f61753eb1a7a4a5f3ef261&p=08272026090027&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=19587034&m=11b724c487f61753eb1a7a4a5f3ef261&p=08272026090027&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+What You’ll Need to Know Tomorrow
+
+Technology
+
+‘Locker King’ Billionaire Pushes Poland to Take Meta Fight to EU
+ 
+<https://www.bloomberg.com/news/articles/2026-08-27/-locker-king-billionaire-pushes-poland-to-take-meta-fight-to-eu?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+Technology
+
+Fifth Ebola Vaccine Candidate Joins Race Against Congo Outbreak
+ 
+<https://www.bloomberg.com/news/articles/2026-08-27/ebola-vaccine-race-expands-as-congo-bundibugyo-outbreak-grows?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+Markets
+
+Oxford Nanopore’s Beaten-Down Shares Stage a Comeback
+ 
+<https://www.bloomberg.com/news/articles/2026-08-27/oxford-nanopore-s-beaten-down-shares-stage-a-comeback?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+Industries
+
+Harmony Gold Profit Doubles on Soaring Prices Despite Hedge Loss
+ 
+<https://www.bloomberg.com/news/articles/2026-08-27/harmony-gold-profit-doubles-on-soaring-prices-despite-hedge-loss?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+Markets
+
+Danantara Bets $1 Billion on Private Credit With Partners Group
+ 
+<https://www.bloomberg.com/news/articles/2026-08-27/danantara-bets-1-billion-on-private-credit-with-partners-group?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+Economics
+
+Deputy Chief Keeps BOJ on Track for Expected September Hike
+ 
+<https://www.bloomberg.com/news/articles/2026-08-27/boj-deputy-chief-keeps-door-open-to-september-rate-increase?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+Economics
+
+Philippines Hikes Rate a Third Time as Inflation Runs Hot
+ 
+<https://www.bloomberg.com/news/articles/2026-08-27/philippine-central-bank-hikes-key-rate-a-third-time-as-inflation-runs-hot?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+For Your Commute
+
+How to Count 1.5 Billion People? Hire 3 Million of Them
+
+After 15 years, India is finally getting around to a census.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-08-27/india-s-2027-census-aims-to-finally-provide-a-clearer-demographic-picture?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+Get more: Check out Bloomberg’s Emerging, a monthly podcast series hosted by 
+Menaka Doshi and Haslinda Amin on the rising economies shaping the global 
+future. You can watch ithere 
+<https://www.bloomberg.com/btv/series/bloomberg-emerging?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ or listen on iHeart <https://www.iheart.com/podcast/1119-emerging-338347317>, 
+Apple <https://podcasts.apple.com/us/podcast/emerging/id6788408143>, Amazon 
+<https://music.amazon.com/podcasts/cbcdeabc-26d1-4daa-b1ee-92a0411584fe/emerging>
+,or Spotify <https://open.spotify.com/show/033LpKgmjTCANHGFyfR6x7>.
+
+More from Bloomberg
+
+Enjoying Evening Briefing? Check out these newsletters:
+
+ * On Books 
+<https://www.bloomberg.com/account/newsletters/on-books?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+, from Bloomberg Weekend, for reviews and recommendations to expand your 
+thinking. Also:Weather Watch 
+<https://www.bloomberg.com/account/newsletters/weather-watch?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ to get an edge on the risks of the changing climate
+ * Next Japan 
+<https://www.bloomberg.com/account/newsletters/next-japan?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ for an inside view of the forces reshaping Japan, and what’s next for its 
+businesses, markets and consumers
+ * AI Today 
+<https://www.bloomberg.com/account/newsletters/ai-today?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ for a chronicle of the disruptions and threats of AI on businesses, workers, 
+governments and economies
+ * Money 
+<https://www.bloomberg.com/account/newsletters/money?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ for insights, ideas and tools for doing more with your money
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260827&utm_content=8234>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ for key news before the trading day starts there
+ * Singapore Edition 
+<https://www.bloomberg.com/account/newsletters/singapore-edition?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+,India Edition 
+<https://www.bloomberg.com/account/newsletters/india-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260827&utm_content=8234>
+ andHong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260827&utm_content=8234>
+ for insights into some of Asia’s most dynamic economies
+ * Next China 
+<https://www.bloomberg.com/account/newsletters/next-china?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260827&utm_content=8234>
+ for dispatches from within the world’s second-largest economy on where China 
+stands now — and where it’s going next
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=260827&utm_content=8234>
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://bsky.app/profile/bloomberg.com> <https://x.com/business> 
+<https://www.instagram.com/bloombergbusiness/> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+
+
+You received this message because you are subscribed to Bloomberg’s Evening 
+Briefing Asia newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=NLshare&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=260827&utm_content=8234>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/br_cYazGr_TtVGM2rODa28Bvy5IJbMiOPz2pEgw6ngT6mNPF_nacnNXAQg6b6rd3AwplgTDdQ90O-NQLQx6W8JYTNEltpscxUrhXHj0UOpiIlvcCmd0xkVTO2B7yvG8jLVIc35np2aXMMoODrL3dCyhUkUJOX1npbz32i24VFmRhVCvZ4adLcDNk5HxZqJOL9M6fziXfpFKhE4m-mi5Nb1rPaMt32L6lZXvr1p-I3UH19aV_Rm5LYRPG7T2w3E-tnOxiGs7YXiBIqxpjCZzRpNc5APZhjiNuptao9kRrG04ArpXeyjDtIDGYaVucNOTuRtesUTj7zKdaHYAGM0w9OTYjA9s8tmaA/y8JqXDiRnq6q-Syw5so8XKsaVwx35pPr/24>
