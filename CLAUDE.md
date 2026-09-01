@@ -106,6 +106,7 @@ URL: `https://bbcon.github.io/TheGreatBloombergArchiver/`
 | `GMAIL_CREDENTIALS_JSON` | Contents of `credentials.json` (Google OAuth app credentials) |
 | `GMAIL_TOKEN_JSON` | Contents of `token.json` (OAuth refresh token — refresh manually if expired) |
 | `ANTHROPIC_API_KEY` | Claude API key |
+| `ANTHROPIC_WORKSPACE_ID` | Workspace ID (`wrkspc_...`), required when `ANTHROPIC_API_KEY` is an identity-linked key — sent as the `anthropic-workspace-id` header |
 | `SMTP_USERNAME` | Gmail address used to send emails |
 | `SMTP_PASSWORD` | Gmail app password (not account password) |
 

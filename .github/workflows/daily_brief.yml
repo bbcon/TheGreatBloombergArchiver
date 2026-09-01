@@ -37,8 +37,9 @@ jobs:
         run: |
           echo '${{ secrets.GMAIL_CREDENTIALS_JSON }}' > credentials.json
           echo '${{ secrets.GMAIL_TOKEN_JSON }}'       > token.json
-          printf 'ANTHROPIC_API_KEY=%s\nSMTP_SERVER=smtp.gmail.com\nSMTP_PORT=587\nSMTP_USERNAME=%s\nSMTP_PASSWORD=%s\nEMAIL_FROM=%s\nEMAIL_TO=%s\n' \
+          printf 'ANTHROPIC_API_KEY=%s\nANTHROPIC_WORKSPACE_ID=%s\nSMTP_SERVER=smtp.gmail.com\nSMTP_PORT=587\nSMTP_USERNAME=%s\nSMTP_PASSWORD=%s\nEMAIL_FROM=%s\nEMAIL_TO=%s\n' \
             '${{ secrets.ANTHROPIC_API_KEY }}' \
+            '${{ secrets.ANTHROPIC_WORKSPACE_ID }}' \
             '${{ secrets.SMTP_USERNAME }}' \
             '${{ secrets.SMTP_PASSWORD }}' \
             '${{ secrets.SMTP_USERNAME }}' \

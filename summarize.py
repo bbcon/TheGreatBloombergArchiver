@@ -390,7 +390,12 @@ def main():
         print("Error: ANTHROPIC_API_KEY not set in environment.")
         sys.exit(1)
 
-    client = anthropic.Anthropic(api_key=api_key)
+    default_headers = {}
+    workspace_id = os.environ.get("ANTHROPIC_WORKSPACE_ID")
+    if workspace_id:
+        default_headers["anthropic-workspace-id"] = workspace_id
+
+    client = anthropic.Anthropic(api_key=api_key, default_headers=default_headers)
 
     print(f"Generating {args.mode} summaries...", end=" ", flush=True)
     summaries = generate_all_regions(client, content, target, args.mode)
