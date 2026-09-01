@@ -1,0 +1,11 @@
+• Two supertankers were struck by projectiles in the Strait of Hormuz, threatening to reverse a recovery in Persian Gulf oil exports that had restored flows to roughly 6–8 million barrels per day, approximately half of prewar levels.
+• Global sovereign bond yields reached their highest since mid-2008, with a Bloomberg gauge of global government debt yielding 3.72%, as oil-driven inflation concerns and hawkish central bank rhetoric compound pre-existing fiscal sustainability pressures.
+• WTI crude rose approximately 2.4% to $87.84, with energy markets highly sensitive to Hormuz developments given the chokepoint's role in global supply.
+
+**Strait of Hormuz and Energy Markets**
+
+The attacks on two supertankers — one operated by Saudi Arabia's Bahri and one by Sinokor, the firm central to the Hormuz shuttle trade — represent a material threat to the supply recovery that has helped contain crude prices. Saudi Arabia had only recently resumed loading at Ras Tanura after rerouting shipments away from the Houthi-disrupted Red Sea corridor, leaving its export infrastructure exposed simultaneously on both flanks. Trump's characterisation of the conflict as "a relatively little war" notwithstanding, the market implications are not trivial: any sustained disruption to the 6–8 million barrel daily shuttle flow could reignite the energy price pressures already feeding into global inflation.
+
+**Global Bond Markets and Monetary Policy Divergence**
+
+The synchronised rise in yields across the US, Japan, the UK, and France reflects a common driver — sticky, supply-side inflation — but divergent fiscal and monetary starting points. Japan's 3% 10-year yield marks a historic inflection point for a market long suppressed by BOJ intervention. The global bond selloff creates a feedback loop: higher yields raise debt-servicing costs for already-stretched sovereigns, potentially forcing fiscal tightening that in turn weighs on growth. The resolution of this tension remains genuinely uncertain.
