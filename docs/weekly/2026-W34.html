@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aug 17 – Aug 23, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="#" class="nav-link active">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Aug 17 – Aug 23, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Atlanta Fed GDPNow surged to 4.3% annualized for the current quarter, up sharply from Q2's 1.5%, though Apollo's Torsten Slok attributed roughly 0.2 points to one-off tariff refunds following the Supreme Court's ruling against most Trump-era import duties.</li><li>30-year Treasury yields rose to 5.29%–5.33% on Monday, the highest since 2007, before Treasury Secretary Bessent announced expanded buybacks of 10- to 30-year debt on Thursday, pulling the 30-year down approximately 8bp to 5.19%.</li><li>US public debt topped $40 trillion for the first time Thursday, hours after Bessent's buyback announcement; gold rose 1.8% to $4,596.90 and Bitcoin surged 7.0% to $77,753 on Friday amid renewed debasement-trade dynamics.</li><li>Goldman Sachs said a September Fed hike is now "very unlikely," citing softer retail sales, weaker employment and slowing inflation; the dollar fell to a three-month low and extended its slide through the week.</li><li>July FOMC minutes, released Wednesday, showed a 9–3 vote to hold, with officials sharply divided over further hikes.</li></ul>
+<p class="para-title" style="color:#5597cb;">Growth and Housing</p>
+<p class="para-body">The GDPNow acceleration to 4.3% overstates underlying momentum: Goldman's read emphasizes that retail sales, employment and inflation are all softening even as the headline tracking estimate climbs. Housing data published Tuesday reinforced caution — pending home sales matched the second-worst level since 2001, single-family housing starts fell to the fewest since 2022, and Redfin data showed 51.3% more sellers than buyers in July. The 30-year mortgage rate held at 6.67%, homebuilder sentiment remained below the breakeven level of 50 for the sixteenth consecutive month, and KPMG's Yelena Maleyev warned of a K-shaped bifurcation between well-capitalized high-end builders and the rest of the market.</p>
+<p class="para-title" style="color:#5597cb;">Fiscal Policy and Rates</p>
+<p class="para-body">Federal debt approaching a roughly $41 trillion statutory ceiling — which Evercore ISI expects to bind in the first half of 2027 — and Bessent's buyback expansion have intensified the debate over debt sustainability. JPMorgan warned the buyback risks a credibility problem absent genuine fiscal consolidation, and Barclays attributed the rise in long yields primarily to deficit dynamics and AI-related corporate issuance competing with Treasuries rather than to higher inflation expectations. The dollar's sharp weekly decline drew comparisons to Japan, where persistent currency weakness has proved difficult to reverse once underway.</p>
+<p class="para-title" style="color:#5597cb;">Equities and Credit</p>
+<p class="para-body">The S&P 500 stayed within 2% of its record despite a deepening chip-stock selloff and rising long-end yields, with equity volatility subdued — the VIX closed below 15 weekly in August for the first time this year. Apple shares fell roughly 10% from their July 28 peak, penalized for underinvesting in AI, while Microsoft, Amazon and Alphabet rallied as results eased overspending concerns. Moderna surged as much as 176% on Thursday on positive melanoma-vaccine trial data with Merck, lifting the S&P 500 healthcare index over 4% in a single session and inflicting an estimated $5–5.5 billion in short-seller mark-to-market losses. Investment-grade issuance has now reached nearly $1.5 trillion year-to-date, up 36% year-on-year, as AI-linked borrowing competes with heavy Treasury supply for investor demand. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Japan's Q2 GDP grew an annualized 1.1% on Monday, missing the 2% consensus and slowing from a revised 1.9% in Q1, as capital spending slumped and consumption flatlined under inflation.</li><li>China's July activity data missed across the board: industrial output slowed to 4.5% YoY, retail sales to 0.6%, and fixed-asset investment fell 6.7% YoY — prompting Premier Li Qiang to call for intensified support measures and widened use of a $1.6 trillion housing provident fund.</li><li>Japanese 30-year yields rose above 4% on Monday for the first time in their 27-year history; the 10-year reached 2.93%, the highest since 1996, as traders priced an 80% probability of a BOJ hike on September 18.</li><li>South Korea's Kospi dropped 5.8% on Wednesday before rebounding 5.9% on Thursday after Samsung and SK Hynix announced combined shareholder returns exceeding $100 billion, funded by record AI-driven chip profits.</li><li>India's CPI climbed to 4.45% YoY in July, a 19-month high above the RBI's 4% target for a second consecutive month, while Indian equities extended losses, down roughly 7% year-to-date.</li></ul>
+<p class="para-title" style="color:#e07b39;">Growth Divergence</p>
+<p class="para-body">Japan's growth miss sharpens the BOJ's dilemma: the yen near a 40-year low argues for rate increases, while weak consumption and capital expenditure argue against tightening. China's broad-based July weakness — described by ING's Lynn Song as "a slate of disappointing data across the board" — pushed economists at BNP Paribas, Macquarie and Pantheon to conclude growth is running below the lower end of Beijing's 4.5%–5% target. Beijing's response has been measured, with officials widening existing policy tools rather than deploying large-scale new stimulus ahead of an October Communist Party meeting. Japan's exports rose 23.2% YoY in July, the fastest pace since 2022, offering a partial offset driven by cars, chips and yen weakness.</p>
+<p class="para-title" style="color:#e07b39;">Capital Markets and Corporate Activity</p>
+<p class="para-body">Asian tech equities fell sharply Wednesday — the Kospi down 5.8%, ChiNext down 6.3%, Japan's Topix down 3.1%, Samsung and SK Hynix both losing more than 7% — tracking the global long-bond selloff before reversing Thursday on the Korean shareholder-return announcements. Unitree Robotics surged 460% on its Shanghai debut, becoming mainland China's first listed humanoid-robot maker at roughly 36 times sales, though analysts noted the valuation reflects speculative enthusiasm for an as-yet commercially unproven technology. China sentenced Evergrande founder Hui Ka Yan to life in prison on Thursday and fined the developer 15.82 billion yuan, closing out the property-collapse prosecutions. Australia's unemployment rate unexpectedly rose to 4.5% in July, prompting traders to pare rate-hike bets. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>UK CPI accelerated to a four-month high in July — confirming the Wednesday consensus estimate of 2.9% YoY — as energy bills and airfares rose, driven partly by the Iran conflict's effect on costs.</li><li>French 30-year borrowing costs climbed to 2008 levels and the France-Germany 10-year spread widened to its broadest since Mario Draghi's 2012 "whatever it takes" speech, as traders built short positions ahead of a fight over the 2027 budget.</li><li>Germany is selling 30-year bonds at the highest yields since 2011; UK gilt yields approached 6%, their highest since 1998.</li><li>The eurozone's flash PMI for August improved unexpectedly, led by the strongest manufacturing growth in more than four years, offering tentative evidence of an industrial recovery.</li><li>The UK posted a surprise £1.8 billion budget deficit in July, retail sales fell for the first time in three months, and firms in critical financial distress rose 9%, even as consumer confidence climbed to a two-year high.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Inflation and Monetary Policy</p>
+<p class="para-body">UK price pressures are reasserting themselves precisely as the BOE had hoped for relief. ECB Chief Economist Philip Lane said euro-area inflation will likely hold "well above" 2% — near 3% — for the rest of 2026, reflecting Iran-war energy costs; ECB policymaker Martins Kazaks described current inflation as "somewhat uncomfortable." European winter gas prices are more than double year-ago levels and German power prices are up 50%, with UK household energy bills forecast to reach a three-year high in October. Roughly a fifth of global LNG flows remain constrained by the Strait of Hormuz standoff, complicating gas-storage rebuilding efforts at their lowest seasonal level on record.</p>
+<p class="para-title" style="color:#4a9e6b;">Sovereign Debt and Fiscal Stress</p>
+<p class="para-body">France remains the epicenter of European bond-market stress, with lingering doubts about Paris's capacity to close its fiscal deficit — the product of a deadlocked legislature following Macron's 2024 snap election — against a presidential election less than a year away. Germany's own borrowing costs are climbing toward levels last seen during the euro-area debt crisis. In the UK, the combination of a wider-than-expected July deficit, rising corporate distress and an overstretched NHS — which a Treasury analysis found could save up to £32 billion annually had productivity kept pace since the pandemic — presents Chancellor Healey with a difficult autumn budget. Almost 190,000 German firms closed in 2025, up approximately 10%, with demographic pressures and skilled-worker shortages cited as primary drivers.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate and Structural Themes</p>
+<p class="para-body">European equities remained resilient — the Stoxx 600 rose 0.3% to 652.11 on Thursday — with Goldman Sachs and JPMorgan among the more bullish forecasters even as consensus sees the index roughly flat by year-end. Italian banking consolidation accelerated as Monte dei Paschi offered to acquire BPM and Banca Generali for a combined roughly $40 billion. Central European economies are deepening ties with Chinese capital as Germany's industrial slowdown erodes the region's traditional growth engine, with Slovakia securing over €2.5 billion in Chinese-linked EV and battery investment; Poland has adopted a more cautious political stance while remaining difficult to insulate from Chinese trade penetration. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Colombia's president asked Washington to temporarily suspend tariffs on Colombian goods following a devastating earthquake that killed nearly 300 people, underscoring the intersection of disaster relief and US trade policy.</li><li>Brazil's President Lula holds above 60% reelection odds in betting markets by Thursday, buoyed by nationalist backlash against Trump's tariffs; the Bovespa remains up 3.5% year-to-date despite recent weakness, though Societe Generale projects government debt will rise past 100% of GDP.</li><li>Argentina's formal-sector employment fell for a second consecutive year even as GDP expanded, inflation declined and poverty fell under President Milei — emerging as his clearest political vulnerability ahead of next year's election.</li><li>Mexico is advancing the $4 billion Interoceanic Corridor rail link and weighing additional import restrictions on Chinese goods as broader US-Mexico trade negotiations continue.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil's Fiscal and Political Crosscurrents</p>
+<p class="para-body">Finance Minister Dario Durigan acknowledged investors have "legitimate questions" about the spending trajectory less than two months before the October vote. BCA Research warns that a Lula win could dash hopes of fiscal tightening: a weaker currency might force the central bank to reverse its easing cycle, higher borrowing costs would point to a 2027 growth slowdown, and Brazilian equities — already decoupled from rising local yields since early this year — could face a valuation correction. Citi's Dirk Willer noted that unlike outcomes this year in Hungary and Colombia, in Brazil "the less market-friendly candidate is the favorite," a distinction that could deepen downside risk if uncertainty about the spending path intensifies.</p>
+<p class="para-title" style="color:#c0392b;">Trade, Commodities and Regional Flows</p>
+<p class="para-body">Capital Economics argues the region entered the Iran conflict with strong external balance sheets — high reserves, resilient exports and narrowing current-account deficits — positioning Latin American currencies and dollar debt to weather dollar strength better than in past cycles. Copper has provided a tailwind for regional assets, though returns continue to lag technology-driven gains elsewhere in emerging markets. Venezuela's push to re-attract US oil capital — with SLB and Hunt Oil signing new PDVSA contracts — reflects genuine investor appetite for an underexploited reserve base, but poor historical contract enforcement and a bilateral, non-competitive award process remain material risks. Mexico's Interoceanic Corridor promises faster freight transit times than the Panama route, but its 2035 container target remains a fraction of Panama's traffic and power-infrastructure gaps continue to limit factory investment. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude rose above $91 a barrel by Thursday — its highest in nearly three weeks — after the UAE cut all economic ties with Iran following ballistic missile strikes on its territory, and Trump announced an "economic D-Day" against Tehran on Thursday, threatening penalties on any country or institution still trading with Iran.</li><li>Long-dated sovereign yields hit multidecade highs across major economies: 30-year US Treasuries above 5.29% (highest since 2007), Japanese 30-year yields above 4% for the first time in 27 years, UK gilts near their highest since 1998, and French and German long bonds at their highest since 2008 and 2011, respectively.</li><li>Gold rose 1.8% to $4,596.90 on Friday, on track for a third straight weekly gain, and Bitcoin surged 7.0% to $77,753 amid debasement-trade dynamics following the US Treasury's expanded buyback plans and dollar weakness.</li><li>Commercial transits through the Strait of Hormuz remain suppressed at approximately 5% of prewar throughput; Iranian crude available to Chinese refiners is "rapidly running out," even as US refiners processed 17.4 million barrels a day last week, the highest rate since September 2019.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">The Iran Conflict and Oil Markets</p>
+<p class="para-body">Trump's pivot to economic warfare on Thursday marks an implicit acknowledgment of the military campaign's limits after nearly six months of conflict, with US resources stretched and elevated gasoline prices an increasing domestic political liability ahead of midterm elections. Brent nonetheless held below $93 as covert Persian Gulf flows — still running at meaningful volumes despite vessel attacks — and Chinese refiners' reluctance to absorb the oil-price premium have partly capped upside. Analysts remain divided on whether tightened sanctions can extract concessions that months of force have not, and China's role as Iran's largest oil customer makes Trump's threat as much a test of the US-China relationship as further pressure on Tehran — a tension Washington has so far shown limited appetite to confront directly.</p>
+<p class="para-title" style="color:#8b5cf6;">The Global Bond Selloff</p>
+<p class="para-body">Barclays attributes the synchronized rise in long-end yields to three compounding forces: widening deficit outlooks across major economies, a roughly $1 trillion wave of AI-related hyperscaler debt flooding markets, and a shifting buyer base as foreign holdings of US Treasuries fell $72.1 billion in June — led by Japan and China — the third monthly decline in four months. The ECB's Lane linking inflation above 2% to Iran-war energy costs draws a clear thread between the geopolitical conflict and sovereign financing costs. Robeco's head of Asia fixed income described hyperscalers as "almost price ins</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

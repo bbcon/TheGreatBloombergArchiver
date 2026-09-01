@@ -1,0 +1,16 @@
+• Bank of Japan underlying inflation rose 2.3% YoY in July, above the 2% target and above consensus, cementing near-full market pricing of a September rate hike.
+• Philippine GDP expanded just 2.3% in Q2, badly missing the 2.9% consensus and sharply below the 5.4% a year earlier, underscoring the growth cost of inflation and currency weakness.
+• China's industrial profit growth slowed for a third consecutive month to its weakest pace this year, consistent with continued demand softness.
+• Hong Kong July exports rose nearly 51% YoY, well above estimates, with mainland China shipments hitting a record on AI-linked demand.
+• Bangko Sentral ng Pilipinas hiked rates for a third consecutive meeting; the Bank of Korea hiked for a second straight meeting — the region's tightening bias stands in sharp contrast to China's soft patch.
+
+**Regional Growth and Inflation Divergence**
+The Philippines presents the week's starkest regional macro tension: GDP growth that missed consensus by a wide margin alongside above-target inflation that the central bank projects will persist until 2028, with the peso touching a record low past 62 per dollar on elevated oil costs. Governor Remolona's pledge to "tighten as much as we need" captures the bind facing oil-import-dependent Asian economies. Australia's core inflation also surprised to the upside, prompting traders to price a fourth RBA hike as early as September — a sharp reversal after the RBA was cutting rates as recently as 2025. Japan's Tokyo inflation ticked higher again, and the BOJ spent a record $96.4 billion on yen intervention over the past month, adding urgency to the expected September hike.
+
+**China: Pressure on Multiple Fronts**
+Beijing faces simultaneous trade, fiscal, and corporate headwinds. The US is set to impose a 7.5% overcapacity tariff, restoring total duties toward 20%, while dozens of Chinese and Hong Kong firms were hit by Iran-related sanctions. Domestically, Beijing's tax clawback campaign has recovered roughly 7.7 billion yuan from over 100 listed companies, with Heilongjiang Agriculture receiving a bill equal to 120% of its 2025 net income. Sinopec's chairman declared China has likely already passed peak oil demand — a notable statement from one of the country's largest refiners — as EV penetration reached 64% of July passenger-vehicle sales and crude imports fell an estimated 3.3 million barrels per day in Q2 year-on-year. Alibaba's $10 billion Hong Kong placement remained a source of investor unease, with shares still down roughly 6% from pre-deal levels despite buying by executives and co-founder Jack Ma.
+
+**Corporate and Geopolitical Signals**
+Shein's Hong Kong IPO launched at a valuation of roughly $26–27 billion, a fraction of the near-$100 billion figure floated in 2022, illustrating the reset in Chinese consumer-tech valuations. South Korea and the US agreed to coordinate on North Korea dialogue after Pyongyang rebuffed Trump's overtures and test-fired short-range missiles. Korean leveraged ETFs saw $1 billion of outflows as AI enthusiasm cooled at the margin, while Taiwanese prosecutors indicted a senior Nvidia manager over alleged chip smuggling to China, adding another layer to the technology-decoupling story.
+
+---

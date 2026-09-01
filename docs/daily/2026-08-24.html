@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, August 24, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, August 24, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>The S&P Global flash US composite PMI climbed to 56 in August, the highest since April 2022, as stronger demand and hiring drove business activity.</li><li>Core PCE for July, due Wednesday, is expected at a tame 0.2% month-on-month (versus 0.1% in June), though the year-on-year core rate is still forecast at 3.3%, a point above target.</li><li>Washington's 50% tariffs on roughly $20 billion of Canadian goods took effect Saturday after trade talks collapsed, reviving tariff-driven inflation risk.</li><li>Equities fell ahead of Nvidia's Wednesday earnings and Fed Chair Kevin Warsh's first Jackson Hole keynote Friday; S&P 500 futures were down 0.1%.</li><li>The 10-year Treasury yield held near 4.71% even after Bessent's Aug. 19 move to at least double buybacks of longer-dated debt.</li></ul>
+<p class="para-title" style="color:#5597cb;">Inflation and Trade Policy</p>
+<p class="para-body">Fed officials had expected tariff-driven inflation, which pushed headline CPI toward 3%, to fade through mid-year, and Wednesday's core PCE print should support that view. But new Canada tariffs, layered atop a looming Iran isolation push that could draw secondary measures on China, introduce fresh upside risk markets have yet to price.</p>
+<p class="para-title" style="color:#5597cb;">Fed Credibility and Markets</p>
+<p class="para-body">Warsh's Friday address is being watched after his July press conference was read as lacking resolve on inflation, a reaction that helped push long-term yields to a two-decade high. Bessent's buyback maneuver briefly rallied bonds, but yields have since drifted back up, weakening the dollar and pushing gold to a three-month high above $4,650 an ounce and Bitcoin up as much as 23% since the announcement.</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Alibaba raised HK$80 billion ($10 billion) in Hong Kong's biggest secondary share sale to fund its shift from e-commerce to AI; shares fell as much as 10% Monday, still over 60% below their 2020 peak, and Michael Burry disclosed he exited, calling it "pricey."</li><li>Shein is seeking up to HK$13.9 billion ($1.8 billion) in its long-delayed Hong Kong IPO, implying a market cap of roughly $26-27 billion versus the near-$100 billion valuation floated in 2022.</li><li>South Korea's early-August exports extended their gains, bolstering the case for further Bank of Korea rate hikes; Singapore's core inflation surged to a near two-year high on energy costs.</li><li>Iran's oil shipments to Asia have "all but dried up" ahead of new US measures, pushing cargo prices from a discount to a roughly $4-a-barrel premium.</li></ul>
+<p class="para-title" style="color:#e07b39;">China's Capital Markets Repricing</p>
+<p class="para-body">Alibaba and Shein's Hong Kong fundraisings underscore how China's relationship with global capital has shifted: both raised large sums, but at valuations well below prior peaks. Separately, a $119 billion state investment program meant to shore up flagging growth has yet to get off the ground six months after it was announced, a delay analysts warn could blunt its impact.</p>
+<p class="para-title" style="color:#e07b39;">Regional Policy and Growth</p>
+<p class="para-body">Beijing is framing uneven performance as resilience even as the slowdown deepens. Bank of Japan officials face a week of chances to validate or push back on heavy bets for a September hike, while India's equity markets are on track for a record $10 billion inflow month.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>No major eurozone or UK macro data print this period; UK fintech funding fell to its lowest level in at least a decade.</li><li>London faces record subsidence-related insurance claims after five successive heat waves dried out the clay soil beneath the city; households claimed an average £20,000 last quarter, up 15% year-on-year, with payouts up roughly 90% over four years to a record £297 million.</li><li>New UK Prime Minister Andy Burnham made Ukraine his first international trip, meeting President Zelenskyy and co-chairing an allied meeting with Germany's Merz and France's Macron.</li><li>Goldman Sachs said European gas prices may need to rise above €100 per megawatt-hour in December for the continent to rebuild adequate winter inventories.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Climate Costs and Housing</p>
+<p class="para-body">The Association of British Insurers said the subsidence-claims trend is likely to continue, with London clay — which expands when wet and contracts when dry — especially sensitive to the heat waves. Affected properties can lose 20%-25% of their value, the Federation of Master Builders estimates. Separately, "coolcation" demand has pushed rural Scottish hotel rates up 9.2% year-on-year as travelers seek cooler alternatives to southern England.</p>
+<p class="para-title" style="color:#4a9e6b;">Politics</p>
+<p class="para-body">Burnham's Kyiv trip signals continuity in UK support for Ukraine after Moscow rejected a Ukrainian offer of a Black Sea shipping truce. Separately, Bloomberg Opinion's Mihir Sharma described Britain's recovery as K-shaped, with AI-driven gains in investment and productivity accompanied by shrinking opportunities for younger, lower-paid workers. In France, Raphael Glucksmann will contest the Socialist presidential primary amid continued division on the French left.</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>No major LatAm data print this period; the dominant story is structural — China has overtaken the US as Latin America's top trading partner, with goods trade growing from just over $14 billion in 2000 to more than $500 billion in 2024.</li><li>Ecuador's Daniel Noboa, one of Trump's staunchest regional allies, just concluded a weeklong China trip meeting President Xi Jinping and securing Chinese support, including an AI-powered meteorological system, ahead of the El Niño climate event.</li><li>Brazil's coffee crop was hit by heavy downpours, threatening arabica quality and supply for major roasters including Starbucks and Lavazza.</li><li>Brazil's Lula called Trump to seek renewed tariff talks, while Mexico voiced optimism it can secure lower US tariffs on autos and steel.</li></ul>
+<p class="para-title" style="color:#c0392b;">China's Deepening Regional Foothold</p>
+<p class="para-body">Trump's "Donroe Doctrine" push for hemispheric influence has done little to unwind Latin America's economic ties to Beijing. China continues deepening its position in critical minerals, power and infrastructure while expanding into financial services, consumer businesses, EVs and batteries — areas the Trump administration largely shuns. Facing US scrutiny, Chinese firms are increasingly cultivating governors, mayors and local business groups rather than national governments, even in countries politically aligned with Washington.</p>
+<p class="para-title" style="color:#c0392b;">Trade and Commodities</p>
+<p class="para-body">With Washington's tariff fight against Canada escalating, Brazil and Mexico are each working diplomatic channels to avoid a similar fate: Lula seeking a direct call with Trump, and Mexican officials expressing confidence on relief for autos and steel. Early inflation readings from Mexico are due this week.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Hormuz oil flows have held up despite the ongoing US-Iran war: roughly 40 ships transited a southern route hugging Oman's coast Friday night carrying about 16 million barrels, roughly four-fifths of prewar volumes, Axios reported.</li><li>The Trump administration is set to detail a fresh economic-isolation plan against Iran Monday; Iran's oil shipments to Asia have "all but dried up," pushing cargo prices from a discount to roughly a $4-a-barrel premium.</li><li>Gold rose as much as 1.2% to above $4,650 an ounce, a more-than-three-month high, as Bessent's bond-buyback intervention revived the dollar-debasement trade; Bitcoin extended a rally of as much as 23% since the Aug. 19 announcement.</li><li>WTI crude fell 1.7% to $85.59 as traders awaited details of the Iran isolation plan.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Iran and Energy Markets</p>
+<p class="para-body">The clandestine shuttle trade through Hormuz — led by the UAE and joined by Iraq, Qatar, Kuwait and, more recently, Saudi Arabia rerouting around Houthi threats in the Red Sea — has kept global supply closer to normal than headlines suggest, though shipments remain lumpy and politically sensitive. Iran's own exports have meanwhile collapsed under blockade, a dynamic Washington's sanctions push is meant to deepen, with China — Iran's largest remaining buyer — the variable analysts doubt Washington is prepared to confront.</p>
+<p class="para-title" style="color:#8b5cf6;">Policy Defiance and the Debasement Trade</p>
+<p class="para-body">Canada's tariff retaliation, Iran's endurance of sanctions, and bond markets pushing yields higher despite Bessent's buybacks reflect a common pattern of resistance to US economic leverage this summer — with gold and Bitcoin both benefiting as hedges against dollar debasement.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

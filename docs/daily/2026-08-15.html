@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saturday, August 15, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Saturday, August 15, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>US battery-storage interconnection queues have grown to roughly 750 gigawatts awaiting grid connection, with the median wait rising to five years in 2025 from 1.5 years in 2015 — a 233% increase — per Lawrence Berkeley National Laboratory data.</li><li>Consolidated Edison says battery projects awaiting connection in its New York territory have grown 300% over two years; California regulators expect similar delays statewide.</li><li>A Trump-backed $4 billion Oklahoma smelter (Century Aluminum/Emirates Global Aluminium) was blocked by a unanimous town moratorium despite White House lobbying, a setback for the reshoring agenda.</li></ul>
+<p class="para-title" style="color:#5597cb;">Grid Interconnection Bottleneck</p>
+<p class="para-body">Demand for battery storage is surging as data-center and electrification-driven power use grows and battery prices fall, but underinvestment in transmission has left utilities unable to connect projects fast enough. Shortages of transformers and circuit breakers are delaying needed upgrades, and many developers have abandoned the queue given the delays. Wood Mackenzie projects the storage market will quadruple over six years. The bottleneck is costly this summer, as idle batteries that could ease peak air-conditioning demand sit stranded awaiting connection.</p>
+<p class="para-title" style="color:#5597cb;">Reshoring Friction in Oklahoma</p>
+<p class="para-body">The Inola smelter dispute illustrates political limits on reshoring even in conservative states. Trump personally urged the town council to approve the project "without delay"; the board voted unanimously to impose a moratorium, citing emissions and cost concerns. The plant would be the first new US facility in nearly 50 years to process aluminum from raw material, at a moment when the Iran war has strained foreign supply. A White House spokesman blamed "left-wing" activism.</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>India launched its first census to count caste across the full population since independence — and the first such count since 1931 — with results expected to inform quotas (27% for Other Backward Classes, 22.5% for Scheduled Castes/Tribes, 10% for Economically Weaker Sections) and parliamentary redistricting.</li><li>Indonesia's newly appointed central bank governor faces an early test balancing growth support against defending policy independence.</li><li>Tata Sons' leadership crisis arrives at a critical juncture for India's largest conglomerate.</li><li>China is leaning further on domestic capital markets, including AI equities, to fund its chip-technology race with the US.</li></ul>
+<p class="para-title" style="color:#e07b39;">India's Caste Census</p>
+<p class="para-body">Modi's BJP had long resisted a caste count to avoid straining its broad Hindu coalition, but reversed course after losing its parliamentary majority in 2024, seeking broader appeal among disadvantaged communities. A 2011 attempt to collect similar data produced over 4 million caste descriptions too difficult to classify and never released. The new count could reshape the federal bargain: it will inform redistricting frozen for decades, raising concern among wealthier southern states — which have brought fertility below replacement — that population-based reallocation would dilute their influence relative to faster-growing northern states. Opposition parties warn inconsistent enumeration could reduce the exercise to a symbolic one.</p>
+<p class="para-title" style="color:#e07b39;">Regional Watch</p>
+<p class="para-body">Indonesia's incoming central bank chief must navigate growth-support demands without ceding policy autonomy. Tata Sons' leadership tensions add uncertainty for one of India's largest conglomerates. China is directing more domestic investment toward AI-related equities as part of its race with the US for chip dominance.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>Europe's fifth heat wave of the summer threatens to erase almost all of the euro area's expected 1.1% GDP growth this year, according to analysis by Triodos Bank.</li><li>Sustained heat and drought are driving deadly wildfires and disrupting energy supply across the bloc.</li><li>Crop harvests have been damaged and reservoirs and rivers depleted, compounding the growth drag.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Heat Wave Growth Risk</p>
+<p class="para-body">Triodos Bank's analysis suggests the cumulative economic toll of this summer's heat waves — the fifth to hit Europe this season — could offset nearly all of the region's projected 1.1% GDP expansion for the year. The transmission channels are broad: wildfires have proven deadly and destructive, energy supply has been disrupted amid peak cooling demand, crop harvests have suffered, and reservoirs and rivers have been depleted. The estimate remains a single analytical projection rather than a realized outcome, but it points to extreme heat becoming a material, recurring drag on European output rather than an isolated weather event, with implications for the region's already-fragile growth trajectory heading into the second half of the year.</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>A powerful earthquake in Colombia, with the death toll nearing 170, has triggered a national economic emergency declaration.</li><li>The government is using the disaster response to deepen an existing push to empower and invest in the country's remote regions.</li></ul>
+<p class="para-title" style="color:#c0392b;">Colombia Earthquake Response</p>
+<p class="para-body">The earthquake's rising death toll — approaching 170 — has prompted Colombia's government to declare an economic emergency, freeing up fiscal and administrative tools to accelerate relief and reconstruction. The president is using the moment to press forward with a broader reform agenda aimed at strengthening the autonomy and investment of remote regions, framing disaster recovery as an opportunity to address longstanding regional disparities. It remains too early to assess the fiscal cost of reconstruction or the durability of the reform push once the immediate crisis response subsides.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Moody's warns that extreme heat and water scarcity are increasingly driving stranded-asset risk across sectors, weighing on labor productivity and pushing up energy costs.</li><li>Shell lost the latest round of a five-year legal fight with South African environmental activists over an oil-exploration campaign, a case that reached the country's top court.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Climate-Linked Asset and Legal Risk</p>
+<p class="para-body">Moody's analysis points to a broadening set of channels through which extreme heat and unreliable water supplies are affecting asset valuations, with labor productivity and energy costs both cited as transmission mechanisms across a growing number of sectors. The findings echo the heat-driven growth risk flagged in Europe this period, suggesting the effect is not confined to a single region. Separately, Shell's defeat in South Africa's top court — the conclusion of a five-year dispute over an oil-exploration campaign — underscores rising legal exposure for energy majors pursuing exploration in the face of environmental opposition, a dynamic that may inform how companies weigh future project risk globally.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

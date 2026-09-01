@@ -1,0 +1,16 @@
+• The S&P Global flash US composite PMI climbed to 56 in August, its highest since April 2022, beating consensus and signaling broad-based demand and hiring momentum.
+• Nvidia guided to ~$108 billion in current-quarter revenue and ~70% fiscal 2028 revenue growth, well above the ~45% consensus; shares surged nearly 9% Thursday, adding $442 billion in market value.
+• Core PCE for July (due Wednesday) is forecast at 0.2% MoM and 3.3% YoY, still a full percentage point above target, even as new Canada tariffs introduce fresh upside inflation risk.
+• Fed Chair Kevin Warsh's Friday Jackson Hole keynote is the week's dominant policy event, following a July press conference widely blamed for the bond market's worst selloff in years.
+• Gold and Bitcoin ETFs drew a record $7 billion over five sessions as the "debasement trade" gathered pace alongside Bessent's bond-buyback program.
+
+**Economic Activity and Trade Policy**
+The August composite PMI reading of 56 points to an economy expanding at a healthy clip, though the durability of that momentum faces a growing test. Washington's 50% tariffs on roughly $20 billion of Canadian goods took effect Saturday after trade talks collapsed, and Canada promptly doubled retaliatory duties on US steel and aluminum to 50% while adding levies covering $20 billion of annual US exports — a cycle of escalation that reintroduces the tariff-driven inflation risk Fed officials had hoped was fading. Wednesday's core PCE print, expected in line with consensus at 0.2% MoM and 3.3% YoY, should provide a near-term read on whether earlier tariff pass-through has ebbed before the new Canada measures arrive in the data.
+
+**Monetary Policy and the Warsh Test**
+Warsh's Friday address carries unusual weight as his first Jackson Hole keynote speaking solely in his own voice. Markets price only a 34% probability of a September hike, and officials remain divided — Fed Governor Lisa Cook's position is further complicated by renewed White House scrutiny of her tenure. Bloomberg Economics warned that under-correcting again could damage Warsh's credibility, while Richmond Fed President Barkin separately cautioned that rising federal debt will eventually force a fiscal reckoning. The 10-year yield held near 4.68% through the week, suggesting Bessent's buyback program has provided modest relief — down from 4.75% before the August 19 announcement — but skeptics including Stanley Druckenmiller, who publicly rebuked the program in a WSJ op-ed, argue governments defending prices against fundamentals ultimately lose.
+
+**AI Earnings and Markets**
+Nvidia's blowout guidance settled, at least temporarily, the question of whether AI infrastructure demand is fading. The data-center division beat estimates on continued hyperscaler spending from Alphabet and Amazon, and the company indicated it could grow faster still with more capacity. Software stocks have rallied sharply since April lows, with all 13 S&P 500 reporters through the week beating estimates by an average of 10%, while Salesforce gained 11% and CrowdStrike 8.8%. Offsetting the AI enthusiasm: PayPal fell 15% after Advent and Stripe abandoned their ~$50 billion pursuit, and Marvell and Autodesk both declined on weak results.
+
+---

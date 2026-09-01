@@ -1,0 +1,9 @@
+• New peer-reviewed research published in Philosophical Transactions of the Royal Society B found Angola's peatlands are at least four times larger than previously estimated, covering up to 11,100 square kilometers (4,286 square miles) — an area roughly the size of Qatar.
+• The Congo Basin peatlands, the world's largest tropical peat complex, store an estimated 29 billion tons of carbon — equivalent to roughly three years of global CO2 emissions — per a 2022 study also cited in the research, which found that system 15% bigger than prior analyses at nearly 167,000 square kilometers.
+• Researchers said undiscovered tropical peatland carbon sinks likely exist elsewhere in Africa, including Zambia, Lesotho, South Africa and South Sudan, pointing to a broader continental role in the global carbon budget than previously recognized.
+
+**An Underappreciated Carbon Sink**
+The Angola study, led by geospatial ecologist Mauro Lourenço and supported by the Nature Conservancy and De Beers, ranks Angola's peatlands as the continent's fifth-biggest. Some near-riverbank peatlands have been accumulating carbon for over 1,100 years, with higher-altitude sections storing it for more than 7,000 years — underscoring the long time horizons over which these systems have sequestered carbon and the climate cost of their disturbance.
+
+**Water Security and Biodiversity Stakes**
+Beyond carbon storage, the peatlands — part of the Angola Highlands Water Tower — regulate seasonal water flow to the Zambezi River and the Okavango Delta. The Zambezi feeds hydropower generation critical to electricity supply in Zambia, Zimbabwe and Mozambique, while the downstream Kavango-Zambezi conservation area supports roughly 228,000 elephants, about 40% of the world's total population. Researchers noted the Okavango Delta ecosystem is directly dependent on the integrity of Angola's peat systems.

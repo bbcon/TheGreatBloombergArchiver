@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, August 11, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, August 11, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>US CPI for July, due Wednesday, is expected to show inflation eased further after June's core print undershot even the lowest analyst estimate in Bloomberg's survey; the S&P 500 closed Monday virtually flat, down 0.06%, near record levels.</li><li>Q2 earnings broadened: S&P 500 profit growth accelerated to 34% YoY from 25% in Q1, with tech's share of aggregate earnings growth falling to roughly 55% from about 90% a year earlier.</li><li>Cleveland Fed President Beth Hammack said "some number" of hikes may still be needed, a hawkish note even as swaps push back the timing of the next move; the 10-year yield sits near 4.73%.</li><li>Nvidia secured a $500 billion Wall Street financing commitment for AI infrastructure; Intel upsized its share sale to raise $20 billion.</li></ul>
+<p class="para-title" style="color:#5597cb;">Inflation and Fed Policy</p>
+<p class="para-body">The labor market appears broadly in equilibrium, providing little justification for shifting rates either way, and June's core CPI undershot even the lowest estimate tracked by Bloomberg. Consensus expects Wednesday's print to confirm disinflation, easing pressure on the Fed. Officials remain divided: Hammack's comments contrast with market pricing for no near-term hike.</p>
+<p class="para-title" style="color:#5597cb;">Earnings Broaden as AI Capex Questions Persist</p>
+<p class="para-body">With all S&P 500 companies reporting, profit growth hit one of the highest rates outside a recession recovery, with seven of 11 sectors posting double-digit gains. Cloud revenue at Alphabet, Microsoft and Amazon each grew over 40%, evidence some cite as AI capex paying off, even as hyperscaler free cash flow deteriorates sharply. Apollo's Torsten Slok cautioned non-tech margins show little sign of AI-driven profitability gains.</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Australia's central bank held its cash rate unchanged at 4.35% for a second straight meeting, wagering that rising unemployment and a weaker property market will cool inflation; Governor Michele Bullock still called further tightening "quite possible" after a roughly five-year miss on the RBA's inflation target.</li><li>South Korea's Bank of Korea deputy governor signaled more rate hikes are possible.</li><li>Asia-Pacific government bonds fell in sympathy with US Treasuries as Monday's oil rally revived inflation concerns ahead of US CPI data; China's CSI 300 fell 0.8%.</li><li>Indonesia nominated Destry Damayanti as sole candidate for Bank Indonesia governor, seen as balancing growth ambitions against central bank autonomy.</li></ul>
+<p class="para-title" style="color:#e07b39;">Monetary Policy Diverges on Inflation Risk</p>
+<p class="para-body">Australia's hold came with a hawkish cast, Bullock warning further tightening remains possible despite the RBA's prolonged miss on its inflation target. South Korea's central bank struck a similar note. The region's bond selloff reflects the same oil-driven inflation anxiety weighing on US markets ahead of Wednesday's CPI.</p>
+<p class="para-title" style="color:#e07b39;">Currencies and Corporate Pressures</p>
+<p class="para-body">The yen extended its slide toward 160 per dollar, a week after a coordinated Bank of Japan-US Treasury intervention that now appears only temporary; Bessent's "whatever it takes" pledge is constrained by an Exchange Stabilization Fund holding under $220 billion, versus the roughly $53 billion Japan spent alone on July 30. German automakers' China struggles underscored regional pressure: Mercedes sold just 1,153 China units in H1 versus Xiaomi's 80,000-plus SU7 deliveries. Singapore upgraded its 2026 growth forecast to as high as 5.5% on AI-driven trade.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>The Stoxx Europe 600 has rallied 12% this year, with Germany, Italy and France at record highs, defying earlier forecasts the Iran war would tip the region into stagflation.</li><li>UK retail sales value rose an annual 1.3%, half the pace of a year earlier, with non-food sales falling for the first time since April as the heat wave curbed spending, the British Retail Consortium said.</li><li>Drought has been declared across almost three-quarters of England, with reservoir storage roughly 12% below average, as Europe endures its fifth heat wave of the year.</li><li>Swiss Re warned European wildfires have caused as much as €19.1 billion in damage this summer, with 30C-plus days up 64% versus the 1950s.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Growth, Inflation and the ECB</p>
+<p class="para-body">Europe's rally reflects the fastest earnings growth in four years alongside an economy strong enough to support stocks but not hot enough to force the ECB's hand, per BNP Paribas's Sophie Huynh, who called it a "sweet spot." German bunds outperform Treasuries and the euro trades near a two-month high on Fed uncertainty. UK consumers, by contrast, pulled back.</p>
+<p class="para-title" style="color:#4a9e6b;">Heat, Drought and Economic Costs</p>
+<p class="para-body">Swiss Re's warning points to a broadening economic toll from extreme heat: only about 20% of European households have air conditioning versus 76% in North America, leaving a continent warming nearly twice as fast as the global average poorly equipped. Oxford Economics flagged low Rhine water levels as a threat to German chemical, metals and construction firms, implying higher inflation as gas increasingly sets power prices while hydropower and nuclear output are curtailed.</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>A 7.4-magnitude earthquake struck western Colombia's coffee-growing region, killing at least 130 people and reducing thousands of buildings to rubble, posing an immediate fiscal and political test for newly inaugurated President Abelardo de la Espriella.</li><li>The disaster complicates de la Espriella's pledge to cut public spending by 40%, forcing an early choice between funding reconstruction and the fiscal discipline that defined his campaign.</li><li>Brazil's beef shipments to China reached 90% of the country-specific quota as of August 10, according to China's Ministry of Commerce, pointing to continued strong demand from the region's largest agricultural trading partner.</li></ul>
+<p class="para-title" style="color:#c0392b;">Colombia's Earthquake Tests a New Government</p>
+<p class="para-body">The quake, centered in Colombia's coffee region, raises the prospect of broader economic damage beyond the immediate humanitarian toll and struck just days into de la Espriella's term as the first Colombian president sworn in outside Bogotá. His response — including a roughly five-hour delay before addressing the country directly, during which local officials became the public face of the response — will be measured against Venezuela's earthquake response two months earlier, which was criticized as too slow and fed political backlash there. How the government funds reconstruction while pursuing its 40% spending-cut pledge will offer an early signal of whether de la Espriella's campaign commitments to fiscal discipline and smaller government can survive the realities of governing, and will also test whether his political alignment with Donald Trump translates into tangible US support for the recovery effort.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude rose 2.4% to $89.81 a barrel, extending a four-day rally to a year-to-date gain of more than 46%, after Trump hardened his stance on Iran, demanding reparations for casualties from Iran-linked conflicts as a condition of any Hormuz deal — a demand Tehran is almost certain to reject.</li><li>US gasoline is averaging above $4 a gallon, and Asia-Pacific bonds sold off alongside Treasuries as oil revived inflation concerns ahead of US CPI data.</li><li>The yen weakened toward 160 per dollar, a week after a coordinated Bank of Japan-US Treasury intervention, with Washington's firepower constrained by an Exchange Stabilization Fund holding less than $220 billion.</li><li>NOAA confirmed July as the warmest US month in 132 years of records, while Swiss Re warned European wildfires caused up to €19.1 billion in damage this summer.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Hormuz Standoff Deepens</p>
+<p class="para-body">Trump's demand — that Iran pay reparations for casualties tied to conflicts in Israel, Lebanon, Syria, Yemen and Gaza — hardens both sides' positions just as talks to reopen a waterway that carried roughly a fifth of the world's oil and LNG before the war seemed to gain momentum. Iran is separately seeking its own reparations, making a near-term deal unlikely.</p>
+<p class="para-title" style="color:#8b5cf6;">Energy Transition Under Pressure</p>
+<p class="para-body">The administration continues redirecting capital from renewables to fossil fuels: settlements tied to $4 billion in canceled offshore wind leases have funneled roughly $2.6 billion in developer commitments — from RWE, TotalEnergies and BlackRock's GIP — into US LNG and gas infrastructure, reinforcing record domestic gas output as AI data centers and Hormuz-driven prices both boost demand for US supply.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

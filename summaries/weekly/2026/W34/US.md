@@ -1,0 +1,16 @@
+• Atlanta Fed GDPNow surged to 4.3% annualized for the current quarter, up sharply from Q2's 1.5%, though Apollo's Torsten Slok attributed roughly 0.2 points to one-off tariff refunds following the Supreme Court's ruling against most Trump-era import duties.
+• 30-year Treasury yields rose to 5.29%–5.33% on Monday, the highest since 2007, before Treasury Secretary Bessent announced expanded buybacks of 10- to 30-year debt on Thursday, pulling the 30-year down approximately 8bp to 5.19%.
+• US public debt topped $40 trillion for the first time Thursday, hours after Bessent's buyback announcement; gold rose 1.8% to $4,596.90 and Bitcoin surged 7.0% to $77,753 on Friday amid renewed debasement-trade dynamics.
+• Goldman Sachs said a September Fed hike is now "very unlikely," citing softer retail sales, weaker employment and slowing inflation; the dollar fell to a three-month low and extended its slide through the week.
+• July FOMC minutes, released Wednesday, showed a 9–3 vote to hold, with officials sharply divided over further hikes.
+
+**Growth and Housing**
+The GDPNow acceleration to 4.3% overstates underlying momentum: Goldman's read emphasizes that retail sales, employment and inflation are all softening even as the headline tracking estimate climbs. Housing data published Tuesday reinforced caution — pending home sales matched the second-worst level since 2001, single-family housing starts fell to the fewest since 2022, and Redfin data showed 51.3% more sellers than buyers in July. The 30-year mortgage rate held at 6.67%, homebuilder sentiment remained below the breakeven level of 50 for the sixteenth consecutive month, and KPMG's Yelena Maleyev warned of a K-shaped bifurcation between well-capitalized high-end builders and the rest of the market.
+
+**Fiscal Policy and Rates**
+Federal debt approaching a roughly $41 trillion statutory ceiling — which Evercore ISI expects to bind in the first half of 2027 — and Bessent's buyback expansion have intensified the debate over debt sustainability. JPMorgan warned the buyback risks a credibility problem absent genuine fiscal consolidation, and Barclays attributed the rise in long yields primarily to deficit dynamics and AI-related corporate issuance competing with Treasuries rather than to higher inflation expectations. The dollar's sharp weekly decline drew comparisons to Japan, where persistent currency weakness has proved difficult to reverse once underway.
+
+**Equities and Credit**
+The S&P 500 stayed within 2% of its record despite a deepening chip-stock selloff and rising long-end yields, with equity volatility subdued — the VIX closed below 15 weekly in August for the first time this year. Apple shares fell roughly 10% from their July 28 peak, penalized for underinvesting in AI, while Microsoft, Amazon and Alphabet rallied as results eased overspending concerns. Moderna surged as much as 176% on Thursday on positive melanoma-vaccine trial data with Merck, lifting the S&P 500 healthcare index over 4% in a single session and inflicting an estimated $5–5.5 billion in short-seller mark-to-market losses. Investment-grade issuance has now reached nearly $1.5 trillion year-to-date, up 36% year-on-year, as AI-linked borrowing competes with heavy Treasury supply for investor demand.
+
+---

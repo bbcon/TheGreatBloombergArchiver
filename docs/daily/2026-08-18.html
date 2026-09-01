@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, August 18, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, August 18, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>30-year Treasury yields rose to 5.29%-5.33%, the highest since 2007, extending a global long-bond selloff that is reshaping asset allocation.</li><li>New York's Empire State manufacturing index expanded in August by the most since late 2021, with orders growth and backlogs firm despite worsening supply availability.</li><li>Foreign holdings of US Treasuries fell $72.1 billion in June, led by Japan and China, the third such monthly decline in four months since February's record.</li><li>Apple shares are down 10% from their July 28 peak, among the S&P 500's 25 worst performers over three weeks, as investors reward AI-spending peers Microsoft, Amazon and Alphabet instead.</li></ul>
+<p class="para-title" style="color:#5597cb;">Rates and Fiscal Pressure</p>
+<p class="para-body">The rise in 30-year yields to a 19-year high reflects the budget deficit outlook, a surge in AI-related corporate debt issuance competing with Treasuries, and a shifting buyer base, according to Barclays — rather than higher inflation expectations, which have stayed low and stable. Yardeni Research said it is not "pushing the panic button" but is watching for bond vigilantes, drawing a parallel to 2023, when a similar run from 4% to 5% ultimately proved a buying opportunity.</p>
+<p class="para-title" style="color:#5597cb;">Equities Diverge on AI Exposure</p>
+<p class="para-body">Equities fell as rising yields and firmer oil dented risk appetite, even as a Bank of America survey showed bullish positioning at its highest in nearly five years. Apple's avoidance of heavy AI spending, once seen as prudent, has become a drag now the AI trade is back in favor, while Microsoft, Amazon and Alphabet rallied as results eased overspending concerns.</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>China's economy showed across-the-board weakness in July data, with growth at risk of missing Beijing's target, prompting Premier Li Qiang to call for more supportive measures.</li><li>India's CPI climbed to 4.45% year-on-year in July, a 19-month high above the RBI's 4% target for a second straight month, while the services-led PMI fell to 54.3.</li><li>Japanese 30-year bond yields rose above 4% for the first time in their 27-year history amid rising Bank of Japan rate-hike bets.</li><li>The Kospi dropped 1.5% to 6,869.83 and the Nikkei 225 fell 2.5% to 67,460.73 as the global bond selloff sapped risk appetite.</li></ul>
+<p class="para-title" style="color:#e07b39;">China's Slowdown Deepens</p>
+<p class="para-body">July's broad-based weakness pushed Li Qiang to pledge a faster shift toward new growth drivers, focusing on major projects and supply-chain-heavy sectors to unleash demand. Chinese AI models including DeepSeek, Qwen and Moonshot are increasingly viewed as cheaper and nearly as proficient as leading US platforms, a growing concern for Silicon Valley. Indonesian stocks entered a bull market after Prabowo's pragmatic budget speech pledging fiscal prudence.</p>
+<p class="para-title" style="color:#e07b39;">India's Selloff Extends</p>
+<p class="para-body">Indian equities have underperformed EM peers by nearly 30% this year, with the Nifty on a five-day losing streak, down about 7% year-to-date; the MSCI India Infotech index has fared worse, down as much as 50% from its 2024 peak. The inflation overshoot strengthens the case for a hike, a risk that disproportionately hurts India's long-duration equity market. A weaker rupee and elevated oil-import costs compound the pressure, though Capital Economics sees India's low AI exposure as a relative advantage in a broader bear market.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>UK employers shed more workers in July and job vacancies fell to a fresh five-year low, while wage growth slowed further in a tepid labor market.</li><li>UK food-price inflation slowed to its lowest level in two years, even as ECB Chief Economist Philip Lane said euro-area inflation will likely hold "well above" 2% for the rest of 2026 due to the Iran war's effect on energy costs.</li><li>French borrowing costs rose to their highest since 2008 as traders built new short positions in French bonds ahead of a fight over the 2027 budget.</li><li>Germany is set to sell 30-year bonds at the highest yield since 2011, while UK gilt yields approach 6%, their highest since 1998.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Sovereign Debt Under Pressure</p>
+<p class="para-body">European long-end yields are rising in step with a broader global selloff in government bonds. France faces the added strain of an approaching budget fight ahead of the 2027 election, while Germany's borrowing costs climb toward levels last seen amid the euro-area debt crisis. UK gilt yields are nearing 6% as investors reassess long-dated sovereign financing. Separately, almost 190,000 German firms closed in 2025, up about 10%, with demographic pressures and skilled-worker shortages cited as leading causes.</p>
+<p class="para-title" style="color:#4a9e6b;">UK Labor Market Cools as ECB Flags Sticky Inflation</p>
+<p class="para-body">The UK labor market continued to soften in July, with falling payrolls and vacancies alongside slower wage growth, even as a Lloyds survey found more than half of British businesses say AI has created new roles. Lane said the ECB must prioritize curbing price growth to avoid inflation staying too high for too long, though the outlook remains contingent on whether the Iran conflict is resolved.</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazilian markets are pricing in growing odds that President Lula wins a fourth term in October, with Societe Generale projecting government debt will keep rising past 100% of GDP.</li><li>The Bovespa has fallen in recent weeks as Lula's odds improved, though it remains up 3.5% year-to-date after hitting an all-time high in April.</li><li>Brazil's Finance Minister Dario Durigan acknowledged investors have "legitimate questions" about the government's spending trajectory less than two months before the election.</li><li>Mexico has invested at least $4 billion since 2019 reviving a rail "dry canal" linking Coatzacoalcos and Salina Cruz as an alternative to the Panama Canal.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil's Fiscal and Political Crosscurrents</p>
+<p class="para-body">BCA Research's Felix-Antoine Vezina-Poirier warns the near-term risk is that a Lula win dashes hopes of fiscal tightening: a weaker currency could force the central bank to reverse its easing cycle, and higher borrowing costs point to a 2027 growth slowdown. Brazilian equities have decoupled from rising local yields since early this year, a gap BCA expects to close via lower share prices. Citi's Dirk Willer noted that, unlike this year's outcomes in Hungary and Colombia, in Brazil "the less market-friendly candidate is the favorite," a distinction that could deepen downside risk.</p>
+<p class="para-title" style="color:#c0392b;">Mexico Pitches a Panama Alternative</p>
+<p class="para-body">Mexico's revived rail corridor promises faster transit — Salina Cruz to Los Angeles in under four days versus up to seven via Panama — but its 2035 container target remains a fraction of Panama's traffic, and factory investment has lagged amid insufficient power infrastructure. Separately, extortion complaints hit an 11-year high, with more than 6,500 reported in the first half of the year.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Long-dated bond yields hit multidecade highs across major economies this week: 30-year US Treasuries above 5.29% (highest since 2007), Japanese 30-year yields above 4% for the first time in 27 years, UK gilts near their highest since 1998, and French and German long bonds at their highest since 2008 and 2011, respectively.</li><li>Oil extended gains as prospects for a near-term US-Iran resolution receded; Brent climbed above $91 a barrel for a third straight day after Trump said he is not interested in extending an expired agreement with Tehran, and a fresh vessel attack was reported in the Strait of Hormuz.</li><li>BloombergNEF-tracked data show 99 proposed gas plants built to power AI data centers could lift US power-sector carbon emissions by as much as 20%.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">The Long-Bond Repricing</p>
+<p class="para-body">Barclays attributes the global rise in long yields to budget deficit outlooks, AI-related corporate debt competing with sovereigns for investor demand, and a changing buyer base, rather than rising inflation expectations, which have stayed low and stable. ECB's Lane separately said inflation would hold "well above" 2%, near 3% in 2026, partly due to Iran-war energy costs — a thread linking fiscal strain, energy and monetary policy across regions. Foreign holdings of US Treasuries fell in June, led by Japan and China.</p>
+<p class="para-title" style="color:#8b5cf6;">Energy Strain from the AI Buildout</p>
+<p class="para-body">Elevated oil prices from the Hormuz standoff compound scrutiny of the AI buildout's energy footprint, as hyperscalers turn to gas plants to secure power quickly. Former Evercore analyst Doug Terreson likens Big Tech's spending spree to shale drillers' pre-2019 cash-burning era, warning capital discipline is needed to avoid a valuation reckoning.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

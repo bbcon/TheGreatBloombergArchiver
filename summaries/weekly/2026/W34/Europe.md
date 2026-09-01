@@ -1,0 +1,16 @@
+• UK CPI accelerated to a four-month high in July — confirming the Wednesday consensus estimate of 2.9% YoY — as energy bills and airfares rose, driven partly by the Iran conflict's effect on costs.
+• French 30-year borrowing costs climbed to 2008 levels and the France-Germany 10-year spread widened to its broadest since Mario Draghi's 2012 "whatever it takes" speech, as traders built short positions ahead of a fight over the 2027 budget.
+• Germany is selling 30-year bonds at the highest yields since 2011; UK gilt yields approached 6%, their highest since 1998.
+• The eurozone's flash PMI for August improved unexpectedly, led by the strongest manufacturing growth in more than four years, offering tentative evidence of an industrial recovery.
+• The UK posted a surprise £1.8 billion budget deficit in July, retail sales fell for the first time in three months, and firms in critical financial distress rose 9%, even as consumer confidence climbed to a two-year high.
+
+**Inflation and Monetary Policy**
+UK price pressures are reasserting themselves precisely as the BOE had hoped for relief. ECB Chief Economist Philip Lane said euro-area inflation will likely hold "well above" 2% — near 3% — for the rest of 2026, reflecting Iran-war energy costs; ECB policymaker Martins Kazaks described current inflation as "somewhat uncomfortable." European winter gas prices are more than double year-ago levels and German power prices are up 50%, with UK household energy bills forecast to reach a three-year high in October. Roughly a fifth of global LNG flows remain constrained by the Strait of Hormuz standoff, complicating gas-storage rebuilding efforts at their lowest seasonal level on record.
+
+**Sovereign Debt and Fiscal Stress**
+France remains the epicenter of European bond-market stress, with lingering doubts about Paris's capacity to close its fiscal deficit — the product of a deadlocked legislature following Macron's 2024 snap election — against a presidential election less than a year away. Germany's own borrowing costs are climbing toward levels last seen during the euro-area debt crisis. In the UK, the combination of a wider-than-expected July deficit, rising corporate distress and an overstretched NHS — which a Treasury analysis found could save up to £32 billion annually had productivity kept pace since the pandemic — presents Chancellor Healey with a difficult autumn budget. Almost 190,000 German firms closed in 2025, up approximately 10%, with demographic pressures and skilled-worker shortages cited as primary drivers.
+
+**Corporate and Structural Themes**
+European equities remained resilient — the Stoxx 600 rose 0.3% to 652.11 on Thursday — with Goldman Sachs and JPMorgan among the more bullish forecasters even as consensus sees the index roughly flat by year-end. Italian banking consolidation accelerated as Monte dei Paschi offered to acquire BPM and Banca Generali for a combined roughly $40 billion. Central European economies are deepening ties with Chinese capital as Germany's industrial slowdown erodes the region's traditional growth engine, with Slovakia securing over €2.5 billion in Chinese-linked EV and battery investment; Poland has adopted a more cautious political stance while remaining difficult to insulate from Chinese trade penetration.
+
+---

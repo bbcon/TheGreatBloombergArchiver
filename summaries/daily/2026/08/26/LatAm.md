@@ -1,0 +1,5 @@
+• Mexican sovereign bonds are trading with spreads more typical of high-yield credit following a $130 billion government bailout of state oil company Pemex, reflecting investor concern over the fiscal burden of supporting the indebted producer.
+• Brazil is set to increase diesel imports from the US in the coming weeks as its planting season approaches and the country remains cut off from Russian supplies it previously relied on, according to tanker-tracking data cited by Bloomberg.
+
+**Fiscal and Energy Strains**
+Coverage of the region was limited today, but the two available data points point to related pressures. Mexico's Pemex rescue is weighing on sovereign credit even after the bailout, a sign investors remain skeptical of the country's broader fiscal trajectory. Separately, Brazil's exposure to disrupted Russian energy flows — a consequence of the wider Russia-Ukraine conflict — is pushing it toward greater reliance on US diesel exports, which are themselves running at record levels amid tight global refining capacity.

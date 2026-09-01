@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, August 21, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, August 21, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Treasury Secretary Scott Bessent said he is prepared to expand buybacks of long-dated government debt beyond $4 billion per issue and will unveil a new fiscal initiative to lower borrowing costs, a move investors read as further evidence Washington is avoiding deficit reduction rather than addressing it.</li><li>US public debt surpassed $40 trillion for the first time this week, reinforcing concerns that the buyback plan amounts to debt monetization rather than fiscal repair.</li><li>Gold rose 1.8% to $4,596.90 and Bitcoin jumped 7.0% to $77,753 — on pace for its largest weekly gain in more than two years — as "debasement trade" chatter revived and the dollar extended its slide.</li><li>Anthropic is expected to match or exceed the $75 billion size of SpaceX's record IPO, adding Citigroup to its underwriting group amid overwhelming investor demand for AI exposure.</li><li>Ross Stores rose 8.6% after raising its annual profit outlook for the second time this year.</li></ul>
+<p class="para-title" style="color:#5597cb;">Fiscal Policy and the Dollar</p>
+<p class="para-body">Bessent's buyback announcement and promised fiscal initiative appear aimed at capping long-term yields (the 10-year traded at 4.68%), but strategists including former Goldman Sachs FX chief Robin Brooks argue the move violates the Treasury's "regular and predictable" issuance principle and could ultimately demand a higher risk premium from investors rather than lower one. The dollar weakened further on the news, and commentary increasingly draws parallels to Japan's currency debasement, where the yen hit a four-decade low last month amid a debt-to-GDP ratio above 200%.</p>
+<p class="para-title" style="color:#5597cb;">Markets and Positioning</p>
+<p class="para-body">Equity investors remain broadly risk-on: fund managers' equity allocation is the highest in nearly five years, according to a Bank of America survey, even as respondents flag a disorderly rise in bond yields as their top concern. Nasdaq 100 futures were little changed, up roughly 0.2%-0.4% on the day, while Anthropic's mega-IPO and continued AI-linked capital-markets activity underscored still-strong risk appetite despite the fiscal and currency crosscurrents.</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>China's July activity data landed well short of expectations — industrial production, retail sales and fixed-asset investment all "fared far worse than expected," with economists at BNP Paribas, Macquarie and Pantheon saying growth is now running below the lower end of Beijing's 4.5%-5% annual target.</li><li>Premier Li Qiang called on officials to intensify support measures, and the government widened use of a $1.6 trillion housing provident fund and outlined new fiscal support policies for the rest of 2026.</li><li>Samsung plans to return up to $79 billion to shareholders and SK Hynix announced a $28.6 billion buyback, funded by record AI-driven chip profits, even as both continue heavy capex commitments that leave little cushion if AI spending slows.</li><li>Unitree Robotics' Shanghai IPO raised 6.1 billion yuan and shares surged 460% on debut, though the offering drew skepticism over valuation given humanoid robotics remains commercially unproven.</li><li>North Korea launched roughly 10 short-range ballistic missiles that flew about 300 kilometers, prompting a coordinated response call among the US, Japan and South Korea.</li></ul>
+<p class="para-title" style="color:#e07b39;">China's Slowdown and Policy Response</p>
+<p class="para-body">Beijing's response to the weak July data has been measured rather than aggressive: officials are prioritizing "full play" of existing policy tools over major new stimulus, a stance underpinned by resilient AI-linked exports (electronics output rose more than 19%) and political caution ahead of an October Communist Party meeting. Bloomberg economists Chang Shu and David Qu expect a near-term lull in fresh policy signals until late September, when the adequacy of current fiscal deployment against the annual growth target should become clearer.</p>
+<p class="para-title" style="color:#e07b39;">Korean Tech and Capital Markets</p>
+<p class="para-body">Samsung and SK Hynix face intensifying pressure to share AI-driven windfall profits with shareholders even as capital expenditure rises sharply — SK Hynix's spending is up 50% to at least $31 billion this year — a dynamic that could leave both companies exposed should AI-related chip demand eventually cool. Separately, Nvidia is in early talks with Korean AI chip designer Rebellions over a potential partnership, investment or acquisition.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>Eurozone private-sector activity unexpectedly improved, driven by the strongest manufacturing growth in more than four years, while an ECB gauge of consumer inflation expectations eased even as policymaker Martins Kazaks called current inflation levels "somewhat uncomfortable."</li><li>The UK posted a surprise £1.8 billion budget deficit in July, underscoring fragile public finances as Chancellor John Healey prepares his autumn budget; retail sales fell for the first time in three months and firms in critical financial distress rose 9%, even as consumer confidence climbed to a two-year high and the private sector expanded.</li><li>The Stoxx Europe 600 rose 0.3% to 652.11, pulling back from what had threatened to be its longest losing streak in a decade; Goldman Sachs and JPMorgan remain among the most bullish on European equities even as consensus forecasts see the index roughly flat by year-end.</li><li>Monte dei Paschi offered to buy BPM and Banca Generali for a combined roughly $40 billion in a defensive move to fend off a takeover approach from rival Intesa Sanpaolo.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Growth Momentum and Fiscal Strain</p>
+<p class="para-body">The eurozone's modest PMI improvement, led by German manufacturing's best reading since 2022, offers early evidence that the region's industrial recovery is broadening, even as Germany's deeper competitiveness problem — high energy costs and Chinese competition — remains unresolved. In the UK, the combination of improving sentiment and PMI expansion alongside a wider-than-expected deficit and rising corporate distress points to an economy where confidence is running ahead of underlying fiscal and consumer fundamentals as Healey heads into a consequential autumn budget.</p>
+<p class="para-title" style="color:#4a9e6b;">Equities and Consolidation</p>
+<p class="para-body">European equities' resilience — corporate earnings beating estimates and a broad swath of industrial companies benefiting from the AI boom — continues to surprise forecasters who have repeatedly underestimated the rally, according to Goldman Sachs' Sharon Bell. Italian banking consolidation accelerated as Monte dei Paschi's dual approach for BPM and Banca Generali signals continued defensive maneuvering within the sector.</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <p class="para-body">No significant coverage for this period.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Oil headed for a significant weekly gain as the effectiveness of the US blockade on Iranian crude became apparent — Iranian oil available to Chinese refiners is "rapidly running out" — while China's refiners kept purchases below prewar levels despite crude prices holding above $90 (Brent $92.90, WTI $86.37).</li><li>Gold rose 1.8% to $4,596.90, on track for a third straight weekly gain, and Bitcoin jumped 7.0% to $77,753 amid renewed "debasement trade" chatter following the US Treasury's expanded debt-buyback plans, which critics liken to the currency debasement dynamics seen in Japan, where the yen sits at a four-decade low and debt-to-GDP exceeds 200%.</li><li>China is weighing a bid to host the 2028 UN climate summit (COP33) after India withdrew its offer, a move that would put a spotlight on Beijing's own modest emissions-cut target of 7%-10% by 2035.</li><li>Trump's plan to further isolate Iran's economy risks confrontation with China, the largest buyer of Iranian oil, complicating US efforts to pressure Tehran.</li><li>North Korea launched roughly 10 short-range ballistic missiles and Russia conducted a rare missile exercise near islands claimed by Japan, adding to regional security tensions alongside the ongoing war in Ukraine.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Energy and Sanctions Enforcement</p>
+<p class="para-body">The US blockade on Iranian crude exports is visibly tightening supply to China, historically Tehran's largest customer, even as elevated prices near $90 a barrel are prompting Chinese refiners to restrain purchases rather than absorb the premium. Washington's push to further isolate Iran's economy risks friction with Beijing given the scale of existing China-Iran oil ties, a tension the administration has so far shown little appetite to confront directly.</p>
+<p class="para-title" style="color:#8b5cf6;">Debasement Trade Revives</p>
+<p class="para-body">The US Treasury's decision to expand buybacks of long-dated debt — rather than address the underlying deficit, with total public debt now above $40 trillion — has reignited a global reflation/debasement narrative, pushing gold and Bitcoin higher and weakening the dollar. Analysts increasingly frame US fiscal dynamics alongside Japan's, where persistent currency debasement has proven difficult to reverse once underway, underscoring broader unease over diverging fiscal credibility among major economies.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

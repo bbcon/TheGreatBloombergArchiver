@@ -1,0 +1,10 @@
+• The FCC has emerged as a key enforcement arm of Washington's China tech "de-risking" campaign; Chairman Brendan Carr has set up a national security panel to deploy the agency's licensing and enforcement powers against Chinese-linked technology.
+• Since late 2025 the FCC has restricted imports of foreign-made drones, advanced robotics, and power inverters used in battery storage and solar; a ban on data-center optical transceivers is under consideration.
+• Washington paired these curbs with 100% tariffs on certain drones imposed in August; Beijing's response has been limited to tightened drone export controls, more restrained than the rare-earth curbs it deployed last October.
+• Goldman Sachs economists cite an "ongoing trend of tech decoupling"; Evercore ISI says FCC restrictions are "facially neutral" yet are "driving the administration's most hawkish actions against China."
+
+**US-China Tech Decoupling**
+Unlike Commerce's entity list, FCC restrictions target categories of future devices rather than named firms or existing inventory — a structure Wolfe Research's Tobin Marcus says provides "plausible deniability" even as it primarily affects Chinese producers. Current Chinese-made stock is untouched, but the market for next-generation hardware narrows; inverters, for example, are refreshed every two-to-five years per Nomura estimates, so the effect builds gradually.
+
+**Beijing's Calibrated Response**
+China's reaction has stayed measured relative to October 2025, when its rare-earth export curbs threatened global semiconductor output and prompted a temporary US retreat on sanctions expansion. This month's tightened drone export controls suggest Beijing is calibrating rather than escalating symmetrically, though continued FCC enforcement points to further friction ahead.

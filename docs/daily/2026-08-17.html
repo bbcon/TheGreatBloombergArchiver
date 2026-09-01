@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, August 17, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, August 17, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Atlanta Fed's GDPNow estimate jumped to 4.3% for the current quarter, up from Q2's 1.5%, with Apollo's Torsten Slok crediting 0.2 points to tariff refunds after the Supreme Court struck down most Trump-era import duties.</li><li>Goldman Sachs said a September Fed hike is now "very unlikely," citing softer retail sales, weaker employment and slowing inflation; the dollar fell to its lowest since May.</li><li>Investment-grade issuance has reached nearly $1.5 trillion this year, up 36% YoY, an AI-driven borrowing binge pushing Treasury yields to a 25-year high; the 10-year held flat at 4.69%.</li><li>July FOMC minutes (a 9-3 vote to hold) are due Wednesday, alongside retail earnings from Home Depot, Target, Lowe's and Walmart.</li></ul>
+<p class="para-title" style="color:#5597cb;">Growth and Fed Policy</p>
+<p class="para-body">GDPNow now tracks 4.3% annualized growth this quarter, up from Q2's 1.5%, though partly aided by one-off tariff refunds rather than pure momentum. Goldman argues markets remain too hawkish: with retail sales, employment and inflation all softening, a September hike looks unlikely, and futures are pricing accordingly. The dollar's slide to a three-month low reflects that repricing.</p>
+<p class="para-title" style="color:#5597cb;">Credit Markets and Volatility</p>
+<p class="para-body">Equity volatility remains subdued — the VIX closed below 15 weekly in August for the first time this year — even as bonds show strain. Hyperscalers' AI borrowing is competing with heavy Treasury issuance for demand, pushing corporate and government costs higher rather than crowding one another out. Anthropic's disclosed 14-fold jump in Q2 revenue to $11.5 billion ahead of its IPO extended a rally in AI-linked names.</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Japan's Q2 GDP grew an annualized 1.1%, missing the 2% consensus and slowing from a revised 1.9% in Q1, as capital spending slumped and consumption flatlined under inflation.</li><li>China's economy weakened broadly in July: industrial output slowed to 4.5% YoY, retail sales growth eased to 0.6%, and fixed-asset investment fell 6.7% YoY over seven months — all missing forecasts.</li><li>Japan's 10-year yield rose as much as 5.5bp to 2.93%, the highest since 1996, as traders price an 80% chance of a BOJ hike on September 18 despite the slowdown.</li><li>Trump said he is "substantially" cutting joint drills with South Korea over Seoul's refusal to back the Iran war effort, unsettling US allies.</li></ul>
+<p class="para-title" style="color:#e07b39;">Growth Slowdown Complicates BOJ's Yen Defense</p>
+<p class="para-body">Japan's growth miss underscores the bind facing policymakers: the yen, near a 40-year low, argues for higher rates, while weak consumption and capex argue against tightening. A former vice finance minister said the BOJ should hike "at every meeting" toward 2% to narrow the gap with US rates. China's slowdown compounds the concern, with ING's Lynn Song calling it "a slate of disappointing data across the board."</p>
+<p class="para-title" style="color:#e07b39;">Currency Pressures and Regional Ripples</p>
+<p class="para-body">Japan is not alone: the Philippines and Indonesia face similar tradeoffs, even as Indonesia's Q2 growth beat estimates. Rising Japanese bond yields reflect building rate-hike and fiscal concerns. Trump's abrupt curtailment of US-South Korea drills, paired with praise for Kim Jong Un, adds fresh uncertainty for allies already unsettled by the shift of US military resources toward the Middle East.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>UK CPI due Wednesday is expected to accelerate to 2.9% YoY in July, the first pickup in four months, as the Iran war lifts airfares and energy bills and an AI-related chip crunch pushes up electronics prices.</li><li>European bankers, led by Societe Generale's Slawomir Krupa, are lobbying for a Trump-style regulatory rollback after the EU pledged last month to address complaints, following a US reversal of a proposed 16% bank capital-requirement increase.</li><li>Money managers are chasing a historic €500 billion German pension shift, while German officials are open to discussing a sale of the state's 12.7% Commerzbank stake to UniCredit.</li><li>Medical staff describe UK hospital conditions as "horrific, horrendous, unbearable, unsafe" amid this year's heat waves, with 90% of England's hospital buildings vulnerable to overheating.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Inflation Set to Reaccelerate</p>
+<p class="para-body">UK price pressures are expected to pick up for the first time in four months, with a Bloomberg survey pointing to a 2.9% year-on-year July CPI print, reflecting higher airfares and energy costs tied to the Iran war and an AI-driven component squeeze. BOE rate-setters may grow uneasy as inflation reasserts itself against a resilient economy.</p>
+<p class="para-title" style="color:#4a9e6b;">Deregulation Push and Bank M&A</p>
+<p class="para-body">European lenders hope Washington's rollback — which reversed a threatened 16% capital-requirement increase estimated to cost US banks $160 billion — will cross the Atlantic, after the EU pledged to address complaints. German officials are separately open to discussing a Commerzbank stake sale to UniCredit, though this is not yet formal policy. Greece plans to repay roughly €13 billion of debt early to bring its stock below Italy's.</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Colombia's president asked Washington to temporarily suspend tariffs on Colombian goods as the country manages the aftermath of an earthquake that killed nearly 300 people.</li><li>Mexico is advancing its $4 billion, 308-kilometer Interoceanic Corridor as an alternative freight route amid disruptions to the Panama Canal, the Strait of Hormuz and the Red Sea, though it still awaits meaningful cargo.</li><li>Copper has provided a tailwind for Latin American assets this year, though regional returns continue to lag technology-driven gains elsewhere in emerging markets.</li><li>A weaker dollar and narrowing EM-US credit spreads support Latin American currencies and dollar debt, with Capital Economics noting the region entered the Iran war with strong external balance sheets.</li></ul>
+<p class="para-title" style="color:#c0392b;">Colombia's Tariff Request</p>
+<p class="para-body">President Abelardo de la Espriella asked Washington to temporarily suspend tariffs on Colombian exports as the country manages the aftermath of a devastating earthquake that killed nearly 300 people, underscoring how disaster relief and US trade policy are becoming intertwined.</p>
+<p class="para-title" style="color:#c0392b;">Trade Corridors and Capital Flows</p>
+<p class="para-body">Mexico continues positioning its Interoceanic Corridor as an alternative to congested global waterways, though the rail link has yet to attract meaningful freight. Latin American assets have benefited from a copper-price tailwind this year, even as returns lag technology-driven gains elsewhere in emerging markets. Capital Economics argues the region entered the Iran war with strong external balance sheets — high reserves, resilient exports and narrowing current-account deficits — positioning it to weather dollar strength better than in past cycles.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Israel carried out its deadliest strikes in Lebanon in months, killing 11 people including a senior Hezbollah commander, adding pressure to stalled US-Iran ceasefire talks as Washington prepares fresh economic measures against Tehran.</li><li>Brent crude rose 1.2% to $89.61 a barrel even as covert oil shipments through the Strait of Hormuz run at full tilt despite recent vessel attacks, helping cap prices.</li><li>A key LME copper spread widened to $543.50 a ton — the biggest backwardation since the 2021 squeeze — signaling intense competition for prompt supply amid AI- and EV-linked demand.</li><li>Washington's new tariff regime on solar polysilicon, wafers, cells and modules (minimum prices plus a 15% tariff from December 4) aims to close a 20,000-mile China-Kenya-Indonesia route used to disguise export origin.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Middle East Escalation Clouds Oil Outlook</p>
+<p class="para-body">Lebanon's deadliest day of fighting in months — following an Israeli strike that killed a senior Hezbollah commander — has added pressure to stalled US-Iran talks, even as Iran and Oman reportedly edge closer to a deal on managing the Strait of Hormuz. Despite mounting vessel attacks, covert oil flows out of the Persian Gulf continue at full tilt, keeping crude contained; Brent nonetheless rose 1.2% on the day.</p>
+<p class="para-title" style="color:#8b5cf6;">Commodity Tightness and Trade Enforcement</p>
+<p class="para-body">Copper markets show acute near-term tightness, with the LME spot-to-three-month spread at its widest since 2021, reflecting electrification- and AI-linked demand outpacing supply. Washington's new tariff regime on solar components — effective December 4 — targets circumvention exemplified by the 20,000-mile China-Kenya-Indonesia route, though it remains uncertain whether the measures will revive competitive US solar manufacturing after a decade of policy whipsaws.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

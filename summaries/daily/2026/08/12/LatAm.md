@@ -1,0 +1,5 @@
+• Colombia's government plans to declare an economic emergency to bolster its response to a massive earthquake, with the death toll nearing 170 in the Pereira area, presenting the country's new president with an early test of crisis-management capacity.
+• Coverage of Brazil, Mexico, Argentina and Chile was limited in today's editions, with no significant data prints, central-bank decisions, or currency-market developments reported for the broader region.
+
+**Colombia Earthquake Response**
+The earthquake that struck the Pereira region left widespread destruction, with the death toll approaching 170 as search-and-rescue operations continued. A declared economic emergency would grant the government expanded fiscal and administrative powers to fund reconstruction and disaster relief outside normal budgetary constraints — an early and consequential test for a presidency still finding its footing. The scale of economic damage, and any near-term fiscal implications for Colombia's budget or currency, remain to be clarified in subsequent reporting.

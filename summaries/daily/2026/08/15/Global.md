@@ -1,0 +1,5 @@
+• Moody's warns that extreme heat and water scarcity are increasingly driving stranded-asset risk across sectors, weighing on labor productivity and pushing up energy costs.
+• Shell lost the latest round of a five-year legal fight with South African environmental activists over an oil-exploration campaign, a case that reached the country's top court.
+
+**Climate-Linked Asset and Legal Risk**
+Moody's analysis points to a broadening set of channels through which extreme heat and unreliable water supplies are affecting asset valuations, with labor productivity and energy costs both cited as transmission mechanisms across a growing number of sectors. The findings echo the heat-driven growth risk flagged in Europe this period, suggesting the effect is not confined to a single region. Separately, Shell's defeat in South Africa's top court — the conclusion of a five-year dispute over an oil-exploration campaign — underscores rising legal exposure for energy majors pursuing exploration in the face of environmental opposition, a dynamic that may inform how companies weigh future project risk globally.

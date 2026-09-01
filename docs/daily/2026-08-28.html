@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, August 28, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, August 28, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Fed Chair Kevin Warsh delivers his first Jackson Hole keynote at 10 a.m. ET; investors want a hawkish signal after his July 29 press conference, where he declined to hike and offered no reaction-function guidance, was blamed for a Treasury selloff that spread into equities.</li><li>Nvidia shares surged almost 9% Thursday, adding $442 billion in value, the second-biggest single-day market-cap gain on record, even as fixed-income investors say AI has so far been "a bust" for credit returns.</li><li>Advent and Stripe abandoned their roughly $50 billion pursuit of PayPal, sending PayPal shares down 15%.</li><li>The 10-year Treasury yield held near 4.68% ahead of the speech; markets price only a 34% chance the Fed hikes at its September 15-16 meeting.</li></ul>
+<p class="para-title" style="color:#5597cb;">Fed Communication</p>
+<p class="para-body">Warsh's address is his first as chairman speaking solely in his own voice rather than for the full FOMC, and officials remain divided on inflation. Bloomberg Economics' David Wilcox warned under-correcting again could damage his chairmanship. No forward guidance on September is expected, but investors want "backward" guidance explaining why he resisted hiking even as inflation ran hot.</p>
+<p class="para-title" style="color:#5597cb;">Markets and Corporates</p>
+<p class="para-body">Earnings were mixed: Gap gained 15% on a profit beat and an Old Navy CEO change, while Marvell fell 7.9% and Autodesk fell 3.9% on weak results; Ulta Beauty dropped 3.4% on margin pressure. Citadel Securities posted record quarterly trading revenue of $7.3 billion. Gold-mining stocks extended a historic rally, with the MSCI gold miners index up 43% this month — its biggest monthly gain on record — as the Treasury's expanded bond buyback plan revived the "debasement trade."</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Philippine GDP growth unexpectedly slowed to 2.3% in Q2, missing the 2.9% consensus and down sharply from 5.4% a year earlier, as consumers were squeezed by inflation and a weak peso.</li><li>Bangko Sentral ng Pilipinas hiked rates for a third straight time, reversing a mid-August signal it would be "less aggressive"; Governor Eli Remolona said "we will tighten as much as we need," projecting inflation stays above target until 2028.</li><li>The peso fell past 62/dollar to a record low on elevated oil prices, and the stock benchmark is the worst-performing global index this week.</li><li>Japan spent a record $96.4 billion on yen intervention over the past month, while Tokyo inflation ticked up again, bolstering the case for a BOJ rate hike.</li><li>Sydney developer Bathla Group's insolvency, tied to $2.3 billion in debt, is stoking fears about Australia's A$200 billion private-credit market.</li></ul>
+<p class="para-title" style="color:#e07b39;">Inflation and Growth Trade-off</p>
+<p class="para-body">The Philippines' combination of slowing growth, above-target inflation and currency weakness is being read as a warning sign for other oil-import-dependent economies, notably India and Indonesia, as Brent hovers near $90 and US borrowing costs stay elevated.</p>
+<p class="para-title" style="color:#e07b39;">China Policy and Corporates</p>
+<p class="para-body">Sinopec's chairman became the highest-ranking Chinese oil official to declare the country has likely already passed peak oil demand, as crude imports fell an estimated 3.3 million barrels a day in Q2 year-on-year and EVs took 64% of July passenger-vehicle sales. Separately, Beijing's tax crackdown has clawed back roughly 7.7 billion yuan ($1.1 billion) from over 100 listed firms, and Alibaba shares stayed pressured after its $10 billion AI-financing placement.</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>Spanish inflation surged to more than double the ECB's 2% target and French inflation quickened to its highest since May, both driven by energy costs linked to the Middle East conflict; euro-area data due next week is expected to show inflation above 3%.</li><li>Markets are fully pricing a quarter-point ECB hike in September, bringing the deposit rate to 2.5% after June's initial increase, with a further move seen by spring 2027.</li><li>France's economy narrowly avoided recession after first-half growth was revised down, as presidential candidates clashed over the country's swelling debt without agreeing on a fix.</li><li>Icelanders vote tomorrow on whether to reopen EU membership talks, a decision sharpened by US threats to quit NATO and Russia's expanded Arctic presence.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Inflation Pressure Building</p>
+<p class="para-body">The energy-driven inflation surprises in Spain and France point to a euro area where price pressures are re-accelerating even as growth stays fragile — France's near-miss on recession sits uneasily against a backdrop that argues for tighter policy. That leaves the ECB, and a Christine Lagarde succession process lacking a formal early-exit procedure, navigating a narrowing path between growth and prices.</p>
+<p class="para-title" style="color:#4a9e6b;">Politics and Corporates</p>
+<p class="para-body">Germany's AfD is positioned for a historic win in the Saxony-Anhalt state election, which would be the far-right's first hold on regional power since World War II, while a senior Meloni-party official floated an alliance with Italy's far-right National Future. Chinese automakers, led by BYD, pushed their share of European new-car sales above 11% last month on tariff-exempt hybrids, pressuring incumbents like Jaguar Land Rover.</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Venezuela is weighing an exit from OPEC, according to people familiar with the matter, a move that would deal a fresh blow to the cartel it helped found more than six decades ago.</li><li>The US is separately in talks with Venezuelan leaders to take a large stake in the nation's oil fields — a development Bloomberg describes as unthinkable as recently as two years ago.</li></ul>
+<p class="para-title" style="color:#c0392b;">Political Realignment</p>
+<p class="para-body">A potential OPEC exit would underline the scale of Venezuela's political and economic reorientation since Trump ousted longtime leader Nicolás Maduro and Washington took control of the country's crude sales. Deepening US-Venezuela ties, including the prospective equity stake in oil fields, suggest Caracas is being drawn more tightly into the US economic orbit, with implications for regional oil supply and for OPEC's cohesion as a price-setting bloc. No other Latin American economy — Brazil, Mexico, Argentina, Colombia or Chile — featured in today's coverage.</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Six months into the Iran war, global fossil-fuel importers have paid more than $330 billion in extra costs since fighting began on February 28 — roughly Finland's annual GDP — according to the Centre for Research on Energy and Clean Air (CREA).</li><li>US Central Command says Navy divers and SEALs have cleared mines from the Strait of Hormuz, though allies privately warn the route remains likely mined; Goldman Sachs estimates Gulf oil exports have recovered to about two-thirds of pre-war levels.</li><li>Gold-mining equities are having their best month on record, with the MSCI global gold miners index up 43%, as the US Treasury's plan to expand bond buybacks revives the "debasement trade" globally.</li><li>Monetary policy is diverging sharply: the Fed's Warsh speaks at Jackson Hole today amid a divided FOMC, Japan spent a record $96.4 billion defending the yen over the past month, and markets fully price an ECB hike to 2.5% in September.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Energy Realignment</p>
+<p class="para-body">The war has pushed governments, companies and consumers toward renewables and EVs faster than feared, with global greenhouse-gas emissions up just 0.2% in the first half versus a year earlier, per Climate Trace — a smaller increase than many anticipated given fears of a coal rebound. China has emerged as a net beneficiary of its clean-technology manufacturing dominance, while Gulf exporters absorbed roughly $2 billion a day in export losses at the March peak, per Rice University estimates.</p>
+<p class="para-title" style="color:#8b5cf6;">Diplomacy</p>
+<p class="para-body">Iran's foreign minister said resuming US diplomacy "isn't impossible" following "creative discussions" with mediator Qatar, even as Washington presses a new economic-pressure campaign against Tehran.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

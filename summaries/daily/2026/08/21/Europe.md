@@ -1,0 +1,10 @@
+• Eurozone private-sector activity unexpectedly improved, driven by the strongest manufacturing growth in more than four years, while an ECB gauge of consumer inflation expectations eased even as policymaker Martins Kazaks called current inflation levels "somewhat uncomfortable."
+• The UK posted a surprise £1.8 billion budget deficit in July, underscoring fragile public finances as Chancellor John Healey prepares his autumn budget; retail sales fell for the first time in three months and firms in critical financial distress rose 9%, even as consumer confidence climbed to a two-year high and the private sector expanded.
+• The Stoxx Europe 600 rose 0.3% to 652.11, pulling back from what had threatened to be its longest losing streak in a decade; Goldman Sachs and JPMorgan remain among the most bullish on European equities even as consensus forecasts see the index roughly flat by year-end.
+• Monte dei Paschi offered to buy BPM and Banca Generali for a combined roughly $40 billion in a defensive move to fend off a takeover approach from rival Intesa Sanpaolo.
+
+**Growth Momentum and Fiscal Strain**
+The eurozone's modest PMI improvement, led by German manufacturing's best reading since 2022, offers early evidence that the region's industrial recovery is broadening, even as Germany's deeper competitiveness problem — high energy costs and Chinese competition — remains unresolved. In the UK, the combination of improving sentiment and PMI expansion alongside a wider-than-expected deficit and rising corporate distress points to an economy where confidence is running ahead of underlying fiscal and consumer fundamentals as Healey heads into a consequential autumn budget.
+
+**Equities and Consolidation**
+European equities' resilience — corporate earnings beating estimates and a broad swath of industrial companies benefiting from the AI boom — continues to surprise forecasters who have repeatedly underestimated the rally, according to Goldman Sachs' Sharon Bell. Italian banking consolidation accelerated as Monte dei Paschi's dual approach for BPM and Banca Generali signals continued defensive maneuvering within the sector.

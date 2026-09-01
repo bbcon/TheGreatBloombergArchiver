@@ -1,0 +1,13 @@
+• Japan's Q2 GDP grew an annualized 1.1% on Monday, missing the 2% consensus and slowing from a revised 1.9% in Q1, as capital spending slumped and consumption flatlined under inflation.
+• China's July activity data missed across the board: industrial output slowed to 4.5% YoY, retail sales to 0.6%, and fixed-asset investment fell 6.7% YoY — prompting Premier Li Qiang to call for intensified support measures and widened use of a $1.6 trillion housing provident fund.
+• Japanese 30-year yields rose above 4% on Monday for the first time in their 27-year history; the 10-year reached 2.93%, the highest since 1996, as traders priced an 80% probability of a BOJ hike on September 18.
+• South Korea's Kospi dropped 5.8% on Wednesday before rebounding 5.9% on Thursday after Samsung and SK Hynix announced combined shareholder returns exceeding $100 billion, funded by record AI-driven chip profits.
+• India's CPI climbed to 4.45% YoY in July, a 19-month high above the RBI's 4% target for a second consecutive month, while Indian equities extended losses, down roughly 7% year-to-date.
+
+**Growth Divergence**
+Japan's growth miss sharpens the BOJ's dilemma: the yen near a 40-year low argues for rate increases, while weak consumption and capital expenditure argue against tightening. China's broad-based July weakness — described by ING's Lynn Song as "a slate of disappointing data across the board" — pushed economists at BNP Paribas, Macquarie and Pantheon to conclude growth is running below the lower end of Beijing's 4.5%–5% target. Beijing's response has been measured, with officials widening existing policy tools rather than deploying large-scale new stimulus ahead of an October Communist Party meeting. Japan's exports rose 23.2% YoY in July, the fastest pace since 2022, offering a partial offset driven by cars, chips and yen weakness.
+
+**Capital Markets and Corporate Activity**
+Asian tech equities fell sharply Wednesday — the Kospi down 5.8%, ChiNext down 6.3%, Japan's Topix down 3.1%, Samsung and SK Hynix both losing more than 7% — tracking the global long-bond selloff before reversing Thursday on the Korean shareholder-return announcements. Unitree Robotics surged 460% on its Shanghai debut, becoming mainland China's first listed humanoid-robot maker at roughly 36 times sales, though analysts noted the valuation reflects speculative enthusiasm for an as-yet commercially unproven technology. China sentenced Evergrande founder Hui Ka Yan to life in prison on Thursday and fined the developer 15.82 billion yuan, closing out the property-collapse prosecutions. Australia's unemployment rate unexpectedly rose to 4.5% in July, prompting traders to pare rate-hike bets.
+
+---

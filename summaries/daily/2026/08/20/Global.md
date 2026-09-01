@@ -1,0 +1,8 @@
+• President Trump announced an "economic D-Day" against Iran, threatening penalties on any country, bank or business trading with Tehran, after months of military strikes and a maritime blockade failed to force capitulation; WTI crude climbed to a nearly four-week high on the news.
+• Commercial transits through the Strait of Hormuz remain suppressed at around 5% of prewar throughput following the August 17 expiration of the 60-day US-Iran ceasefire, even as Chinese refiners increasingly substitute Iraqi crude for barrels no longer exiting the Gulf.
+• US refiners processed 17.4 million barrels a day last week, the highest rate since September 2019, as the industry works to keep global diesel, jet fuel and gasoline markets supplied through the conflict.
+• Treasury Secretary Bessent's expanded bond buybacks rattled the dollar globally, sending it to its worst day in months, while lifting emerging-market currencies, gold and Bitcoin, which surged past $70,000.
+• A Russian missile strike on Kyiv killed at least 12 people and wounded roughly 40 more, as escalating Black Sea hostilities continue to disrupt Ukrainian grain exports, with knock-on risks to food security in some developing countries.
+
+**Iran and Oil Markets**
+Trump's pivot to economic warfare marks an implicit acknowledgment of the military campaign's limits, with US resources stretched and gasoline prices an increasing political liability ahead of the midterms. Analysts remain divided on whether tightening sanctions can extract political concessions from Tehran that months of force have not, and China's role as Iran's largest oil customer makes the threat as much a test of Washington's relationship with Beijing as further pressure on Tehran.

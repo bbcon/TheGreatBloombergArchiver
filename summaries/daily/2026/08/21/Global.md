@@ -1,0 +1,11 @@
+• Oil headed for a significant weekly gain as the effectiveness of the US blockade on Iranian crude became apparent — Iranian oil available to Chinese refiners is "rapidly running out" — while China's refiners kept purchases below prewar levels despite crude prices holding above $90 (Brent $92.90, WTI $86.37).
+• Gold rose 1.8% to $4,596.90, on track for a third straight weekly gain, and Bitcoin jumped 7.0% to $77,753 amid renewed "debasement trade" chatter following the US Treasury's expanded debt-buyback plans, which critics liken to the currency debasement dynamics seen in Japan, where the yen sits at a four-decade low and debt-to-GDP exceeds 200%.
+• China is weighing a bid to host the 2028 UN climate summit (COP33) after India withdrew its offer, a move that would put a spotlight on Beijing's own modest emissions-cut target of 7%-10% by 2035.
+• Trump's plan to further isolate Iran's economy risks confrontation with China, the largest buyer of Iranian oil, complicating US efforts to pressure Tehran.
+• North Korea launched roughly 10 short-range ballistic missiles and Russia conducted a rare missile exercise near islands claimed by Japan, adding to regional security tensions alongside the ongoing war in Ukraine.
+
+**Energy and Sanctions Enforcement**
+The US blockade on Iranian crude exports is visibly tightening supply to China, historically Tehran's largest customer, even as elevated prices near $90 a barrel are prompting Chinese refiners to restrain purchases rather than absorb the premium. Washington's push to further isolate Iran's economy risks friction with Beijing given the scale of existing China-Iran oil ties, a tension the administration has so far shown little appetite to confront directly.
+
+**Debasement Trade Revives**
+The US Treasury's decision to expand buybacks of long-dated debt — rather than address the underlying deficit, with total public debt now above $40 trillion — has reignited a global reflation/debasement narrative, pushing gold and Bitcoin higher and weakening the dollar. Analysts increasingly frame US fiscal dynamics alongside Japan's, where persistent currency debasement has proven difficult to reverse once underway, underscoring broader unease over diverging fiscal credibility among major economies.
