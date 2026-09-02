@@ -1,0 +1,11 @@
+• Chevron finalized a $7 billion deal to double its Venezuelan production, adding two Orinoco Belt fields, as the US Energy Secretary announced more than a dozen energy agreements targeting a near-doubling of Venezuelan crude output.
+• Brazil's policy chief pushed back against spending cut proposals, sustaining fiscal concerns in a market already sensitive to primary balance dynamics; beef exporters face headwinds from EU regulatory friction.
+• Peru's President Fujimori is pursuing elimination of interest-rate caps on lending, forming part of an initial legislative package from her conservative administration.
+
+**Venezuela's Oil Reset**
+The Venezuelan oil dealmaking represents the most consequential regional development. Chevron's $7 billion expansion anchors a broader program spanning more than a dozen agreements, with the US government taking a direct equity stake in North American Blue Energy Partners — targeting 1 million barrels per day against current national output of roughly the same. The speed and structure of these deals reflect two features of Trump's approach: personal connections between deal recipients and the administration, and political urgency driven by above-$4 gasoline ahead of midterms. Whether operators with limited track records — including a Coinbase co-founder and Brazil's Batista brothers — can deliver at the promised scale remains genuinely uncertain. The financing mechanics for the most ambitious expansion targets have not been disclosed.
+
+**Brazil and Regional Fiscal Dynamics**
+Brazil's fiscal debate intensified as the policy chief publicly resisted spending reduction proposals, a signal that the Lula administration's consolidation commitment remains contested internally. The Bank of Canada's likely hold — driven by US tariff escalation threatening the recovery while adding to inflation — offers a partial regional parallel: central banks across the Americas are navigating the tension between energy-driven inflation and growth vulnerability simultaneously.
+
+---

@@ -1,0 +1,11 @@
+• Bank of Japan Governor Ueda hinted strongly at a September rate hike, with hawkish board member Takata leaving the door open to an outsized move or back-to-back hikes.
+• MSCI Asia-Pacific fell 2.1% — its steepest single-day decline in two weeks — with Japan and South Korea equity benchmarks each losing at least 2.4%, led by technology shares.
+• Australia's faster-than-expected GDP growth bolstered the case for further RBA tightening, while New Zealand's RBNZ raised its cash rate 25 basis points to 2.75%, its second consecutive hike.
+
+**Central Bank Pivot Risk**
+The BOJ's signaling represents the most consequential regional policy development. Governor Ueda's explicit reference to "upside price risks" in framing the September meeting, reinforced by Takata's openness to a larger-than-25-basis-point move, has materially raised the probability of tightening. A BOJ hike alongside an expected Fed hike would mark a rare moment of simultaneous policy tightening across the two largest developed-market central banks — a dynamic with meaningful implications for yen carry trades and global liquidity conditions. The RBNZ's consecutive hike, with forecasts pointing to one further move this year, reflects a similar inflation-over-growth calculus in a region increasingly buffeted by energy cost pass-through from the Hormuz disruptions.
+
+**Markets and Geopolitics**
+Tech-led equity declines in Tokyo and Seoul track the global risk-off move driven by oil price escalation rather than any domestic data deterioration — a distinction worth preserving analytically. Hong Kong activist Joshua Wong pleaded guilty to collusion under the national security law, facing a potential life sentence, underscoring the continued erosion of Hong Kong's civil liberties framework. Nepal's catastrophic floods wiped out an estimated 10% of the country's hydropower capacity, with Kathmandu demanding climate compensation from China, the US, and India — a demand unlikely to yield near-term material relief but with growing resonance in multilateral forums.
+
+---

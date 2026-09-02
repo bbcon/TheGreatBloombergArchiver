@@ -1,0 +1,12 @@
+• US manufacturing ISM came in at 54.6 in August, down one point from July but the second-highest reading since 2022, beating consensus and marking an eighth consecutive month of expansion.
+• The Logistics Managers' Index held near 240, well above the 150 breakeven, signaling persistent supply-driven inflation even as warehouse capacity rose and inventory building slowed.
+• Fed rate-hike odds for September climbed to approximately 70% as escalating US-Iran hostilities pushed Brent crude toward $95/bbl, with 30-year Treasury yields hovering near 5.28% — close to a 19-year high.
+• Treasury Secretary Bessent's August bond buyback program has been fully unwound by the market; his fiscal consolidation plan, originally expected the week of August 24, has been pushed to "months away."
+
+**Economic Momentum and Inflation**
+The August ISM manufacturing print — 54.6, beating consensus — offers a constructive read on industrial activity, but it sits within an increasingly uncomfortable inflation context. The Logistics Managers' Index near 240 reflects cost pressures from the six-month-old US-Iran conflict that show little sign of easing despite rising warehouse capacity. Gasoline prices remain stubbornly above $4 per gallon. The LMI report notes that inflation has outpaced income growth and that payrolls shed jobs in July, with Friday's August employment report expected to show only a modest rebound. A 50% tariff threat on Canadian imports — if enacted — would add further pressure to construction, auto manufacturing, and energy costs.
+
+**Monetary Policy and Markets**
+Fed Chair Kevin Warsh's hawkish Jackson Hole address shifted market pricing materially: traders now assign roughly 70% odds to a September rate hike. The 30-year Treasury yield at 5.28% effectively erased all gains from Bessent's August 19 buyback expansion. Equities are drifting lower — S&P 500 futures off 0.2% — with Wells Fargo citing "broad cautiousness" on AI investment sustainability and Citadel's Scott Rubner flagging an asymmetry between fading upside catalysts and multiplying downside risks. Dell rose on AI server demand; MongoDB fell 14% on Atlas growth disappointment; GitLab surged 20% on a raised profit outlook.
+
+---
