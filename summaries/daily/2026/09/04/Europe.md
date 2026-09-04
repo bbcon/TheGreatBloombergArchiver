@@ -1,0 +1,11 @@
+• Volkswagen's supervisory board approved a restructuring plan cutting 50,000 additional jobs and reducing model count and manufacturing footprint, the most significant restructuring in the company's modern history.
+• Economists surveyed expect the ECB to raise rates at next week's meeting, though the consensus view is more dovish than market pricing, anticipating no further increases beyond that point.
+• Germany's factory orders advanced more than expected for a third consecutive month, a tentative sign that Europe's largest economy may be regaining traction.
+
+**Corporate Restructuring**
+VW's board approval gives CEO Oliver Blume his clearest mandate yet to reshape the company, which faces simultaneous pressure from Chinese EV competition, softening European demand, and an elevated cost base. Shares rallied 6.4% in Frankfurt on the news, with Porsche SE gaining 3.4%, suggesting markets view the restructuring as necessary and overdue rather than a signal of distress. The scale of the job reductions — affecting tens of thousands of workers across Germany — raises obvious labor-relations and political sensitivities, particularly ahead of the Saxony-Anhalt regional election, where the AfD holds a wide polling lead.
+
+**Climate and Political Economy**
+Europe recorded an estimated 32,600 heat-related deaths this summer across the region, with France entering its fifth heat wave of the season. The UK Met Office has signaled that 2027 could rival 2024 as the hottest year on record if El Niño intensifies as forecast. Governments are beginning to respond — Spain announced additional climate-shelter funding, Germany's environment minister is pursuing constitutional changes on climate adaptation — but hospital infrastructure upgrades and broader structural reforms are unlikely to materialize before next summer. Italy's Meloni government continues to demonstrate political durability, though the emergence of Roberto Vannacci as a far-right challenger indicates the populist space she vacated is being contested.
+
+---
