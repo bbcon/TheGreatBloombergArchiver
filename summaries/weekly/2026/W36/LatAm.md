@@ -1,0 +1,17 @@
+• The Trump administration announced US control over more than 65 billion barrels of Venezuelan reserves on Monday, framing the deal as the "biggest oil deal in world history"; Chevron finalized a $7 billion expansion on Tuesday, targeting a near-doubling of Venezuelan output.
+• Brazil's presidential race has tightened to a statistical dead heat, with President Lula's lead over challenger Flávio Bolsonaro narrowing amid economic slowdown and corruption allegations, one month before the October election.
+• Colombia's government formally ended talks with rebel groups this week, a sharp reversal from the Petro-era peace process following recent bombing operations and extradition orders.
+
+**Venezuela Energy Reset**
+
+US Energy Secretary Wright's Caracas visit formalized an arrangement spanning more than a dozen energy agreements. Chevron's $7 billion Orinoco Belt expansion anchors the program, but several participating operators — including a Coinbase co-founder and Brazil's Batista brothers — have limited track records in complex upstream development. The strategic logic is clear: expected future Venezuelan supply exerts downward pressure on gasoline prices ahead of US midterms while excluding China and Russia from Venezuelan oil revenues. The political economy is more complicated: acting president Rodríguez has characterized the arrangement as sovereignty-preserving, while opposition figures question whether an interim government possesses the legitimacy to commit long-term resource rights. University of Denver economist Francisco Rodríguez has noted that investors must weigh contract-repudiation risk under any future government — a meaningful overhang for committed capital.
+
+**Brazil**
+
+Lula's Senate defeat on his workweek reduction proposal removes a potential pre-election boost and signals difficulty converting populist policy proposals into legislative wins. Brazil's 2027 budget proposal pledged a primary surplus, though the policy chief's public resistance to spending cuts this week signals that the consolidation commitment remains internally contested. The US is directing approximately $5 billion into Brazil's Pela Ema rare-earth mine — one of the few commercial-scale magnetic rare-earth sources outside Asia — though Lula's simultaneous push for domestic mineral processing requirements complicates Washington's supply-chain ambitions. Brazil enters its agricultural planting season against a global diesel shortage, a timing coincidence with direct implications for input costs and, potentially, food-price inflation.
+
+**Regional Dynamics**
+
+Argentina's President Milei announced accelerated sanctions against firms operating in the Falklands without Buenos Aires' approval — a move analysts read as partly driven by declining domestic approval ratings. The EU-Mercosur free-trade agreement's ratification politics remain complicated by the dual reality it presents to regional producers: expanded European market access alongside greater import competition at home. Emerging-market local-currency bonds have outperformed developed-market peers by approximately 5.2 percentage points year-to-date, with Uruguay's central bank governor noting publicly that the developed world is "probably not that risk-free" as once assumed — a framing with growing resonance among regional policymakers.
+
+---
