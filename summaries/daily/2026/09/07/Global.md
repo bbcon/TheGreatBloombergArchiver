@@ -1,0 +1,9 @@
+• Iran and the US conducted their largest tit-for-tat tanker strikes to date over the weekend; Brent crude last traded at $97/barrel, with Goldman Sachs warning of a potential rally to $120 if shipping disruptions broaden.
+• Iran signaled a deal with Oman to manage Strait of Hormuz shipping may be days away; Qatari LNG tankers are repositioning toward the Persian Gulf in apparent anticipation.
+• Global bond yields are rising across all major markets, led by Europe, in a coordinated repricing of inflation risk driven primarily by energy.
+
+**Oil Markets and Strait of Hormuz**
+The weekend tanker strikes represent a continued escalation of the six-month US-Iran conflict that has fundamentally disrupted global energy shipping. Natural gas prices have gained more than 120% since the conflict began, and oil at $97/barrel remains well above pre-war levels. Goldman's commodity team recommends long positions in natural gas and diesel as instruments to capture further upside. The reported Oman-mediated deal briefly erased oil's intraday gains, suggesting markets view a genuine Hormuz arrangement as price-negative; however, whether such a deal would hold given the current trajectory of US-Iran tensions remains deeply uncertain.
+
+**Global Monetary Policy and Risk Assets**
+The global bond selloff is proving, so far, to have limited contagion into risk assets. Credit spreads remain tight and equity volatility subdued despite multi-year highs in sovereign yields across G7 economies. The disconnect may reflect strong corporate earnings growth — above 20% year-on-year in the US — and still-easy financial conditions overall. The ECB is set to hike Thursday; the Fed likely on September 16. The tension between resilient risk appetite and rising risk-free rates is the central macro dynamic of the moment, and its resolution — orderly or otherwise — will determine the path for global financial conditions through year-end.
