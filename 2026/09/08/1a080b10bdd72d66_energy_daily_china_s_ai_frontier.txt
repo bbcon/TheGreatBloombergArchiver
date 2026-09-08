@@ -1,0 +1,189 @@
+Subject: Energy Daily: China’s AI frontier
+Date: Tue, 08 Sep 2026 11:04:39 +0000
+
+China’s AI Computing Boom Is Moving Far Beyond Its Biggest Cities
+The country’s data-center boom is extending far beyond its biggest cities. ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-09-08/china-s-ai-computing-boom-is-moving-far-beyond-its-biggest-cities?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ 
+<https://www.bloomberg.com/industries/energy?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=19752456&m=11b724c487f61753eb1a7a4a5f3ef261&p=09082026110439&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=19752456&m=11b724c487f61753eb1a7a4a5f3ef261&p=09082026110439&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Welcome to our guide to the commodities driving the global economy. Today, 
+energy reporter Dan Murtaugh explores one of the remote Chinese cities with the 
+power, land and local support needed to underpin the nation’s massive AI shift.
+
+Ulanqab is an unlikely battleground in the US-China tech rivalry.
+
+About 350 kilometers (217 miles) northwest of Beijing, the city of under 2 
+million was hitherto best known as a weekend getaway from the capital’s sticky 
+summer heat, a place to ride horseback through a Martian landscape of dormant 
+volcanoes.
+
+Today, it’s a tech boom town 
+<https://www.bloomberg.com/news/articles/2026-09-08/china-races-to-build-ai-data-centers-far-away-from-its-biggest-cities?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+, with industrial parks on its eastern edge abuzz with the construction of data 
+centers.
+
+By around 2028, Ulanqab is set to become one of a handful of cities in China’s 
+remote north and northwest that will overtake regions around megacities like 
+Shanghai and Beijing in terms of computing equipment in active use, according to
+research <bbg://news/stories/TL0QOFR24U8K> from BloombergNEF.
+
+It forms part of a government strategy known as dongshu xisuan, which 
+translates roughly as “Data in the East, Computing in the West.” The idea is 
+that data centers near eastern metropolises will manage computing requests that 
+don’t allow for a lag — like autonomous driving.
+
+Work that can be carried out at a greater distance from the end-user, like 
+cloud storage or model training, willmove further 
+<https://www.bloomberg.com/graphics/2025-china-data-centers-nvidia-chips/?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ into China’s less populated west.
+
+According to BNEF, China is on track to more than double its capacity of live 
+computing equipment in the next five years. Places like Ulanqab are being 
+promoted precisely because they have abundant renewable energy, ample land and 
+local governments eager for investment.
+
+That gives China an advantage over parts of Europe and the US, where the 
+data-center boom isincreasingly colliding 
+<https://www.bloomberg.com/news/articles/2026-08-24/paxton-and-abbott-break-with-trump-sour-on-data-centers?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ with local concerns about power, water and land.
+
+Of course, China’s strategy also creates a risk of too many cities pushing too 
+many data-center projects, resulting in the kind ofovercapacity 
+<https://www.bloomberg.com/news/articles/2026-06-05/china-s-crowded-solar-industry-pivots-to-new-areas-of-growth?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ that’s already plaguing other industries. Beijing is trying to get ahead of 
+that by forcing large projects to get national approval before construction can 
+begin, according to BNEF.
+
+But in China’s grasslands — where streets are named after tech giants like 
+Apple Inc. 
+<https://www.bloomberg.com/quote/AAPL:US?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ andHuawei Technologies Co. 
+<https://www.bloomberg.com/quote/40978Z:CH?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ — the AI boom isn’t meeting resistance. It’s being welcomed with open arms.
+
+—Dan Murtaugh, Bloomberg News
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=19752456&m=11b724c487f61753eb1a7a4a5f3ef261&p=09082026110439&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=19752456&m=11b724c487f61753eb1a7a4a5f3ef261&p=09082026110439&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Chart of the day
+
+Chinese crude oil imports strengthened in August as cargoes 
+<https://www.bloomberg.com/news/articles/2026-09-08/china-s-crude-imports-strengthen-as-refiners-diversify-supply?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ from the Persian Gulf crept higher and refiners increased purchases from other 
+sources. Flows to the world’s biggest buyer are gradually recovering after 
+initially being crippled by the war in Iran, although they remain 23% below 
+August last year.
+
+Top stories
+
+Brent oil approached $100 a barrel 
+<https://www.bloomberg.com/news/articles/2026-09-07/latest-oil-market-news-and-analysis-for-sept-8?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ after Saudi Arabia said operations at several energy facilities in the 
+kingdom’s south werehalted 
+<https://www.bloomberg.com/news/articles/2026-09-08/saudi-arabia-says-several-energy-sites-halted-after-attacks?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ by attacks.
+
+Vitol Group Chief Executive Officer Russell Hardy said oil-product markets 
+<https://www.bloomberg.com/news/articles/2026-09-08/vitol-warns-on-oil-product-tightness-even-as-hormuz-flows-climb?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ are flashing signs of tightness while the outlook for crude looks reasonable. 
+Of the 10 million barrels flowing daily through Hormuz, crude accounts for 
+about 9 million, he said.
+
+A liquefied natural gas tanker that loaded in Qatar early last month has 
+sailed through 
+<https://www.bloomberg.com/news/articles/2026-09-07/laden-qatari-lng-tanker-makes-rare-attempt-to-exit-hormuz-strait?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ Hormuz, the first visible exit of the country’s LNG via the waterway since 
+July.
+
+China’s state-backed iron ore buyer has told some steel mills to hold off on 
+purchases 
+<https://www.bloomberg.com/news/articles/2026-09-08/china-tells-steel-mills-to-hold-off-on-buying-rio-tinto-s-ore?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ of Rio Tinto Group’s Pilbara Blend as contract talks with the Australian miner 
+reach a critical point, according to people familiar with the matter.
+
+Suez Canal revenue rose 42% in July from a year earlier, as the Iran war’s 
+effective closure of the Strait of Hormuz and Houthi threats in the southern 
+Red Sea led more ships touse the Egyptian waterway 
+<https://www.bloomberg.com/news/articles/2026-09-08/suez-canal-revival-gathers-pace-as-hormuz-crisis-reroutes-ships?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+.
+
+BNEF today
+
+BNEF sees gas storage sites across northwest Europe, Italy and Austria 67% 
+full by Nov. 1, 14 percentage points below last year. In the base case, which 
+assumes the Strait of Hormuz reopens in early November, inventories are 
+expected to fall to 21% by the end of the winter.
+
+Coming up
+
+Bloomberg Green returns to New York on Sept. 23 
+<https://events.bloomberglive.com/event/bloomberg-green-new-york-2026/summary?RefId=newsletters>
+ during Climate Week, convening industry leaders, policymakers and climate 
+innovators to explore what’s next in the transition to a more resilient and 
+future-ready world.
+
+More from Bloomberg
+
+ * Economics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT090826_ENERGY&utm_term=260908&utm_content=8634>
+ for what the changing landscape means for policymakers, investors and you
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT090826_ENERGY&utm_term=260908&utm_content=8634>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Green Daily 
+<https://www.bloomberg.com/account/newsletters/green?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT090826_ENERGY&utm_term=260908&utm_content=8634>
+ for the latest in climate news, zero-emission tech and green finance
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT090826_ENERGY&utm_term=260908&utm_content=8634>
+ for daily insights into supply chains and global trade
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT090826_ENERGY&utm_term=260908&utm_content=8634>
+ to get most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Energy 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/elements?source=NLshare&cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/elements?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBBXT090826_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=260908&utm_content=8634>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/l4VJitC2pe3IdtlIX8SFhn-j8nPsewgDm7O2vOhMZn7P-b2OA30qklF2VSZ_WXqrdpmRA2huLvDVMThPHieQwOgFv-0FXo3wGqM0flZvvCB9LhMEkkMa1xZ8Ud4lnrLIkkBUIQTY-q_uryvdBf_gEb3GnLNmrsOxbF7IuezH_oK6hNjiAukee7d694hQAPlykoXTSsKsjSDaGU9PG2tdtOBIJunDsmI_l0f7nzMj69_8h5pcsuZx7nw0nprUAAKRsWKdCZGsBoGdF8WnZDZnf_c-icmSlRIw8M0fNbjQ8WCPMU-iDZr6zExFTPedS3d6W6s54zTGFikKjh26wnLOmyFdbofyafkr/vc-Afu0j51AWhEB2B0Bx6byVPxtPIQCt/24>
