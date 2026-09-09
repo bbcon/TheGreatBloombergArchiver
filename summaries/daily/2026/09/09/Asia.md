@@ -1,0 +1,12 @@
+• China's CPI accelerated for the first time since April, and factory-gate prices rose faster than consensus, marking a tentative shift in the country's disinflationary trend.
+• The yen strengthened for a third consecutive session, trading near 153.2–153.6 per dollar, its best monthly performance among 31 major currencies, with hedge funds positioning for a move beyond 150 by year-end.
+• Bank of Japan is widely expected to raise rates by 25 basis points on September 18, with overnight rates projected to reach 1.9% over the next 12 months; market participants are additionally watching for a potential GPIF portfolio reallocation announcement.
+• South Korean Kospi gained 1.4%, buoyed by AI-related technology stocks; a South Korean court ordered a record $1.9 billion divorce settlement from Smilegate's founder.
+
+**Japan: Yen and Policy Outlook**
+The yen's appreciation appears qualitatively different from prior interventions. Unlike the July 31 joint US-Japan operation — which drew on Japanese FX reserves at a historically large pace but ultimately faded — the current move has occurred without official purchasing of bonds or reported reserve drawdowns. Analysts at Gavekal describe the yen as "more undervalued than any major currency in modern history," and note it has strengthened despite a strong US payroll print that would historically have driven yen weakness. The structural shift appears driven by unwinding of leveraged short positions and growing conviction that Japanese fundamentals — current account surpluses, rising real wages, and inflation expectations above 2% on five-year breakevens — justify a stronger currency independently of interest rate differentials. Core inflation excluding food and energy, while below 2%, is at its highest in three decades. Real earnings are rising and nominal wage growth is the strongest in decades.
+
+**Potential Policy Double-Punch**
+Market participants are monitoring a possible 2014-style simultaneous announcement: a BOJ rate hike alongside a GPIF reallocation toward domestic government bonds. The $2 trillion fund held an unusual meeting last month to discuss its portfolio, and Prime Minister Takaichi's government has signaled openness to a domestic allocation shift. Such a combination could materially reinforce yen strength, though the BOJ's rate path "remains uncertain," as Bloomberg noted.
+
+---

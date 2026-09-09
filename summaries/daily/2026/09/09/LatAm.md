@@ -1,0 +1,8 @@
+• Chile's central bank held its policy rate steady, per Bloomberg Economics reporting, consistent with a cautious pause as global uncertainty remains elevated.
+• Mexico's fiscal deficit is projected to narrow, while Colombia's government is actively seeking to avoid a tax increase to close its own budget gap.
+• No significant macro data releases beat or missed consensus in the region during this period.
+
+**Regional Macro Context**
+Latin America's macro backdrop on September 9 was shaped primarily by external factors rather than domestic data surprises. The move in Brent crude to $100 per barrel carries differentiated implications across the region: net oil exporters including Colombia and Brazil face revenue support, while net importers face renewed inflationary pressure through energy and logistics costs. The US-Canada trade war escalation, and the associated uncertainty around USMCA, has indirect relevance for Mexico given the integrated North American supply chain — though no specific Mexican policy response was announced. Brazil's sugar industry faces structural competitive pressure from cheap imports, underscored by Tongaat Hulett's near-liquidation in South Africa illustrating the global dynamics of the sector. The broader commodity environment, with diesel supply tightening globally alongside crude, will remain a key transmission mechanism into regional inflation and growth trajectories in the months ahead.
+
+---

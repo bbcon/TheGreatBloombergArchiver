@@ -1,0 +1,12 @@
+• The ECB is fully priced for a 25-basis-point rate hike on Thursday, its second consecutive increase, as energy price pressures keep headline inflation above target despite contained core inflation.
+• The Alternative for Germany party posted a strong result in a German state election, sending political shockwaves through Europe and drawing a congratulatory post from President Trump.
+• UK flight operations remained severely disrupted for a second consecutive day following a technical failure at a key air-traffic-control node, with 153 additional cancellations Wednesday morning after more than 1,750 on Tuesday; the government ruled out a cyberattack.
+• UK food inflation is forecast to exceed 6% by July 2027, driven by El Niño, summer drought, and Iran war-related energy cost pass-through, compounding fiscal pressures ahead of the autumn budget.
+
+**ECB: Lone Tightening Cycle**
+The ECB stands as the only G7 central bank currently on a tightening path, a distinction that frames Thursday's widely anticipated 25-basis-point move in a complex light. Oxford Economics argues the September hike will be the last, on the basis that underlying inflation pressures remain insufficiently broad to build another Governing Council majority for further action. Core inflation has continued to ease, and services price growth has moderated. However, the latest surge in gas and electricity prices introduces meaningful upside risk to updated inflation forecasts, and overnight index swaps still imply a terminal rate near 3% by end-2027. Deutsche Bank raises the possibility that AI-driven investment and Germany's defense and infrastructure spending may be lifting the neutral rate, partially justifying market pricing — though the evidence remains tentative. President Lagarde faces questions about the ECB's reaction function, her own tenure, and the political rise of the far right.
+
+**UK Fiscal and Political Backdrop**
+Prime Minister Burnham faces a deteriorating fiscal outlook heading into the autumn budget, with food inflation forecasts adding to household cost-of-living pressures that have become a central political challenge. The travel disruption — one of the most severe air-traffic incidents in years — adds near-term economic noise.
+
+---
