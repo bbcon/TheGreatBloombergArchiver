@@ -1,0 +1,11 @@
+• Brazil's President Lula unveiled additional fuel tax cuts to shield consumers from surging oil prices, weeks ahead of October's presidential election, a fiscally expansionary measure that may complicate the central bank's inflation management.
+• Brazil's Supreme Court chief justice removed the court's most prominent judge from a seven-year "fake news" probe, deepening an institutional crisis with direct implications for the electoral environment.
+• Colombia and other commodity exporters in the region face a mixed backdrop: oil above $100 provides revenue support, but tanker freight at record levels raises import costs for non-producers.
+
+**Political Economy**
+Brazil remains the dominant story in the region this period. Lula's pre-election fuel tax reduction is politically legible but fiscally consequential, adding to concerns about medium-term debt sustainability at a moment when global bond markets are already under pressure from US fiscal concerns. The Supreme Court's internal conflict over the fake news investigation has broader institutional implications, creating uncertainty around judicial independence in an electoral year. Meanwhile, the convergence of emerging-market credit spreads toward US investment-grade benchmarks — visible in the SK Hynix/Amazon example — is benefiting select Brazilian and regional corporate issuers, even as local political risk remains elevated.
+
+**Commodity Dynamics**
+The return of Brent crude above $100 per barrel is a double-edged development for Latin America. Oil exporters — notably Colombia and, to a lesser extent, Brazil — benefit from higher prices, while energy importers face renewed inflation pressure. Record tanker freight rates, with supertanker earnings nearing $800,000 per day on the Middle East-to-China route, raise the effective cost of crude for regional refiners sourcing from the Gulf. Brazil's power trader salaries — with top earners exceeding $1.2 million annually — reflect the premiums being attached to commodity price expertise in an era of sustained volatility.
+
+---
