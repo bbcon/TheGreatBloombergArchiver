@@ -1,0 +1,372 @@
+Subject: Next China: AI race cuts through the hinterland
+Date: Fri, 11 Sep 2026 04:20:46 +0000
+
+China Races US for AI Lead Riding Wave of Data Centers in Its Hinterland
+Cheap land and energy lead to new wave of data centers far from megacities ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-09-11/china-races-us-for-ai-lead-riding-wave-of-data-centers-in-its-hinterland?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ 
+<https://www.bloomberg.com/asia?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+
+ 
+<https://sli.bloomberg.com/click?s=1149229&li=19805188&m=11b724c487f61753eb1a7a4a5f3ef261&p=09112026042046&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149229&li=19805188&m=11b724c487f61753eb1a7a4a5f3ef261&p=09112026042046&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Hi, this is Dan Murtaugh in Ulanqab, in the northern Chinese region of Inner 
+Mongolia.
+
+Surrounded by rolling grasslands and herds of grazing sheep and cattle, 
+Ulanqab is an unlikely hot spot inthe tech rivalry with the US 
+<https://www.bloomberg.com/news/articles/2026-09-09/us-says-alibaba-deepseek-have-systematically-siphoned-ai-models?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+.
+
+Yet it’s here, about 215 miles northwest of Beijing, that China is making a 
+massive bet on the future 
+<https://www.bloomberg.com/news/articles/2026-09-08/china-races-to-build-ai-data-centers-far-away-from-its-biggest-cities?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ of the infrastructure that will underpin its artificial intelligence economy. 
+It’s part of a strategy known asdongshu xisuan, or “data in the east, computing 
+in the west.”
+
+The plan would see some AI requests from big coastal cities processed far away 
+in less populated areas with plentiful land and renewable energy.
+
+Ulanqab, a city of fewer than 2 million in Inner Mongolia (small by Chinese 
+standards), is embracing the opportunity. “BIG DATA” is spelled out in 
+five-foot-high letters at the entrance of Chahar High-Tech Development Park, 
+where city leaders named the streets after tech giants like Apple and Huawei.
+
+By around 2028, Ulanqab is set to become one of a handful of cities in China’s 
+remote north and northwest that will overtake regions around megacities like 
+Shanghai and Beijing in terms of computing equipment in active use, according 
+to research from BloombergNEF.
+
+That will help China more than double its data center capacity in the next 
+five years, the researchers found.
+An Alibaba data center in Ulanqab, Inner Mongolia.Photographer: Dan 
+Murtaugh/Bloomberg
+It’s a big contrast to the US, where the backlash against data centers has 
+become a major political issuein this year’s midterm elections 
+<https://www.bloomberg.com/news/articles/2026-09-09/why-data-center-backlash-is-shaping-the-2026-us-midterm-elections?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+, and several states have effectively frozen new developments.
+
+The difference isn’t going unnoticed in Washington 
+<https://www.bloomberg.com/latest/data-center-backlash?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+. This week, Treasury Secretary Scott Bessent warned that the US faces dire 
+consequences if it loses out in the AI race. President Donald Trump said 
+earlier that growing public anger about data centers risks giving China the 
+upper hand in AI.
+
+It’s part of a broader divide in how people in the two countries view AI 
+<https://www.bloomberg.com/news/articles/2026-08-14/why-ai-optimism-is-so-much-higher-in-china-than-the-us?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+. Stanford University’s AI Index shows 84% of Chinese say they’re excited by 
+the tech, the highest share for any country surveyed. In the US, the number is 
+just 38%.
+
+One reason for that disparity is a pocketbook issue. In the US, soaring 
+electricity costs have fueled people’s anger against energy-hungry data centers 
+sucking up scarce resources.
+
+That’s not a problem in China, where the country has in just the past four 
+years built more power capacity than the US has in total.
+
+Let that sink in: China has built more power capacity in the past four years 
+than the US has in total.
+
+The kicker is that government-regulated rates in China for residential 
+electricity haven’t budged in years.
+
+In fact, China’s push for western data centers is partly a response to the 
+power sector’s growing problem of abundance. When the sun shines and the wind 
+blows, western regions with plenty of inexpensive renewable generation are 
+producing more than they consume, leaving leftovers for energy-hungry servers 
+and other hardware.
+
+China’s strategy has its risks. Too many cities out west building too many 
+data-center projects could result in the kind of capacity issues already
+plaguing other industries in the country 
+<https://www.bloomberg.com/news/articles/2026-09-11/china-halts-new-battery-factories-on-capacity-concerns-caixin?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+. Beijing is trying to get ahead of that by forcing large projects to get 
+national approval before work can begin.
+
+And of course, the AI race will come down to more than just data centers. 
+Chips, brains and government rules will all play big roles.
+
+But for now, people in Ulanqab are taking advantage of the frenzy. At an 
+intersection near several data centers under construction, a woman surnamed Yin 
+joked with builders while her husband scooped portions of chicken and egg, tofu 
+skin and vegetables onto a plate for the equivalent of $1.50 each.
+
+“Take a look around,” she said. “How can this not be good?”
+
+What We’re Reading, Listening to and Watching:
+
+ * Read why Xi Jinping’s first trip to India since 2019 
+<https://www.bloomberg.com/news/articles/2026-09-10/xi-s-first-india-trip-since-2019-extends-an-olive-branch-to-modi?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ is something of an olive branch for Narendra Modi ... and about the new way 
+that Beijing ispiling pressure on Taiwan 
+<https://www.bloomberg.com/news/articles/2026-09-06/china-piles-pressure-on-taiwan-with-fresh-patrols-off-east-coast?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ at sea and how it might impact the US
+ * Read about the legacy of Tung Chee-hwa, the first Chinese leader of Hong 
+Kong 
+<https://www.bloomberg.com/news/articles/2026-09-08/tung-chee-hwa-hong-kong-s-first-chinese-leader-dies-at-89?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+, who died this week
+ * Take a deep dive into Cambodia’s crackdown on online fraud 
+<https://www.bloomberg.com/news/features/2026-09-10/cambodia-s-sihanoukville-struggles-after-scam-economy-crackdown?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+, which has left a city reeling
+ * Read all about the sweeping criminal trial of Huawei 
+<https://www.bloomberg.com/news/articles/2026-09-09/china-s-huawei-comes-to-brooklyn-for-sweeping-us-criminal-trial?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ that kicks off in Brooklyn
+ * Here’s an opinion piece on how US-China AI talks 
+<https://www.bloomberg.com/opinion/articles/2026-09-09/the-art-of-not-making-an-ai-safety-deal-with-china?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ can have a very simple goal
+ * And for the weekend, here’s a guide to the fall’s most anticipated 
+nonfiction 
+<https://www.bloomberg.com/news/articles/2026-09-08/best-nonfiction-books-for-fall-2026-tom-brady-judi-dench-ai-cycling?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ books
+
+Big Take Asia
+
+India’s Role in the Robot Revolution
+ 
+<https://www.bloomberg.com/news/audio/2026-09-08/big-take-asia-india-s-role-in-the-robot-revolution-podcast?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+Listen to a podcast about the many ways — like head-mounted cameras on workers 
+— that data is collected for robot tech. 
+<https://www.bloomberg.com/news/audio/2026-09-08/big-take-asia-india-s-role-in-the-robot-revolution-podcast?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+
+ 
+<https://sli.bloomberg.com/click?s=868642&stpe=default&li=19805188&m=11b724c487f61753eb1a7a4a5f3ef261&p=09112026042046&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868642&stpe=default&li=19805188&m=11b724c487f61753eb1a7a4a5f3ef261&p=09112026042046&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Patriotic Backlash
+
+For many years, China was the main sales driver for luxury goods as growing 
+wealth and disposable incomes drove consumers to Louis Vuitton handbags, Hermès 
+scarves and Gucci shoes.
+
+That demand helped drive LVMH sales and shares to record highs in 2023. 
+Underscoring the good times, last year Louis Vuittonopened a huge cruise 
+ship-shaped store 
+<https://www.bloomberg.com/news/articles/2025-11-11/lvmh-nears-china-store-openings-as-luxury-demand-begins-recovery?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ in the swanky Jing’an neighborhood of Shanghai.
+
+Then the headwinds mounted. A slowing economy and a government crackdown on 
+conspicuous consumption hit the sector. Luxury brands also suffered from 
+efforts byauthorities to reclaim tax revenues 
+<https://www.bloomberg.com/news/articles/2026-08-25/xi-s-unpredecented-tax-clawback-hammers-chinese-listed-companies?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+.
+
+And now, a trademark spat with a local tea maker 
+<https://www.bloomberg.com/news/articles/2026-09-10/louis-vuitton-loses-china-sales-after-legal-fight-with-tea-chain?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ has sparked a backlash that’s exacerbated a demand slump for LVMH’s most 
+profitable label.
+The Louis Vuitton store shaped like a cruise ship in Shanghai last year.
+Photographer: Raul Ariano/Bloomberg
+Social media fury over the case against Molly Tea, whose four-petal floral 
+design was found to be too similar to the French brand’s famous monogram, drove 
+customers away. Molly Tea plans to appeal the court ruling that ordered it to 
+pay the French brand the equivalent of $1.5 million, the state-run Global Times 
+newspaper reported.
+
+The public backlash began showing up in the brand’s sales, according to a 
+research firm. 
+
+“We have continued to observe double-digit sales declines in August, albeit 
+the decline narrowed from approximately 30% in July to an estimated 20%-25%,” 
+said Junheng Li, chief executive officer and head of research at JL Warren.
+
+LVMH declined to comment. 
+
+The case hit a social media nerve in China, with some online posts saying that 
+it was “cheap” of a luxury giant like Louis Vuitton to sue a small, local tea 
+chain that it doesn’t compete against.
+
+Some said the tea company’s logo was similar to a flower pattern dating back 
+to the Tang Dynasty, which ruled more than 1,000 years ago.
+
+At the peak of the controversy, Louis Vuitton’s social media accounts on 
+Chinese platforms like Douyin, Weibo — where it has more than 11 million 
+followers — and the Instagram-like Xiaohongshu fell silent. No official 
+announcement was issued for an event in Shanghai in late July.
+
+“You may win in a court, and you may have the government’s seal of approval, 
+but the court of public opinion is also strong and may deviate from the 
+official line,” said Robert Wu, CEO of Shanghai-based market data and research 
+firm Baiguan.
+A Molly Tea store in Shenzhen with the brand’s logo.Photographer: Cheng 
+Xin/Getty Images AsiaPac
+Chinese patriotic fervor has hit other Western retailers in the past 
+<https://www.bloomberg.com/graphics/2022-china-nationalistic-online-shoppers/?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+. Nike, Adidas and H&M have run afoul of consumers in the Asian nation for one 
+reason or another. Back in 2018, another luxury brand, Dolce & Gabbana, was hit 
+hard by a boycott that hurt sales for years because an ad campaign was 
+considered insensitive and racist.
+
+The uproar against Louis Vuitton seems to have cooled a bit. Taiwanese singer 
+Ouyang Nana and Chinese Olympic snowboard champion Su Yiming attended a store 
+opening in the northeastern city of Changchun this month.
+
+JL Warren sees China sales for Louis Vuitton showing further improvement this 
+month, estimating a 13% drop.
+
+Soaring Again
+
+$806 billion
+
+That is China’s trade surplus this year through August 
+<https://www.bloomberg.com/news/articles/2026-09-08/china-export-growth-rebounds-as-ai-boom-offsets-extreme-weather?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+, propelled by faster export growth as the AI buildout powers ahead — putting 
+the nation in line to top the 2025 record of $1.2 trillion. The data comes just 
+as the USramps up pressure on Beijing 
+<https://www.bloomberg.com/news/articles/2026-09-01/bessent-says-china-prevented-g20-communique-over-imbalance-spat?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ to address imbalances and before the leaders of the world’s biggest economies
+meet in Washington 
+<https://www.bloomberg.com/news/articles/2026-09-04/trump-plans-state-dinner-for-xi-during-china-leader-s-us-trip?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+.
+
+Behind the Great Firewall
+
+A weekly look at the big water cooler news in China.
+
+Apple unveiled its iPhone Duo foldable this week 
+<https://www.bloomberg.com/news/articles/2026-09-09/apple-s-foldable-iphone-launch-event-gets-underway?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ and the reaction in China — the company’s second-biggest market — was, well, 
+divided.
+
+Several hashtags appeared on Weibo, with one attracting some 28.9 million 
+views. On the one hand, some praised the device’s graphics, integration with 
+other Apple products and the divide down the middle of the screen as appearing 
+less obvious than with other foldables.
+
+“The crease performance is significantly better than I expected,” wrote a 
+Weibo user with 1.3 million followers. “The crease is virtually unnoticeable, 
+putting its aesthetic appeal firmly in the top tier.”
+
+Many apparently ardent Apple fans indicated they planned to buy the Duo — the 
+largest design change 
+<https://www.bloomberg.com/news/features/2026-09-10/iphone-duo-hands-on-apple-s-first-foldable-phone-makes-strong-first-impression?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ to the iPhone in its nearly two-decade history — when it hits store shelves 
+next month.
+
+Apple could grab a quarter of the global foldable market this year and claim 
+the No. 1 spot with a 41% market share in 2027, according to projections by 
+Smart Analytics Global, a research and advisory firm.
+Apple CEO John Ternus with the iPhone Duo.Photographer: David Paul 
+Morris/Bloomberg
+However, some in China suggested the price was a major issue for them.
+
+The Duo starts at 15,999 yuan ($2,385) with 256 gigabytes of storage and 
+climbs to 26,499 yuan.
+
+“Now, smartphones have become more expensive than computers,” Weibo user 
+Student Chenzhen told his 10 million followers.
+
+Others poked fun at the word “Duo,” which means “more” in Chinese. The pun 
+worked out to something like the “iPhone costs more.”
+
+Apple representatives didn’t immediately respond to a request for comment on 
+this story.
+ 
+<https://www.bloomberg.com/games/pointed?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+Pricing could be an edge for Chinese phone makers like Huawei and Xiaomi, 
+which launched new or updated foldables just before Apple. The Xiaomi 18 Fold 
+starts at 10,999 yuan. The Huawei Mate XT 2, a trifold device, starts at 19,999 
+yuan.
+
+In China, foldables have been a resilient bright spot in an otherwise 
+declining market, yet some questioned whether the Duo orany double-screen phone 
+would finally push the devices into the mainstream.
+
+“I haven’t built trust in foldable phones yet, so I’m not considering one as 
+my primary work device,” one person wrote on Weibo. “However, using an iPhone 
+Duo as a secondary phone seems too extravagant.”
+
+Check out: Bloomberg’s Emerging, a monthly podcast series hosted by Menaka 
+Doshi and Haslinda Amin on the rising economies shaping the global future.
+
+
+Emerging
+
+Can Singapore Still Be a Model For Growth?
+ 
+<https://www.bloomberg.com/news/audio/2026-09-10/emerging-can-singapore-still-be-a-model-for-growth-podcast?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+— Dan Murtaugh, Allen Wan, Nectar Gan, Daniela Wei, Catherine Wong, Rachel 
+Chang, Clara Ferreira Marques, Philip Glamann
+
+Thank you for reading Next China. We welcome feedback and ideas at 
+nextchina1@bloomberg.net <mailto:nextchina1@bloomberg.net>.
+
+More From Bloomberg
+
+Enjoying Next China? Check out these newsletters:
+
+ * NEW: Get the AI Today newsletter 
+<https://www.bloomberg.com/account/newsletters/ai-today?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ — chronicling the disruptions and threats of AI on businesses, workers, 
+governments and economies with analysis from Bloomberg’s global newsroom
+ * NEW: Get Next Japan 
+<https://www.bloomberg.com/account/newsletters/next-japan?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ for an inside view of the forces reshaping the economy’s businesses, markets 
+and consumers
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091126_CN&utm_term=260911&utm_content=8739>
+ for the latest political news and analysis from around the globe
+ * Markets Daily China 
+<https://www.bloomberg.com/account/newsletters/china-markets?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091126_CN&utm_term=260911&utm_content=8739>
+ for a daily Chinese-language briefing and audio broadcast of what’s moving 
+markets
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091126_CN&utm_term=260911&utm_content=8739>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ for key news and movers before the trading day starts in that fast-growing 
+economy 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091126_CN&utm_term=260911&utm_content=8739>
+ * Hong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091126_CN&utm_term=260911&utm_content=8739>
+ for what you need to know from the Asian finance hub
+ * Breaking News Alerts 
+<https://www.bloomberg.com/account/newsletters/breaking-news-alerts?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091126_CN&utm_term=260911&utm_content=8739>
+ for the biggest stories from around the world, delivered to your inbox as they 
+happen
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091126_CN&utm_term=260911&utm_content=8739>
+ to get the most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Next China 
+newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/next-china?source=NLshare&cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/next-china?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBD091126_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260911&utm_content=8739>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/AgFmmnt0ScWN44vHtXSHAcMdxEQbkECNlVJQ8aQ3-GryevL4QY1r5I-nWMn4AEJReabuCfpgYKB9NuScG-o90AL_DJp_Ol-TEFtenSei7dnTystSR1xT2dSGuxJ0jeqLUijRb7tkaDPJQx7nnyxts0iwMxBiv1AnST3Wqg4fNn5acy1Dv51k1VWWnVh23VKS90_bIC_ALCqYuO4jiSZKHB9UfIHzBxQaBScT_QJwSLpgDg-GS9VxvoghLVcQxYDQvCXq-4BZYfrbLVcG6R9OVKNKegRWr-c13XlwFICZ9JRo7WZEZsmvBvvxSOSFtODke7E0pz3ydZwV5lvheJmm4r5VgxZrmJQN/ZbWjBjTG-1Fiyq3soO6v2gwFP4T2EBgv/24>
