@@ -1,0 +1,9 @@
+• The Trump administration's deep-sea mining push creates friction with the UN-affiliated International Seabed Authority, adding a multilateral governance dimension to US resource strategy.
+• Indonesia faces an extended dry spell through September, with rainfall at one-fifth of normal levels in parts of Sumatra and Borneo, elevating wildfire and haze risk.
+• The US-China technology and geopolitical rivalry remains the defining structural theme across trade, industrial policy, and regional security, with no near-term resolution in view.
+
+**Resource Governance and Multilateral Tension**
+The US administration's pursuit of unilateral deep-sea mining licensing in the Clarion-Clipperton Zone — an area under ISA jurisdiction — exemplifies a broader pattern of the current administration asserting resource claims outside established multilateral frameworks. Forty-six ISA member states have called for a moratorium on seabed mining, creating a legal and diplomatic overhang that complicates the commercial pathway for any operator seeking internationally recognized title to extracted minerals. The episode sits alongside trade and technology policy as an area where US unilateralism is generating structural friction with international institutions.
+
+**Climate and Energy Transition**
+Indonesia's wildfire season is intensifying under an extended dry period, with hotspot counts exceeding 5,000 and transboundary haze posing public health and economic risks across Southeast Asia. Separately, Northern California faces targeted power cuts this weekend due to elevated wildfire conditions driven by high winds and low humidity — a recurring operational stress for Western grid managers that underscores the intersection of climate volatility and energy infrastructure reliability.
