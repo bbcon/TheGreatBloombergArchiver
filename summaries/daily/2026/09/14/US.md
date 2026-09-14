@@ -1,0 +1,15 @@
+• August CPI met broad expectations but failed to show clear improvement — trimmed mean CPI hit its lowest since early 2021, yet headline and core rates were essentially unchanged, with supercore services (ex-housing) ticking back up to 3%, settling the debate in favor of a Fed hike this week.
+• The 10-year Treasury yield closed the prior week at a three-year high near 4.97%, just below the psychologically significant 5% threshold last breached in 2007; Treasury Secretary Bessent's bond buyback program failed to cap long-end yields as announced details disappointed markets.
+• AI industry leaders — Anthropic's Dario Amodei, OpenAI's Sam Altman, and Elon Musk — called for a slowdown in frontier model development over the weekend, triggering a sharp selloff in tech equities; Nasdaq 100 futures fell 1.8%.
+• US high-yield spreads have begun widening from recent tights, while AI-related convertible bond issuance hit a record $131 billion in 2026, straining credit market absorption.
+
+**Monetary Policy**
+Fed Chair Kevin Warsh appears committed to raising the federal funds rate at Wednesday's FOMC meeting, having staked his credibility at Jackson Hole on a requirement to see clear disinflation before pausing. August data did not deliver that. While underlying measures — trimmed mean CPI, median CPI, sticky prices — continued gradual improvement, the headline core rate was unchanged and supercore services edged higher to 3%, partly due to an anomalous 2021-scale surge in wireless telephony charges that alone added 10 basis points to core. The market is pricing approximately 90% odds of a 25-basis-point increase, with a minority arguing for 50 basis points to demonstrate resolve. Trump has publicly reiterated his preference for the world's lowest interest rates, placing Warsh in direct political tension with the White House.
+
+**Bond and Credit Markets**
+The 10-year Treasury yield's proximity to 5% is compressing equity valuations through conventional discounting mechanics and straining the housing market via 30-year mortgage benchmarks. Bessent's buyback initiative was widely judged insufficient relative to the nearly $2 trillion annual fiscal deficit, which continues to crowd the bond market. Meanwhile, US investment-grade supply is tracking toward a record $2 trillion this year, surpassing the 2020 peak of $1.66 trillion. Spread dislocations have been transient thus far, but high-yield spreads are now widening — a developing stress signal worth monitoring as Treasury yields remain elevated.
+
+**Equities and AI**
+Goldman Sachs chief equity strategist Ben Snider maintained a constructive outlook, noting that markets are already pricing more than three hikes within the next year and that corporate earnings and balance sheets remain robust. However, the AI safety call introduced a new risk vector: if development is materially slowed, the capital-spending cycle underpinning AI infrastructure equity valuations could decelerate. Software stocks seen as AI-disruption beneficiaries — Adobe, Salesforce, CrowdStrike — gained on the news, reflecting a rotation rather than broad risk-off.
+
+---

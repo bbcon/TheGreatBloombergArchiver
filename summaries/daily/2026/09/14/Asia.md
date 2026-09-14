@@ -1,0 +1,12 @@
+• South Korea's Kospi fell 3.3%, the region's sharpest single-day decline, as SK Hynix and Samsung dropped 6.4% and 4.1% respectively on AI slowdown fears; Japanese markets saw SoftBank slide more than 10%.
+• Indonesia's President Prabowo replaced Finance Minister Purbaya Yudhi Sadewa after a rocky year-long tenure, installing an experienced insider in a sign that Jakarta is prioritizing fiscal credibility over growth maximism.
+• Asian LNG importers — India, Pakistan, Bangladesh, Thailand, Vietnam — have collectively spent $7.4 billion on spot LNG since the US-Iran war began, roughly 2.4 times equivalent long-term contract costs, forcing a structural rethink of gas dependency.
+• A ruling-party-backed candidate won the Okinawa gubernatorial election, strengthening Prime Minister Takaichi's hand on defense posture toward China.
+
+**AI and Technology Markets**
+The weekend calls by Anthropic's Dario Amodei and OpenAI's Sam Altman to slow frontier AI development landed with disproportionate force across Asian markets given the region's concentration in AI hardware supply chains. SoftBank's 10%-plus decline reflects its exposure as one of OpenAI's largest backers, with its commitment to the ChatGPT developer approaching $65 billion. Memory semiconductor makers bore the brunt: SK Hynix fell 6.4%, Samsung 4.1%, and Japan's Kioxia 6.4%. The AI slowdown call is framed in the West as a safety measure, but Beijing characterized it as a "silent AI Cold War" targeting Chinese development — a framing that may harden China's resolve ahead of the anticipated Trump-Xi summit on September 24.
+
+**Energy and Indonesia**
+Asia's developing economies face acute energy cost pressures as Qatari LNG flows through the Strait of Hormuz remain severely curtailed since hostilities began in late February. The spot market premium is substantial, and the structural question of whether LNG remains viable as a long-term energy source for price-sensitive Asian buyers is now openly being debated. Separately, Indonesia's cabinet reshuffle — removing a finance minister who had struggled to reconcile growth ambitions with deficit constraints — signals that Jakarta is recalibrating toward institutional fiscal credibility as energy import costs rise and external financing conditions tighten.
+
+---

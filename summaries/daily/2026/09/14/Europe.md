@@ -1,0 +1,12 @@
+• Sweden's general election produced no decisive result, with exit polls initially favoring the center-left Social Democrats before the lead evaporated; the outcome remains too close to call with diaspora votes yet to be counted, potentially allowing the far-right Sweden Democrats into government for the first time.
+• French 10-year OAT spreads over German Bunds remain near 100 basis points — elevated relative to prior periods of political stress — while French borrowing costs in absolute terms are at their highest since 2008, reflecting fiscal and political paralysis ahead of next spring's presidential election.
+• France's Finance Minister Roland Lescure outlined €30 billion in budget savings for 2027, weighted toward spending cuts to protect consumer purchasing power.
+• ASML fell 4.1% and France's Soitec plunged 12% in Monday trading as AI development concerns reverberated through European semiconductor supply chains.
+
+**Political Economy**
+Sweden's election result — the tightest in more than a century — offers an ambiguous read on European political dynamics. The Social Democrats recorded their worst showing in over 100 years, while the Sweden Democrats, whose neo-Nazi-linked origins once made them a political pariah, dropped to third place after a decade of rapid ascent. Both established poles of Swedish politics appear to have hit ceilings simultaneously, producing fragmentation rather than resolution. The broader European implication is cautionary: as elections approach in France, Spain, and Italy in 2027, the Swedish experience suggests neither a center-left revival nor a clear far-right mandate is guaranteed — rather, protracted coalition uncertainty.
+
+**France and Sovereign Risk**
+France represents the most acute near-term sovereign risk in the eurozone. Political gridlock following the 2024 snap elections has prevented meaningful fiscal consolidation, and the OAT-Bund spread at approximately 100 basis points exceeds levels seen during prior French political crises over the past decade. Finance Minister Lescure's €30 billion savings target is directionally correct but faces a legislature with no stable majority to pass it. Should US Treasury market volatility persist and global long yields continue rising, France's fiscal position could become a pressure point before its presidential election.
+
+---
