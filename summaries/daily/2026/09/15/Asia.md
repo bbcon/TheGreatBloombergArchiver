@@ -1,0 +1,12 @@
+• China August retail sales rose just 0.4% year-over-year, missing the prior month's already-weak 0.6% pace; fixed-asset investment fell 7.2% in the first eight months of the year.
+• China August industrial output rose 5.2% year-over-year, beating the prior month's 4.5% and exceeding consensus, driven by AI-related exports including integrated circuits.
+• The Bank of Japan is widely expected to raise rates for the third time in under ten months at Friday's meeting; Japan is also considering lifting defense spending to 3.5% of GDP.
+• India's five-year bond yields posted their largest single-day rise since May 2022 after the RBI announced sovereign note sales to drain banking system liquidity.
+
+**China: Two-Speed Economy**
+August data confirmed the structural divergence at the heart of China's economic challenge. Domestic demand remains deeply impaired: retail sales decelerated to 0.4% YoY from 0.6% in July, property investment contracted 19.9% in the January-August period, and fixed-asset investment fell 7.2%. The property slump continues to weigh heavily on household wealth and consumer confidence. Industrial output, however, accelerated to 5.2% YoY, supported by surging AI-related exports. The critical risk is that calls from US AI labs for a development slowdown — if heeded — would directly threaten this export engine, removing one of the few sources of positive macro momentum available to Beijing. Bloomberg Economics analysts note that any industry-wide AI deceleration would "severely dampen" China's export trajectory.
+
+**Japan and India**
+Japan faces a compound challenge: the BOJ appears set to deliver its third rate hike in under ten months on Friday, while the government's reported consideration of lifting defense spending to 3.5% of GDP has renewed concerns about fiscal sustainability and is contributing to upward pressure on JGB yields. In India, the RBI's decision to drain banking liquidity via sovereign bond sales sent five-year yields sharply higher — the largest move since May 2022 — and a Kotak Mahindra economist now assigns meaningful probability to a 50-75 basis point rate increase at the next policy meeting, adding India to a growing list of central banks moving toward tightening.
+
+---

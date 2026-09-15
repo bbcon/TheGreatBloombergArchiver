@@ -1,0 +1,12 @@
+• 10-year Treasury yield touched 5.01%, the highest since 2007, before briefly pulling back — a psychological threshold markets appear reluctant to sustain above.
+• The Federal Reserve is expected to raise rates at Wednesday's meeting, the first hike since July 2023, with futures now pricing a return to 4.5% on the fed funds rate by next summer.
+• Bank of America CEO flagged "relatively flat" trading revenue for the quarter, sending bank stocks lower; BofA fell 5%.
+• AI safety debate intensifies: the SOX semiconductor index dropped 5% on concerns that leading AI labs may slow development, while Trump dismissed existential AI risks as a "hoax."
+
+**Bond Market**
+The 10-year Treasury yield reaching 5.01% represents the most significant development in US fixed income in nearly two decades. The move reflects a convergence of factors: the energy shock from the Iran conflict, which has pushed Brent above $107/barrel and complicated the Fed's disinflation narrative; revised expectations for the terminal rate following Fed Chair Kevin Warsh's hawkish Jackson Hole remarks; and strong nominal GDP growth. Core inflation ex-energy printed 2.5% year-over-year last month — the lowest since early 2021 — creating a genuine tension between energy-driven headline pressure and underlying disinflation. Markets briefly retreated from the 5% level, suggesting residual demand at that yield, but historical tightening cycles imply yields could ultimately reach 6%.
+
+**AI and Markets**
+Tech equity positioning has become severely concentrated — $52 billion has flowed into tech ETFs since the March S&P 500 trough, versus $4 billion into the rest of the market. The AI safety debate crystallized that risk. Calls from Anthropic and OpenAI leadership for a development slowdown triggered a broad semiconductor selloff; the SOX index remains more than 20% below its June highs. Software stocks, by contrast, gained 3.2%, on the logic that slower AI diffusion could relieve competitive pressure on incumbent SaaS models. Whether AI deceleration represents a temporary sentiment shock or a structural shift in capex trajectories remains an open question, with hyperscaler revenue backlogs directly exposed to AI lab spending.
+
+---
