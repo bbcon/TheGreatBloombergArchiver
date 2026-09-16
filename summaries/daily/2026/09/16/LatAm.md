@@ -1,0 +1,7 @@
+• Brazil's central bank is expected to cut the Selic rate today, extending its easing cycle against a backdrop of intensifying political uncertainty ahead of the October 4 presidential election first round.
+• Polls show Flávio Bolsonaro and incumbent President Lula statistically tied, with corruption allegations — centered on the Banco Master scandal — complicating both candidates' positioning.
+
+**Brazil Political Economy**
+The Brazilian election dynamic is sharpening into a contest defined less by economic platforms than by competing credibility deficits. Flávio Bolsonaro has concentrated his campaign on the Lula government's proximity to Justice Alexandre de Moraes and the Banco Master banking fraud — the same fraud in which police are now investigating Bolsonaro's own financial relationships, including potential money laundering. The convergence of both leading candidates on the scandal underscores a broader governance challenge. The central bank's expected rate cut today proceeds against this backdrop of political uncertainty, with monetary easing providing some near-term macro support but longer-run fiscal credibility contingent on the election outcome. Argentina presents a separate illustration of sub-national fiscal fragility, with at least one opposition governor reported to be issuing local currency instruments — a development that tests the boundaries of Milei's market liberalization framework.
+
+---

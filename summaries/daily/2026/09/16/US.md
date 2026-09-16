@@ -1,0 +1,12 @@
+• The Federal Reserve is virtually certain to hike the federal funds rate by 25 basis points today — the first increase since 2023 — with interest-rate swaps pricing a 94% probability, a threshold that has historically proven reliable.
+• The 10-year Treasury yield rose to its highest level since 2007, briefly topping 5%, with cumulative upward pressure driven by an 80-basis-point rise year-to-date and growing expectations of additional hikes beyond today.
+• Brent crude closed at $108.75, its highest since May, with WTI near $104.85, sustaining inflation concerns that have complicated the Fed's communication calculus.
+• The Senate blocked the Clarity Act — a landmark digital asset market structure bill — with bipartisan opposition sending Coinbase down 10% and Bitcoin lower.
+
+**Monetary Policy**
+The FOMC meeting dominates the session. Chairman Kevin Warsh has spent months signaling inflation resolve — invoking language of "impatience" and pledging to "not hesitate to act" — and financial markets have effectively removed the option of inaction. Goldman Sachs, which shifted to a 25bp hike forecast only after Friday's CPI print, acknowledged the move lacks a strong fundamental justification given energy-driven, potentially transitory inflation dynamics, but concluded the credibility cost of a hold outweighs the economic rationale for patience. The more consequential unknown is Warsh's forward guidance: markets are pricing two additional hikes with an 80% probability of a third, and the dot plot, which Warsh has historically downplayed, will be scrutinized for any signal of how deep the cycle runs. Trump's public opposition to rate increases, through adviser Peter Navarro among others, places Warsh in a difficult position — appearing dovish would buoy equities but risk driving long yields further above 5%, into territory last seen in the mid-2000s.
+
+**Equity and Credit Markets**
+The S&P 500 has gained 10.7% year-to-date despite the rate backup, sustained by a substantial upward revision to forward earnings — driven largely by AI-related capital expenditure — that has partially offset multiple compression. Financial conditions remain accommodative by historical standards. The Russell 2000 has underperformed over the past month, declining more than 6% from its recent peak as rate sensitivity weighs on leveraged small-cap balance sheets, though year-to-date outperformance versus the S&P 500 provides a buffer.
+
+---
