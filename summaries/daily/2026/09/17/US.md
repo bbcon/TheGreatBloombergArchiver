@@ -1,0 +1,12 @@
+• The FOMC unanimously raised the federal funds rate by 25 basis points to a target range of 3.75%–4.00%, with the dot plot signaling at least one additional hike in 2026 — confirming this as the start of a hiking cycle rather than a one-off move.
+• Fed Chair Warsh framed the decision around economic strength, citing improved hiring, business investment, and credit flows, while noting that "too many categories" of inflation continue to run above 3% annualized on a six-month and twelve-month basis.
+• The S&P 500 fell 0.45% on the day of the decision but futures recovered by 0.8% overnight; the 10-year Treasury yield peaked near 5.02% before retreating to just below 5.00%.
+• The US Senate failed to advance the Clarity Act, delivering a setback to crypto legislation and sending Bitcoin down more than 4%.
+
+**Federal Reserve**
+The FOMC's unanimous rate decision — the first hike in more than three years — appears to have materially strengthened Warsh's institutional credibility. The unanimity was notable given that several members were previously skeptical a hike was warranted. Rather than framing the move as a reluctant concession to inflation, Warsh positioned it as a response to underlying economic resilience, citing robust private-sector hiring and business capital investment. His language was deliberately calibrated to signal continuity: the phrase "removed a dose of accommodation" implies further doses remain in the prescription. The dot plot reinforced that reading, with the committee's median end-2027 rate projection rising 50 basis points since June. Markets priced three additional hikes to a peak below 5%.
+
+**Markets and Politics**
+President Trump's public response — demanding rates fall to 1% — was notable for stopping short of directly criticizing Warsh, instead attributing the decision to a "hostile" board. Bond and equity markets largely shrugged off the political noise, interpreting the unanimity as evidence that Warsh commands the committee. The 10-year yield's orderly retreat below 5.00% after briefly breaching that level suggests no disorderly repricing. The Senate's failure to advance the Clarity Act removed a near-term catalyst for crypto, with Bitcoin ETF inflows of $3.5 billion in August and $600 million in September unable to prevent a further decline.
+
+---

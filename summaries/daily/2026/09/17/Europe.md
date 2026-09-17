@@ -1,0 +1,12 @@
+• The Bank of England held rates at 3.75%, as expected, but warned that a hike may be required if price pressures intensify — a more hawkish tilt than its previous guidance.
+• Sweden's center-left opposition bloc led by former Prime Minister Magdalena Andersson is projected to win the general election by a margin of approximately 176 to 173 seats, effectively closing off near-term prospects for far-right participation in government.
+• Europe's potato harvest is forecast to decline by approximately 3.5 million tons relative to normal due to summer heat waves, with yield losses of 21% in Belgium, 13% in France, and 10% in Germany.
+• Marine Le Pen kept open the possibility of a no-confidence vote over France's 2027 budget, adding to fiscal uncertainty in Paris.
+
+**Bank of England**
+The BOE's decision to hold at 3.75% was in line with consensus, but the accompanying language was notably more cautious than prior communications. The committee scrapped plans to sell long-dated gilts — a material shift suggesting concern about absorbing additional duration risk into a market already digesting the Fed's hawkish turn and elevated global yields. The majority of MPC members have argued that the current rate level is sufficient to contain inflation, but that position is becoming harder to defend as energy-driven price pressures persist and the Fed signals further tightening. An ECB official separately indicated the October meeting is "live," suggesting European central banks are shifting incrementally in a more restrictive direction.
+
+**Politics and Food Inflation**
+Sweden's election result, while subject to final confirmation, appears to close a path toward far-right governmental influence that had concerned European markets. The margin is thin enough that political stability should not be assumed. On the inflation front, Europe's record summer heat has produced a material agricultural shock: the potato harvest shortfall of 3.5 million tons will filter into consumer food prices over coming months. Bond managers are already flagging food as a potential successor inflation shock to energy, with a super El Niño, tight fertilizer supplies, and shipping disruptions compounding the summer's agricultural damage.
+
+---
