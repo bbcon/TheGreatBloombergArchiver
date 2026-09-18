@@ -1,0 +1,391 @@
+Subject: Next China: AI guardrails now or later?
+Date: Fri, 18 Sep 2026 04:53:47 +0000
+
+Can Xi, Trump Set Up AI Guardrails Before the Tech Runs Amok?
+Beijing and Washington are worried about AI. That’ll give Xi and Trump more to 
+talk about. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-09-18/can-xi-trump-set-up-ai-guardrails-before-the-tech-runs-amok?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ 
+<https://www.bloomberg.com/asia?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+
+ 
+<https://sli.bloomberg.com/click?s=1149229&li=19921687&m=11b724c487f61753eb1a7a4a5f3ef261&p=09182026045346&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149229&li=19921687&m=11b724c487f61753eb1a7a4a5f3ef261&p=09182026045346&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+
+Hi, this is Philip Glamann in Beijing.
+
+Less than a week before Chinese leader Xi Jinping travels to the US 
+<https://www.bloomberg.com/news/articles/2026-09-16/china-considers-byd-to-join-xi-s-ceo-entourage-for-trump-summit?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ to meet President Donald Trump, AI has taken center stage in the bilateral 
+relationship.
+
+In some ways the rivalry is straightforward. Most benchmarks show American 
+models have a lead in performance that Washington very much wants to maintain, 
+for military and economic reasons.
+
+As Trump put it this week: “Whoever wins AI, wins.”
+
+China’s models are very nearly as good, though, and their lower cost makes 
+them appealing 
+<https://www.bloomberg.com/news/features/2026-09-17/can-china-turn-its-ai-reach-into-geopolitical-powerhttps://www.bloomberg.com/news/features/2026-09-17/can-china-turn-its-ai-reach-into-geopolitical-power?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ in developing nations that Beijing has been courting for decades. Xi used a 
+trip to India for a BRICS summit to champion his nation’s AI vision,positioning 
+China to lead a “community” 
+<https://www.bloomberg.com/news/articles/2026-09-13/xi-pitches-his-ai-vision-at-brics-summit-as-china-duels-with-us?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ for open-source AI.
+
+Oddly though, there is some agreement on AI of sorts. For one thing, Trump and 
+the Chinese government have both pushed back on fears that AI will destroy us 
+all.
+ 
+<https://www.bloomberg.com/news/videos/2026-09-17/how-budget-ai-is-giving-china-an-edge-video?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+WATCH 
+<https://www.bloomberg.com/news/videos/2026-09-17/how-budget-ai-is-giving-china-an-edge-video?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+: How budget AI models give China an edge
+This week, Trump dismissed worries 
+<https://www.bloomberg.com/news/articles/2026-09-15/trump-s-ai-defense-defies-voter-unease-heading-into-midterms?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ raised by Anthropic CEO Dario Amodei and backed by OpenAI’s Sam Altman and 
+Elon Musk as a “hoax.” Still, Trump did suggest that China could be behind 
+those concerns, though he didn’t spell out exactly how.
+
+China also lashed out at the fears raised by the tech titans 
+<https://www.bloomberg.com/news/articles/2026-09-14/china-rejects-ai-fearmongering-after-amodei-urges-slowdown?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+, with one diplomat saying that “fearmongering, confrontation and vicious 
+competition will only disrupt the process of global AI governance and serve the 
+interests of no one.”
+
+Both the Trump administration and officials in Beijing have their issues with 
+Anthropic. Earlier this year, the White House was peeved because the company 
+wanted assurances that its AI wouldn’t be used for mass surveillance of 
+Americans or autonomous weapons deployment.
+
+And China didn’t seem terribly pleased that Amodei singled China out in a blog 
+post thatwarned about the risks of AI 
+<https://www.bloomberg.com/news/articles/2026-09-12/anthropic-ceo-says-it-s-time-to-slow-pace-of-improving-ai-models?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+, as he saw them. “If we greatly restrain our AI capabilities in the belief 
+that China will do the same, and then China defects, AI could be so powerful 
+that such a defection could lead to their geopolitical dominance,” he wrote.
+
+Chinese state media later hit back, calling the slowdown idea “self-serving.” 
+<https://www.bloomberg.com/news/articles/2026-09-15/chinese-state-media-dismisses-self-serving-ai-slowdown-call?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ (Anthropic also accuses Chinese companies ofpiggybacking off its technology 
+through “distillation” 
+<https://www.bloomberg.com/news/articles/2026-09-09/what-is-ai-distillation-and-why-are-us-tech-companies-worried?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ but that’s a rabbit hole for another day.)
+
+Underscoring Beijing’s belief that it should be one of the main writers of the 
+rules for the AI road, the English-language China Daily wrote that “a global 
+AI-safety framework that excludes China is not quite global.”
+
+Yet China has its own worries about AI and humanity, ones that echo those of 
+the tech figures in the US.
+
+On Sunday, China’s top intelligence official, Chen Yixin, wrote that use of 
+the tech by rivals could “directly threaten China’s political security, 
+institutional security and ideological security.”
+
+Chen’s article, which also warned about AI’s ability to create malware to 
+exploit weaknesses in computer systems 
+<https://www.bloomberg.com/news/articles/2026-09-14/china-spy-chief-warns-of-ai-risks-as-us-tech-leaders-urge-brakes?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+, was significant because it was one of the clearest accounts so far on how 
+Beijing assesses the dangers that the flourishing tech poses.
+Dario Amodei, Anthropic’s CEOPhotographer: Jason Henry/Bloomberg
+For all the heated competition on AI, both sides do in fact share similar 
+safety concerns. That’s got some people thinking about the ways in which the 
+two sides could cooperate. After all, the US and Soviet Union did as much on 
+nuclear weapons.
+
+Media entrepreneur-cum-China analyst Bill Bishop suggested in a newsletter 
+this week that Beijing and Washington create a high-level forum that meets 
+regularly in a third country so they can sort through their differences.
+
+He suggested that among the first topics of discussion should be “nuclear 
+command and control, catastrophic biological risks” and “other areas where 
+limited but meaningful cooperation is realistic.”
+
+It is easy to be skeptical that’ll happen, especially at the upcoming summit. 
+After all,for all the G2 talk 
+<https://www.bloomberg.com/news/newsletters/2025-11-28/xi-trump-talks-revive-idea-of-a-g-2-running-the-world?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+, areas where the two sides agree are sometimes hard to spot. And expectations 
+for outcomes from the Xi-Trump meeting on Thursday at the White House are low.
+
+Right now it looks like the two nations will make a limited deal 
+<https://www.bloomberg.com/news/articles/2026-09-16/us-china-discuss-cutting-some-tariffs-as-leaders-prepare-to-meet?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ on American agricultural and energy products as well as unfinished Chinese 
+goods. In other words, just enough to extend the one-year trade truce, though 
+maybe not for a full 12 months.
+
+While there was some speculation China and the US would hold a meeting 
+dedicated solely to AI issues before the summit, that never came to pass.
+
+Right now it looks like officials in Beijing and Washington will have to have 
+a close call with some of their worst fears on AI before they agree to hold 
+serious talks about its dangers.
+
+What We’re Reading, Listening to and Watching:
+
+ * Read about Huawei speeding up its launch of a new chip 
+<https://www.bloomberg.com/news/articles/2026-09-16/huawei-set-to-unveil-china-s-best-answer-to-nvidia-ai-chip-reign?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ to take on Nvidia
+ * TikTok billionaire Zhang Yiming passes Indian tycoon 
+<https://www.bloomberg.com/news/articles/2026-09-16/bytedance-tiktok-billionaire-zhang-yiming-overtakes-gautam-adani-asia-richest-person?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ to become Asia’s richest person
+ * Read about Hong Kong setting out tech goals 
+<https://www.bloomberg.com/news/articles/2026-09-16/hong-kong-aims-to-almost-double-spending-on-tech-innovation?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ in its first five-year plan
+ * Here’s an opinion piece that lays out why China’s EVs aren’t Europe’s real 
+problem 
+<https://www.bloomberg.com/opinion/articles/2026-09-16/china-s-electric-cars-aren-t-europe-s-real-problem?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ ... and one aboutHyrox and that hygiene controversy 
+<https://www.bloomberg.com/opinion/articles/2026-09-17/hyrox-needs-to-remember-who-its-customers-are?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ * The ‘Iron Lady’ of appliances 
+<https://www.bloomberg.com/news/articles/2026-09-17/china-s-iron-lady-of-appliances-eyes-europe-winters-for-growth?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ eyes European winters for growth
+ * And for the weekend, a group of bosses lay out their end-of-year goals 
+<https://www.bloomberg.com/news/articles/2026-09-14/skills-and-goals-bosses-are-aiming-for-by-the-end-of-2026?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ ... anda vineyard in Tibet 
+<https://www.bloomberg.com/news/articles/2026-09-17/tibet-wine-industry-grows-at-world-s-highest-vineyard?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ defies the odds to make wine
+
+Big Take Asia
+
+Big Pharma Eyes China for R&D
+ 
+<https://www.bloomberg.com/news/audio/2026-09-15/big-take-asia-big-pharma-eyes-china-for-r-d-podcast?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ 
+<https://sli.bloomberg.com/click?s=868642&stpe=default&li=19921687&m=11b724c487f61753eb1a7a4a5f3ef261&p=09182026045346&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868642&stpe=default&li=19921687&m=11b724c487f61753eb1a7a4a5f3ef261&p=09182026045346&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Thinking Big
+
+A major reason the Chinese government may not be particularly interested in 
+slowing in the AI race is that the world’s second-biggest economy is 
+increasinglyreliant on the tech 
+<https://www.bloomberg.com/news/videos/2026-09-15/how-ai-is-transforming-china-s-economy-video?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ for growth, now and in the future.
+
+Economic data this week was largely disappointing. One of the few bright spots 
+was factory output beating expectations in August, mostly because AI exports 
+have been boosted by global demand for the tech goods the nation makes.
+
+Other than that, consumer spending and investment languished 
+<https://www.bloomberg.com/news/articles/2026-09-15/china-s-consumption-and-investment-wilt-as-factories-power-aheadhttps://www.bloomberg.com/news/articles/2026-09-15/china-s-consumption-and-investment-wilt-as-factories-power-ahead?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+. The jobless rate saw an unexpected uptick, and home prices continued to drop.
+
+Data also showed that loan expansion weakened far more than expected in 
+August. That’s also worrying for the economy, though the central bank governor, 
+Pan Gongsheng,described it as a natural development 
+<https://www.bloomberg.com/news/articles/2026-09-14/china-s-economy-enters-critical-phase-determining-2026-stimulus?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ during a transition toward a new normal of slower loan growth.
+
+The slowdown in overall financing also helps keep the debt levels stable, he 
+wrote in an article.
+ 
+<https://www.bloomberg.com/news/videos/2026-05-18/china-economic-data-surprises-on-the-downside-hsbc-says-video?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+WATCH 
+<https://www.bloomberg.com/news/videos/2026-05-18/china-economic-data-surprises-on-the-downside-hsbc-says-video?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+: Economic data surprises on the downside
+Still, worries about the economy, at least other than humming factories, 
+remain. September will be pivotal, if that’s going to change.
+
+Without a sharp turnaround this month, the nation’s economic growth is 
+increasingly at risk of falling below the official annual target of 4.5% to 5% 
+for a second straight quarter after a sharp deceleration in the April-June 
+period.
+
+Australia & New Zealand Banking Group said GDP growth was tracking at 4.2% in 
+July-August, less than the second-half rate needed to meet the annual target. 
+That goal was already changed to a range to give Beijing more wiggle room.
+
+Despite mounting pressure to ramp up stimulus so domestic demand can recover, 
+policymakers appear to be in little hurry to do that.
+
+Instead, they want existing measures to make good. That includes pushing 
+state-owned banks to deploy more funding from a program that canunlock 800 
+billion yuan ($119 billion) for projects this year 
+<https://www.bloomberg.com/news/articles/2026-08-24/china-s-119-billion-answer-to-sagging-investment-is-coming-late?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+, 60% more than in 2025.
+
+That program set up in March 
+<https://www.bloomberg.com/news/articles/2026-03-05/china-keeps-budget-deficit-target-at-record-high-to-spur-economy?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ has been slow to get off the ground.
+
+With a focus on major initiatives such as the Six Networks, the financing 
+could set off a new wave of infrastructure investment in the coming months.
+
+The Six Networks program 
+<https://www.bloomberg.com/news/articles/2026-07-26/how-china-plans-to-supercharge-its-ai-ambitions-with-six-networks-program?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+, part of the latest five-year plan, is important because it marks the first 
+time the nation has brought its biggest building projects under a single, 
+integrated program, rather than developing transport, energy and communications 
+networks separately.
+
+The aim is to not only backstop AI ambitions, but also strengthen the 
+manufacturing base and advance the transition to a low-carbon economy. If it 
+succeeds, it will bolster China’s resilience to geopolitical tensions, economic 
+shocks and natural disasters.
+
+So it’s a big bet and a long-term one. Yet the sooner it gets rolling, the 
+better for the economy.
+
+Bloomberg Economics economists Chang Shu and Eric Zhu said that based on the 
+upbeat industrial production growth, “the government is unlikely to roll out 
+extra stimulus.”
+
+“The path of least resistance is to accelerate input in mega projects in the 
+pipeline to ensure growth hits the target range,” they wrote.
+ 
+<https://www.bloomberg.com/games/pointed?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+Big Drop
+
+10%
+
+That’s about how much Contemporary Amperex Technology shares tumbled over two 
+trading sessions this week, theirsteepest such drop in more than a year 
+<https://www.bloomberg.com/news/articles/2026-09-16/catl-shares-drop-10-in-two-days-as-outlook-worries-mount?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ as investors evaluated the battery giant’s third‑quarter outlook and 
+speculation it may scale back production. CATL has slid from a high in May, 
+though analysts remain bullish on the company long term.
+
+Behind the Great Firewall
+
+A weekly look at the big water cooler news in China.
+
+Beijing’s sweeping ban on owning recreational drones in the city following a 
+plane crash sparked debate in China this week.
+
+While some people backed tighter security measures in the capital, others 
+lamented the potential economic fallout. Many questioned or mocked a rule that
+extends to merely flying one of the devices 
+<https://www.bloomberg.com/news/articles/2026-09-14/beijing-bans-drones-in-sweeping-curbs-after-citic-tower-crash?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ for fun.
+
+“Banning people from owning drones they legally purchased before the rules 
+took effect makes little sense legally, logically or practically,” one Weibo 
+user wrote in a post that drew more than 2,600 likes. “Isn’t that a bit 
+ridiculous?”
+
+The move tightened rules in place since earlier this year to cover the 
+possession or even storage of recreational drones. The latest curbs — some of 
+the tightest in the world — take effect in mid-November.
+
+Drone owners have to either move their aircraft out of the city or turn to a 
+government buyback program. The city is offering to pay up to 3,000 yuan unit.
+
+The changes come after a small plane flew into Beijing’s Citic Tower in June, 
+killing the pilot and injuring 13 others. The incident took place just miles 
+fromthe headquarters of the ruling Communist Party 
+<https://www.bloomberg.com/news/articles/2026-06-28/beijing-tower-plane-crash-shows-security-gap-near-xi-s-compound?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ and residence of top leaders.
+Citic Tower in Beijing after it was damaged by a small aircraft in June.
+Photographer: Kevin Frayer/Getty Images AsiaPac
+Officials said the pilot deliberately crashed 
+<https://www.bloomberg.com/news/articles/2026-07-02/beijing-tower-crash-was-a-deliberate-act-by-pilot-probe-finds?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+. The aircraft also nearly collided with a commercial jet before impact.
+
+Some people said they supported the policy, arguing that the curbs reflect 
+security needs in the capital, even though that would mean an end to things 
+like aerial photography.
+
+Others pointed to possible economic implications. “The low-altitude economy 
+can bid farewell to Beijing,” one person wrote, referring to a sector that 
+policymakers have promoted as a new growth driver.
+
+Many reacted with humor. One Internet user highlighted posts from drone owners 
+jokingly trying to dispose of their aircraft.
+
+“Who wants one? Free, just pay the shipping. Help fulfill the dream of someone 
+who’s never owned a DJI,” read one post, referring to a leading Chinese maker 
+of the drones.
+
+Check out: Bloomberg’s Emerging, a monthly podcast series hosted by Menaka 
+Doshi and Haslinda Amin on the rising economies shaping the global future.
+
+
+Emerging
+
+India’s Challenges in the Global AI Race
+ 
+<https://www.bloomberg.com/news/audio/2026-07-09/emerging-india-s-challenges-in-the-global-ai-race-podcast?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+— Philip Glamann, Allen Wan, Charlie Zhu, Yujing Liu, Jenni Marsh
+
+Thank you for reading Next China. We welcome feedback and ideas at 
+nextchina1@bloomberg.net <mailto:nextchina1@bloomberg.net>.
+
+More From Bloomberg
+
+Enjoying Next China? Check out these newsletters:
+
+ * NEW: Get the AI Today newsletter 
+<https://www.bloomberg.com/account/newsletters/ai-today?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ — chronicling the disruptions and threats of AI on businesses, workers, 
+governments and economies with analysis from Bloomberg’s global newsroom
+ * NEW: Get Next Japan 
+<https://www.bloomberg.com/account/newsletters/next-japan?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ for an inside view of the forces reshaping the economy’s businesses, markets 
+and consumers
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091826_CN&utm_term=260918&utm_content=8966>
+ for the latest political news and analysis from around the globe
+ * Markets Daily China 
+<https://www.bloomberg.com/account/newsletters/china-markets?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091826_CN&utm_term=260918&utm_content=8966>
+ for a daily Chinese-language briefing and audio broadcast of what’s moving 
+markets
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091826_CN&utm_term=260918&utm_content=8966>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ for key news and movers before the trading day starts in that fast-growing 
+economy 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091826_CN&utm_term=260918&utm_content=8966>
+ * Hong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091826_CN&utm_term=260918&utm_content=8966>
+ for what you need to know from the Asian finance hub
+ * Breaking News Alerts 
+<https://www.bloomberg.com/account/newsletters/breaking-news-alerts?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091826_CN&utm_term=260918&utm_content=8966>
+ for the biggest stories from around the world, delivered to your inbox as they 
+happen
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=china&cmpid=BBD091826_CN&utm_term=260918&utm_content=8966>
+ to get the most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Next China 
+newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/next-china?source=NLshare&cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/next-china?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBD091826_CN&utm_campaign=china&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=8966>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/IOF_34x7fJHjjZEuMw3tXvYua_KQQAOiVXOnI54zEGCb5Sq0_dMRN94plZugg-c7OXODxNR2hTAr5zhyPIWWDdulk6oQ8c-a4sTUQM8WUdG7ydOp_-LjkxzumZqMuYdVk9LyoOtyHVILL8GzzaVgh6tOXbUEoOe-FOsBN0nbRsSxir8aV7DirG_oSy4mo5r0e0QjqvTsQ36EmubkZaP7cZp9_RGvYRuQRlutVf7J1wrNPKHy_8Qoy8ykL1TwNGBIKgdxGIV2ajzz_jhuYJA9bEql96HTHWlFJVoAIJCpiUYX8Idcv2XzfWSehTxDBWwyMAYHFOxE5VvHdDUXHdx627UkxqS3Q3zL/Mw-UvGGxJHxZGxcOmg9Me-W08ctR1LnK/24>

@@ -1,0 +1,9 @@
+• Oil prices fell for a third consecutive session as diplomatic activity around the US-Iran conflict showed tentative signs of easing supply concerns; Brent crude traded at $103.18, down 1.6%.
+• The US is expected to delay new tariff announcements on China until after next week's Xi-Trump White House summit, preserving tariff threat as negotiating leverage.
+• Global central banks—the Fed, ECB, and BOJ—are simultaneously tightening policy, with energy-price inflation from the Iran conflict as a common forcing function.
+
+**US-Iran and Oil Markets**
+The Iran conflict remains the dominant supply-side variable in global energy markets, with Brent above $100 reflecting the persistent risk premium around Strait of Hormuz transit. At least two LNG shipments transited the strait this week, a tentatively positive signal, and oil's three-day decline suggests traders are beginning to discount some diplomatic progress. Trump's indication of a forthcoming "big decision" on re-escalation, to be discussed with Gulf partners at UNGA next week, keeps the tail risk live. A UN expert panel's finding of "reasonable grounds" to believe US forces committed war crimes during the conflict adds a political complication to any de-escalation framework.
+
+**Global Monetary Policy Convergence**
+The simultaneous tightening by the Fed, ECB, and BOJ—each responding in part to energy-driven inflation—represents a synchronized global rate cycle not seen in decades. Elevated sovereign yields are increasing debt-service costs across governments already carrying elevated post-pandemic debt loads, creating a fiscal-monetary tension that appears likely to intensify heading into 2027. The AI governance question adds a longer-term dimension: with Xi traveling to Washington next week, US-China AI safety discussions may produce limited but symbolically important framing, even as the two sides compete aggressively on AI capability and market positioning in the developing world.

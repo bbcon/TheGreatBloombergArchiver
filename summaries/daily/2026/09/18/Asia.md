@@ -1,0 +1,11 @@
+• The Bank of Japan raised its policy rate by 25 basis points to 1.25% in a split 7-2 vote, missing market expectations for a cleaner decision; the yen weakened 1.3% against the dollar.
+• China's August economic data disappointed broadly—consumer spending and investment were weak, the jobless rate rose unexpectedly, home prices continued to decline, and loan growth contracted far more than consensus; only industrial production beat expectations.
+• The yuan climbed to a more than four-year high against the dollar ahead of next week's Xi-Trump summit.
+
+**BOJ Rate Decision**
+The BOJ's sixth rate hike under Governor Kazuo Ueda was well-telegraphed, but the dissenting votes from board members Toichiro Asada and Ayano Sato—both appointed by Prime Minister Takaichi, who has resisted rapid tightening—delivered a dovish surprise. The yen's 1.3% decline against the dollar partially reverses the gains from July's record $96.4 billion joint US-Japan intervention. Bloomberg Economics characterizes the dissents as sending a "dovish signal," with the political space for further hikes now appearing narrower than markets had assumed, undercutting Treasury Secretary Bessent's assertion that he has reliable insight into BOJ intentions.
+
+**China Macro**
+August data reinforced concerns about the durability of China's recovery. GDP is tracking at approximately 4.2% for July-August per ANZ estimates, below the pace needed to meet the official 4.5%-5.0% full-year target for a second consecutive quarter. Loan growth contracted more sharply than expected, which PBOC Governor Pan Gongsheng framed as a structural normalization rather than a cyclical warning. Policymakers appear reluctant to deploy broad stimulus, preferring instead to accelerate the Six Networks infrastructure program—an 800 billion yuan deployment vehicle—to underpin growth. Industrial production, boosted by AI-related exports, was the sole data bright spot. CATL shares fell roughly 10% over two sessions on third-quarter outlook concerns.
+
+---

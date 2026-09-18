@@ -1,0 +1,309 @@
+Subject: The new clean tech powering AI
+Date: Fri, 18 Sep 2026 12:31:17 +0000
+
+Hyperscalers invest in ultra-long storage for data centers
+Hyperscalers back ultra-long storage ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-09-18/hyperscalers-invest-in-ultra-long-storage-for-data-centers?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ 
+<https://www.bloomberg.com/green?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=19927207&m=11b724c487f61753eb1a7a4a5f3ef261&p=09182026123117&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149029&li=19927207&m=11b724c487f61753eb1a7a4a5f3ef261&p=09182026123117&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Power-hungry data centers have led tech giants to invest in large batteries 
+that can store energy for dozens of hours.
+
+Today’s newsletter brings you the latest research from BloombergNEF showing 
+that mostnew demand for long-duration storage 
+<https://www.bloomberg.com/news/articles/2026-09-18/meta-google-invest-in-long-duration-batteries-to-power-ai?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ comes from the likes of Google and Meta. We also bring you a long read on why 
+Trump is pardoning people convicted ofdisabling diesel truck pollution controls 
+<https://www.bloomberg.com/news/articles/2026-09-18/trump-pardons-people-convicted-of-diesel-emissions-tampering?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+.
+
+And the latest warning 
+<https://www.bloomberg.com/news/articles/2026-09-17/exxon-sounds-alarm-on-worsening-global-warming-on-coal-pollution?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ on how burning coal is accelerating planetary warming comes from... ExxonMobil.
+
+Subscribe to Bloomberg.com 
+<https://links.message.bloomberg.com/s/c/aOC3KYqWnUWbNh85X5D6x6FRWI4YXr4_mtRpT6IGCD3N59saD_KbWbBSSRPbP03EkxkDOOFbj8YnvxTVLV_HwQBgrgiSt_riOxXcUXJV4IoWpgPsblzG8Oxi40UntUVyXDtR4NELx8NuG24kYxTmLv9ytEgw1i0nBSkm5eO2zb-0Yr0_SYzRd5rSfqMIgy4F9mhNbMXeL4rQJLWXL0_LcldOacxVJ5ksdxCToH2qlNmulhCOahJM3ytyHzU34cCzhhIFiaDVirqnEJsc3Ner34xH_MtiMiwQF3TXdfj3oEhEurZvA1dC_0Lo-mW211KcPVx1Bt6K_Am7ROQc3Owg97CmF-gZMzrfQAyDey3GO_7Dxq-H_UsBaTfVy1OsiJp7kKse5dMAgDuq0YAe8YyK90hH3l7XSug37xZcFabvB59HM7ErQh3zreSurUB2/dJC7qNZA3-05hDJOUDcGaqGTghURrsyH/24?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ forunlimited access 
+<https://links.message.bloomberg.com/s/c/r7-uLMa_cdmlyVrcjlh1vgMHgq359GRsrvObMk4ri0ILQPASIQ9QNxs4e_q8dHI2mYq9LPzUKgfeHPgHBhEyyt3le-v3FQSd_JY9wxPXeq2OcLAmSEsKQNOF3W8RUuYm1fM7ZiImOoMowwFDCUD6x8vg_0klNrGAYEqJccESQNxhTVHrOADay6smNGrTiOO0HvBXuPCdyAva9aX_FWK5YwXWQKLCxEDIFQsZekdFLbHbbbgkD0Ffa2Xvl6soxMSlogDcPpMIVCjudnnVkoCVrpKcmRj-3VDey8rEbhGtQbVUyMq_QU-1OmW8gIIhuKR6xX2prpkWDBmTVJIDSu2V3KXB41eiL5YY-eLbRrokCrpHANq4e0hQxfsg4ZzRJQkfklhxqlgzrYuN929mvLONJ6U36dBO6Qs4QbR9GQi3P8JbrLKknaoANFY2IdjAQmWMzz5eAcML3aHEN91yoXBB/wJzLnj_AqZ2dMC0gA9DsA_9jxVX-oRw7/22?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ to all our coverage.
+
+Hyperscalers back ultra-long storage
+
+By Coco Liu 
+<https://www.bloomberg.com/authors/AU-LNn94_HY/coco-liu?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+
+Soaring energy demand for artificial intelligence has spurred billions of 
+dollars in clean energy investments 
+<https://www.bloomberg.com/news/articles/2026-09-18/meta-google-invest-in-long-duration-batteries-to-power-ai?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+, such as in next-generation geothermal and advanced nuclear reactors. Now, 
+hyperscalers are boosting yet another clean technology: long-lasting batteries.
+
+Developers are starting to add these batteries, known as long-duration energy 
+storage, to data centers. As they do that, there’s a real chance to scale them 
+and unlock more renewable energy, experts say.
+
+“Long-duration storage is an important addition to a growing toolkit that can 
+help us build AI infrastructure at unprecedented scale,” said Cully Cavness, 
+cofounder and president at Crusoe, which builds and operates AI data centers 
+for tech giants.
+A rendering of Energy Dome’s CO2 Battery project near Rhode, County Offaly, 
+Ireland.Source: Business Wire
+Long-duration energy storage is an umbrella term for technologies capable of 
+storing and releasing electricity for many hours or even days. Conventional 
+lithium-ion batteries, in contrast, only hold power for a few hours.
+
+Historically, facilities have relied on a mix of diesel generators, natural 
+gas turbines and conventional batteries to keep operations running during grid 
+failures or when renewable power lulls. But adding new fossil-fuel capacity 
+threatens tech companies’ pledges to cut carbon emissions at a time when AI’s
+climate toll 
+<https://www.bloomberg.com/news/articles/2026-07-01/big-tech-s-carbon-emissions-spike-with-runaway-growth-of-ai?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ is growing. The installation of gas turbines is also bogged down by persistent 
+supply chain bottlenecks, leaving developers with multiyear wait times for new 
+orders.
+Get full coverage 
+<https://www.bloomberg.com/news/articles/2026-09-18/meta-google-invest-in-long-duration-batteries-to-power-ai?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=19927207&m=11b724c487f61753eb1a7a4a5f3ef261&p=09182026123117&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868582&stpe=default&li=19927207&m=11b724c487f61753eb1a7a4a5f3ef261&p=09182026123117&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Long-lasting and clean
+
+100 hours
+
+The amount of time Noon Energy batteries can store renewable power 
+<https://www.bloomberg.com/news/articles/2026-09-18/meta-google-invest-in-long-duration-batteries-to-power-ai?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ for by splitting CO2 into carbon compounds and oxygen and then reversing the 
+process to generate power.
+
+Building scale
+
+“We will never get there if we don’t start.”
+
+Lucia Tian
+
+Google director of advanced energy technologies
+
+Truck tampering — fellons or victims?
+
+By Leslie Kaufman 
+<https://www.bloomberg.com/authors/AUZ8izNmriE/leslie-kaufman?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+
+Matthew Geouge built a lucrative business selling technology that, among other 
+things, allowed owners of Ford diesel pickups to boost their horsepower while 
+disabling the pollution controls required under the Clean Air Act. The federal 
+government pursued his company, Spartan Diesel Technologies, in a civil action, 
+ultimately winning a $4.15 million default judgment in 2018. But it didn’t stop 
+there.
+
+US prosecutors later accused Geouge of continuing to tune engines illegally at 
+another company. He pleaded guilty in 2021 to conspiring to violate the Clean 
+Air Act and defraud the US, as well as to tax evasion, and was sentenced to a 
+year and a day in prison. He served four-and-a-half months in 2022.
+
+On July 3, President Donald Trump pardoned him 
+<https://www.bloomberg.com/news/articles/2026-09-18/trump-pardons-people-convicted-of-diesel-emissions-tampering?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+.
+Matthew Geouge.Source: Spartan Truckworks
+Geouge was among nine people granted clemency that day for Clean Air Act 
+convictions involving vehicle emissions. Trump pardoned additional defendants 
+in similar cases in September, marking a sharp reversal in the federal 
+government’s treatment of an aftermarket industry built around disabling 
+pollution controls. Months earlier, Trump’s Department of Justice had told 
+prosecutors to stop bringing criminal cases involving so-called “defeat 
+devices.” The president cast the pardons as relief for people prosecuted for 
+simply “fixing their car.”
+
+As US air pollution rules have gotten stricter, automakers have installed 
+equipment in diesel trucks to stifle their emissions. But an illegal 
+aftermarket to undo these alterations quickly sprung up and spread. Software 
+developers wrote new engine calibrations, and manufacturers produced hardware. 
+Online distributors sold defeat devices, and repair shops installed them.
+
+Some truck owners wanted more horsepower; others were looking for a way around 
+early pollution-control systems that could be unreliable and expensive to 
+repair; still others felt government regulation infringed on their personal 
+freedoms. Regardless of the motivation, the upshot is dirtier air: The 
+Environmental Protection Agency estimated in 2020 that emissions controls had 
+been fully removed from more than 550,000 diesel pickups since 2009 — about 15% 
+of the trucks originally certified with the equipment.
+
+Defeat devices sold between 2009 and 2020 for certain vehicle models would 
+lead to them releasing an estimated 570,000 additional tons of nitrogen oxides 
+and 5,000 more tons of particulate matter over the vehicles’ lifetimes, the EPA 
+calculated — the pollution equivalent of adding 9 million compliant diesel 
+trucks to US roads. Nitrogen oxides contribute to smog and can aggravate asthma 
+and other respiratory illnesses, while fine particulate pollution is linked to 
+cardiovascular and respiratory disease and premature death.
+
+White House spokesperson Lauren Bis, in response to a request for comment, 
+pointed to a social media post by Trump describing the pardonees as having been 
+“persecuted” by the Biden administration. “I AM SETTING THEM ALL FREE, RIGHT 
+NOW!” Trump wrote.
+Keep reading 
+<https://www.bloomberg.com/news/articles/2026-09-18/trump-pardons-people-convicted-of-diesel-emissions-tampering?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+Exxon sounds the alarm
+
+Coal use is accelerating global warming, Exxon says
+
+ExxonMobil Holdings Corp. says the world is on course for rapid global 
+temperature increases as coal use persists, pushing emissions beyond 
+mid-century climate goals.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-09-17/exxon-sounds-alarm-on-worsening-global-warming-on-coal-pollution?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+Today’s Green Daily chart
+
+Iowa, long a renewable-energy paragon, has cranked up its coal consumption 
+<https://www.bloomberg.com/opinion/articles/2026-09-17/ai-is-already-damaging-human-life-we-gave-it-a-head-start?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ to keep pace with the data-center boom, Inside Climate News reported. The 
+Hawkeye State generated 58.5% of its electricity from wind last year, the 
+highest in the nation. But coal’s share ticked up to 26% from 20.5% in 2024, 
+according to Energy Information Administration data.
+Get more 
+<https://www.bloomberg.com/opinion/articles/2026-09-17/ai-is-already-damaging-human-life-we-gave-it-a-head-start?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+This week’s Zero listen
+
+
+Zero
+
+Inside China’s $7 Trillion Green Finance Market
+ 
+<https://www.bloomberg.com/news/audio/2026-09-16/zero-inside-china-s-7-trillion-green-finance-market-podcast?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+When it comes to green tech, China is a list of superlatives. It produces more 
+solar panels, wind turbines, electric vehicles and batteries than anywhere else 
+in the world. But is finance the real climate hero? This week on Zero,Akshat 
+Rathi 
+<https://www.bloomberg.com/authors/AUdOobfNzkQ/akshat-rathi?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ is joined by Ma Jun, chairman of the Hong Kong Green Finance Association and 
+former chief economist of China’s central bank. They discuss how the country 
+became a green-finance superpower and how other nations can speed up their own 
+transitions.
+
+Listen now 
+<https://omny.fm/shows/zero/inside-china-s-7-trillion-green-finance-market>, 
+and subscribe onApple <https://podcasts.apple.com/us/podcast/zero/id1621556928>,
+Spotify 
+<https://open.spotify.com/show/5rHwnJEjFRnivIdpWwnZyZ?si=985034d7e76a47a0> or 
+YouTube 
+<https://www.youtube.com/playlist?list=PLe4PRejZgr0MtnA98Xp8igGT9S3Na_zDD> to 
+get new episodes of Zero every Thursday.
+
+More from Green
+
+Global Banks’ Financing of Energy Rose to $2.3 Trillion in 2025
+
+The world’s banks allocated 15% more capital to the energy sector last year 
+than in 2024, arranging and underwriting deals worth $2.3 trillion, according 
+to a fresh study by BloombergNEF.
+ 
+<https://www.bloomberg.com/news/articles/2026-09-17/global-banks-financing-of-energy-rose-to-2-3-trillion-in-2025?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+COP31 Host Turkey Faces Own Policy Change to Meet Renewable Target
+
+Turkey’s progress on the energy transition is coming under scrutiny as the 
+host of the next UN climate summit tries to rally international support for a 
+new global electrification goal that would require significant policy changes 
+for the country itself to fulfill it.
+ 
+<https://www.bloomberg.com/news/articles/2026-09-18/cop31-host-turkey-faces-own-policy-change-to-meet-renewable-target?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+Intense Heat Strains Power Grids for 100 Million North Americans
+
+Power grids serving more than 100 million North Americans are bracing for a 
+demand surge as unseasonable heat strains electrical equipment scheduled for 
+repairs.
+ 
+<https://www.bloomberg.com/news/articles/2026-09-17/intense-heat-strains-power-grids-for-100-million-north-americans?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+Mubadala’s Spanish Refiner Starts Building Green Hydrogen Plant
+
+Moeve SA, a Spanish refiner controlled by Abu Dhabi’s Mubadala Investment Co., 
+has started the construction of a 300-megawatt green hydrogen plant in the 
+southern region of Andalusia as part of a drive to diversify away from fossil 
+fuels.
+ 
+<https://www.bloomberg.com/news/articles/2026-09-17/mubadala-s-spanish-refiner-starts-building-green-hydrogen-plant?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+UK Seeks to Slap Fees on Battery Projects Clogging Up Grid Queue
+
+The UK’s energy watchdog proposed new measures to reduce a ballooning queue of 
+battery-storage projects for power-grid connections, seeking to squeeze out 
+those that are unlikely to come to fruition.
+ 
+<https://www.bloomberg.com/news/articles/2026-09-17/uk-seeks-to-slap-fees-on-battery-projects-clogging-up-grid-queue?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+China’s BYD Targets Four European Plants to Anchor Regional Push
+
+BYD Co. plans to establish four plants in Europe over the long term as the 
+Chinese carmaker seeks to comply with emerging local-manufacturing rules and 
+win over more customers.
+ 
+<https://www.bloomberg.com/news/articles/2026-09-17/china-s-byd-targets-four-european-plants-to-anchor-regional-push?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+🎥 Attention all filmmakers!
+
+Working on a short documentary about climate change? Don’t miss your chance to 
+submit it to theBloomberg Green Docs film competition. Grand prize: $25,000. 
+Submissions will be accepted through October 2, 2026.
+
+See official rules at bloomberg.com/greendocs 
+<https://links.message.bloomberg.com/s/c/bx9cT2YUy4NO7-rSJJ1MmjLtjRKG7ku9pGN8oZnc7RDOVt5EGB7Pf4VsGYwhTfPTQgIvBwndgsT7IxjhUrswcqpdDSP05GrdMIMmFXj_WPwS-xX9q1KMs5xzaM_XcEkdr2DhznhjydXOLTPK22MH5MQN41CcXtd3bMf3JHwLBVx2Aku5UirFXIyvY779n3d8_e0xPrBrnD_PoynahO9xAudovL0sN2w3_eYNdeiuqxzCWm7PkS1G6OfhgLp6saHi47zYm5V3eKsalxZddFqngqPHZIeoXHlK7CM7jDCfb1pdHXsMcHalxOTnqBEQOJpsAV-ysPmm0iJxijAXOz6DzkOQc3y7fDp7RmKoXE3kfvyItAucu_E0KIUyeeBORS8ysH06_7eOREl9GlVkHMBHU3AL_05rLi_wLUXBFemdqqs1bcXF0YA8AOMfMqe2siBCy8V8UjNm/P9otKEWSQZfa9XkYFksNRDxcCqN4EYaE/22?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+.
+
+More from Bloomberg
+
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily&cmpid=BBD091826_GREENDAILY&utm_term=260918&utm_content=9067>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Energy Daily 
+<https://www.bloomberg.com/account/newsletters/energy?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily&cmpid=BBD091826_GREENDAILY&utm_term=260918&utm_content=9067>
+ for a daily guide to the energy and commodities markets that power the global 
+economy
+ * Tech In Depth 
+<https://www.bloomberg.com/account/newsletters/tech-in-depth?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily&cmpid=BBD091826_GREENDAILY&utm_term=260918&utm_content=9067>
+ for analysis and scoops about the business of technology
+Explore all Bloomberg newsletters 
+<https://www.bloomberg.com/account/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=greendaily&cmpid=BBD091826_GREENDAILY&utm_term=260918&utm_content=9067>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Green 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=NLshare&cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/green-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBD091826_GREENDAILY&utm_campaign=greendaily&utm_medium=email&utm_source=newsletter&utm_term=260918&utm_content=9067>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/AL4Fx0i9gv4L4V3VPNfMOPpgbnAF8EUyB7vOWWGph5eM3w2-bQ_qAm9mAIYIch2EFI-050RLZFS19FYJA79dRKLl_uyAL3o7Q2B1PN-k9UpFaIjo5-VzXbEo_B2ZFsWzDbgyala4jCEhhvU1rKDbm067ZYj8ZV_AfrqqJ6x3A7tYBI4uzHE76gB99_eEbPv8Takjj29C_TFuuaB39mGLTRNiR43LouwYn61wadKWPhsAA7tvsDfTawtArrbJ6FRr6SibpWmCw6JStug1Ma2I0tb5V_2ZoT3SKRwxvZhDW-ADqeYMe9homvUCLk8y1ppto5zscbNnVx7wmKsXPhRI8gr7BhrUXmPK/yTnmEuNDWQtffNs0rGa2zVeC6y-UBZH3/24>
