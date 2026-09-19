@@ -1,0 +1,18 @@
+• UK 30-year gilt yields approached 6% on Wednesday — their highest since 1998 — as August CPI accelerated to a five-month high driven by energy costs ahead of Thursday's Bank of England decision.
+• The Bank of England held rates at 3.75% on Thursday as expected but scrapped plans to sell long-dated gilts and warned a hike may be required if price pressures intensify — a meaningfully more hawkish tilt.
+• Sweden's election produced the tightest result in more than a century, with the center-left bloc led by former Prime Minister Magdalena Andersson projected to win by approximately 176 to 173 seats, closing near-term prospects for far-right government participation.
+• French 10-year OAT spreads over Bunds remained near 100 basis points — elevated relative to prior stress episodes — with Marine Le Pen keeping open the possibility of a no-confidence vote over the 2027 budget.
+
+**Bank of England and UK Fiscal Credibility**
+
+The BOE's hold at 3.75% was in line with consensus, but the accompanying decision to scrap long-dated gilt sales was a material shift, suggesting genuine concern about absorbing additional duration risk into a market already digesting the Fed's hawkish turn. UK 30-year yields approaching 6% on Wednesday — levels not seen since 1998 — directly compress Prime Minister Burnham's fiscal headroom ahead of the October 28 budget. UK diesel and petrol prices are at their highest since 2022, feeding August's above-consensus CPI print and reinforcing market pricing of four additional Bank of England hikes over the coming year — well ahead of official guidance. Forecast 25% household energy bill increases in January will mechanically push headline CPI higher still, leaving the MPC's majority view — that 3.75% is sufficient — increasingly difficult to defend.
+
+**France and Eurozone Sovereign Risk**
+
+France represents the most acute near-term sovereign risk in the eurozone. Political gridlock following the 2024 snap elections has prevented meaningful fiscal consolidation, and OAT-Bund spreads at approximately 100 basis points exceed levels seen during prior French political crises over the past decade. Finance Minister Lescure's €30 billion savings package for 2027 is directionally appropriate but faces a legislature with no stable majority to pass it, while Le Pen's threat of a no-confidence vote adds tactical uncertainty. Germany compounds European political risk: Chancellor Merz faces twin regional elections Sunday in Berlin and Mecklenburg-Western Pomerania following a calamitous CDU defeat in Saxony-Anhalt, with the AfD polling ahead at the national level. The ECB is expected to hold at its next meeting before a December hike from the current 2.5% deposit rate, with at least three additional increases priced thereafter.
+
+**Inflation and Agricultural Shock**
+
+Europe's record summer heat has produced a material agricultural disruption: the continent's potato harvest is forecast to decline approximately 3.5 million tons from normal, with yield losses of 21% in Belgium, 13% in France, and 10% in Germany. Bond managers are already flagging food as a potential successor inflation shock to energy — compounded by super El Niño conditions, tight fertilizer supplies, and shipping disruptions. ASML fell 4.1% and France's Soitec plunged 12% Monday as AI development concerns reverberated through European semiconductor supply chains. European bank stocks also fell mid-week following the BofA trading revenue warning, with UBS dropping 4%, Deutsche Bank 3.3%, and UniCredit 2.8%.
+
+---

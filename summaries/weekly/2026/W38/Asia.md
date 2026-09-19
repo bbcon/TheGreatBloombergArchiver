@@ -1,0 +1,18 @@
+• China August retail sales rose just 0.4% YoY on Tuesday, missing the prior month's already-weak 0.6% pace, while fixed-asset investment fell 7.2% in the January–August period; industrial output beat at 5.2% YoY.
+• The Bank of Japan raised its policy rate 25 basis points to 1.25% on Friday in a split 7-2 vote, missing expectations for a cleaner decision; the yen weakened 1.3% against the dollar on the day.
+• South Korea's Kospi fell 3.3% Monday — the region's sharpest single-day decline — as SK Hynix dropped 6.4% and Samsung 4.1% on AI slowdown fears; SoftBank fell more than 10% in Tokyo.
+• Asian LNG importers — India, Pakistan, Bangladesh, Thailand, Vietnam — have collectively spent $7.4 billion on spot LNG since the US-Iran war began, approximately 2.4 times equivalent long-term contract costs.
+
+**China: Two-Speed Economy**
+
+August data confirmed the structural divergence defining China's macro challenge. Domestic demand remains deeply impaired: retail sales decelerated to 0.4% YoY, property investment contracted 19.9% in the January–August period, the jobless rate rose unexpectedly, and loan growth contracted more sharply than consensus. PBOC Governor Pan Gongsheng publicly framed the credit deceleration as structurally desirable — a normalization away from debt-intensive property toward high-tech sectors — in an unusually formal Qiushi journal article, signaling that large-scale credit stimulus is not imminent. Industrial output, accelerating to 5.2% YoY driven by AI-related exports including integrated circuits, was the sole bright spot. GDP is tracking approximately 4.2% for July–August per ANZ estimates, below the 4.5%–5.0% full-year target for a second consecutive quarter. The critical risk is that any industry-wide AI development slowdown would directly threaten this export engine. Bloomberg Economics analysts characterize such a deceleration as likely to "severely dampen" China's export trajectory — a concern Beijing has framed as a "silent AI Cold War."
+
+**Bank of Japan**
+
+The BOJ's 25-basis-point hike to 1.25% — its third in under ten months — was almost fully priced, making the dissenting votes from board members Toichiro Asada and Ayano Sato the consequential surprise. Both were appointed by Prime Minister Takaichi, who has resisted rapid tightening, and Bloomberg Economics characterized the dissents as sending a "dovish signal" that narrows the political space for further hikes. The yen's 1.3% Friday decline partially reverses gains from July's record $96.4 billion joint US-Japan intervention, illustrating the limits of domestic rate normalization in a strengthening dollar environment. Separately, Japan's August exports rose 19.3% YoY — above trend, led by semiconductors and chip equipment — while imports gained 28%, reflecting both energy cost pressures and strong industrial demand.
+
+**Regional Developments**
+
+Indonesia's cabinet reshuffle — removing Finance Minister Purbaya Yudhi Sadewa after a rocky tenure — signals Jakarta's recalibration toward fiscal credibility as energy import costs rise and external financing tightens. India's five-year bond yields posted their largest single-day rise since May 2022 after the RBI announced sovereign note sales to drain liquidity, with a Kotak Mahindra economist assigning meaningful probability to a 50–75 basis point rate increase at the next policy meeting. The yuan climbed to a more than four-year high against the dollar ahead of the Xi-Trump summit, while South Korea's Kospi partially recovered mid-week following resolution of SK Hynix's union dispute.
+
+---
