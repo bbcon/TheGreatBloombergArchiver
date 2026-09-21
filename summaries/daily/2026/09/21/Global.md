@@ -1,0 +1,9 @@
+• Brent crude fell 2.4% to $101.39 on signs of diplomatic progress toward a US-Iran settlement and reports that Hormuz cargoes continue to move, though geopolitical risk remains unresolved.
+• Black Sea shipping disruption is emerging as a secondary inflation vector: wheat prices have jumped to three-year highs as Russian and Ukrainian port attacks since July have severed grain exports that represent more than a quarter of global wheat trade.
+• The Trump-Xi summit (September 23–25) is the week's pivotal geopolitical event; pre-summit talks yielded agreement on a bilateral AI dialogue and operationalization of a Board of Trade covering non-sensitive goods.
+
+**Energy and Hormuz**
+US retail diesel at $6.50 per gallon — up more than 87 cents in September alone — illustrates how the Iran war's energy shock is transmitting into the broader economy. Oil tanker freight costs from Houston to Asia have reached approximately $26 per barrel, rendering some long-distance crude trades uneconomical. Qatar's energy minister publicly rebuked Treasury Secretary Bessent's assertion that Hormuz would become "worthless" within two years, calling it "completely wrong." Trafigura has spun off its supertanker fleet and plans an Oslo listing, citing an industry-wide boom.
+
+**Black Sea as "The Other Hormuz"**
+Analysts at CSIS draw an explicit parallel between Hormuz's share of seaborne oil trade and the Black Sea's share of global wheat trade. Bond markets are not yet fully pricing food supply risk, according to investors, creating a potential asymmetry. A strengthening El Niño is compounding agricultural stress across Asia-Pacific, with Verisk Maplecroft identifying India, the Philippines, and Indonesia as high civil-unrest risk markets should food price pressures intensify.
