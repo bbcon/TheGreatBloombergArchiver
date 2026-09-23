@@ -1,0 +1,11 @@
+• Nasdaq 100 closed at an all-time high — its first record since June — though the advance was driven almost entirely by four chipmakers (Micron, AMD, Nvidia, and SandDisk), a breadth profile without modern precedent.
+• The Federal Reserve tightened policy last week, pushing the 10-year Treasury yield above 5%; Pimco, managing ~$2.3 trillion, began trimming its underweight on long-dated Treasuries at these levels.
+• Financial and consumer-services stocks fell sharply on AI disruption fears: JPMorgan and Wells Fargo each dropped more than 3%; Allstate and Schwab fell ~6%; Booking Holdings slid 2.6%.
+
+**Equity Markets**
+The Nasdaq 100's record close obscures a deteriorating breadth picture that warrants scrutiny. Of the index's 6.4% gain over the past five days, half is attributable to just five names — Micron, AMD, Nvidia, Intel, and Meta. Thirty-two index members declined during the same stretch. Sentiment strategist Jason Goepfert noted that Monday's session, in which the S&P 500 rallied more than 1% to within 1% of a record while more stocks hit 52-week lows than highs, has occurred on only two prior occasions: July 1929 and December 1999. The sample size precludes firm conclusions, but the setup is anomalous. Meta's Muse AI agent, which topped app download charts, triggered a fresh round of AI-disruption selling in financial services and travel, as Goldman Sachs traders warned that agentic AI resolves consumer inertia, compressing pricing power and recurring revenue streams across multiple industries.
+
+**Monetary Policy and Fixed Income**
+The 10-year Treasury yield at approximately 5% is, per Goldman Sachs chief economist Jan Hatzius, primarily a reflection of repriced monetary policy expectations rather than an unanchored term premium. Goldman anticipates the Fed hikes again in October, then holds until cuts commence in late 2027. Pimco's shift toward neutral on long-duration Treasuries — driven by inflation-adjusted yield levels rather than fiscal comfort — suggests institutional demand may begin capping further yield upside.
+
+---

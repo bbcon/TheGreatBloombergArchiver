@@ -1,0 +1,8 @@
+• Brazil, Mexico, and Chile rank as the three largest buyers of US diesel exports; a potential US diesel export ban — under active consideration by the Trump administration — would therefore carry disproportionate consequences for the region's fuel supply and inflation dynamics.
+• Argentine President Milei's advisers told the Trump administration they lack the congressional votes to ratify the bilateral trade agreement signed in February, a significant setback for the administration's reform agenda.
+• Venezuelan opposition leader María Corina Machado failed in three attempts over 24 hours to return home from Panama; acting President Delcy Rodríguez attended UNGA in New York.
+
+**Commodity and Trade Exposure**
+The region's vulnerability to the US-Iran conflict is underappreciated in current market pricing. As the world's largest exporter of middle distillates, the US is the marginal diesel supplier to Latin America. Kpler data confirm Brazil, Mexico, and Chile as the top three recipients of US diesel exports. Any export restriction would arrive at a moment when Middle Eastern alternative suppliers — Saudi Arabia, Kuwait, the UAE — are themselves supply-constrained by conflict disruption. Central banks across the region, already navigating dollar strength and elevated oil import costs, would face a materially worse inflation outlook. India's acceleration of trade talks with Canada and Mexico adds a constructive offset, potentially redirecting some trade flows, though the near-term supply implications of a diesel ban would dominate.
+
+---

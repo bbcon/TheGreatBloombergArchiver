@@ -1,0 +1,8 @@
+• Eurozone composite PMI grew at the fastest pace in more than three years, beating consensus, while UK private-sector activity slowed — a divergence with meaningful implications for ECB and Bank of England policy sequencing.
+• The French 10-year spread over Bunds widened above 100 basis points for the first time since early 2012, surpassing the level that preceded Mario Draghi's "whatever it takes" intervention — a politically significant threshold.
+• The OECD released updated forecasts projecting faster-than-previously-anticipated inflation in 2027, citing Middle East conflict uncertainty as the dominant variable.
+
+**Sovereign Spreads and Fiscal Risk**
+The French-German spread breaking above 100 basis points is a materially significant development. The 2012 analog is instructive: Draghi's July 2012 speech arrested spread widening that had reached similar levels, but the current episode arrives without an obvious equivalent policy backstop. German domestic politics compounds the picture, with Chancellor Merz's CDU falling below the 5% threshold in a recent state election as AfD advances. Goldman Sachs anticipates a final ECB rate hike in December before an eventual easing cycle beginning in late 2027. Whether the ECB can credibly deliver that terminal hike while simultaneously managing sovereign stress in France remains an unresolved tension. The Bundesbank's Nagel signaled the ECB may need to maintain "mildly restrictive" rates, language that offers limited reassurance to French bond markets absent fiscal consolidation progress in Paris.
+
+---
