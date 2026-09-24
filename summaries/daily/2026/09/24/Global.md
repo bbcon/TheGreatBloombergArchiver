@@ -1,0 +1,10 @@
+• Brent crude rose above $106 per barrel intraday Thursday after an adviser to Iran's supreme leader threatened to expand the conflict to the Indian Ocean; WTI traded near $92.
+• The US and China agreed to a two-month trade truce extension to mid-January 2027, with Treasury Secretary Bessent confirming the deal as Xi Jinping arrived in Washington for his first state visit in eleven years.
+• The average yield on global government debt approached 4%, a level not seen since 2007, driven by US Treasuries and amplified by spillovers into European periphery and Japanese government bonds.
+• Suez Canal daily container transits reached their highest since December 2023, at 61 vessels, though still roughly half pre-Houthi-attack levels; Qatar separately ramped LNG tanker movements through the Strait of Hormuz.
+
+**Oil and the Strait of Hormuz**
+Iran's posture at the UN — President Pezeshkian declaring no freedom of navigation while sanctions remain, a senior military adviser threatening Indian Ocean escalation — underscores the distance between Tehran and Washington on any negotiated settlement. The US suggested major volumes are still transiting the Strait, offering partial reassurance, and Saudi Arabia reportedly sold approximately 100 million barrels to Asian buyers to avert a regional supply crunch. Brent's volatility around Iranian rhetoric indicates markets are pricing a meaningful conflict premium.
+
+**Xi-Trump Summit**
+Rare earths are the central variable. August shipments of rare earth magnets to the US fell roughly 20% month-on-month, providing Beijing tangible leverage. USTR Greer's linkage of tariff extension length to rare earth flows, followed by Bessent's two-month compromise, illustrates the negotiating dynamic: Washington offering tariff relief, Beijing managing material export volumes. A two-month extension — rather than the six months initially floated — signals mutual distrust rather than breakthrough.
