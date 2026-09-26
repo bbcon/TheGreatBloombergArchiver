@@ -1,0 +1,11 @@
+• China's two-speed economy deepened in August: retail sales rose just 0.4% YoY — below the pace of inflation and sharply below consensus expectations — while exports and industrial output remained robust.
+• Domestic passenger vehicle sales are on track to fall 16% this year to 19.5 million units, below pandemic-era lows, while vehicle exports have surged 73% YTD.
+• China's trade surplus in manufactured goods, as a share of world GDP ex-China, now exceeds 2% — more than double Japan's mid-1990s peak, per HSBC estimates.
+
+**China's Structural Divergence**
+August economic data reinforced what Macquarie economist Larry Hu characterizes as a "regime shift" that began in 2021: China's economy is increasingly bifurcated between a high-tech, export-oriented manufacturing sector and a domestic economy suffering from suppressed wages, weak consumer confidence, and the lingering drag of the property bust. Retail sales growth of 0.4% YoY failed to keep pace with inflation. Goldman Sachs chief China economist Hui Shan notes that official data may understate weakness due to measurement gaps with smaller retailers. Employment conditions among the roughly 5,400 listed non-financial companies — which skew larger and more competitive — showed salary and headcount growth of just 1%-2% annually, against 6%-8% pre-Covid. A PBoC household survey found 54% of respondents described jobs as "hard to find," the highest reading since the series began in 2013.
+
+**Policy Implications and Global Spillovers**
+Beijing's selective stimulus — directed toward advanced manufacturing rather than household support — is proving self-reinforcing: suppressed wages enhance export competitiveness, widening the surplus further. The week's US-China summit produced little substantive outcome, reinforcing the view that a consumption-led rebalancing is not forthcoming. The structural implications for global trade — and for economies competing in manufacturing — remain significant and appear unlikely to resolve near-term.
+
+---

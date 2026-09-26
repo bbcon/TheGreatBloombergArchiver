@@ -1,0 +1,9 @@
+• China's manufactured goods trade surplus now exceeds 2% of world GDP ex-China — more than double Japan's 1990s peak — with no coordinated global policy response in evidence.
+• Elevated fuel prices linked to the US-Iran conflict are visibly reshaping consumer behavior in the US auto market, with broader demand implications.
+• The TVA small nuclear approval and Rhine low-water disruptions both illustrate the accelerating intersection of energy security and climate adaptation in infrastructure planning.
+
+**The China Surplus and the Coordination Deficit**
+The most consequential cross-regional theme this week is the deepening of China's export-led imbalance and the absence of a coordinated multilateral response. HSBC's Frederic Neumann frames China's import compression as "China Shock 2.0" — a supply-side overhang that distributes deflationary pressure and employment displacement across trading partners without a clear mechanism for adjustment. The Trump administration's unilateral approach precludes the kind of unified front that might create meaningful leverage over Beijing. Societe Generale economists Wei Yao and Michelle Lam assess that trade frictions will become more structural, even as China's rare earth and supply chain leverage constrains the scale of escalation any single economy is willing to risk.
+
+**Energy and Geopolitics**
+The Iran conflict's effect on fuel prices continues to reverberate through consumer behavior globally, with the US minivan data providing a tangible microeconomic illustration. The broader energy security question — how quickly Western economies can diversify both supply sources and vehicle fleets — is playing out in real time across auto markets, nuclear approvals, and renewable energy policy simultaneously.

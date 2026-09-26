@@ -1,0 +1,16 @@
+• China's retail sales rose just 0.4% YoY in August — below the pace of inflation and sharply below consensus — while exports and industrial output remained robust, deepening the economy's structural bifurcation.
+• The Bank of Japan hiked rates to their highest target since 1995 but Governor Ueda explicitly discouraged back-to-back hike expectations, sending the yen to nearly 160 per dollar before Finance Minister Katayama's intervention warnings on Friday arrested the decline.
+• The Trump-Xi summit concluded with limited deliverables — a two-month trade truce extension and panda diplomacy — with no new AI governance mechanism and Xi explicitly calling on Trump to oppose Taiwan independence.
+• Japanese 10-year JGB yields jumped 8.8 basis points to 3.04% on Thursday, a 30-year high, as markets reopened from holiday and absorbed the global bond selloff.
+• Indonesia's central bank held its benchmark BI-Rate at 5.75% for a third consecutive meeting, in line with consensus, relying on FX intervention rather than rate adjustments to defend the rupiah.
+
+**China: Economic Data and Structural Divergence**
+August data reinforced what Macquarie's Larry Hu characterizes as a regime shift: China's economy is increasingly bifurcated between a high-tech export sector and a domestic economy suffering from suppressed wages and weak consumer confidence. Retail sales growth of 0.4% YoY failed to keep pace with inflation. Among roughly 5,400 listed non-financial companies, salary and headcount growth ran at just 1%–2% annually against 6%–8% pre-Covid. A PBoC household survey found 54% of respondents described jobs as "hard to find" — the highest reading since the series began in 2013. China's manufactured goods trade surplus as a share of world GDP ex-China now exceeds 2%, more than double Japan's mid-1990s peak.
+
+**Bank of Japan and Currency**
+The BOJ's 7-2 vote to hike raised rates to levels not seen since 1995, but Ueda's explicit pushback against back-to-back hikes — citing inflation running below 2% — unwound much of the yen's September appreciation. The currency approached 160 per dollar before Friday's jawboning from Finance Minister Katayama prompted a 0.4% recovery to ¥158.21; Goldman Sachs subsequently revised its yen forecast to 150. Trump's reported remark to Prime Minister Takaichi expressing concern over yen weakness adds diplomatic pressure alongside market interventions.
+
+**Xi-Trump Summit and Technology**
+The summit delivered symbolism over substance. Rare earths proved the central negotiating variable: August shipments of rare earth magnets to the US fell roughly 20% month-on-month, providing Beijing tangible leverage. USTR Greer's linkage of tariff extension length to rare earth flows, met by Bessent's two-month compromise, illustrates the dynamic: Washington offering tariff relief, Beijing managing material export volumes. Alibaba's Zhenwu V900 chip announcement — claiming triple the performance of its predecessor — underscored China's accelerating effort to reduce semiconductor dependence, though the chip relies on domestically constrained SMIC capacity. Chinese ports logged a record 7.3 million container throughput in the seven days through September 20, up 9% year-on-year, as exporters front-ran tariff uncertainty.
+
+---
