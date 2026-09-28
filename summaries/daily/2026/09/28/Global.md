@@ -1,0 +1,9 @@
+• Brent crude rose to approximately $106–$108/barrel as Iran held firm on its seven-day proposal to reopen the Strait of Hormuz and rejected further softening of conditions; the US-Iran diplomatic impasse is the primary driver of global energy market stress.
+• 10-year US Treasury yields at 19-year highs are generating cross-asset spillovers: gold fell 3%, Bitcoin declined 2%, and equity risk premia are compressing globally.
+• ESG fund flows turned positive in Q2 for the first time in four years, driven almost entirely by clean-energy inflows tied to AI data-center power demand rather than traditional sustainability conviction.
+
+**Oil and the Strait of Hormuz**
+The diplomatic gap between Washington and Tehran remains wide. Iran is holding to a seven-day reopening proposal that the US has rejected, while Trump simultaneously signaled he expects talks to resume and acknowledged he is considering a ban on US diesel exports to address domestic price pressures — a policy with significant global supply implications. Brent at ~$108/barrel represents a sustained energy price shock that is complicating central bank reaction functions across multiple jurisdictions simultaneously.
+
+**Energy Transition and AI Demand**
+Clean-energy funds attracted over $70 billion globally in Q2, nearly triple the prior year's comparable period, but the recovery is narrowly driven: strip out renewables-linked to AI data-center power demand, and ESG broadly still faces outflows. Global electricity demand grew approximately 17% last year, with data-center demand up 50%. This creates a structural tension for ESG investors: the assets driving inflows are powering carbon-intensive infrastructure, with data-center greenhouse gas emissions potentially rising 11-fold this decade per Accenture estimates. The Rhine River fell to a record-low 4 centimeters at Kaub, its lowest since records began in 1880, compounding European logistics and energy supply vulnerabilities.
