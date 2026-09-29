@@ -1,0 +1,222 @@
+Subject: AI security concerns
+Date: Tue, 29 Sep 2026 06:58:17 +0000
+
+OpenAI Holds Version of AI Model
+Bloomberg Morning Briefing Europe ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-09-29/openai-holds-version-of-ai-model?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ 
+<https://www.bloomberg.com/europe?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+
+ 
+<https://sli.bloomberg.com/click?s=1149094&li=20105814&m=11b724c487f61753eb1a7a4a5f3ef261&p=09292026065817&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149094&li=20105814&m=11b724c487f61753eb1a7a4a5f3ef261&p=09292026065817&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Good morning. OpenAI holds back its latest model over security concerns. 
+Goldman Sachs’ heir apparent edges closer to succeeding Solomon as CEO. And 
+India is tackling a scourge of fake obesity jabs.Listen to the day’s top stories
+ <https://link.podtrac.com/1c953xf5>.
+
+— Samson Ellis
+
+Market Snapshot
+S&P 500 futures 
+<https://www.bloomberg.com/quote/ES1:IND?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+7,744.50-0.0%
+Nasdaq 100 futures 
+<https://www.bloomberg.com/quote/NQ1:IND?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+30,551.00-0.0%
+WTI crude oil futures 
+<https://www.bloomberg.com/quote/CL1:COM?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+$93.92+1.4%
+Market data as of 02:54 AM ET. Data is subject to provider delays.Your 
+watchlist 
+<https://www.bloomberg.com/markets/watchlist?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+OpenAI is holding back a version of its Astra artificial intelligence model 
+after the softwarefailed to perform 
+<https://www.bloomberg.com/news/articles/2026-09-28/openai-scrapped-latest-model-release-over-safety-fears-wsj-says?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ as well on safety evaluations as the current iteration. Also in AI, Google is
+contesting an attempt 
+<https://www.bloomberg.com/news/articles/2026-09-29/google-fights-eu-attempt-to-prise-open-android-to-rival-ai-bots?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ by the European Union to make it open up its Android operating system to 
+rivals and give search data to competing providers.
+
+Global equities slid to a one-week low as surging oil prices 
+<https://www.bloomberg.com/news/articles/2026-09-28/stock-market-today-dow-s-p-live-updates?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ and mounting bets on further Federal Reserve interest-rate hikes drove 
+Treasury yields to multi-year highs. Investors who used the yen as a funding 
+currency for carry trades may be exacerbating the global bond selloff, 
+according to Yardeni Research. Check out ourMarkets Today live blog 
+<https://www.bloomberg.com/latest/uk-markets-today?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ for all the latest news and analysis relevant to UK assets.
+ 
+<https://www.bloomberg.com/news/videos/2026-09-28/rockefeller-s-sharma-warns-of-ai-crash-as-10-yr-hits-5-video?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+A year after Goldman Sachs’s board offered John Waldron $80 million to stay 
+for the top job, it’s moving to ensure he doesn’t wait too long. The board has 
+discussed a plan where Waldron, who is currently chief operating officer, would
+succeed David Solomon 
+<https://www.bloomberg.com/news/articles/2026-09-28/goldman-weighs-naming-john-waldron-ceo-next-year-wsj-reports?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ as CEO as early as next year, the Wall Street Journal has reported.
+
+Australia’s central bank resumed raising interest rates 
+<https://www.bloomberg.com/news/articles/2026-09-29/australia-raises-key-rate-to-15-year-high-to-restrain-inflation?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ on Tuesday, judging it couldn’t wait any longer to respond to rising energy 
+costs and resilient domestic demand that threaten to intensify inflationary 
+pressures.
+
+Julius Baer said the Swiss regulator Finma has ended its enforcement procedure 
+<https://www.bloomberg.com/news/articles/2026-09-29/swiss-regulator-finma-ends-proceeding-against-julius-baer?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ against the bank, a move Chief Executive Officer Stefan Bollinger described as 
+“an important milestone.” The bank also said it has submitted a share buyback 
+request.
+
+More Top Stories
+
+Threat of Berlin Property Grab Is Spooking Real Estate Stocks
+ 
+<https://www.bloomberg.com/news/articles/2026-09-29/threat-of-berlin-property-grab-is-spooking-real-estate-stocks?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+Japan’s Katayama Repeats Weak Yen Concern After Bessent Call
+ 
+<https://www.bloomberg.com/news/articles/2026-09-29/japan-s-katayama-reiterates-weak-yen-concern-after-bessent-call?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+AI May Force 11 Million Workers Into New Jobs, McKinsey Says
+ 
+<https://www.bloomberg.com/news/articles/2026-09-29/ai-may-force-11-million-workers-into-new-jobs-mckinsey-says?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+
+
+ 
+<https://sli.bloomberg.com/click?s=1099784&stpe=default&li=20105814&m=11b724c487f61753eb1a7a4a5f3ef261&p=09292026065817&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099784&stpe=default&li=20105814&m=11b724c487f61753eb1a7a4a5f3ef261&p=09292026065817&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Deep Dive: Broken Gas Economics
+A liquified natural gas tanker docked at the port of Barcelona..Photographer: 
+Angel Garcia/Bloomberg
+For decades, Europe relied on a tried-and-tested way to ensure there’s enough 
+gas to get through winter: Traders bought when the fuel was cheaper in the 
+summer, stored it and then sold at a higher price when needed. But for the 
+second year in a row, the economics of that tradehave unraveled 
+<https://www.bloomberg.com/news/features/2026-09-29/war-and-lng-shift-breaks-economics-of-european-gas-storage?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+.
+
+ * The loss of steady year-round Russian pipeline gas following the war in 
+Ukraine means Europe has become more reliant on global liquefied natural gas 
+supplies — and fears about a tight LNG market in 2025 made European summer 
+prices more expensive at times.
+ * It has been a similar story this year, made even worse by the Iran conflict 
+that has choked off crucial supplies from the Middle East.
+ * The flattening of the summer-winter price spread has made it less feasible 
+for commercial traders to inject gas into Europe’s vast storage sites, which 
+encompass depleted fields, aquifers and even old salt caverns.
+ * As a result, the continent is heading into the heating season with 
+inventories at their lowest ever for this time of year, raising the risk of 
+bigger price spikes this winter. There’s no sign of the problem going away any 
+time soon.
+The Big Take
+
+Finance
+
+Subprime Auto Loans Make Wall Street Rich as Borrowers Struggle
+
+Data show lenders used different tactics, extending terms or repossessing cars 
+quickly, to keep their investors happy. Neither approach is great for customers.
+Read more 
+<https://www.bloomberg.com/graphics/2026-subprime-auto-modifications/?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+Opinion
+
+A chance was missed last week to put the standoff between the US and Iran on a 
+path toward settlement rather than escalation: Tehran made an offer and Donald 
+Trump refused it. The attempt failed because neither was ready to compromise, 
+and if that’s the end of the matter one side will haveoverplayed its hand 
+<https://www.bloomberg.com/opinion/articles/2026-09-29/iran-war-trump-or-iran-just-overplayed-their-hand?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+, writes Marc Champion. The question is which — and that does not have a simple 
+answer.
+
+Rosa Prince
+
+Northern Ireland’s Peace Is Under Threat Again
+ 
+<https://www.bloomberg.com/opinion/articles/2026-09-29/drumcree-northern-ireland-peace-is-under-threat-again?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+John Authers
+
+What’s Going to Break in the Bondpocalypse?
+ 
+<https://www.bloomberg.com/opinion/newsletters/2026-09-29/what-s-going-to-break-in-the-bondpocalypse?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+Play Alphadots!
+
+Our daily word puzzle with a plot twist.
+
+ 
+<https://www.bloomberg.com/games/alphadots?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=092926_morningemea&utm_term=260929&utm_content=9463>
+ 
+<https://www.bloomberg.com/games/alphadots?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=092926_morningemea&utm_term=260929&utm_content=9463>
+Play now! 
+<https://www.bloomberg.com/games/alphadots?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=092926_morningemea&utm_term=260929&utm_content=9463>
+
+Before You Go
+
+India’s nascent market for obesity drugs has spawned a sophisticated 
+underground supply chain 
+<https://www.bloomberg.com/news/features/2026-09-29/fake-obesity-jabs-and-experimental-drugs-cloud-india-s-weight-loss-boom?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ for spurious versions in the world’s most populous country with government 
+staffers stretched thin as they grapple with mounting drug-safety challenges, 
+tedious investigations and enforcement actions.
+
+More From Bloomberg
+
+Enjoying Morning Briefing? Check out these newsletters:
+
+ * Money 
+<https://www.bloomberg.com/account/newsletters/money?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ for insights, ideas and tools for doing more with your money
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=092926_morningemea&utm_term=260929&utm_content=9463>
+ for what’s moving in stocks, bonds, FX and commodities
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=092926_morningemea&utm_term=260929&utm_content=9463>
+ for the latest political news and analysis from around the globe
+ * The Readout 
+<https://www.bloomberg.com/account/newsletters/readout?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=092926_morningemea&utm_term=260929&utm_content=9463>
+ for essential UK insights on the stories that matter
+ * The London Rush 
+<https://www.bloomberg.com/account/newsletters/london-rush?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=092926_morningemea&utm_term=260929&utm_content=9463>
+ for getting briefed ahead of your morning calls with the latest UK business 
+headlines, key data and market reaction
+Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=092926_morningemea&utm_term=260929&utm_content=9463>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Morning 
+Briefing Europe newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/morning-europe?source=NLshare&cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/morning-europe?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=092926_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260929&utm_content=9463>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/L-FZJzZACq7d5Nx2I_yOT4Uo9TIu9hGRYdiYbxoHLB4T5IBY55KkeMk-4F6tBva4CTB3qNoULBDXc5WUEHhj861tTtiBuo-HAhFQ_LROuOrq2id4V4VQz0lktT-ULP5Nm5_VAyvYeKeP07lvfAUS89pL4CERtbRtBSRFlRVq9MP_YvO-y1UQnnsXc8DPjpKj7u1NKn9YOH3cYPWPFA8mOB7mm4Y_C8y52v6xRmlNPBIUYsF3mbcPfFT6Snkwet5NaHBAkUsgXMq0vr22jf8Kj-WdyeBVr5wgdV7i_AfegrkIVQzgjGa-2AuGjyJZMS9GJ0B73Wi41sgppyQaLm4YzRLiXz26ItYx/EdAhNMHyJqq5WZLJhTGbGFalkBhBXTzl/25>

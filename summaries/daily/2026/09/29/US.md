@@ -1,0 +1,12 @@
+• Bond markets dominate: the 10-year Treasury yield reached 5.27%, with 30-year TIPS yields hitting 3.28% — the highest since continuous issuance began in 2004.
+• US equities remain resilient, with the S&P 500 only 1.5% below its August record and up 12.2% year-to-date despite the bond sell-off.
+• US–Canada trade tensions escalated as Trump's ban on ~$1 billion of Canadian imports — motorcycles, alcoholic beverages, and whey products — took effect.
+• Key macro data due imminently: PCE, ISM PMIs, and nonfarm payrolls will be closely watched for any growth disappointment that could arrest the bond sell-off.
+
+**Bond Markets and Financial Conditions**
+The yield on 30-year inflation-linked Treasuries (TIPS) rose to 3.28%, the highest level since the Treasury resumed continuous issuance in 2004, reflecting what may be the largest real long-term borrowing cost US investors have ever demanded above inflation. The nominal 10-year yield reached 5.27%, extending a sell-off that has now lasted several weeks. Bond volatility, as measured by the MOVE index, has risen sharply from the subdued levels of earlier this year, though conditions remain orderly relative to the 2020 pandemic episode or the 2023 SVB crisis. Notably, investment-grade credit spreads have barely moved, suggesting that while Treasury yields are lifting corporate borrowing costs, markets have not yet repriced underlying credit risk. Several institutional investors — including Pimco, RBC BlueBay, and Lombard Odier — have begun characterizing current yield levels as attractive, with asymmetric return profiles favoring buyers. The Atlanta Fed's real-time GDP tracker shows US growth running above 5%, the underlying economic strength that continues to drive yields higher. A near-term catalyst for a bond market reversal would most likely be a disappointing print in PCE, ISM, or payrolls data due later this week.
+
+**Trade Policy**
+Using Section 338 of the Trade Act of 1930 — the first invocation of this authority for outright import bans — the Trump administration prohibited entry of Canadian motorcycles, alcoholic beverages, and whey products. The measure is framed as retaliation for Canadian counter-tariffs and provincial boycotts of US goods. Though modest relative to the ~$900 billion bilateral trade relationship, the move signals continued escalation and was discussed at the G-20 trade ministers' meeting in Milwaukee.
+
+---
