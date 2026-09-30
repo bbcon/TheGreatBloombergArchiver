@@ -1,0 +1,11 @@
+• French CPI accelerated to its highest level in more than two years, beating consensus, while Italian inflation also overshot estimates, adding pressure on the ECB to extend its tightening cycle.
+• France announced plans to sell a record volume of sovereign bonds in 2027; the French-German 10-year spread widened at a pace seen only during the 2011–2012 eurozone crisis.
+• UK Prime Minister Andy Burnham announced the removal of the pension "triple lock" earnings guarantee from 2030 and opened the door to EU re-entry, either via single market, customs union, or full membership.
+
+**French Sovereign Stress**
+The French fiscal situation is crystallizing as the eurozone's most acute near-term risk. The government's record borrowing announcement for 2027 — combined with above-consensus inflation, a heavy foreign creditor base, financing costs exceeding tax revenue growth, and no credible consolidation plan — satisfies the classic preconditions for a sovereign debt crisis. Approximately 200,000 public-sector workers struck Tuesday over cost-of-living concerns, further illustrating the political constraints facing any consolidation effort. With populist candidates on both left and right polling well ahead of next year's presidential election, the probability of a credible fiscal adjustment in the near term appears low. The base case, as one analyst observed, may be continued managed underperformance — doing just enough to avoid acute crisis without resolving underlying vulnerabilities.
+
+**UK Policy Shift**
+Prime Minister Burnham's Labour conference speech marked a significant political moment. Abandoning the triple lock — deferred to 2030 and limited to removing the earnings-growth guarantee — was framed as politically painful but fiscally necessary. Markets were largely unmoved in gilts. His signaling on EU re-entry is more consequential longer term, reopening a debate dormant since Brexit and introducing a new variable into UK trade and investment dynamics ahead of the next general election.
+
+---

@@ -1,0 +1,236 @@
+Subject: Huge raise
+Date: Wed, 30 Sep 2026 05:56:27 +0000
+
+OpenAI Targets $30 Billion in New Funding Round
+Bloomberg Morning Briefing Europe ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-09-30/openai-targets-30-billion-in-new-funding-round?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ 
+<https://www.bloomberg.com/europe?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+
+ 
+<https://sli.bloomberg.com/click?s=1149094&li=20126608&m=11b724c487f61753eb1a7a4a5f3ef261&p=09302026055626&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149094&li=20126608&m=11b724c487f61753eb1a7a4a5f3ef261&p=09302026055626&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Good morning. OpenAI’s valuation may top $1.4 trillion. We dig into Andy 
+Burnham’s radical vision for the UK. And Abu Dhabi’s crown prince is spending 
+billions to bypass the Strait of Hormuz.Listen to the day’s top stories 
+<https://link.podtrac.com/1c953xf5>.
+
+— Jill Disis
+
+Market Snapshot
+S&P 500 futures 
+<https://www.bloomberg.com/quote/ES1:IND?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+7,746.00+0.2%
+Nasdaq 100 futures 
+<https://www.bloomberg.com/quote/NQ1:IND?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+30,621.00+0.0%
+WTI crude oil futures 
+<https://www.bloomberg.com/quote/CL1:COM?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+$89.56+0.2%
+Market data as of 01:50 AM ET. Data is subject to provider delays.Your 
+watchlist 
+<https://www.bloomberg.com/markets/watchlist?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+OpenAI is seeking at least $30 billion in fresh funding 
+<https://www.bloomberg.com/news/articles/2026-09-29/openai-targets-30-billion-in-new-funding-at-1-4-trillion-value?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ at a roughly $1.4 trillion valuation, people familiar said. Sam Altman said 
+investors will be “patient” with its IPO plans amid heightened AI safety 
+concerns. Meanwhile, President Donald Trumpshot down 
+<https://www.bloomberg.com/news/articles/2026-09-29/trump-set-to-host-nvidia-anthropic-ceos-to-discuss-ai-risks?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ new federal regulations after meeting tech execs, who agreed to outside audits 
+and stronger internal controls.
+
+Andy Burnham’s skeptics had disparaged him as Keir Starmer with a northern 
+accent. He’s now shown he couldn’t be more different. In akeynote speech 
+<https://www.bloomberg.com/news/articles/2026-09-29/burnham-vows-to-build-a-new-economy-and-new-politics-in-the-uk?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ to the Labour Party’s annual conference on Tuesday, the UK prime minister set 
+out a radical vision to change the country, including opening the door to 
+rejoining the EU. It marked a stunning ascent. Read our analysishere 
+<https://www.bloomberg.com/news/articles/2026-09-29/burnham-rolls-dice-on-radical-uk-policies-he-knows-may-backfire?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+.
+
+S&P 500 equity futures and Asian stocks rose 
+<https://www.bloomberg.com/news/articles/2026-09-29/stock-market-today-dow-s-p-live-updates?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+, while the benchmark 10-year Treasury yield steadied following losses earlier 
+this week. The Federal Reserve’s John Williams said one more rate hike “late 
+this year” may beappropriate 
+<https://www.bloomberg.com/news/articles/2026-09-29/fed-s-williams-sees-one-more-interest-rate-hike-in-late-2026?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ to help contain inflation. Check out ourMarkets Today live blog 
+<https://www.bloomberg.com/latest/uk-markets-today?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ for all the latest news and analysis relevant to UK assets.
+
+John Waldron, long seen as the likely CEO successor 
+<https://www.bloomberg.com/news/articles/2026-09-28/goldman-weighs-naming-john-waldron-ceo-next-year-wsj-reports?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ at Goldman Sachs, has alengthy to-do list 
+<https://www.bloomberg.com/news/articles/2026-09-29/goldman-s-heir-apparent-faces-tough-task-keeping-deputies-happy?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ before he takes the top job. First up: figuring out what the changes will mean 
+for some of David Solomon’s other high-profile deputies. That list includes 
+trading boss Ashok Varadhan, asset- and wealth-management head Marc Nachmann, 
+banking chief Dan Dees and Chief Financial Officer Denis Coleman.
+
+The Premier League said Manchester City artificially boosted 
+<https://www.bloomberg.com/news/articles/2026-09-29/man-city-broke-rules-with-sham-contracts-premier-league-finds?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ its financial results by more than £900 million, with the club guilty of all 
+charges related to serious breaches of financial rules. An independent 
+commission found Man City arranged“sham” commercial deals 
+<https://www.bloomberg.com/news/articles/2026-09-25/manchester-city-found-guilty-of-nearly-all-115-charges?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ with sponsors between 2009-10 and 2017-18, where the companies were only 
+required to pay a portion of the fees.
+
+Other Top Stories
+
+China’s Biggest Stimulus Push Since 2024 Fails to Impress Market
+ 
+<https://www.bloomberg.com/news/articles/2026-09-30/china-s-mini-stimulus-seen-securing-gdp-target-not-much-more?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+JPMorgan and Goldman See Mideast Oil Flows Near Pre-War Levels
+ 
+<https://www.bloomberg.com/news/articles/2026-09-30/mideast-crude-oil-flows-hit-98-of-pre-war-level-jpmorgan-says?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+Romania Braces for Turmoil With Prime Minister Set to Lose Vote
+ 
+<https://www.bloomberg.com/news/articles/2026-09-30/romania-braces-for-turmoil-with-prime-minister-set-to-lose-vote?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ 
+<https://sli.bloomberg.com/click?s=1099784&stpe=default&li=20126608&m=11b724c487f61753eb1a7a4a5f3ef261&p=09302026055626&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099784&stpe=default&li=20126608&m=11b724c487f61753eb1a7a4a5f3ef261&p=09302026055626&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Deep Dive: Sydney Slump
+Radford located in Sydney’s elite suburb of Point Piper.Source: Sotheby’s 
+International Realty
+A waterfront mansion in Sydney’s exclusive suburb of Point Piper just sold at 
+a steep discount, underscoring thedramatic shift underway 
+<https://www.bloomberg.com/news/features/2026-09-29/a-75-million-point-piper-home-shows-housing-slump-hitting-sydney-s-elite?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ in Australia’s property market.
+
+ * The 14,703-square-foot (1,366-square-meter) house known as Radford was put 
+on the market in August by real estate tycoon Robert Magid and his wife Ruth 
+for A$85 million ($59 million). This month, they slashed the asking price of 
+the Wolseley Crescent property by 12% to A$75 million. It sold for about that 
+level, Michael Pallier of Sydney Sotheby’s International Realty said late on 
+Tuesday, declining to give the exact price.
+ * Sydney’s wealthy are grappling with the prospect of falling house prices 
+after decades of supercharged gains. Higher-value homes are leading declines, 
+with values at the top end falling 10.7% in the past 12 months, compared with a 
+citywide drop of 7%, according to property consultancy Cotality.
+ * Homeowners are being squeezed from each side. The central bank hiked 
+borrowing costs 
+<https://www.bloomberg.com/news/articles/2026-09-29/australia-raises-key-rate-to-15-year-high-to-restrain-inflation?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ to 4.6% on Tuesday, the highest level since 2011 — and up sharply from 0.1% 
+just over four years ago. In May, the government withdrew tax incentives that 
+had long encouraged property investment. The one-two punch is raising concern 
+about how the market will fare without structural drivers of the housing boom.
+The Big Take
+
+Finance
+
+Abu Dhabi’s Crown Prince Is Spending Billions to Bypass Iran’s Grip on Hormuz
+
+Sheikh Khaled’s $300 billion wealth fund is a key player in the UAE’s “Zero 
+Hormuz” strategy.
+Read more 
+<https://www.bloomberg.com/news/features/2026-09-29/uae-s-sheikh-khaled-spending-billions-to-bypass-iran-s-grip-on-strait-of-hormuz?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+Opinion
+
+The Manchester City verdicts taint the club’s legacy but show no owner is 
+above the game’s wider interests,Matthew Brooker writes 
+<https://www.bloomberg.com/opinion/articles/2026-09-30/man-city-verdicts-are-a-dream-for-the-american-owners-of-premier-league-rivals?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+. English football’s future looks ever more American, with greater spending 
+restraints and financial discipline.
+
+John Authers
+
+The Bond Market Reckoning Has Only Begun
+ 
+<https://www.bloomberg.com/opinion/newsletters/2026-09-30/the-big-bond-market-shift-is-impacting-europe?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+Javier Blas
+
+Why Is Oil at $100 If Trump Is Winning the Battle in Hormuz?
+ 
+<https://www.bloomberg.com/opinion/articles/2026-09-30/why-is-oil-at-100-if-trump-is-winning-the-battle-in-hormuz?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+Play Alphadots!
+
+Our daily word puzzle with a plot twist.
+
+ 
+<https://www.bloomberg.com/games/alphadots?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=093026_morningemea&utm_term=260930&utm_content=9516>
+ 
+<https://www.bloomberg.com/games/alphadots?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=093026_morningemea&utm_term=260930&utm_content=9516>
+Play now! 
+<https://www.bloomberg.com/games/alphadots?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=093026_morningemea&utm_term=260930&utm_content=9516>
+
+Before You Go
+The Dyson CameraJet toothbrush.Source: Dyson/PR Newswire
+Dyson said water seepage caused an early batch 
+<https://www.bloomberg.com/news/articles/2026-09-29/dyson-blames-water-seepage-for-rocky-debut-of-499-ai-toothbrush?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ of its new artificial intelligence-powered toothbrushes to malfunction, 
+offering its first explanation for the product’s disappearance from stores. The 
+launch of the brand’s first toothbrush, the$499 CameraJet 
+<https://www.bloomberg.com/news/articles/2026-09-01/dyson-announces-499-camerajet-smart-toothbrush-with-ai-built-in-camera?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+, was meant to be a climactic reveal following years of development, but soon 
+after the device became available on Sept. 1, major retailers such as Best Buy 
+Co. pulled the brush from their websites.
+
+One More
+
+Toyota Eyes Selling Japan’s Answer to Rolls-Royce Around the World
+ 
+<https://www.bloomberg.com/news/articles/2026-09-29/toyota-starts-showing-off-hidden-century-luxury-brand-above-lexus?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+More From Bloomberg
+
+Enjoying Morning Briefing? Check out these newsletters:
+
+ * Money 
+<https://www.bloomberg.com/account/newsletters/money?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ for insights, ideas and tools for doing more with your money
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=093026_morningemea&utm_term=260930&utm_content=9516>
+ for what’s moving in stocks, bonds, FX and commodities
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=093026_morningemea&utm_term=260930&utm_content=9516>
+ for the latest political news and analysis from around the globe
+ * The Readout 
+<https://www.bloomberg.com/account/newsletters/readout?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=093026_morningemea&utm_term=260930&utm_content=9516>
+ for essential UK insights on the stories that matter
+ * The London Rush 
+<https://www.bloomberg.com/account/newsletters/london-rush?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=093026_morningemea&utm_term=260930&utm_content=9516>
+ for getting briefed ahead of your morning calls with the latest UK business 
+headlines, key data and market reaction
+Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=093026_morningemea&utm_term=260930&utm_content=9516>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Morning 
+Briefing Europe newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/morning-europe?source=NLshare&cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/morning-europe?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=093026_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=260930&utm_content=9516>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/SmA2bPs0aXAIsg_wBcrwUTpCSXgp0MlYR2V-50EeaYGTAPHdRMNRx0LLKYjbpFRii4mNCFxQTAs3cI3Bj6njZBEo8gxfHkmHuBJtIDKhycDqCrAj5TSmA_svMNWEBREgP1E_w7apM6M8nz4TH44w6fqBMqwUzwGaB3RYBOuOOzEbcPGXQBXKXjp-hG5m2fSEQmJN3K80UbeGKjQ-N0-nTPlftTVnxejkLV4WeWj5hX-zHnHFf59-Cm24QHXXIWZzEkm5FncwBbeimTCshbFaGILOpFYxOOgpYHVQ6OiHZjVgzAALHC-khSQLSjL790fN967nC3RVWIBnNoSf-dujKW0NJFh2omWF/10E7k2e_TwT3IIG0Ld5QHZXY9sdCkM1O/25>

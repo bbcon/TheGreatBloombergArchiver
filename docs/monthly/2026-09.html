@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>September 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="#" class="nav-link active">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../monthly.html">‹ Monthly archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Monthly Brief</p>
+        <p class="brief-date">September 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>S&P Global composite PMI surged to its strongest reading in more than five years in late September, decisively beating consensus and dispelling near-term recession concerns even as the yield environment deteriorated sharply.</li><li>The FOMC unanimously raised the federal funds rate 25 basis points to 3.75%–4.00% at its mid-month meeting, the first hike since 2023, with the dot plot signaling at least one additional increase in 2026.</li><li>The 10-year Treasury yield breached 5.12%–5.19% late in the month — levels not seen in roughly two decades — driven by hot growth data, persistent above-target inflation, and a weak 5-year auction; 30-year mortgage rates crossed 7% for the first time since January 2025.</li><li>US retail diesel prices exceeded $6.50 per gallon for the first time on record by late month, compounding inflation pressures and prompting Trump advisers to study a short-term export ban.</li></ul>
+<p class="para-title" style="color:#5597cb;">Monetary Policy</p>
+<p class="para-body">The Fed's September decision was shaped by an August CPI print that met consensus but failed to deliver the clear disinflation Chair Warsh had set as his threshold at Jackson Hole. Supercore services (ex-housing) ticked back to 3%, partly driven by an anomalous wireless telephony surge that alone added 10 basis points to core. Warsh proceeded with a unanimous 25-basis-point hike, framing the decision around economic resilience rather than an inflation emergency. Goldman Sachs acknowledged the move lacked strong fundamental justification given energy-driven inflation dynamics but concluded the credibility cost of a hold was prohibitive. The dot plot's median end-2027 rate projection rose 50 basis points from June; markets subsequently priced three additional hikes to a peak below 5%. Trump publicly demanded rates fall to 1% but stopped short of criticizing Warsh directly — the committee's unanimity was widely interpreted as insulating the chair from political pressure.</p>
+<p class="para-title" style="color:#5597cb;">Fixed Income and Fiscal</p>
+<p class="para-body">The Treasury selloff that dominated the final weeks of September was driven primarily by real yields rather than inflation breakevens, suggesting markets are repricing the neutral rate rather than losing confidence in the Fed's inflation commitment. Bessent's tripled bond buyback program — $6 billion in longer-dated debt — produced the opposite of its intended effect mid-month, with the 10-year yield extending its selloff to 4.85% on the day of intervention. The US fiscal deficit has crossed $40 trillion, and investment-grade corporate supply is tracking toward a record $2 trillion for the year, surpassing the 2020 peak of $1.66 billion. Pimco began trimming its underweight on long-duration Treasuries late in the month, suggesting institutional demand may begin capping further yield upside. Construction spending fell for a twelfth consecutive month year-on-year, down nearly 5% from its February 2025 peak — a sobering counterpoint to the AI infrastructure investment narrative.</p>
+<p class="para-title" style="color:#5597cb;">Equities and Credit</p>
+<p class="para-body">The Nasdaq 100 closed at an all-time high in the final week of September, but the move was concentrated almost entirely in four chipmakers, a breadth profile that several strategists flagged as anomalous. Meta surged 36% across the month following its Muse AI agent launch. Financial and consumer-services stocks fell sharply on AI disruption fears, with JPMorgan and Wells Fargo each dropping more than 3%. The US CMBS delinquency rate reached 12% in August — near a record — as office vacancy continues to erode lender patience. High-yield spreads began widening from recent tights, while private credit default rates (Fitch's broad measure) rose modestly to 6%. The S&P 500 nonetheless gained 10.7% year-to-date, sustained by substantial upward earnings revisions driven by AI capital expenditure. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>China's August retail sales rose just 0.4% YoY — below the pace of inflation and sharply below consensus — while industrial output beat at 5.2% YoY, deepening the economy's structural bifurcation and leaving GDP tracking approximately 4.2% for the July–August period, below the 4.5%–5.0% full-year target.</li><li>The Bank of Japan raised its policy rate 25 basis points to 1.25% in a split 7-2 vote mid-month, its third hike in under ten months, before Governor Ueda explicitly discouraged back-to-back expectations — sending the yen to nearly 160 per dollar before Finance Minister Katayama's intervention warnings partially arrested the decline.</li><li>South Korea's August exports surged approximately 69% year-on-year early in the month, a decisive beat driven by AI-related semiconductor demand; TSMC reported 53% year-over-year revenue growth, materially beating expectations.</li><li>China's August exports surged 25% year-on-year, above consensus, with the bilateral surplus with the US widening 44% to $29 billion; the Trump-Xi summit concluded late in the month with a two-month trade truce extension but limited substantive deliverables.</li></ul>
+<p class="para-title" style="color:#e07b39;">China: Domestic Weakness and Export Resilience</p>
+<p class="para-body">August data confirmed the structural divergence defining China's macro challenge. Domestic demand remains deeply impaired: retail sales decelerated to 0.4% YoY, property investment contracted 19.9% in the January–August period, the jobless rate rose unexpectedly, and loan growth contracted more sharply than consensus. PBOC Governor Pan Gongsheng publicly framed the credit deceleration as structurally desirable — a normalization away from debt-intensive property toward high-tech sectors — signaling that large-scale credit stimulus is not imminent. Industrial output, accelerating to 5.2% YoY driven by AI-related exports including integrated circuits, was the sole domestic bright spot. Beijing simultaneously announced a $45 billion recapitalization of its largest banks and insurers — the largest such exercise in nearly two decades — as property sector stress compounds; Macquarie estimates housing starts have fallen 78% from their 2021 peak. The Trump-Xi summit, which dominated headlines late in the month, delivered symbolism over substance: rare earths proved the central negotiating variable, with August shipments of rare earth magnets to the US falling roughly 20% month-on-month. Chinese ports logged a record 7.3 million container throughput in the seven days through September 20, up 9% year-on-year, as exporters front-ran tariff uncertainty.</p>
+<p class="para-title" style="color:#e07b39;">Bank of Japan and Regional Monetary Policy</p>
+<p class="para-body">The BOJ's mid-month hike to 1.25% was almost fully priced, making the dissenting votes from board members Toichiro Asada and Ayano Sato — both appointed by Prime Minister Takaichi — the consequential surprise. Bloomberg Economics characterized the dissents as sending a "dovish signal" that narrows the political space for further hikes. Ueda's subsequent pushback against back-to-back moves unwound much of September's yen appreciation; the currency approached 160 per dollar before Friday jawboning from Finance Minister Katayama prompted a partial recovery to ¥158.21. Goldman Sachs revised its yen forecast to 150. Japan's August exports rose 19.3% YoY — above trend, led by semiconductors — while imports gained 28%, reflecting energy cost pressures and strong industrial demand. Japan's 10-year JGB yield touched 3.04% in late September, a 30-year high. Indonesia's central bank held its benchmark BI-Rate at 5.75% for a third consecutive meeting, relying on FX intervention rather than rate adjustments to defend the rupiah. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>Euro-area inflation accelerated to its highest level in nearly three years in August, above consensus, cementing expectations for ECB tightening; the ECB delivered its second consecutive 25-basis-point hike mid-month, raising the deposit rate to 2.5%, with markets pricing a further hike as early as late October.</li><li>UK 30-year gilt yields approached 6% mid-month — their highest since 1998 — as August CPI accelerated to a five-month high, with the Bank of England holding at 3.75% but scrapping plans to sell long-dated gilts in a materially more hawkish shift.</li><li>The French 10-year spread over Bunds widened above 100 basis points for the first time since early 2012 mid-month — surpassing the level that preceded Mario Draghi's "whatever it takes" intervention — while the AfD recorded its best-ever state election result in Saxony-Anhalt with 44% of the vote.</li><li>ECB Executive Board member Isabel Schnabel announced her resignation effective January, intensifying succession pressure as Lagarde and Lane are also set to depart in 2027.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Inflation and ECB Policy</p>
+<p class="para-body">The ECB's mid-month hike to 2.5% reflects two reinforcing pressures: acute eurozone exposure to energy import costs amplifying the Middle East conflict's inflationary pass-through, and institutional memory of the 2022 episode when late tightening drew sustained criticism. ECB officials acknowledged their own forecasts assumed average oil below $90 per barrel — a baseline now materially stale with Brent above $100 for much of the month. Core inflation has continued to ease and services price growth has moderated, leading Oxford Economics to argue the mid-month move may be the last, but overnight index swaps imply a terminal rate near 3% by end-2027. Deutsche Bank raised the possibility that AI investment and German defense spending may be lifting the neutral rate. Schnabel's early departure creates an immediate Executive Board vacancy and accelerates succession dynamics: Spain backed Pablo Hernández de Cos; the Netherlands endorsed Klaas Knot. The institution faces this transition against elevated inflation, a global bond selloff, and unresolved fiscal fragmentation.</p>
+<p class="para-title" style="color:#4a9e6b;">Sovereign Stress and Political Fragmentation</p>
+<p class="para-body">France represents the most acute near-term sovereign risk in the eurozone. French yields surged 15.4 basis points in a single session mid-month as the global bond selloff landed hardest on eurozone periphery; OAT-Bund spreads crossing 100 basis points exceed levels seen during prior French political crises over the past decade. Finance Minister Lescure's €30 billion savings package for 2027 is directionally appropriate but faces a legislature with no stable majority, while Marine Le Pen's threat of a no-confidence vote adds tactical uncertainty. Germany compounded European political risk: the AfD secured 44% in Saxony-Anhalt early in the month, and the CDU received just 4.9% in Mecklenburg-Western Pomerania — failing to clear the parliamentary threshold and marking the party's worst-ever post-war state election result. Volkswagen slashed its profit forecast late in the month, with tens of thousands of workers staging protests against factory closures. European gas storage tracked 67% full heading into winter — 14 percentage points below last year — its lowest seasonal level since 2009. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazil's presidential race tightened to a statistical dead heat by late September, with Lula leading Flávio Bolsonaro 47% to 45% in a Datafolha poll less than two weeks before the October 4 first round; the government simultaneously cut its 2026 GDP growth forecast.</li><li>Copper hit a fresh all-time high early in the month, with LME three-month futures reaching $14,533 per ton, providing a material tailwind to Chilean and Peruvian fiscal and external positions.</li><li>Brazil's central bank cut the Selic rate 25 basis points mid-month, extending its easing cycle weeks before the presidential election; Colombia's congress approved a budget featuring a 16% spending increase, alarming investors already concerned about sovereign debt sustainability.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil: Monetary Policy and Electoral Risk</p>
+<p class="para-body">The Banco Central do Brasil's mid-month cut provides legitimate macro justification — inflation has moderated and economic momentum is fading — but the timing, immediately ahead of the October 4 first round, will inevitably invite questions about political calendar influence. The more significant risk is whether the easing cycle becomes difficult to sustain as the Fed's hawkish pivot drives capital outflows: the JPMorgan EM FX index fell to its lowest since March following the FOMC decision. Lula's announcement of increased social welfare payments added to spending pressures at a moment when global bond markets are scrutinizing emerging-market fiscal positions carefully. Both leading candidates are entangled in the Banco Master corruption scandal — Flávio Bolsonaro having centered his campaign on the issue while facing his own related financial investigations — leaving voters choosing between competing credibility deficits. The government's downward revision to the 2026 growth outlook complicates Lula's campaign narrative.</p>
+<p class="para-title" style="color:#c0392b;">Regional Energy Exposure and Commodity Dynamics</p>
+<p class="para-body">Latin America's vulnerability to the US-Iran conflict is underappreciated in current market pricing. Brazil, Mexico, and Chile are the three largest buyers of US diesel exports; any export ban would arrive at a moment when Middle Eastern alternative suppliers are themselves supply-constrained, amplifying inflationary pressure across economies already navigating dollar strength and elevated oil import costs. Copper at record levels materially improves the investment case for Chile and Peru's mining exporters; Petrobras and Grupo Mexico together accounted for 40% of Latin American equity returns year-to-date through August. The US directed approximately $5 billion into Brazil's Pela Ema rare-earth mine — one of the few commercial-scale magnetic rare-earth sources outside Asia — though Lula's simultaneous push for domestic mineral processing requirements complicates Washington's supply-chain ambitions. Venezuela's acting President Rodríguez met with Trump on the sidelines of UNGA, reflecting pragmatic engagement over oil that Chevron anchored with a $7 billion Orinoco Belt expansion announced earlier in the month. Argentina's Salta governor reintroduced a local provincial currency mid-month, a direct subnational repudiation of Milei's liberalization program that complicates the institutional narrative he has used to attract international investor confidence. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude crossed $100 per barrel early in the month, breached $102 following the US military's destruction of five Iranian tankers mid-month, and opened above $108 in the final week after Saudi Arabia shut its East-West pipeline following drone strikes — before retreating toward $103–$105 on reports of a phased Hormuz framework under discussion at UNGA.</li><li>The average yield on global government debt approached 4% late in the month — the highest since 2007 — with German, Japanese, Australian, UK, and US 10-year yields surging in tandem as the bond market rendered its verdict on the inflation and fiscal outlook.</li><li>The Fed, ECB, and BOJ tightened policy simultaneously in September — a synchronized global rate cycle not seen in decades — with energy-driven inflation from the Iran conflict as the common forcing function.</li><li>The Trump-Xi summit concluded late in the month with a two-month trade truce extension to mid-January 2027, the period's most consequential diplomatic outcome, though the compressed timeline relative to the six months initially floated signals mutual</li></ul>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

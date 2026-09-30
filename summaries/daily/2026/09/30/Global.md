@@ -1,0 +1,10 @@
+• Brent crude remained above $103/barrel despite reports from JPMorgan and Goldman Sachs suggesting Middle East oil flows are approaching pre-war levels — a disconnect that analysts are scrutinizing.
+• The 30-year US Treasury yield reached its highest since 2002, tightening financial conditions globally and amplifying sovereign stress in France, emerging markets, and commodity-importing economies.
+• Abu Dhabi's Crown Prince Sheikh Khaled is deploying a $300 billion sovereign wealth fund to build port infrastructure bypassing the Strait of Hormuz, under the UAE's "Zero Hormuz" strategy.
+• Chinese e-truck sales rose nearly 80% in H1 2026, with battery-powered freight now on pace to represent roughly one-third of new heavy-duty truck sales — structurally reducing Chinese diesel demand.
+
+**Oil Markets: Price-Flow Disconnect**
+The persistence of Brent above $103 despite oil flows reportedly nearing pre-war levels through the Strait of Hormuz raises important questions about market structure. Possibilities include risk premiums embedded for renewed disruption, reduced effective throughput relative to official estimates, or demand signals in non-Middle East markets. The UAE's Zero Hormuz infrastructure investment — potentially tens of billions in new port capacity — suggests Abu Dhabi is not treating current shipping normalization as durable. Meanwhile, China's electric truck transition is providing a meaningful structural offset to oil demand, with Sinopec estimating Chinese diesel consumption will fall more than 10% this year.
+
+**Bond Market Contagion and Global Fiscal Pressure**
+Rising US long-term yields are transmitting tightening impulses globally, compressing fiscal space for governments already operating with high debt loads. France is the most visible stress point in developed markets; India is experiencing capital outflows; and commodity-importing emerging markets face a double burden of higher energy costs and dollar strength. The reflexive dynamic — where higher yields force fiscal tightening, which slows growth, which raises deficit concerns, which push yields higher — is an underappreciated systemic risk heading into 2027.

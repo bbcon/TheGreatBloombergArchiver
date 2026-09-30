@@ -1,0 +1,18 @@
+• S&P Global composite PMI surged to its strongest reading in more than five years in late September, decisively beating consensus and dispelling near-term recession concerns even as the yield environment deteriorated sharply.
+• The FOMC unanimously raised the federal funds rate 25 basis points to 3.75%–4.00% at its mid-month meeting, the first hike since 2023, with the dot plot signaling at least one additional increase in 2026.
+• The 10-year Treasury yield breached 5.12%–5.19% late in the month — levels not seen in roughly two decades — driven by hot growth data, persistent above-target inflation, and a weak 5-year auction; 30-year mortgage rates crossed 7% for the first time since January 2025.
+• US retail diesel prices exceeded $6.50 per gallon for the first time on record by late month, compounding inflation pressures and prompting Trump advisers to study a short-term export ban.
+
+**Monetary Policy**
+
+The Fed's September decision was shaped by an August CPI print that met consensus but failed to deliver the clear disinflation Chair Warsh had set as his threshold at Jackson Hole. Supercore services (ex-housing) ticked back to 3%, partly driven by an anomalous wireless telephony surge that alone added 10 basis points to core. Warsh proceeded with a unanimous 25-basis-point hike, framing the decision around economic resilience rather than an inflation emergency. Goldman Sachs acknowledged the move lacked strong fundamental justification given energy-driven inflation dynamics but concluded the credibility cost of a hold was prohibitive. The dot plot's median end-2027 rate projection rose 50 basis points from June; markets subsequently priced three additional hikes to a peak below 5%. Trump publicly demanded rates fall to 1% but stopped short of criticizing Warsh directly — the committee's unanimity was widely interpreted as insulating the chair from political pressure.
+
+**Fixed Income and Fiscal**
+
+The Treasury selloff that dominated the final weeks of September was driven primarily by real yields rather than inflation breakevens, suggesting markets are repricing the neutral rate rather than losing confidence in the Fed's inflation commitment. Bessent's tripled bond buyback program — $6 billion in longer-dated debt — produced the opposite of its intended effect mid-month, with the 10-year yield extending its selloff to 4.85% on the day of intervention. The US fiscal deficit has crossed $40 trillion, and investment-grade corporate supply is tracking toward a record $2 trillion for the year, surpassing the 2020 peak of $1.66 billion. Pimco began trimming its underweight on long-duration Treasuries late in the month, suggesting institutional demand may begin capping further yield upside. Construction spending fell for a twelfth consecutive month year-on-year, down nearly 5% from its February 2025 peak — a sobering counterpoint to the AI infrastructure investment narrative.
+
+**Equities and Credit**
+
+The Nasdaq 100 closed at an all-time high in the final week of September, but the move was concentrated almost entirely in four chipmakers, a breadth profile that several strategists flagged as anomalous. Meta surged 36% across the month following its Muse AI agent launch. Financial and consumer-services stocks fell sharply on AI disruption fears, with JPMorgan and Wells Fargo each dropping more than 3%. The US CMBS delinquency rate reached 12% in August — near a record — as office vacancy continues to erode lender patience. High-yield spreads began widening from recent tights, while private credit default rates (Fitch's broad measure) rose modestly to 6%. The S&P 500 nonetheless gained 10.7% year-to-date, sustained by substantial upward earnings revisions driven by AI capital expenditure.
+
+---
