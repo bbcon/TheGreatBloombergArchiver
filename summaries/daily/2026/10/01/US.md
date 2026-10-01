@@ -1,0 +1,12 @@
+• US consumer spending posted a 0.6% monthly gain in real terms in August, the largest increase in over a year, beating consensus; however, the personal saving rate fell to 4.1%, its lowest in nearly four years.
+• The US merchandise trade deficit widened unexpectedly to $132.6 billion in August, the largest since early 2025, driven by a 16.6% surge in industrial supply imports, missing consensus.
+• US companies announced the fewest job cuts for any September since 2022, per Challenger, Gray & Christmas, signaling continued labor market resilience.
+• The 10-year Treasury yield climbed to 5.30%, its highest level since 2002, as the global bond selloff gathered pace.
+
+**Consumer Spending and the Macro Backdrop**
+August personal consumption data confirmed that the American consumer remains the primary engine of US growth despite persistent inflationary pressure. Real spending rose 0.6% month-on-month, the strongest print in over a year. Critically, however, the driver was not income: after-tax personal income rose 0.3% in nominal terms, a gain entirely offset by a matching 0.3% rise in prices. Instead, households drew down savings — the personal saving rate fell to 4.1% — and benefited from a wealth effect estimated to account for roughly half of the quarter's consumption gains, following a record $12.8 trillion rise in household net worth in Q2. The durability of this dynamic depends on equity markets remaining supportive; a sustained bond-driven correction would pose a meaningful downside risk to spending into 2027.
+
+**Rates, Markets, and Political Pressure on the Fed**
+The bond selloff showed no sign of relenting, with the 10-year Treasury yield reaching 5.30%, a level last seen in 2002. Equity markets proved more resilient: S&P 500 futures rose 0.6%, partly lifted by Micron Technology's bullish AI-demand forecast, though the chipmaker flagged rising compensation costs as a margin headwind. President Trump publicly called for Jerome Powell to resign from the Fed's Board of Governors, citing a watchdog report on headquarters renovation mismanagement — though the report found no criminal wrongdoing. The remarks add political friction to an already complex monetary policy environment.
+
+---

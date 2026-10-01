@@ -1,0 +1,12 @@
+• The Bank of Japan's September meeting summary offered no signal of imminent rate action, disappointing markets expecting hawkish guidance; the yen weakened against the dollar in response.
+• China's finance minister indicated Beijing is mulling additional fiscal measures — including interest subsidies and higher funding limits — to meet its 2026 growth target, following a "mini-stimulus" package this week.
+• China's August retail sales growth was "barely above zero," reinforcing a two-speed economy narrative of solid manufacturing against weak consumption.
+• India's monsoon delivered its weakest precipitation since 2015, pressuring rice yields and raising food inflation risk heading into year-end.
+
+**Bank of Japan and Yen Dynamics**
+The summary of opinions from the BOJ's September meeting contained no indication of growing support for a back-to-back rate hike in October, effectively dashing near-term hawkish expectations. The yen weakened on the release, extending pressure on Japanese import costs at a time when global energy prices remain elevated. Nidec, Japan's precision motors manufacturer, separately used its first major CEO appearance since an accounting scandal — which erased a third of its market value — to outline a restructuring toward AI and semiconductor-related segments and away from lower-margin legacy divisions.
+
+**China Stimulus and Structural Weakness**
+Beijing's finance minister signaled openness to further fiscal easing to defend the 2026 growth target, but the measures under consideration appear incremental rather than transformative. August data underscored the challenge: while industrial output rose 5.2% year-on-year, the median product category contracted 1.8%, and retail sales growth was negligible. Chinese fuel exporters also canceled October export cargoes to prioritize domestic supply amid global energy market disruption — a sign that energy security concerns are increasingly influencing trade decisions. India's monsoon shortfall poses an additional regional headwind, with weak rural consumption and higher food prices likely to complicate the RBI's policy calculus, particularly as a $133 billion domestic liquidity surplus is already pushing the central bank toward a more hawkish posture.
+
+---

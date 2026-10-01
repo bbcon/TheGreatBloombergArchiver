@@ -1,0 +1,11 @@
+• UK 30-year gilt yields reached 6% for the first time in nearly three decades, as the global bond selloff intensified.
+• France unveiled a €54 billion fiscal consolidation plan targeting a deficit of 5% of GDP in 2027, down from 5.4% in 2026; French sovereign spreads over German bunds hit their widest since 2012.
+• The Stoxx Europe 600 fell 1.2% as political risk in France and rising yields weighed on risk appetite.
+
+**France's Fiscal Reckoning**
+The French government's 2027 budget proposal — encompassing €54 billion in spending cuts and tax increases across pensions, public-sector wages, and sick leave — represents the most ambitious fiscal consolidation attempt since the post-Macron political fragmentation began. The arithmetic is perilous: Prime Minister Lecornu leads a minority government operating in a hostile parliament that has already removed two predecessors, and the measures touch politically sensitive entitlements ahead of next year's elections. Bond markets have already rendered a verdict: French sovereign spreads over German bunds are at their widest since the 2012 eurozone crisis, and French equities continue to trade at a discount to the broader European market — a structural shift from their historical premium. Whether the budget survives parliamentary scrutiny remains genuinely uncertain.
+
+**UK Rates and Monetary Spillovers**
+The UK gilt market captured wider attention as 30-year yields crossed 6% for the first time in approximately three decades, a move reflecting both domestic fiscal concerns and global bond market dynamics driven by $100 oil and resilient growth. Bank of England Governor Andrew Bailey noted publicly that the BoE has been watching "very carefully" as AI-driven capital flows inflate asset prices, warning that historical precedent suggests not all participants will benefit. ECB President Lagarde separately declined to rule out departing her role before her term concludes, introducing an element of institutional uncertainty at a sensitive juncture for eurozone monetary policy.
+
+---
