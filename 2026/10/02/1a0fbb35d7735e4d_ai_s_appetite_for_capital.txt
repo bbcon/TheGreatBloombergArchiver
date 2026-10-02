@@ -1,0 +1,250 @@
+Subject: AI’s appetite for capital
+Date: Fri, 02 Oct 2026 08:20:26 +0000
+
+Broadcom, Amazon Test Limits of Investor Demand for AI Buildout
+Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-10-02/broadcom-amazon-test-limits-of-investor-demand-for-ai-buildout?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ 
+<https://www.bloomberg.com/asia?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=20168185&m=11b724c487f61753eb1a7a4a5f3ef261&p=10022026082025&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=20168185&m=11b724c487f61753eb1a7a4a5f3ef261&p=10022026082025&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+The companies at the heart of the AI boom are testing the limits of investor 
+demand to continue feeding their insatiable appetite for capital.
+
+Broadcom is looking to raise $60 billion of fresh AI chip financing to benefit 
+Anthropic and other companies, according to people with knowledge of the 
+matter. Banks involved in themassive debt package 
+<https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ — led by Blackstone — are poised to send out syndication letters for a $42 
+billion Class A senior-secured tranche, the people said. The deal comes as 
+Anthropic closes in on an IPO that could overshadow the SpaceX listing in May.
+
+Amazon is exploring a more asset-light model to mitigate the financial demands 
+<https://www.bloomberg.com/news/articles/2026-10-02/amazon-seeks-to-move-8-billion-of-chips-off-its-books-ft-says?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ of the buildout. The company is exploring a deal to shift about $8 billion of 
+Nvidia’s top-end chips off its balance sheet, according to the Financial Times. 
+The move would see Amazon offload thousands of Grace Blackwell chips across 
+more than a dozen US data centers into a special-purpose vehicle funded by 
+outside investors, the paper said, citing people familiar with the matter.
+
+One company joining the wave of massive fundraising 
+<https://www.bloomberg.com/news/articles/2026-10-01/firmus-eyes-30-billion-valuation-in-australian-ipo-afr-reports?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ with a more traditional approach is Australian data center operator Firmus 
+Grid. The Nvidia-backed company has priced its IPO at A$11 a share as it seeks 
+to raise at least $5 billion this month. The price implies a valuation of about 
+$30 billion, which would make it one of the largest listings in Australia.
+
+— Samson Ellis 
+<https://www.bloomberg.com/authors/APt1YeBfWKo/samson-ellis?sref=zwoCMiVe&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+
+What You Need to Know Today
+
+Markets
+
+France’s Crisis Is Deepening as Investors Head for the Exit
+
+Worries are mounting and bonds, stocks and the euro are taking the hit.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-10-02/france-s-crisis-is-deepening-as-investors-head-for-the-exit?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+The political turmoil in France, along with elevated commodity prices, boosted 
+demand for safer government bonds. Sovereign debt rose in Japan, Australia and 
+New Zealand asinvestors sought haven assets 
+<https://www.bloomberg.com/news/articles/2026-10-01/asian-stocks-to-fall-on-oil-rally-bonds-in-focus-markets-wrap?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+, while Treasuries held the bulk of their gains from Thursday’s rally. A 
+Bloomberg gauge of the dollar headed for a third weekly gain, the longest 
+winning run since January 2025.
+
+Still, global credit markets are showing signs of caution 
+<https://www.bloomberg.com/news/articles/2026-10-02/global-credit-market-starts-to-sputter-as-jumbo-deals-drag?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+, as investors pull back from treating the asset class as a safe haven 
+following record corporate borrowing and growing concerns about balance sheets 
+as inflation persists.
+
+New Indonesia Finance Chief Steers Clear of Prabowo Turf Wars
+
+Indonesia’s new finance chief signaled he’ll stay in his lane and let the 
+central bank and the Danantara sovereign wealth fund handle their own mandates, 
+a bid to restore investor confidence in President Prabowo Subianto’s broad 
+economic policy.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-10-02/indonesia-s-new-finance-chief-puts-teamwork-at-heart-of-reset?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+A Singapore court has ruled that the alleged leader of an international 
+insider trading ring 
+<https://www.bloomberg.com/news/articles/2026-10-02/singaporean-accused-of-insider-trading-loses-extradition-fight?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ must be extradited to the US, where he faces six counts of securities fraud 
+and money laundering carrying maximum sentences of five to 25 years each. The 
+suspect had spent two years fighting the extradition request, citing his mental 
+health and partial blindness.
+
+South Korean President Lee Jae Myung has pushed through a sweeping overhaul of 
+the criminal justice system,stripping investigative powers 
+<https://www.bloomberg.com/news/articles/2026-10-02/korea-s-president-strips-power-from-prosecutors-who-indicted-him?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ from prosecutors he accuses of abusing their authority. The revised law shifts 
+power to police from prosecutors, leaving the latter primarily to decide 
+whether cases should go to trial.
+
+Markets
+
+World’s Top LNG Buyer Doesn’t See Qatar Supply Coming Back Soon
+
+The head of the world’s largest liquefied natural gas buyer expects 
+disruptions to the Strait of Hormuz to persist, further curtailing flows from a 
+region that accounted for about a fifth of global supply before the Middle East 
+war.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-10-02/world-s-top-lng-buyer-doesn-t-see-qatar-supply-coming-back-soon?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=20168185&m=11b724c487f61753eb1a7a4a5f3ef261&p=10022026082025&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=20168185&m=11b724c487f61753eb1a7a4a5f3ef261&p=10022026082025&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+What You’ll Need to Know Tomorrow
+
+Markets
+
+Bond Traders Lash Out at BofA, Citi as Paramount’s Debt Craters
+ 
+<https://www.bloomberg.com/news/articles/2026-10-01/paramount-s-41-billion-of-m-a-bonds-slump-as-trading-begins?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+Opinion
+
+Nike’s China Reset Needs More Than the Kardashians
+ 
+<https://www.bloomberg.com/opinion/articles/2026-10-02/nike-s-china-reset-needs-more-than-the-kardashians?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+Politics
+
+Taiwan Gets Two Advanced US Fighter Jets After Years of Delays
+ 
+<https://www.bloomberg.com/news/articles/2026-10-02/taiwan-gets-two-advanced-us-fighter-jets-after-years-of-delays?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+Politics
+
+India Election Panel Seeks to Restore Voters Amid Protest Threat
+ 
+<https://www.bloomberg.com/news/articles/2026-10-02/india-election-panel-seeks-to-restore-voters-amid-protest-threat?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+Business
+
+New World Shares Fall as Investors Digest $3.6 Billion Loss
+ 
+<https://www.bloomberg.com/news/articles/2026-10-02/new-world-s-11-skies-exit-clears-path-for-investor-analysts-say?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+Opinion
+
+Andy Burnham’s ‘Theory of Growth’ Is Desperately Thin
+ 
+<https://www.bloomberg.com/opinion/articles/2026-10-02/uk-politics-andy-burnham-theory-of-growth-is-desperately-thin-stuff?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+Weekend Edition
+
+Scientists Are Learning How to Control HIV Without Drugs
+ 
+<https://www.bloomberg.com/news/features/2026-10-02/hiv-cure-research-advances-as-immune-therapy-controls-virus?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+For Your Commute
+
+Markets
+
+No Lights, No Radio: Getting Oil Through Hormuz Is a Risky Job
+
+A tanker captain’s first-hand account shows why flows from the Middle East are 
+rising, despite the dangers of Iranian drones and missiles.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-10-01/getting-oil-and-gas-through-hormuz-strait-is-dangerous-job-for-ship-captains?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+Get more: Check out Bloomberg’s Emerging, a monthly podcast series hosted by 
+Menaka Doshi and Haslinda Amin on the rising economies shaping the global 
+future. You can watch ithere 
+<https://www.bloomberg.com/btv/series/bloomberg-emerging?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ or listen on iHeart <https://www.iheart.com/podcast/1119-emerging-338347317>, 
+Apple <https://podcasts.apple.com/us/podcast/emerging/id6788408143>, Amazon 
+<https://music.amazon.com/podcasts/cbcdeabc-26d1-4daa-b1ee-92a0411584fe/emerging>
+,or Spotify <https://open.spotify.com/show/033LpKgmjTCANHGFyfR6x7>.
+
+
+
+Which major city experienced an entire month’s worth of rain over the weekend 
+starting Sept. 25?
+
+Think you know the answer?
+
+Pointed|Bloomberg Games
+Play 
+<https://www.bloomberg.com/games/pointed?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+More from Bloomberg
+
+Enjoying Evening Briefing? Check out these newsletters:
+
+ * On Books 
+<https://www.bloomberg.com/account/newsletters/on-books?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+, from Bloomberg Weekend, for reviews and recommendations to expand your 
+thinking. Also:Weather Watch 
+<https://www.bloomberg.com/account/newsletters/weather-watch?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ to get an edge on the risks of the changing climate
+ * Next Japan 
+<https://www.bloomberg.com/account/newsletters/next-japan?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ for an inside view of the forces reshaping Japan, and what’s next for its 
+businesses, markets and consumers
+ * AI Today 
+<https://www.bloomberg.com/account/newsletters/ai-today?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ for a chronicle of the disruptions and threats of AI on businesses, workers, 
+governments and economies
+ * Money 
+<https://www.bloomberg.com/account/newsletters/money?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ for insights, ideas and tools for doing more with your money
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261002&utm_content=9635>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ for key news before the trading day starts there
+ * Singapore Edition 
+<https://www.bloomberg.com/account/newsletters/singapore-edition?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+,India Edition 
+<https://www.bloomberg.com/account/newsletters/india-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261002&utm_content=9635>
+ andHong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261002&utm_content=9635>
+ for insights into some of Asia’s most dynamic economies
+ * Next China 
+<https://www.bloomberg.com/account/newsletters/next-china?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261002&utm_content=9635>
+ for dispatches from within the world’s second-largest economy on where China 
+stands now — and where it’s going next
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261002&utm_content=9635>
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://bsky.app/profile/bloomberg.com> <https://x.com/business> 
+<https://www.instagram.com/bloombergbusiness/> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+
+
+You received this message because you are subscribed to Bloomberg’s Evening 
+Briefing Asia newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=NLshare&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261002&utm_content=9635>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/9_vbr4XxFry6qflGjhymJi70zjHUj3Y5cc15-mGNjGWJA1nLAi6H-1mP00v56o61aWPSwoSZQn05BuCt-hJ9GfQPRNXMzwYgfmKyTsNuLMApHrVm6N3M0GRFaWXZBByxu2Ho9hcAEkwRCZoPBKK0Ru-BAGpBvniURz05-GHpt0_qfqGylHxEJvpgSkK4lpmk7iOf1wdFfQv8NOqJHWJJb-ec6b2j8OguXDRTG9tuArQj1MbHdLQt3rZlGJLPivzdMWwpWkv0jIJPf9mIyIpy1EA5KF0vwtQoOjpwbKz5biT3zCAO6GnzysGTKWBXbCZujYgdjcH3wVRASF99lwZs5RyDrwSII9Rn/Wl1RpZImJuQY0P7bRghVqAe-fjRTQYls/25>

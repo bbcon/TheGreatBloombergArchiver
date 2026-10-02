@@ -1,0 +1,13 @@
+• The Pentagon is deploying an additional aircraft carrier and 10,000 sailors and Marines to the Persian Gulf, with President Trump signaling possible escalation against Iran after midterm elections
+• Brent crude at approximately $99/barrel; oil fell Friday on reports European nations are discussing a release of strategic reserves
+• IEA revised its 2026 oil market deficit estimate to 1.7 million barrels per day, from 1.3 million previously, as Hormuz disruptions persist
+• Global bond sell-off, originating from Fed communication errors, is exposing sovereign vulnerabilities — most acutely in France
+• Western Europe's summer of 2026 was its hottest on record, with more than 34,600 heat-related deaths across five countries
+
+**Hormuz: The Structural Supply Constraint**
+
+The Strait of Hormuz remains the central node of global energy risk. Tanker captains are navigating the waterway at night, without lights or radio, using coastal landmarks and lighthouses for navigation — a first-hand account illustrating the fragility of flows that once represented approximately one-fifth of global LNG supply. Japan's Jera, the world's largest LNG buyer, does not expect Qatari supply to normalize in the near term. The IEA's upward revision of the 2026 supply deficit to 1.7 million barrels per day — alongside similar revisions from the EIA and BloombergNEF — reflects the cumulative impact of Hormuz restrictions and Saudi Red Sea export disruptions. European nations are reportedly in discussion with the Trump administration about a coordinated strategic reserve release to address diesel shortages, with a proposed release of 100 million barrels of crude and diesel under consideration at a G7 call.
+
+**Global Rate Contagion and Monetary Policy Divergence**
+
+The week's defining cross-regional theme is how a US-originated bond sell-off — driven by Fed and Treasury communication missteps rather than fundamentally worse inflation data — has transmitted asymmetrically across sovereign markets. France has absorbed the sharpest damage. Japan and Australian sovereign bonds rallied as haven flows intensified. The dollar is on track for a third consecutive weekly gain. Global credit markets are beginning to show strain: record corporate issuance, persistent inflation, and geopolitical premia are eroding the asset class's safe-haven appeal. The tension between central banks that have resumed hiking cycles and fiscal authorities managing large deficits is the defining macro fault line of this period.
