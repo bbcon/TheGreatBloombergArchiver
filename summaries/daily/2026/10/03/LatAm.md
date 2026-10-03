@@ -1,0 +1,7 @@
+• Morningstar reported a preference for Brazil and Mexico equities over South Africa, reflecting relative emerging-market positioning dynamics.
+• Glencore, Peabody, and Heeney are reportedly considering coal asset transactions in Venezuela, a development with both commodity and political economy dimensions.
+
+**Equity and Commodity Developments**
+Morningstar's reported preference for Brazilian and Mexican equities over South African peers reflects a differentiated view on emerging market fundamentals, though the underlying macro drivers — commodity exposure, fiscal trajectory, currency stability — are not elaborated in available coverage. Separately, reported interest from Glencore, Peabody, and Heeney in Venezuelan coal assets signals that despite Venezuela's complex political and sanctions environment, distressed resource assets continue to attract strategic attention from global commodity majors. Whether these discussions advance to transactions remains speculative at this stage. Broader macro data for the region — Brazilian inflation, Mexican industrial output, or central bank decisions — are absent from current coverage, limiting the ability to assess regional economic momentum with precision.
+
+---
