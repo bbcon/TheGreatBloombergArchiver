@@ -1,0 +1,11 @@
+• Flávio Bolsonaro won 47.06% of first-round votes versus Lula's 45.16%, a result that materially exceeded consensus expectations and makes Bolsonaro the heavy favorite ahead of the October 25 run-off.
+• Brazil's Bovespa surged to its highest level in dollar terms since 2011 on the election result; the real posted its largest single-day gain against the dollar in four years.
+• The right secured an outright majority in Brazil's upper house and a substantially strengthened position in the lower house, improving prospects for fiscal consolidation.
+
+**Election Outcome and Market Reaction**
+Sunday's Brazilian first-round result constitutes a genuine political surprise. Bolsonaro's margin over Lula — while not commanding in percentage terms — carries historical significance: every first-round leader since Brazil adopted this format has proceeded to win the run-off. Prediction markets had assigned Bolsonaro only modest chances of victory as recently as several weeks ago. The market reaction was unambiguous: the Bovespa's dollar-terms rally to a 15-year high and the real's outsized appreciation reflect investor relief at the prospect of more credible fiscal consolidation. Lula's government had persistently struggled to convince bond markets of its commitment to deficit reduction; Bolsonaro now inherits that challenge along with a legislature more amenable to his stated target of cutting government spending by 1.5% of GDP.
+
+**Fiscal Outlook**
+The legislative sweep matters as much as the presidential trajectory. With the right holding an outright Senate majority, the path to structural fiscal reform — long blocked by fragmented coalitions — appears more navigable, though execution risk remains. TS Lombard notes that fiscal reform prospects, rather than the presidential race per se, have driven the asset-price reaction. Lula's campaign is reassessing strategy for the run-off, with aides acknowledging the need to broaden appeal beyond the left-wing base. At 81, Lula remains a formidable political survivor, but the structural arithmetic is challenging.
+
+---

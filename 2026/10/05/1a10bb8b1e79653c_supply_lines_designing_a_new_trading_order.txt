@@ -1,0 +1,228 @@
+Subject: Supply Lines: Designing a new trading order
+Date: Mon, 05 Oct 2026 11:00:13 +0000
+
+Trump’s Bid to Reconstruct Global Trading System Meets G20 Skepticism
+A G20 trade ministers’ gathering exposed the disharmony trying to construct a 
+new trading system ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-10-05/greer-and-g20-trade-ministers-in-milwaukee?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ 
+<https://www.bloomberg.com/economics?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+
+ 
+<https://sli.bloomberg.com/click?s=1149074&li=20209326&m=11b724c487f61753eb1a7a4a5f3ef261&p=10052026110013&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149074&li=20209326&m=11b724c487f61753eb1a7a4a5f3ef261&p=10052026110013&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+ 
+<https://www.bloomberg.com/authors/ATybCZQdpEk/shawn-donnan?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+Let’s be honest. There are very few documents in international economics less 
+meaningful than a Group of 20 communique unless a crisis is raging and the 
+world is in dire need of joint action. So the lack of a unified declaration 
+from last week’s G20 trade ministers’ meeting in Milwaukee shouldn’t be cause 
+for alarm.
+
+But there was a clear signal in the outcomes of the gathering. And it wasn’t a 
+ringing endorsement of the American hosts.
+
+The US went into the G20 talks touting President Donald Trump’s project to 
+remake the global trading system.
+
+“We gather as possible architects of a new international economic order,” 
+Trade Representative Jamieson Greer said in anopening statement 
+<https://ustr.gov/about/policy-offices/press-office/speeches-and-remarks/2026/september/ambassador-greers-opening-remarks-g20-trade-ministerial>
+ that took delegates on a trip through American and Milwaukee history, with 
+nods to famed architects including Antoni Gaudi and Frank Lloyd Wright.
+
+Related: US, India Officials Signal Trade Deal Talks at an Impasse 
+<https://www.bloomberg.com/news/articles/2026-10-05/us-india-officials-signal-trade-deal-negotiations-at-an-impasse?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+
+Greer wanted to focus on four areas: the weaponization of food in economic 
+disputes; the tolerance of forced labor’s use to make traded goods; cracking 
+down on structural excess industrial capacity; and reforming the most favored 
+nation (MFN) tariff system, a pillar of global trade rules since the General 
+Agreement on Tariffs and Trade went into effect in 1947.
+
+The end result? 
+
+A consensus among G20 ministers that using food as a weapon was beyond the 
+acceptable bounds. And, well, not much else toward the host’s four workstreams.
+
+The US got only Argentina and Mexico to sign on to a statement vowing 
+<https://ustr.gov/sites/default/files/files/Press/Releases/Statement%20on%20Eliminating%20Forced%20Labor%20in%20Global%20Supply%20Chains_final.pdf>
+ to do more to eliminate forced labor from supply chains. There was no 
+consensus on the need for action on structural excess industrial production 
+with “a handful of members” objecting. On the matter of reforming the MFN 
+system, a closing chair’s statement drafted by the US declared that the meeting 
+“marked the beginning of a serious and necessary deliberation.”
+
+The big tell in the closing statement 
+<https://ustr.gov/sites/default/files/files/Press/Releases/G20%20Chair's%20Statement.pdf>
+ coming out of Milwaukee was that the US was its lone signatory. When G20 
+finance ministers met last month in Asheville, North Carolina, the equivalent
+statement <https://home.treasury.gov/news/press-releases/sb0620> was backed by 
+everyone but China, which objected to just four of its 17 paragraphs.
+
+There’s an obvious reason for the reluctance. 
+
+The US’s interest in forced labor is tied to the tariffs of 10%-12.5% it 
+slapped on dozens of trading partners (including all of the G20) over the 
+summer as part of its efforts to rebuild Trump’s tariff wall after the Supreme 
+Court declared his original duties illegal. Those new tariffs are also being 
+challenged and faced tough questionsduring a hearing 
+<https://www.bloomberg.com/news/articles/2026-09-30/trump-s-latest-global-tariffs-face-tough-questions-from-us-court?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ last week.
+
+China and Overcapacity
+
+The US push on excess industrial capacity came amid growing concerns around 
+the world about surging Chinese exports. It also, however, came as Washington 
+threatens to impose yet more tariffs as part of an investigation into 16 
+trading partners. Those targets include many of the very countries concerned 
+about Chinese exports. Which means the US is targeting many of the very 
+counties it could rally to the cause.
+
+There is also widespread suspicion outside the US of the loose definition of 
+excess capacity Washington is throwing around. Which seems to be based on the 
+idea that producing more of anything than is needed domestically is an economic 
+crime.
+
+Read More: Europe Tries to Gauge How Much Pain It Can Take From China 
+<https://www.bloomberg.com/news/articles/2026-09-10/europe-is-trying-to-gauge-how-much-pain-it-can-take-from-china?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+
+We are still waiting for the result of the investigations launched earlier 
+this year. But as Christopher Padilla, who served at USTR and in the Commerce 
+Department during the administration of President George W. Bush, put it in a
+satirical post 
+<https://christopherpadilla1.substack.com/p/too-much-tequila?r=zlx1&utm_medium=ios>
+ over the weekend, the presumption appears to be “everyone is guilty.”
+
+There is a constituency eager to talk about how to respond to China’s 
+export-led economic policies and the distortions produced by its industrial 
+policies. But when the US is treating many of those potential allies like 
+economic cheaters for selling into a global market, why would they sign on?
+
+Podcast: Here’s Why China’s Exports are Flattening Rivals 
+<https://www.bloomberg.com/news/audio/2026-10-02/here-s-why-china-s-exports-are-flattening-rivals-podcast?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+
+Again, no one should get overly exercised about any G20 statement. The signal 
+coming out of Milwaukee, however, was yet another sign of a growing skepticism 
+of Trump’s trade project at home and abroad.
+
+Trump’s bid to remake the global trading system is well underway. At home, 
+though, it faces legal challenges and the uncomfortable political reality that 
+his tariffs are unpopular with voters heading to the polls in a month. And out 
+in the rest of the world, the project is facing open defiance fromhistorical 
+allies like Canada 
+<https://www.bloomberg.com/news/articles/2026-09-19/great-lakes-bind-us-canada-trade-imperiled-by-trump-tariffs?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ and a quieter resistance in diplomatic forums. Something’s not going to plan.
+
+Bloomberg’s Tariff Tracker 
+<http://www.bloomberg.com/graphics/trump-tariffs-tracker/?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ follows all the twists and turns of global trade wars.Click here 
+<https://www.bloomberg.com/economics/trade?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ for more of Bloomberg.com’s most-read stories about trade, supply chains and 
+shipping. Subscribe toFault Lines 
+<https://bbgevent.app/economics-subscribe/?utm_source=Newsletter>, a Bloomberg 
+Economics newsletter about how geoeconomics is reshaping business and markets.
+
+ 
+<https://sli.bloomberg.com/click?s=868612&stpe=default&li=20209326&m=11b724c487f61753eb1a7a4a5f3ef261&p=10052026110013&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868612&stpe=default&li=20209326&m=11b724c487f61753eb1a7a4a5f3ef261&p=10052026110013&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Charted Territory
+
+Eating costs | Global food prices extended gains in September, reaching the 
+highest since November 2022 as mounting geopolitical and weather disruptions
+roil the farm sector 
+<https://www.bloomberg.com/news/articles/2026-10-02/global-food-prices-extend-gain-to-highest-since-end-of-2022?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+. The United Nations’ index of food-commodity prices climbed 1.5% from August, 
+led by grains and sugar, according to a report from the Food and Agriculture 
+Organization. 
+
+Today’s Must Reads
+
+ * Bayer plans to invest $2.2 billion 
+<https://www.bloomberg.com/news/articles/2026-10-02/bayer-plans-2-2-billion-us-drug-plant-against-tariff-backdrop?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ in a new manufacturing site in Ohio, the latest in a series of investment 
+pledges by European pharmaceutical companies under pressure from the White 
+House to push down drug prices and boost US manufacturing. Meanwhile, Trump 
+cited major corporateinvestment plans 
+<https://www.bloomberg.com/news/articles/2026-10-04/trump-pitches-company-investment-to-ohio-voters-at-midterm-rally?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ in Ohio during a rally there.
+ * The UK is reportedly preparing to impose tariffs 
+<https://www.bloomberg.com/news/articles/2026-10-04/uk-expected-to-follow-eu-with-tariffs-on-chinese-evs-times-says?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ on Chinese electric vehicles to meet a key demand from the European Union. 
+Separately, Tesla enjoyed strong sales of its Model 3 vehicle in Canada during 
+the third quarter as shipments began toarrive from China 
+<https://www.bloomberg.com/news/articles/2026-10-02/tesla-tsla-gets-model-3-sales-boost-in-canada-after-carney-s-china-deal?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ this year.
+ * Trump said he won’t ban US diesel exports 
+<https://www.bloomberg.com/news/articles/2026-10-02/trump-says-us-to-hold-off-on-diesel-export-ban-after-g7-release?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+, after Group of Seven nations and their partners agreed to release some of 
+their emergency fuel stockpiles in a bid to bring down soaring prices.
+ * Vietnam’s economy 
+<https://www.bloomberg.com/news/articles/2026-10-03/vietnam-economic-growth-accelerates-to-9-95-in-third-quarter?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ accelerated more than expected in the third quarter on rising foreign 
+investment and factory output, putting the nation in reach of the government’s 
+ambitious double-digit growth goal for the year.
+ * Nike wants greater supply-chain flexibility 
+<https://www.bloomberg.com/news/articles/2026-10-02/nike-to-nearshore-more-production-as-it-seeks-to-shrink-itself?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ by producing goods closer to home and using more manufacturing and 
+distribution partners.
+ * Australia’s revenue from resource and energy exports 
+<https://www.bloomberg.com/news/articles/2026-10-01/australia-sees-global-commodity-woes-lifting-export-income-by-5?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ is forecast to rise almost 5% in the year through June 2027 as the conflicts 
+in the Middle East and Ukraine keep fuel costs elevated.
+Like Supply Lines?
+
+Don’t keep it to yourself. Colleagues and friends can sign up here 
+<https://www.bloomberg.com/account/newsletters/supply-lines?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+. We also publishEconomics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+, a briefing on the latest in global economics.
+
+For even more: Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_source=newsletter&utm_medium=email&utm_campaign=trade&cmpid=BBD100526_TRADE&utm_term=261005&utm_content=9701>
+ for unlimited access to trusted, data-driven journalism and gain expert 
+analysis from exclusive subscriber-only newsletters.
+
+How are we doing? We want to hear what you think about this newsletter. Let 
+our trade tsar know <mailto:brmurray@bloomberg.net>.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Supply 
+Lines newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/supply-lines?source=NLshare&cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/supply-lines?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBD100526_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261005&utm_content=9701>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/2zGZvYlIyLSHTEoS2DBCa8_7w57rfpQw8kBHKbg7mx3ButNyKHeJWvbdxipHTujL7kFw5SUxO4iFmW0mBDbI3wJ4tyGEPrvLps-OOC-a9z7U_R7SOBhDeG7cHIIMc82BiAlFeFdYpw29NAyi4g-NviSCndqrfY7ayhLNvjMOS1x-coOteUvAup7uFwAmFhtwXwp5kZs5fszOAIorCN301GJfT6zIpOlTHTPfsbLZF1CaR_2fplrHsic_jny3yICPVf5QFp35v_t-99eaTkWLCe3xSkL_1ICpYCUz9CE4t1gWwFoKuxrlcCS3itFg9sZ9gXXwB8XYfqP3B1ggfEK_nIccj3uXO9-l/8RwuLA0mJKI8262sGsgA6_e3ycX-4tnk/25>
