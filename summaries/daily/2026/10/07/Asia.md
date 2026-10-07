@@ -1,0 +1,11 @@
+• The Reserve Bank of India raised its benchmark rate by 25 basis points to 5.5% — the first hike in nearly four years — beating consensus expectations for a hold, while simultaneously upgrading its 2026 growth forecast to 7.1% from 6.7%.
+• Taiwan's Taiex has surged 72% year-to-date, outperforming South Korea's Kospi by roughly 23 percentage points last quarter — the widest margin since 2000 — as investors favor Taiwan's broader AI supply-chain exposure.
+• Japan's Prime Minister Takaichi signaled willingness to review spending and revenue plans if JGB yields move unexpectedly, adding fiscal uncertainty to an already complex policy backdrop.
+
+**India: Monetary Policy and the Trilemma**
+The RBI's decision to hike reflects broadening domestic inflation, but external forces appear equally consequential. With US 10-year Treasuries yielding 5.3% against approximately 7.2% on equivalent Indian paper, the India-US spread has compressed to near multi-decade lows, reducing the risk premium investors receive for rupee-denominated assets. Oil above $100 has amplified dollar demand, pushing the rupee toward record lows near 97 per dollar despite RBI intervention. Foreign-exchange reserves stand at approximately $786 billion following a $133 billion diaspora deposit mobilization, providing meaningful ammunition, but the RBI's room to diverge from global monetary conditions is visibly narrowing — a textbook expression of the impossible trinity.
+
+**Taiwan vs. Korea**
+The divergence in Asian AI equity performance reflects deeper structural differences. Taiwan offers exposure across chip design, manufacturing, packaging, networking, and servers, generating earnings upgrades that are volume-driven and therefore considered more durable. Korea's AI rally remains concentrated in Samsung and SK Hynix, leaving it exposed to questions about the durability of the memory upcycle. Bank of America fund manager surveys show 35% of respondents favor Taiwan as the primary Asian AI beneficiary, versus just 5% for Korea.
+
+---

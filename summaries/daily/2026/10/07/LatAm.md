@@ -1,0 +1,7 @@
+• Brazil's first-round presidential election results show right-wing candidate Flávio Bolsonaro within three percentage points of an outright majority; veteran lawmaker Ronaldo Caiado, who received 2.6 million first-round votes, has now backed Bolsonaro ahead of the October 25 runoff.
+• A Bolsonaro presidency is expected to deepen trade ties with Washington while preserving Brazil's broader export diversification strategy.
+
+**Brazil: Political Economy**
+The first-round outcome positions Bolsonaro as the frontrunner heading into the runoff, though the margin remains close enough that the result is genuinely uncertain. Caiado's endorsement, representing approximately 2.2% of first-round votes, may prove decisive given the narrow gap. Markets are likely to interpret a Bolsonaro victory as broadly positive for trade relations with the US, though analysts caution that his administration's policy mix — including posture toward China, fiscal management, and commodity export strategy — remains to be fully articulated. A recalibration of Brazil's trade policy is plausible under a Bolsonaro government, though the country's agricultural export base creates structural incentives to preserve relationships with multiple trade partners regardless of political alignment.
+
+---

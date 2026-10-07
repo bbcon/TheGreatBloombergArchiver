@@ -1,0 +1,11 @@
+• S&P 500 closed at an all-time high — its first since August — led by AI and mega-cap growth stocks, even as macro headwinds from $100 oil, 5.3% 10-year Treasury yields, and an elevated dollar have yet to fully register in equity valuations.
+• The US trade deficit widened sharply in August to its largest since early 2025, driven by a record surge in capital goods imports.
+• New York Fed research confirms tariffs have left consumer goods price levels durably higher, with a 10% tariff increase raising consumer prices roughly 0.25% after one year, one-third of the effect arising indirectly through domestic supply chains.
+
+**Equity Markets**
+The S&P 500 reached a new record on Tuesday, extending a rally concentrated almost entirely in large-cap AI and technology names. The Russell 2000 has surrendered nearly all of its year-to-date outperformance versus mega-caps, and value stocks have reached a fresh decade-low relative to growth — a historically anomalous configuration that orthodox factor theory would not predict. Q2 earnings from growth companies outpaced value peers by a margin described as unprecedented in recent history. Whether that differential persists will become clearer as Q3 earnings season begins next week. GMO's Ben Inker and John Pease have flagged rising equity issuance as a credible risk: forward multiples have already compressed roughly three points this year even as earnings rose, suggesting supply-demand dynamics in the equity market are tightening.
+
+**Macro and Policy Risks**
+Veteran strategist Jim Paulsen warns that the simultaneous presence of $100-plus oil, 5% Treasury yields, and an elevated dollar has historically preceded S&P 500 declines of up to 15% over three to five months. The Trump administration is scrambling to address a diesel shortage driven by Strait of Hormuz disruptions and Ukrainian strikes on Russian refineries, temporarily allowing tax-free off-road diesel on highways — a measure analysts view as insufficient to meaningfully reduce prices. Less than a month before midterm elections, elevated energy and food costs remain a political liability.
+
+---

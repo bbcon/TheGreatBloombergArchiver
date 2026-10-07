@@ -1,0 +1,11 @@
+• French 10-year OAT yields remain elevated at 4.88%, though the spread over German Bunds narrowed from 141 to 127 basis points in two sessions after Marine Le Pen pledged to cut the French deficit by three percentage points.
+• ECB Governing Council member Emmanuel Moulin stated explicitly that conditions for ECB intervention in French bond markets have not been met, offering no near-term backstop.
+• The Alternative for Germany secured a larger-than-expected majority for the top parliamentary post in Saxony-Anhalt, moving closer to controlling a regional government.
+
+**France: Spreads and Political Risk**
+The partial reversal in French OAT spreads reflects technical exhaustion after a parabolic move rather than fundamental reassurance. TS Lombard's Davide Oneglia notes that 150 basis points has been widely viewed as the threshold at which markets would begin to anticipate a policy response, making further spread widening beyond that level strategically complex to position for. Le Pen's deficit-reduction proposal centers on cutting EU contributions — a mechanism analysts including Macquarie's Viktor Shvets characterize as unrealistic. Signum Global's Nico Fitzroy cautions against treating Le Pen as "another Meloni": she faces fewer coalition constraints and has been moving in a more populist direction. With the presidential election still ahead and 256,000 students demonstrating in the streets, political risk remains unresolved. France's average debt duration exceeds eight years, providing more time than markets in the 2010-2012 crisis afforded Greece, but the comparison offers limited comfort given the structural deficit trajectory.
+
+**Defense and Energy Convergence**
+A separate structural theme is gaining traction: Europe's defense spending surge is increasingly overlapping with energy-transition investment. A Loom Strategy Centre report identifies 100 companies straddling both sectors, from batteries and grid infrastructure to fuel cells. The European Investment Bank quadrupled defense and security financing last year. Analysts at Bloomberg Intelligence estimate EU and UK government climate-resilience infrastructure spending could reach €500 billion over the next decade, benefiting industrial companies including Schneider Electric, ABB, and Siemens.
+
+---
