@@ -1,0 +1,11 @@
+• French 10-year OAT yields rose to 4.94%, with French government bonds handing investors a 4.6% loss year-to-date; nearly €215 billion of French corporate bonds now trade tighter than sovereign debt — an 18-fold increase since January 2026.
+• Germany more than doubled its 2026 growth forecast, driven by robust exports and a surge in government spending.
+• The Stoxx Europe 600 fell 0.9%; Stoxx 600 bank index posted its largest two-day decline since March, with Société Générale shares down roughly 25% over two months.
+
+**France as the Fiscal Stress Bellwether**
+France has emerged as the primary indicator of sovereign stress in developed markets. Political gridlock and fiscal deterioration have eroded confidence in French government debt to the point where corporate bonds from multinationals like L'Oréal are now perceived as safer by the market. Prime Minister Lecornu's decision to release diesel reserves reflects the political difficulty of implementing austerity as student protests mount over education funding. Marine Le Pen has simultaneously moved to displace Jordan Bardella atop the National Rally's 2027 presidential campaign, adding political uncertainty. The Bank of France governor warned that higher borrowing costs are a global challenge facing all countries.
+
+**EU-China Trade and German Policy**
+The EU's trade chief Maros Sefcovic opened two days of Beijing negotiations taking a notably more assertive posture, with safeguard measures on Chinese hybrid vehicle imports on the table. Separately, Chancellor Merz's cabinet blocked Cosco Shipping's proposed 80% acquisition of Hamburg freight forwarder Konrad Zippel, citing supply chain resilience and strategic dependency risks — a signal that German policy on Chinese investment is hardening despite strong bilateral trade ties. Germany's upgraded growth forecast provides some fiscal cushion, though its climate finance spending fell more than one-fifth to €4.75 billion in 2025, below its €6 billion annual pledge.
+
+---
