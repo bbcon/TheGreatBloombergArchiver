@@ -1,0 +1,9 @@
+• Pre-COP31 talks concluded in Fiji with approximately 4,000 delegates attending; roughly 30 nations endorsed the Taku Pakasoa declaration supporting the 1.5°C guardrail and fossil fuel transition commitments, though major emitters showed limited willingness to accelerate action.
+• Of approximately $16 billion in climate finance pledged to Pacific nations since the 2015 Paris Agreement, more than $5 billion remains undisbursed — a focal point of frustration at the Fiji meetings.
+• COP31 formal negotiations open November 9 in Antalya, Turkey, with Australian officials leading the process under a hosting compromise arrangement.
+
+**COP31 Pre-Negotiations**
+The Fiji Pre-COP meetings produced incremental procedural progress but no substantive shift in major-country ambition. The persistent gap between climate finance pledges and disbursements — with $5 billion of $16 billion in Pacific commitments still undelivered — illustrates the systemic implementation deficit that has characterized multilateral climate finance since Paris. The Asian Development Bank noted that current adaptation finance flows meet only 26% of projected annual Pacific needs. The Taku Pakasoa declaration's endorsement by approximately 30 countries, including Australia, UAE, and Singapore, signals coalition-building intent but falls short of the major-emitter buy-in required for transformative outcomes. The fossil fuel fault line remains unresolved: progress since COP28's landmark transition-away language has been limited, with producer-nation resistance blocking implementation roadmaps at successive summits. COP31's political ambitions appear constrained.
+
+**Global Rooftop Solar**
+A Global Rooftop Solar Pledge targeting 300 million panel installations by 2030 was announced at Pre-COP, representing an incremental supply-side commitment within the broader energy transition architecture.

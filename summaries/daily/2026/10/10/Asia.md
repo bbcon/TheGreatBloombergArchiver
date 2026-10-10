@@ -1,0 +1,11 @@
+• Indonesia's forest fire crisis has produced the worst regional haze episode in over a decade, with satellite-detected hotspots in September reaching their highest levels since 2015, disrupting aviation, schools, plantations, and mining operations across Borneo and Sumatra.
+• Malaysia ordered more than 2 million students to stay home on October 9 as air quality deteriorated to hazardous levels; flights were disrupted or rerouted across Malaysia and Indonesia.
+• India's GDP per capita stands at approximately $3,000 annually, underscoring the scale of the development gap relative to the government's $10,000 per capita target — a key intermediate waypoint toward the 2047 "Viksit Bharat" development goal.
+
+**Southeast Asia: Haze Crisis**
+The haze blanketing much of Southeast Asia reflects a confluence of structural and cyclical factors: decades of industrial-scale land clearance, a record El Niño-driven drought cycle, and the particular combustibility of degraded peatlands across Borneo and Sumatra. The fires are generating measurable economic disruption — plantation and mining operations have curtailed outdoor working hours, river transport of timber, palm oil, and coal has slowed due to low water levels, and tourism and aviation face ongoing pressure. ASEAN's response remains constrained by its non-interference framework and weak data-sharing architecture, limiting coordinated remediation. The episode may intensify pressure on regional governments ahead of COP31.
+
+**India: Development Trajectory**
+India's GDP has roughly doubled since 2014 to approximately $4 trillion, yet per capita income of ~$3,000 places the country in lower-middle-income status. The government's modeling envisions per capita GDP exceeding $18,000 by 2047, implying sustained 7% annual growth — a pace few economies have maintained over two decades. The New Economy Forum convening in New Delhi from October 13–15 will provide a platform for debate on capital costs, AI policy adaptation, and emerging-market investment flows.
+
+---
