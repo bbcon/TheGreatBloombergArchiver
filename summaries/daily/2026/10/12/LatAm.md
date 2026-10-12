@@ -1,0 +1,10 @@
+• Brazil's presidential runoff on October 25 is in focus after a new poll showed right-wing challenger Flávio Bolsonaro leading incumbent President Lula da Silva, building on momentum from a stronger-than-expected first-round performance.
+• Panama faces significant economic disruption after its strongest earthquake in more than seven decades on Friday; Finance Minister Chapman has contacted the World Bank, IMF, and other lenders for emergency resources, with US Geological Survey preliminary estimates placing economic losses above $1 billion.
+
+**Brazil: Political Uncertainty Ahead of Runoff**
+The October 25 presidential election has emerged as the region's dominant political risk event. Bolsonaro's lead in the latest polling represents a meaningful shift from expectations heading into the first round, and his stated intention to maintain working relationships with both the US and China — if elected — suggests a pragmatic rather than ideologically rigid foreign economic policy. The outcome carries material implications for Brazilian fiscal policy, trade orientation, and commodity sector governance. Market participants will be watching the polls closely over the next two weeks, with potential for elevated volatility in Brazilian assets as the runoff approaches.
+
+**Panama: Natural Disaster and Fiscal Stress**
+The earthquake's economic impact — preliminary estimates exceeding $1 billion — arrives at a challenging moment for Panama's public finances and adds to a broader pattern of climate and natural disaster shocks testing Latin American fiscal buffers. The government's rapid outreach to multilateral lenders reflects the scale of the challenge. Senegal's invocation of the G20 Common Framework for debt restructuring, discussed at this week's IMF-World Bank meetings in Bangkok, serves as a broader reminder that debt vulnerabilities in smaller economies remain a live concern even as larger emerging markets have demonstrated relative resilience to the current episode of global bond market turbulence.
+
+---

@@ -1,0 +1,11 @@
+• France's sovereign bond market remains under acute stress, with yields at levels not seen in nearly a quarter century; the IFS warns UK Chancellor Healey must identify £35 billion in fiscal headroom ahead of the budget.
+• The EU agreed to cap Chinese hybrid vehicle imports at 350,000 units annually, with measures set to take effect as soon as December 1, in an effort to manage a trade deficit with China running at nearly €400 billion on a rolling 12-month basis.
+• Germany more than doubled its 2026 GDP growth forecast to 1.3% — the fastest pace since 2017 — driven by robust exports and a surge in government spending, though weak consumer activity remains a drag.
+
+**France: Fiscal Credibility Under Pressure**
+France's fiscal situation has deteriorated to the point where bond market pressure is now the dominant constraint on government policy. Yields have risen to multi-decade highs as investors question the government's ability to stabilize its debt trajectory, with nationwide youth protests demanding €10 billion in additional education funding adding a political dimension to an already strained fiscal arithmetic. The European dimension matters: analysts are watching closely for signs of contagion to other eurozone sovereigns, drawing comparisons to the 2011–12 debt crisis period, even if current institutional architecture — including the ECB's Transmission Protection Instrument — provides some buffer.
+
+**Trade and Macro**
+Germany's upward revision to its 2026 growth forecast — to 1.3% from a prior estimate closer to 0.5% — offers a modestly brighter signal for the eurozone's largest economy, though the drivers (export strength and fiscal stimulus) may not be durable. The EU-China hybrid vehicle deal, while symbolically significant, appears unlikely to materially rebalance a trade relationship running a deficit of approximately 2.4% of EU GDP; analysts at Wells Fargo note that more forceful EU action may be required by mid-to-late 2027 should progress remain insufficient.
+
+---

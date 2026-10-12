@@ -1,0 +1,11 @@
+• India's rupee surged 1.2% — its largest single-day gain since April — to 95.60 per dollar after the Reserve Bank of India deployed its most forceful currency defense measures in more than a decade, drawing a clear line at the 97 level.
+• North Korea fired multiple ballistic missiles off its east coast, its fourth weapons test in approximately one month, heightening regional security concerns.
+• The collapsed IPO of Firmus Grid, an Nvidia-backed Australian data center operator that pulled a $5.5 billion deal, is making investors markedly more selective toward AI infrastructure listings across Asia.
+
+**India: Currency Defense and Domestic Tensions**
+The RBI's weekend intervention represents a significant escalation in its defense of the rupee, which had been approaching a record low near 97 per dollar. The scale and breadth of the measures — described as among Asia's most stringent currency curbs — appear to have succeeded in stabilizing sentiment in the near term, with the 1.2% single-session rally the largest since April. Sustaining the recovery may prove more difficult, however, as elevated oil prices — Brent above $105 — and continued capital outflows remain structural headwinds for the currency. Separately, New Delhi faces a third consecutive day of domestic unrest, with opposition parties marching to the Supreme Court and a youth-led movement protesting a contentious voter-roll revision, adding political risk to an already complex macro backdrop.
+
+**Capital Markets**
+The implosion of Firmus Grid's attempted $5.5 billion IPO — pulled after investors resisted a valuation of $30 billion — is reverberating through Asia's primary market. The episode illustrates growing investor skepticism toward AI infrastructure listings that depend heavily on projected rather than realized earnings. Maas Group, which holds a 3.2% stake in Firmus and acts as a contractor, lost more than A$1 billion in market value, functioning as a de facto proxy for the failed deal. Tencent, meanwhile, is proceeding with a planned $5 billion bond, telling fixed-income investors the proceeds will fund AI capital expenditure.
+
+---
