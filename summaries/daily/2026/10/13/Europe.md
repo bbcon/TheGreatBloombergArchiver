@@ -1,0 +1,11 @@
+• The IMF's World Economic Outlook, released at its Bangkok annual meetings, raised the 2026 global growth forecast marginally to 3.1% while flagging surging sovereign bond yields as the top financial stability risk — directly relevant to France and the UK.
+• French high school students entered a third consecutive week of protests, coinciding with the start of parliamentary budget debate; political disruption is measurably weighing on business confidence.
+• Hungary's Prime Minister Peter Magyar faces a credible test of his euro-adoption roadmap, which requires cutting the fiscal deficit by more than half over three years to meet 2030 membership criteria.
+
+**Fiscal Stress and Sovereign Markets**
+European sovereign debt dynamics were among the most discussed themes at the Bloomberg New Economy Forum in New Delhi, where Blackstone President Jon Gray argued that fiscal strains in France and the UK represent a more pressing near-term risk than US debt dynamics, citing lower growth rates and wide deficits. The IMF echoed this framing, urging the UK chancellor to "stay the course" on fiscal consolidation while using cost-of-living support sparingly. A Bank of England official separately indicated that faster-than-expected UK economic growth strengthens the case for a further rate hike. European equities outperformed Asian peers on Tuesday, aided by declining oil prices and easing bond yields, though the macro backdrop remains fragile.
+
+**Corporate and Political Developments**
+LVMH shares slipped 1.5% in Paris trading after the luxury group confirmed double-digit sales declines in mainland China last quarter, threatening a broader luxury sector recovery thesis. The EU finalized a deal capping Chinese hybrid vehicle imports at 350,000 units annually from December, rising 6% per year — a measure welcomed by European carmakers but prompting Beijing to reserve WTO dispute rights. France's budget process is beginning under conditions of elevated political noise, with student unrest adding to uncertainty around the government's fiscal consolidation credibility.
+
+---

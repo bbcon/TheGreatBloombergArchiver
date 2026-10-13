@@ -1,0 +1,182 @@
+Subject: Energy Daily: Nuclear’s quick fix
+Date: Tue, 13 Oct 2026 11:38:39 +0000
+
+US Nuclear’s Low-Hanging Fruit Is Being Gobbled Up
+Big Tech has found a faster way to get more nuclear power, but there’s not 
+much left to go around. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-10-13/us-nuclear-s-low-hanging-fruit-is-being-gobbled-up?cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+ 
+<https://www.bloomberg.com/industries/energy?cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=20377843&m=11b724c487f61753eb1a7a4a5f3ef261&p=10132026113839&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=20377843&m=11b724c487f61753eb1a7a4a5f3ef261&p=10132026113839&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+
+Welcome to our guide to the commodities driving the global economy. Today, 
+energy reporter Will Wade looks at Big Tech’s rush to squeeze more power from 
+existing nuclear plants — and the limits of how much more they can provide.
+
+Interest in the US nuclear industry is at its highest in decades, driven not 
+only by the AI data center boom but by broader growth in industrial power 
+demand. But the country’s next new conventional reactor is still years away.
+
+In the meantime, Big Tech companies have latched on to a faster and cheaper 
+way to secure additional nuclear energy to keep data centers humming: upgrading 
+existing power plants.
+
+The industry calls these projects “uprates,” which largely entails installing 
+new components 
+<https://www.nrc.gov/licensing-applications/operating-reactor-licensing/power-uprates>
+. Operators can swap in more efficient turbines or generators, fine-tune 
+measurement systems, replace transformers, install better pumps — there are 
+numerous options for eking out more megawatts.
+
+Constellation Energy Corp. last week added to the list of US uprate projects.
+
+Spurred on by a 20-year purchase agreement with Alphabet Inc.’s Google, 
+Constellation said it’s planning to spend $4.3 billion to juice 11 reactors to 
+add a total of 890 megawatts of new nuclear capacity — almost equivalent to 
+what one average-size conventional reactor can deliver. The first power is 
+expected to arrive as soon as 2028.
+A cooling tower at the Constellation Nine Mile Point Clean Energy Center in 
+Scriba, New York.Photographer: Lauren Petracca/Bloomberg
+That deal came just a week after Constellation agreed to uprate a plant in 
+Maryland and supply Amazon.com Inc. with 190 megawatts. There are similar deals 
+to supply Walmart Inc. and Meta Platforms Inc.
+
+If there’s a catch, it’s that there’s a finite amount of additional capacity 
+to be squeezed out of the nation’s existing reactor fleet.
+
+The remaining pickings are slim. Across the biggest US power grid, operated by 
+PJM Interconnection LLC, there’s just one potential uprate project 
+<bbg://news/stories/TMSECBRKV2UV> whose output isn’t yet spoken for, according 
+to Bloomberg Intelligence: a 112-megawatt boost planned for the Salem plant in 
+New Jersey, majority-owned by Public Service Enterprise Group Inc.
+
+Constellation has already hit its limit on uprates. “Google basically bought 
+everything that was left,” spokesman Paul Adams said last week.
+
+Once the current fleet has been maximized, hyperscalers will have to confront 
+the fact that the timeline for new nuclear capacity in the US may be several 
+years at best — an uncomfortable fact for an industry looking at every option 
+to meet AI demand.
+
+—Will Wade, Bloomberg News
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=20377843&m=11b724c487f61753eb1a7a4a5f3ef261&p=10132026113839&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=20377843&m=11b724c487f61753eb1a7a4a5f3ef261&p=10132026113839&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Chart of the day
+
+Oil tankers with links to Japan 
+<https://www.bloomberg.com/news/articles/2026-10-13/japan-controlled-tankers-return-to-middle-east-after-months-away?cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+ appear to be picking up Middle East cargoes in the region once again, a 
+tentative but significant return for the first time since the war began that 
+speaks to soaring freight and logistics costs. Over more than seven months of 
+conflict in the Persian Gulf, Japan’s risk-averse refiners and shipowners 
+stayed away from the wider area, relying instead on distant ship-to-ship 
+transfers off the Indian coast or in Southeast Asia. That appears to be 
+changing.
+
+Top stories
+
+BP Plc cut net debt by around $8 billion 
+<https://www.bloomberg.com/news/articles/2026-10-13/bp-debt-shrinks-with-boost-from-oil-and-gas-trading-refining?cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+ in the past three months, reaching its 2027 target early after surging prices 
+drove windfall profits from energy trading and oil refining.
+
+President Donald Trump’s deal for Russian diesel 
+<https://www.bloomberg.com/news/articles/2026-10-13/trump-s-diesel-deal-irks-allies-and-is-unlikely-to-reduce-prices?cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+ exposed the US to legal questions, opened a rift with his Republican allies 
+and European leaders and heightened tensions with Ukraine — all in exchange for 
+an outcome that experts suggest is unlikely to succeed.
+
+Suspicious oil trades earlier this year prompted a CFTC referral for a 
+potential insider-trading investigation, Bloomberg News reports, yet a senior 
+adviser to the agency’s Trump-appointed chairman later told a supervisor to
+retract the referral 
+<https://www.bloomberg.com/news/features/2026-10-13/cftc-staff-told-to-retract-analysis-of-suspicious-oil-trades-on-iran?cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+.
+
+A severe El Niño is poised to drive a warmer-than-usual winter 
+<https://www.bloomberg.com/news/articles/2026-10-13/el-nino-to-bring-warmer-asian-winter-easing-energy-demand?cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+ across Asia, potentially curbing energy demand and offering some relief from 
+the strains caused by the US-Iran war.
+
+Britain’s grid operator sought emergency assistance 
+<https://www.bloomberg.com/news/articles/2026-10-12/uk-grid-seeks-emergency-french-power-to-secure-supplies?cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+ from France on Monday evening, requesting as much as 1,200 megawatts of 
+additional electricity through an undersea interconnector to help maintain 
+power system security. It’s the largest-such request for help since at least 
+2024.
+
+BNEF today
+
+Russia’s liquefied natural gas exports reached an eight-month high during Oct. 
+5–11 as the impact of summer maintenance faded and the Arctic LNG 2 project 
+continued to ship cargoes, according toBloombergNEF 
+<bbg://news/stories/TMU4U6KGIFQ0>. Sakhalin underwent annual maintenance from 
+mid-June, while maintenance at Yamal also weighed on output in August. With 
+production recovering post maintenance, Russia’s weekly exports rose to their 
+highest level since January.
+
+More from Bloomberg
+
+ * Economics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT101326_ENERGY&utm_term=261013&utm_content=10025>
+ for what the changing landscape means for policymakers, investors and you
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT101326_ENERGY&utm_term=261013&utm_content=10025>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Green Daily 
+<https://www.bloomberg.com/account/newsletters/green?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT101326_ENERGY&utm_term=261013&utm_content=10025>
+ for the latest in climate news, zero-emission tech and green finance
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT101326_ENERGY&utm_term=261013&utm_content=10025>
+ for daily insights into supply chains and global trade
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT101326_ENERGY&utm_term=261013&utm_content=10025>
+ to get most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Energy 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/elements?source=NLshare&cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/elements?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBBXT101326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261013&utm_content=10025>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/kGXxvAWhSvIhLuAYjHbjMGxQM-Iy2J08aiXQNO1ojfrzRLhIuIdwM2z3MeRoH2rhaUUKaE7SA6l4ogti0_rW-KJiIjpRbbMP0qUG0aHseJGBM8Iof9MkPHevcds4o0MelmINubiQ_bz8RgQJDqNfl7dpUHVZStc6qqJQGolnizo-i3KxC19rmY5LUaFSc8vVHiu713fFgBozhRLY_W6lrWQZrBf35XraTcjCZ6g53p1T1DmRAuE0KxUxnWnMpY4JR2hA7R1h1iq8yQqfFMYcG1QXLSRp5rDBOw2sTxpNXjkj70oqyjspGZO6kG9May7eKXFcl23ksFG4tWUh0SQNAlS5BHawPivB/u3AWo6D4HqFhwwz6jVoui7FHHYw4khvu/25>

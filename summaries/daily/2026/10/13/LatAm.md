@@ -1,0 +1,6 @@
+• Brazil's Supreme Court Justice Alexandre de Moraes authorized Senator Flávio Bolsonaro to visit former President Jair Bolsonaro, who remains under house arrest less than two weeks before the presidential runoff election — a politically significant development ahead of a closely watched vote.
+
+**Political Economy**
+The authorization of the family visit injects a symbolic element into Brazil's presidential runoff campaign at a sensitive moment. The outcome of the election will have material implications for fiscal policy, central bank independence, and Brazil's broader macroeconomic trajectory. Separately, in Mexico, the president of the Business Coordinating Council cited persistent crime, judicial overhaul uncertainty, and tougher tax enforcement as factors weighing heavily on corporate investment sentiment — a combination that may constrain private-sector activity and complicate the Banco de México's task of supporting growth without reigniting inflation. No major macro data releases from the region were reported for this period.
+
+---
