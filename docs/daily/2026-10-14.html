@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, October 14, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, October 14, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>September CPI due imminently; consensus at 3.6% YoY, with prediction market trader Brian Golden projecting 3.66% — headline expected to accelerate on energy while core moderates.</li><li>Bank earnings season mixed: JPMorgan missed estimates; Citigroup, Goldman, and Wells Fargo met or beat, yet the KBW Bank Index underperformed, down ~6% since Q2 even as broad markets rose 4.6%.</li><li>NY Fed President Williams affirms one more hike is appropriate in 2026 but sees no need for further tightening in 2027, easing market anxiety around the Fed's post-Jackson Hole hawkish tilt.</li></ul>
+<p class="para-title" style="color:#5597cb;">Macro and Monetary Policy</p>
+<p class="para-body">September CPI data — the most consequential near-term release — arrives today, with Bloomberg consensus at 3.6% YoY. Headline inflation is expected to have accelerated driven by energy costs, while core is seen moderating. The outcome carries direct implications for the Fed's path: NY Fed President John Williams stated Wednesday that one additional hike remains appropriate this year but signaled no further tightening is warranted in 2027. That guidance modestly softened rate expectations, with futures markets repricing accordingly. The IMF, meeting in Bangkok, reiterated that US growth alone is insufficient to stabilize its debt trajectory — projecting federal interest payments reaching 5.7% of GDP by 2031.</p>
+<p class="para-title" style="color:#5597cb;">Banking and Equity Markets</p>
+<p class="para-body">Q3 bank earnings delivered a nuanced picture. JPMorgan, Citigroup, and Wells Fargo combined for $56.5 billion in net interest income — a fifth consecutive quarterly record — yet share prices were largely unrewarding. Fixed-income trading revenue disappointed broadly, with JPMorgan posting its first year-on-year FICC decline in over two years. Equities desks outperformed strikingly: Goldman's equities revenue rose 72% quarter-on-quarter. Bank of America was separately fined over $1.2 billion for money laundering and sanctions violations. S&P 500 futures traded modestly higher ahead of the CPI print, with semiconductor earnings expectations continuing to underpin the broader bull market. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>China September exports surged 36% YoY — the fastest pace since February and well above the 25% August reading — driving the nine-month trade surplus to $938 billion, on pace to exceed the $1.2 trillion full-year record set in 2025.</li><li>ASML raised its annual sales forecast for a third consecutive quarter, citing insatiable AI-driven chip equipment demand; Asian equities initially erased gains on the print before stabilizing.</li><li>India's rupee strengthened 0.6% to 94.75 per dollar as the RBI intervened directly and the central bank governor signaled further measures to curb speculative FX positioning.</li><li>Singapore's central bank unexpectedly left monetary policy unchanged, citing expectations that the energy shock and AI boom will ease in 2027.</li></ul>
+<p class="para-title" style="color:#e07b39;">China Trade</p>
+<p class="para-body">China's export data for September represented a decisive beat, with shipments accelerating to 36% YoY growth — driven disproportionately by high-tech products, which surged nearly 64%. The data reflects two compounding dynamics: an AI-fueled explosion in global demand for semiconductors and related inputs, and the trade-diversion effect of Trump's tariff regime forcing Chinese producers to redirect volumes. Critically, this is no longer purely a story of cheap goods — rising input costs have fed through to Chinese export prices, complicating the disinflationary narrative that benefited trading partners for years. Brussels and Beijing reached a preliminary agreement capping Chinese hybrid vehicle imports, and Germany signaled it will push for broader EU quotas across additional goods categories, raising the probability of further trade friction.</p>
+<p class="para-title" style="color:#e07b39;">Regional Markets and Central Banks</p>
+<p class="para-body">India's rupee found support from direct RBI dollar sales and forward guidance from the governor on FX intervention, extending a two-session 1.5% recovery to 94.75. Hong Kong's SFC launched its broadest-ever enforcement action in the IPO market, suspending a stock and restricting HK$4.7 billion in assets across 31 brokerages in an operation targeting IPO-rigging syndicates. BHP announced 300 redundancies at its Pilbara iron ore operations, attributing the cuts to lower iron ore prices and elevated freight costs. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>ECB Governing Council member Pierre Wunsch stated the ECB "will probably have to hike again," though declined to specify timing; President Lagarde separately cautioned that elevated energy-driven inflation has yet to produce second-round effects.</li><li>ASML raised its full-year sales outlook for a third straight quarter, citing demand for chip-making equipment outstripping its production capacity through at least 2028; shares dipped modestly on Tradegate despite the upbeat guidance.</li><li>UK CFO survey by Deloitte found 52% of large-company finance chiefs expect to cut headcount due to AI adoption within the next year, with most saying they have achieved less than a quarter of anticipated AI-driven changes.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">ECB Policy</p>
+<p class="para-body">The ECB's internal debate over further tightening sharpened Wednesday. Wunsch's explicit statement that additional hikes are likely represents the clearest hawkish signal since the two increases already delivered this year. Lagarde's simultaneous emphasis on the absence of second-round inflation effects introduces a genuine tension: if wage growth remains contained, the case for additional tightening weakens even as energy prices keep headline CPI elevated toward 4%. The IMF, meeting in Bangkok, specifically flagged France's fiscal credibility as a concern requiring timely budget approval — a sentiment echoed by Blackstone's Jon Gray and Fed Governor Christopher Waller at Bloomberg's New Economy Forum in India. France's fiscal strains remain a distinct tail risk for European sovereign spreads.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate and Labor</p>
+<p class="para-body">ASML's third consecutive forecast upgrade underscores the durability of AI-driven capex in semiconductor equipment, though the market's tepid reaction — shares slipping despite the raise — may reflect stretched valuations or concern about AI spending sustainability. The Deloitte CFO survey offers an early quantitative signal of AI's labor market impact in the UK: with adoption still in early stages and two-thirds of executives estimating they have captured under a quarter of expected efficiency gains, displacement pressures appear set to intensify over the medium term. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>BHP workers at the Escondida copper mine in Chile are voting on a tentative wage agreement that would avert a strike at the world's largest copper operation — an outcome with meaningful near-term implications for global copper supply.</li><li>Thunderstorms and hail struck Santiago days after a destructive mudslide, compounding weather-related disruptions in Chile's capital.</li></ul>
+<p class="para-title" style="color:#c0392b;">Commodity and Corporate Developments</p>
+<p class="para-body">The Escondida vote is the most consequential near-term development for the region. A ratified agreement would remove a significant supply risk from the copper market at a moment when freight costs and Middle East-related logistics disruptions are already straining commodity supply chains globally. Copper prices have been supported by AI infrastructure buildout and electrification demand; a strike at Escondida would tighten spot markets materially. Chile's broader macro backdrop is complicated by the ongoing severe weather — the mudslide and subsequent storms add infrastructure and fiscal pressure in a country already navigating slowing Chinese demand for copper at the margin, as BHP's Pilbara iron ore job cuts illustrate the asymmetric impact of softening commodity prices on mining operations globally. No other significant macro data releases or central bank decisions were reported for the broader Latin American region during this period. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Iranian attacks on Strait of Hormuz shipping have surged, with the cost of delivering a 2-million-barrel US crude cargo to Asia now reaching approximately $77 million ($38/barrel, or ~40% of WTI) — creating genuine margin pressure on refineries outside the US.</li><li>A Houthi missile struck Saudi Aramco's executive headquarters in eastern Saudi Arabia, causing a fire and adding fresh uncertainty to Persian Gulf energy supply recovery.</li><li>The IMF warned that high sovereign debt and rising yields risk a self-reinforcing feedback loop, with global public debt projected to exceed 100% of GDP by 2030 and average sovereign borrowing costs rising to 3.7% by 2031 from 2.3% in 2021.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Energy and the Strait of Hormuz</p>
+<p class="para-body">The Iran conflict is fundamentally redrawing oil logistics. The IEA's monthly report flagged "economic run cuts" at refineries outside the US as a genuine risk: with freight consuming roughly 40% of the value of a WTI barrel delivered to Asia, headline fuel prices are not translating into refinery margins. European refiners are reportedly experiencing negative margins on some runs. Saudi Arabia is planning a 40% expansion of its Red Sea pipeline capacity to bypass the Strait, but the Houthi threat to Red Sea shipping — as evidenced by the Aramco headquarters strike — limits the utility of that workaround. Qatar has adapted through covert routing via Oman, using dark-ship tactics to restore LNG export flows, but the broader system remains fragile. Brent was near $105-107 on Wednesday.</p>
+<p class="para-title" style="color:#8b5cf6;">Fiscal Sustainability and Monetary Policy Divergence</p>
+<p class="para-body">The IMF's feedback-loop warning crystallizes a macro tension visible across multiple regions simultaneously: sticky energy-driven inflation requires tighter monetary policy, but higher rates accelerate debt service costs for governments already carrying elevated debt loads. The US faces interest payments of 5.7% of GDP by 2031; France faces credibility questions over its budget timeline; and the ECB is weighing additional hikes despite fiscal fragility in its periphery. The Bank of America global fund manager survey found a majority now expects long-term rates to decline from here — but the IMF's structural analysis suggests this optimism may be premature if energy prices remain elevated and fiscal consolidation is delayed.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

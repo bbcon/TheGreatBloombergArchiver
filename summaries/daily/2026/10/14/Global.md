@@ -1,0 +1,11 @@
+• Iranian attacks on Strait of Hormuz shipping have surged, with the cost of delivering a 2-million-barrel US crude cargo to Asia now reaching approximately $77 million ($38/barrel, or ~40% of WTI) — creating genuine margin pressure on refineries outside the US.
+• A Houthi missile struck Saudi Aramco's executive headquarters in eastern Saudi Arabia, causing a fire and adding fresh uncertainty to Persian Gulf energy supply recovery.
+• The IMF warned that high sovereign debt and rising yields risk a self-reinforcing feedback loop, with global public debt projected to exceed 100% of GDP by 2030 and average sovereign borrowing costs rising to 3.7% by 2031 from 2.3% in 2021.
+
+**Energy and the Strait of Hormuz**
+
+The Iran conflict is fundamentally redrawing oil logistics. The IEA's monthly report flagged "economic run cuts" at refineries outside the US as a genuine risk: with freight consuming roughly 40% of the value of a WTI barrel delivered to Asia, headline fuel prices are not translating into refinery margins. European refiners are reportedly experiencing negative margins on some runs. Saudi Arabia is planning a 40% expansion of its Red Sea pipeline capacity to bypass the Strait, but the Houthi threat to Red Sea shipping — as evidenced by the Aramco headquarters strike — limits the utility of that workaround. Qatar has adapted through covert routing via Oman, using dark-ship tactics to restore LNG export flows, but the broader system remains fragile. Brent was near $105-107 on Wednesday.
+
+**Fiscal Sustainability and Monetary Policy Divergence**
+
+The IMF's feedback-loop warning crystallizes a macro tension visible across multiple regions simultaneously: sticky energy-driven inflation requires tighter monetary policy, but higher rates accelerate debt service costs for governments already carrying elevated debt loads. The US faces interest payments of 5.7% of GDP by 2031; France faces credibility questions over its budget timeline; and the ECB is weighing additional hikes despite fiscal fragility in its periphery. The Bank of America global fund manager survey found a majority now expects long-term rates to decline from here — but the IMF's structural analysis suggests this optimism may be premature if energy prices remain elevated and fiscal consolidation is delayed.
