@@ -1,0 +1,11 @@
+• Brazil's presidential runoff on October 25 is tightening: incumbent Lula led the first round 48.2% to 45% nationally, but recent polling suggests the gap is narrowing as Bolsonaro consolidates support.
+• Lula's government secured Senate approval of legislation shortening the workweek without pay reductions and unveiled a micro-entrepreneur debt forgiveness proposal — measures aimed at shoring up urban and lower-income voter support ahead of the runoff.
+• Mexico's export composition is shifting structurally: hardware exports to the US have surpassed automobile exports for the first time, driven by data-center and AI-related supply chain demand, though domestic value-added remains limited by reliance on imported components.
+
+**Brazil: Runoff Dynamics**
+The Amazon highway debate encapsulates the central tension in Brazil's election: Lula's effort to reconcile environmental commitments with the economic development aspirations of the country's poorest regions. Bolsonaro's explicit support for expanded Amazon agricultural access appeals to the same constituencies but carries sharply different policy implications for deforestation trajectories. With approximately 2 million first-round votes separating the candidates nationally, both campaigns are targeting marginal voters intensively. Lula's legislative victories in the Senate this week reflect a governing coalition still capable of delivering concrete policy outcomes — a potentially useful contrast heading into the final stretch.
+
+**Mexico: Structural Export Shift**
+The emergence of hardware as Mexico's leading US export category is a notable structural development with medium-term implications for growth and trade relationships. However, HSBC economists note that domestic value-added in hardware production remains modest relative to autos, limiting the near-term GDP multiplier. The US is reportedly pressing Mexico to adopt rules preventing third-country tariff circumvention — a constraint that could cap the upside from further trade-flow redirection.
+
+---

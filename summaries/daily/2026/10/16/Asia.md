@@ -1,0 +1,12 @@
+• Indonesia's Jakarta Composite Index plunged 11.6% — its worst single-day decline since January 1998 — after MSCI warned it may reclassify Indonesian equities to standalone-market status, bypassing frontier entirely.
+• China's equity regulators intervened to stabilize markets, urging state funds and companies to buy shares as the Shenzhen benchmark trades approximately 10% lower year-to-date; Q3 growth appears on course to undershoot the 2026 official target for a second consecutive quarter.
+• China agreed in principle to cap hybrid car exports to the EU at 350,000 units annually, a managed-trade concession with echoes of US-Japan voluntary export restraints of the 1980s.
+• Taiwan's benchmark equity index has risen 62% year-to-date, the world's best-performing major gauge, creating unusual talent attrition in the fund management industry.
+
+**Indonesia: MSCI Reclassification Risk**
+MSCI's warning was more severe than market participants anticipated: rather than a straightforward demotion to frontier status, the index provider is evaluating a direct downgrade to standalone-market classification, which would remove Indonesia from mainstream global indexes entirely. Goldman Sachs estimated passive outflows could reach $13 billion in an extreme scenario; Citigroup characterized a standalone outcome as "unambiguously worse." The Jakarta exchange announced plans to seek clarification from MSCI, but analysts see little prospect of near-term stabilization absent a clear reform commitment. Bank Indonesia faces mounting pressure to raise rates at its next meeting, complicating an already-challenging growth backdrop for President Prabowo Subianto's administration.
+
+**China: Trade and Growth**
+The EU hybrid-car deal limits aggregate export damage — Bloomberg Economics estimates a roughly 0.2% reduction in China's global exports — but the agreement may embolden Brussels to pursue concessions in additional sectors including chemicals, furniture, and potentially pharmaceuticals. China's trade surplus with the EU reached a record $34.8 billion in September, approximately 20% above year-ago levels, sustaining the underlying pressure for further EU action. Domestically, Beijing's equity market stabilization intervention reflects concern that stimulus measures announced earlier this year arrived too late to materially influence 2026 growth outcomes.
+
+---

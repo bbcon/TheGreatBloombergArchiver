@@ -1,0 +1,11 @@
+• The EU is preparing new trade powers that could completely block market access for countries deemed to be attacking the bloc's economy — a proposal EU leaders asked the European Commission to develop by year-end, primarily directed at China.
+• French Finance Minister Roland Lescure expressed optimism that bond market turbulence is creating cross-party political momentum for fiscal discipline, signaling a potential path to parliamentary budget approval.
+• ECB policymakers were reported to be growing impatient with Christine Lagarde's reluctance to clarify her future plans, adding institutional uncertainty to an already-complex policy environment.
+
+**EU Trade Policy**
+The European Commission's mandate to develop a market-access exclusion mechanism represents a meaningful escalation in the EU's trade posture toward China, moving beyond sector-specific tariffs toward a systemic tool of last resort. The initiative sits alongside the existing hybrid-car export cap negotiation and broader discussions about import restrictions on furniture, scooters, chemicals, and mechanical engineering goods. Germany, historically the EU's most commercially cautious large economy given its deep China trade ties, has notably shifted toward supporting safeguard measures — a realignment that could accelerate Brussels' overall hawkishness. The EU-China trade surplus at record levels provides the political fuel; the unresolved question is whether Beijing treats the car deal as a ceiling on concessions or a floor.
+
+**France Fiscal Dynamics**
+Bond market pressure on French sovereign spreads appears to be producing a secondary political effect: Lescure's comments suggest that market discipline is doing some of the work that parliamentary arithmetic alone could not. Whether this translates into durable budget support across France's fragmented political landscape remains to be seen, but the dynamic illustrates how elevated European yields — themselves partly a transmission of US fiscal concerns — are reshaping domestic political calculations.
+
+---

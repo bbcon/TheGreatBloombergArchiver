@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, October 16, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, October 16, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Federal Reserve Chair Kevin Warsh made no signal toward further tightening at an appearance in Bangkok, reinforcing market expectations of a hold at the October meeting — a dovish surprise relative to some expectations.</li><li>The Nasdaq shed 3% over the week as CoreWeave's near-distress pricing concentrated investor anxiety around AI infrastructure funding in a high-yield environment; the stock recovered partially Thursday after Nvidia CEO Jensen Huang expressed confidence.</li><li>US 10-year Treasury yields rose to 5.08–5.10%, near multi-decade highs, with surging borrowing costs described by IMF participants as the dominant global macro concern.</li><li>BloombergNEF projects a record 89 gigawatts of US clean energy additions in 2026, alongside 67.8 GW of new gas-fired capacity through 2030 — a dual buildout driven by data-center demand and expiring federal tax credits.</li></ul>
+<p class="para-title" style="color:#5597cb;">Monetary Policy</p>
+<p class="para-body">Fed Chair Kevin Warsh's silence on the policy outlook at an IMF event in Bangkok was interpreted by markets as confirmation of a hold at the October 29–30 FOMC meeting. Futures markets pared back rate-hike probabilities, and US equities extended modest gains. Warsh's restraint is notable given that 10-year Treasury yields remain near 5.10%, levels the Trump administration has publicly flagged as inconsistent with its lower-borrowing-cost agenda. IMF Managing Director Kristalina Georgieva argued separately that US fiscal deficits are a structural driver of elevated global yields — a framing that implicitly challenges the administration's growth-centric fiscal strategy.</p>
+<p class="para-title" style="color:#5597cb;">Equity and Credit Markets</p>
+<p class="para-body">CoreWeave remains the focal point of the week's technology selloff. Its bonds traded at distressed levels earlier in the week, with markets pricing a greater-than-60% default probability within five years — a direct reflection of how rising risk-free rates interact with heavily leveraged AI infrastructure business models. The stock partially recovered Thursday following Nvidia's public endorsement. S&P 500 futures pointed modestly higher heading into Friday's close, though the Nasdaq's 3% weekly decline signals that the AI valuation reset remains unresolved. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Indonesia's Jakarta Composite Index plunged 11.6% — its worst single-day decline since January 1998 — after MSCI warned it may reclassify Indonesian equities to standalone-market status, bypassing frontier entirely.</li><li>China's equity regulators intervened to stabilize markets, urging state funds and companies to buy shares as the Shenzhen benchmark trades approximately 10% lower year-to-date; Q3 growth appears on course to undershoot the 2026 official target for a second consecutive quarter.</li><li>China agreed in principle to cap hybrid car exports to the EU at 350,000 units annually, a managed-trade concession with echoes of US-Japan voluntary export restraints of the 1980s.</li><li>Taiwan's benchmark equity index has risen 62% year-to-date, the world's best-performing major gauge, creating unusual talent attrition in the fund management industry.</li></ul>
+<p class="para-title" style="color:#e07b39;">Indonesia: MSCI Reclassification Risk</p>
+<p class="para-body">MSCI's warning was more severe than market participants anticipated: rather than a straightforward demotion to frontier status, the index provider is evaluating a direct downgrade to standalone-market classification, which would remove Indonesia from mainstream global indexes entirely. Goldman Sachs estimated passive outflows could reach $13 billion in an extreme scenario; Citigroup characterized a standalone outcome as "unambiguously worse." The Jakarta exchange announced plans to seek clarification from MSCI, but analysts see little prospect of near-term stabilization absent a clear reform commitment. Bank Indonesia faces mounting pressure to raise rates at its next meeting, complicating an already-challenging growth backdrop for President Prabowo Subianto's administration.</p>
+<p class="para-title" style="color:#e07b39;">China: Trade and Growth</p>
+<p class="para-body">The EU hybrid-car deal limits aggregate export damage — Bloomberg Economics estimates a roughly 0.2% reduction in China's global exports — but the agreement may embolden Brussels to pursue concessions in additional sectors including chemicals, furniture, and potentially pharmaceuticals. China's trade surplus with the EU reached a record $34.8 billion in September, approximately 20% above year-ago levels, sustaining the underlying pressure for further EU action. Domestically, Beijing's equity market stabilization intervention reflects concern that stimulus measures announced earlier this year arrived too late to materially influence 2026 growth outcomes. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>The EU is preparing new trade powers that could completely block market access for countries deemed to be attacking the bloc's economy — a proposal EU leaders asked the European Commission to develop by year-end, primarily directed at China.</li><li>French Finance Minister Roland Lescure expressed optimism that bond market turbulence is creating cross-party political momentum for fiscal discipline, signaling a potential path to parliamentary budget approval.</li><li>ECB policymakers were reported to be growing impatient with Christine Lagarde's reluctance to clarify her future plans, adding institutional uncertainty to an already-complex policy environment.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">EU Trade Policy</p>
+<p class="para-body">The European Commission's mandate to develop a market-access exclusion mechanism represents a meaningful escalation in the EU's trade posture toward China, moving beyond sector-specific tariffs toward a systemic tool of last resort. The initiative sits alongside the existing hybrid-car export cap negotiation and broader discussions about import restrictions on furniture, scooters, chemicals, and mechanical engineering goods. Germany, historically the EU's most commercially cautious large economy given its deep China trade ties, has notably shifted toward supporting safeguard measures — a realignment that could accelerate Brussels' overall hawkishness. The EU-China trade surplus at record levels provides the political fuel; the unresolved question is whether Beijing treats the car deal as a ceiling on concessions or a floor.</p>
+<p class="para-title" style="color:#4a9e6b;">France Fiscal Dynamics</p>
+<p class="para-body">Bond market pressure on French sovereign spreads appears to be producing a secondary political effect: Lescure's comments suggest that market discipline is doing some of the work that parliamentary arithmetic alone could not. Whether this translates into durable budget support across France's fragmented political landscape remains to be seen, but the dynamic illustrates how elevated European yields — themselves partly a transmission of US fiscal concerns — are reshaping domestic political calculations. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazil's presidential runoff on October 25 is tightening: incumbent Lula led the first round 48.2% to 45% nationally, but recent polling suggests the gap is narrowing as Bolsonaro consolidates support.</li><li>Lula's government secured Senate approval of legislation shortening the workweek without pay reductions and unveiled a micro-entrepreneur debt forgiveness proposal — measures aimed at shoring up urban and lower-income voter support ahead of the runoff.</li><li>Mexico's export composition is shifting structurally: hardware exports to the US have surpassed automobile exports for the first time, driven by data-center and AI-related supply chain demand, though domestic value-added remains limited by reliance on imported components.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil: Runoff Dynamics</p>
+<p class="para-body">The Amazon highway debate encapsulates the central tension in Brazil's election: Lula's effort to reconcile environmental commitments with the economic development aspirations of the country's poorest regions. Bolsonaro's explicit support for expanded Amazon agricultural access appeals to the same constituencies but carries sharply different policy implications for deforestation trajectories. With approximately 2 million first-round votes separating the candidates nationally, both campaigns are targeting marginal voters intensively. Lula's legislative victories in the Senate this week reflect a governing coalition still capable of delivering concrete policy outcomes — a potentially useful contrast heading into the final stretch.</p>
+<p class="para-title" style="color:#c0392b;">Mexico: Structural Export Shift</p>
+<p class="para-body">The emergence of hardware as Mexico's leading US export category is a notable structural development with medium-term implications for growth and trade relationships. However, HSBC economists note that domestic value-added in hardware production remains modest relative to autos, limiting the near-term GDP multiplier. The US is reportedly pressing Mexico to adopt rules preventing third-country tariff circumvention — a constraint that could cap the upside from further trade-flow redirection. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude held near $105.72/barrel, on track for a second consecutive weekly gain, as Middle East supply risk premia outweighed emergency reserve releases by consuming nations.</li><li>Rising US yields — with 10-year Treasuries near 5.10%, at or near multi-decade highs — dominated IMF discussions in Bangkok, with participants characterizing the trajectory as a growing threat to global growth resilience.</li><li>Trump declined to rule out using the "Mother of All Bombs" against Iran after the US midterm elections, sustaining elevated geopolitical risk premia across energy, credit, and EM assets.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Energy and Geopolitics</p>
+<p class="para-body">The Iran conflict continues to function as the primary inflationary impulse in the global economy, elevating energy costs, disrupting LNG supply chains, and generating freight and insurance premia that are rendering approximately 10% of global seaborne iron ore supply unprofitable, according to Vale estimates. South Korea's decision to increase coal consumption this winter as a substitute for disrupted LNG supplies illustrates how the conflict is materially complicating energy-transition timelines in energy-import-dependent economies. The Houthis' strike on the Yemeni internationally recognized government's presidential palace represents a further escalation in a theater closely connected to Strait of Hormuz risk.</p>
+<p class="para-title" style="color:#8b5cf6;">Global Monetary Policy Divergence</p>
+<p class="para-body">The IMF meetings in Bangkok crystallized a significant tension: the US — through its fiscal stance and Iran-driven inflation — has been the primary exporter of yield pressure to the rest of the world, yet US Treasury Secretary Bessent's absence from Bangkok allowed China to partially reframe the global imbalances debate. IMF Managing Director Georgieva explicitly questioned whether US growth-led fiscal consolidation can deliver adjustment fast enough, a rare public challenge to Washington's framework. Copper markets reflect the same policy uncertainty: the US import premium — driven by threatened tariffs — has generated a historic arbitrage trade, but its durability depends entirely on whether the threatened tariff is ultimately imposed.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

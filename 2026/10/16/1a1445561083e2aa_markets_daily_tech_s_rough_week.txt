@@ -1,0 +1,273 @@
+Subject: Markets Daily: Tech’s rough week
+Date: Fri, 16 Oct 2026 10:50:07 +0000
+
+CoreWeave Is Testing the Limits of AI Euphoria
+Plus, why Taiwan’s pro stock pickers are quitting. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-10-16/coreweave-is-testing-the-limits-of-ai-euphoria?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ 
+<https://www.bloomberg.com/markets?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+
+ 
+<https://sli.bloomberg.com/click?s=1148989&li=20449205&m=11b724c487f61753eb1a7a4a5f3ef261&p=10162026105006&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1148989&li=20449205&m=11b724c487f61753eb1a7a4a5f3ef261&p=10162026105006&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+
+Market Snapshot
+S&P 500 futures 
+<https://www.bloomberg.com/quote/ES1:IND?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+7,806.50+0.2%
+Nasdaq 100 futures 
+<https://www.bloomberg.com/quote/NQ1:IND?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+30,131.50-0.0%
+US 10-year Treasury yield 
+<https://www.bloomberg.com/quote/GT10:GOV?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+5.10%+0.04
+Bloomberg Dollar Spot Index 
+<https://www.bloomberg.com/quote/BBDXY:IND?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+1,219.99-0.4%
+Brent crude 
+<https://www.bloomberg.com/quote/CO1:COM?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+$105.72-0.2%
+Market data as of 06:47 AM ET. Data is subject to provider delays.Your 
+watchlist 
+<https://www.bloomberg.com/markets/watchlist?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+Five things you need to know
+
+ * US stock futures are higher 
+<https://www.bloomberg.com/news/articles/2026-10-15/stock-market-today-dow-s-p-live-updates?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ on the final day of a bruising week. The Nasdaq has shed 3% since Monday as 
+investors grappled with an AI rotation, a sharp rebound in Treasuries and hot 
+inflation.
+ * Investors pared bets on an October rate hike after Kevin Warsh was silent 
+on the outlook 
+<https://www.bloomberg.com/news/articles/2026-10-16/warsh-boosts-market-expectations-of-fed-hold-in-october?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ for Fed policy during an appearance in Bangkok.
+ * China moved to stabilize its equity market 
+<https://www.bloomberg.com/news/articles/2026-10-16/china-moves-to-prop-up-stock-market-with-selling-curbs-buybacks?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ by urging companies and state funds to buy shares while guiding some investors 
+to curb selling.
+ * UK Chancellor John Healey is set to raise taxes on banks 
+<https://www.bloomberg.com/news/articles/2026-10-15/healey-plans-to-raise-uk-taxes-on-banks-at-budget-this-month?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ to fund cost-of-living support for voters and stabilize the public finances.
+ * Tesla shares jumped almost 5% in premarket trading as the carmaker 
+presented itslong-delayed Roadster 
+<https://www.bloomberg.com/news/articles/2026-10-15/tesla-readies-flying-car-demo-to-pump-up-sluggish-auto-business?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ in a reveal that saw the sports car perform stunts using air thrusters 
+developed with SpaceX engineers.
+What will the outcome of US midterm elections mean for stocks and Treasury 
+yields?Let us know 
+<https://bloombergresearch.qualtrics.com/jfe/form/SV_bk33YWr0X0r0Mei> in the 
+latest Markets Pulse survey.
+
+Follow the news that matters to you
+
+Introducing Your News, a curated news feed that combines every topic, company, 
+author and newsletter that you care about. Build your feed and browse Your News.
+Curate your news feed 
+<https://www.bloomberg.com/yournews?utm_source=newsletter&utm_medium=email&utm_campaign=yournews_ssuny_202609>
+Tough week for tech
+
+CoreWeave is at the center 
+<https://www.bloomberg.com/news/articles/2026-10-16/coreweave-stock-wipeout-exposes-divide-between-ai-fear-and-greed?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ of this week’s tech selloff.
+
+The stock has become ground zero for investors who see rising bond yields as a 
+potential rally killer for the AI trade. Shares in CoreWeave plunged 20% in the 
+first three sessions of the week as its debt tumbled to levels that typically 
+indicate distress. By Thursday morning, investors were pricing a more than 60% 
+chance of a default within five years.
+
+Coreweave is working on the infrastructure buildout needed to develop AI 
+technology. The safety of its debt is a key issue for investors because its 
+spending on building data centers is being funded by issuing bonds. With 
+Treasury yields climbing and inflation remainingstubbornly high 
+<https://www.bloomberg.com/news/articles/2026-10-14/us-consumer-prices-climb-by-most-since-april-on-fuel-costs?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+, the cost of that financing is rising fast.
+
+“The macro backdrop has created a sell-first, ask-questions-later market,” 
+said Thomas DiFazio of Roundhill Financial. “In the short run, it is hard to 
+say with a straight face that the all-clear is here.”
+
+Still, some of the panic had eased by yesterday afternoon. Jensen Huang, CEO 
+of Nvidia, which is a CoreWeave shareholder and supplier, made clear where he 
+stood. “CoreWeave’s strength is improving every day,” Huang told Bloomberg. 
+“I’m optimistic. Their cost of capital is actually decreasing.”
+
+Investors responded. CoreWeave shares rallied almost 6%, ending the day with 
+their best performance in over a month. The stock is up 74% since its IPO in 
+March 2025 but down 62% from the peak in June 2025.
+
+In other CoreWeave news:
+
+ * Its three co-founders have sold $3.3 billion in shares 
+<https://www.bloomberg.com/news/articles/2026-10-15/coreweave-founders-shield-fortunes-with-3-3-billion-stock-sales?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ since the IPO.
+ * CoreWeave’s selloff is a buying opportunity 
+<https://www.bloomberg.com/news/articles/2026-10-15/coreweave-s-selloff-is-buying-opportunity-deutsche-bank-says?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+, according to Deutsche Bank.
+—Jeran Wittenstein 
+<https://www.bloomberg.com/authors/APXySqfZPFI/jeran-wittenstein?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ andRyan Vlastelica 
+<https://www.bloomberg.com/authors/AT3hUmpnSRM/ryan-vlastelica?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+
+ 
+<https://sli.bloomberg.com/click?s=1099824&stpe=default&li=20449205&m=11b724c487f61753eb1a7a4a5f3ef261&p=10162026105006&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099824&stpe=default&li=20449205&m=11b724c487f61753eb1a7a4a5f3ef261&p=10162026105006&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+On the move
+
+ * Alcoa rises 2%. Earnings beat estimates, helped by higher aluminum 
+production and prices.
+ * JB Hunt dips 1.3% after the trucking company reported disappointing results 
+that brought cost pressures into focus.
+ * Brunello Cucinelli gains 4.9% in Milan after the luxury firm’s earnings 
+beat expectations and it raised growth guidance for the year.
+ * Travelers and Truist Financial are among the companies reporting today. —
+Subrat Patnaik 
+<https://www.bloomberg.com/authors/AVr07GqbP-I/subrat-patnaik?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+Irresistible rally
+
+Taiwan’s professional stock pickers are barred from owning individual stocks 
+in their personal accounts. With a huge rally underway,they’re quitting 
+<https://www.bloomberg.com/news/articles/2026-10-15/taiwan-fund-managers-quit-jobs-to-trade-their-own-money-in-stock-boom?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+.
+
+Fewer than half of the 20 largest local equity mutual funds have retained the 
+same portfolio manager for more than three years, according to fund-data 
+website MoneyDJ. The temptation is clear: Taiwan’s benchmark stock index soared 
+62% this year to become the world’s best-performing major equity gauge, adding 
+about $1.8 trillion in market capitalization.
+
+As seasoned professionals leave traditional money managers, they’re often 
+ending up at less-regulated trading firms that allow more freedom for employees 
+to trade their personal accounts. That’s coinciding with the allure of faster 
+career progression where junior staffers spend less time early on doing more 
+mundane work and, crucially, a chance to earn large bonuses.
+
+“The trend is impossible to ignore,” said Huang Wen-ching of Taishin 
+Securities Investment Advisory. “Private investment firms are springing up 
+everywhere, and the pools of capital they command are getting bigger and 
+bigger.” —Betty Hou 
+<https://www.bloomberg.com/authors/AVR2uEcmcP8/betty-hou?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ andWinnie Hsu 
+<https://www.bloomberg.com/authors/AV9ybw29-9g/winnie-hsu?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+
+Word from Jakarta
+
+“It’s a massive hit to credibility.”
+
+Felix Darmawan
+
+Analyst, PT BCA Sekuritas
+
+Indonesian stocks suffered their worst rout in nearly three decades 
+<https://www.bloomberg.com/news/articles/2026-10-15/indonesia-s-emerging-market-status-under-consultation-msci-says?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ on Friday after MSCI warned the country’s emerging-market status was in 
+jeopardy.
+
+Test Your Knowledge
+
+
+
+Today's clue is:
+Where to buy chip stocks?
+
+Alphadots|Bloomberg Games
+Play 
+<https://www.bloomberg.com/games/alphadots/archive/2026-10-16?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+One chart to start your day
+
+Surging US yields are a sore spot for the Trump administration, which has 
+promised to deliver lower borrowing costs.Wall Street is game-planning 
+<https://www.bloomberg.com/news/articles/2026-10-15/wall-street-on-alert-for-treasury-s-scott-bessent-to-act-on-bond-yields-again?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ for activism from Treasury Secretary Scott Bessent aimed at bringing them down.
+
+What else we’re reading
+
+The ‘Dividend Nomads’ Investing Their Way Out of the 9-to-5
+ 
+<https://www.bloomberg.com/news/articles/2026-10-16/-dividend-nomads-chase-passive-income-with-high-yield-etfs?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+Nscale’s Data Centers Hit by Fires, Angry Workers Ahead of IPO
+ 
+<https://www.bloomberg.com/news/features/2026-10-15/nscale-s-35-billion-ipo-plans-muddied-by-ai-data-center-delays?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+Anthropic Stands Alone as US IPO Market Slows to a Crawl
+ 
+<https://www.bloomberg.com/news/articles/2026-10-15/anthropic-stands-alone-as-rest-of-us-ipo-market-slows-to-a-crawl?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+MSCI Freezes Turkey Indexes as Fund Turmoil Fuels Scrutiny
+ 
+<https://www.bloomberg.com/news/articles/2026-10-15/msci-freezes-turkey-index-changes-as-fund-crisis-fuels-scrutiny?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+Partners Blocks Hedge Funds From Investing In Troubled Firms
+ 
+<https://www.bloomberg.com/news/articles/2026-10-16/partners-blocks-hedge-funds-from-investing-in-its-troubled-firms?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+Destruction Ban Reveals Luxury Brands’ Unsold Stock Problem
+ 
+<https://www.bloomberg.com/news/articles/2026-10-16/destruction-ban-reveals-luxury-brands-problem-with-unsold-stock?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+Lescure Says Bond Turmoil Helps France See Need for Discipline
+ 
+<https://www.bloomberg.com/news/articles/2026-10-16/lescure-says-bond-turmoil-helps-france-see-need-for-discipline?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+Please share your thoughts on how we’re doing and what we’re missing. Contact 
+us atmarketsdaily@bloomberg.net <mailto:marketsdaily@bloomberg.net>.
+
+Enjoying Markets Daily? You might also like:
+
+ * Breaking News Alerts 
+<https://www.bloomberg.com/account/newsletters/breaking-news-alerts?utm_medium=email&utm_source=newsletter&utm_campaign=marketsdaily&cmpid=101626_marketsdaily&utm_term=261016&utm_content=10194>
+ for the biggest stories from around the world, delivered to your inbox as they 
+happen
+ * Odd Lots 
+<https://www.bloomberg.com/account/newsletters/odd-lots?utm_medium=email&utm_source=newsletter&utm_campaign=marketsdaily&cmpid=101626_marketsdaily&utm_term=261016&utm_content=10194>
+ for Joe Weisenthal and Tracy Alloway’s daily newsletter on the newest market 
+crazes
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=marketsdaily&cmpid=101626_marketsdaily&utm_term=261016&utm_content=10194>
+ for daily insights into supply chains and global trade
+ * Money Stuff 
+<https://www.bloomberg.com/account/newsletters/money-stuff?utm_medium=email&utm_source=newsletter&utm_campaign=marketsdaily&cmpid=101626_marketsdaily&utm_term=261016&utm_content=10194>
+ for Bloomberg Opinion’s Matt Levine’s newsletter on all things Wall Street and 
+finance
+ * Points of Return 
+<https://www.bloomberg.com/account/newsletters/points-of-return?utm_medium=email&utm_source=newsletter&utm_campaign=marketsdaily&cmpid=101626_marketsdaily&utm_term=261016&utm_content=10194>
+ for Bloomberg Opinion’s John Authers’ daily dive into markets
+Bloomberg.com subscribers have exclusive access to all of our premium 
+newsletters 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=marketsdaily&cmpid=101626_marketsdaily&utm_term=261016&utm_content=10194>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Markets 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/markets-daily?source=NLshare&cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/markets-daily?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=101626_marketsdaily&utm_campaign=marketsdaily&utm_medium=email&utm_source=newsletter&utm_term=261016&utm_content=10194>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/mj6QR4eJ5IHNxEOnVfeGJ4d0ulccR4EO5uUag7o4LWoFP4MusXQzBsNVFfn3mW9SdeSCID7mSErCPrTfp85dkbBWjesoOsohRK-dm5UbnLnm_TzHjg6phuVTNgJxDjVZURbbE04FLm0ca1meFRkihy3otY-6Kksg0YxEtPlTmZ4W4ou0L1R-AUTUQIFfufoEJwaQgf_iJLnW0LOXgED5PpGPK4iY5M4tAeAoPQynmYICusj6kG1VwgRkT3D-zwgywvsC2XhhxSMwMuZCNPXRclsUcjWeb4_M0LxnAleQfQiElpyqguExyIXOxo1wLIyZcMdKePyUJCVbnuaKt0YuUsfIj2raKwUV/pKtsnHFmJOhcXOXvR6EtGbF8-ci9eSZj/25>
