@@ -1,0 +1,9 @@
+• India's RBI is intervening in FX markets to defend the rupee at 97 to the dollar, reflecting external pressure from elevated oil prices tied to the US-Iran conflict.
+• Indonesia equities fell the most since 1998, with its emerging-market status described as being in jeopardy.
+• Shares in India's IT sector rallied in October but remain materially lower year-to-date, reflecting uncertainty around AI's impact on services employment.
+
+**India: Structural Promise, Cyclical Stress**
+The Bloomberg New Economy Forum in New Delhi offered a concentrated lens on India's macro tensions. Prime Minister Modi's target of developed-economy status by 2047 implies sustained annual GDP growth averaging above 8% — an ambitious benchmark against a backdrop of cyclical headwinds. Youth unemployment is elevated enough to fuel street protests, and the RBI's defense of the rupee at 97 to the dollar reflects import bill pressure from high oil prices, a direct transmission channel from the ongoing US-Iran conflict. GDP per capita remains below $3,000, which preserves cost competitiveness and productivity catch-up potential, but also underscores the distance to the stated goal.
+
+**Geopolitics and Strategic Autonomy**
+India's diplomatic posture, articulated clearly at the Forum by External Affairs Minister Jaishankar, is one of deliberate non-alignment — neither anchored to Washington nor Beijing, but calibrated to its own interests in a multipolar order. The shift from Biden-era alignment toward hedged engagement with China under Trump's "America First" framework illustrates how India adapts to Washington's policy cycles rather than being driven by them. This posture appears durable across administrations, and may increasingly shape how other emerging economies position themselves geopolitically.

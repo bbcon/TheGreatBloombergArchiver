@@ -1,0 +1,9 @@
+• High oil prices stemming from the US-Iran conflict are transmitting directly into emerging-market import bills, most visibly in India's currency pressure and RBI intervention.
+• Indonesia's equity market recorded its steepest single-session decline since 1998, raising questions about broader emerging-market stability.
+• China is positioned to lead a projected $5 trillion humanoid robotics market, underscoring the widening frontier of US-China technology competition.
+
+**Energy and Geopolitical Spillovers**
+The US-Iran conflict continues to generate macro consequences well beyond the immediate theater. Elevated oil prices are acting as a terms-of-trade shock for energy-importing emerging economies, pressuring current accounts and currencies. India's rupee defense is the most explicitly documented case in this period, but the dynamic is likely broader. The Strait of Hormuz risk premium, if sustained, poses a persistent drag on growth across oil-importing Asia and adds a stagflationary undercurrent to the global macro backdrop that central banks in affected economies must weigh against domestic conditions.
+
+**AI and the Labor Market: Divergent Narratives**
+A notable divergence in AI framing emerged between Washington and New Delhi. The US policy debate remains dominated by race-to-the-frontier logic and existential risk discourse. India's approach — exemplified by Nilekani's dismissal of "disaster marketing" — is more instrumentalist, focused on enterprise deployment and inclusive access. The unresolved question for global labor markets is how many human intermediaries the enterprise AI rollout ultimately requires. India's IT sector, still down meaningfully year-to-date despite an October recovery, reflects that uncertainty pricing remains elevated.

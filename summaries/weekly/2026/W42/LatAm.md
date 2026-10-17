@@ -1,0 +1,14 @@
+• Brazil's October 25 presidential runoff tightened during the week, with Flávio Bolsonaro consolidating momentum from a stronger-than-expected first-round performance; the incumbent Lula led the first round 48.2% to 45% nationally.
+• Panama faces economic losses preliminary estimated above $1 billion following its strongest earthquake in more than seven decades on Friday, with Finance Minister Chapman seeking emergency resources from the World Bank and IMF.
+• BHP workers at Chile's Escondida copper mine voted during the week on a tentative wage agreement that would avert a strike at the world's largest copper operation.
+
+**Brazil: Runoff Dynamics and Policy Implications**
+The October 25 vote is the region's dominant political risk event. Lula's government delivered legislative wins this week — Senate approval of a shorter workweek without pay cuts and a micro-entrepreneur debt forgiveness proposal — designed to shore up urban and lower-income voter support. A Bolsonaro administration would likely revive the asset-divestiture agenda at Petrobras, with the Bahia cluster, the Urucu field, and a potential Braskem stake exit among probable candidates; independent producers PRIO and PetroReconcavo are viewed as natural acquirers. The BR-319 Amazon highway debate encapsulates the central campaign tension: Lula has backed paving the route through the Amazon despite environmental objections, a concession to development politics that narrows the ideological distance between the two candidates on this specific issue.
+
+**Chile: Copper and Climate**
+The Escondida wage vote is the most consequential near-term commodity development for the region. A ratified agreement removes a significant supply risk from copper markets at a moment when AI infrastructure buildout and electrification are sustaining structural demand. Chile's broader macro backdrop is complicated by severe weather — a destructive mudslide followed by thunderstorms and hail in Santiago this week — adding infrastructure and fiscal pressure to an economy already navigating slowing Chinese demand at the margin.
+
+**Panama and Regional Vulnerabilities**
+Panama's earthquake damage, arriving alongside elevated global borrowing costs, illustrates the persistent vulnerability of smaller Latin American economies to exogenous shocks. The government's rapid multilateral outreach reflects both the scale of the challenge and limited domestic fiscal space. Mexico's structural export shift — hardware exports to the US surpassing automobiles for the first time, driven by data-center supply-chain demand — is a notable development, though HSBC economists note domestic value-added in hardware production remains modest relative to autos, limiting the near-term GDP growth multiplier.
+
+---

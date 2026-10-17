@@ -1,0 +1,15 @@
+• September CPI printed 3.7% YoY on Wednesday, above the 3.5% consensus, marking the fastest pace in five months and reigniting rate-hike debate.
+• Bank earnings delivered a mixed picture: JPMorgan missed estimates while Citigroup, Goldman Sachs, and Wells Fargo met or beat, yet the KBW Bank Index remained under pressure throughout the week.
+• CoreWeave's 2032 bonds fell to 78 cents on the dollar mid-week before partially recovering after Nvidia's public endorsement; the Nasdaq 100 shed 3% over the week.
+• Fed Chair Warsh made no signal toward further tightening at Bangkok on Friday, reinforcing market expectations of an October hold.
+
+**Inflation and Monetary Policy**
+Wednesday's CPI print was the week's dominant domestic event. The 3.7% YoY reading exceeded the 3.5% consensus, with the beat broad-based: Cleveland Fed trimmed mean, Atlanta Fed sticky-price CPI, and supercore (services ex-shelter) all moved higher, with supercore returning above 3%. College tuition re-accelerated, and the Fed's Beige Book, released the same afternoon, cited intensifying input cost pressures across regions. Following the print, Fed funds futures briefly priced a near-50/50 probability of an October hike before subsiding. NY Fed President Williams had earlier in the week affirmed one additional hike remains appropriate in 2026 but signaled no further tightening in 2027. The 10-year Treasury yield spiked to 5.33% on Wednesday before retreating sharply to 5.08%, suggesting buyers emerged at elevated levels and reducing the urgency for immediate Fed action. Warsh's silence at the IMF meetings in Bangkok on Friday was interpreted as confirmation of an October hold, with December now the base-case for any additional move.
+
+**Banking and Corporate Earnings**
+Q3 bank results delivered a nuanced picture. JPMorgan, Citigroup, and Wells Fargo combined for $56.5 billion in net interest income — a fifth consecutive quarterly record — yet share prices were largely unrewarding. JPMorgan posted its first year-on-year FICC decline in over two years; Goldman's equities revenue rose 72% quarter-on-quarter, a striking divergence. Bank of America was separately fined over $1.2 billion for money laundering and sanctions violations, shedding $22 billion in market capitalization on the announcement. The KBW Bank Index remained roughly 13% below its August level, reflecting AI disruption concerns that one quarter of results has not resolved.
+
+**Equity and Credit Markets**
+CoreWeave crystallized the week's central tension between AI infrastructure ambition and high-yield financing reality. Its bonds trading at distressed levels implied a greater-than-60% five-year default probability — a direct consequence of how 5%-plus risk-free rates interact with leveraged infrastructure models. The Nasdaq's 3% weekly decline and the Russell 2000's entry into correction territory signal that the AI valuation reset remains unresolved, even as S&P 500 futures held modestly positive into Friday's close supported by Goldman Sachs strategists' positive turn on global equities ahead of earnings season.
+
+---
