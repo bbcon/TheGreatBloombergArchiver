@@ -1,0 +1,11 @@
+• French 10-year sovereign yields rose 8 basis points to 4.88%, one of the highest levels in Western Europe, as violent weekend protests deepened concerns over fiscal sustainability.
+• The French-German bund spread widened further into territory associated with prior eurozone stress episodes; the CAC 40 fell 1.5% Monday and is down 3.7% year-to-date versus a Stoxx 600 gain of 8.1%.
+• UK September CPI is due Wednesday and is forecast at 3.4%, which would represent a nine-month high and is expected to support a Bank of England rate hike in November.
+
+**France: Fiscal and Political Stress**
+Violent cost-of-living protests over the weekend — including the burning of Limoges' historic city hall — have materially worsened France's already precarious position. President Macron described the scenes as a national "shame" before departing for Gulf visits, leaving his ministers to manage the fallout. The central tension is structural: France cannot deploy spending to restore social calm because bond markets are already demanding higher risk premia on its debt, with the 10-year yield at 4.88% and the deficit among the eurozone's widest. Parliament must now debate a 2027 budget containing approximately €43 billion in deficit-cutting measures, a process that appears deeply contentious with a presidential election six months away. Prediction markets show Marine Le Pen's implied probability of winning the presidency at record highs, approaching but remaining below 50%, adding further uncertainty for euro-denominated assets. Net euro short positioning in CFTC futures data has reached its largest since January 2016.
+
+**UK Monetary Policy**
+UK inflation data due Wednesday are expected to show an acceleration to 3.4% year-over-year, which would reinforce the case for a first Bank of England rate hike in over three years at the November meeting. Chancellor of the Exchequer John Healey's upcoming budget is being watched closely; some investors are positioning for fiscal discipline, with UK gilt positioning reportedly tilted long ahead of the announcement.
+
+---
