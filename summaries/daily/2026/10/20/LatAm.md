@@ -1,0 +1,7 @@
+• Chile's copper output is at its lowest in more than two decades, with at least seven mining fatalities in the past month, extreme weather disruptions, and labor tensions compounding structural operational decline.
+• Chile accounts for over 20% of global mined copper supply; the current disruptions raise the probability of the first annual decline in global mine output since 2017.
+
+**Chile's Mining Crisis**
+The deterioration in Chilean copper production represents a meaningful supply-side development at a moment when global demand from data centers and power-grid expansion is accelerating. Codelco and other producers are contending with aging asset bases requiring significantly more rock extraction per unit of copper recovered — a structural efficiency problem compounding the near-term disruptions from weather and accidents. The timing is consequential for global copper markets: LME prices recently touched a record near $15,000 per metric ton, and any further supply disappointment from Chile could support prices even if US tariff uncertainty weighs on the COMEX premium. The situation is likely to be a central topic at LME Week in London, where 2027 contract negotiations are underway.
+
+---

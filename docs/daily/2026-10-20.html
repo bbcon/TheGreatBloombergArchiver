@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, October 20, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, October 20, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>No major US macro data releases were scheduled for October 20; markets focused on a heavy earnings week with GE, RTX, Northrop Grumman, General Motors, Netflix, and United Airlines reporting.</li><li>CoreWeave credit stress re-emerges as a focal point, with analysts debating whether it signals systemic AI-buildout risk or an idiosyncratic business-model failure.</li><li>US 10-year Treasury yield at 5.12%; S&P 500 futures marginally lower (-0.1%) ahead of key tech earnings from Meta, Microsoft, and Alphabet later in the week.</li><li>US power grids are issuing emergency alerts in October — atypical for autumn — as AI-driven electricity demand creates year-round capacity constraints.</li></ul>
+<p class="para-title" style="color:#5597cb;">Corporate Earnings and AI Credit Stress</p>
+<p class="para-body">The dominant US market narrative centers on CoreWeave, whose unsecured bond yields remain under pressure despite a slight Monday reprieve. Barclays' Ajay Rajadhyaksha frames the situation as contained: unsecured bonds represent less than $2 billion of a roughly $35 billion total debt stack and are structurally subordinated, suggesting the stress reflects idiosyncratic leverage rather than a systemic indictment of AI infrastructure economics. The more consequential variable, analysts argue, is the trajectory of GPU rental rates relative to financing costs — a spread business that holds only as long as compute demand exceeds supply. On the earnings front, 3M gained 4.4% in premarket after an expanded Amazon deal, while Steel Dynamics fell 6.1% on a third-quarter earnings miss, and Crown Holdings dropped 5% on a weak forecast.</p>
+<p class="para-title" style="color:#5597cb;">Fiscal and Monetary Policy</p>
+<p class="para-body">The Social Security reserve exhaustion date — projected for 2032 — is entering the political horizon as midterm campaigns close. The incoming Senate class will govern through that window, raising the prospect of an explicit deficit-financed solution that could test bond market tolerance at a moment when the government debt burden is already elevated. Separately, Deutsche Bank economists endorsed the idea of reducing Fed policy meetings from eight to six annually, aligning the calendar more closely with key data releases — a proposal Fed Chair Warsh has previously floated. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>South Korean neocloud Elice plunged 33% on its trading debut, reigniting concerns over AI infrastructure valuations and dragging the Kospi down 3.7% to its lowest since the June peak.</li><li>MSCI Asia Pacific Index fell 1.2% as Elice's collapse compounded existing skepticism around AI spending durability.</li><li>Indonesia's Jakarta Composite rebounded 4.3% after the Indonesia Stock Exchange announced index methodology changes to address MSCI's potential downgrade from emerging-market to standalone status.</li><li>Japan's 20-year government bond auction recorded its strongest demand on record, signaling domestic investors are returning to duration at elevated yield levels.</li></ul>
+<p class="para-title" style="color:#e07b39;">Equity Markets and AI Sentiment</p>
+<p class="para-body">The Elice IPO rout crystallized a broader valuation problem in Asian technology. Samsung and SK Hynix — which together account for nearly half of Kospi market capitalization — trade at price-to-earnings ratios of below five and four times respectively, roughly half their decade averages, despite record earnings. Samsung posted $80 billion in quarterly profit last quarter on AI-driven memory demand. The disconnect between fundamentals and multiples reflects investor skepticism about demand durability rather than current results. Catalysts for a re-rating likely require confirmation from US hyperscaler capex guidance — Meta, Microsoft, and Alphabet all report this week.</p>
+<p class="para-title" style="color:#e07b39;">Indonesia and Japan</p>
+<p class="para-body">Indonesia's exchange moved swiftly to remove highly concentrated-ownership companies from benchmark index calculations following an emergency meeting with MSCI, which last week flagged a potential downgrade that would place Indonesia alongside Lebanon and Argentina in standalone classification. Whether these measures satisfy MSCI's concerns remains uncertain. Separately, Japan's 20-year bond auction demand signal is notable: elevated JGB yields appear to be drawing domestic institutional investors back into long-duration assets, a dynamic that could gradually reduce pressure on the Bank of Japan to intervene. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>French 10-year OAT yield hit 4.95%, a 24-year high, as the spread over German Bunds widened to 148 basis points — levels last seen during the 2012 eurozone crisis — amid cost-of-living protests and political uncertainty.</li><li>UK labor market data surprised to the upside: joblessness fell and employers added workers, an unexpected boost ahead of Chancellor John Healey's budget next week.</li><li>German investor confidence declined for the first time since April, underscoring the fragility of Europe's largest economy despite early signs of fiscal-stimulus-driven recovery.</li><li>France implemented targeted curfews in several cities after weekend protests over cost-of-living pressures deteriorated into violence and looting affecting hundreds of shops.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">French Sovereign Stress</p>
+<p class="para-body">The French OAT spread at 148 basis points is the widest since 2012, compared with just 58 basis points in March — a rapid deterioration driven by political dysfunction, fiscal slippage, and social unrest. Moody's is expected to review France's credit rating by week-end; its current rating sits two notches above those of S&P and Fitch, and a downgrade — while having limited technical impact — risks amplifying negative market psychology at a vulnerable moment. Far-left candidate Jean-Luc Mélenchon, who has floated debt repudiation, remains a tail risk, though prediction market odds have not moved materially year-to-date. His prospects may have been further dented by violence attributed to the far left.</p>
+<p class="para-title" style="color:#4a9e6b;">Germany and UK</p>
+<p class="para-body">Chancellor Friedrich Merz hosted Germany's first investor conference in Berlin, seeking private capital to supplement expansive fiscal spending on infrastructure and defense. Early indicators suggest the stimulus is beginning to take effect, though investor confidence fell for the first time since April — a reminder that recovery remains uneven. In the UK, stronger-than-expected employment data provides the Chancellor modest room ahead of next week's budget, though the underlying inflation environment continues to constrain policy flexibility. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Chile's copper output is at its lowest in more than two decades, with at least seven mining fatalities in the past month, extreme weather disruptions, and labor tensions compounding structural operational decline.</li><li>Chile accounts for over 20% of global mined copper supply; the current disruptions raise the probability of the first annual decline in global mine output since 2017.</li></ul>
+<p class="para-title" style="color:#c0392b;">Chile's Mining Crisis</p>
+<p class="para-body">The deterioration in Chilean copper production represents a meaningful supply-side development at a moment when global demand from data centers and power-grid expansion is accelerating. Codelco and other producers are contending with aging asset bases requiring significantly more rock extraction per unit of copper recovered — a structural efficiency problem compounding the near-term disruptions from weather and accidents. The timing is consequential for global copper markets: LME prices recently touched a record near $15,000 per metric ton, and any further supply disappointment from Chile could support prices even if US tariff uncertainty weighs on the COMEX premium. The situation is likely to be a central topic at LME Week in London, where 2027 contract negotiations are underway. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude rose to $111.59 per barrel, a five-month high, as Middle East conflict risks threatened energy flows and Asian LNG prices reached their highest level in nearly four years.</li><li>Copper remains near record highs but faces binary tariff risk: Macquarie estimates prices could crash to $10,000 per ton if US tariffs are abandoned, or rally to $18,000 if imposed with a lag.</li><li>PJM, the largest US power grid operator, issued consecutive emergency alerts in October — an atypical autumn occurrence — as AI-driven electricity demand becomes non-seasonal.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Energy Markets and Geopolitical Risk</p>
+<p class="para-body">Brent crude's move above $111 reflects mounting concern over Iranian strikes on regional energy infrastructure and tanker traffic. Asian LNG prices above four-year highs and European natural gas above €90/MWh for the first time since late 2022 illustrate how Middle East tensions are transmitting across global energy markets. A US plan to rehabilitate sanctioned "dark fleet" tankers to boost supply appears likely to attract limited participation, given existing contracts, compliance complexity, and elevated freight rates.</p>
+<p class="para-title" style="color:#8b5cf6;">Copper and the Tariff Premium</p>
+<p class="para-body">The copper market remains structurally bifurcated: robust long-term demand from energy transition and AI infrastructure faces near-term price uncertainty tied entirely to US tariff timing. US exchange inventories have ballooned to 15 times their 2020–2024 average as traders front-run potential levies. With midterm elections approaching, the risk of a Democratic outcome that disrupts Trump's trade agenda has introduced a credible downside scenario for copper prices. Underlying structural dynamics — a projected 1.7 million-ton cumulative supply deficit through 2028 and accelerating demand — suggest any tariff-driven selloff may represent a medium-term buying opportunity.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

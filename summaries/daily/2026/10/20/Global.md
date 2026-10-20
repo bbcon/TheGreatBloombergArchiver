@@ -1,0 +1,9 @@
+• Brent crude rose to $111.59 per barrel, a five-month high, as Middle East conflict risks threatened energy flows and Asian LNG prices reached their highest level in nearly four years.
+• Copper remains near record highs but faces binary tariff risk: Macquarie estimates prices could crash to $10,000 per ton if US tariffs are abandoned, or rally to $18,000 if imposed with a lag.
+• PJM, the largest US power grid operator, issued consecutive emergency alerts in October — an atypical autumn occurrence — as AI-driven electricity demand becomes non-seasonal.
+
+**Energy Markets and Geopolitical Risk**
+Brent crude's move above $111 reflects mounting concern over Iranian strikes on regional energy infrastructure and tanker traffic. Asian LNG prices above four-year highs and European natural gas above €90/MWh for the first time since late 2022 illustrate how Middle East tensions are transmitting across global energy markets. A US plan to rehabilitate sanctioned "dark fleet" tankers to boost supply appears likely to attract limited participation, given existing contracts, compliance complexity, and elevated freight rates.
+
+**Copper and the Tariff Premium**
+The copper market remains structurally bifurcated: robust long-term demand from energy transition and AI infrastructure faces near-term price uncertainty tied entirely to US tariff timing. US exchange inventories have ballooned to 15 times their 2020–2024 average as traders front-run potential levies. With midterm elections approaching, the risk of a Democratic outcome that disrupts Trump's trade agenda has introduced a credible downside scenario for copper prices. Underlying structural dynamics — a projected 1.7 million-ton cumulative supply deficit through 2028 and accelerating demand — suggest any tariff-driven selloff may represent a medium-term buying opportunity.
