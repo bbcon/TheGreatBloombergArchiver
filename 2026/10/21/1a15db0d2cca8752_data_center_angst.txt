@@ -1,0 +1,247 @@
+Subject: Data center angst
+Date: Wed, 21 Oct 2026 09:00:24 +0000
+
+DayOne IPO Joins Widening Fallout From Data Center Rout
+Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-10-21/dayone-ipo-joins-widening-fallout-from-data-center-rout?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ 
+<https://www.bloomberg.com/asia?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=20540544&m=11b724c487f61753eb1a7a4a5f3ef261&p=10212026090023&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=20540544&m=11b724c487f61753eb1a7a4a5f3ef261&p=10212026090023&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Volatility around data centers is increasing and starting to have ripple 
+effects on initial public offerings.
+
+Take Singapore-based DayOne Data Centers, which is weighing options for its US 
+IPO 
+<https://www.bloomberg.com/news/articles/2026-10-21/dayone-is-said-to-weigh-options-for-us-ipo-amid-data-center-rout?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+, including a potential delay until the market recovers, a Bloomberg exclusive 
+revealed. Other possibilities include going ahead with a smaller listing that 
+may raise $2.5 billion to $3 billion, roughly half of what it had originally 
+aimed for, according to people familiar with the matter.
+
+Earlier this month, Australia’s Firmus Grid dropped its own IPO plans, though 
+the Information reported that Nvidia is intalks to invest hundreds of millions 
+of dollars 
+<https://www.bloomberg.com/news/articles/2026-10-20/nvidia-in-talks-to-back-firmus-after-ipo-flop-information-says?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ in the company. Meanwhile, another Australian data center operator took a hit 
+Wednesday. Nextdc’sshares plummeted 42% 
+<https://www.bloomberg.com/news/articles/2026-10-20/nextdc-cuts-outlook-as-public-backlash-delays-data-center-power?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ after the firm said it was considering force majeure options and cut earnings 
+guidance by more than a third, as community opposition delayed power to one of 
+its major projects in Melbourne.
+
+Billionaire Ken Griffin only added to the anxiety over the global AI buildout. 
+Investors are “almost certainly” in themidst of an AI bubble 
+<https://www.bloomberg.com/news/articles/2026-10-20/ken-griffin-says-ai-almost-certainly-in-a-bubble-right-now?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+, he said, as many companies are still grappling with just how much they’ll 
+spend on the technology and how it will transform the economy.
+
+—Ranjeetha Pakiam 
+<https://www.bloomberg.com/authors/APMXW1CZUi8/ranjeetha-pakiam?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+
+What You Need to Know Today
+
+Bank Indonesia Holds Rate as MSCI Shock Threatens Rupiah
+
+Indonesia’s central bank kept its benchmark interest rate unchanged, opting to 
+continue relying on targeted measures to support the rupiah through the market 
+volatility triggered by MSCI’s double-downgrade threat. The rate was held at 
+5.75%, as seen by 19 of 38 economists surveyed by Bloomberg. The other half 
+expected a hike.
+Get the latest 
+<https://www.bloomberg.com/news/articles/2026-10-21/bank-indonesia-holds-rate-as-msci-shock-threatens-rupiah?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+In other central bank news, the Reserve Bank of Australia’s Deputy Governor 
+Andrew Hauser said the country’s inflation outlook looks “materially worse 
+<https://www.bloomberg.com/news/articles/2026-10-20/rba-s-hauser-says-australia-inflation-outlook-materially-worse?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+” than predicted in its August forecast. His comments bolstered expectations 
+the RBA will deliver a fifth hike this year in November.
+
+Ambani’s Jio Seeks Historic IPO a Decade After Disrupting India Telecom
+
+Jio Platforms’ IPO was fully subscribed on the first day of bidding, keeping 
+billionaire Mukesh Ambani’s digital venture on track to complete India’s 
+largest-ever listing.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-10-21/ambani-s-jio-seeks-historic-ipo-a-decade-after-disrupting-india-telecom?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Macquarie Oil Traders Leave as Bank Restructures Commodity Units
+
+Several oil traders at Macquarie have left the firm, with the departures 
+coming as the bank merges two of its main commodity-trading units. The traders, 
+who handle crude and refined products in Singapore, Geneva and elsewhere, 
+departed in recent weeks, according to people with direct knowledge of the 
+matter.
+Keep reading 
+<https://www.bloomberg.com/news/articles/2026-10-21/macquarie-oil-traders-leave-as-bank-restructures-commodity-units?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+More commodities news: Oil-product markets are likely to remain tight 
+<https://www.bloomberg.com/news/articles/2026-10-21/morgan-stanley-sees-fuel-tightness-persisting-through-mid-2027?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ through mid-2027, even if current war-related disruptions ease, as an 
+“unusually large upswing in refinery maintenance” constrains supply, according 
+to Morgan Stanley. And global shipping costs for crude havesurged about 
+sevenfold 
+<https://www.bloomberg.com/news/articles/2026-10-21/goldman-sachs-says-war-spurs-sevenfold-jump-in-oil-freight-rates?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ over the past year due to the Middle East conflict, Goldman Sachs said.
+ 
+<https://www.bloomberg.com/news/articles/2026-10-21/goldman-sachs-says-war-spurs-sevenfold-jump-in-oil-freight-rates?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Sanae Takaichi promised a stronger Japan through a massive investment package 
+and a more assertive global role. One year in, how much has the country’s first 
+female prime minister delivered andwhat comes next 
+<https://www.bloomberg.com/news/articles/2026-10-21/one-year-on-japan-s-takaichi-faces-reality-check-on-tax-cut-defense-promises?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+? Listen now on today’s Big Take Asia podcast.
+
+
+Big Take Asia
+
+Taking Stock of Takaichi’s First Year
+ 
+<https://www.bloomberg.com/news/audio/2026-10-20/big-take-asia-taking-stock-of-takaichi-s-first-year-podcast?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Indonesia Haze Threatens Tiny Bugs That Power Palm Oil Output
+
+The smog blanketing parts of Southeast Asia is threatening an army of 
+tiny-but-crucial workers in the region’s palm industry — beetles that pollinate 
+the trees and help keep the world supplied with the most-consumed vegetable oil.
+Get more 
+<https://www.bloomberg.com/news/articles/2026-10-21/indonesia-haze-threatens-tiny-bugs-that-power-palm-oil-output?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=20540544&m=11b724c487f61753eb1a7a4a5f3ef261&p=10212026090023&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=20540544&m=11b724c487f61753eb1a7a4a5f3ef261&p=10212026090023&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+What You’ll Need to Know Tomorrow
+
+Politics
+
+Hong Kong Fire Report to Put Government Accountability in Focus
+ 
+<https://www.bloomberg.com/news/articles/2026-10-21/hong-kong-fire-report-to-put-government-accountability-in-focus?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Finance
+
+Indonesia’s Danantara Seeks $1 Billion Loan in Investment Push
+ 
+<https://www.bloomberg.com/news/articles/2026-10-21/indonesia-s-danantara-seeks-1-billion-loan-in-investment-push?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Economics
+
+Six Charts That Explain the Forces Shaping China’s Economy
+ 
+<https://www.bloomberg.com/news/articles/2026-10-21/china-s-economy-in-six-charts-growth-exports-and-the-property-slump?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Cybersecurity
+
+Cyberattack Hits India’s Largest Bank, Exposes Customer Data
+ 
+<https://www.bloomberg.com/news/articles/2026-10-21/cyberattack-hits-india-s-largest-bank-exposes-customer-records?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Real Estate
+
+Tiffany Japan Building Faces 30% Price Cut as Debt Costs Rise
+ 
+<https://www.bloomberg.com/news/articles/2026-10-21/tiffany-japan-building-faces-30-price-cut-as-debt-costs-rise?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Companies
+
+TSMC Suspends Some Construction After Deadly Accident Kills Four
+ 
+<https://www.bloomberg.com/news/articles/2026-10-21/tsmc-suspends-some-construction-after-deadly-accident-kills-four?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Weather
+
+Super Typhoon Champi on Path to Impact China, Taiwan Within Days
+ 
+<https://www.bloomberg.com/news/articles/2026-10-21/super-typhoon-champi-on-path-to-impact-china-taiwan-within-days?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+For Your Commute
+
+Malaysia Expects Tourism Fallout From Indonesia Haze
+
+More effects from the haze: tourism operators are experiencing fewer bookings 
+for this time of year — and even cancellations — as smog disrupts flights, 
+obscures some of Malaysia’s best-known attractions and threatens a key driver 
+of the Southeast Asian economy.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-10-20/malaysia-expects-tourism-fallout-from-indonesia-haze?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Bloomberg Invest: Japan’s 30-year deflation era is ending. A new rate regime, 
+returning inflation, an expansive fiscal agenda and corporate reform are 
+remaking the world’s fourth-largest economy — and repricing risk far beyond 
+Tokyo. Join us Dec. 2-3, 2026, in Tokyo as Japanese and global executives, 
+allocators, policymakers and investors examine what these shifts mean for Japan 
+and for portfolios worldwide.Learn more here 
+<https://events.bloomberglive.com/bqvg2b>.
+
+More from Bloomberg
+
+Enjoying Evening Briefing? Check out these newsletters:
+
+ * On Books 
+<https://www.bloomberg.com/account/newsletters/on-books?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+, from Bloomberg Weekend, for reviews and recommendations to expand your 
+thinking. Also:Weather Watch 
+<https://www.bloomberg.com/account/newsletters/weather-watch?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ to get an edge on the risks of the changing climate
+ * Next Japan 
+<https://www.bloomberg.com/account/newsletters/next-japan?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ for an inside view of the forces reshaping Japan, and what’s next for its 
+businesses, markets and consumers
+ * AI Today 
+<https://www.bloomberg.com/account/newsletters/ai-today?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ for a chronicle of the disruptions and threats of AI on businesses, workers, 
+governments and economies
+ * Money 
+<https://www.bloomberg.com/account/newsletters/money?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ for insights, ideas and tools for doing more with your money
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261021&utm_content=10345>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ for key news before the trading day starts there
+ * Singapore Edition 
+<https://www.bloomberg.com/account/newsletters/singapore-edition?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+,India Edition 
+<https://www.bloomberg.com/account/newsletters/india-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261021&utm_content=10345>
+ andHong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261021&utm_content=10345>
+ for insights into some of Asia’s most dynamic economies
+ * Next China 
+<https://www.bloomberg.com/account/newsletters/next-china?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261021&utm_content=10345>
+ for dispatches from within the world’s second-largest economy on where China 
+stands now — and where it’s going next
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261021&utm_content=10345>
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://bsky.app/profile/bloomberg.com> <https://x.com/business> 
+<https://www.instagram.com/bloombergbusiness/> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+
+
+You received this message because you are subscribed to Bloomberg’s Evening 
+Briefing Asia newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=NLshare&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261021&utm_content=10345>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/q9aJePLHxqkbRgNhax09fQuVnl8BtlZhqhfkRFNxBgQ0_2nZ5hdX6LQSJEBR6cR9rieg7xRvbbIIZkx_Gc_km_CK6qUMTdF5m7jUmdzsRrJG5Via0llvyid0-bys_L43RBnZG25IZkpIkJhM6UX7ePbshkBIXT1RoogHVCJmO_eEIl5LnYf_Wuy5yTwNvVjLnaIQ9xMPjb7LJfGJ1I5IlleTQRXO9wspd9IDEvAFs-BcygH454Oq-sKUK_aFsOU-asa5228eGuC9N8YQY4Vz6sGx7v2WkbRWuWS8NVSIn9neMTF-9TVHf5411s7o5WNbZdJP7eUmwOLXSnAE-toPhhV966kp8xSu/kQY_-uTAVUi7n5GIlq_XkUYknw4HADFE/25>
