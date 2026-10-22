@@ -1,0 +1,11 @@
+• US 10-year Treasury yield stands at 5.07%, with 30-year mortgage rates at approximately 7.4%, the highest since 2000, reflecting the cumulative impact of Fed tightening and an oil-driven inflation overshoot.
+• Tech earnings disappoint broadly: Tesla pulled back capex guidance, Lam Research guided weaker-than-expected, sending its shares down over 9%; Meta was the exception, raising capex guidance to $135–$145 billion and reporting AI monetization progress.
+• S&P 500 futures fell 1.0% and Nasdaq 100 futures declined 1.8% in premarket, reflecting investor impatience with AI spending absent clear revenue returns.
+
+**Monetary Policy and Bond Markets**
+Treasury Secretary Bessent's original objective — bringing the 10-year yield down from 4.5% to support mortgage markets and capital formation — has materially failed. The 10-year now trades above 5%, and 30-year mortgage rates have reached approximately 7.4%. The Iran war's inflationary impulse, rather than the administration's hoped-for energy-driven disinflation, has driven the repricing. Bessent has pivoted his messaging toward framing Treasuries as the "best-performing" major government bond market in total return terms — a metric that reflects investor gains but not the cost of capital for the broader economy.
+
+**Equity and Credit Markets**
+Tech earnings have crystallized a key market debate: whether AI capital expenditure is generating sufficient returns. Tesla's capex pullback and Lam Research's guidance miss reinforced concerns, while Meta's raised spending and positive AI commentary offered a counterpoint. Notably, CDS volumes tied to the ten largest hyperscalers and chipmakers surged 691% to a record $140 billion through September. SocGen argues wider CDS spreads are translating into multiple compression, with hyperscaler valuations near levels last seen at ChatGPT's launch. Analysts suggest the signal to buy hyperscalers is a peak in CDS spreads, not stronger EPS — potentially placing a floor no earlier than the second half of 2027.
+
+---

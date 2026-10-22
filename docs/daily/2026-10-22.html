@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, October 22, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, October 22, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>US 10-year Treasury yield stands at 5.07%, with 30-year mortgage rates at approximately 7.4%, the highest since 2000, reflecting the cumulative impact of Fed tightening and an oil-driven inflation overshoot.</li><li>Tech earnings disappoint broadly: Tesla pulled back capex guidance, Lam Research guided weaker-than-expected, sending its shares down over 9%; Meta was the exception, raising capex guidance to $135–$145 billion and reporting AI monetization progress.</li><li>S&P 500 futures fell 1.0% and Nasdaq 100 futures declined 1.8% in premarket, reflecting investor impatience with AI spending absent clear revenue returns.</li></ul>
+<p class="para-title" style="color:#5597cb;">Monetary Policy and Bond Markets</p>
+<p class="para-body">Treasury Secretary Bessent's original objective — bringing the 10-year yield down from 4.5% to support mortgage markets and capital formation — has materially failed. The 10-year now trades above 5%, and 30-year mortgage rates have reached approximately 7.4%. The Iran war's inflationary impulse, rather than the administration's hoped-for energy-driven disinflation, has driven the repricing. Bessent has pivoted his messaging toward framing Treasuries as the "best-performing" major government bond market in total return terms — a metric that reflects investor gains but not the cost of capital for the broader economy.</p>
+<p class="para-title" style="color:#5597cb;">Equity and Credit Markets</p>
+<p class="para-body">Tech earnings have crystallized a key market debate: whether AI capital expenditure is generating sufficient returns. Tesla's capex pullback and Lam Research's guidance miss reinforced concerns, while Meta's raised spending and positive AI commentary offered a counterpoint. Notably, CDS volumes tied to the ten largest hyperscalers and chipmakers surged 691% to a record $140 billion through September. SocGen argues wider CDS spreads are translating into multiple compression, with hyperscaler valuations near levels last seen at ChatGPT's launch. Analysts suggest the signal to buy hyperscalers is a peak in CDS spreads, not stronger EPS — potentially placing a floor no earlier than the second half of 2027. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>China's equity markets entered a bear market, losing $2.4 trillion since their May peak, driven by deteriorating consumption and mounting doubts over AI profitability.</li><li>The Bangko Sentral ng Pilipinas raised its key rate by 50 basis points to 5.50%, a surprise move seen by only one of 25 economists surveyed, in response to resurgent inflation and a peso at a record low.</li><li>SoftBank shares fell 6.9%, halving the company's market value from its June all-time high, as investors reassess the sustainability of its approximately $65 billion commitment to OpenAI.</li></ul>
+<p class="para-title" style="color:#e07b39;">China: Markets and AI</p>
+<p class="para-body">Chinese mainland indices have become some of the world's worst performers, with the bear market reflecting a combination of structurally weak domestic consumption and investor skepticism about the profitability of domestic AI companies. The contrast with funding activity is notable: DeepSeek raised approximately $15 billion in its latest round — one of China's largest-ever — with CATL and Tencent among anchor investors, signaling that private capital retains conviction in AI even as public markets do not. Huawei separately secured a $2.25 billion bank loan to fund chip-related AI projects. Alibaba's shares fell sharply after Chinese regulators summoned e-commerce operators over product-quality standards.</p>
+<p class="para-title" style="color:#e07b39;">Southeast Asia</p>
+<p class="para-body">The Philippines central bank's outsized rate hike reflects the dual pressure confronting emerging Asian economies: imported inflation from elevated global energy prices and currency weakness amplifying that pass-through. The peso at a record low compounds the challenge. Indonesia faces a separate institutional risk, with President Prabowo defying MSCI's threat to downgrade the country from emerging-market to standalone status — a move that triggered equity outflows last week and remains unresolved. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>French 10-year government bond yields topped 5% for the first time since 2002, reflecting a broad global risk-off move compounded by domestic fiscal concerns.</li><li>Seven commercial ships have been attacked by Russian drones off the coasts of Bulgaria and Romania since early October, killing more than two dozen sailors in strikes within or adjacent to NATO territorial waters — a significant escalation.</li><li>European car sales accelerated in September, with electric and plug-in hybrid vehicles reaching 43% of total sales, up from 32% a year earlier, aided by record fuel prices and government incentives in France and Germany.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Bond Markets and Fiscal Stress</p>
+<p class="para-body">The breach of 5% on French 10-year yields is a meaningful threshold, last visited during a period of substantially different monetary conditions. The move reflects both the global repricing of duration risk — driven by persistently elevated US yields — and country-specific fiscal concerns. The UK Chancellor, in contrast, is seeking to project fiscal competence while targeting growth, pledging to cut regulatory burdens on smaller businesses ahead of his first budget this month.</p>
+<p class="para-title" style="color:#4a9e6b;">Russia Escalation</p>
+<p class="para-body">The Russian drone attacks on commercial shipping in the Black Sea represent a qualitative shift in Moscow's campaign, targeting vessels in or near NATO members' territorial waters. The alliance faces a difficult calibration: pressure to respond is growing following sailor deaths, but European governments remain cautious about escalation at a moment of uncertain US commitment to collective defense. The Kremlin frames the strikes as retaliation for Ukrainian attacks on Russia's shadow fleet, but has stopped short of formal acknowledgment. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Argentina's bonds have sold off sharply, with bullish investors caught off-guard as a global emerging-market pullback compounds concerns over President Milei's reelection prospects and upcoming debt obligations.</li><li>Colombia's President de la Espriella replaced Interior Minister Rodrigo Lara with Alejandro Ordóñez following a budget setback that raised questions about the government's ability to manage its fiscal agenda and reassure bond investors.</li></ul>
+<p class="para-title" style="color:#c0392b;">Argentina</p>
+<p class="para-body">The rout in Argentine assets appears to reflect the interaction of two forces: a broader emerging-market risk-off driven by rising global yields and oil-driven inflation fears, and country-specific concerns about the political durability of Milei's adjustment program. The proximity of significant debt payment obligations amplifies the stakes. Whether the selloff represents a temporary liquidity-driven dislocation or a more fundamental reassessment of debt sustainability remains genuinely uncertain at this stage.</p>
+<p class="para-title" style="color:#c0392b;">Colombia</p>
+<p class="para-body">The cabinet reshuffle is a consequential political signal. The interior minister's primary function includes managing the administration's legislative agenda, and his removal — following a budget defeat — raises questions about the government's congressional arithmetic. Investor attention will focus on whether the replacement can rebuild political support for the fiscal framework. Colombia's spreads and currency will likely remain sensitive to further signals of political coherence or its absence in the coming weeks. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude surged above $110, with futures up approximately 2.7% on the day, as the US ordered non-emergency diplomatic personnel to depart Saudi Arabia following Houthi attacks that killed at least four people at an Aramco oil field and an airport in the Eastern Province.</li><li>The US Treasury sanctioned participants in Iran's shadow fleet, while reports emerged of American military and diplomatic personnel being withdrawn from regional bases amid threats from Iran and its proxies.</li><li>The most extreme El Niño cycle on record is now considered near-certain by leading portfolio managers, with food commodity prices rising and institutional investors deploying bespoke hedging strategies across emerging-market debt, equities, and commodity markets.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Oil Markets and Middle East</p>
+<p class="para-body">Brent has now surged more than 80% in 2026, and the fragmentation of oil markets — driven by elevated freight costs — is producing sharp regional price divergences. Europe and East Asia are paying $120–$160 per barrel while North American consumers benefit from prices below $100. The US State Department's order for diplomatic departure from Saudi Arabia signals a genuine and immediate threat assessment. Houthi attacks continue despite previous military pressure, and the risk to Strait of Hormuz transit — while not yet materialized in disrupted flows — remains the critical tail risk for global energy markets.</p>
+<p class="para-title" style="color:#8b5cf6;">Geopolitics and Monetary Policy Divergence</p>
+<p class="para-body">The juxtaposition of the US-Iran conflict's inflationary impact with central bank responses across Asia — including the Philippines' surprise 50 basis point hike and the Bank of Korea signaling further tightening — illustrates the breadth of monetary tightening now underway globally. The Federal Reserve, under Kevin Warsh, is similarly positioned for additional hikes, with markets pricing three more increases by mid-2027. A potential trilateral summit between the US, Russia, and China next month — reportedly in preparation — would represent a significant diplomatic development, though its implications for ongoing conflicts remain highly uncertain.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
