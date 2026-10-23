@@ -1,0 +1,188 @@
+Subject: Energy Daily: Oil trading loophole
+Date: Fri, 23 Oct 2026 11:53:02 +0000
+
+Retail Traders Find a Back Door to 24/7 Oil Trading
+US retail investors are using VPNs to trade oil around the clock on offshore 
+platforms. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-10-23/retail-traders-find-a-back-door-to-24-7-oil-trading?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ 
+<https://www.bloomberg.com/industries/energy?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=20600104&m=11b724c487f61753eb1a7a4a5f3ef261&p=10232026115302&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=20600104&m=11b724c487f61753eb1a7a4a5f3ef261&p=10232026115302&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+
+Welcome to our guide to the commodities driving the global economy. Today, 
+reporter Mia Gindis looks at mounting warnings over 24/7 oil trading among 
+retail investors.
+
+In recent months a debate has intensified over whether US regulators should 
+allow oil futures trading to be extended around the clock.
+
+There are signs that some US retail investors are already trading commodities 
+24/7 quietly — and illegally —via virtual private networks 
+<bbg://news/stories/TN9V9RKJH6V5>, or VPNs.
+
+That method enables the circumvention of geographic restrictions to access 
+offshore platforms, according to established commodity operators who are 
+warning of potentially negative consequences. Some traders leverage it to buy 
+and sell oil outside of traditional market hours.
+
+The allure of this kind of access has grown with the volatility triggered by 
+the Iran war, and the Trump administration’s knack for dropping news after 
+incumbent exchanges have rung the closing bell.
+
+Warnings about VPN trading trend grew louder this week. The Commodity Markets 
+Council, an industry group representing regulated exchanges and major commodity 
+trading firms,expressed its concerns 
+<https://www.bloomberg.com/news/articles/2026-10-22/exchanges-urge-cftc-to-block-kalshi-s-perpetual-oil-futures-plan?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ in a letter to the Commodity Futures Trading Commission.
+
+The council outlined three potential consequences. First, US customers going 
+offshore lose protections offered by the Commodity Exchange Act. Second, the 
+CFTC has no visibility into trading positions held offshore, reducing the 
+effectiveness of its market surveillance.
+The CFTC headquarters in Washington, DC.Photographer: Daniel Heuer/Bloomberg
+The group also warned that growing weekend and overnight trading volumes on 
+unregulated offshore venues can impact the opening moments of trading in 
+benchmark contracts on established exchanges, before some participants are able 
+to act. The council says such a phenomenon can already be observed due to 
+so-calledperpetual futures 
+<https://www.bloomberg.com/news/articles/2026-10-22/exchanges-urge-cftc-to-block-kalshi-s-perpetual-oil-futures-plan?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ that trade offshore.
+
+“There’s no one policing that activity,” said Terry Duffy, the boss of CME 
+Group Inc., one of the biggest regulated commodity bourses, in a Bloomberg 
+Televisioninterview <bbg://news/stories/TN9V9RKJH6V5> this week. “I find that 
+to be troublesome.”
+
+The situation echoes earlier disputes 
+<https://www.bloomberg.com/news/articles/2023-03-27/crypto-exchange-binance-sued-by-us-cftc-for-alleged-derivatives-rule-lapses?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ between the CFTC and crypto exchanges Binance Holdings Ltd. and KuCoin. In its 
+letter, the Commodity Markets Council urged the regulator to followthat playbook
+ 
+<https://www.bloomberg.com/news/articles/2026-03-30/crypto-exchange-kucoin-pays-cftc-500-000-to-end-civil-case?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ and clamp down on offshore platforms allowing US customers to gain oil 
+exposure.
+
+Whatever happens, the commodities establishment appears to be resigned to the 
+fact that 24/7 trading of some kind is inevitable. The council acknowledged as 
+much in its letter.
+
+“The question is whether that exposure will be governed by one consistent set 
+of standards, and whether those standards will be enforced,” it said.
+
+—Mia Gindis, Bloomberg News
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=20600104&m=11b724c487f61753eb1a7a4a5f3ef261&p=10232026115302&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=20600104&m=11b724c487f61753eb1a7a4a5f3ef261&p=10232026115302&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Chart of the day
+
+South Korean shipowner Sinokor Group dominated oil transits 
+<https://www.bloomberg.com/news/articles/2026-10-23/shipowner-sinokor-dominates-hormuz-transits-as-oil-flows-rebound?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ through the Strait of Hormuz in September, data from intelligence firms 
+suggest, with the firm’s vessels moving more barrels than the next three owners 
+combined. The company, owned by tycoon Ga-Hyun Chung, gained prominence from 
+the early weeks of the Iran war, having amassed a huge tanker fleet in the run 
+up to the conflict through purchases or time charters.
+
+Top stories
+
+Brent oil was trading at the highest level since May 
+<https://www.bloomberg.com/news/articles/2026-10-22/latest-oil-market-news-and-analysis-for-oct-23?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ as attacks on Saudi Arabia intensified and the war with Iran remained 
+unresolved.
+
+As India cracks down on the world’s biggest equity-option frenzy, the 
+country’s retail investors and high-frequency traders are turning to a new 
+arena:commodities 
+<https://www.bloomberg.com/news/articles/2026-10-23/india-retail-investors-join-hft-firms-to-fuel-new-options-boom-in-commodities?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+.
+
+Australia has bet heavily on a data-center boom 
+<https://www.bloomberg.com/news/articles/2026-10-22/ai-data-center-backlash-threatens-australia-s-70-billion-dream?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ that is intended to capitalize on its vast open spaces and clean-energy 
+potential. But more than three-quarters of the centers set to be built around 
+its biggest cities are at risk from stretched power grids and local opposition.
+
+The physical prices of some Middle East crudes 
+<https://www.bloomberg.com/news/articles/2026-10-23/physical-oil-prices-drop-in-mideast-as-flows-via-hormuz-hold-up?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ sold outside the Persian Gulf have dropped, with producers and global traders 
+getting more adept at pushing cargoes through the Strait of Hormuz despite 
+attacks.
+
+Nigeria’s power grid is so unreliable that millions of homes rely on petrol 
+and diesel generators. Now, soaring fuel costs and cheaper technology are
+driving a shift to solar 
+<https://www.bloomberg.com/news/features/2026-10-23/nigeria-embraces-solar-energy-as-panels-become-popular-on-wedding-registries?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ — with panels and batteries even turning up on wedding registries.
+
+BNEF today
+
+Storm Austen, approaching the UK from the Atlantic Ocean, could bring a silver 
+lining for European power markets. Wind speeds are forecast to jump as the 
+storm arrives, according to BloombergNEF, boosting generation from renewables 
+just as colder weather lifts electricity demand and high gas prices increase 
+the cost of thermal output.
+
+More from Bloomberg
+
+ * Economics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT102326_ENERGY&utm_term=261023&utm_content=10470>
+ for what the changing landscape means for policymakers, investors and you
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT102326_ENERGY&utm_term=261023&utm_content=10470>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Green Daily 
+<https://www.bloomberg.com/account/newsletters/green?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT102326_ENERGY&utm_term=261023&utm_content=10470>
+ for the latest in climate news, zero-emission tech and green finance
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT102326_ENERGY&utm_term=261023&utm_content=10470>
+ for daily insights into supply chains and global trade
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT102326_ENERGY&utm_term=261023&utm_content=10470>
+ to get most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Energy 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/elements?source=NLshare&cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/elements?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBBXT102326_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261023&utm_content=10470>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/bWIDZ1wGTtoWPkPK6HdnhtQ5_2Q3XlnJypOH5hjC7W9Bww7CbXL4Hxkujj2pcl-yy_NObgfjDgT4KggjmNri3vX4vIEhECDYmFrX-5NTvSiWcDsD5-mp1Nv704UioodZo1uMkWYFlg2--V_cYtBVaWsSL-8IMBz-hwBAF1hZJaS1-Kz3fLytAKcbbE1D4kupnS_dIJ_HqeI5Syt-yuPpE-liOK4yAh9M0cs2wLSqrhGzgFHOjNVmm66F3FhkxzioIZOOS3WZ2akQEfrRmY3tRf6V9rbSM-aYirjKpCdlAauwGPrlrqavz_7MavbU7AB4-n5DOmGOwTawFFsmONy1Hgo9KYXQs2Zy/epgmqCGL-jy8V7OECDCjTF4gwCkGDbtJ/25>

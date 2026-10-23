@@ -1,0 +1,12 @@
+• Japan's core CPI rose above the Bank of Japan's 2% target for the first time this year, strengthening the case for a rate hike at the December meeting — the specific print was not cited against consensus but the directional beat is clear.
+• China's CSI 300 staged a late-session reversal after entering bear market territory on Thursday, with state-linked ETF activity suggesting government stabilization efforts.
+• The PBOC signaled a potential shift to overnight reverse repo rates as its primary policy instrument, a move markets interpreted as de facto easing despite official messaging to the contrary.
+• Taiwan's stock exchange closed as Typhoon Champi approached, disrupting the world's most important semiconductor equity market.
+
+**China Macro and Monetary Policy**
+The PBOC's governor Pan Gongsheng indicated the central bank is studying a shift in its primary open market operations tenor from the current seven-day benchmark to an overnight rate — a structural reform that would align China more closely with Fed and ECB practice. The practical implication is potentially lower borrowing costs, since the overnight rate sits below the seven-day rate. Markets appear to have already priced this as easing: 10-year Chinese government bond yields hit their lowest level in over a year this week. A PBOC-affiliated newspaper explicitly cautioned against interpreting the move as a rate cut, though the distinction may be difficult to sustain in practice. The reform arrives at a moment when China's economy faces deflationary pressure, weak consumer sentiment, and a prolonged property downturn.
+
+**Japan and Regional Markets**
+Japan's key price gauge rising above the 2% BOJ target for the first time in 2026 is a consequential development. The BOJ has conditioned further normalization on sustained inflation, and this print — combined with Prime Minister Takaichi's first year in office that has emphasized fiscal expansion and corporate reform — may bring December's meeting into sharper focus for rate watchers. Separately, the broader AI-driven global equity rout hit Asian markets, though the regional gauge erased early losses of 1.1% by session end. Julius Baer's head of Asia research argued the semiconductor correction represented a buying opportunity given supply still materially lags demand.
+
+---
