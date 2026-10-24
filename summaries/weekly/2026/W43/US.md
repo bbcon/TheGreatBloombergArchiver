@@ -1,0 +1,16 @@
+• No major macro data releases this week; earnings season dominates, with S&P 500 futures rising 0.8% Monday before reversing sharply midweek amid broad AI valuation reassessment.
+• US 10-year Treasury yield reached 5.12% on Tuesday, with 30-year mortgage rates at approximately 7.4% — the highest since 2000 — reflecting cumulative Fed tightening and oil-driven inflation overshoot.
+• Tech earnings were mixed: Meta raised capex guidance to $135–$145 billion with positive AI commentary; Tesla pulled back capex guidance and Lam Research guided weaker, falling over 9% Wednesday.
+• CoreWeave unsecured bond yields remained near 15%, sustaining debate over whether AI infrastructure credit stress is idiosyncratic or systemic.
+• Midterm elections on November 3 approach with prediction markets assigning roughly 60% probability to Democratic Senate control, with Elon Musk's cumulative campaign spending topping $445 million — the largest individual contribution in US history.
+
+**Equity Markets and AI Sentiment**
+The week's dominant market development was a sharp reassessment of AI-exposed equities, with the Nasdaq 100 suffering its worst single session since June on Thursday. Goldman Sachs prime brokerage data showed global fundamental long/short managers down 1.4% and multi-strategy platforms off 1.9% on that day alone. The prior week had ended a 53-session streak without a 1% S&P drawdown, the longest since January 2020. CDS volumes tied to the ten largest hyperscalers and chipmakers surged 691% to a record $140 billion through September; SocGen argues wider spreads are already compressing hyperscaler multiples toward levels last seen at ChatGPT's launch, with a potential floor for buying no earlier than second-half 2027.
+
+**Credit and Monetary Policy**
+Treasuries reasserted their traditional equity-hedge function Thursday, with Nomura's McElligott describing the move as markets repricing a US growth scare in real time. The 10-year ended the week near 5.07%. CoreWeave stress appears structurally contained — Barclays' Rajadhyaksha notes unsecured bonds represent under $2 billion of a $35 billion debt stack — but the episode has sharpened scrutiny of the GPU rental-rate-versus-financing-cost spread underpinning the entire AI infrastructure financing model. Treasury Secretary Bessent's original objective of driving the 10-year toward 4.5% has materially failed; his messaging has pivoted to framing Treasuries as the best-performing major government bond in total return terms.
+
+**Fiscal and Consumer Policy**
+US net interest costs hit $1.05 trillion in the year through September — a new record, up more than 8% year-over-year — raising the long-term debt sustainability question that the incoming Senate class will govern through, including the Social Security reserve exhaustion projected for 2032. The elimination of federal EV tax credits has widened the cost premium of electric vehicles to approximately $4,800 over comparable internal-combustion models, though Cox Automotive survey data indicate that gasoline prices near $5.50 per gallon in parts of the Pacific Northwest are sustaining consumer interest in electrification despite the policy reversal.
+
+---

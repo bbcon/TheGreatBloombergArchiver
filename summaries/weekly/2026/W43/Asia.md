@@ -1,0 +1,13 @@
+• China Q3 GDP grew 4.5% year-over-year Monday, above the Q2 pace of 4.3% and above consensus, keeping full-year growth on track for Beijing's 4.5%–5.0% target; September retail sales beat forecasts by a wide margin.
+• Japan's core CPI rose above the Bank of Japan's 2% target for the first time in 2026 on Thursday, strengthening the case for a December rate hike.
+• South Korean neocloud Elice plunged 33% on its trading debut Tuesday, dragging the Kospi down 3.7% and amplifying regional AI valuation concerns.
+• The Philippines central bank raised its key rate by 50 basis points to 5.50% Wednesday — a surprise move anticipated by only one of 25 economists surveyed — as the peso hit a record low.
+• Chinese equities entered bear market territory Thursday, losing $2.4 trillion since their May peak, before a late-session reversal attributed to state-linked ETF stabilization activity.
+
+**China: Growth, Markets, and Monetary Reform**
+Monday's data dump provided Beijing measured relief: retail sales, industrial production, and export momentum kept the economy within striking distance of official targets. However, the IMF's Georgieva explicitly called on China to spend more domestically at Bangkok meetings, and Macquarie economist Larry Hu characterizes Beijing's approach as a "do-just-enough rule," suggesting further near-term stimulus is unlikely. The bear market in Chinese equities — reflecting structurally weak domestic consumption and skepticism over AI profitability — sits in uncomfortable contrast with private capital conviction: DeepSeek raised approximately $15 billion in its latest round, with CATL and Tencent among anchor investors. The PBOC's signaled shift toward overnight reverse repo rates as its primary policy instrument pushed 10-year Chinese government bond yields to their lowest in over a year, though a PBOC-affiliated newspaper cautioned against interpreting the reform as a rate cut.
+
+**Japan and Southeast Asia**
+Japan's inflation print above 2% is consequential: the BOJ has conditioned normalization on sustained price pressure, and Thursday's release — combined with a record-demand 20-year JGB auction that signals domestic institutions returning to duration — may bring December into sharper focus for rate watchers. Indonesia's Jakarta Composite rebounded 4.3% Tuesday after the exchange announced index methodology changes addressing MSCI's potential two-step downgrade to standalone status — a reclassification that would place Indonesia alongside Lebanon and Argentina — though whether the changes satisfy MSCI remains uncertain. The Philippines' outsized hike reflects the dual pressure confronting emerging Asian economies: imported energy inflation and currency weakness amplifying pass-through.
+
+---

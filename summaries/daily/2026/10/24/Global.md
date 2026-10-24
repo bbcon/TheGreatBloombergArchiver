@@ -1,0 +1,9 @@
+• Gulf AI infrastructure faces compounding risks: Houthi strikes have already damaged facilities including an Aramco site near Riyadh, and enhanced physical security is estimated to raise data center costs by 5%–7%.
+• Saudi Arabia's flagship investment conference, originally scheduled for October 26, was postponed due to escalating Houthi attacks — a concrete signal of how the US-Iran conflict is disrupting Gulf economic diplomacy.
+• Nigeria's small-scale solar capacity now exceeds grid-delivered power, with 2026 additions already matching the combined total of 2024 and 2025.
+
+**Gulf AI and Geopolitical Risk**
+The Gulf states' AI infrastructure ambitions — built on advantages of land, energy abundance, and relatively low labor costs — are encountering a risk dimension that was not fully priced at the outset: physical vulnerability to military strikes. Saudi Arabia and the UAE nearly tripled data center capacity between 2020 and 2025, with BloombergNEF projecting a further three- to six-fold expansion by 2035. However, the widening US-Iran conflict, prosecuted partly through Houthi proxies, has introduced asymmetric risk to fixed infrastructure that cannot be relocated. The tension between building at home to capture competitive advantages versus building abroad to reduce physical exposure presents Gulf sovereigns with a strategic dilemma without an obvious resolution.
+
+**Energy Transition at the Margin**
+Nigeria's solar inflection illustrates how energy transitions can accelerate outside conventional policy frameworks. Driven by chronic grid failure, high fossil fuel prices, and falling costs of Chinese-manufactured photovoltaic equipment, small-scale solar in Nigeria has surpassed grid capacity — a development with implications for energy demand patterns across Sub-Saharan Africa and for the longer-term trajectory of African hydrocarbon consumption.
