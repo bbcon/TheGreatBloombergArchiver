@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, October 26, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, October 26, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>No major macro data releases today; the FOMC meets Wednesday and is widely expected to hold rates steady.</li><li>Big Tech earnings — Alphabet, Microsoft, and Amazon report mid-week — dominate investor focus, with markets scrutinizing AI capital expenditure and monetization.</li><li>The SOX semiconductor index has declined 19% over the past three weeks, reflecting broadening skepticism about the AI trade's near-term return on investment.</li><li>US 10-year Treasury yields stand near 4.99%, with rising long rates creating a feedback loop that pressures both AI-sector valuations and the Federal Reserve's policy calculus.</li></ul>
+<p class="para-title" style="color:#5597cb;">Monetary Policy</p>
+<p class="para-body">The FOMC convenes Wednesday and is expected to hold rates unchanged, with Fed Chair Kevin Warsh having signaled no urgency to hike in his final pre-purdah remarks to the IMF. September CPI showed a disquieting broad-based increase that briefly prompted markets to price in a higher probability of an October hike, but successive Fed communications — most notably from New York Fed President John Williams — walked those expectations back. The pattern suggests Warsh, despite his stated preference for abandoning forward guidance, has effectively been pulled back toward market management by the scale of the reaction to his early press conferences. The 10-year yield and market-implied fed funds rate one year forward have moved in close alignment, raising the unresolved question of whether the Fed is driving the bond market or vice versa.</p>
+<p class="para-title" style="color:#5597cb;">Markets and Earnings</p>
+<p class="para-body">The Nasdaq 100 and long-duration Treasuries have both sold off over the past month, compressing the AI-and-bonds trade that defined much of 2026. Alphabet, Microsoft, and Amazon results this week are pivotal: the market is less focused on headline earnings growth than on AI spending trajectories and evidence of monetization. Apollo's Torsten Slok has noted that AI has delivered measurable payoff only within tech itself. Biotech has been a notable exception, rising roughly 5% over the past month as AI-driven drug discovery and a wave of M&A transactions offset the broader tech selloff. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Jio's $3.1 billion IPO in India drew strong institutional demand despite a week-long equity selloff, raising a record amount for Mukesh Ambani's telecom group.</li><li>Goldman Sachs cut its price target for South Korea's Kospi by 25% after the index fell more than a third from its June peak; leveraged ETFs tied to SK Hynix are being delisted in the US.</li><li>Singapore is actively diversifying energy supply after Indonesia unexpectedly announced cuts to natural gas exports over the weekend.</li><li>Saudi Arabia is arranging to store crude oil in Singapore's Jurong Rock Caverns from mid-2027, citing supply-chain resilience given US-Iran war disruptions.</li></ul>
+<p class="para-title" style="color:#e07b39;">India Equity Markets</p>
+<p class="para-body">Jio's IPO, the largest share sale in Indian history, priced successfully despite the overhang of a weeklong domestic equity decline. However, the deal illustrated the structural compression in Indian investment banking fees: the 19 underwriters shared approximately $20.7 million, equal to roughly 0.65% of deal size, trailing fee pools on several prior offerings. Fierce competition among banks for marquee mandates has eroded economics even on landmark transactions, with firms accepting thin fees in exchange for league-table positioning.</p>
+<p class="para-title" style="color:#e07b39;">Korea and AI Sentiment</p>
+<p class="para-body">South Korean equities reflected broader AI skepticism. The Kospi fell 1.5% on Monday, and Goldman Sachs's revised price target — still approximately 60% above current levels — underscores how dramatically valuations have compressed since June. Two leveraged ETFs tracking SK Hynix, launched just months ago, will be liquidated as demand for amplified AI exposure moderates. Volatile swings in Korean semiconductor stocks had been a meaningful driver of prime brokerage revenues at banks including Barclays.</p>
+<p class="para-title" style="color:#e07b39;">Singapore Energy Security</p>
+<p class="para-body">Indonesia's unannounced reduction in gas exports, framed around domestic supply needs, prompted Singapore's energy minister to outline contingency measures at the Singapore International Energy Week. The government emphasized the cuts represent less than 2% of daily demand, but the episode highlights broader resource-nationalism risks across Southeast Asia. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>French bonds and equities gained Monday after Moody's opted against a downgrade on Friday, offering brief relief following a period in which French yields reached 24-year highs.</li><li>Germany's Ifo business climate index unexpectedly improved for a sixth consecutive month, suggesting the economy's recovery from a prolonged downturn remains intact.</li><li>Bank of England communications have reached their most hawkish level since early 2023, with Bloomberg Economics pricing in rate hikes in November and February.</li><li>The UK budget is due Wednesday, with businesses lobbying Chancellor Healey to reduce levies on electricity bills.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">France and ECB Succession</p>
+<p class="para-body">The respite in French markets — aided by a Moody's hold and a heavy police presence that contained weekend protests — is unlikely to resolve the underlying tension between bloated public finances and political gridlock. French bond yields had reached 24-year highs last week, and the ECB's Thursday meeting, originally intended to assess inflation risks against slowing growth, is now overshadowed by sovereign stress. The succession question intensifies the stakes: President Lagarde may exit as early as January, and the next ECB president — likely either Klaas Knot or Pablo Hernandez de Cos — could inherit a crisis-management brief almost immediately. Former ECB President Draghi noted that public discussion of potential central bank support makes future intervention harder, not easier, by politicizing the institution.</p>
+<p class="para-title" style="color:#4a9e6b;">UK Fiscal and Monetary Outlook</p>
+<p class="para-body">Wednesday's budget arrives against a backdrop of rising energy costs, persistent inflation, and the most hawkish Bank of England rhetoric in over three years. Bloomberg Economics' BOESPEAK model, which tracks MPC communications, has risen to its highest reading since the 2023 rate-hiking cycle. UK firms are pressing for relief on electricity levies; whether Healey can accommodate such measures while maintaining fiscal credibility will be closely watched in both bond and equity markets. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Lula won Brazil's presidential runoff with 51.8% of the vote, defeating Flávio Bolsonaro in an outcome that caught investors heavily positioned for the opposite result.</li><li>Brazilian equity ETFs fell approximately 27% in US premarket trading; Banco Bradesco and Itaú Unibanco each dropped around 28%; the real is indicated down more than 10%.</li><li>Bolsonaro has called for annulment of the result, raising the prospect of a prolonged political dispute that adds uncertainty to the repricing.</li><li>Venezuelan opposition leader María Corina Machado returned to Caracas after nearly a year in exile, raising expectations for a renewed democratic challenge to the Rodríguez government.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil Market Shock</p>
+<p class="para-body">The outcome represents one of the sharper investor positioning errors in recent Latin American history. The Ibovespa had risen 10% in October and 27% year-to-date as capital flowed in on expectations of Bolsonaro's fiscal tightening program and lower interest rates. UBS, Morgan Stanley, JPMorgan, and Citigroup had all published bullish calls on Brazilian assets. The reversal is therefore not merely a function of policy uncertainty but of a crowded trade unwinding simultaneously. Bradesco Asset Management's Bruno Funchal characterized the situation plainly: "the market will reprice everything." How aggressively Lula pursues expansionary fiscal policy — and whether he can maintain coalition stability in a polarized Congress — will determine how much of Monday's discount persists.</p>
+<p class="para-title" style="color:#c0392b;">Climate Policy Continuity</p>
+<p class="para-body">Lula's return also carries meaningful implications for environmental policy. Bolsonaro had campaigned on looser Amazon development rules; under Lula, deforestation has fallen to its lowest level since official monitoring began in 1988. His new term preserves Brazil's engagement with UN climate talks, including COP31, beginning November 9 in Turkey. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude is trading above $115 per barrel, near six-month highs, with forward contracts for November 2027 at record levels — suggesting markets have abandoned expectations of a swift resolution to Gulf supply disruptions.</li><li>Top security officials from Saudi Arabia, Pakistan, and Turkey are meeting Iran's leaders Monday in an effort to prevent further military escalation; President Trump said a decision on whether to deal or "finish it off" is approaching.</li><li>European natural gas has surged to approximately €97/MWh — more than triple year-ago levels — with storage at roughly 75% of capacity versus a seasonal norm of 90%, raising winter supply risk.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Oil and the Gulf</p>
+<p class="para-body">The structure of the oil futures curve has shifted materially. Brent's 12-month forward contract is at levels last seen immediately after Russia's 2022 invasion of Ukraine, while the November 2027 contract has reached an all-time high — implying markets now price a sustained supply disruption rather than a temporary one. Riyadh's main airport has reopened after a two-week closure. Saudi Arabia's decision to pre-position crude in Singapore's Jurong Rock Caverns reflects the kingdom's own assessment that supply-chain disruption risk is structural, not episodic. A further escalation post-US midterms — once the political constraints on action recede — remains a material tail risk for energy markets and global growth.</p>
+<p class="para-title" style="color:#8b5cf6;">European Gas and Policy Response</p>
+<p class="para-body">Europe's policy response to the current gas shock is orders of magnitude smaller than during the 2022 crisis: approximately €12 billion in incremental support versus €650 billion four years ago. This partially reflects the less severe supply impact to date, but also reflects the dramatically reduced fiscal space available to governments, particularly France. If winter temperatures prove colder than average, Energy Aspects estimates prices could spike above €200/MWh — a level that would be severely damaging for European industrial competitiveness relative to the US, where the equivalent price sits near €8/MWh. EU policymakers are considering delaying methane-emissions rules and revisiting the January LNG ban on Russian imports, illustrating the tension between energy security and the bloc's longer-term decarbonization commitments.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
