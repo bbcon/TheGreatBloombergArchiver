@@ -1,0 +1,10 @@
+• Oil prices slipped for a second consecutive session as diplomatic efforts to de-escalate US-Iran tensions gained traction, with WTI near $101 and Brent around $116.
+• Very-large crude carrier rates have surged more than 1,600% this year amid Iran war disruptions; a London lawsuit by trader Mercuria against the Baltic Exchange argues the benchmark rate is no longer fit for purpose.
+• Saudi Arabia contained a fire near the Ras Tanura export terminal following an attack, underscoring continued infrastructure vulnerability in the Gulf.
+• UN pre-COP31 reports project only a 6% reduction in global emissions by 2035 versus 2019 — an order of magnitude below the 60% cut the IPCC deems necessary to limit warming to 1.5°C.
+
+**Oil Markets and the Strait of Hormuz**
+The Iran war continues to distort global energy markets in ways that extend well beyond crude prices. Tanker rate volatility — with rates up more than 1,600% — is reshaping oil logistics globally, creating concentrated pricing power for dominant shipowners and exposing the fragility of the Baltic Exchange benchmark. Saudi Arabia's ability to contain infrastructure damage at Ras Tanura is reassuring near-term, but the episodic nature of attacks keeps a meaningful risk premium embedded in Brent. Stepped-up diplomatic activity, including China dispatching envoys to the region, has provided modest relief.
+
+**Climate and Energy Transition**
+The UN's pre-COP31 assessment confirms the Paris architecture is functioning — embedding climate action across governments — while simultaneously documenting that collective ambition falls far short of physical necessity. The Trump administration's expected methane regulation rollback adds to the US-global divergence on emissions policy. Separately, India's push to scale used cooking oil collection into sustainable aviation fuel and biodiesel reflects a pragmatic emerging-market approach to energy transition, driven by crude import costs kept elevated by the Gulf conflict. COP31 opens in Antalya, Turkey on November 9.

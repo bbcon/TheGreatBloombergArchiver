@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, October 27, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, October 27, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>US equity futures stalled Tuesday after Monday's AI-driven rally, with S&P 500 futures flat and Nasdaq 100 futures off 0.3%, as attention shifted to earnings and Wednesday's Fed decision.</li><li>Anthropic's 335-page IPO filing revealed $16.3 billion in first-half 2026 revenue (up from $1.2 billion in H1 2025) and a 19% adjusted operating margin, filing to raise more than SpaceX's $75 billion June listing.</li><li>The Trump administration is expected to propose rolling back EPA methane regulations on oil and gas operations, framed as an energy production measure.</li><li>Microsoft announced buyouts for approximately 60,000 workers, roughly a quarter of its global workforce, as part of a cost-reduction and workforce retooling effort.</li></ul>
+<p class="para-title" style="color:#5597cb;">Monetary Policy and Rates</p>
+<p class="para-body">The Federal Reserve's Wednesday policy decision dominated trader attention, with the 10-year Treasury yield at 4.99%. Fed Chair Kevin Warsh has previously highlighted inflation breadth as a concern; Fitch Ratings data show 46% of US CPI components running above 3% year-on-year in September, double the 2018–2019 average. This broad-based price pressure may reinforce the case for a higher-for-longer stance.</p>
+<p class="para-title" style="color:#5597cb;">AI Capital Markets</p>
+<p class="para-body">The scale of AI-related financing activity on Monday was striking. Goldman Sachs co-led Meta's roughly $98 billion equity offering, sole-structured a $40 billion SpaceX chip financing facility, and was named lead bookrunner on Anthropic's IPO. Broadcom separately arranged a $63 billion deal to finance chip purchases for Anthropic. BlackRock CIO Rick Rieder described the AI debt opportunity as eclipsing long-dated Treasuries in attractiveness. Whether Anthropic's eventual pricing confirms or challenges broader AI valuations remains the key near-term signal for the sector.</p>
+<p class="para-title" style="color:#5597cb;">Fiscal Backdrop</p>
+<p class="para-body">The US fiscal deficit is tracking above 6% of GDP for a fourth consecutive year — structurally elevated despite low unemployment. Rising debt-servicing costs have pushed interest payments above $1 trillion annually, and the current political configuration offers limited near-term prospects for consolidation. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>South Korea's economy grew 3.4% in Q3, beating consensus, driven by AI-related chip export strength.</li><li>HSBC's Q3 pretax profit rose 32% to $9.6 billion, missing the $9.7 billion company-compiled estimate; shares fell more than 6% in Hong Kong.</li><li>The Bank of Japan's underlying inflation gauge reached a three-year high, with a major labor union group seeking a 6% pay hike.</li><li>A cyberattack on a Japanese currency trading platform — with a $50 million ransom demand — added to a wave of Japan-targeted hacks, prompting government emergency measures.</li></ul>
+<p class="para-title" style="color:#e07b39;">South Korea: Growth Surprise</p>
+<p class="para-body">South Korea's Q3 GDP growth of 3.4% exceeded expectations, powered by the AI semiconductor boom driving exports and capital investment. The result provides a meaningful near-term fiscal buffer and reinforces the country's position as a primary beneficiary of global AI infrastructure spending. South Korean LNG imports also rose year-on-year in October as the country rebuilt stockpiles below their five-year seasonal average.</p>
+<p class="para-title" style="color:#e07b39;">Japan: Inflation and Policy</p>
+<p class="para-body">The Bank of Japan's core inflation gauge hitting a three-year high, combined with organized labor seeking a 6% wage increase, sustains expectations for continued policy normalization. Fitch estimates 41% of Japanese CPI components are running above 3% annually. Markets are repricing Japan risk broadly, with the country's 30-year deflation era increasingly viewed as structurally over.</p>
+<p class="para-title" style="color:#e07b39;">Regional Corporate and Geopolitics</p>
+<p class="para-body">HSBC's earnings miss, despite strong headline profit growth, illustrates heightened investor expectations in an elevated-rate environment. Indonesia's reduction of natural gas exports to Singapore — its largest supplier — introduced a new regional tension, officially framed as an energy security measure though occurring against a backdrop of bilateral friction over Indonesian haze. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>French consumer confidence fell to a 13-year low, as multiple economic and political shocks weighed on households.</li><li>France's fiscal deficit exceeds 5% of GDP despite government revenues above 50% of GDP, leaving Paris with limited room to either raise taxes or cut spending ahead of the presidential election.</li><li>UK Chancellor John Healey is set to raise the national living wage approximately 4% in Wednesday's budget, with no closure of the age-band pay gap.</li><li>HSBC's earnings miss dragged down European bank stocks broadly.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">France: Fiscal and Political Pressure</p>
+<p class="para-body">French consumer confidence dropping to its lowest level since 2013 reflects the cumulative weight of energy costs, political uncertainty, and post-riot social disruption. The fiscal position is structurally constrained: with revenues already above 50% of GDP — well above the G7 average of under 36% — the government has limited space to raise taxes without economic damage, while entitlement reform faces intense political resistance. The ECB's bank lending survey showed euro-zone credit conditions tightening and loan demand weakening, reinforcing the case for ECB caution.</p>
+<p class="para-title" style="color:#4a9e6b;">UK: Budget and Policy</p>
+<p class="para-body">Wednesday's budget represents Chancellor Healey's first significant fiscal statement under Prime Minister Andy Burnham, who has separately signaled interest in revisiting the UK's relationship with the EU — stopping short of a formal rejoining proposal for this Parliament. The 4% living wage increase is modest relative to broader wage dynamics. With gilt yields elevated and borrowing running above forecasts, Bloomberg editors argue Healey should prioritize health and disability benefit restraint alongside revenue measures. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazil's MSCI ETF fell approximately 18% on Monday following Lula's presidential election victory, the largest single-day decline since Brazil's 1999 currency devaluation.</li><li>The Brazilian real suffered its steepest intraday selloff since abandoning its currency peg in 1999, before partially recovering.</li><li>Flávio Bolsonaro abandoned plans to contest the election result; his Liberal Party formally conceded to Lula.</li><li>Venezuela's opposition leader María Corina Machado returned from exile, complicating Washington's working relationship with acting President Delcy Rodríguez.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil: Selloff and Opportunity</p>
+<p class="para-body">The market reaction to Lula's victory was disproportionate to the policy risk it represents. His party lost ground in the legislature, with Bolsonaro's Liberals holding over a third of Senate seats, constraining Lula's fiscal latitude. Historical patterns in Latin American markets suggest post-election selloffs following perceived left-wing victories have consistently created buying opportunities, with markets repricing once policy reality proves less damaging than feared. Local-currency bonds yielding approximately 12.8% and the real have attracted interest from contrarian investors. The episode nonetheless reflects the continued dominance of foreign passive flows in driving LatAm equity volatility.</p>
+<p class="para-title" style="color:#c0392b;">Venezuela: Transition Complexity</p>
+<p class="para-body">Machado's return introduces a meaningful complication to the US-Venezuela arrangement that had been quietly functioning under acting President Rodríguez, including a sweeping oil sector deal. Machado's stated opposition to the businessman central to that accord signals potential friction. Washington has now outlined its clearest election timetable for Venezuela, but the incentive structure for disrupting a commercially productive bilateral relationship remains limited ahead of US midterms. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Oil prices slipped for a second consecutive session as diplomatic efforts to de-escalate US-Iran tensions gained traction, with WTI near $101 and Brent around $116.</li><li>Very-large crude carrier rates have surged more than 1,600% this year amid Iran war disruptions; a London lawsuit by trader Mercuria against the Baltic Exchange argues the benchmark rate is no longer fit for purpose.</li><li>Saudi Arabia contained a fire near the Ras Tanura export terminal following an attack, underscoring continued infrastructure vulnerability in the Gulf.</li><li>UN pre-COP31 reports project only a 6% reduction in global emissions by 2035 versus 2019 — an order of magnitude below the 60% cut the IPCC deems necessary to limit warming to 1.5°C.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Oil Markets and the Strait of Hormuz</p>
+<p class="para-body">The Iran war continues to distort global energy markets in ways that extend well beyond crude prices. Tanker rate volatility — with rates up more than 1,600% — is reshaping oil logistics globally, creating concentrated pricing power for dominant shipowners and exposing the fragility of the Baltic Exchange benchmark. Saudi Arabia's ability to contain infrastructure damage at Ras Tanura is reassuring near-term, but the episodic nature of attacks keeps a meaningful risk premium embedded in Brent. Stepped-up diplomatic activity, including China dispatching envoys to the region, has provided modest relief.</p>
+<p class="para-title" style="color:#8b5cf6;">Climate and Energy Transition</p>
+<p class="para-body">The UN's pre-COP31 assessment confirms the Paris architecture is functioning — embedding climate action across governments — while simultaneously documenting that collective ambition falls far short of physical necessity. The Trump administration's expected methane regulation rollback adds to the US-global divergence on emissions policy. Separately, India's push to scale used cooking oil collection into sustainable aviation fuel and biodiesel reflects a pragmatic emerging-market approach to energy transition, driven by crude import costs kept elevated by the Gulf conflict. COP31 opens in Antalya, Turkey on November 9.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
