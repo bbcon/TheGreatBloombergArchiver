@@ -1,0 +1,12 @@
+• FOMC held rates steady in October, as widely anticipated; statement language upgraded the economy to growing at a "strong" pace from "solid" in September, slightly more hawkish than expected, with a December hike still firmly priced in.
+• Alphabet shares fell roughly 10% after-hours following a revenue miss — ex-TAC sales of $111.2 billion fell short of consensus — while Microsoft gained 3.5% as Azure cloud revenue grew 48% to $33.2 billion, beating estimates.
+• The US merchandise trade deficit widened 2.1% to $134.9 billion in September, the largest since March 2025, driven by a 7.5% record surge in capital goods imports tied to AI infrastructure buildout.
+• AI credit stress is intensifying: data center bond yields have risen from sub-5% to near 7%, with CDS spreads on Broadcom, SpaceX, and Oracle spiking to levels more typical of junk-rated issuers.
+
+**Monetary Policy**
+The FOMC held the federal funds rate unchanged, though two members — including Governor Lisa Cook — dissented in favor of an immediate hike, signaling the decision was genuinely contested. Chairman Warsh's press conference was notably evasive on the rationale for pausing, declining follow-up questions and offering no explicit forward guidance. Markets interpreted the tone as suggesting the Fed is reluctant to risk engineering a slowdown, and the terminal rate expectation held near 4.6%. Warsh separately announced the Fed will reduce its annual meeting schedule from eight to six decisions, effective 2027.
+
+**Corporate Earnings and AI Credit**
+The divergence between Alphabet and Microsoft encapsulates the central tension in the AI investment cycle. Alphabet posted its second consecutive quarter of negative free cash flow; shareholders appear to be funding the AI buildout alongside the company's own cash generation. Microsoft, by contrast, demonstrated discipline — capex of $45.2 billion came in below the $45.9 billion estimate while Azure accelerated. The broader credit market signal is now difficult to dismiss: early-stage AI financing is showing acute stress, and the damage is beginning to spread to investment-grade names. Whether this constitutes a contained repricing or a more systemic disruption to the AI buildout timeline remains genuinely uncertain.
+
+---
