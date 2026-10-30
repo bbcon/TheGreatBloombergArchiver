@@ -1,0 +1,11 @@
+• Eurozone GDP grew twice as fast as economists predicted in Q3, though the aggregate figure masked a meaningful contraction in France, where GDP fell 0.1% quarter-on-quarter against a consensus forecast of +0.1% expansion.
+• French CPI rose to 3.8% year-on-year in October, the highest since late 2023, driven by energy costs — a stagflationary combination that complicates both fiscal and monetary management.
+• The ECB held its key rate unchanged and kept a December hike explicitly on the table; Christine Lagarde simultaneously announced her departure in February, ahead of her October term-end.
+
+**ECB Leadership Transition**
+Lagarde's presidency leaves a nuanced legacy. On the positive side, she repaired policymaker relations fractured under Mario Draghi, successfully returned eurozone inflation to the 2% target without triggering recession, and created the Transmission Protection Instrument in 2022 to manage fiscal spread risk alongside rate hikes. Against this, the ECB was widely criticized for moving too slowly to tighten after Russia's Ukraine invasion, and her 2020 remark that the ECB was "not here to close spreads" briefly destabilized sovereign bond markets. Her stated reason for early departure — a desire to speak freely on non-monetary matters, including potentially French domestic politics ahead of the April presidential election — itself generated internal friction. EU leaders will convene November 26–27 to begin formalizing a successor selection process.
+
+**France: Stagflationary Pressure**
+The French Q3 GDP contraction, combined with inflation at a near three-year high, presents a particularly difficult policy environment. Investment continued declining and exports fell. Credit Agricole's CEO has separately warned of France-specific risk, a break from peers that may signal broader institutional concern about fiscal trajectory and political uncertainty. Italy stagnated over the same period. The divergence between these two large economies and aggregate eurozone performance warrants close monitoring as the ECB weighs its December decision.
+
+---

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, October 30, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, October 30, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Tech earnings disappoint broadly: Amazon reported the slowest e-commerce growth in three years with capex above expectations, while Intel's revenue forecast missed estimates — shares fell 25% premarket; Nasdaq 100 futures declined 2.4%.</li><li>Binance hack of $6.3 billion rattled crypto-linked equities, with Strategy, Robinhood, and Riot Platforms each falling 5–6%.</li><li>Microsoft issued $25 billion in bonds, underscoring the scale of AI financing requirements even as investor patience with the sector frays.</li><li>US midterm elections approach with Trump canceling in-person rallies in Iowa and Kansas in favor of tele-campaigning, signaling unusual defensive positioning for a sitting president.</li></ul>
+<p class="para-title" style="color:#5597cb;">Tech Earnings and AI Spending Anxiety</p>
+<p class="para-body">The week's earnings season crystallized a mounting tension at the heart of US equity markets: Big Tech's legacy revenue engines are decelerating at precisely the moment AI capital expenditure is accelerating. Amazon reported its slowest e-commerce growth in three years alongside capex that exceeded consensus. Intel's forward revenue guidance missed materially, sending shares down roughly 25% in premarket trading. Alphabet, Microsoft, and Meta similarly underwhelmed. The Nasdaq 100 is down approximately 3.3% for October, even as the equal-weighted S&P 500 has gained 5.7% — a divergence illustrating how concentrated the damage remains. Notably, 406 of 500 S&P constituents rose Thursday even as the index closed lower, a statistically rare configuration that underscores the handful of mega-caps driving aggregate index performance.</p>
+<p class="para-title" style="color:#5597cb;">Bond Markets and Rates</p>
+<p class="para-body">Long-duration Treasuries offered partial shelter from equity volatility, with the 10-year yield at 4.93%. After peaking near 5.4% earlier in October — the highest since 2002 — yields have retraced sufficiently to deliver a roughly 2.2% October return on a global long-bond gauge, the first month of long-bond outperformance since February. Whether this represents a structural turning point or a tactical pause remains uncertain; energy-driven inflation and deteriorating fiscal dynamics have not resolved. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Bank of Japan held its benchmark rate at 1.25% as widely expected, but Governor Ueda explicitly flagged rate hike consideration at every upcoming meeting including December — more hawkish than markets had positioned.</li><li>Taiwan GDP expanded 14.4% year-on-year in Q3, its fourth consecutive quarter of double-digit growth and the longest such streak in nearly 39 years, driven by AI-related tech exports that surged 61% to a record $87 billion in September.</li><li>China's largest banks reported best quarterly profit increases in recent years: ICBC posted a 10% Q3 profit jump, with Agricultural Bank of China and Bank of Communications also delivering double-digit gains.</li><li>South Korea's Kospi fell 3.5%, among the sharpest single-session declines in the region, as global tech sentiment deteriorated on US earnings.</li></ul>
+<p class="para-title" style="color:#e07b39;">Monetary Policy and Growth Divergence</p>
+<p class="para-body">The BOJ's decision to hold at 1.25% was entirely in line with consensus, but Governor Ueda's tone at the subsequent press conference leaned hawkish, explicitly noting that a December hike remains on the table. The yen strengthened in response. The juxtaposition within the region is striking: Taiwan's economy is expanding at a pace rarely seen in developed markets, fueled almost entirely by AI semiconductor demand, while Japan navigates a careful normalization after three decades of deflation. These trajectories imply continued divergence in regional capital flows and currency dynamics.</p>
+<p class="para-title" style="color:#e07b39;">China: Politics and Corporate Results</p>
+<p class="para-body">The Chinese Communist Party's fifth plenum concluded with record-low attendance among senior officials — a reflection of Xi Jinping's anti-corruption purge that has shortened average provincial party chief tenure to 26.5 months from 43 months. Zhang Shengmin, the Central Military Commission's anti-graft chief, was elevated to the Politburo — the first such promotion in over three decades. Separately, strong bank earnings suggest the worst of China's financial sector profitability squeeze may be passing, though the sustainability of margin recovery warrants monitoring given ongoing property sector headwinds. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>Eurozone GDP grew twice as fast as economists predicted in Q3, though the aggregate figure masked a meaningful contraction in France, where GDP fell 0.1% quarter-on-quarter against a consensus forecast of +0.1% expansion.</li><li>French CPI rose to 3.8% year-on-year in October, the highest since late 2023, driven by energy costs — a stagflationary combination that complicates both fiscal and monetary management.</li><li>The ECB held its key rate unchanged and kept a December hike explicitly on the table; Christine Lagarde simultaneously announced her departure in February, ahead of her October term-end.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">ECB Leadership Transition</p>
+<p class="para-body">Lagarde's presidency leaves a nuanced legacy. On the positive side, she repaired policymaker relations fractured under Mario Draghi, successfully returned eurozone inflation to the 2% target without triggering recession, and created the Transmission Protection Instrument in 2022 to manage fiscal spread risk alongside rate hikes. Against this, the ECB was widely criticized for moving too slowly to tighten after Russia's Ukraine invasion, and her 2020 remark that the ECB was "not here to close spreads" briefly destabilized sovereign bond markets. Her stated reason for early departure — a desire to speak freely on non-monetary matters, including potentially French domestic politics ahead of the April presidential election — itself generated internal friction. EU leaders will convene November 26–27 to begin formalizing a successor selection process.</p>
+<p class="para-title" style="color:#4a9e6b;">France: Stagflationary Pressure</p>
+<p class="para-body">The French Q3 GDP contraction, combined with inflation at a near three-year high, presents a particularly difficult policy environment. Investment continued declining and exports fell. Credit Agricole's CEO has separately warned of France-specific risk, a break from peers that may signal broader institutional concern about fiscal trajectory and political uncertainty. Italy stagnated over the same period. The divergence between these two large economies and aggregate eurozone performance warrants close monitoring as the ECB weighs its December decision. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Colombia's central bank faces a difficult rate decision with stubborn inflation supporting a hike while softening activity data argue for a pause — the outcome remains genuinely uncertain.</li></ul>
+<p class="para-title" style="color:#c0392b;">Regional Overview</p>
+<p class="para-body">Coverage of Latin American macro developments is limited for this period, with the most notable regional policy event being Colombia's pending central bank decision. Separately, Envision Group's data center expansion plans cite Latin America as a target geography for renewable-powered facilities, reflecting the region's competitive position in clean energy resources. No significant tier-one macro data releases from Brazil, Mexico, Argentina, or Chile are captured in the source material for this date. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Oil rose to its highest level since April, with Brent crude reaching $117.41 per barrel (+2.2%), after reports that a senior US military commander briefed President Trump on strike options against Iran ahead of next week's midterm elections.</li><li>Binance suffered what TRM Labs described as the cryptocurrency industry's largest-ever hack at $6.3 billion, attributed to North Korea — a systemic risk event for digital asset markets globally.</li><li>LNG flows through the Strait of Hormuz remain near wartime peaks but still below one-third of pre-conflict volumes, keeping European and Asian gas prices at their highest levels since 2022.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Oil, Iran, and the Hormuz Constraint</p>
+<p class="para-body">The oil market's reaction to renewed US-Iran military speculation is sharp and consistent with a risk premium that has been building since hostilities began. At $117 per barrel, Brent reflects both the physical disruption to Persian Gulf shipping and the optionality premium embedded in a conflict whose resolution timeline remains opaque. BP reported its highest profit in 18 years on soaring refining margins; ExxonMobil and Chevron similarly beat expectations. The energy windfall for Western majors stands in direct contrast to the $468 billion in additional global fuel costs estimated since the war began, with the US accounting for over $160 billion — the largest national burden in both absolute and per-capita terms.</p>
+<p class="para-title" style="color:#8b5cf6;">US Natural Gas Consolidation</p>
+<p class="para-body">The US natural gas sector is undergoing rapid structural consolidation, driven by LNG export terminal buildout along the Gulf Coast and AI data center power demand. EQT's $12.8 billion all-stock acquisition of Range Resources — restoring its position as the largest US producer — is the latest in a series of deals that have eliminated several major independent names. The strategic logic is integration: combined pipeline, reserves, and trading infrastructure that allow producers to compete for long-term contracts with large industrial and technology consumers, reducing spot market exposure. Further consolidation among smaller Appalachian and Permian operators appears likely given the competitive dynamics around contract origination.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
