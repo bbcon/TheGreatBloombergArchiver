@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>October 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="#" class="nav-link active">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../monthly.html">‹ Monthly archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Monthly Brief</p>
+        <p class="brief-date">October 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>September CPI printed 3.7% YoY, above the 3.5% consensus — the fastest pace in five months — with supercore returning above 3% and Cleveland Fed trimmed-mean measures also moving higher.</li><li>The 10-year Treasury yield reached 5.36% intraday in the second week — a 24-year high breaching the 2007 peak — before ending the month near 4.93% as long-duration bonds posted their first monthly outperformance since February.</li><li>The FOMC held rates steady in late October with two hawkish dissents; the AI earnings season delivered a sharp bifurcation between Microsoft's Azure beat and Alphabet's revenue miss, sending the Nasdaq 100 down approximately 3.3% for the month even as the equal-weighted S&P 500 gained 5.7%.</li></ul>
+<p class="para-title" style="color:#5597cb;">Inflation and the Consumer</p>
+<p class="para-body">The month's dominant domestic data story was the breadth and persistence of inflationary pressure. August core PCE held at 3.0% YoY in line with consensus, but real consumer spending rose 0.6% MoM — the strongest monthly gain in over a year — funded not by income growth but by savings drawdown, with the personal saving rate falling to 4.1%, a near four-year low. The personal saving rate's decline reflects a wealth effect from Q2's record $12.8 trillion rise in household net worth, a dynamic that may prove fragile given elevated rates. September CPI's 3.7% print — with the beat broad-based across supercore, sticky-price, and trimmed-mean measures — confirmed inflation's stickiness, with SocGen modeling suggesting diesel prices above $6.50 per gallon and refineries running at 97% capacity are sustaining cost-push pressure well into 2027. Against this, Conference Board consumer confidence fell to its lowest since 2014 in September, and PepsiCo cut its earnings outlook mid-month — signals that aggregate spending strength masks meaningful distributional stress, particularly among lower-income households bearing disproportionate energy cost burdens.</p>
+<p class="para-title" style="color:#5597cb;">Monetary Policy</p>
+<p class="para-body">October's Fed communication was unusually dissonant. The month opened with Chair Warsh's hawkish posture and Treasury Secretary Bessent signaling continued tightening, driving fed funds futures to price a terminal rate near 4.86%. Fed Deputy Chair Jefferson's mid-month remarks — that the Fed "may need more time" before deciding on another hike — triggered a 21-basis-point repricing in the October 2027 contract and a 12-basis-point intraday rally in the 10-year yield. The late-October FOMC hold, contested by two hawkish dissenters including Governor Cook, left December as the base case for any additional move. FOMC minutes from the September hike — the first in three years — showed all 19 officials in agreement, with several characterizing policy as not yet restrictive. Warsh separately announced the Fed would reduce its annual decision calendar from eight to six meetings effective 2027, a structural change with implications for market communication cadence.</p>
+<p class="para-title" style="color:#5597cb;">Equity, Credit, and Rates</p>
+<p class="para-body">The 10-year yield's breach of 5.36% inverted the equity risk premium for the first time in roughly 25 years, removing a structural anchor for valuations. Investment-grade credit spreads remained notably contained — a disconnect with underlying rate stress worth monitoring. The AI complex provided index support through mid-month before a sharp reassessment: Goldman Sachs prime brokerage data showed global fundamental long/short managers down 1.4% on the worst single session, ending a 53-session streak without a 1% S&P drawdown. CoreWeave's unsecured bonds traded near 78 cents on the dollar at their worst, implying a greater-than-60% five-year default probability and crystallizing how 5%-plus risk-free rates interact with leveraged AI infrastructure models — though Barclays noted those bonds represent under $2 billion of a $35 billion debt stack, suggesting the stress remains idiosyncratic for now. The merchandise trade deficit widened to a record $134.9 billion in September, driven by AI-related capital goods imports, underscoring how the AI investment cycle is simultaneously supporting growth and widening external imbalances. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>China Q3 GDP grew 4.5% YoY, above consensus and the Q2 pace of 4.3%, with September retail sales and exports — the latter surging 36% YoY — both beating forecasts materially; full-year growth remains within reach of the 4.5%–5.0% official target.</li><li>The Reserve Bank of India delivered a surprise 25-basis-point hike to 5.5% in the second week — the first in nearly four years, against a consensus expectation for a hold — while the rupee approached record lows near 96.97 per dollar before RBI intervention stabilized it.</li><li>South Korea's KOSPI fell approximately 40% from its June peak by mid-month, with Samsung and SK Hynix each dropping more than 9% on the worst single session; SK Hynix subsequently reported a sevenfold profit surge that beat estimates sharply, sending shares up 11%.</li><li>Taiwan's Q3 GDP expanded 14.4% YoY — its fourth consecutive quarter of double-digit growth and the longest such streak in nearly 39 years — driven by AI semiconductor exports that surged 61% to a record $87 billion in September.</li><li>The Bank of Japan held at 1.25% in late October but Governor Ueda explicitly flagged rate hike consideration at every upcoming meeting including December — a more hawkish signal than markets had positioned for.</li></ul>
+<p class="para-title" style="color:#e07b39;">China: Growth Data and Structural Limits</p>
+<p class="para-body">China's September data dump provided measured relief without resolving the underlying demand problem. Q3 GDP at 4.5% and above-consensus retail sales and export figures keep the economy within striking distance of official targets, but the IMF's Georgieva explicitly called on China to spend more domestically, and the export surge — high-tech exports up nearly 64% YoY in September — reflects AI-driven global demand and trade-diversion effects rather than reviving domestic consumption. Property sales remain down over 13% year-to-date through August. Beijing's equity stabilization intervention in the third week — regulators urging state funds to buy shares — reflected concern that earlier stimulus had arrived too late to influence full-year growth materially, with Q3 appearing set to undershoot the official growth floor for a second consecutive quarter. Chinese equities entered bear market territory in the third week, losing $2.4 trillion since their May peak, before late-session state-linked ETF activity produced a partial reversal. In private markets, DeepSeek raised approximately $15 billion anchored by CATL and Tencent, and Moonshot AI reached a $50 billion private valuation ahead of a planned Q1 2027 Hong Kong IPO — a concentrated IPO pipeline that will test market absorption capacity.</p>
+<p class="para-title" style="color:#e07b39;">India and Southeast Asia</p>
+<p class="para-body">The RBI's surprise hike reflects the impossible trinity in real time. With US 10-year Treasuries yielding 5.3% against approximately 7.2% on equivalent Indian paper, the India-US spread has compressed to near multi-decade lows, and the rupee's approach toward 96.97 per dollar forced RBI intervention that drew down reserves by $51 billion in the four weeks through early October. A monsoon delivering its weakest precipitation since 2015 is pressuring food inflation, and preliminary US tariff duties of 126% on solar manufacturing add supply-chain stress. RBI intervention stabilized the rupee near 94.75 by mid-month. Indonesia's Jakarta Composite fell 11.6% on a single Friday in the third week — its worst session since January 1998 — after MSCI warned it may reclassify Indonesian equities to standalone-market status; a subsequent exchange announcement of index methodology changes produced a 4.3% rebound, though whether the changes fully satisfy MSCI remains uncertain. The Philippines delivered a surprise 50-basis-point hike to 5.50% as the peso hit a record low, illustrating the dual pressure of imported energy inflation and currency weakness confronting emerging Asian economies simultaneously.</p>
+<p class="para-title" style="color:#e07b39;">Japan and Korea</p>
+<p class="para-body">Japan's core CPI rose above the BOJ's 2% target for the first time in 2026 in the third week, and the BOJ's late-October hawkish hold — with Ueda signaling every upcoming meeting is live — marks a meaningful shift in the normalization trajectory, reinforced by a record-demand 20-year JGB auction suggesting domestic institutions are returning to duration. Korea's equity market absorbed the most acute regional valuation correction: the KOSPI's 8.6% single-session decline in the third week combined global semiconductor re-rating, AI valuation uncertainty, and global smartphone shipments falling 22% in Q3 — the worst quarterly decline on record. SK Hynix's subsequent blowout quarter provided partial reassurance on AI hardware demand durability, while Samsung's failure to outline concrete shareholder return plans compounded negative sentiment. US-aligned Asian sovereigns cut net Treasury purchases by more than 60% in the first eight months of 2026 versus the prior year, with Japan's buying down 99% — a potentially structural shift in sovereign demand driven by weak domestic currencies, rising local yields, and growing unease over US policy predictability. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>French 10-year OAT yields breached 5% for the first time since 2002 in the third week, with the OAT-Bund spread widening to 148 basis points — levels last seen during the 2011–2012 eurozone crisis — before Moody's opted against a downgrade in the final week, providing brief relief.</li><li>Eurozone Q3 GDP grew twice as fast as consensus forecast in the final week, though France contracted 0.1% QoQ against a +0.1% expectation while simultaneously reporting CPI at 3.8% YoY — its highest since late 2023.</li><li>Christine Lagarde announced in the final week she will depart as ECB president in early 2027, ahead of her scheduled term-end, introducing succession uncertainty at a sensitive juncture; the ECB held rates steady at 2.5% as expected.</li><li>UK 30-year gilt yields crossed 6% in the first week — a level not seen in approximately three decades — before partially retracing; the UK's above-consensus PMI and stronger employment data in the fourth week presented a notably more constructive picture than the continent.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">French Fiscal and Political Stress</p>
+<p class="para-body">France crystallized as the eurozone's most acute near-term risk throughout October. The French-German sovereign spread widened from approximately 58 basis points in March to 148 basis points by the third week — a pace of deterioration reflecting political dysfunction, fiscal slippage, and social unrest compounding simultaneously. Violent cost-of-living protests in the third week included approximately 71,500 students demonstrating, with refinery strikes at TotalEnergies adding economic disruption. The government's 2027 budget — encompassing €54 billion in consolidation measures targeting pensions, public-sector wages, and sick leave — faces a minority parliament that has removed two predecessors. The arithmetic is perilous: Prime Minister Lecornu must secure passage of politically sensitive cuts ahead of April's presidential election, with polling showing Marine Le Pen's implied probability of winning approaching but remaining below 50%. Moody's decision against a downgrade in the final week provided tactical relief but left the structural credibility problem unresolved. Nearly €215 billion of French corporate bonds now trade tighter than sovereign debt — an 18-fold increase since January — a market signal with few historical precedents in a major developed economy.</p>
+<p class="para-title" style="color:#4a9e6b;">ECB Policy and Leadership</p>
+<p class="para-body">The ECB's October hold was fully anticipated, but Lagarde's simultaneous announcement of an early February departure removes an important continuity anchor. ECB Governing Council member Wunsch stated explicitly mid-month that the ECB "will probably have to hike again" — the clearest hawkish signal since the two increases delivered earlier in 2026 — while Lagarde simultaneously cautioned that energy-driven inflation has not yet produced second-round wage effects. This tension captures the ECB's genuine dilemma: tightening into sovereign stress and slowing growth risks amplifying the French dynamic, yet holding while headline CPI resurges to 3.8% erodes credibility. Policymaker Dolenc suggested market-driven financial tightening may partially substitute for rate action — a formulation that implies the OAT-Bund spread is doing some of the ECB's work. Succession frontrunners Klaas Knot and Pablo Hernandez de Cos will be considered at the EU leaders' November 26–27 summit; whoever takes the role may inherit crisis-management responsibilities almost immediately.</p>
+<p class="para-title" style="color:#4a9e6b;">Energy Risk and UK</p>
+<p class="para-body">European gas storage entered October at 73% of capacity versus a seasonal norm near 90% — the lowest recorded level for this time of year. Covering the shortfall via additional LNG imports would cost an estimated €3 billion at prices more than 100% above pre-conflict levels; alternatively, a roughly 7% year-on-year demand reduction would be required to protect inventories. ENTSOG warns an unusually cold season could reduce storage to 11% of capacity by end-March. October's mild weather provided a temporary reprieve but did not resolve the structural shortfall. The UK presented a contrasting picture: Chancellor Healey's late-October budget avoided adverse gilt market reaction, and above-consensus PMI and employment data in the final week suggested British economic momentum is tracking ahead of the continent — though elevated Bank of England rate expectations and rising energy costs leave limited fiscal headroom. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazil's first-round presidential result — Flávio Bolsonaro at 47.06% versus Lula's 45.16%, well above consensus expectations — drove the Bovespa to its highest level in dollar terms since 2011 Monday of the second week and the real's largest single-day gain against the dollar in four years; Lula subsequently won the October 25 runoff with 51.8%, triggering an approximately 18% single-day decline in Brazil's MSCI ETF — its worst session since 1999.</li><li>The IMF reached a staff-level agreement with Argentina on the third review of its $20 billion loan program in the final week, providing near-term external financing assurance.</li><li>Chile's copper output hit its lowest in more than two decades, with seven mining fatalities in one month and El Niño-driven storms compounding structural operational decline at a moment of sustained global demand from AI infrastructure buildout.</li><li>Brazil's Lula government recorded its lowest Amazon deforestation rate on record — an 86% decline since 2023 — a platform distinction with direct implications for EU market access conditioned on deforestation commitments and for ESG-linked capital flows.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil: The Sharpest Positioning Error of the Cycle</p>
+<p class="para-body">October's most consequential LatAm development was the gap between investor positioning and electoral reality. Markets spent the first three weeks pricing a Bolsonaro fiscal consolidation premium — the Bovespa had gained 27% year-to-date, the real outperformed the broader JPMorgan EM FX index by 3.8</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <p class="para-body">No significant coverage for this period.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
