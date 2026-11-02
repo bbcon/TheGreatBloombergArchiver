@@ -1,0 +1,12 @@
+• US October jobs report due Friday; consensus expects 65,000 payrolls — more than double September's pace — with the unemployment rate holding at 4.2%, an outcome that would support further Fed tightening.
+• The Nasdaq 100 closed last week down 9% from its peak, driven by a targeted repricing of AI-exposed mega-caps following disappointing Q3 earnings from Alphabet, Amazon, and Intel; the equal-weighted S&P 500 diverged sharply, suggesting the selloff is sector-specific rather than macro-driven.
+• Tuesday's midterm elections carry meaningful market implications, with prediction markets assigning roughly 70% probability to a Democratic sweep of both chambers.
+• Fed Chair Kevin Warsh deferred a rate hike to December; markets anticipate tightening resumes post-election as inflation and growth remain elevated.
+
+**AI Earnings Correction**
+Last week's technology earnings season delivered a pointed repricing of the AI trade. Alphabet alone shed more than $530 billion in market capitalization following results that missed expectations, while Amazon and Intel further undermined the profit narrative underpinning elevated valuations. The S&P 500 Information Technology sector's forward P/E has de-rated sharply, though the effect has been masked partly by rising earnings estimates — which themselves rose approximately 17% over the past three months, more than double the broader index. Truist's Keith Lerner estimates 2%–8% of additional downside from current levels depending on the metric applied; historical precedent from the five prior tech corrections in this bull market suggests the average drawdown runs to 10%–26%. Critically, the equal-weighted S&P 500 posted gains even as the Nasdaq fell, indicating macro and rate conditions are not the primary driver — this appears to be a direct reassessment of AI monetization timelines and capex sustainability.
+
+**Midterms and Fiscal Outlook**
+Markets are broadly pricing a mild disruption from a Democratic midterm victory. History suggests equity markets are higher 6–12 months after midterms regardless of outcome. The more consequential tail risk is a Republican retention of the House — currently below 10% probability — which Barclays estimates would precipitate another tax cut, intensify inflationary pressure, and support the dollar. A Democratic sweep changes little in the near term given presidential veto power, though it would raise the probability of tax increases and heightened AI regulation ahead of 2028.
+
+---

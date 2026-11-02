@@ -1,0 +1,11 @@
+• South Korea's October exports rose 76.1% year-over-year on a working-day-adjusted basis, beating consensus and reaching $115.3 billion, sustaining the AI-driven trade boom even as technology equity markets corrected globally.
+• China's official manufacturing PMI expanded at a slower pace in October — the first deceleration since July — falling short of expectations and reinforcing concerns about the economy's near-term trajectory.
+• Chinese regulators signaled additional equity market support measures; the PBOC announced a swap facility operation for Tuesday, drawing on the 2024 rescue playbook.
+
+**China: PMI Miss and Policy Response**
+China's factory activity data for October disappointed, with the manufacturing PMI expanding at a slower-than-expected pace — the first softening since July. The print arrives against the backdrop of the CSI 300's worst monthly performance in over a decade, with the index having shed 2.9% last week alone. Authorities moved promptly to arrest sentiment: Cailian reported that financial regulators met with major banks to discuss lending program optimization, and the PBOC confirmed it will conduct a swap facility operation Tuesday, deploying the same liquidity mechanism used in the 2024 market stabilization effort. The CSI 300 recovered 0.8% on the day, while the tech-heavy Star 50 Index gained more than 3%.
+
+**South Korea and Taiwan**
+South Korea's export performance stands in sharp contrast to the equity market turbulence surrounding AI. The October figure of $115.3 billion, while below September's record $121.1 billion, still reflected extraordinary year-over-year momentum, confirming that semiconductor and AI-related hardware demand remains structurally robust even as investor sentiment toward AI software and platform companies turns more cautious. Taiwan separately reported its fourth consecutive quarter of double-digit economic growth, with exports surging approximately 61% to a record — though Taiwan equities saw $31.8 billion in foreign outflows last month, the largest on record, as investors reassessed AI trade positioning.
+
+---

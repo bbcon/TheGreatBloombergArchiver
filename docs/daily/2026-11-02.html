@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, November 02, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, November 02, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>US October jobs report due Friday; consensus expects 65,000 payrolls — more than double September's pace — with the unemployment rate holding at 4.2%, an outcome that would support further Fed tightening.</li><li>The Nasdaq 100 closed last week down 9% from its peak, driven by a targeted repricing of AI-exposed mega-caps following disappointing Q3 earnings from Alphabet, Amazon, and Intel; the equal-weighted S&P 500 diverged sharply, suggesting the selloff is sector-specific rather than macro-driven.</li><li>Tuesday's midterm elections carry meaningful market implications, with prediction markets assigning roughly 70% probability to a Democratic sweep of both chambers.</li><li>Fed Chair Kevin Warsh deferred a rate hike to December; markets anticipate tightening resumes post-election as inflation and growth remain elevated.</li></ul>
+<p class="para-title" style="color:#5597cb;">AI Earnings Correction</p>
+<p class="para-body">Last week's technology earnings season delivered a pointed repricing of the AI trade. Alphabet alone shed more than $530 billion in market capitalization following results that missed expectations, while Amazon and Intel further undermined the profit narrative underpinning elevated valuations. The S&P 500 Information Technology sector's forward P/E has de-rated sharply, though the effect has been masked partly by rising earnings estimates — which themselves rose approximately 17% over the past three months, more than double the broader index. Truist's Keith Lerner estimates 2%–8% of additional downside from current levels depending on the metric applied; historical precedent from the five prior tech corrections in this bull market suggests the average drawdown runs to 10%–26%. Critically, the equal-weighted S&P 500 posted gains even as the Nasdaq fell, indicating macro and rate conditions are not the primary driver — this appears to be a direct reassessment of AI monetization timelines and capex sustainability.</p>
+<p class="para-title" style="color:#5597cb;">Midterms and Fiscal Outlook</p>
+<p class="para-body">Markets are broadly pricing a mild disruption from a Democratic midterm victory. History suggests equity markets are higher 6–12 months after midterms regardless of outcome. The more consequential tail risk is a Republican retention of the House — currently below 10% probability — which Barclays estimates would precipitate another tax cut, intensify inflationary pressure, and support the dollar. A Democratic sweep changes little in the near term given presidential veto power, though it would raise the probability of tax increases and heightened AI regulation ahead of 2028. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>South Korea's October exports rose 76.1% year-over-year on a working-day-adjusted basis, beating consensus and reaching $115.3 billion, sustaining the AI-driven trade boom even as technology equity markets corrected globally.</li><li>China's official manufacturing PMI expanded at a slower pace in October — the first deceleration since July — falling short of expectations and reinforcing concerns about the economy's near-term trajectory.</li><li>Chinese regulators signaled additional equity market support measures; the PBOC announced a swap facility operation for Tuesday, drawing on the 2024 rescue playbook.</li></ul>
+<p class="para-title" style="color:#e07b39;">China: PMI Miss and Policy Response</p>
+<p class="para-body">China's factory activity data for October disappointed, with the manufacturing PMI expanding at a slower-than-expected pace — the first softening since July. The print arrives against the backdrop of the CSI 300's worst monthly performance in over a decade, with the index having shed 2.9% last week alone. Authorities moved promptly to arrest sentiment: Cailian reported that financial regulators met with major banks to discuss lending program optimization, and the PBOC confirmed it will conduct a swap facility operation Tuesday, deploying the same liquidity mechanism used in the 2024 market stabilization effort. The CSI 300 recovered 0.8% on the day, while the tech-heavy Star 50 Index gained more than 3%.</p>
+<p class="para-title" style="color:#e07b39;">South Korea and Taiwan</p>
+<p class="para-body">South Korea's export performance stands in sharp contrast to the equity market turbulence surrounding AI. The October figure of $115.3 billion, while below September's record $121.1 billion, still reflected extraordinary year-over-year momentum, confirming that semiconductor and AI-related hardware demand remains structurally robust even as investor sentiment toward AI software and platform companies turns more cautious. Taiwan separately reported its fourth consecutive quarter of double-digit economic growth, with exports surging approximately 61% to a record — though Taiwan equities saw $31.8 billion in foreign outflows last month, the largest on record, as investors reassessed AI trade positioning. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>The Bank of England is expected to raise interest rates for the first time since 2023 at Thursday's meeting, as policymakers grapple with neutral rate uncertainty and persistent inflation pressures.</li><li>Street violence erupted across German cities over the weekend, including Frankfurt, Cologne, Hamburg, and Berlin, following mass demonstrations.</li><li>Poland entered political crisis after the government deployed riot police to secure the constitutional court and suspended the Chief Justice.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Bank of England Policy</p>
+<p class="para-body">The Bank of England's Thursday decision represents a meaningful policy inflection. For most of 2026, the MPC maintained that rates were sufficiently restrictive; that assessment has shifted. Officials are now wrestling with a more fundamental question: what constitutes a neutral interest rate for the UK economy under structurally higher inflation, elevated energy costs tied to the Strait of Hormuz disruption, and persistent services price pressures. The expected hike would be the first since 2023. Sterling traded at $1.34, broadly steady, suggesting markets have largely priced the move.</p>
+<p class="para-title" style="color:#4a9e6b;">European Political Instability</p>
+<p class="para-body">Two distinct political stress events are unfolding simultaneously. In Germany, weekend protests that were initially peaceful deteriorated into violent clashes between rioters and police across four major cities, adding social instability to an economy already under industrial pressure. In Poland, Prime Minister Tusk's government took the constitutionally unprecedented step of deploying riot police to the constitutional court and suspending the Chief Justice — a move that has plunged Warsaw into institutional crisis roughly a year before parliamentary elections. The Polish zloty fell to a three-year low against the euro. Bulgaria's presidential election delivered a win for an incumbent aligned with Ukraine-skeptic Prime Minister Radev, adding a further complicating voice to European geopolitical cohesion. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Mexico's GDP accelerated in Q3, powered by public and private investment and robust exports, beating expectations and reinforcing the economy's relative resilience.</li><li>Brazil's central bank decision is due this week in a politically sensitive post-election environment.</li><li>El Niño credit risk is escalating across the region, with BBVA initiating loan book reviews covering Peru, Argentina, and Colombia.</li></ul>
+<p class="para-title" style="color:#c0392b;">Mexico and Regional Growth</p>
+<p class="para-body">Mexico's third-quarter GDP print came in above consensus, with the acceleration driven by both investment and export strength — the latter benefiting from nearshoring dynamics that have intensified since US tariff policy reshaped North American supply chains. Canada separately reported 1.3% annualized growth in Q3, slowing from a robust Q2 but remaining positive. Trump indicated a US-Canada trade deal is "very close" following talks with Prime Minister Carney, though Carney signaled Canada will not rush an agreement on unfavorable terms.</p>
+<p class="para-title" style="color:#c0392b;">El Niño and Credit Risk</p>
+<p class="para-body">A developing super El Niño cycle is beginning to translate into measurable credit risk across Latin American loan books. BBVA, with significant exposure in Peru, Argentina, and Colombia, has initiated formal loan book reviews at the request of central risk management, with debt rescheduling identified as one potential tool for the most vulnerable borrowers. The World Meteorological Organization has flagged heightened drought and flood risks across Latin America. The phenomenon is compounding existing inflationary pressure from energy costs, with commodity supply disruptions carrying pass-through implications for food prices regionally. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Oil declined more than 3%, with Brent falling below $110 per barrel, after Axios reported President Trump favors extending Iran diplomacy before resuming military strikes.</li><li>Goldman Sachs raised its oil price forecasts for year-end and 2027, citing substantial supply risks, even as Trump's diplomatic signals introduced near-term downside.</li><li>LNG disruptions through the Strait of Hormuz are inflicting severe economic damage on emerging market importers, with Bangladesh facing approximately $2 billion in additional energy costs as spot LNG prices surge.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Oil Markets and Iran Diplomacy</p>
+<p class="para-body">The single most market-relevant development of the day was the Axios report indicating Trump is prepared to extend diplomatic engagement with Tehran before authorizing further military action. Brent crude fell more than 4% intraday to approximately $108–110 per barrel — a meaningful move given elevated war-risk premia embedded since the initial US strikes. The signal introduces genuine uncertainty about the timeline of any renewed military escalation, though Iran's Supreme Leader simultaneously ordered military commanders to prepare for confrontation and expand retaliation options, suggesting the diplomatic opening remains fragile. Goldman Sachs's decision to raise oil forecasts on the same day underscores the underlying supply vulnerability that persists regardless of near-term diplomatic tone.</p>
+<p class="para-title" style="color:#8b5cf6;">Strait of Hormuz and Emerging Market Energy Stress</p>
+<p class="para-body">The human and economic cost of the Hormuz disruption is becoming increasingly visible in the developing world. Bangladesh, which sourced approximately 60% of its LNG from Qatar under long-term contracts, has been forced into the spot market after Qatar was unable to fulfill deliveries. A single LNG cargo now costs Bangladesh over $100 million — roughly four times the contracted equivalent — with cumulative additional costs reaching approximately $2 billion. Textile factories supplying global brands including H&M and Ralph Lauren are operating below capacity or have halted production. The dynamic illustrates a broader risk: the longer Hormuz remains disrupted, the more deeply the crisis will propagate through energy-intensive manufacturing across South and Southeast Asia.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
