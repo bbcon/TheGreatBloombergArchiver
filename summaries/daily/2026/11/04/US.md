@@ -1,0 +1,12 @@
+• Democrats swept both chambers of Congress in midterm elections, flipping at least seven Senate seats and winning House races in Republican-held districts — an outcome that significantly exceeded pre-election expectations.
+• US equity futures initially fell overnight before recovering; the S&P 500 futures were up 1.0% by mid-morning, while the Bloomberg Dollar Spot Index fell 0.4%, its largest single-day decline in two months.
+• Apple reported earnings that beat on every headline metric but issued mixed guidance, citing slowing sales growth, a gross margin below the 47% consensus estimate, and an "unprecedented" rise in memory chip prices.
+• AMD's sales forecast soared past analyst projections, with shares up 6% premarket; Intel fell sharply after its revenue forecast missed estimates, illustrating the bifurcated nature of AI-related semiconductor demand.
+
+**Political Landscape**
+Democrats secured decisive majorities in both the House (232 seats, above the 218 threshold) and Senate, powered by voter anger over cost of living and the Iran war. The result exposes the Trump administration to heightened congressional oversight — including subpoena authority over EPA, Interior, and AI-related spending — while Trump's veto power limits Democrats' ability to push sweeping legislation unilaterally. Trump said he would accept the results, a signal markets found reassuring. The scale of the defeat surprised even seasoned observers; Polymarket had assigned minimal probability to Democrats winning six or more Senate seats.
+
+**Markets**
+Equities recovered after an initial selloff, with investors buying the dip after Trump's conciliatory tone reduced tail risks. Treasuries rallied on the view that political gridlock will constrain further tax cuts and borrowing, while the dollar fell. The Democratic win boosted renewable energy stocks — First Solar gained 9.2% premarket, Orsted rose 8.1% — while defense names and Tesla declined. Data-center operators Iren and CoreWeave fell on concerns about regulatory headwinds from Democratic state governors, particularly in Texas, where Democrat Gina Hinojosa defeated Greg Abbott on a platform that included an immediate moratorium on data center approvals. Gold rose above $4,000 per ounce, gaining 3.1%, as the fiscal outlook shifted.
+
+---

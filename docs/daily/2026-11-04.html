@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, November 04, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, November 04, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Democrats swept both chambers of Congress in midterm elections, flipping at least seven Senate seats and winning House races in Republican-held districts — an outcome that significantly exceeded pre-election expectations.</li><li>US equity futures initially fell overnight before recovering; the S&P 500 futures were up 1.0% by mid-morning, while the Bloomberg Dollar Spot Index fell 0.4%, its largest single-day decline in two months.</li><li>Apple reported earnings that beat on every headline metric but issued mixed guidance, citing slowing sales growth, a gross margin below the 47% consensus estimate, and an "unprecedented" rise in memory chip prices.</li><li>AMD's sales forecast soared past analyst projections, with shares up 6% premarket; Intel fell sharply after its revenue forecast missed estimates, illustrating the bifurcated nature of AI-related semiconductor demand.</li></ul>
+<p class="para-title" style="color:#5597cb;">Political Landscape</p>
+<p class="para-body">Democrats secured decisive majorities in both the House (232 seats, above the 218 threshold) and Senate, powered by voter anger over cost of living and the Iran war. The result exposes the Trump administration to heightened congressional oversight — including subpoena authority over EPA, Interior, and AI-related spending — while Trump's veto power limits Democrats' ability to push sweeping legislation unilaterally. Trump said he would accept the results, a signal markets found reassuring. The scale of the defeat surprised even seasoned observers; Polymarket had assigned minimal probability to Democrats winning six or more Senate seats.</p>
+<p class="para-title" style="color:#5597cb;">Markets</p>
+<p class="para-body">Equities recovered after an initial selloff, with investors buying the dip after Trump's conciliatory tone reduced tail risks. Treasuries rallied on the view that political gridlock will constrain further tax cuts and borrowing, while the dollar fell. The Democratic win boosted renewable energy stocks — First Solar gained 9.2% premarket, Orsted rose 8.1% — while defense names and Tesla declined. Data-center operators Iren and CoreWeave fell on concerns about regulatory headwinds from Democratic state governors, particularly in Texas, where Democrat Gina Hinojosa defeated Greg Abbott on a platform that included an immediate moratorium on data center approvals. Gold rose above $4,000 per ounce, gaining 3.1%, as the fiscal outlook shifted. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>South Korean equities swung through a seven-percentage-point intraday range before closing higher, reflecting acute sensitivity to shifts in US AI and semiconductor policy following the Democratic sweep.</li><li>Indonesian military deployed tens of thousands of troops in Jakarta amid an investigation into the alleged wiretapping of President Prabowo Subianto, raising political risk in Southeast Asia's largest economy.</li><li>Canva announced the elimination of 1,271 jobs — 22% of its workforce — citing AI-driven structural changes across the software industry.</li></ul>
+<p class="para-title" style="color:#e07b39;">Technology and Trade Exposure</p>
+<p class="para-body">Samsung Electronics and SK Hynix fell sharply in initial trading on fears that a Democratic Congress would pursue more aggressive AI regulation, curtailing demand for advanced memory chips. The concern is not unfounded: Democratic governors elected in Texas, Georgia, Ohio, and Pennsylvania each campaigned on restricting data center expansion, which is currently the primary driver of high-bandwidth memory demand. Chinese AI developers, separately, are set to receive only a fraction of the 70 billion Nvidia RTX chips ordered, as production constraints bite. Chinese authorities responded by directing the "national team" and corporate buybacks to support domestic equities, with the CSI 300 rising 2.3%.</p>
+<p class="para-title" style="color:#e07b39;">Indonesia Political Risk</p>
+<p class="para-body">The wiretapping probe targeting President Prabowo has escalated to the point where senior officials are characterizing the alleged conduct as potential treason. The mobilization of troops to Jakarta introduces a degree of political uncertainty that markets will need to price alongside an already-difficult economic backdrop of rising prices and weak consumer sentiment. Singapore, meanwhile, proposed tougher cross-border haze legislation in response to Indonesia's devastating wildfire season, adding a bilateral dimension to Jakarta's governance challenges. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>Euro-area inflation quickened to double the ECB's 2% target, reinforcing the case for further rate increases and complicating the transition to a new ECB president.</li><li>Sweden hiked interest rates for the first time since 2023; Norway is expected to pause on Thursday.</li><li>Spain's Transport Minister Óscar Puente resigned following a high-speed train crash that killed 69 people, delivering a significant political blow to Prime Minister Sánchez ahead of a snap election on November 29.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">ECB Leadership Transition</p>
+<p class="para-body">The ECB faces its most significant leadership overhaul in more than a decade, with candidate nominations for Christine Lagarde's successor due Friday. Two names are currently in circulation — Dutchman Klaas Knot and Spain's Pablo Hernandez de Cos — though the broader context is notable: Lagarde is departing nearly nine months early, and four of six Executive Board seats will turn over within a year. Lagarde has cited a desire to speak freely on political matters ahead of France's presidential election. The concentration of appointments raises coordination risks at a moment when euro-area inflation remains well above target and policy decisions are consequential.</p>
+<p class="para-title" style="color:#4a9e6b;">UK and European Markets</p>
+<p class="para-body">The Stoxx Europe 600 fell 0.6% in early trading before recovering to gain 1.4% as investors digested the US election outcome and its implications for regulatory policy. Research suggests UK rates are proving less effective at curbing inflation than the Bank of England anticipated, strengthening the case for a Thursday rate hike. Deutsche Bank's integration of UK broker Numis has lost roughly a third of its client base since the £410 million acquisition in 2023, with IPO activity remaining sparse despite early signs of improving conditions. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazil's real fell further amid reports President Lula was considering meeting economist André Lara Resende, whose published proposal to cut Brazil's benchmark Selic rate to match nominal GDP growth rattled market confidence in central bank independence.</li><li>The Brazilian central bank was widely expected to hold rates — with roughly 80% market probability assigned to a pause — to bolster credibility following the selloff in Brazilian assets.</li><li>Paraguay's President Peña asked the central bank chief to resign hours after the monetary authority intervened in Ueno Bank over a solvency crisis with political ramifications.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil Fiscal and Monetary Tensions</p>
+<p class="para-body">Investors in São Paulo articulate a coherent concern: Brazil's gross debt is on track to exceed 100% of GDP by the end of Lula's term, according to IMF projections, and the high Selic rate — while painful for growth — is what attracts the foreign and domestic financing that keeps inflation contained and default risk manageable. Resende's argument that high rates are the cause, not the consequence, of fiscal deterioration found no buyers in markets. The comparison to Turkey's 2021 experience, when President Erdoğan pressured the central bank to cut rates into an inflationary spiral, was widely invoked. Government denials that Lula plans rate cuts or a Resende meeting offered some relief, but the episode underscored investor anxiety about the direction of fourth-term economic management.</p>
+<p class="para-title" style="color:#c0392b;">Regional Context</p>
+<p class="para-body">The US Democratic sweep introduces a modestly more favorable trade backdrop for Latin America, as Democratic pressure on Trump tariffs may ease some bilateral tensions. However, the AI data-center regulatory pushback that accompanied the Democratic wave could dampen demand for the copper and other commodities that Latin American exporters supply into that construction boom. Freeport-McMoRan's approval of a $4.5 billion Arizona copper mine expansion reflects confidence in structural demand, though the near-term policy environment is less certain. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude fell below $100 per barrel for the first time since early October as Trump played down prospects of further Iran strikes following the Democratic sweep, with futures at $102.64, down 0.9%.</li><li>Gold rose above $4,000 per ounce — gaining as much as 3.1% — as markets began pricing fiscal restraint under political gridlock and reduced oil-driven inflation risk.</li><li>The previously tight positive correlation between oil prices and bond yields has broken down, with the two now moving inversely as growth concerns supersede inflation fears.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">US-Iran and Energy Markets</p>
+<p class="para-body">Oil's decline reflects a meaningful shift in the geopolitical calculus. Trump, attributing part of the election loss to high energy prices driven by the Iran war, has publicly played down the prospect of further strikes. Tehran and Washington are reviewing fresh mediator proposals, though Iran's national security chief characterized the US response as "not satisfactory." The outcome remains genuinely uncertain. The UAE is separately evaluating a third crude export pipeline bypassing the Strait of Hormuz, a signal that Gulf producers are treating Hormuz disruption risk as a durable structural concern rather than a transient one. Saudi Arabia's fiscal deficit more than doubled in the third quarter as oil revenue fell, with the kingdom reporting a 3.8% economic contraction over the same period — a concrete illustration of how the energy disruption from the Iran conflict is reverberating through producer economies.</p>
+<p class="para-title" style="color:#8b5cf6;">Monetary Policy Divergence</p>
+<p class="para-body">Global central banks are navigating the same tension between persistent inflation and growth deceleration. Sweden hiked rates for the first time since 2023; Australia delivered its fifth rate hike of the year, taking variable mortgage rates toward 7%; and the ECB faces above-target inflation even as growth slows. The broken oil-bond yield correlation is a useful signal: markets appear to be concluding that the energy shock's demand-destruction effect now outweighs its inflation-stoking one, reducing pressure on central banks to tighten aggressively further. Whether that thesis proves durable depends heavily on whether US-Iran tensions de-escalate.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

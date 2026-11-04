@@ -1,0 +1,11 @@
+• Brazil's real fell further amid reports President Lula was considering meeting economist André Lara Resende, whose published proposal to cut Brazil's benchmark Selic rate to match nominal GDP growth rattled market confidence in central bank independence.
+• The Brazilian central bank was widely expected to hold rates — with roughly 80% market probability assigned to a pause — to bolster credibility following the selloff in Brazilian assets.
+• Paraguay's President Peña asked the central bank chief to resign hours after the monetary authority intervened in Ueno Bank over a solvency crisis with political ramifications.
+
+**Brazil Fiscal and Monetary Tensions**
+Investors in São Paulo articulate a coherent concern: Brazil's gross debt is on track to exceed 100% of GDP by the end of Lula's term, according to IMF projections, and the high Selic rate — while painful for growth — is what attracts the foreign and domestic financing that keeps inflation contained and default risk manageable. Resende's argument that high rates are the cause, not the consequence, of fiscal deterioration found no buyers in markets. The comparison to Turkey's 2021 experience, when President Erdoğan pressured the central bank to cut rates into an inflationary spiral, was widely invoked. Government denials that Lula plans rate cuts or a Resende meeting offered some relief, but the episode underscored investor anxiety about the direction of fourth-term economic management.
+
+**Regional Context**
+The US Democratic sweep introduces a modestly more favorable trade backdrop for Latin America, as Democratic pressure on Trump tariffs may ease some bilateral tensions. However, the AI data-center regulatory pushback that accompanied the Democratic wave could dampen demand for the copper and other commodities that Latin American exporters supply into that construction boom. Freeport-McMoRan's approval of a $4.5 billion Arizona copper mine expansion reflects confidence in structural demand, though the near-term policy environment is less certain.
+
+---
