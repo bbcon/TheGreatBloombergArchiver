@@ -1,0 +1,12 @@
+• South Korea's Kospi Index fell as much as 8.8%, triggering a circuit breaker; the MSCI Asia Pacific Index tumbled 4% and Japan's Nikkei 225 declined 6%, approaching bear market territory.
+• Taiwan's benchmark index fell 4.5%, entering a bear market, as Samsung Electronics and SK Hynix each lost more than 6%.
+• Indian equities were the lone regional bright spot: the NSE Nifty 50 rose Friday, on track for its best weekly gain in more than five years, as investors rotated into markets with minimal AI exposure.
+• Twenty-two Asian billionaires lost a combined $18–21 billion in wealth, with SoftBank's Masayoshi Son shedding $3.9 billion.
+
+**Equity Markets: AI Rout Reverberates**
+The post-US-midterm selloff struck Asian markets with particular force given the region's heavy concentration in semiconductor and AI-infrastructure equities. South Korea's $1.7 trillion market decline — which had been elevated in part by government promotion as a political success — now presents a meaningful test of public confidence in President Lee's economic stewardship, with retail investors bearing disproportionate losses. Wealthy clients across Taiwan and Hong Kong faced margin calls on leveraged positions, and major hedge funds including ExodusPoint and Millennium sustained significant losses. The breadth of damage across strategies designed to perform independently of market direction underscores the degree of crowding that had built up in the AI trade.
+
+**China: Policy Support and Structural Doubts**
+China's CSI 300 fell more than any month in over a decade in October, with the tech-heavy Star 50 losing 24% and erasing more than $3 trillion in value. State-backed "national team" funds have stepped in as buyers of last resort, and Beijing this week enhanced rescue tools first deployed in 2024. The Star 50 posted its best session since July mid-week before retreating again. The structural tension remains unresolved: Chinese equities have historically served as fundraising vehicles rather than vehicles for household wealth creation, and persistent governance concerns limit the effectiveness of state support. Japan's nominal wage growth accelerated to its fastest pace in nearly three decades, reinforcing the Bank of Japan's hawkish posture.
+
+---
