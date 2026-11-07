@@ -1,0 +1,11 @@
+• China's Fifth Plenum resolution emphasizes centralized political control, raising structural concerns about innovation capacity and local economic dynamism.
+• Xi Jinping, now 73, has further consolidated authority over CCP cadres with a new "lifelong accountability" framework for major decisions.
+• Three former chairs of China Aerospace Science and Industry Corp. were purged, illustrating the operationalization of accountability mechanisms.
+
+**China: Political Economy**
+The CCP's Fifth Plenum, concluded days before this publication, produced a resolution with meaningful long-run economic implications. Xi Jinping's directive — requiring cadres to follow a "top-down approach" while simultaneously prohibiting passive decision-making — creates an institutional contradiction that analysts at Gavekal Dragonomics describe as a structural "glitch." China's economic model over the past two decades was substantially powered by decentralized local government competition and initiative: regional leaders championed sectors from EVs to chemicals to data storage, generating the bottom-up dynamism that drove growth. Natixis's Alicia Garcia Herrero characterizes local governments as "the unsung engine of China's economic model." The new framework subordinates that dynamic to political loyalty.
+
+**Implications for Growth**
+Carnegie's Michael Pettis argues the plenum's accountability architecture may cause officials to prioritize inaction over experimentation, reducing the bureaucracy's capacity to adapt to changing economic conditions even as political responsiveness to Beijing improves. With Xi focused on manufacturing capacity and technological self-sufficiency rather than consumer demand, Pettis warns that more efficient implementation of the existing growth model risks deepening existing structural imbalances. The long-run innovation consequences remain uncertain, but the directional shift toward centralization appears likely to weigh on the quality of local economic governance.
+
+---

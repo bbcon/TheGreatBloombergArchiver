@@ -1,0 +1,9 @@
+• COP31 opens in Turkey on November 9 against a backdrop of active conflict (Iran war), US withdrawal from UNFCCC, and a 23% drop in development assistance.
+• Xi Jinping's Fifth Plenum centralization push has global supply chain implications, as local government competition has historically been the engine of Chinese industrial scaling.
+• Climate-conflict interaction — illustrated by Syria/Turkey — is emerging as a structural theme for displaced populations globally, with nearly 90 million forcibly displaced people living in climate-vulnerable countries.
+
+**Energy Security vs. Climate Action**
+The Iran conflict has introduced a durable tension into the global policy landscape: governments prioritizing energy security are deprioritizing decarbonization commitments, fragmenting the coalition needed to advance COP31 objectives. With the US formally outside the UNFCCC process from February 2027 and many emerging market governments stretched by debt and development finance shortfalls, the burden of climate financing falls increasingly on a narrowing group of willing actors — primarily the EU and select Asian economies. Whether pledges made in Turkey translate into binding mechanisms is the central question heading into the summit.
+
+**Structural Divergence**
+China's political centralization and the US's climate withdrawal represent two distinct but reinforcing vectors of global institutional fragmentation. China's shift away from decentralized economic governance may slow the innovation diffusion that has driven global clean technology cost curves lower — particularly in EVs and solar — while US disengagement removes a major source of climate finance and diplomatic pressure. The interaction of these two trends poses a material risk to the pace of global energy transition, though the magnitude and timing of any impact remains difficult to quantify with precision.
