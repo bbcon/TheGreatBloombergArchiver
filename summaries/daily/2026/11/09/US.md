@@ -1,0 +1,12 @@
+• October unemployment rate fell unexpectedly, with prime-age employment at levels typically seen only during economic booms, reinforcing the case against near-term Fed rate cuts.
+• Nasdaq 100 ended last week 13.5% below its September peak — the third correction of the Trump 2.0 era — driven by AI trade reversal and Democratic midterm gains.
+• Nvidia shares fell approximately 4.5–6% in early trading after CEO Jensen Huang admitted an extramarital affair with a woman identified by US intelligence as a suspected Chinese spy, triggering an internal board investigation.
+• October CPI due Tuesday is expected to show prices rose 0.3% MoM, moderating from September's 0.6% — the largest monthly increase since April.
+
+**Labor Market**
+October's employment report delivered a meaningful upside surprise. The unemployment rate fell unexpectedly, with prime-age joblessness at levels historically associated with economic expansions rather than mid-cycle slowdowns. Management, scientific, and technical consulting services added 17,300 workers — the most in nearly two years — while construction and computer manufacturing contributed an additional 17,500 jobs, suggesting AI implementation and data center buildout are simultaneously creating white- and blue-collar employment. The result effectively closes the door on near-term Fed easing: fed funds expectations have stabilized around 4.25%, with December's meeting now widely anticipated to deliver a hike rather than a cut.
+
+**Markets and AI Trade**
+The S&P 500 rebounded modestly Monday after its worst weekly performance since April 2025, with five of eleven sectors posting gains last week. Technology and energy bore the brunt of selling. The Nasdaq 100 now trades at forward earnings multiples last seen during the COVID downturn, which some strategists characterize as a potential entry point. The Nvidia scandal added acute pressure to the AI trade: at its September peak the company was valued at $5.8 trillion; it has since fallen to approximately $4.5 trillion, with Monday's premarket decline implying a further $200 billion reduction. Citigroup downgraded US equities and global technology, upgrading European stocks on lower AI exposure.
+
+---
