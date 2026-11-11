@@ -1,0 +1,13 @@
+• October CPI came in above consensus, with the 13-month inflation rate topping 4% and month-on-month core measures showing a sharp broad-based increase — the Fed's decision to skip a hike last month now appears to have been a policy error.
+• Markets now price a December rate hike at 100% probability, with an 11% chance of a 50 basis point move; two-year Treasury yields posted their largest single-day rise since the Liberation Day tariff reversal in April.
+• Anthropic's IPO seeks to raise $90.4 billion at a $1.4 trillion valuation; bankers are reportedly considering raising the target to $1.5 trillion or more on robust demand.
+
+**Inflation and Monetary Policy**
+
+October's inflation report delivered a broad-based upside surprise, with the 13-month rate exceeding 4% and both the trimmed-mean and median core measures registering sharp monthly increases that could not be attributed to energy prices. The increase spanned furniture, appliances, electronics, cosmetics, and prescription drugs — consistent with freight cost pass-through and AI-related price pressures rather than any single outlier. Fed Governor Christopher Waller, speaking in London ahead of the data, had flagged the possibility of a 50 basis point December move if inflation surprised to the upside; Dallas Fed President Lorie Logan subsequently called explicitly for at least two additional 25 basis point hikes. Chicago Fed President Austan Goolsbee described the report as "borderline disturbing." Markets responded by pricing December as a certainty and lifting the terminal rate expectation meaningfully. The two-year yield posted its largest daily gain since April, while the 10-year yield — which had appeared poised to break lower — rebounded from trendline support near 5%.
+
+**Equity Markets and AI**
+
+The S&P 500 declined a modest 0.38%, with the equal-weighted index nearly flat, suggesting the market may be prepared to absorb rate hikes if they credibly address inflation. AI sentiment recovered, with futures pointing sharply higher the following morning, led by semiconductor names. Anthropic's IPO — targeting $90.4 billion across public and private tranches at a $1.4 trillion valuation — represents the first frontier AI lab to enter public markets and will serve as a critical benchmark for investor appetite ahead of an anticipated OpenAI listing next year. OpenAI separately reported quarterly revenue of $10 billion, up nearly 50% sequentially. Skeptics, including venture investor Jack Selby, warned that a disappointing Anthropic debut could catalyze a broader AI market correction.
+
+---

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, November 11, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, November 11, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>October CPI came in above consensus, with the 13-month inflation rate topping 4% and month-on-month core measures showing a sharp broad-based increase — the Fed's decision to skip a hike last month now appears to have been a policy error.</li><li>Markets now price a December rate hike at 100% probability, with an 11% chance of a 50 basis point move; two-year Treasury yields posted their largest single-day rise since the Liberation Day tariff reversal in April.</li><li>Anthropic's IPO seeks to raise $90.4 billion at a $1.4 trillion valuation; bankers are reportedly considering raising the target to $1.5 trillion or more on robust demand.</li></ul>
+<p class="para-title" style="color:#5597cb;">Inflation and Monetary Policy</p>
+<p class="para-body">October's inflation report delivered a broad-based upside surprise, with the 13-month rate exceeding 4% and both the trimmed-mean and median core measures registering sharp monthly increases that could not be attributed to energy prices. The increase spanned furniture, appliances, electronics, cosmetics, and prescription drugs — consistent with freight cost pass-through and AI-related price pressures rather than any single outlier. Fed Governor Christopher Waller, speaking in London ahead of the data, had flagged the possibility of a 50 basis point December move if inflation surprised to the upside; Dallas Fed President Lorie Logan subsequently called explicitly for at least two additional 25 basis point hikes. Chicago Fed President Austan Goolsbee described the report as "borderline disturbing." Markets responded by pricing December as a certainty and lifting the terminal rate expectation meaningfully. The two-year yield posted its largest daily gain since April, while the 10-year yield — which had appeared poised to break lower — rebounded from trendline support near 5%.</p>
+<p class="para-title" style="color:#5597cb;">Equity Markets and AI</p>
+<p class="para-body">The S&P 500 declined a modest 0.38%, with the equal-weighted index nearly flat, suggesting the market may be prepared to absorb rate hikes if they credibly address inflation. AI sentiment recovered, with futures pointing sharply higher the following morning, led by semiconductor names. Anthropic's IPO — targeting $90.4 billion across public and private tranches at a $1.4 trillion valuation — represents the first frontier AI lab to enter public markets and will serve as a critical benchmark for investor appetite ahead of an anticipated OpenAI listing next year. OpenAI separately reported quarterly revenue of $10 billion, up nearly 50% sequentially. Skeptics, including venture investor Jack Selby, warned that a disappointing Anthropic debut could catalyze a broader AI market correction. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Asian equities rose for a third consecutive session on improving AI sentiment, though global equity hedge funds cut risk at the steepest rate in more than a decade through the first week of November.</li><li>US Ambassador David Perdue publicly expressed frustration over the slow pace of rare earth shipments from China, characterizing Beijing's conduct as weaponization of strategic resource dominance.</li><li>South Korea's antitrust regulator imposed a record $1.2 billion fine on domestic banks and brokerages for colluding in sovereign bond auctions.</li></ul>
+<p class="para-title" style="color:#e07b39;">US-China Relations and Rare Earths</p>
+<p class="para-body">The Nvidia affair continues to cast a shadow over US-China relations. Ambassador Perdue, speaking at the Citi China Conference in Shanghai, stated that US companies have been "waiting for months" for rare earth shipments critical to data center and aerospace manufacturing, and characterized Beijing's conduct as economic coercion. The remarks came as Treasury Secretary Scott Bessent separately sought to strike a constructive tone ahead of President Trump's visit to China next week, noting that leaders have engaged face-to-face more frequently this year than ever before and highlighting a new bilateral dialogue on AI governance. The divergence between diplomatic and commercial signals reflects ongoing tension beneath a trade truce set to expire in January.</p>
+<p class="para-title" style="color:#e07b39;">Regional Developments</p>
+<p class="para-body">South Korea's $1.2 billion fine against bond dealers for coordinating "goalpost yields" in sovereign auctions represents the country's largest-ever antitrust penalty and raises questions about the integrity of government debt markets. In Indonesia, the stock exchange more than quadrupled its list of stocks flagged for high shareholder concentration following MSCI complaints about illiquidity — a step toward index inclusion improvements but one that creates near-term index rebalancing uncertainty. Australia reported a record 15.5% quarterly decline in home loans, underscoring the continuing drag from the Reserve Bank's rate tightening cycle on housing credit demand. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>European natural gas prices have risen approximately 200% since February, with diesel at a record and power prices surging — a second major energy crisis in less than five years, driven in part by Strait of Hormuz disruptions.</li><li>Poland's Orlen SA is exiting a 1 million-ton-per-year LNG contract with QatarEnergy running through 2034, the first long-term contract casualty of the Iran war's disruption to Strait of Hormuz flows.</li><li>COP31 is underway in Antalya, Turkey, with UK Prime Minister Andy Burnham among leaders attending.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Energy Crisis</p>
+<p class="para-body">Europe is confronting an energy crisis that in some respects exceeds the 2022 shock. Natural gas prices have climbed roughly 200% since February, diesel has hit a record, and kerosene prices have nearly doubled — all driven by Iran war disruptions to Strait of Hormuz LNG transit and residual structural vulnerabilities that were never fully resolved after Russia's invasion of Ukraine. A German porcelain factory that survived both Nazi and Communist rule is shutting after 182 years; Poland's fertilizer industry is appealing to government for relief; Spain has spent €12 billion since March subsidizing household energy bills ahead of a November 29 election. With more than half of European citizens voting in elections over the next twelve months, the political ramifications appear significant.</p>
+<p class="para-title" style="color:#4a9e6b;">LNG Contract Disruption</p>
+<p class="para-body">Orlen's exit from its Qatari LNG contract — Poland's oldest such arrangement, dating to 2015 — marks the first formal contract termination resulting from QatarEnergy's sustained force majeure declarations since March. QatarEnergy had covered approximately 70% of its targeted 2031 export capacity with long-term commitments before this exit; finding buyers for the remainder may prove more challenging given heightened perceptions of Hormuz risk. US LNG, which offers greater cargo flexibility and Henry Hub-linked pricing, is likely to benefit as buyers reassess geographic concentration. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Trump's Latin American allies are broadly on the defensive following the US midterms, with Brazil's Lula victory, Paraguay's political upheaval, and ongoing difficulties in Argentina, Chile, and Colombia.</li><li>Argentina's Javier Milei has failed to bring inflation durably under control despite a $20 billion US currency swap arrangement and faces voter discontent ahead of next year's elections.</li><li>Chile's José Antonio Kast is managing an unexpected recession, while Colombia's Abelardo de la Espriella faces a deteriorating fiscal position compounded by El Niño weather impacts.</li></ul>
+<p class="para-title" style="color:#c0392b;">Political Realignment</p>
+<p class="para-body">The US midterm results have meaningfully weakened the regional network of Trump-aligned governments. Lula's unexpected comeback victory in Brazil — which foreshadowed the broader Democratic gains — removes the hemisphere's largest economy from Washington's orbit. In Paraguay, the collapse of Banco Ueno brought down President Santiago Peña. The pattern across the region suggests that domestic economic grievances — inflation, recession, rising energy costs — are overriding ideological alignment with Washington. Lula used his COP31 address in Antalya to call for accelerated climate action, framing it in terms of economic justice.</p>
+<p class="para-title" style="color:#c0392b;">Economic Vulnerabilities</p>
+<p class="para-body">El Niño is an amplifying factor across multiple economies. Oxford Economics identifies Ecuador, Peru, and Indonesia as the most exposed, given agricultural and mining dependencies combined with hydropower reliance. Chile's finance minister has characterized the recession as a "blip," though the political credibility of that framing remains to be tested. Brazil's economic team is working toward fiscal proposals to meet budget targets by next week. Venezuela continues to face power shortages despite its oil wealth, adding pressure for elections that could come as early as next year. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude is trading near $90 per barrel — not pricing in peace, but reflecting trader judgment that a third round of US-Iran fighting is not imminent; the Strait of Hormuz remains a structural risk rather than an active flashpoint.</li><li>COP31 in Antalya has drawn nearly 95,000 participants and dozens of world leaders; a record-strength El Niño is amplifying climate impacts that are arriving faster and more severely than scientific models anticipated.</li><li>Global equity hedge funds reduced gross exposure at the steepest rate in over a decade through early November, reflecting broad risk aversion amid AI volatility and rate uncertainty.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Energy Markets and the Iran Conflict</p>
+<p class="para-body">Oil markets have settled into an uneasy equilibrium. Brent near $90 reflects the absence of active hostilities rather than any resolution — a distinction Bloomberg Opinion's Javier Blas draws carefully. QatarEnergy's force majeure on Strait of Hormuz LNG shipments has been extended every month since March, and Iran reportedly retains a stockpile of approximately 1,700 ballistic missiles at roughly half its pre-war production capacity, maintaining meaningful retaliatory potential should hostilities resume. The energy channel continues to transmit conflict risk into European and Asian consumer prices, complicating monetary policy globally.</p>
+<p class="para-title" style="color:#8b5cf6;">Climate and COP31</p>
+<p class="para-body">Climate scientists and world leaders arriving in Antalya are confronting a shared diagnosis: warming impacts are outpacing model predictions. Bloomberg Green's analysis of more than two dozen climate-related trends finds striking divergences between observed and modeled extremes — European heat deaths, Indonesian wildfires, US Southwest drought. Adaptation financing for developing economies is estimated at $305 billion annually by 2035. ExxonMobil's CEO withdrew from COP31, leaving no major oil executive on the speaking program. The UN Secretary-General framed the 1.5°C Paris target as effectively out of reach, calling the question now one of managing the degree and duration of overshoot.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

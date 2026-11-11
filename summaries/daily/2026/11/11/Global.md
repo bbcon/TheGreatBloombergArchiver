@@ -1,0 +1,11 @@
+• Brent crude is trading near $90 per barrel — not pricing in peace, but reflecting trader judgment that a third round of US-Iran fighting is not imminent; the Strait of Hormuz remains a structural risk rather than an active flashpoint.
+• COP31 in Antalya has drawn nearly 95,000 participants and dozens of world leaders; a record-strength El Niño is amplifying climate impacts that are arriving faster and more severely than scientific models anticipated.
+• Global equity hedge funds reduced gross exposure at the steepest rate in over a decade through early November, reflecting broad risk aversion amid AI volatility and rate uncertainty.
+
+**Energy Markets and the Iran Conflict**
+
+Oil markets have settled into an uneasy equilibrium. Brent near $90 reflects the absence of active hostilities rather than any resolution — a distinction Bloomberg Opinion's Javier Blas draws carefully. QatarEnergy's force majeure on Strait of Hormuz LNG shipments has been extended every month since March, and Iran reportedly retains a stockpile of approximately 1,700 ballistic missiles at roughly half its pre-war production capacity, maintaining meaningful retaliatory potential should hostilities resume. The energy channel continues to transmit conflict risk into European and Asian consumer prices, complicating monetary policy globally.
+
+**Climate and COP31**
+
+Climate scientists and world leaders arriving in Antalya are confronting a shared diagnosis: warming impacts are outpacing model predictions. Bloomberg Green's analysis of more than two dozen climate-related trends finds striking divergences between observed and modeled extremes — European heat deaths, Indonesian wildfires, US Southwest drought. Adaptation financing for developing economies is estimated at $305 billion annually by 2035. ExxonMobil's CEO withdrew from COP31, leaving no major oil executive on the speaking program. The UN Secretary-General framed the 1.5°C Paris target as effectively out of reach, calling the question now one of managing the degree and duration of overshoot.
