@@ -1,0 +1,248 @@
+Subject: Nvidia’s firestorm 
+Date: Thu, 12 Nov 2026 06:14:28 +0000
+
+Nvidia Board Meets to Discuss Jensen Huang’s Future
+Bloomberg Morning Briefing Europe ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-11-12/nvidia-board-meets-to-discuss-jensen-huang-s-future?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+
+
+ 
+<https://www.bloomberg.com/europe?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+
+ 
+<https://sli.bloomberg.com/click?s=1149094&li=20991884&m=11b724c487f61753eb1a7a4a5f3ef261&p=11122026061428&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149094&li=20991884&m=11b724c487f61753eb1a7a4a5f3ef261&p=11122026061428&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+Good morning. Nvidia’s board is working with an outside firm to identify 
+potential replacements for CEO Jensen Huang. Stocks were mixed as traders 
+balanced AI optimism and Nvidia’s leadership crisis. And Google’s Gemini is set 
+to be integrated into Apple CarPlay’s system.Listen to the day’s top stories 
+<https://link.podtrac.com/1c953xf5>.
+
+— Joe Flynn
+
+Market Snapshot
+Nasdaq 100 futures 
+<https://www.bloomberg.com/quote/NQ1:IND?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+28,161.50-1.1%
+S&P 500 futures 
+<https://www.bloomberg.com/quote/ES1:IND?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+7,603.75-0.5%
+WTI crude oil futures 
+<https://www.bloomberg.com/quote/CL1:COM?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+$85.59-1.1%
+Market data as of 06:02 AM GMT. Data is subject to provider delays.Your 
+watchlist 
+<https://www.bloomberg.com/markets/watchlist?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+Nvidia’s board has been working with an outside firm 
+<https://www.bloomberg.com/news/articles/2026-11-11/nvidia-working-with-outside-firm-to-identify-ceo-candidates?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ to identify potential replacements for CEO Jensen Huang. The New York Times 
+reported Wednesday that Huang had a second affair with an Nvidia executive who 
+reported to him. Alice Huang, who has been identified in reports as a suspected 
+Chinese spy and was said to have had an affair with the chief executive,is 
+reportedly in Beijing 
+<https://www.bloomberg.com/news/articles/2026-11-12/alleged-chinese-spy-at-center-of-nvidia-firestorm-is-in-beijing?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ with the knowledge of Chinese security officials. Nvidia board is said to be 
+weighing whether to name a temporary chief while searching for a permanent one, 
+with some directors favoring CFO Colette Kress as the interim pick, according 
+to Semafor. Follow the latest developments in real timeon our blog 
+<https://www.bloomberg.com/news/live-blog/2026-11-11/nvidia-turmoil-board-to-weigh-ceo-jensen-huang-future-over-alleged-affairs?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+.
+
+Asian stocks were mixed after US peers drifted higher amid optimism over the 
+AI trade 
+<https://www.bloomberg.com/news/articles/2026-11-11/stock-market-today-dow-s-p-live-updates?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ following CoreWeave’s upbeat outlook, OpenAI’s quarterly revenue and demand 
+for Anthropic’s IPO. US futures fell after Nvidia shares slumped as much as 10% 
+in postmarket trading. Oil fell towarda two-month low 
+<https://www.bloomberg.com/news/articles/2026-11-11/latest-oil-market-news-and-analysis-for-nov-12?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ as Middle East production rose and hostilities between Iran and the US 
+remained muted. Check out ourMarkets Today live blog 
+<https://www.bloomberg.com/latest/uk-markets-today?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ for all the latest news and analysis relevant to UK assets.
+ 
+<https://www.bloomberg.com/news/videos/2026-11-12/what-could-come-next-after-huang-s-ouster-video?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+Industry leaders, analysts and decision makers discuss how Huang’s replacement 
+by a new leader could impact markets as well as how it might affect the global 
+economy.
+Russian authorities have registered the deaths of more than 11,000 foreigners 
+<https://www.bloomberg.com/news/articles/2026-11-11/over-11-000-foreign-military-deaths-recorded-by-russia-in-war-on-ukraine?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ from nearly 100 countries in the war against Ukraine, according to 
+confidential data held by the country’s statistics agency. Ukraine’s Volodymyr 
+Zelenskyy said that political changes in the US and elsewhere are creating a
+“window of opportunity” 
+<https://www.bloomberg.com/news/articles/2026-11-11/zelenskyy-says-political-shifts-open-window-for-russia-talks?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ for peace talks with Russia as he prepares to meet US envoys Steve Witkoff and 
+Jared Kushner in Dublin after they hold talks with Russian President Vladimir 
+Putin in Moscow on Thursday.
+
+Parties in German Chancellor Friedrich Merz’s ruling coalition have rolled 
+back some planned social-spending cuts and delayed new taxes to helpclear a path
+ 
+<https://www.bloomberg.com/news/articles/2026-11-11/germany-delays-new-taxes-power-tax-cut-rolls-back-welfare-cuts?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ for the 2027 budget. The CDU/CSU bloc and Finance Minister Lars Klingbeil’s 
+Social Democrats agreed to postpone planned taxes on sugar-sweetened drinks and 
+plastic packaging until 2028, according to a person familiar with the talks. 
+The Bundestag’s budget committee is set to make final changes to the 
+government’s draft on Thursday.
+
+Iranian Foreign Minister Abbas Araghchi asked the United Nations and its 
+nuclear watchdog to condemn a US rewardof as much as $20 million 
+<https://www.bloomberg.com/news/articles/2026-11-11/iran-asks-un-to-condemn-20-million-us-bounty-for-nuclear-info?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ for information on Tehran’s nuclear program. The complaint comes after the 
+State Department announced the incentive, as well as “possible relocation” for 
+specific details about Iran’s nuclear facilities. US President Donald Trump has 
+openly spoken about bombing Tehran’s nuclear facilities and has cited his 
+intention to prevent the Islamic Republic from ever developing nuclear weapons 
+as justification for the conflict.
+
+More Top Stories
+
+HSBC Explores Bolstering Singapore to Balance China Reliance
+ 
+<https://www.bloomberg.com/news/articles/2026-11-12/hsbc-explores-bolstering-singapore-to-balance-china-reliance?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+Blackstone Courts Dubai’s Rich in Race to Tap $1 Trillion Market
+ 
+<https://www.bloomberg.com/news/articles/2026-11-12/blackstone-courts-dubai-s-rich-in-race-to-tap-1-trillion-market?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+UK Surveyors Face Weakest Housing Market Since 2023, RICS Says
+ 
+<https://www.bloomberg.com/news/articles/2026-11-12/uk-surveyors-face-weakest-housing-market-since-2023-rics-says?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+
+
+ 
+<https://sli.bloomberg.com/click?s=1099784&stpe=default&li=20991884&m=11b724c487f61753eb1a7a4a5f3ef261&p=11122026061428&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099784&stpe=default&li=20991884&m=11b724c487f61753eb1a7a4a5f3ef261&p=11122026061428&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Deep Dive: Ray-Ban’s Family Feud
+Francesco Milleri , CEO of EssilorLuxotticaPhotographer: Augusto Casasoli/Foto 
+A3/Cont
+Italy’s Del Vecchio family made billions from designer eyeglasses, while 
+deftly riding a wave of deals sweeping the country’s banking industry. Now the 
+executives running the family’s €45 billion ($50 billion) holding company, 
+Delfin Sarl, are positioning it to benefit from its biggest financial 
+investment — a nearly €7 billion holding in the nation’s largest insurer, 
+Assicurazioni Generali. That’s iffeuding family members 
+<https://www.bloomberg.com/news/articles/2026-11-12/ray-ban-family-feud-threatens-ambitions-for-generali-investment?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ and a Czech billionaire don’t knock them off track.
+
+ * Against the backdrop of dealmaking, Chairman Francesco Milleri is also 
+contending with a destructive family dynamic, with legal disputes and some Del 
+Vecchio heirs pressing for an exit from the financial investments to 
+concentrate on EssilorLuxottica, the anchor of the family’s fortune.
+ * So far, the family friction hasn’t derailed Delfin’s investment strategy. 
+But one of the heirs, Leonardo Maria Del Vecchio, has emerged as a scathing 
+critic and called on the Delfin chairman to focus on his role as CEO of the 
+family’s original holding, the Ray-Ban manufacturer.
+ * Delfin has already been playing a pivotal role in Italy’s bank 
+consolidation. It helped bring about the €16 billion takeover of Mediobanca by 
+Banca Monte dei Paschi last year, and it’s now supporting the proposed €35 
+billion acquisition of Monte Paschi by Intesa Sanpaolo.
+The Big Take
+
+The Poison Pipeline: How Smuggled Pesticides Flood Brazil
+
+Even when governments ban dangerous pesticides, a fractured regulatory 
+landscape and criminal networks keep them flowing.
+Read more 
+<https://www.bloomberg.com/features/2026-banned-chinese-pesticides-smuggling-brazil/?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+Opinion
+
+Nvidia badly underestimated the key-man risk posed by Jensen Huang, whose 
+position now appears increasinglydifficult to defend 
+<https://www.bloomberg.com/opinion/newsletters/2026-11-12/nvidia-ritual-ceo-sacrifice-is-looming-over-jensen-huang?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+, John Authers writes. But markets may be overstating what his downfall would 
+mean for the broader AI trade, with recent moves looking more like a 
+reshuffling than a bursting bubble.
+
+Paul J. Davies
+
+Meta’s AI Bot Won’t Revolutionize Your Finances
+ 
+<https://www.bloomberg.com/opinion/articles/2026-11-12/ai-anthropic-claude-and-muse-won-t-revolutionize-your-finances?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+Test Your Knowledge
+
+
+
+Today's clue is:
+Someone who works the night watch?
+
+Alphadots|Bloomberg Games
+Play 
+<https://www.bloomberg.com/games/alphadots/archive/2026-11-12?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+Before You Go
+Photographer: Lionel Bonaventure/AFP
+Google is set to add its Gemini artificial intelligence 
+<https://www.bloomberg.com/news/articles/2026-11-11/google-adds-gemini-voice-ai-assistant-to-apple-carplay?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ app to Apple’s CarPlay system, expanding options for drivers who may already 
+be using the assistant on their Apple devices. Until earlier this year, Apple 
+had only allowed its own Siri assistant as a voice-control option on the in-car 
+platform, but has since opened the system to some of the largest AI names.
+
+A Couple More
+
+Coach, Ralph Lauren Defy China Retail Slump as Badge of New Cool
+ 
+<https://www.bloomberg.com/news/articles/2026-11-11/coach-ralph-lauren-defy-china-retail-slump-as-badge-of-new-cool?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+PGA Tour Taps Rolex, Amazon as Sponsorships Surpass $1 Billion
+ 
+<https://www.bloomberg.com/news/articles/2026-11-11/pga-tour-taps-rolex-amazon-as-sponsorships-surpass-1-billion?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+More From Bloomberg
+
+Enjoying Morning Briefing? Check out these newsletters:
+
+ * Money 
+<https://www.bloomberg.com/account/newsletters/money?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ for insights, ideas and tools for doing more with your money
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=111226_morningemea&utm_term=261112&utm_content=11320>
+ for what’s moving in stocks, bonds, FX and commodities
+ * Markets Daily UK 
+<https://www.bloomberg.com/account/newsletters/markets-daily-uk?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ for what’s driving UK markets before the trading day starts
+ * Balance of Power 
+<https://www.bloomberg.com/account/newsletters/politics?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=111226_morningemea&utm_term=261112&utm_content=11320>
+ for the latest political news and analysis from around the globe
+ * The Readout 
+<https://www.bloomberg.com/account/newsletters/readout?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=111226_morningemea&utm_term=261112&utm_content=11320>
+ for essential UK insights on the stories that matter
+Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=morningemea&cmpid=111226_morningemea&utm_term=261112&utm_content=11320>
+.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Morning 
+Briefing Europe newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/morning-europe?source=NLshare&cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/morning-europe?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=111226_morningemea&utm_campaign=morningemea&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11320>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/paIQWY1pyYhmbKl5nzS2f85_II3qFaLXef8GgN2wjwt-Txn1CfGbg34dSGHFhC5toa2q1f_uCxIi1ar3zH0Nx6rE7daYLtZctYVzo1JgrGoSTWYXRuMw97otVU8wqI44-APkZq4zcaTmC5CLWVtoKIgIQ9iVc8rYf8SJ_UROlxb57UCJ4Jt5Dhhuc6h7FlpH3Ci4M-a9ulWkDI-vzK336ePpYT3iZFWDZFABMApNnvyaJEDwSLwi0b_3GH42IdBnUIRrsOaQzJ3RjNSRXyDDzJT7HlkaOuG_i4ASpbezTXoQo7_faNzgAu6bRthh9moYFaFWmAqMnatMENtj8FTRWd_RobWQfguV/24yYRMpqYwjJ_DDJnub5BJ0Xue96YsfD/26>

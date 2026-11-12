@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, November 12, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, November 12, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Nvidia shares fell approximately 7–10% in premarket/after-hours trading as the board convened to discuss CEO Jensen Huang's future following reports of a second extramarital affair, erasing over $241 billion in market value and pushing the stock down ~30% from its early-October peak.</li><li>US 10-year Treasury yield held at 5.00%, with gold declining below $4,000/oz as persistent inflation data and hawkish Fed commentary reinforced expectations for a rate hike.</li><li>Democrats completed their midterm sweep, with Scott Colom elected as Mississippi's first Black senator since Reconstruction; last week's election results included a Democratic Texas governor pledging a moratorium on data center construction.</li></ul>
+<p class="para-title" style="color:#5597cb;">Corporate Governance and AI Markets</p>
+<p class="para-body">Nvidia's succession crisis dominated US market activity. The board engaged an outside search firm to identify potential replacements for Jensen Huang, with CFO Colette Kress cited as a possible interim pick. Nvidia's forward earnings multiple had already compressed to 66% of the S&P 500's — down from a 200% premium three years ago — suggesting the valuation reset predates the scandal. AMD, Broadcom, and Alphabet gained on speculation they could capture displaced business. Analysts at Bernstein and Oppenheimer cut ratings this week; Baird reduced its price target to $200 from $500. The stock's distress is testing whether the AI trade rests on one man or on structural demand that any successor could serve.</p>
+<p class="para-title" style="color:#5597cb;">Rates and Monetary Policy</p>
+<p class="para-body">The 10-year Treasury yield at 5.00% and gold's continued retreat below $4,000/oz reflect market pricing for additional Fed tightening. Persistent energy-driven inflation — with signs the Iran war shock is spreading to core categories — appears to be the primary driver of hawkish Fed rhetoric. The Fed's next policy move remains data-dependent, but market positioning has shifted materially toward further hikes. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>China's PPI accelerated to 5.7% YoY in October, above the prior 5.0% and the highest since 2022, while CPI slipped to 0.7% YoY, below consensus, underscoring a widening divergence between factory-gate and consumer inflation.</li><li>The yen weakened toward 160 per dollar, prompting Japan's currency chief Atsushi Mimura to warn moves had been "too fast" and that it was "too early to forget" this summer's record $96.5 billion intervention.</li><li>Indonesian Vice President Gibran Rakabuming Raka formally resigned amid scrutiny over educational credentials, symbolically ending the Prabowo-Widodo political alliance.</li></ul>
+<p class="para-title" style="color:#e07b39;">China: Macro and Trade Dynamics</p>
+<p class="para-body">China's inflation divergence carries significant structural implications. PPI inflation at a three-year high reflects energy cost pass-through from the Iran war shock, raising input costs for manufacturers and complicating export competitiveness. Meanwhile, subdued CPI at 0.7% — below forecast — signals persistent domestic demand weakness and overcapacity, particularly in autos (capacity utilization at 66%, versus 81% in 2018). October exports surged over 35% YoY, driven by technology shipments, but came in below estimates, raising a preliminary question of whether cost-push pressures are beginning to dampen external demand. The PBOC is exploring a withholding tax on government bond interest income — 10-year yields hit an all-time low of 1.57% this week — though the tool appears unlikely to substitute for fiscal stimulus.</p>
+<p class="para-title" style="color:#e07b39;">Japan and Currency Pressure</p>
+<p class="para-body">Japan's currency chief issued an explicit verbal warning as dollar-yen approached 160, referencing the summer 2026 coordinated intervention. With the US-Japan rate differential threatening to widen further on Fed hawkishness, intervention risk is non-trivial, though the threshold and timing remain uncertain. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>UK GDP grew at its fastest pace in two and a half years, beating consensus, as AI-driven business investment and resilient consumer spending offset the energy shock.</li><li>UK housing market conditions remained the weakest since 2023, per RICS surveyors, suggesting consumer resilience is uneven across sectors.</li><li>German coalition parties rolled back planned social-spending cuts and delayed sugar and plastics taxes until 2028, clearing the path for the 2027 budget; the Dutch People's Party threatened to exit the coalition over a wealth-tax amendment.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">UK Economic Momentum</p>
+<p class="para-body">The stronger-than-expected GDP print is the most substantive data point for the region. Business investment tied to AI infrastructure appears to be a material growth driver, providing an offset to energy-cost headwinds that continue to weigh on households. The divergence between headline growth and weak housing conditions warrants monitoring: the RICS survey pointing to the softest market since 2023 suggests residential investment may be a drag even as commercial spending accelerates. UK Prime Minister Andy Burnham attended COP31 in Antalya — the only G7 leader present — pledging net-zero commitment, though critics noted tension with continued North Sea approvals and a £1 billion cut to home-decarbonization funding.</p>
+<p class="para-title" style="color:#4a9e6b;">European Politics and Fiscal Policy</p>
+<p class="para-body">Germany's budget compromise, achieved by deferring new taxes rather than cutting spending, reflects the political difficulty of consolidation within a coalition government facing growth headwinds from Chinese competition and high energy costs. The Dutch political risk — a potential coalition collapse over a wealth-tax amendment — adds a layer of European political uncertainty that markets will watch, though it has not yet produced material asset-price moves. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazil's government unveiled a fiscal package intended to ease investor concerns over rising public debt following President Lula da Silva's election victory last month, with markets described as having been "roiled" by debt sustainability fears.</li><li>Fitch placed Paraguay's credit rating on watch for a potential downgrade, citing a banking crisis that ousted the president.</li><li>BP is in talks with Petrobras to sell a stake in the Bumerangue offshore block, its largest oil discovery in 25 years.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil: Fiscal Credibility Under Pressure</p>
+<p class="para-body">The Lula government's fiscal announcement is the most consequential regional development. Details remain limited in available coverage, but the market reaction preceding the package — described as significant volatility — suggests investors have elevated concerns about Brazil's debt trajectory under the new administration. The measures appear designed to signal consolidation intent rather than deliver immediate adjustment, and whether they stabilize sentiment durably will depend on the credibility of the medium-term fiscal framework. Lula's simultaneous climate leadership at COP31 in Antalya — urging more aggressive global action — may create domestic political tensions with fiscal restraint objectives.</p>
+<p class="para-title" style="color:#c0392b;">Regional Credit and Commodity</p>
+<p class="para-body">Paraguay's Fitch watch reflects idiosyncratic banking-sector stress rather than a regional contagion signal, but it adds to a broader picture of political and financial fragility across smaller LatAm economies. The BP-Petrobras Bumerangue discussions, if concluded, would represent a significant asset rotation for BP and validate continued deepwater investment appetite in Brazil's pre-salt province. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>The US-Iran conflict continued to reshape global energy flows, with Saudi Arabia oil production up 26% in October and Iraq output at its highest since the war began in February, partially offsetting Hormuz disruption; WTI crude declined toward $85.59, a two-month low.</li><li>COP31 opened in Antalya, Turkey, with no official US federal delegation; UK PM Burnham was the only G7 leader to address the summit, while US Democratic governors and mayors representing 60% of US GDP pledged independent climate cooperation with the UN.</li><li>The prospective Trump-Xi summit in Shenzhen next week — potentially trilateral with Putin — is complicated by the Nvidia espionage allegations; Beijing warned Washington against using the scandal as a pretext for tighter technology export controls.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Energy Markets and Hormuz</p>
+<p class="para-body">Middle East producers have demonstrated meaningful supply resilience despite ongoing conflict. Saudi and Iraqi output increases suggest the economic incentive to restore flows has outweighed security risk, at least at current price levels. McKinsey analysis quantifies the systemic vulnerability: roughly 80% of maritime trade passes through major chokepoints, four of which have no viable alternative seaborne route, and the 2026 Hormuz disruptions cut transits by up to 95% at peak. The partial normalization of flows partly explains crude's move to a two-month low, though geopolitical risk premium has not fully dissipated given the conflict's unresolved trajectory.</p>
+<p class="para-title" style="color:#8b5cf6;">Geopolitics and Technology Supply Chains</p>
+<p class="para-body">The convergence of the Nvidia espionage scandal, the approaching Trump-Xi meeting, and intensifying semiconductor trade restrictions creates a nexus of geopolitical risk with direct market implications. Chinese AI stocks declined sharply — Alibaba ADRs down 4.9%, Z.AI and MiniMax down 7-9% in Hong Kong — on concern that the scandal accelerates chip export curbs. McKinsey's global supply-chain vulnerability analysis highlights electronics as the most exposed category, with five products including memory chips accounting for roughly 20% of identified global trade risk. The structural tension between AI infrastructure demand and geopolitically fragmented semiconductor supply chains appears to be intensifying rather than resolving.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+Subject: Energy Daily: Defusing the AI backlash
+Date: Thu, 12 Nov 2026 13:02:45 +0000
+
+US Utilities Have a Plan to Win Over the AI Haters
+US power utilities say they’re working to ensure data centers pay up to 
+connect to the grid. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-11-12/us-utilities-have-a-plan-to-win-over-the-ai-haters?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ 
+<https://www.bloomberg.com/industries/energy?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=20996045&m=11b724c487f61753eb1a7a4a5f3ef261&p=11122026130245&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149124&li=20996045&m=11b724c487f61753eb1a7a4a5f3ef261&p=11122026130245&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+
+
+Welcome to our guide to the commodities driving the global economy. Today, 
+reporter Mark Chediak looks at US utilities’ efforts to tackle the popular 
+backlash against the energy-hungry AI boom.
+
+Last week’s midterm elections didn’t go well for US power utilities. Popular 
+anger over data centers and rising electricity bills helped drive theblue wave 
+<https://www.bloomberg.com/news/articles/2026-11-04/democrats-win-control-of-the-house-ddhq-projects?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ that saw the Democrats take control of Congress.
+
+In one of the biggest shocks of the night, Texas — home to some of the largest 
+planned investments in AI and related power infrastructure — elected a
+Democratic governor 
+<https://www.bloomberg.com/news/articles/2026-11-04/democrat-hinojosa-wins-texas-governor-race-cnn-projects?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ who pledged a moratorium on new data center projects.
+
+More broadly, the election results have increased the risk of tougher 
+regulation just as utilities plan massive grid investments to serve 
+proliferating data hubs.
+
+The firms are taking stock, but not backing down.
+
+Power companies say they’re working with state regulators to ensure data 
+centers pay their fair share to connect to the grid, according to arecent study 
+<https://www.eei.org/en/news/news/all/2026-cra-report-october> flagged by 
+utility lobby theEdison Electric Institute <https://www.eei.org/>. That will 
+end up lowering electricity costs for other customers, including households, 
+the group argues.
+
+An analysis released by Texas utility Oncor Electric Delivery Co. this week 
+said essentially the same thing.
+A CloudHQ data center next to a Dominion Energy power substation in Ashburn, 
+Virginia.Photographer: Bloomberg
+The tech giants also insist they’re stepping up 
+<https://www.bloomberg.com/news/articles/2026-11-11/microsoft-vows-to-pay-its-own-way-to-power-data-centers?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+. Brandon Oyer, Amazon Web Services’ head of energy and water for the Americas, 
+told a BloombergNEF event in Houston yesterday that his company’s extensive 
+data center plans in Jackson, Mississippi, have helped fund capital spending by 
+the local utility.
+
+Yet skepticism remains over whether the tech firms will really stump up all 
+the extra costs incurred by their huge new demand on the power system, 
+especially since a hyperscale AI facility can require a host of new 
+transmission lines, substations and other grid upgrades.
+
+Utilities say they’re structuring power agreements to make sure data centers 
+pay their way and household customers are protected.
+
+But with public apprehension over the AI boom widespread — and last week’s 
+post-electionmarket wobble 
+<https://www.bloomberg.com/news/articles/2026-11-04/wall-street-sees-risks-to-ai-boom-after-the-democratic-sweep?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ highlighting doubts over its durability — their argument will still be a tough 
+sell.
+
+—Mark Chediak, Bloomberg News
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=20996045&m=11b724c487f61753eb1a7a4a5f3ef261&p=11122026130245&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868670&stpe=default&li=20996045&m=11b724c487f61753eb1a7a4a5f3ef261&p=11122026130245&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Chart of the day
+
+Aluminum buyers on the London Metal Exchange are facing the most severe 
+squeeze in decades 
+<https://www.bloomberg.com/news/articles/2026-11-11/london-aluminum-market-faces-biggest-supply-squeeze-in-decades?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ as inventories backing contracts plunge and much of the remaining stock comes 
+under the control of just two traders. Spot prices spiked to trade $176.80 a 
+ton above benchmark three-month futures on the exchange today, hitting the 
+highest level on record in data spanning more than 30 years. The spread was 
+trading at a discount as recently as mid-October.
+
+Top stories
+
+Oil declined 
+<https://www.bloomberg.com/news/articles/2026-11-11/latest-oil-market-news-and-analysis-for-nov-12?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ as traders weighed resurgent production from the Middle East against the 
+ongoing risk to shipments posed by a conflict that shows little sign of ending.
+
+BP Plc is in talks with Petrobras to sell a stake in the Bumerangue oil block 
+<https://www.bloomberg.com/news/articles/2026-11-12/bp-in-talks-to-sell-stake-in-brazil-oil-discovery-to-petrobras?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ off the coast of Brazil, its biggest discovery in 25 years, according to 
+people familiar with the matter.
+
+BHP Group named former analyst Adrian Wood 
+<https://www.bloomberg.com/news/articles/2026-11-11/bhp-names-adrian-wood-as-cfo-to-succeed-vandita-pant-mwcnk5t7?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ to succeed Chief Financial Officer Vandita Pant. The miner also plans to 
+restructure itsAustralian iron ore business 
+<https://www.bloomberg.com/news/articles/2026-11-12/bhp-plans-overhaul-of-australia-iron-ore-business-to-cut-costs?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ as part of a wider cost-cutting effort.
+
+Gold extended its decline 
+<https://www.bloomberg.com/news/articles/2026-11-12/gold-holds-below-4-000-as-market-looks-ahead-to-fed-rate-hike?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ below $4,000 an ounce as persistent US inflation and hawkish remarks from 
+Federal Reserve officials reinforced expectations for a series of interest-rate 
+hikes.
+
+Citigroup Inc. is getting closer to hitting its $1 trillion sustainable 
+finance goal 
+<https://www.bloomberg.com/news/articles/2026-11-12/citi-says-incredible-electricity-demand-feeds-1-trillion-goal?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ thanks to a surge in demand for electrification, according to the bank’s chief 
+sustainability officer.
+
+BNEF today
+
+Governments in Europe, the US, India, Australia and Japan have awarded at 
+least $3 billion to 42 electrolyzer makers to expand, yet the subsidies have 
+had limited impact on either manufacturing capacity or the firms’ financial 
+health, according toBloombergNEF <https://about.bnef.com/>. Technological 
+competitiveness, supply-chain management and demand in key markets will be more 
+important than public funding in determining which companies remain in 
+business, BNEF says.
+
+More from Bloomberg
+
+ * Economics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT111226_ENERGY&utm_term=261112&utm_content=11288>
+ for what the changing landscape means for policymakers, investors and you
+ * Business of Food 
+<https://www.bloomberg.com/account/newsletters/business-of-food?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT111226_ENERGY&utm_term=261112&utm_content=11288>
+ for a weekly look at how the world feeds itself in a changing economy and 
+climate, from farming to supply chains to consumer trends
+ * Green Daily 
+<https://www.bloomberg.com/account/newsletters/green-daily?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ for how climate change is shaping energy, investing, business and technology
+ * Supply Lines 
+<https://www.bloomberg.com/account/newsletters/supply-lines?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT111226_ENERGY&utm_term=261112&utm_content=11288>
+ for daily insights into supply chains and global trade
+You have exclusive access to other subscriber-only newsletters. Explore all 
+newsletters here 
+<https://www.bloomberg.com/newsletters?utm_medium=email&utm_source=newsletter&utm_campaign=energy&cmpid=BBBXT111226_ENERGY&utm_term=261112&utm_content=11288>
+ to get most out of your Bloomberg subscription.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Energy 
+Daily newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/elements?source=NLshare&cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/elements?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBBXT111226_ENERGY&utm_campaign=energy&utm_medium=email&utm_source=newsletter&utm_term=261112&utm_content=11288>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/JIT2R6J6Xpc6LjDkG9s8QZ21FckMVzQQdGT7-dnNKFA9UGDi-5sRasShlliN-nKUhcdPWuW4jaM4uFY4xBUY4L7s-InGJbG4Xx2MAgOg-uXam5Pt0zOVfketNjBz-ZZJBZbsu3UPNFPU6vQLiAi3qz7X5O-aaiPq_R1naw6NMvtV2IeSQY6XCKWPIJ2xSxbwpf-pks--MiC1qhg3W45HGuTAkI47OTeITdIqut195XsCAhSHiakVSyM_j4XqfqRwWIFxEKts9CBMZIlgAbAIOkeSCaw4zdqW58-vEmXQ39v1h0s-gdhe9JJus3HAFX3KHcVltqx3l4wJnP0frHEXVQtH7SjoxoQV/pGNs9cj-8N1QKX4YqS9lfZ39zgHJyUR6/26>
