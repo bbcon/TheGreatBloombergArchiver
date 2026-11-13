@@ -1,0 +1,12 @@
+• Jensen Huang's ouster at Nvidia removes what analysts described as the last prominent US corporate voice advocating deeper tech engagement with Beijing, complicating prospects for American firms seeking Chinese market access.
+• Documents reviewed by Bloomberg News show a Chinese company founded by Alice Huang — the woman at the center of the espionage probe — procured smuggled AI chips installed at a Shanghai data center linked to her firm Megaspeed International.
+• Japan's three major banks — Mitsubishi UFJ, Sumitomo Mitsui, and Mizuho — raised profit forecasts and announced share buybacks, citing rising interest rates and robust loan demand, putting them on course for another record earnings year.
+• Indonesia's Vice President Gibran Rakabuming Raka resigned, accelerating President Prabowo Subianto's consolidation of power and further fraying the informal political arrangement with former President Joko Widodo.
+
+**China and the Nvidia Fallout**
+The diplomatic implications of Huang's departure are significant. With Tim Cook retired from Apple and Elon Musk politically radioactive in a Democrat-controlled Congress, Beijing has lost what commentators described as its last unofficial ambassador among US technology leaders. The timing is particularly awkward ahead of the Xi-Trump meeting at the APEC summit in Shenzhen next week — an encounter where expectations were already low, partly because a follow-up December meeting in the US provides a fallback for extending the trade truce expiring in January. US Trade Representative Jamieson Greer separately pressed Beijing to honor pledges on agricultural purchases and critical minerals. The chip-smuggling revelations surrounding Alice Huang's data center network appear likely to accelerate US export control tightening, with Southeast Asia's AI-driven economies potentially caught in the crossfire.
+
+**Japan and Indonesia**
+Japan's megabanks continue to benefit from the Bank of Japan's rate normalization, with corporate borrowing showing few signs of deceleration. In Indonesia, Prabowo's political consolidation is advancing rapidly, though his popularity is declining amid economic pressure and the risk of an MSCI index double-downgrade in 2026.
+
+---

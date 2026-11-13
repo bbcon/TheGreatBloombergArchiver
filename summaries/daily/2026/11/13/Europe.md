@@ -1,0 +1,11 @@
+• Europe will participate in the next round of Russia-Ukraine peace talks — a meaningful development after being largely excluded from Washington-Moscow negotiations — following Ukrainian President Zelenskyy's meeting with US envoys Steve Witkoff and Jared Kushner in Dublin, which also produced a prisoner-swap agreement covering more than 1,000 Ukrainians.
+• Dutch Prime Minister Rob Jetten met coalition partners to avert a potential snap election after parliament passed a wealth bill that risks toppling the minority alliance.
+• The Stoxx Europe 600 edged 0.1% higher, outperforming US futures, as regional markets absorbed global volatility with relative stability.
+
+**Russia-Ukraine and European Security**
+Europe's re-inclusion in peace negotiations represents a material shift in the diplomatic architecture of the conflict. Having been largely sidelined while Washington and Moscow engaged bilaterally, European governments will now have formal standing in the next round of talks. Separately, Bloomberg reporting reveals that Russian units of foreign companies seized by the Kremlin — including subsidiaries of Rockwool and AkzoNobel — have been channeling billions of rubles to Vladimir Putin's war effort via the People's Front organization, funding drones, vehicles, and electronic-warfare systems. The Kremlin has accelerated seizures since September, with Nestlé and Japan Tobacco units among the latest targets. European and Japanese companies have borne the brunt; major US businesses have been largely spared as Moscow pursues warmer ties with the Trump administration.
+
+**UK Politics and Energy Policy**
+UK Prime Minister Andy Burnham warned of "long nights ahead" as a UK-EU summit approaches, pushing back against former PM David Cameron's framing that Britain's economic difficulties are unrelated to Brexit. The UK's existing extraordinary oil-profit tax regime is being legislated into a permanent mechanism that would trigger automatically during periods of elevated oil and gas prices — a structure likely to gain further political salience as European supermajors approach their second-most profitable year on record.
+
+---

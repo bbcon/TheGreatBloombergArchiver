@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friday, November 13, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Friday, November 13, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>US producer price data awaited: markets positioned defensively into the print, with traders bracing for confirmation of persistent inflation after a week of hawkish Fed commentary.</li><li>Federal Reserve officials including New York Fed President John Williams, Mary Daly, and Austan Goolsbee signaled further rate hikes are necessary to return inflation to the 2% target.</li><li>October payrolls revised the three-month average gain to approximately 137,000 — well above the ~20,000 pace seen earlier in the year — reigniting debate over whether a tightening labor market could become a fresh source of inflationary pressure.</li><li>Nvidia shares fell 4.3% Thursday after initially dropping 14% at the open following Jensen Huang's ouster as CEO; retail investors posted the largest-ever opening-session buy in Nvidia history, per Vanda Research.</li></ul>
+<p class="para-title" style="color:#5597cb;">Labor Market and Inflation Dynamics</p>
+<p class="para-body">The most consequential domestic macro development this week was the reassessment of labor market conditions. The October payrolls report brought the three-month average payroll gain to roughly 137,000 — more than double the pace economists generally consider consistent with flat labor supply — while the quits rate climbed to 2.1% in September, returning to its 2024 average. Fed Chair Kevin Warsh had characterized the job market as balanced as recently as August's Jackson Hole address, when the three-month average sat near 20,000. The sharp acceleration, combined with immigration-driven constraints on labor supply, has raised the prospect that employment could become a renewed source of wage and price pressure heading into 2027. New York Fed President Williams acknowledged the economy "seems to be strengthening" in the labor market, while simultaneously insisting there were no signs of overheating — itself a signal the debate is shifting.</p>
+<p class="para-title" style="color:#5597cb;">Monetary Policy</p>
+<p class="para-body">Williams joined Daly and Goolsbee in signaling that additional rate increases remain necessary. Market pricing implies quarter-point hikes at each of the December, January, and March meetings. Treasury yields surged over the week — the two-day jump in the two-year yield was the largest since March 2023, and the 10-year rise the steepest since April 2025 — as stubborn inflation data and hawkish Fed rhetoric overwhelmed any safe-haven demand generated by equity volatility. The 10-year yield stood at 5.13%, and bond investors appear increasingly skeptical that Treasuries have reclaimed their traditional haven status. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Jensen Huang's ouster at Nvidia removes what analysts described as the last prominent US corporate voice advocating deeper tech engagement with Beijing, complicating prospects for American firms seeking Chinese market access.</li><li>Documents reviewed by Bloomberg News show a Chinese company founded by Alice Huang — the woman at the center of the espionage probe — procured smuggled AI chips installed at a Shanghai data center linked to her firm Megaspeed International.</li><li>Japan's three major banks — Mitsubishi UFJ, Sumitomo Mitsui, and Mizuho — raised profit forecasts and announced share buybacks, citing rising interest rates and robust loan demand, putting them on course for another record earnings year.</li><li>Indonesia's Vice President Gibran Rakabuming Raka resigned, accelerating President Prabowo Subianto's consolidation of power and further fraying the informal political arrangement with former President Joko Widodo.</li></ul>
+<p class="para-title" style="color:#e07b39;">China and the Nvidia Fallout</p>
+<p class="para-body">The diplomatic implications of Huang's departure are significant. With Tim Cook retired from Apple and Elon Musk politically radioactive in a Democrat-controlled Congress, Beijing has lost what commentators described as its last unofficial ambassador among US technology leaders. The timing is particularly awkward ahead of the Xi-Trump meeting at the APEC summit in Shenzhen next week — an encounter where expectations were already low, partly because a follow-up December meeting in the US provides a fallback for extending the trade truce expiring in January. US Trade Representative Jamieson Greer separately pressed Beijing to honor pledges on agricultural purchases and critical minerals. The chip-smuggling revelations surrounding Alice Huang's data center network appear likely to accelerate US export control tightening, with Southeast Asia's AI-driven economies potentially caught in the crossfire.</p>
+<p class="para-title" style="color:#e07b39;">Japan and Indonesia</p>
+<p class="para-body">Japan's megabanks continue to benefit from the Bank of Japan's rate normalization, with corporate borrowing showing few signs of deceleration. In Indonesia, Prabowo's political consolidation is advancing rapidly, though his popularity is declining amid economic pressure and the risk of an MSCI index double-downgrade in 2026. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>Europe will participate in the next round of Russia-Ukraine peace talks — a meaningful development after being largely excluded from Washington-Moscow negotiations — following Ukrainian President Zelenskyy's meeting with US envoys Steve Witkoff and Jared Kushner in Dublin, which also produced a prisoner-swap agreement covering more than 1,000 Ukrainians.</li><li>Dutch Prime Minister Rob Jetten met coalition partners to avert a potential snap election after parliament passed a wealth bill that risks toppling the minority alliance.</li><li>The Stoxx Europe 600 edged 0.1% higher, outperforming US futures, as regional markets absorbed global volatility with relative stability.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Russia-Ukraine and European Security</p>
+<p class="para-body">Europe's re-inclusion in peace negotiations represents a material shift in the diplomatic architecture of the conflict. Having been largely sidelined while Washington and Moscow engaged bilaterally, European governments will now have formal standing in the next round of talks. Separately, Bloomberg reporting reveals that Russian units of foreign companies seized by the Kremlin — including subsidiaries of Rockwool and AkzoNobel — have been channeling billions of rubles to Vladimir Putin's war effort via the People's Front organization, funding drones, vehicles, and electronic-warfare systems. The Kremlin has accelerated seizures since September, with Nestlé and Japan Tobacco units among the latest targets. European and Japanese companies have borne the brunt; major US businesses have been largely spared as Moscow pursues warmer ties with the Trump administration.</p>
+<p class="para-title" style="color:#4a9e6b;">UK Politics and Energy Policy</p>
+<p class="para-body">UK Prime Minister Andy Burnham warned of "long nights ahead" as a UK-EU summit approaches, pushing back against former PM David Cameron's framing that Britain's economic difficulties are unrelated to Brexit. The UK's existing extraordinary oil-profit tax regime is being legislated into a permanent mechanism that would trigger automatically during periods of elevated oil and gas prices — a structure likely to gain further political salience as European supermajors approach their second-most profitable year on record. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Trump threatened to double tariffs on Mexico unless the government halted what he claimed were migrant caravans preparing to cross into the US, adding a fresh bilateral pressure point ahead of trade-truce negotiations.</li><li>A new poll shows 62% of Argentines hold a negative view of President Javier Milei, with rising unemployment ranking as the top voter concern one year ahead of the presidential election — a warning sign given Milei's primary focus on inflation reduction.</li><li>Peru hiked interest rates for the first time in nearly four years to address an inflation spike driven by rising food and energy costs.</li><li>Venezuela: a small but growing cohort of young investors and entrepreneurs is positioning for a potential economic recovery following President Nicolás Maduro's ouster, though a deteriorating electricity grid — with a majority of citizens experiencing regular outages — represents a critical near-term constraint.</li></ul>
+<p class="para-title" style="color:#c0392b;">Argentina and Mexico: Distinct Political Risks</p>
+<p class="para-body">Milei's economic program has achieved meaningful progress on inflation, but the poll data suggest the political cost is accumulating. With unemployment now the electorate's primary concern and his negative approval rating at 62%, the transition from stabilization to growth has not yet materialized visibly for Argentine households. The presidential election one year out means fiscal consolidation and its associated growth tradeoffs will face increasing political scrutiny. In Mexico, the tariff threat from Washington arrives against a backdrop of already-strained institutional confidence: nearly half of Mexicans express little or no faith in the electoral authority's ability to organize fair elections next year, amid a widening corruption scandal.</p>
+<p class="para-title" style="color:#c0392b;">Peru Rate Hike and Regional Energy Context</p>
+<p class="para-body">Peru's rate increase — the first in nearly four years — underscores how the energy price shock from the Iran conflict is transmitting through commodity-linked emerging economies into domestic inflation. The dynamic illustrates a broader regional tension: Latin American economies that benefit from elevated commodity export revenues simultaneously face pass-through inflation from energy and food costs, complicating the monetary policy calculus across the region. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>The IEA projected global oil markets will swing to a supply surplus for the first time since the Iran war began, as Persian Gulf exports recover despite ongoing conflict — Brent crude was trading near $95/barrel as of Friday morning.</li><li>Trump floated abandoning a formal deal with Iran, telling Vance not to negotiate and suggesting the conflict could end without an agreed framework on nuclear weapons — an abrupt reversal that dimmed near-term prospects for a diplomatic resolution.</li><li>COP31 in Antalya, Turkey, concluded its leaders' summit and shifted to technical negotiations, with envoys targeting a final text by next Friday; the summit's presidency circulated a first summary flagging electrification, climate finance, and methane curbs as key contested issues.</li><li>China formally ruled out bidding to host the 2028 UN climate summit, with Indonesia and Uzbekistan signaling potential interest.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Oil Markets and the Iran Conflict</p>
+<p class="para-body">The IEA's surplus forecast represents a meaningful inflection point in the oil market narrative that has prevailed since the conflict began. Asian refiners — in Japan, China, and Thailand — are increasing purchases of Middle Eastern crude as Strait of Hormuz flows partially recover, reducing the premium on alternative supply sources including US crude. Nevertheless, Trump's comments that the US may forgo a formal Iran deal introduce renewed uncertainty: without a structured agreement, the risk of renewed military escalation and supply disruption remains elevated. The five Western oil supermajors are on track for their second-most profitable year on record, reviving windfall-tax proposals in both the US Congress — where Democrats' midterm sweep has given fresh impetus to legislation pegging levies to Brent above its ~$68/barrel 2025 average — and in multiple European countries, with Portugal proposing a 33% sectoral levy.</p>
+<p class="para-title" style="color:#8b5cf6;">COP31 and Climate Finance</p>
+<p class="para-body">Negotiations in Antalya are entering the technically demanding phase following the leaders' summit. The presidency's first summary document acknowledges that climate finance pledges are not being met and flags the UN Environment Programme's finding that the 1.5°C Paris target is no longer achievable. Canada's position — expanding oil and gas exports while pledging net-zero by 2050 — crystallizes the central tension between energy security imperatives, amplified by the Iran war, and emissions commitments. China's decision not to bid for COP33 hosting duties in 2028 removes a potentially consequential actor from the convening role.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

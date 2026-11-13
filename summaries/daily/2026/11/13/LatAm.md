@@ -1,0 +1,12 @@
+• Trump threatened to double tariffs on Mexico unless the government halted what he claimed were migrant caravans preparing to cross into the US, adding a fresh bilateral pressure point ahead of trade-truce negotiations.
+• A new poll shows 62% of Argentines hold a negative view of President Javier Milei, with rising unemployment ranking as the top voter concern one year ahead of the presidential election — a warning sign given Milei's primary focus on inflation reduction.
+• Peru hiked interest rates for the first time in nearly four years to address an inflation spike driven by rising food and energy costs.
+• Venezuela: a small but growing cohort of young investors and entrepreneurs is positioning for a potential economic recovery following President Nicolás Maduro's ouster, though a deteriorating electricity grid — with a majority of citizens experiencing regular outages — represents a critical near-term constraint.
+
+**Argentina and Mexico: Distinct Political Risks**
+Milei's economic program has achieved meaningful progress on inflation, but the poll data suggest the political cost is accumulating. With unemployment now the electorate's primary concern and his negative approval rating at 62%, the transition from stabilization to growth has not yet materialized visibly for Argentine households. The presidential election one year out means fiscal consolidation and its associated growth tradeoffs will face increasing political scrutiny. In Mexico, the tariff threat from Washington arrives against a backdrop of already-strained institutional confidence: nearly half of Mexicans express little or no faith in the electoral authority's ability to organize fair elections next year, amid a widening corruption scandal.
+
+**Peru Rate Hike and Regional Energy Context**
+Peru's rate increase — the first in nearly four years — underscores how the energy price shock from the Iran conflict is transmitting through commodity-linked emerging economies into domestic inflation. The dynamic illustrates a broader regional tension: Latin American economies that benefit from elevated commodity export revenues simultaneously face pass-through inflation from energy and food costs, complicating the monetary policy calculus across the region.
+
+---

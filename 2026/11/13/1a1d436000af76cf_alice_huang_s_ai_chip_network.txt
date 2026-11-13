@@ -1,0 +1,285 @@
+Subject: Alice Huang’s AI chip network
+Date: Fri, 13 Nov 2026 09:21:05 +0000
+
+Alice Huang’s AI Chip Network Unveiled as Nvidia Drama Unfolds Further
+Bloomberg Evening Briefing Asia ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-11-13/alice-huang-s-ai-chip-network-unveiled-as-nvidia-drama-unfolds-further?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+
+
+ 
+<https://www.bloomberg.com/asia?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=21014468&m=11b724c487f61753eb1a7a4a5f3ef261&p=11132026092105&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149114&li=21014468&m=11b724c487f61753eb1a7a4a5f3ef261&p=11132026092105&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+The Nvidia drama isn’t going away with Jensen Huang’s departure 
+<https://www.bloomberg.com/news/articles/2026-11-12/jensen-huang-face-of-the-ai-boom-ousted-by-nvidia-board-as-ceo?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ as CEO. Just as we ended the week trying to digest things —who will replace him
+ 
+<https://www.bloomberg.com/news/videos/2026-11-13/nvidia-ceo-who-are-the-candidates-for-permanent-role-video?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+? How was Huang in hisfinal hours at Nvidia 
+<https://www.bloomberg.com/news/articles/2026-11-13/inside-jensen-huang-s-final-hours-as-the-ceo-of-nvidia?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+? — more is emerging about the woman at the center of the controversy.
+
+A Chinese company founded by Alice Huang procured smuggled AI chips 
+<https://www.bloomberg.com/news/articles/2026-11-13/banned-nvidia-chips-installed-at-china-data-center-linked-to-alice-huang?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ that were installed at a Shanghai data center with links to Megaspeed 
+International, according to documents reviewed by Bloomberg News.
+
+Some of the servers were originally sold to Aperia Cloud Services, an official 
+Nvidia Cloud Partner headquartered in Singapore. But instead of staying in the 
+island nation, the hardware wound up in the hands of a Chinese company Alice 
+founded, at a sprawling AI facility in Shanghai. That project has several ties 
+to Alice, including that Megaspeed — which she founded in 2023 — used a 
+rendering of the data center in a 2024 investor presentation. Megaspeed is 
+itself alsosuspected of semiconductor diversion 
+<https://www.bloomberg.com/news/articles/2026-11-13/malaysia-checks-whether-chips-were-reexported-by-megaspeed-unit?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+.
+
+It raises more questions about Huang’s relationship to a woman with whom he 
+admitted to having an extramarital affair. Huang still has his supporters — like
+billionaire investor and Nvidia shareholder 
+<https://www.bloomberg.com/news/articles/2026-11-13/billionaire-koguan-vows-not-to-buy-nvidia-stock-as-huang-quits?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ Leo KoGuan, who said: “No further investment without Jensen.” Butretail 
+investors were already buying 
+<https://www.bloomberg.com/news/articles/2026-11-13/nvidia-sees-record-open-retail-buy-after-ceo-ousted-vanda-says?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ on the Nvidia dip after Huang’s resignation from thecompany at the heart of 
+the AI boom 
+<https://www.bloomberg.com/news/videos/2026-11-12/what-jensen-huang-s-exit-means-for-nvidia-video?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+.
+
+—Stephanie Phang 
+<https://www.bloomberg.com/authors/AEu_HIqQe4U/stephanie-phang?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+
+What You Need to Know Today
+
+More Tech Drama
+
+Microsoft Outage Gums Up Markets, Forces Traders to Use Phones
+
+Microsoft Outlook went dark on Rita Elkazzi just as a volatile week in markets 
+was coming to an end. As swings in AI stocks and bonds kept traders on edge, 
+the UBS execution-sales head for Australia and New Zealand was forced onto 
+phones and alternative channels to communicate. Elkazzi’s experience is echoed 
+by many after Microsoft suffered one of its most severe disruptions in recent 
+memory. The tech giant is still struggling to restore access to some of its 
+flagship software hours after an outage began, affecting its Outlook, Teams and 
+Copilot systems. The difficulties have hindered workflows on trading desks, 
+delayed corporate disclosure and even affected email access for Japan’s 
+Ministry of Finance.
+Read more 
+<https://www.bloomberg.com/news/articles/2026-11-13/microsoft-outage-gums-up-markets-forces-traders-to-use-phones?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Having a better week is Anthropic, whose IPO has drawn about six times the 
+orders for the shares available, according to people familiar with the matter, 
+as interest increases forpotentially the biggest first-time share sale ever 
+<https://www.bloomberg.com/news/articles/2026-11-12/anthropic-s-ipo-is-said-to-be-about-six-times-oversubscribed?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+. The Claude AI model firm and its co-founders are seeking to raise as much as 
+$64.4 billion in the IPO and $26 billion in a private placement. Taken 
+together, the offering would be bigger than SpaceX’s IPO.
+
+In markets, stocks edged lower as investors assessed the broader market fallout
+ 
+<https://www.bloomberg.com/news/articles/2026-11-12/stock-market-today-dow-s-p-live-updates?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ from Jensen Huang’s ouster at Nvidia while awaiting US producer-price data 
+that may offer fresh clues on the path of Federal Reserve interest rates. 
+Nvidia shares plunged more than 14% before dip buyers stepped in, cutting the 
+loss to 4.3% by Thursday’s close. It is due to report third-quarter earnings on 
+Tuesday.
+
+Meanwhile, just when global bond investors were starting to believe the worst 
+of this year’s selloff was over, surging Treasury yields are making them think 
+again. The forces roiling the world’s biggest debt market show little sign of 
+fading, as stubborn inflation and hawkish Federal Reserve rhetoric have traders 
+bracing for more aggressive interest-rate hikes, while growing debt supply adds 
+to the pressure. The selloff persisted even as turmoil around Nvidia rattled 
+stocks and risk sentiment,undercutting hopes that Treasuries had reclaimed 
+their traditional haven role 
+<https://www.bloomberg.com/news/articles/2026-11-13/treasury-yield-surge-shatters-hopes-worst-of-bond-rout-is-over?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+.
+
+Hedge Funds Battle for Office Space in Hong Kong in Race to Expand in City
+
+A wave of expansion in Hong Kong by some of the world’s biggest hedge funds 
+and trading firms is driving a surge in office rents, the latest sign the Asian 
+financial hub is getting its groove back. From Jane Street to Point72, market 
+makers and hedge funds are taking more office floors, sending vacancy rates to 
+a three-year low.
+Get more 
+<https://www.bloomberg.com/news/articles/2026-11-12/from-jane-street-to-point72-finance-giants-drive-hong-kong-office-rents-higher?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Japan’s biggest banks raised their profit forecasts and unveiled share 
+buybacks, after cashing in on rising interest rates and robust loan demand that 
+put themon course for another record year 
+<https://www.bloomberg.com/news/articles/2026-11-13/sumitomo-mitsui-raises-profit-forecast-plans-to-buy-back-shares?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+. They include Mitsubishi UFJ, Sumitomo Mitsui and Mizuho Financial.
+
+Japanese lenders are on a record earnings streak thanks to the central bank’s 
+interest-rate hikes, with corporate borrowing showing few signs of slowing down 
+so far. But economic risks are mounting as global investors grow jittery over 
+the sustainability of the AI boom and geopolitical conflicts keep energy prices 
+elevated.
+
+US President Donald Trump has floated a new strategy for his war against Iran: 
+leave the conflict in limbo and walk away 
+<https://www.bloomberg.com/news/articles/2026-11-12/trump-bets-shaky-iran-status-quo-will-hold-after-midterm-loss?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+. On Thursday, Trump said he told Vice President JD Vance not to negotiate with 
+Iran and suggested the conflict could end without a deal to impose agreed-upon 
+limits on Tehran’s nuclear weapons program — after repeatedly stressing that 
+was why the US and Israel began bombing Iran in the first place.
+
+It was another abrupt U-turn for Trump, who had also threatened to launch new 
+strikes if no deal was reached. But widespread Republican losses in last week’s 
+midterm elections underscored how unpopular the conflict was with voters.Oil 
+held gains 
+<https://www.bloomberg.com/news/articles/2026-11-12/latest-oil-market-news-and-analysis-for-nov-13?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ after his comments dimmed prospects for a breakthrough to end the war that has 
+roiled Middle East supplies.
+
+Politics
+
+Indonesia’s Prabowo Rushes End of Jokowi Era With Son’s Exit
+
+The ultimate target of President Prabowo Subianto’s shakeup at the top of 
+Indonesian politics may be the man who helped propel him to power after leading 
+the country for a decade: ex-President Joko Widodo.
+Keep reading 
+<https://www.bloomberg.com/news/articles/2026-11-12/jokowi-era-fades-in-indonesia-with-son-forced-out-as-prabowo-s-vice-president?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=21014468&m=11b724c487f61753eb1a7a4a5f3ef261&p=11132026092105&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=1099804&stpe=default&li=21014468&m=11b724c487f61753eb1a7a4a5f3ef261&p=11132026092105&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+What You’ll Need to Know Tomorrow
+
+Economics
+
+Post-Jensen US Chip Curbs Threaten Southeast Asia’s AI Boom
+ 
+<https://www.bloomberg.com/news/articles/2026-11-13/post-jensen-us-chip-curbs-threaten-southeast-asia-s-ai-boom?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Politics
+
+Nvidia Crisis Prompts Scrutiny of Lutnick’s Role in Chip Policy
+ 
+<https://www.bloomberg.com/news/articles/2026-11-13/nvidia-crisis-prompts-scrutiny-of-lutnick-s-role-in-chip-policy?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Chip Curbs
+
+Jensen Huang Exit Sets Up US-China Showdown Over AI Chip Curbs
+ 
+<https://www.bloomberg.com/news/articles/2026-11-13/jensen-huang-exit-sets-up-us-china-showdown-over-ai-chip-curbs?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Technology
+
+Samsung Is in Talks to Acquire Data Center Cooling Firm Modine
+ 
+<https://www.bloomberg.com/news/articles/2026-11-12/samsung-is-in-talks-to-acquire-data-center-cooling-firm-modine?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Bloomberg Opinion
+
+Anthropic’s Dario Amodei Can’t Always Have His Way
+ 
+<https://www.bloomberg.com/opinion/articles/2026-11-12/anthropic-ipo-amodei-can-t-out-stubborn-the-market?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Bloomberg Opinion
+
+Huang’s Undoing Knocks American AI Onto a Different Course
+ 
+<https://www.bloomberg.com/opinion/articles/2026-11-12/nvidia-ceo-jensen-huang-s-downfall-knocks-american-ai-onto-a-different-course?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Green
+
+China Decides Against Bidding to Host 2028 UN Climate Talks
+ 
+<https://www.bloomberg.com/news/articles/2026-11-13/china-decides-against-bidding-to-host-2028-global-climate-talks?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+For Your Commute
+
+Weekend Big Take
+
+The Chinese Chemical Supply Chain Fueling the US Opioid Crisis
+
+A DEA sting operation captured two salespeople and showed how Chinese 
+chemicals get to Mexican cartels for processing and then over the border. This 
+account of the investigation into the company they worked for — Amarvel Biotech 
+— is based on thousands of pages of legal filings as well as interviews with 
+people involved, in a case that revealed the unique role China’s chemical 
+industry plays in a global illicit economy.
+Read the exclusive 
+<https://www.bloomberg.com/news/features/2026-11-13/cracking-china-s-link-in-the-fentanyl-supply-chain-fueling-the-us-opioid-crisis?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Bloomberg Invest: Japan’s 30-year deflation era is ending. A new rate regime, 
+returning inflation, an expansive fiscal agenda and corporate reform are 
+remaking the world’s fourth-largest economy — and repricing risk far beyond 
+Tokyo. Join us Dec. 2-3, 2026, in Tokyo as Japanese and global executives, 
+allocators, policymakers and investors examine what these shifts mean for Japan 
+and for portfolios worldwide.Learn more here 
+<https://events.bloomberglive.com/bqvg2b>.
+
+More from Bloomberg
+
+Enjoying Evening Briefing? Check out these newsletters:
+
+ * Next Japan 
+<https://www.bloomberg.com/account/newsletters/next-japan?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ for an inside view of the forces reshaping Japan, and what’s next for its 
+businesses, markets and consumers
+ * AI Today 
+<https://www.bloomberg.com/account/newsletters/ai-today?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ for a chronicle of the disruptions and threats of AI on businesses, workers, 
+governments and economies
+ * Money 
+<https://www.bloomberg.com/account/newsletters/money?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ for insights, ideas and tools for doing more with your money
+ * Markets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261113&utm_content=11380>
+ for what’s moving in stocks, bonds, FX and commodities, andMarkets Daily India 
+<https://www.bloomberg.com/account/newsletters/markets-daily-india?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ for key news before the trading day starts there
+ * Singapore Edition 
+<https://www.bloomberg.com/account/newsletters/singapore-edition?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+,India Edition 
+<https://www.bloomberg.com/account/newsletters/india-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261113&utm_content=11380>
+ andHong Kong Edition 
+<https://www.bloomberg.com/account/newsletters/hong-kong-edition?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261113&utm_content=11380>
+ for insights into some of Asia’s most dynamic economies
+ * Next China 
+<https://www.bloomberg.com/account/newsletters/next-china?utm_medium=email&utm_source=newsletter&utm_campaign=eveapac&cmpid=eveapac&utm_term=261113&utm_content=11380>
+ for dispatches from within the world’s second-largest economy on where China 
+stands now — and where it’s going next
+ * Explore all newsletters at Bloomberg.com 
+<https://www.bloomberg.com/newsletters?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://bsky.app/profile/bloomberg.com> <https://x.com/business> 
+<https://www.instagram.com/bloombergbusiness/> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+
+
+You received this message because you are subscribed to Bloomberg’s Evening 
+Briefing Asia newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=NLshare&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/evening-asia?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=eveapac&utm_campaign=eveapac&utm_medium=email&utm_source=newsletter&utm_term=261113&utm_content=11380>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/Cm8vVlvSks-ZmN8nf-HKookEwOq3MZjjyWjrvhYIASM_okBkg_gw53gMpSopm2S8kvrL9TomPw4CoSEqNQDpAjQcTgynD1VkaRFFQlkWZchGI8Y45mEc4qefaQnY24_VC3M2BE39cNnxUC0dsniAUxCaQeFCnrSxvYfVwh7DFMncUumRze0ZGmgaP22VaEsT1xrmcph3A9N-md_o8HoxQj8M1r8crChYvmWQ4KZmqed9234IF31X3ZhVckjZC7Ahzs4zf-3D7KAogR2g6CtD2ArtGvm18LHLXBtY9hUAO7rXXT1A7Dv6oLCwnVn6Dbg2t45KBSK2Rpq-I-7AvILtiWyPoGDTjL_c/4ES4TyNkLdJT8PH4_M5gXGNM1gsAIe2l/26>
