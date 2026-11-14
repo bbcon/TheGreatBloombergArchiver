@@ -1,0 +1,8 @@
+• No significant US macro data releases are covered for this period.
+• COP31 in Antalya features US Democratic legislators outlining post-midterm climate policy ambitions, including carbon border adjustment mechanisms.
+• Democrats secured control of both chambers in November midterms, creating potential legislative leverage against Trump administration climate rollbacks.
+
+**US Politics and Climate Policy**
+The most consequential US-related development of the period is political rather than economic. Following midterm elections that handed Democrats control of the House and Senate — effective January — Democratic legislators attending COP31 in Antalya are signaling an intent to use appropriations and legislative leverage to constrain the Trump administration's environmental policy rollbacks. Senator Sheldon Whitehouse flagged a carbon border adjustment mechanism as an achievable near-term objective, noting alignment with the administration's existing tariff-friendly posture. Trump's trade team has acknowledged that differential environmental standards can justify tariff remedies, which Whitehouse characterized as a basis for bipartisan convergence on carbon pricing. Representative Jared Huffman, expected to chair the House Natural Resources Committee, indicated Democrats would resist administration efforts to open public lands for resource extraction or data center development. Whether this legislative assertiveness translates into enacted policy remains to be seen, given the administration's executive tools and the compressed timeline before January. No significant US macroeconomic data or Federal Reserve commentary appears in the available source material for this period.
+
+---

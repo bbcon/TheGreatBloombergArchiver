@@ -1,0 +1,1 @@
+• Brent crude fell from near $118 to below $90 per barrel over approximately two weeks — a decline of roughly 28% — as diplomatic signals pointed toward potential US-Iran de-escalation, before partially recovering toward $95 by Friday as Trump told Vance

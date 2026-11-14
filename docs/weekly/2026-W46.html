@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nov 09 – Nov 15, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="#" class="nav-link active">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Nov 09 – Nov 15, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>October CPI delivered a broad-based upside surprise Tuesday, with the 13-month inflation rate topping 4% and core measures rising sharply across furniture, electronics, cosmetics, and pharmaceuticals — consistent with freight cost pass-through rather than any single outlier.</li><li>Markets now price December Fed hike at 100% probability, with the two-year Treasury yield posting its largest single-day rise since April on Tuesday; the 10-year yield closed the week at 5.13%.</li><li>Nvidia lost over $1.5 trillion in market cap from its early-October peak following CEO Jensen Huang's ouster Thursday after revelations of an affair with a suspected Chinese intelligence operative; retail investors posted the largest-ever single-session buy in Nvidia history at Thursday's open.</li><li>October payrolls revised the three-month average gain to approximately 137,000 — well above the sub-20,000 pace seen earlier in the year — reigniting debate over whether a tightening labor market could become a fresh source of wage-driven inflation.</li><li>Anthropic launched IPO marketing Thursday targeting a $1.4 trillion valuation, the first frontier AI lab to enter public markets, while OpenAI separately reported $10 billion in quarterly revenue, up nearly 50% sequentially.</li></ul>
+<p class="para-title" style="color:#5597cb;">Labor Market and Inflation</p>
+<p class="para-body">October's employment report delivered a meaningful upside surprise early in the week, with the unemployment rate falling unexpectedly and prime-age employment at levels historically associated with economic expansions. Management, scientific, and technical consulting added 17,300 workers — the most in nearly two years — while construction and computer manufacturing contributed an additional 17,500, suggesting AI infrastructure buildout is simultaneously creating white- and blue-collar employment. The quits rate climbed to 2.1% in September, returning to its 2024 average, reinforcing the picture of a labor market that has re-tightened materially from mid-year readings. Tuesday's CPI report confirmed the inflation threat: the 13-month rate exceeded 4%, trimmed-mean and median core measures both registered sharp monthly increases, and Chicago Fed President Austan Goolsbee described the print as "borderline disturbing." Fed Governor Christopher Waller had flagged openness to a 50 basis point December move the prior day; Dallas Fed President Lorie Logan subsequently called for at least two additional 25 basis point hikes. New York Fed President John Williams, Mary Daly, and Goolsbee all signaled further tightening is necessary through the week, and market pricing shifted to imply quarter-point hikes at December, January, and March meetings.</p>
+<p class="para-title" style="color:#5597cb;">Equity Markets and AI</p>
+<p class="para-body">The S&P 500 rebounded modestly Monday after its worst weekly performance since April 2025, with the Nasdaq 100 recovering 3.4% that session even as Nvidia underperformed. That reprieve proved short-lived. Nvidia fell more than $190 billion in market cap Monday on the initial scandal revelations, then dropped an additional 4.3% Thursday — after opening down 14% — following the board's formal decision to oust Huang and engage an outside search firm for his replacement. The stock now trades at a forward earnings multiple approximately 66% of the S&P 500's, down from a 200% premium three years ago; Baird cut its price target to $200 from $500, while Bernstein and Oppenheimer also downgraded. AMD, Broadcom, and Alphabet gained on speculation they could capture displaced enterprise relationships. The Nvidia episode poses a genuine governance question: whether AI infrastructure demand is durable enough to survive concentrated key-person risk. The broader S&P 500 declined a modest 0.38% Tuesday on the CPI print, with the equal-weighted index nearly flat — suggesting markets may absorb rate hikes if they credibly address inflation — while two-year Treasury yields posted their steepest two-day jump since March 2023. Democrats completed their midterm sweep, with Scott Colom elected Mississippi's first Black senator since Reconstruction, handing the party control of both chambers effective January and altering the legislative backdrop for fiscal and energy policy into 2027. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>China's PPI accelerated to 5.7% YoY in October, above the prior 5.0% and the highest since 2022, while CPI slipped to 0.7% YoY, below consensus — a widening divergence between factory-gate cost inflation and persistent consumer-side weakness.</li><li>China's year-to-date trade surplus surpassed $1 trillion through October, running approximately 9% ahead of the same period in 2025, with chips and computer parts accounting for 40% of the year-on-year export value increase; October exports surged over 35% YoY but came in below estimates.</li><li>The yen weakened toward 160 per dollar by Wednesday, prompting Japan's currency chief Atsushi Mimura to warn moves had been "too fast" and reference this summer's record $96.5 billion intervention.</li><li>Jensen Huang's ouster at Nvidia removes what analysts described as the last prominent US corporate voice advocating deeper tech engagement with Beijing, complicating the upcoming Xi-Trump APEC encounter in Shenzhen on November 18–19.</li><li>South Korea's Kospi jumped more than 4% Monday, the best performer among major Asian indices, while Indonesia's Vice President Gibran Rakabuming Raka formally resigned Wednesday, fraying the Prabowo-Widodo political alliance.</li></ul>
+<p class="para-title" style="color:#e07b39;">China: Trade, Macro, and Diplomatic Signals</p>
+<p class="para-body">China's export machine continues to operate at historic scale, with the trillion-dollar surplus achieved two months before year-end. Chips and components dominate the value increase, but volume growth is broader, spanning EVs, solar panels, batteries, and industrial robots. The structural contradiction is striking: Chinese automakers are exporting at a pace approaching 10 million vehicles annually — surpassing Japanese rivals in Europe for the first time last quarter — yet domestic capacity utilization in autos has fallen to 66% versus 81% in 2018, compressing margins to approximately 2,000 yuan per vehicle even at BYD. PPI inflation at a three-year high reflects energy cost pass-through from the Iran war shock, raising input costs and complicating export competitiveness precisely as the preliminary October data suggest demand may be softening. The PBOC is exploring a withholding tax on government bond interest income — 10-year yields hit an all-time low of 1.57% mid-week — though the tool appears unlikely to substitute for fiscal stimulus given the depth of domestic demand weakness. Separately, China extended its suspension of the additional 24% tariff on US goods through January, suspended special fees on American ships through January 10, and extended exemptions on 27 US companies, formalizing a trade truce whose January expiry is now the focal point for investors.</p>
+<p class="para-title" style="color:#e07b39;">Technology, Governance, and Regional Developments</p>
+<p class="para-body">The Nvidia scandal carries particular resonance across the region. Documents reviewed by Bloomberg showed that Alice Huang's firm Megaspeed International procured smuggled AI chips installed at a Shanghai data center — a possible breach of US export controls that Ambassador David Perdue, speaking at the Citi China Conference in Shanghai Wednesday, cited alongside months-long delays in rare earth shipments as evidence of economic coercion. Beijing dismissed the allegations and warned against using the scandal as a pretext for tighter export controls. Moonshot AI separately disputed regulatory filings indicating it accessed Nvidia's most advanced chips from servers reportedly in China. US Trade Representative Greer pressed Beijing Thursday on agricultural purchase commitments and critical minerals. Japan's three megabanks — Mitsubishi UFJ, Sumitomo Mitsui, and Mizuho — raised profit forecasts and announced buybacks on rising rates and loan demand, putting them on course for another record earnings year. TSMC reported Monday that October monthly sales rose 60% YoY, accelerating from prior months on AI data center demand. SoftBank reported its first net loss in nearly two years, absorbing a $3.7 billion writedown on non-refundable advance payments for its Ohio data-center campus — a reminder that AI capital expenditure cycles involve substantial committed costs. India's services exports are rising sharply, with HSBC describing the trajectory as appearing to "shoot up in a straight line," driven by the intersection of AI-enabled language capabilities and India's English-proficient labor force. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>UK GDP grew at its fastest pace in two and a half years Wednesday, beating consensus, as AI-driven business investment and resilient consumer spending offset the energy shock — though RICS surveyors simultaneously reported housing market conditions the weakest since 2023.</li><li>European natural gas prices have risen approximately 200% since February, with diesel at a record and power prices surging, constituting a second major energy crisis in less than five years; BloombergNEF projects storage could fall to 17% full by end-March under base-case Strait of Hormuz closure assumptions.</li><li>ECB officials Philip Lane and Martins Kazaks indicated Tuesday the ECB may need to hike rates again, explicitly declining to tailor policy to France's situation; Bank of England Governor Andrew Bailey publicly warned the same day that trade barriers weigh structurally on growth and productivity.</li><li>Poland's Orlen SA moved to exit a 1 million-ton-per-year LNG contract with QatarEnergy running through 2034, the first long-term contract casualty of the Iran war's disruption to Strait of Hormuz flows.</li><li>Europe formally secured inclusion in the next round of Russia-Ukraine peace talks Thursday, following Ukrainian President Zelenskyy's Dublin meeting with US envoys Witkoff and Kushner, which also produced a prisoner-swap agreement covering more than 1,000 Ukrainians.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Energy Crisis and Economic Competitiveness</p>
+<p class="para-body">Europe's energy situation has deteriorated materially. With natural gas prices up roughly 200% since February, diesel at a record, and kerosene prices nearly doubled — all driven by Iran war disruptions to Strait of Hormuz LNG transit — European industry faces a second major energy shock within five years. Wood Mackenzie estimates industrial gas consumption has already been cut by roughly one-fifth since 2022, leaving limited further demand-reduction capacity without triggering recessionary output losses. Spain has spent €12 billion since March subsidizing household energy bills ahead of a November 29 election; Poland's fertilizer industry is appealing for government relief; a German porcelain factory that survived Nazi and Communist rule is shutting after 182 years. Orlen's exit from its Qatari LNG contract — Poland's oldest such arrangement — marks the first formal contract termination resulting from QatarEnergy's sustained force majeure declarations since March, and US LNG with its Henry Hub-linked pricing and cargo flexibility is the likely beneficiary as buyers reassess geographic concentration risk. With more than half of European citizens voting in elections over the next twelve months, the political ramifications of sustained energy-cost pain appear significant.</p>
+<p class="para-title" style="color:#4a9e6b;">UK Economic Momentum and Politics</p>
+<p class="para-body">Wednesday's UK GDP print — the strongest in two and a half years — provides a constructive counterpoint to the energy narrative. Business investment tied to AI infrastructure appears to be a material growth driver, though the divergence from the RICS housing survey pointing to its softest reading since 2023 warrants monitoring. Bailey's remarks on trade barriers carry an implicit Brexit dimension, framing expanded EU market access as a macroeconomic rather than merely political question. Prime Minister Burnham attended COP31 in Antalya as the only G7 leader present and is pursuing EU-UK summit commitments that include a reportedly near-finalized emissions market linking deal. Germany's coalition cleared its 2027 budget by deferring new taxes rather than cutting spending, while the Dutch coalition faced potential collapse over a wealth-tax amendment — a source of European political uncertainty that has not yet produced material asset-price moves. Bloomberg reporting revealed that Russian-seized subsidiaries of Rockwool, AkzoNobel, Nestlé, and Japan Tobacco have been channeling billions of rubles to Putin's war effort via the People's Front, with European and Japanese firms disproportionately affected as Moscow pursues warmer ties with Washington. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazil unveiled a fiscal package mid-week intended to address investor concerns over rising public debt following President Lula's close election victory, with markets having been materially volatile on debt sustainability fears in the preceding days.</li><li>A new poll showed 62% of Argentines hold a negative view of President Milei, with rising unemployment ranking as the top voter concern one year ahead of the presidential election, even as annual inflation has declined to 34% from substantially higher levels.</li><li>Trump threatened Thursday to double tariffs on Mexico unless the government halted claimed migrant caravans, adding fresh bilateral pressure ahead of trade-truce negotiations; nearly half of Mexicans separately expressed little or no faith in the electoral authority's ability to organize fair elections next year.</li><li>Peru hiked interest rates Thursday for the first time in nearly four years to address an inflation spike driven by rising food and energy costs.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil: Fiscal Credibility and Regional Diplomacy</p>
+<p class="para-body">Brazil's post-election period is defined by two overlapping tensions. Lula's fiscal package — details of which remained limited in available coverage — appears designed to signal consolidation intent rather than deliver immediate adjustment; whether it stabilizes sentiment durably will depend on the credibility of the medium-term fiscal framework that emerges. Simultaneously, the Argentina-Brazil relationship has deteriorated sharply, with Milei's refusal to recognize Lula's electoral outcome and his role in facilitating right-wing rival Flávio Bolsonaro's departure to the US prompting formal diplomatic protests from Brasília. Pope Leo XIV's public call for Milei to maintain Latin American unity reflects concern that South America's two largest economies are entering sustained political estrangement with trade and investment implications that remain difficult to quantify. Fitch placed Paraguay's credit rating on watch for a potential downgrade, citing the banking crisis that ousted President Santiago Peña — an idiosyncratic stress rather than a regional contagion signal, but adding to the broader picture of political and financial fragility.</p>
+<p class="para-title" style="color:#c0392b;">Argentina, Mexico, and Regional Dynamics</p>
+<p class="para-body">Milei's program has achieved meaningful progress on inflation, but the poll data suggest political costs are accumulating faster than growth dividends. With unemployment now the electorate's primary concern and his negative approval at 62%, the transition from stabilization to growth has not yet materialized visibly for Argentine households. The connection between Washington's political landscape and Buenos Aires's bond market remains unusually direct: a Democratic Congress is expected to block bilateral financial support comparable to last year's $20 billion arrangement, and sovereign yields have repriced accordingly. In Mexico, the tariff threat from Washington arrives against an already-strained institutional backdrop. Peru's rate increase — the first in nearly four years — illustrates how the Iran war energy shock is transmitting through commodity-linked emerging economies into domestic inflation, complicating monetary policy across the region. BP's reported talks with Petrobras over a stake in the Bumerangue offshore block would, if concluded, represent a significant asset rotation and validate continued deepwater investment appetite in Brazil's pre-salt province. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>Brent crude fell from near $118 to below $90 per barrel over approximately two weeks — a decline of roughly 28% — as diplomatic signals pointed toward potential US-Iran de-escalation, before partially recovering toward $95 by Friday as Trump told Vance</li></ul>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
