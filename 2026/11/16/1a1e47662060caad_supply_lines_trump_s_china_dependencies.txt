@@ -1,0 +1,243 @@
+Subject: Supply Lines: Trump’s China dependencies
+Date: Mon, 16 Nov 2026 13:05:24 +0000
+
+Trump’s Trade Barriers, AI Reveal New US Dependencies on China
+New US dependencies on Chinese manufacturing are emerging despite Trump’s 
+trade barriers ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/news/newsletters/2026-11-16/new-dependencies-in-the-us-and-china-s-trade-relationship?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ 
+<https://www.bloomberg.com/economics?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+
+ 
+<https://sli.bloomberg.com/click?s=1149074&li=21060928&m=11b724c487f61753eb1a7a4a5f3ef261&p=11162026130524&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149074&li=21060928&m=11b724c487f61753eb1a7a4a5f3ef261&p=11162026130524&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://www.bloomberg.com/authors/ATybCZQdpEk/shawn-donnan?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+There could end up being something clarifying about US President Donald 
+Trump’s trip this week to China and his plans to meet Thursday with Xi Jinping 
+and Vladimir Putin.
+
+Almost exactly a decade after his election in part on a vow to rebalance the 
+US’s economic relationship with China,Trump’s visit 
+<https://www.bloomberg.com/news/articles/2026-11-16/weakened-at-home-trump-looks-to-flex-power-at-putin-xi-summit?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ points to how he has come to prioritize his relationship with Xi over the 
+decoupling many anticipated his political victory would bring. Which in turn 
+points to how even as the US throws up tariff walls and other tools intended to 
+disentangle its ties to China, it is continually discovering how dependent it 
+remains.
+
+That is often reduced to a story about rare earths 
+<https://www.bloomberg.com/news/articles/2026-11-10/rare-earth-strategic-metals-price-gap-flags-supply-strains-trump-xi-meet?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ andstrategic choke points 
+<https://www.bloomberg.com/news/newsletters/2026-11-12/world-trade-s-achilles-heel-grows-as-ai-boom-fuels-risks?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+. It is much broader than that.
+
+For almost two years I have been tracking one entrepreneur’s efforts to reduce 
+his company’s dependence on China and set up a factory outside Pittsburgh. The 
+result is my Bloomberg Businessweek story about Ben Kander and drinkware maker 
+Welly published this morning and in the new China-themedprint edition 
+<https://www.bloomberg.com/features/2026-china-issue/?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ of the magazine.
+
+Related: Futuristic Shenzhen Shows Trump the Difficulty of Stopping China 
+<https://www.bloomberg.com/news/features/2026-11-15/futuristic-shenzhen-shows-trump-the-difficulty-of-stopping-xi-jinping-s-china?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+
+The basic story is that Kander discovered that to bring production of his 
+steel coffee mugs and water bottles home to Pittsburgh, he needed to buy a 
+Chinese factory and import it. It started arriving in 42 shipping containers 
+this past January. Kander and his team are now in the final stages of sorting 
+out the kinks and getting production up and running.
+
+But freeing himself of Chinese production has also meant discovering a new 
+dependency on China. It’s not just that Welly’s machines were installed by 
+Chinese engineers who flew to Pittsburgh and trained Kander’s American 
+employees. The machines’ operating system is Chinese. The molds Welly needs 
+come from China. Kander’s expansion plans depend on eventually importing 
+another line from China. If anything goes wrong his team jumps on WeChat, the 
+Chinese social media app, to talk to a support team in China.
+
+Ask Kander and he will tell you that eliminating one dependency means 
+discovering another.
+
+As I write in the story 
+<https://www.bloomberg.com/news/features/2026-11-16/welly-s-plight-shows-bringing-manufacturing-back-to-the-us-still-relies-on-china?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+:
+“There’s a story of China and America and manufacturing and so much of that 
+manufacturing leaving America. We’re trying to bring it back,” Kander told me 
+during one of our many conversations over the span of nearly two years. “And 
+what’s funny here is we’re relying on the Chinese to build our factory.” He 
+paused for a beat, registering what he’d just said. “What an irony.”
+The reality today is that America’s manufacturing sector doesn’t just compete 
+with China. It often depends on China for components and machinery.
+
+There is of course another dependency that’s been highlighted in a 
+high-profile way over the past couple of weeks in the downfall of Nvidia’s 
+Jensen Huang.
+
+It’s not just a story about romance, espionage, technology, AI or geopolitics. 
+It’s about Trump’s instinct to do business and his attraction to other powerful 
+men. And also his recognition of how dependent American companies remain on 
+China as a market and how important those businesses are to US equity investors 
+and retirement accounts.
+
+Related: ‘I’m a Piece of Sh—’: Jensen Huang’s Last Hours as Nvidia CEO 
+<https://www.bloomberg.com/news/articles/2026-11-13/inside-jensen-huang-s-final-hours-as-the-ceo-of-nvidia?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+
+Nvidia will report earnings on Tuesday. By some estimates 
+<https://culperresearch.com/wp-content/uploads/2026/05/Culper_NVDA_5-13-2026.pdf>
+ as much as 20% of its revenues are linked to China. As we know now, that is 
+not just a story about mainland China or alleged smuggling of advanced chips. 
+It’s also linked to a data center boom in places like Malaysia that depends 
+heavily on trans-national demand for computing power from China.
+
+The foundation of the Jensen Huang tale isn’t about geopolitics, espionage or 
+a CEO’s bad choices. It’s about the vast amount of profits US companies still 
+derive from doing business with China. Just ask Apple or Tesla.
+
+Lutnick’s Role
+
+Had we not learned what we did about Huang’s affair 
+<https://www.bloomberg.com/news/articles/2026-11-15/nvidia-s-ceo-search-draws-fire-with-bessent-s-call-for-shakeup?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ with an alleged Chinese spy and a subordinate, there is a very good chance 
+that the former Nvidia CEO would be joining Trump on his trip to China. Or at 
+the very least offering his counsel.
+
+Things may change in the days to come as we learn more about the role of Trump 
+administration members like Commerce Secretary Howard Lutnick in the Nvidia 
+saga. Or as the blame wars inside the administration continue and pressure from 
+Congress grows.
+
+Related: Lutnick Under Fire as Bessent Blames Commerce in Nvidia Crisis 
+<https://www.bloomberg.com/news/articles/2026-11-13/nvidia-crisis-prompts-scrutiny-of-lutnick-s-role-in-chip-policy?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+
+The likelihood, though, is that Trump will seek to move on without even 
+raising the issue with Xi or pursuing any stark change in policy or personnel. 
+Because Trump has never beenmuch of a China hawk 
+<https://www.bloomberg.com/news/articles/2025-10-24/trump-s-real-china-strategy-is-doing-deals-not-decoupling?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+. What makes actual China hawks in Washington queasy is that they believe Trump 
+prioritizes his relationship with people like Huang or Xi over what ought to be
+national security priorities 
+<https://www.bloomberg.com/news/articles/2025-10-05/china-hawks-grow-queasy-over-trump-s-push-for-deals-with-beijing?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+.
+
+The indications so far are that Trump is less concerned about the fall of 
+Huang than he is about keeping the relationship with Xi on track. That’s not 
+just about bonhomie among superpower leaders though. It may just be a 
+recognition that every time you try to get rid of one dependency on China 
+another one pops up.
+
+Bloomberg’s Tariff Tracker 
+<http://www.bloomberg.com/graphics/trump-tariffs-tracker/?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ follows all the twists and turns of global trade wars.Click here 
+<https://www.bloomberg.com/economics/trade?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ for more of Bloomberg.com’s most-read stories about trade, supply chains and 
+shipping. Subscribe toFault Lines 
+<https://bbgevent.app/economics-subscribe/?utm_source=Newsletter>, a Bloomberg 
+Economics newsletter about how geoeconomics is reshaping business and markets.
+
+ 
+<https://sli.bloomberg.com/click?s=868612&stpe=default&li=21060928&m=11b724c487f61753eb1a7a4a5f3ef261&p=11162026130524&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868612&stpe=default&li=21060928&m=11b724c487f61753eb1a7a4a5f3ef261&p=11162026130524&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+Charted Territory
+
+Industrial slowdown 
+<https://www.bloomberg.com/news/articles/2026-11-16/china-s-economy-weakens-more-than-forecast-despite-stimulus-push?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ | China’s economic growth weakened across the board in October as investment 
+unexpectedly worsened while consumption and industrial output undershot 
+estimates. Retail sales rose just 0.4% from a year ago, a sharp slowdown from 
+September. Industrial output expanded at a slower rate for the first time in 
+three months and grew 4.8% in October.
+
+Today’s Must Reads
+
+ * Under Secretary of Commerce Jeffrey Kessler and his agency are coming under 
+fresh scrutiny 
+<https://www.bloomberg.com/news/articles/2026-11-13/nvidia-crisis-spurs-scrutiny-of-agency-that-oversees-chip-curbs?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ for their handling of export restrictions, with Congress demanding answers 
+about whether they did enough to keep Nvidia’s AI processors out of China’s 
+hands.
+ * Southeast Asia risks facing tighter US regulations 
+<https://www.bloomberg.com/news/articles/2026-11-13/post-jensen-us-chip-curbs-threaten-southeast-asia-s-ai-boom?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ on the export and use of high-powered chips, threatening to stall the region’s 
+AI-fueled economic boom. Meanwhile, several world leaders converge on the 
+Philippines this week for a regional summit, with many seeking todeepen trade 
+links 
+<https://www.bloomberg.com/news/articles/2026-11-15/world-leaders-at-manila-summit-seek-trade-to-offset-us-risks?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ as a hedge against the rising US protectionism under Trump.
+ * A not-so-friendly face who’s wielding new powers in Washington is poised to 
+loom over thenegotiating table 
+<https://www.bloomberg.com/news/articles/2026-11-14/miller-s-white-house-ascent-rattles-mexico-trade-negotiators?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ where the US and Mexico are still trying to hammer out a trade deal.
+ * Severe delays at South Africa’s biggest container terminal 
+<https://www.bloomberg.com/news/articles/2026-11-14/south-africa-s-auto-industry-threatened-by-worsening-port-delays?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ in the port city of Durban are threatening the nation’s auto industry, already 
+under strain from a tide of cheap Asian imports and US tariffs. Elsewhere,China 
+Harbour Engineering wasselected to construct 
+<https://www.bloomberg.com/news/articles/2026-11-13/chinese-firm-to-build-10-billion-iron-ore-corridor-in-gabon?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ a $10 billion infrastructure corridor to exploit a giant iron ore deposit in 
+Gabon.
+ * Canada has other partners for auto manufacturing 
+<https://www.bloomberg.com/news/articles/2026-11-16/carney-eyes-auto-partners-beyond-us-as-xi-meeting-looms?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ if the Trump administration doesn’t want an integrated North American supply 
+chain. Canada is “eyes wide open” in its drive toboost business 
+<https://www.bloomberg.com/news/articles/2026-11-15/canada-has-eyes-wide-open-in-push-for-deeper-china-trade-ties?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ with China, its top trade envoy said.
+ * Thailand’s economic growth accelerated in the third quarter, with the 
+artificial intelligence boompowering exports 
+<https://www.bloomberg.com/news/articles/2026-11-16/thai-gdp-growth-accelerates-to-2-9-on-ai-missing-estimates?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ while masking persistent weakness in household spending and tourism.
+Like Supply Lines?
+
+Don’t keep it to yourself. Colleagues and friends can sign up here 
+<https://www.bloomberg.com/account/newsletters/supply-lines?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+. We also publishEconomics Daily 
+<https://www.bloomberg.com/account/newsletters/new-economy-daily?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+, a briefing on the latest in global economics.
+
+For even more: Subscribe to Bloomberg.com 
+<https://www.bloomberg.com/subscriptions?utm_source=newsletter&utm_medium=email&utm_campaign=trade&cmpid=BBD111626_TRADE&utm_term=261116&utm_content=11432>
+ for unlimited access to trusted, data-driven journalism and gain expert 
+analysis from exclusive subscriber-only newsletters.
+
+How are we doing? We want to hear what you think about this newsletter. Let 
+our trade tsar know <mailto:brmurray@bloomberg.net>.
+
+We’re improving your newsletter experience and we’d love your feedback. If 
+something looks off, help us fine-tune your experience by reporting ithere 
+<https://bmedia.iad1.qualtrics.com/jfe/form/SV_dhba7RmVMUuC9WC?bconnectId=553B622185FB4C9AA45EEFB64E63EB64>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergbusiness/> <https://x.com/business> 
+<https://www.linkedin.com/company/bloomberg-news/posts/> 
+<https://bsky.app/profile/bloomberg.com> 
+<https://whatsapp.com/channel/0029Va2h58LDeONAZNBpcg09>
+You received this message because you are subscribed to Bloomberg’s Supply 
+Lines newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/supply-lines?source=NLshare&cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/supply-lines?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBD111626_TRADE&utm_campaign=trade&utm_medium=email&utm_source=newsletter&utm_term=261116&utm_content=11432>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/wkWYmn8BQbDFmCHRTp0rhB2zlk_bsD9fvYV7OGd_O5G5D2IjY1Gl5tnRziC6Jt6WGR4Qx0wRF0qOHslOolI2B22DVGoDVBxqmWHfDxPJJsnRk3nCJ5ygcaktZgPEzpIDbl4HQvQSJBkdD8f9g0wU_NGD7HQq1OdY6-ypoa_YqHazBM1QjhMSWsh5W1edGPUZhgULKFsy_nvHNgTU_z9BtEwZxPzWNIFyNYkz0-7BA1nMJZCZL2_GQCq7zXvdYgcQb8CAULvoc65-oOIF5nhB-2pfRxN1z8M2hHIAIl8DWBOz2RauiqE5C4LnCXbItuiSJb4juVthtEFg0xQpSOukGUVBjD7Ux7OG/cymtLCd434n_kV9A6Fgpx57yrSz90EL2/26>

@@ -1,0 +1,10 @@
+• The unprecedented trilateral summit between Trump, Xi, and Putin at APEC in Shenzhen is the week's dominant geopolitical event, with Iran's war and Ukraine among agenda items
+• Iran attacked Bahrain for the second time in three days, while reiterating openness to a negotiated settlement with the United States
+• Goldman Sachs warned of a "sizable" oil market surplus in 2027, even as WTI traded near $89 and Brent near $96 amid ongoing Strait of Hormuz tension
+• COP31 in Antalya opened with an 18-page draft cover decision that keeps virtually all options on the table, with the electrification pledge facing resistance from China, India, and the Like-Minded Developing Countries bloc
+
+**Oil Markets and Iran**
+The disconnect between current crude prices and Goldman's 2027 surplus forecast reflects near-term risk premia from Hormuz disruptions set against a structurally well-supplied medium-term outlook. China's independent refiners have pivoted away from Iranian crude under the US blockade, sourcing discounted Iraqi barrels through intermediary traders including Vitol and Mercuria — a supply rerouting that appears to be functioning, though at a cost premium. US retail diesel prices fell below $6 per gallon for the first time since early September, offering modest relief to a key inflationary input.
+
+**APEC Geopolitics**
+Xi enters the Shenzhen summit in the strongest relative position among the three leaders: Trump is weakened by midterm losses and the Nvidia scandal, while Putin faces deepening economic dependence on Beijing — China now accounts for roughly half of Russian imports, nearly double pre-invasion levels. The summit is unlikely to produce binding outcomes, but Xi's ability to host a meeting of this geopolitical magnitude on Chinese soil consolidates Beijing's claim to a central role in shaping the global order. For markets, the most consequential signal to watch is whether Trump and Xi signal any softening on semiconductor export restrictions, given the scale of US corporate revenue exposure to China.
