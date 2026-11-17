@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tuesday, November 17, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Tuesday, November 17, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>US October CPI came in above consensus — described as "higher than hoped" — reinforcing expectations for further Federal Reserve tightening, with markets now pricing three additional rate hikes over the next 12 months and a strong probability of a fourth.</li><li>Nvidia shares have fallen 35% from their October 6 record high following the Jensen Huang scandal, wiping approximately $2 trillion in market value ahead of the company's quarterly earnings release after the close.</li><li>The DXY dollar index reached its strongest level since Liberation Day (April 2, 2025), while gold fell to a 12-month low, more than 12% below its 200-day moving average.</li></ul>
+<p class="para-title" style="color:#5597cb;">Monetary Policy and Rates</p>
+<p class="para-body">October's stronger-than-expected employment print and above-consensus CPI reading have materially shifted the rate outlook. Markets are pricing three quarter-point hikes over the next 12 months, with meaningful probability of a fourth, implying a Fed funds rate roughly two percentage points above where investors expected earlier this year. Deutsche Bank now projects 10-year Treasury yields above 5% through much of the next two years — revising its prior June 2026 forecast of 4.75% — with no meaningful relief expected for US mortgage rates. Fed official Beth Hammack signaled preference for small, steady increases but left open the possibility of larger moves should price pressures intensify.</p>
+<p class="para-title" style="color:#5597cb;">Markets</p>
+<p class="para-body">The Nasdaq 100 is down approximately 13% over five weeks, though the average S&P 500 stock has gained roughly 5% since the October 5 peak, reflecting a rotation from AI-linked momentum names into value and quality. Semiconductor stocks (SOX index) fell 24% from the peak. HSBC sold a $300 million slice of an $18 billion AI data center loan at prices in the mid-80s, underscoring widening credit anxiety around the AI buildout. Bank of America survey data shows fund managers cut technology allocations by the most in two decades last week. Stablecoin market capitalization declined $12 billion over 30 days as crypto holders converted back to traditional currencies. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>New US Commerce Department interim rules require data center operators in Singapore, Malaysia, Thailand, Indonesia, and Brazil to obtain licenses before exporting advanced AI chips to customers in those countries, sending MSCI Asia down 1.5% and Chinese AI stocks — Alibaba, Baidu, Minimax — falling more than 5%.</li><li>Japan's economy contracted 0.1% over the last 12 months, missing expectations and reinforcing yen weakness; USD/JPY touched 160 again.</li><li>Trump met Quad leaders (India, Australia, Japan) in Manila on the sidelines of ASEAN, with economic security as the primary agenda item ahead of his Xi summit in Shenzhen.</li></ul>
+<p class="para-title" style="color:#e07b39;">China: Chips and Diplomacy</p>
+<p class="para-body">The new US export controls represent one of the most stringent technology restrictions in years and arrive days before Trump meets Xi at APEC in Shenzhen, presenting Beijing with a strategic dilemma: retaliate and risk the year-old trade truce, or absorb the measures and respond later. Bloomberg Economics describes the institutional shift as "striking," noting Commerce appeared to implement rules "written by and at the direction of" Treasury and the National Security Council. China's AI sector faces structural pressure as the rules close offshore computing routes previously used to work around direct import restrictions. Chinese hedge funds have already suffered double-digit losses from the AI selloff. China and Canada separately agreed tariff relief on agriculture and steel exports following an Xi-Carney meeting in Shenzhen.</p>
+<p class="para-title" style="color:#e07b39;">Japan and Regional Dynamics</p>
+<p class="para-body">Japan's annual GDP contraction of 0.1% disappointed markets and pushed the yen back toward 160 per dollar, reinforcing dollar demand. A former Bank of Japan governor warned that persistent inflation risks could push policy above the neutral rate. Japanese PM Takaichi held her first public interaction with a Chinese official since a diplomatic breakdown late last year — a brief exchange with minister Zhang Zhu in Manila — a potentially incremental step toward normalization. Investors rotated into India-focused ETFs at the fastest pace in over a year as the AI selloff prompted diversification away from technology-heavy markets. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>Pablo Hernandez de Cos is on track to become ECB president following a pivotal political deal in Berlin, a consequential institutional development for eurozone monetary policy.</li><li>UK employers cut payrolls ahead of the October budget, though economists assess the labor market as sufficiently robust to keep a rate hike in play.</li><li>The European Commission's latest confidence gauge from Germany underscored continued eurozone resilience, with the Commission projecting robust growth.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">ECB Leadership and Monetary Policy</p>
+<p class="para-body">The emergence of Spain's Hernandez de Cos as the consensus candidate for ECB president represents a significant political and policy signal. His selection, brokered through Berlin, will shape the trajectory of eurozone rates at a moment when the region faces divergent pressures — broadly resilient growth per the European Commission's latest assessment, but ongoing political and fiscal stress in France. Deutsche Bank projects eurozone conditions will remain sensitive to US rate dynamics, particularly given yield spillovers from elevated Treasury levels.</p>
+<p class="para-title" style="color:#4a9e6b;">France and UK Politics</p>
+<p class="para-body">French unions and student groups staged another day of strikes and protests, maintaining pressure on the government over cost-of-living concerns after earlier concessions including minimum wage increases and education investment pledges. The movement's durability remains uncertain. In the UK, PM Andy Burnham confirmed that any substantive reset of EU-UK relations would take time and await the next general election, tempering expectations ahead of a Friday summit in Brussels. The EU imposed anti-dumping duties on cold-rolled flat steel from India, Japan, Taiwan, Turkey, and Vietnam — factoring for the first time Chinese industrial overcapacity's distorting effect on third-country markets, a precedent-setting trade defense measure. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazilian assets slumped, with the real touching its lowest level since April 2025, as markets price elevated interest rates for longer following President Lula's surprise reelection and persistent fiscal credibility concerns.</li><li>Chile's equity market has decoupled negatively from copper prices, driven by structural decline in Codelco production and a misreporting scandal, illustrating idiosyncratic supply-side deterioration beyond the AI-driven commodity selloff.</li><li>Mexico's President Sheinbaum reached out to Xi Jinping seeking to resolve a bilateral tariff dispute, with Mexico navigating US-China tensions carefully.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil: Fiscal and Market Stress</p>
+<p class="para-body">Brazilian markets continue to price fiscal risk following Lula's reelection, with traders assigning low probability to the structural adjustment needed to ease monetary conditions. The real's depreciation to April 2025 lows reflects capital outflows and elevated rate expectations rather than any near-term macro catalyst. The dynamic illustrates a broader tension in Brazilian policy: electoral outcomes that signal continued spending ambitions are incompatible with the lower borrowing costs required for sustained growth.</p>
+<p class="para-title" style="color:#c0392b;">Chile and Andean Markets</p>
+<p class="para-body">Copper's decline — down more than 10% from recent all-time highs near $15,000 per ton — has collided with Chile-specific production concerns. Codelco output is in a marked downward trend, and an emerging misreporting scandal has further weighed on sentiment. Despite GDP per capita of approximately $35,000, Chile represents only 0.6% of the MSCI Emerging Markets index. Active Latin American fund managers' performance remains overwhelmingly determined by Brazil-Mexico allocation decisions, leaving Andean markets structurally underweighted relative to their economic fundamentals. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>The Trump-Xi-Putin summit in Shenzhen — convening on the sidelines of APEC — draws comparisons to Yalta given the concentration of great-power decision-making, though analysts broadly do not expect the meeting to resolve active conflicts.</li><li>Copper faces its largest Shanghai Futures Exchange squeeze in more than 20 years, creating a rare dynamic where bearish investors are simultaneously pushing spot prices higher through forced contract buybacks.</li><li>COP31 in Antalya entered a critical phase, with the EU's climate commissioner warning that a 144-paragraph draft text risks making the process "untenable."</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Geopolitics: Great-Power Summit</p>
+<p class="para-body">The convergence of Trump, Xi, and Putin in Shenzhen is the most consequential diplomatic gathering of 2026. New US chip export controls — arriving days before the summit — test the durability of a US-China trade truce that has held for roughly a year. Commerce Secretary Lutnick and Treasury Secretary Bessent are both traveling on Air Force One, representing opposite poles of the internal China debate. Ukraine attacked the Crimean Bridge for a second consecutive day as Russia targeted Kyiv's Dnipro River crossings, with both sides escalating ahead of expected Washington-Moscow talks.</p>
+<p class="para-title" style="color:#8b5cf6;">Commodities and Energy</p>
+<p class="para-body">Oil remained above $90 per barrel — a persistent inflationary pressure the Trump administration sought to avoid — though US gasoline pump prices fell to their lowest since mid-March, suggesting some easing from the Iran war's energy shock. Shale producers including SM Energy, Devon Energy, and Diamondback reported significant derivative losses as hedges weighed on otherwise strong cash generation, with some operators allowing hedges to roll off. The copper squeeze on SHFE — the largest backwardation in over two decades — reflects a fundamental tension between deteriorating investor sentiment driven by AI trade unwinding and genuinely tight physical supply, particularly in China.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

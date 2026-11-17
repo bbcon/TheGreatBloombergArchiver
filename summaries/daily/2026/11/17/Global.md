@@ -1,0 +1,9 @@
+• The Trump-Xi-Putin summit in Shenzhen — convening on the sidelines of APEC — draws comparisons to Yalta given the concentration of great-power decision-making, though analysts broadly do not expect the meeting to resolve active conflicts.
+• Copper faces its largest Shanghai Futures Exchange squeeze in more than 20 years, creating a rare dynamic where bearish investors are simultaneously pushing spot prices higher through forced contract buybacks.
+• COP31 in Antalya entered a critical phase, with the EU's climate commissioner warning that a 144-paragraph draft text risks making the process "untenable."
+
+**Geopolitics: Great-Power Summit**
+The convergence of Trump, Xi, and Putin in Shenzhen is the most consequential diplomatic gathering of 2026. New US chip export controls — arriving days before the summit — test the durability of a US-China trade truce that has held for roughly a year. Commerce Secretary Lutnick and Treasury Secretary Bessent are both traveling on Air Force One, representing opposite poles of the internal China debate. Ukraine attacked the Crimean Bridge for a second consecutive day as Russia targeted Kyiv's Dnipro River crossings, with both sides escalating ahead of expected Washington-Moscow talks.
+
+**Commodities and Energy**
+Oil remained above $90 per barrel — a persistent inflationary pressure the Trump administration sought to avoid — though US gasoline pump prices fell to their lowest since mid-March, suggesting some easing from the Iran war's energy shock. Shale producers including SM Energy, Devon Energy, and Diamondback reported significant derivative losses as hedges weighed on otherwise strong cash generation, with some operators allowing hedges to roll off. The copper squeeze on SHFE — the largest backwardation in over two decades — reflects a fundamental tension between deteriorating investor sentiment driven by AI trade unwinding and genuinely tight physical supply, particularly in China.

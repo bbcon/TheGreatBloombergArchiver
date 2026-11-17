@@ -1,0 +1,11 @@
+• US October CPI came in above consensus — described as "higher than hoped" — reinforcing expectations for further Federal Reserve tightening, with markets now pricing three additional rate hikes over the next 12 months and a strong probability of a fourth.
+• Nvidia shares have fallen 35% from their October 6 record high following the Jensen Huang scandal, wiping approximately $2 trillion in market value ahead of the company's quarterly earnings release after the close.
+• The DXY dollar index reached its strongest level since Liberation Day (April 2, 2025), while gold fell to a 12-month low, more than 12% below its 200-day moving average.
+
+**Monetary Policy and Rates**
+October's stronger-than-expected employment print and above-consensus CPI reading have materially shifted the rate outlook. Markets are pricing three quarter-point hikes over the next 12 months, with meaningful probability of a fourth, implying a Fed funds rate roughly two percentage points above where investors expected earlier this year. Deutsche Bank now projects 10-year Treasury yields above 5% through much of the next two years — revising its prior June 2026 forecast of 4.75% — with no meaningful relief expected for US mortgage rates. Fed official Beth Hammack signaled preference for small, steady increases but left open the possibility of larger moves should price pressures intensify.
+
+**Markets**
+The Nasdaq 100 is down approximately 13% over five weeks, though the average S&P 500 stock has gained roughly 5% since the October 5 peak, reflecting a rotation from AI-linked momentum names into value and quality. Semiconductor stocks (SOX index) fell 24% from the peak. HSBC sold a $300 million slice of an $18 billion AI data center loan at prices in the mid-80s, underscoring widening credit anxiety around the AI buildout. Bank of America survey data shows fund managers cut technology allocations by the most in two decades last week. Stablecoin market capitalization declined $12 billion over 30 days as crypto holders converted back to traditional currencies.
+
+---

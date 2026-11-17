@@ -1,0 +1,11 @@
+• New US Commerce Department interim rules require data center operators in Singapore, Malaysia, Thailand, Indonesia, and Brazil to obtain licenses before exporting advanced AI chips to customers in those countries, sending MSCI Asia down 1.5% and Chinese AI stocks — Alibaba, Baidu, Minimax — falling more than 5%.
+• Japan's economy contracted 0.1% over the last 12 months, missing expectations and reinforcing yen weakness; USD/JPY touched 160 again.
+• Trump met Quad leaders (India, Australia, Japan) in Manila on the sidelines of ASEAN, with economic security as the primary agenda item ahead of his Xi summit in Shenzhen.
+
+**China: Chips and Diplomacy**
+The new US export controls represent one of the most stringent technology restrictions in years and arrive days before Trump meets Xi at APEC in Shenzhen, presenting Beijing with a strategic dilemma: retaliate and risk the year-old trade truce, or absorb the measures and respond later. Bloomberg Economics describes the institutional shift as "striking," noting Commerce appeared to implement rules "written by and at the direction of" Treasury and the National Security Council. China's AI sector faces structural pressure as the rules close offshore computing routes previously used to work around direct import restrictions. Chinese hedge funds have already suffered double-digit losses from the AI selloff. China and Canada separately agreed tariff relief on agriculture and steel exports following an Xi-Carney meeting in Shenzhen.
+
+**Japan and Regional Dynamics**
+Japan's annual GDP contraction of 0.1% disappointed markets and pushed the yen back toward 160 per dollar, reinforcing dollar demand. A former Bank of Japan governor warned that persistent inflation risks could push policy above the neutral rate. Japanese PM Takaichi held her first public interaction with a Chinese official since a diplomatic breakdown late last year — a brief exchange with minister Zhang Zhu in Manila — a potentially incremental step toward normalization. Investors rotated into India-focused ETFs at the fastest pace in over a year as the AI selloff prompted diversification away from technology-heavy markets.
+
+---
