@@ -1,0 +1,314 @@
+Subject: Nvidia gets a breather, but Jensen Huang shouldn’t
+Date: Wed, 18 Nov 2026 04:06:14 +0000
+
+Nvidia Gets a Breather, But Jensen Huang Shouldn’t
+Ex-CEO’s backers are misreading the room ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Read in browser 
+<https://www.bloomberg.com/opinion/newsletters/2026-11-18/nvidia-gets-a-breather-but-jensen-huang-shouldn-t?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+
+
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=21095059&m=11b724c487f61753eb1a7a4a5f3ef261&p=11182026040613&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+ 
+<https://sli.bloomberg.com/click?s=1149014&li=21095059&m=11b724c487f61753eb1a7a4a5f3ef261&p=11182026040613&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf&stpe=default>
+To get John Authers’ newsletter delivered directly to your inbox, sign up here 
+<https://www.bloomberg.com/account/newsletters/points-of-return?utm_medium=email&utm_source=newsletter&utm_campaign=authers&cmpid=BBD111826_AUT&utm_term=261118&utm_content=11527>
+.
+
+Today’s Points:
+
+ * Nvidia issued upbeat results 
+<https://www.bloomberg.com/news/live-blog/2026-11-17/nvidia-third-quarter-earnings-live-updates?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+ to a mediocre market reception.
+ * Nvidia’s board says Huang isn’t coming back, although he’s available 
+<https://www.bloomberg.com/news/articles/2026-11-17/huang-is-willing-to-return-as-nvidia-ceo-if-board-allows-it?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+.
+ * Fund managers made their biggest cut to tech allocations 
+<https://www.bloomberg.com/news/articles/2026-11-17/bofa-survey-shows-investors-cut-tech-exposure-by-most-since-2006?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+ in 20 years.
+ * Anthropic 
+<https://www.bloomberg.com/news/articles/2026-11-17/anthropic-is-said-to-guide-ipo-price-to-top-of-range-or-above?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+ expects to price its IPO at the top of its range.
+ * AND: More Ritmo Latino <https://www.youtube.com/shorts/fBxlGkaBcHg>.
+Forward Ever
+
+It’s almost second nature for investors to use Nvidia’s earnings to gauge the 
+health of the artificial intelligence buildout. In the aftermath of Jensen 
+Huang’s departure, those signals carry even greater weight, particularly for 
+investors keen to parse the company’s prospects without its co-founder at the 
+helm. This is true even though the market’s initial verdict is that Huang’s 
+exit will damage Nvidia competitively, but not imperil the overall growth of AI.
+
+At least the company has avoided another misstep, with its third-quarter 
+results as robust as can be.Headline earnings topped Wall Street 
+<https://blinks.bloomberg.com/news/stories/TOO5RMN3N096?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+ estimates. Prior to Tuesday’s reporting, the company’s stock had plunged by 
+more than 30% since its peak in October. In that context, the share price’s 
+climb of 4% in after-hours trading was a welcome relief, but also distinctly 
+underwhelming after losing more than $2 trillion in market cap (roughly 
+equivalent to the gross domestic product of Turkey or Spain) in a matter of 
+weeks:
+
+
+The numbers offered the most credible evidence yet of Nvidia sustaining its 
+momentum beyond the crisis. The company recorded third-quarter revenue of 
+$115.8 billion, topping estimates. Its sales forecast of about $130 billion in 
+the first quarter of 2027 also exceeded estimates, as did a 
+stronger-than-expected gross margin of about 71.5%. That ought to provide the 
+basis for a rebound — if the company can put the Huang scandal behind it — 
+because the valuation the market is putting on those earnings at present is 
+dirt cheap:
+
+Morningstar’s Brian Colello said the blowout performance reinforced that the 
+AI infrastructure buildout is real. Yet strong as these earnings may be, they 
+don’t clear the cloud of uncertainty as long as Huang’s successor is unnamed. 
+Are these doubts justified? To quote Luke Lango, who edits the Innovation 
+Investor newsletter:
+They are Jensen’s numbers from three months ago or two months ago. What 
+[investors] care about is how behavior [changes] going forward.
+—Richard Abbey
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=21095059&m=11b724c487f61753eb1a7a4a5f3ef261&p=11182026040613&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+
+ 
+<https://sli.bloomberg.com/click?s=868532&stpe=default&li=21095059&m=11b724c487f61753eb1a7a4a5f3ef261&p=11182026040613&lctg=6689f0ec-2ca1-4687-9972-bdcb0c2dfbdf>
+The Prodigal Isn’t Returning
+
+When Huang’s letter offering to return as Nvidia’s CEO was published Tuesday 
+morning, it was hard to know how to respond: with laughter, or with a roar of 
+anger accompanied by a few expletives? The offer reeked of entitlement, while 
+enthusiastic backing frommany in Silicon Valley 
+<https://www.youtube.com/shorts/Svm9rEuH3gE> suggested obliviousness to the 
+scale of his offense and to political reality.
+
+And yet some on Wall Street responded with a cheer. News of a possible comeback
+ 
+<https://blinks.bloomberg.com/news/stories/TONOH9T9NJLU?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+ prompted a distinct bounce for Nvidia’s share price:
+
+The lack of a clear successor (itself Huang’s fault for inadequate succession 
+planning) buoyed enthusiasm for his return. After the results conference, in 
+which Nvidia’s board ruled out a return,Kalshi’s odds for Nvidia’s next chief 
+executive <https://kalshi.com/category/financials> still had Huang in third 
+place, with his chance improved for the day. In a sign of the utter mess the 
+company is in, it offers bets on 36 separate candidates:
+
+Was a comeback ever realistic? Corporate history’s most recent precedent is 
+OpenAI’s Sam Altman 
+<https://www.bloomberg.com/news/articles/2023-11-22/sam-altman-to-return-as-openai-ceo-with-a-new-board?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+, who returned as chief executive just days after his ouster in 2023. But 
+OpenAI was not a public company, and there was no suggestion of wrongdoing by 
+him.
+
+Beyond that, the day brought a proliferation of startling justifications for a 
+Huang return.Wick Egan of the Egan-Jones rating agency argues 
+<https://ejproxy.com/insights/nvidia-board-fallout> that it’s “not entirely 
+clear the board acted in the best interest of shareholders.” The company lost 
+$570 billion in market value last week, and Huang left only four days after the 
+board opened its investigation into him. “It is unclear whether it was over 
+immoral behavior, governance concerns, orcooperation with a Chinese spy.” 
+<https://www.bloomberg.com/news/articles/2026-11-18/interim-nvidia-ceo-says-it-s-no-longer-sending-ai-chips-to-china?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+
+Affairs with a subordinate and with an important customer suspected of being a 
+Chinese asset are both firing offenses that left the board little choice. 
+Accepting his resignation hasn’t helped shareholders so far, but the board’s 
+greater failure was allowing Huang to getso powerful in the first place 
+<https://www.bloomberg.com/opinion/articles/2026-11-13/how-to-save-the-next-jensen-huang-from-himself?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+.
+
+Another argument, from Gavekal Research’s Louis-Vincent Gave, 
+<https://research.gavekal.com/article/why-nvidia-matters/> is that the Huang 
+affair could damage the US as an investment jurisdiction, much as the2020-21 
+Jack Ma imbroglio 
+<https://www.bloomberg.com/graphics/2021-jack-ma-media-investments/?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+ rendered China“uninvestable” 
+<https://www.bloomberg.com/news/articles/2022-05-23/is-china-uninvestable-and-what-does-that-even-mean-quicktake?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+ in the eyes of many. He points to the perception in China that Huang is being 
+singled out because of his Chinese descent — although there’s a long list of 
+non-Chinese CEOs who lost their jobs over relationships with subordinates:
+Does the very public humiliation imposed on Jensen Huang make the US more, or 
+less, attractive to foreign investors? If more (i.e.: rule of law matters, 
+Jensen Huang should not have skirted regulation etc…), then the US dollar 
+should strengthen and bond yields fall. If less (greater unpredictability, 
+humiliation replaces innocent until proven guilty etc.), then the US dollar 
+should go down and bond yields up?
+If this is the question, the US is looking good so far. The dollar 
+strengthened last week to its highest in almost two years.
+
+Meanwhile, the allegations concerning trade with China are serious enough to 
+prompt enquiries by Congress and by theDepartment of Justice 
+<https://www.bloomberg.com/news/articles/2026-11-17/sec-is-probing-nvidia-amid-jensen-huang-s-exit-wsj-reports?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+. This alone should preclude a Huang return. Lango believes the door has been 
+firmly shut:
+The probabilities of that are close to zero, if not zero itself. The board 
+knows a lot more than the public does right now, about hisconnections with 
+Megaspeed International 
+<https://www.bloomberg.com/news/articles/2026-11-13/banned-nvidia-chips-installed-at-china-data-center-linked-to-alice-huang?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+, the Chinese rerouting, and maybe more affairs. There’s a reason the board is 
+saying that they are not entertaining the idea of bringing him back regardless.
+To guard shareholders’ long-term interest, Nvidia cannot let Huang return. 
+That would tell the world that his behavior was excusable in return for a 
+short-term buck. Boards should never feel obliged to avoid any action that 
+might lead to a short-term fall in the share price. That way leads disastrous 
+short-termism.
+
+This is a dreadful situation, created in part by the Nvidia board’s earlier 
+mistakes. We should all be grateful that it has maintained standards of decency 
+and refused to yield to short-termist pressure.
+
+America Second
+
+The Nvidia excitement probably means a gradual decline to the AI trade, which 
+in turn will mean a period of drab US equity returns that underperform the rest 
+of the world. That at least seems to be the view of the global fund managers 
+polled for Bank of America’s monthly survey, whose latest interviews took place 
+in the five days ending last Thursday, overlapping with the Huang scandal. It 
+found the biggest shift away from tech stocks in two decades:
+
+In the the second quarter of 2006, the S&P 500 tech sector underperformed the 
+rest of the market by 16% — and that created a buying opportunity that saw tech 
+win by 26% from July 2006 until the onset of the Global Financial Crisis at the 
+end of the following year. That might happen again, but perhaps not yet. For 
+the time being, investors’ disaffection with high capex for AI is evident with 
+a record proportion complaining that companies are overinvesting:
+
+Concerns that AI spending shouldn’t continue unchecked translate into a shift 
+in economic outlook. For the last four years, BofA has asked whether the world 
+is heading for a hard or soft landing, or “no landing” (an extended and 
+potentially inflationary boom). The betting has switched back to a soft 
+landing, after a period of predicting no landing:
+
+The corollary, as the US is tech-dominated, is an end to US exceptionalism. 
+For next year, the fund managers now tend to expect non-US equities to do 
+better:
+
+This wouldn’t be a severe outlier. Non-US equities outperformed last year, but 
+since the pandemic, “America First” had been the norm:
+
+However, the US cumulative outperformance is dramatic. The last period of 
+extended lagging happened in the aftermath of the internet bubble, when America 
+had also done very well. From the end of 2001, it would take a decade for the 
+S&P 500 to overtake the rest of the world. Implicitly, fund managers appear 
+braced for something similar this time:
+
+Expectations of the US in absolute terms are also downbeat. The weighted 
+average of the BofA respondents’ forecasts for the S&P 500 at the end of 2027 
+is 7,926, just 8% above its Tuesday close, and barely 1.5% above its peak last 
+month.
+
+The latest survey of Wall Street strategists’ forecasts by Bloomberg News 
+colleague Lu Wang, conducted last month, found a consensus expectation that the 
+S&P endthis year slightly higher, at 7,967:
+
+This is consistent with other expectations. Despite the big chip selloff, with 
+the MSCI Global Semiconductors index down 36% since June, the fund managers 
+still label chipmakers as the world’s most crowded trade — so they evidently 
+believe the selloff will get much worse:
+
+Fund managers think that tech has a comeuppance that will mean blah US equity 
+performance and an economic soft landing. But not a crisis. It sounds like a 
+decent base case.
+
+Survival Tips
+
+There’s a lot of Latin American music out there: Negro y Azul 
+<https://www.youtube.com/watch?app=desktop&v=_ykOTpzuZN0> (the Heisenberg song 
+fromBreaking Bad), Guantanamera <https://www.youtube.com/watch?v=XjRfT9TXQbY> 
+by Joseito Fernandez,Alegria, Alegria 
+<https://www.youtube.com/watch?v=hmK9GylXRh0&list=RDhmK9GylXRh0&start_radio=1> 
+by Caetano Veloso, andBaby 1971 
+<https://www.youtube.com/watch?v=HySI0mX8t8Q&list=RDHySI0mX8t8Q&start_radio=1> 
+by Os Mutantes,Quetzalcoatl <https://www.youtube.com/watch?v=XdwB-lXZtf8> by El 
+Vez,Adios Mexico <https://www.youtube.com/watch?v=GaOL088Pzyc> by Texas 
+Tornados andGood Morning Aztlan 
+<https://www.youtube.com/watch?v=O1UcoEXQieU&list=RDO1UcoEXQieU&start_radio=1> 
+by Los Lobos.
+
+For music by non-Latinos inspired by the region, there’s South America, Take 
+It Away 
+<https://www.youtube.com/watch?v=0Co-yFQ0PvI&list=RD0Co-yFQ0PvI&start_radio=1> 
+by Bing Crosby and the Andrews Sisters,Panama 
+<https://www.youtube.com/watch?v=fuKDBPw8wQA&list=RDfuKDBPw8wQA&start_radio=1> 
+by Van Halen,Panama Red 
+<https://www.youtube.com/watch?v=hK6vnfQLI7w&list=RDhK6vnfQLI7w&start_radio=1> 
+by New Riders of the Purple Sage,Washington Bullets 
+<https://www.youtube.com/watch?v=nylAzVqnfrI> by The Clash, Can’t Stop Us Now 
+<https://www.youtube.com/watch?v=e6O_WnhzM-8&list=RDe6O_WnhzM-8&start_radio=1> 
+by U2,I Go to Rio 
+<https://www.youtube.com/watch?v=Kgq1g-2cQ54&list=RDKgq1g-2cQ54&start_radio=1> 
+by Peter Allen,Copacabana 
+<https://www.youtube.com/watch?v=XDR247fmhnc&list=RDXDR247fmhnc&start_radio=1> 
+by Barry Manilow,Hey Joe 
+<https://www.youtube.com/watch?v=r3AXtqPMQME&list=RDr3AXtqPMQME&start_radio=1> 
+by The Jimi Hendrix Experience (it’s about escaping to Latin America and it’s a 
+great song — but it’s also about violence against women to an extent I hadn’t 
+grasped until listening through the lyrics just now, so I have some qualms),
+South of the Border 
+<https://www.youtube.com/watch?v=UPOT2tgY9QQ&list=RDUPOT2tgY9QQ&start_radio=1> 
+by Ed Sheeran and others,South of the Border (Down Mexico Way) 
+<https://www.youtube.com/watch?v=WZZJtkaS82w&list=RDWZZJtkaS82w&start_radio=1> 
+by Willie Nelson (among many others),Columbia 
+<https://www.youtube.com/watch?v=7QyF5UdhBJI&list=RD7QyF5UdhBJI&start_radio=1> 
+(wrong spelling but OK) by Oasis,Mexico 
+<https://www.youtube.com/watch?v=8wSy53DLjdg&list=RD8wSy53DLjdg&start_radio=1> 
+by The Soft Pack,Mexico <https://www.youtube.com/watch?v=0WMPgvEmNYQ> by James 
+Taylor andMexicali Rose 
+<https://www.youtube.com/watch?v=XR23gkgcfD8&list=RDXR23gkgcfD8&start_radio=1> 
+by Gene Autry.¿Qué más?
+
+More From Bloomberg Opinion
+
+ * Trump Is Now 0 for 10 With His Gifts to Putin 
+<https://www.bloomberg.com/opinion/articles/2026-11-17/ukraine-war-trump-is-0-for-10-with-gifts-to-russia-s-putin?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+: Marc Champion
+ * The Looming Global Food Crisis 
+<https://www.bloomberg.com/opinion/articles/2026-11-17/food-prices-are-up-but-forecasts-for-a-global-food-crisis-are-wrong?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+ Is a Myth: Javier Blas
+ * The Fed’s ‘Immaculate Disinflation’ 
+<https://www.bloomberg.com/opinion/articles/2026-11-17/the-fed-s-immaculate-disinflation-strategy-will-fail?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+ Strategy Will Fail: Bill Dudley
+Want more Bloomberg Opinion? OPIN <bbg://screens/opin>. Or you can subscribe to
+our daily newsletter 
+<https://www.bloomberg.com/account/newsletters/bloomberg-opinion-today?utm_medium=email&utm_source=newsletter&utm_campaign=authers&cmpid=BBD111826_AUT&utm_term=261118&utm_content=11527>
+.
+
+Like Bloomberg’s Points of Return? Subscribe for unlimited access 
+<https://www.bloomberg.com/subscriptions?utm_source=newsletter&utm_medium=email&utm_campaign=authers&cmpid=BBD111826_AUT&utm_term=261118&utm_content=11527>
+ to trusted, data-based journalism in 120 countries around the world and gain 
+expert analysis from exclusive daily newsletters likeMarkets Daily 
+<https://www.bloomberg.com/account/newsletters/markets-daily?utm_medium=email&utm_source=newsletter&utm_campaign=authers&cmpid=BBD111826_AUT&utm_term=261118&utm_content=11527>
+ orOdd Lots 
+<https://www.bloomberg.com/account/newsletters/odd-lots?utm_medium=email&utm_source=newsletter&utm_campaign=authers&cmpid=BBD111826_AUT&utm_term=261118&utm_content=11527>
+.
+
+Follow Us
+
+ <https://www.instagram.com/bloombergopinion/> 
+<https://www.tiktok.com/@bloombergopinion> 
+<https://bsky.app/profile/opinion.bloomberg.com> 
+<https://www.linkedin.com/showcase/bloomberg-opinion/>
+You received this message because you are subscribed to Bloomberg’s Points of 
+Return newsletter. If a friend forwarded you this message,sign up here 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=NLshare&cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+ to get it in your inbox.
+
+Unsubscribe 
+<https://www.bloomberg.com/account/newsletters/points-of-return?source=newsletter_unsub&email=brendan.berthold@gmail.com&hash=1d774bc140d06eeece482468117a82b8b83d7eab>
+Bloomberg.com 
+<https://www.bloomberg.com/?cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+Contact Us 
+<https://www.bloomberg.com/help/?s=newsletters&cmpid=BBD111826_AUT&utm_campaign=authers&utm_medium=email&utm_source=newsletter&utm_term=261118&utm_content=11527>
+Bloomberg L.P.
+731 Lexington Avenue
+New York, NY 10022
+
+ <https://www.liveintent.com/powered-by>| 
+<https://www.liveintent.com/ad-choices> 
+<https://links.message.bloomberg.com/s/eh/lczV0-7Rc5jM-S9W5guheleTKhKHCk-cMnlbyL7eITiv670UorN7jeZMvzbG1JjPQbaJL-D9qPoiIWJbM5fIybAHaeOTsZSJ_kVhGMIUNdvigyMDVP6e0U0fmtm3MPVqlYi4Kblpup6Hq9oALinATIPQvWH4M1SfG0v57e_RKsMATal435equ4gGyRWhMfHexMW5HyzCCa1PVAxxuCCbtuyT6R_ImkKYb_xglXjgKtUOiuIxb_gk2Do-0S_YyjUzY_5gaozBbf3vYAvscLZi9654g72JIOtKoYLPf6MxQmEfmk40I8WIKi5Fsqa_wexiwaiZ1q6LWdzf7dVYguLiMXGVsQnptJwG/Kt6yrzBP0wxivhiX3jEknH_nH_vBdTPG/26>

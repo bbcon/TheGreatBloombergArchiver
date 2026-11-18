@@ -1,0 +1,12 @@
+• Nvidia Q3 revenue of $115.8 billion and Q1 2027 sales guidance of ~$130 billion both topped Wall Street consensus, with gross margins of ~71.5% also beating estimates; shares rose ~3.5% in premarket trading following four days of declines
+• US October factory output rose 0.3% for a second consecutive month, beating expectations, with year-on-year manufacturing production up 2.2% — the strongest since March 2022
+• Bank of America's global fund manager survey recorded the largest rotation out of technology stocks in 20 years, with a record proportion citing AI overinvestment
+• The 10-year Treasury yield held near 5.10%, approaching its longest sustained run above that threshold in almost two decades; Fed's Musalem signaled several further rate hikes likely needed by spring
+
+**Corporate: Nvidia Post-Huang**
+Nvidia's third-quarter results provided the clearest evidence yet that AI infrastructure demand remains intact despite the leadership crisis triggered by Jensen Huang's departure. Revenue of $115.8 billion and forward guidance of approximately $130 billion for Q1 2027 both exceeded consensus, as did gross margins of ~71.5%. Interim CEO Colette Kress struck a notably more cautious tone than her predecessor, emphasizing "disciplined" and "rigorous" standards for future investments — a direct response to criticism over the circular financing arrangements that characterized the Huang era. Nvidia's board ruled out a Huang return at the earnings conference, though Congressional and Department of Justice inquiries into his alleged ties to Megaspeed International and potential export control violations continue. The stock remains down approximately 24% month-to-date.
+
+**Markets and Monetary Policy**
+The four-day technology selloff paused on Nvidia's results, with Nasdaq 100 futures rising 1.2%. Broader sentiment remains cautious: BofA's fund manager survey found the consensus has shifted toward a soft-landing scenario and away from US equity outperformance, with the weighted-average S&P 500 target for end-2027 at 7,926 — just 8% above current levels. The 10-year Treasury near 5.10% continues to reflect persistent inflation concerns, with Fidelity International arguing that even a 6% yield would not render Treasuries "massively cheap" given structural fiscal pressures and positive equity-bond correlations.
+
+---
