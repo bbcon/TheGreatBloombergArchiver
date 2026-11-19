@@ -1,0 +1,9 @@
+• The Trump-Xi-Putin trilateral in Shenzhen produced a joint pledge to increase refined petroleum product supply, a significant geopolitical signal arriving as COP31 negotiators were simultaneously trying to advance fossil fuel phase-out language.
+• Air cargo rates on transpacific routes hit a four-year high of $9.25/kg, up 65% since early October, driven by AI data center hardware demand layered on top of seasonal shipping volumes.
+• Anthropic's $107.3bn IPO — the largest in history — raises the question of whether a market large enough to absorb successive mega-deals of this scale exists, with the next candidate, OpenAI, expected to follow next year.
+
+**Geopolitics and Energy**
+The Shenzhen trilateral represents a rare convergence of the world's three largest military powers, with stated aims spanning Ukraine, nuclear limits, and energy supply. The joint commitment to expand petroleum product supply landed as a direct counter-signal to COP31's aspirations, and the EU's Hoekstra acknowledged it as an "unfortunate reality." LNG tanker transits through the Strait of Hormuz appear to have declined sharply — as few as two vessels in the most recent week versus a weekly average of eight over the prior two months — suggesting shipowners are exercising heightened caution following a series of attacks, even as Persian Gulf exports broadly return toward pre-conflict levels.
+
+**AI and Markets**
+The dollar's sharp rise, decoupled from rate differentials, is generating concern among macro strategists that something beyond ordinary Fed repricing may be occurring in financial markets. Robin Brooks of Brookings flagged the divergence explicitly as a potential sign of incipient dislocation. Meanwhile, South Korea's financial regulator has begun mapping systemic AI exposure across its financial sector — a harbinger of the regulatory scrutiny that may spread to other jurisdictions as leverage within the AI trade becomes more legible.

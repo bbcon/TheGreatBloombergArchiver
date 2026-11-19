@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, November 19, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, November 19, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Fed minutes confirmed nearly all policymakers expect further rate hikes, with a couple of participants flagging consideration of a 50bp move if inflation data disappoint.</li><li>Anthropic priced its IPO at $83 per share, raising $107.3bn including a concurrent private placement — the largest IPO on record, surpassing SpaceX's $75bn base deal.</li><li>The dollar surged to an 18-month high, a move analysts note has decoupled from rate differentials, raising questions about whether a stress event in the AI trade may be developing.</li></ul>
+<p class="para-title" style="color:#5597cb;">Monetary Policy</p>
+<p class="para-body">The October FOMC minutes confirmed the committee's hawkish disposition. Almost all participants judged further rate hikes likely appropriate, with the majority seeing upside risks to inflation and several specifically citing the AI buildout as a material inflationary force. Governor Chris Waller moved further, publicly floating a 50bp move in December on CNBC; market pricing assigns only an 8.6% probability to a jumbo hike, but rate-sensitive assets — particularly precious metals, now down 37% from January peaks — are reflecting the tightening path.</p>
+<p class="para-title" style="color:#5597cb;">Equity and Credit Markets</p>
+<p class="para-body">Anthropic's record offering is providing near-term relief to equity bulls. Nasdaq 100 futures rose 2.1%, with the Magnificent Seven broadly advancing on hopes the blockbuster IPO signals continued investor appetite for AI. Palo Alto Networks gained 9% premarket after raising guidance and acquiring Applied Compute for $4.5bn. Nevertheless, the Nasdaq 100 has shed more than 10% since Jensen Huang's departure and the Democratic sweep of the midterms, and the dollar's sharp, rate-independent rally warrants monitoring as a possible early signal of financial stress. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Bank Indonesia delivered a surprise 25bp rate hike to 6.0% — against consensus expectations for a fifth consecutive hold — as the rupiah fell to record lows.</li><li>Bank of Japan Governor Ueda signaled that a weaker Q3 GDP print would not deter a December hike; swap markets price the probability at approximately 84%.</li><li>Asian equities fell for a second consecutive session, with the Hang Seng declining 1.9% and Taiwan's Taiex dropping 4.4%, as chip stocks including TSMC, Samsung, and SK Hynix retreated.</li></ul>
+<p class="para-title" style="color:#e07b39;">Central Bank Policy</p>
+<p class="para-body">Bank Indonesia's surprise hike illustrates the bind facing emerging-market central banks as dollar strength driven by US tightening transmits pressure globally. The rupiah had already plunged to record lows, and despite consensus for a pause, Governor Destry Damayanti's board moved to defend both the currency and institutional credibility. Capital Economics anticipates two further 25bp hikes, though the more immediate question is whether monetary tightening can offset idiosyncratic political risks under President Prabowo Subianto, whose approval ratings have fallen to 45% from 81% in under a year. MSCI's pending review of Indonesia's equity market classification — a potential downgrade to standalone status due next June — adds a structural overhang.</p>
+<p class="para-title" style="color:#e07b39;">Japan and South Korea</p>
+<p class="para-body">In Japan, Governor Ueda explicitly downplayed Q3's GDP contraction, maintaining that rising wages and moderating inflation keep the December hike scenario live. South Korea's financial regulator has for the first time formally asked major banks, brokerages, and insurers to disclose their AI-sector exposures, reflecting growing systemic concern about the debt financing the global buildout. South Korean annual exports surpassed $1 trillion for the first time, driven by record semiconductor shipments. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>The euro fell to an 18-month low below $1.10, with Morgan Stanley and Commerzbank forecasting further depreciation toward $1.08, driven by French political risk and fiscal deterioration.</li><li>COP31 draft text in Antalya dropped aggressive fossil fuel phase-out language, reducing the summit's ambitions significantly from earlier proposals.</li><li>The EU reached a tentative deal to delay methane rules for energy importers by two years, citing supply disruptions from the Iran conflict.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Eurozone Political and Fiscal Risk</p>
+<p class="para-body">The euro's 6% decline since late August is increasingly attributable to French political dynamics rather than ECB policy alone. With Marine Le Pen leading polls ahead of next year's presidential election and the government struggling to pass a budget, speculative short positions on the euro have reached their highest level in over six years. Analysts note a feedback loop in which deteriorating French fiscal credibility constrains the ECB's room to tighten, compounding currency weakness. The ECB's own climate liaison, Kocher, separately warned that rising temperatures are adding to inflationary pressures confronting the central bank.</p>
+<p class="para-title" style="color:#4a9e6b;">Climate Negotiations</p>
+<p class="para-body">At COP31 in Antalya, Thursday's revised draft text — nine pages, half the length of Monday's circulated version — removed prior calls to "phase out fossil fuels" and watered down methane reduction language. The retreat came hours after Trump, Xi, and Putin jointly pledged to expand refined petroleum product supply. EU Climate Chief Hoekstra acknowledged the geopolitical reality while warning against a new energy "trap." ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Mexico's President Sheinbaum expressed confidence following a brief meeting with Trump, as tariff and migration tensions persist.</li><li>Peru's agricultural exporters face a difficult 2027, with El Niño disruptions expected to hold farm export revenues flat at approximately $14.5bn.</li><li>The US government's $100bn deal with a Venezuelan oil baron drew scrutiny; opposition leader María Corina Machado said a long-term Washington partnership remains critical for Caracas.</li></ul>
+<p class="para-title" style="color:#c0392b;">Mexico and Regional Trade</p>
+<p class="para-body">Sheinbaum's measured tone following her Trump meeting offers a degree of near-term stability for Mexico, though the structural tensions — tariffs, migration enforcement, nearshoring investment flows — remain unresolved. US Defense Secretary Hegseth made an unannounced visit to Caracas, signing a military cooperation agreement and offering American forces to assist in combating drug cartels, a development with significant implications for the broader US-Latin America security architecture. Machado's public endorsement of the oil arrangement, notwithstanding her call for scrutiny, suggests Caracas is pragmatically navigating its relationship with Washington.</p>
+<p class="para-title" style="color:#c0392b;">Commodities and Agriculture</p>
+<p class="para-body">Copper partially recovered Thursday after a near-6% decline on Wednesday — its sharpest single-day fall since April 2025 — as AI-trade and tariff-related speculative positions unwound. The move is a reminder that commodity markets remain tightly coupled to financial positioning rather than purely physical fundamentals. In Peru, El Niño-related disruptions and rising crime costs are expected to suppress agricultural export growth through 2027, capping what had been a sustained expansion in fruit and vegetable shipments. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>The Trump-Xi-Putin trilateral in Shenzhen produced a joint pledge to increase refined petroleum product supply, a significant geopolitical signal arriving as COP31 negotiators were simultaneously trying to advance fossil fuel phase-out language.</li><li>Air cargo rates on transpacific routes hit a four-year high of $9.25/kg, up 65% since early October, driven by AI data center hardware demand layered on top of seasonal shipping volumes.</li><li>Anthropic's $107.3bn IPO — the largest in history — raises the question of whether a market large enough to absorb successive mega-deals of this scale exists, with the next candidate, OpenAI, expected to follow next year.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Geopolitics and Energy</p>
+<p class="para-body">The Shenzhen trilateral represents a rare convergence of the world's three largest military powers, with stated aims spanning Ukraine, nuclear limits, and energy supply. The joint commitment to expand petroleum product supply landed as a direct counter-signal to COP31's aspirations, and the EU's Hoekstra acknowledged it as an "unfortunate reality." LNG tanker transits through the Strait of Hormuz appear to have declined sharply — as few as two vessels in the most recent week versus a weekly average of eight over the prior two months — suggesting shipowners are exercising heightened caution following a series of attacks, even as Persian Gulf exports broadly return toward pre-conflict levels.</p>
+<p class="para-title" style="color:#8b5cf6;">AI and Markets</p>
+<p class="para-body">The dollar's sharp rise, decoupled from rate differentials, is generating concern among macro strategists that something beyond ordinary Fed repricing may be occurring in financial markets. Robin Brooks of Brookings flagged the divergence explicitly as a potential sign of incipient dislocation. Meanwhile, South Korea's financial regulator has begun mapping systemic AI exposure across its financial sector — a harbinger of the regulatory scrutiny that may spread to other jurisdictions as leverage within the AI trade becomes more legible.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
