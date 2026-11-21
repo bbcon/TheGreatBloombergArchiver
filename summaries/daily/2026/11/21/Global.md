@@ -1,0 +1,9 @@
+• The Trump administration's new AI chip export controls represent the most consequential technology-decoupling measure of 2026, extending restrictions beyond China to key Southeast Asian intermediary markets.
+• The US-Iran conflict and resulting oil shock have already pressured Southeast Asian growth, making the chip rule an additional headwind for a region absorbing multiple simultaneous external shocks.
+• Policy trajectory appears tilted toward further restriction, with Congress deliberating additional chip security legislation.
+
+**Technology Decoupling Accelerates**
+The latest US chip rules crystallize a structural theme that has defined global technology markets since 2025: the progressive hardening of barriers around advanced semiconductor access. The regulatory action closes what US authorities characterize as a loophole — the routing of Chinese AI compute demand through third-country data centers — and signals that indirect access pathways will face increasing scrutiny. Morgan Stanley's public policy team characterizes the direction of travel as unambiguously toward more restrictions, not fewer.
+
+**Compounding Pressures on Emerging Markets**
+The global oil shock of 2026, itself a consequence of the US-Israel-Iran conflict, has already weighed on growth across energy-importing emerging markets. The new chip rules now add a second adverse supply-side shock for Southeast Asian economies that had relied on data-center investment as a partial economic offset. The interaction of these two forces — energy cost pressures and constrained technology investment — may prove meaningful for regional growth trajectories heading into 2027, though the ultimate impact depends heavily on enforcement stringency and whether diplomatic channels yield modifications to the rules.

@@ -1,0 +1,16 @@
+• US October CPI printed above consensus on Tuesday — described as "higher than hoped" — cementing expectations for further Federal Reserve tightening; markets priced three additional hikes over the next 12 months with meaningful probability of a fourth.
+• Nvidia reported Q3 revenue of $115.8 billion and Q1 2027 guidance of ~$130 billion on Wednesday, both above consensus, with gross margins of ~71.5% also beating; shares remain down ~24% month-to-date following Jensen Huang's departure.
+• Anthropic priced its IPO at $83 per share on Wednesday, raising $107.3 billion — the largest IPO on record — but shares fell roughly 6% on day two, failing to revive the broader AI trade.
+• The Nasdaq 100 fell 15% from its October all-time high by Friday; the average S&P 500 stock gained ~5% over the same period, reflecting rotation from AI-linked momentum names into value and defensives.
+• New Commerce Department AI chip licensing rules — targeting data center operators in Singapore, Malaysia, Thailand, Indonesia, and Brazil — represent the week's most consequential technology policy action.
+
+**Monetary Policy and Rates**
+October's above-consensus CPI and the FOMC minutes released Thursday — which confirmed nearly all policymakers expect further rate hikes, with a couple flagging consideration of a 50bp move — have materially shifted the rate outlook. Fed Governor Waller publicly floated 50bp in December on CNBC; market pricing assigns only 8.6% probability to a jumbo move, but the 10-year Treasury yield held near 5.10–5.13% through the week, approaching its longest sustained run above that threshold in almost two decades. Deutsche Bank revised its prior 4.75% yield forecast upward, projecting above 5% through much of the next two years. Fed's Musalem signaled several further hikes likely by spring; Chicago Fed's Goolsbee kept all options open Friday.
+
+**Corporate: Nvidia and AI Credit Stress**
+Nvidia's results under interim CEO Colette Kress provided the clearest evidence yet that AI infrastructure demand remains intact despite the leadership crisis. Kress struck a notably more cautious tone than Huang, emphasizing "disciplined" investment standards — a direct response to scrutiny over circular financing arrangements. Congressional and DOJ inquiries into Huang's alleged ties to Megaspeed International continue. The broader AI credit picture remains stressed: HSBC sold a $300 million slice of an $18 billion AI data center loan at prices in the mid-80s on Tuesday; CDS costs for Oracle and SpaceX have more than doubled in recent months; and BofA's fund manager survey recorded the largest rotation out of technology in 20 years.
+
+**Equity and Fiscal Outlook**
+Anthropic's record offering briefly lifted Nasdaq 100 futures 2.1% Thursday before the sell-the-news reversal. The index closed down 2.2% Thursday and ended the week down 15% from October highs. Semiconductor stocks (SOX) fell 24% from peak. Defensives outperformed: T-Mobile, UnitedHealth, and Walmart all gained; AMD fell 5.4% and Intel 5.0% in Friday premarket. The US fiscal deficit held near 6% of GDP in FY2026 against a 100%-of-GDP debt load, with post-midterm Democratic spending proposals potentially adding $4.9 trillion through 2037 per Penn Wharton modeling.
+
+---

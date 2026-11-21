@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nov 16 – Nov 22, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="../daily.html" class="nav-link">Daily</a><a href="#" class="nav-link active">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../weekly.html">‹ Weekly archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Weekly Brief</p>
+        <p class="brief-date">Nov 16 – Nov 22, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>US October CPI printed above consensus on Tuesday — described as "higher than hoped" — cementing expectations for further Federal Reserve tightening; markets priced three additional hikes over the next 12 months with meaningful probability of a fourth.</li><li>Nvidia reported Q3 revenue of $115.8 billion and Q1 2027 guidance of ~$130 billion on Wednesday, both above consensus, with gross margins of ~71.5% also beating; shares remain down ~24% month-to-date following Jensen Huang's departure.</li><li>Anthropic priced its IPO at $83 per share on Wednesday, raising $107.3 billion — the largest IPO on record — but shares fell roughly 6% on day two, failing to revive the broader AI trade.</li><li>The Nasdaq 100 fell 15% from its October all-time high by Friday; the average S&P 500 stock gained ~5% over the same period, reflecting rotation from AI-linked momentum names into value and defensives.</li><li>New Commerce Department AI chip licensing rules — targeting data center operators in Singapore, Malaysia, Thailand, Indonesia, and Brazil — represent the week's most consequential technology policy action.</li></ul>
+<p class="para-title" style="color:#5597cb;">Monetary Policy and Rates</p>
+<p class="para-body">October's above-consensus CPI and the FOMC minutes released Thursday — which confirmed nearly all policymakers expect further rate hikes, with a couple flagging consideration of a 50bp move — have materially shifted the rate outlook. Fed Governor Waller publicly floated 50bp in December on CNBC; market pricing assigns only 8.6% probability to a jumbo move, but the 10-year Treasury yield held near 5.10–5.13% through the week, approaching its longest sustained run above that threshold in almost two decades. Deutsche Bank revised its prior 4.75% yield forecast upward, projecting above 5% through much of the next two years. Fed's Musalem signaled several further hikes likely by spring; Chicago Fed's Goolsbee kept all options open Friday.</p>
+<p class="para-title" style="color:#5597cb;">Corporate: Nvidia and AI Credit Stress</p>
+<p class="para-body">Nvidia's results under interim CEO Colette Kress provided the clearest evidence yet that AI infrastructure demand remains intact despite the leadership crisis. Kress struck a notably more cautious tone than Huang, emphasizing "disciplined" investment standards — a direct response to scrutiny over circular financing arrangements. Congressional and DOJ inquiries into Huang's alleged ties to Megaspeed International continue. The broader AI credit picture remains stressed: HSBC sold a $300 million slice of an $18 billion AI data center loan at prices in the mid-80s on Tuesday; CDS costs for Oracle and SpaceX have more than doubled in recent months; and BofA's fund manager survey recorded the largest rotation out of technology in 20 years.</p>
+<p class="para-title" style="color:#5597cb;">Equity and Fiscal Outlook</p>
+<p class="para-body">Anthropic's record offering briefly lifted Nasdaq 100 futures 2.1% Thursday before the sell-the-news reversal. The index closed down 2.2% Thursday and ended the week down 15% from October highs. Semiconductor stocks (SOX) fell 24% from peak. Defensives outperformed: T-Mobile, UnitedHealth, and Walmart all gained; AMD fell 5.4% and Intel 5.0% in Friday premarket. The US fiscal deficit held near 6% of GDP in FY2026 against a 100%-of-GDP debt load, with post-midterm Democratic spending proposals potentially adding $4.9 trillion through 2037 per Penn Wharton modeling. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>China's October activity data missed across the board on Sunday: retail sales rose just 0.4% YoY (consensus expected a moderate rebound), industrial output grew 4.8% (below estimates), and fixed investment unexpectedly deteriorated.</li><li>Bank Indonesia surprised markets with a 25bp rate hike to 6.00% on Wednesday, against consensus for a hold, citing rupiah weakness — the currency had already hit a record low of 18,271 per dollar, down ~9% year-to-date.</li><li>Japan's Q3 GDP contracted 0.1% annualized (below consensus for modest growth), while CPI accelerated to its fastest pace this year by Friday, keeping a December BoJ hike in play at ~84% market probability.</li><li>New US AI chip licensing rules sent MSCI Asia down 1.5% Monday and Chinese AI stocks — Alibaba, Baidu, Minimax — more than 5%, with Alibaba's Hong Kong market cap falling below $211 billion, less than half its level a year ago.</li><li>Taiwan's Taiex fell 6.2% on the week — its worst performance since 1991 — while South Korea's Kospi shed 8%; Japan's Nikkei fell 5.1% Friday to April levels.</li></ul>
+<p class="para-title" style="color:#e07b39;">China: Activity and Technology Pressure</p>
+<p class="para-body">Beijing's September stimulus package has yet to transmit meaningfully into activity. The simultaneous weakness in consumption, investment, and industrial output — reported Monday — suggests the economy risks losing momentum rather than finding a durable floor. The property sector remains the structural drag, with iron ore at four-year lows and the majority of Chinese steel mills unprofitable. The new US export licensing rules, arriving days before the Trump-Xi APEC summit in Shenzhen, present Beijing with a strategic dilemma: retaliate and risk the year-old trade truce, or absorb and respond later. China's Ministry of Commerce explicitly threatened countermeasures if Washington proceeds with remote-access chip restrictions. The PBOC set its daily yuan reference rate at 6.7118 on Wednesday — the strongest fixing since July 2022 — as Xi hosted the APEC CEO Summit, signaling currency stability as a diplomatic tool.</p>
+<p class="para-title" style="color:#e07b39;">Central Banks and Currency Dynamics</p>
+<p class="para-body">Bank Indonesia's Wednesday surprise hike illustrates the bind facing emerging-market central banks: domestic conditions argue for accommodation, but currency defense is forcing tightening. Capital Economics anticipates two further 25bp hikes, though political headwinds under President Prabowo — whose approval rating has fallen from 81% to 45% in under a year — complicate the picture. MSCI's pending review of Indonesia's classification, a potential downgrade to standalone status due next June, adds a structural overhang. In Japan, Governor Ueda explicitly downplayed Q3's contraction, maintaining the December hike scenario remains live. Taiwan's dollar paradox remains analytically striking: despite the world's fourth-largest current-account surplus and four decades of exceptional quarterly growth, the currency approaches decade lows as export earnings accumulate offshore. South Korea's annual exports surpassed $1 trillion for the first time, driven by record semiconductor shipments, though the KOSPI's 8% weekly decline reflects AI-sector anxiety overwhelming the fundamental export strength.</p>
+<p class="para-title" style="color:#e07b39;">APEC and Regional Fallout</p>
+<p class="para-body">The Xi-Trump-Putin trilateral produced no concrete outcomes on Ukraine, Iran, or AI governance. For Southeast Asia, the chip rules represent a material threat to a data-center investment boom that had partially offset oil-shock headwinds. OCBC estimates China-linked operators represent over 30% of approved data-center capacity in Malaysia and Thailand. ByteDance reportedly faces a freeze on a $480 million loan intended to fund Nvidia chips. SK Hynix announced it would convert Kioxia bond holdings into a 14.1% equity stake, expanding its footprint in AI-critical memory — a sign that the technology supply chain is reorganizing around the new restrictions rather than waiting for their reversal. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>UK CPI accelerated to a one-year high on Wednesday, fueled by energy costs linked to the US-Iran conflict, reinforcing the case for a Bank of England rate hike at the December meeting.</li><li>Pablo Hernández de Cos, BIS chief, is now firmly on track to become ECB president, with a Franco-German deal effectively settling the succession question by midweek.</li><li>The euro fell to an 18-month low below $1.10, with Morgan Stanley and Commerzbank forecasting further depreciation toward $1.08, driven by French political risk.</li><li>The Stoxx 600 fell for a fifth consecutive session, down 4.7% on the week, pulled lower by global AI sentiment and French fiscal deterioration.</li><li>UK Prime Minister Burnham met EU leaders in Brussels on Friday, agreeing an EU-UK carbon market linkage for 2028 — the headline achievement of the post-Brexit reset summit.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">UK Macro and Monetary Policy</p>
+<p class="para-body">The week's CPI print, confirmed Wednesday, represents a stagflationary challenge for the Bank of England: energy-driven price acceleration is re-accelerating even as domestic demand remains fragile. UK retail sales jumped and GfK consumer confidence improved Friday, while government borrowing came in below forecast — a constructive fiscal signal. UK employers cut payrolls ahead of the October budget, though economists assess the labor market as sufficiently robust to keep a December hike in play. The labor market's stabilization after a two-year downturn, combined with above-trend inflation, leaves the Bank with limited room to signal any dovish pivot.</p>
+<p class="para-title" style="color:#4a9e6b;">ECB Leadership and Eurozone Stress</p>
+<p class="para-body">A Franco-German deal has effectively settled the ECB succession. Hernández de Cos, regarded as the more dovish leading candidate, secures the presidency — Germany obtained the chief economist role for Markus Brunnermeier when Philip Lane departs in May, and France is expected to claim the markets portfolio, with Laurence Boone the leading candidate. That composition matters: should French sovereign spreads deteriorate further from their October wide of 178bp over Bunds — the widest since 2012 — Boone would likely be in operational control of bond-market stabilization measures. The euro's 6% decline since late August reflects French political dynamics as much as ECB policy: Marine Le Pen leads presidential polls, the minority government cannot pass a budget, and Jean-Luc Mélenchon — whose platform includes canceling ECB-held French debt — has risen to 17–18.5% in polling. Speculative short positions on the euro reached their highest level in over six years by Friday.</p>
+<p class="para-title" style="color:#4a9e6b;">UK-EU Reset and Trade Defense</p>
+<p class="para-body">Burnham's Brussels summit delivered a preliminary post-Brexit realignment, with carbon market linkage from 2028 potentially saving British businesses billions in carbon border adjustment costs. Commentary is divided on whether agreements are proportionate to the structural cost of remaining outside EU industrial and financial frameworks. Separately, the EU imposed anti-dumping duties on cold-rolled flat steel from India, Japan, Taiwan, Turkey, and Vietnam — factoring for the first time Chinese industrial overcapacity's distorting effect on third-country markets, a precedent-setting trade defense measure. Deutsche Bank's fixed-income unit remains on course for record revenues of approximately €10 billion in 2026, though with fixed income generating 84% of investment banking revenue, concentration risk is high. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazilian assets slumped through the week, with the real touching its lowest level since April 2025, as markets price elevated rates for longer amid persistent fiscal credibility concerns following Lula's reelection.</li><li>Colombia formally reversed plans to expand VAT coverage, with President de la Espriella confirming the retreat — a meaningful shift away from fiscal consolidation at a challenging moment for EM borrowing conditions.</li><li>Brazil was included alongside four Southeast Asian nations in the new US AI chip licensing regime, an unexpected designation citing re-export risk that may complicate the country's technology investment ambitions.</li><li>Mexico's President Sheinbaum met both Xi and Trump during the APEC week, navigating US-China tensions carefully while seeking resolution of a bilateral tariff dispute with Beijing.</li></ul>
+<p class="para-title" style="color:#c0392b;">Brazil: Fiscal and Market Stress</p>
+<p class="para-body">Brazilian markets continue to price fiscal risk following Lula's reelection, with traders assigning low probability to the structural adjustment needed to ease monetary conditions. The real's depreciation to April 2025 lows reflects capital outflows and elevated rate expectations rather than any near-term macro catalyst. Brazil's inclusion in the Commerce Department's AI chip licensing rules adds an additional headwind: the designation reflects US concern about re-export risk rather than direct confrontation with Brasília, but the practical and reputational implications for Brazil's ambitions as a regional technology hub merit monitoring. No immediate official response from Brazilian authorities was reported.</p>
+<p class="para-title" style="color:#c0392b;">Mexico and Regional Trade Dynamics</p>
+<p class="para-body">Sheinbaum's presence at APEC — she went viral in China for flying economy class — signaled deliberate trade relationship rebalancing. Her cordial Trump meeting offered near-term stability, though tariff, migration, and nearshoring tensions remain structurally unresolved. Mexico's geographic proximity to the US makes it a natural data center location, but analysts note power infrastructure deficits are preventing translation of that locational advantage into investment. US lawmakers nearing a deal to ban Chinese cars from the US market represents a double-edged development for Mexico: protection for assembly operations from Chinese competition, but broader trade uncertainty persists. Colombia's VAT reversal raises questions about medium-term revenue trajectory at a time when EM borrowing conditions remain challenging under a strong dollar and elevated US rates.</p>
+<p class="para-title" style="color:#c0392b;">Venezuela and Andean Markets</p>
+<p class="para-body">US Defense Secretary Hegseth made an unannounced visit to Caracas, signing a military cooperation agreement — a significant development for the broader US-Latin America security architecture. Opposition leader Machado, polling as Venezuela's most popular political figure, outlined an ambitious energy privatization agenda in her first international media interview since returning to Caracas, though her path to power remains highly uncertain. In Chile, the equity market has decoupled negatively from copper prices, driven by structural Codelco production decline and an emerging misreporting scandal — a reminder that Andean markets carry idiosyncratic risks beyond the AI-driven commodity selloff that pushed copper down nearly 6% in a single session Wednesday before a partial recovery Thursday. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>The Trump-Xi-Putin trilateral at APEC in Shenzhen — the most consequential diplomatic gathering of 2026 — produced no binding outcomes on Ukraine, Iran, nuclear limits, or AI governance, but consolidated China's claim to a central role in shaping the global order.</li><li>New US AI chip export licensing rules targeting data center operators in five countries represent the most significant technology-decoupling escalation of the year, closing offshore compute workarounds previously used by Chinese firms.</li><li>COP31 in Antalya concluded the week without resolution, with draft text omitting fossil fuel phase-out language — drawing sharp criticism from the EU, Germany, and Pacific island states — as the Trump-Xi-Putin joint pledge to expand petroleum supply landed as a direct counter-signal to negotiators.</li><li>Global equities recorded seven consecutive days of declines by Friday — the longest losing streak in over three years — with the MSCI World broadly lower; gold fell to a 12-month low, more than 12% below its 200-day moving average, as rising real rates undermined its safe-haven narrative.</li><li>Air cargo rates on transpacific routes hit a four-year high of $9.25/kg by Thursday, up 65% since early October, driven by AI data center hardware demand layered on seasonal shipping volumes.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Oil Markets and Iran</p>
+<p class="para-body">The US-Iran conflict has entered an ambiguous phase. Full-scale escalation appears less likely following Republican midterm losses, but tit-for-tat exchanges — including a US aerial strike on Iran's Qeshm Island and Iranian drone attacks on Kuwait and</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>

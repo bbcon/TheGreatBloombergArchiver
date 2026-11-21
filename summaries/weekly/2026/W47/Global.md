@@ -1,0 +1,8 @@
+• The Trump-Xi-Putin trilateral at APEC in Shenzhen — the most consequential diplomatic gathering of 2026 — produced no binding outcomes on Ukraine, Iran, nuclear limits, or AI governance, but consolidated China's claim to a central role in shaping the global order.
+• New US AI chip export licensing rules targeting data center operators in five countries represent the most significant technology-decoupling escalation of the year, closing offshore compute workarounds previously used by Chinese firms.
+• COP31 in Antalya concluded the week without resolution, with draft text omitting fossil fuel phase-out language — drawing sharp criticism from the EU, Germany, and Pacific island states — as the Trump-Xi-Putin joint pledge to expand petroleum supply landed as a direct counter-signal to negotiators.
+• Global equities recorded seven consecutive days of declines by Friday — the longest losing streak in over three years — with the MSCI World broadly lower; gold fell to a 12-month low, more than 12% below its 200-day moving average, as rising real rates undermined its safe-haven narrative.
+• Air cargo rates on transpacific routes hit a four-year high of $9.25/kg by Thursday, up 65% since early October, driven by AI data center hardware demand layered on seasonal shipping volumes.
+
+**Oil Markets and Iran**
+The US-Iran conflict has entered an ambiguous phase. Full-scale escalation appears less likely following Republican midterm losses, but tit-for-tat exchanges — including a US aerial strike on Iran's Qeshm Island and Iranian drone attacks on Kuwait and
