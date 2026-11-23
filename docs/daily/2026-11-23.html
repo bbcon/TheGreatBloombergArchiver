@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monday, November 23, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Monday, November 23, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>US equity futures surged, with S&P 500 futures up 2.9% and Nasdaq 100 futures up 3.5%, partially retracing the worst weekly decline in more than six years for the index.</li><li>PCE inflation for October is expected to print at 3.8% YoY on Wednesday — matching May as the highest reading in three years — reinforcing the case for a December Fed rate hike.</li><li>Treasury Secretary Scott Bessent publicly warned the Federal Reserve against overtightening, attributing part of last week's near-9% S&P 500 decline to hawkish Fed communications.</li><li>CrowdStrike agreed to acquire Zscaler in a $44 billion deal, one of the largest transactions in cybersecurity sector history.</li></ul>
+<p class="para-title" style="color:#5597cb;">Equity Markets</p>
+<p class="para-body">US equity futures rebounded sharply Monday after the S&P 500's worst weekly performance in several years, with Nvidia leading the Nasdaq 100 higher by approximately 8.6% in premarket trading. Morgan Stanley's Michael Wilson characterized the selloff as a "fat pitch" buying opportunity, particularly in hyperscalers and industrials, though Goldman Sachs' trading desk cautioned that overall positioning remains elevated and that a broader capitulation may be absent. The equal-weighted S&P 500 is down only 7.2% from its peak and retains an 8% year-to-date gain, suggesting the correction remains concentrated in large-cap technology rather than broad-based.</p>
+<p class="para-title" style="color:#5597cb;">Monetary Policy</p>
+<p class="para-body">The selloff has revived debate over a prospective "Warsh put" ahead of the December 9 Federal Open Market Committee meeting. Fed minutes released last week showed that a majority of participants flagged tightening financial conditions and deteriorating AI-related equity valuations, while some governors have reportedly considered a 50-basis-point rate increase. Wednesday's PCE report — forecast at 3.8% YoY — will be the decisive near-term input. Goldman Sachs economists see no policy shift for now given elevated inflation and solid growth, though further financial-conditions tightening tied to AI spending concerns could displace hikes in 2027. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Asian equity markets opened sharply lower Monday — South Korean and Chinese shares fell meaningfully — before stabilizing after regulators in Korea, Taiwan, and China announced emergency measures including equity purchases and expanded short-selling curbs.</li><li>Singapore core CPI eased to 1.5% in October, in line with expectations, as electricity tariff cuts dampened price pressures.</li><li>Australia indicated it would revise its growth forecast downward, citing economic spillovers from the ongoing US-Iran conflict.</li><li>India's equity market was a notable outlier, outperforming regional peers as investor appetite for non-AI-exposed markets grows.</li></ul>
+<p class="para-title" style="color:#e07b39;">Equity Markets and Regulatory Response</p>
+<p class="para-body">Regulatory intervention produced mixed results across the region. Taiwan's benchmark rebounded from early losses as authorities stepped in, while South Korean and Chinese equities declined before partially recovering. The selloff reflects genuine recalibration of AI investment sentiment rather than a purely technical event, limiting the efficacy of confidence-focused policy responses. India's relative strength appears to reflect a structural reallocation toward markets perceived as less exposed to the AI capex cycle.</p>
+<p class="para-title" style="color:#e07b39;">Corporate and Capital Markets</p>
+<p class="para-body">Tata Steel agreed to acquire a 26.4% stake in APL Apollo Tubes for approximately $1.7 billion, underscoring continued domestic consolidation in Indian industry. Separately, Brookfield Asset Management agreed to acquire PGP Glass from Blackstone for $1.7 billion, highlighting sustained institutional appetite for specialized Indian manufacturers. On the technology front, the Trump administration's new semiconductor export control rules — restricting chip shipments to Southeast Asian data centers with Chinese cross-border access — are expected to weigh disproportionately on Malaysia and Indonesia's data-center investment pipelines. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>Eurozone private-sector activity extended its expansion, with Germany's composite PMI recording its strongest reading since 2022, beating expectations and offering a constructive counterpoint to global risk-off sentiment.</li><li>European natural gas prices jumped approximately 9% as weather forecasts shifted from a brief cold spell to a prolonged chill extending into early December, raising concerns about inventory adequacy.</li><li>Spain's governing coalition extended its bank windfall tax ahead of the November 29 snap election, while the opposition People's Party pledged sweeping tax cuts if it wins.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Growth and Monetary Policy</p>
+<p class="para-body">Germany's PMI outperformance is a material positive for the eurozone growth outlook, though energy price volatility complicates the picture for the European Central Bank. Rising natural gas prices — driven by both demand concerns and ongoing supply disruptions linked to the US-Iran conflict — represent an upside inflation risk that could constrain ECB easing flexibility. Separately, France's fiscal and political fragility is flagged as a potential test for the likely incoming ECB president, Pablo Hernandez de Cos, from the outset of his tenure.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate and Political Developments</p>
+<p class="para-body">Compass Group, the FTSE 100 catering giant, is reportedly planning to shift its primary listing to New York, dealing another reputational blow to London's equity market. Spain's pre-election political dynamic — with the government deploying fiscal tools to address housing affordability while the opposition campaigns on tax reduction — illustrates the broader European tension between fiscal restraint and electoral pressures heading into year-end. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Chile's fiscal position is under pressure as copper prices declined sharply last week — the red metal fell 9% — removing a key buffer that had allowed the government to narrow its structural deficit despite multiple economic shocks this year.</li><li>Brazil, Mexico, and other regional economies face a tightening external financial environment as US rate-hike expectations and dollar strength weigh on emerging-market capital flows.</li></ul>
+<p class="para-title" style="color:#c0392b;">Commodity Dependence and Fiscal Risk</p>
+<p class="para-body">Chile's situation crystallizes a broader regional vulnerability: commodity-driven fiscal revenues that appeared durable during the AI-infrastructure supercycle are now less reliable. Copper's 9% weekly decline — driven by deteriorating confidence in sustained AI capital expenditure — directly erodes Chile's export receipts and complicates budget planning. The government had relied on elevated copper prices to offset persistent spending pressures; that cushion may no longer be available. For other commodity exporters in the region, the interaction between global risk-off sentiment, dollar strength, and weaker industrial metals prices represents a meaningful headwind entering 2027.</p>
+<p class="para-title" style="color:#c0392b;">Trade and Regional Politics</p>
+<p class="para-body">Trump indicated the US is approaching a trade agreement with Mexico, though negotiations with Canada remain at an earlier stage. The distinction matters for regional supply chains, particularly in the automotive sector. No significant central bank decisions or macro data releases were reported for the period across Brazil, Colombia, or Argentina. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>COP31 in Antalya, Turkey collapsed without a final agreement, ending a five-year streak of formal consensus outcomes and raising fundamental questions about the UN climate process; BloombergNEF scored the summit 1.3 out of 10 for meaningful progress.</li><li>Iranian attacks on tankers in the Strait of Hormuz have intensified in recent weeks, now entering a ninth consecutive month of disruption to oil product shipments from the Persian Gulf, though Trump signaled preference for diplomatic resolution before resuming military action.</li><li>Gold rebounded more than 2% to above $3,630 per ounce after falling 9% the prior week, though it remains more than 30% below its February peak of approximately $5,500, reflecting ongoing liquidity pressures and elevated real rates.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Energy and Climate</p>
+<p class="para-body">COP31's collapse was precipitated by an irreconcilable divide over fossil fuels: Saudi Arabia successfully pushed for carbon capture language while resisting transition commitments, Russia ruled out any fossil fuel references, and the EU refused to accept a deal it characterized as greenwashing. The US was absent, having withdrawn from the Paris Agreement. European natural gas prices surged 9% on cold weather forecasts, reinforcing energy security concerns heading into winter. US oil refiners, meanwhile, are experiencing a gradual normalization of crack spreads after a historic 2026 driven by Hormuz disruptions, though diesel margins remain elevated.</p>
+<p class="para-title" style="color:#8b5cf6;">AI Export Controls and Geopolitical Risk</p>
+<p class="para-body">Washington's new semiconductor export rules — restricting chip sales to Southeast Asian data centers providing Chinese firms remote access to restricted hardware — represent the most consequential technology policy action to emerge from the Jensen Huang scandal. The measures introduce a direct conflict between national security objectives and economic growth, with the IMF estimating that an AI investment slowdown combined with financial market stress could subtract up to 1.1% from global GDP by 2028. The policy debate is shifting from whether export controls are effective to what economic costs they impose — a question that remains unanswered.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
