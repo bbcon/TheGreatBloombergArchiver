@@ -1,0 +1,10 @@
+• Brazil's lower house approved President Lula's fiscal consolidation package, his most significant budget effort since re-election, though the Brazilian real weakened past the closely watched 6-per-dollar level ahead of the vote — signaling investor skepticism about its sufficiency.
+• Colombia, Chile, and regional commodity dynamics remain tied to copper price volatility; copper briefly rallied on the Huang news before resuming its decline, with prices still down more than 20% from September highs.
+
+**Brazil: Fiscal Credibility Under Scrutiny**
+The passage of Lula's public spending curbs through the lower house represents a meaningful political achievement — the package navigates the difficult balance between fiscal restraint and the preservation of social programs central to his coalition. However, the real's move through 6 per dollar in the hours before passage is a candid market assessment: investors appear unconvinced the measures are sufficient to durably stabilize Brazil's fiscal trajectory. The currency's behavior reflects broader emerging market sensitivity to the global liquidity squeeze — an environment in which tightening US monetary policy, a strengthening dollar, and elevated commodity price volatility collectively tighten financial conditions across the region.
+
+**Regional Political Economy**
+Venezuela's government and an opposition faction agreed to overhaul political party rules but stopped short of reforming the electoral authority, leaving the path to credible presidential elections unclear. Separately, a US Senate investigation into Vice President JD Vance's role in awarding a Venezuelan oil contract to commodities trader Vitol adds an additional layer of geopolitical uncertainty around Venezuelan energy flows. Across the region, the commodity outlook — particularly for copper and oil — remains the dominant macro variable, with China's subdued credit impulse representing a material headwind for metals-dependent economies including Chile and Peru.
+
+---

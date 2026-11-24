@@ -1,0 +1,11 @@
+• Asian equities surged on the Huang reinstatement: Taiwan's benchmark gained 9%, led by TSMC; South Korea's Kospi rose 6.3%; the Nikkei 225 advanced 3.9%; Samsung and SK Hynix each added approximately 7%.
+• China extended its suspension of critical mineral export bans — covering gallium, germanium, and antimony — through end-January, choosing restraint over immediate retaliation to US chip controls.
+• China's Bloomberg Economics Credit Impulse Index is near flat, signaling a persistent liquidity squeeze despite accelerated government bond issuance; private credit demand remains subdued.
+
+**China: Macro and Trade Policy**
+Beijing's decision to again suspend its critical minerals export ban appears calibrated to preserve a fragile trade truce ahead of the January 10 tariff deadline, rather than reflecting any genuine easing of tensions. Chinese state media simultaneously warned of potential "witch hunts" against Chinese interests linked to the Huang saga. The macro backdrop remains challenging: private borrowing is subdued, Beijing is relying on bond issuance to approach its "near 5%" GDP target, and the yuan's sustained appreciation has not stimulated commodity demand. Macquarie analysts note that the semiconductor index's roughly 33% decline in the second half of 2026 historically leads Chinese export performance by two quarters, suggesting export momentum may fade by early 2027 — a development that would compel more meaningful domestic stimulus.
+
+**Regional Markets and Geopolitics**
+Asian equity gains appeared to be fading by Tuesday morning, with S&P 500 futures declining and the broader rally losing momentum. South Korea scrambled fighter jets after Russian warplanes approached its airspace, the latest in a pattern of increased Russian military activity noted by South Korea, Japan, and Taiwan. MSCI stated it had not changed its process for evaluating a potential downgrade of Indonesia's equity market status, following a meeting between its CEO and President Prabowo brokered by Ray Dalio. DeepSeek founder Liang Wenfeng's net worth rose 45% to $55 billion after a new fundraising round drew investment from Chinese industrial groups.
+
+---
