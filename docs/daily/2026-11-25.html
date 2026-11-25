@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday, November 25, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Wednesday, November 25, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>October core PCE is due today, projected at 3.8% YoY — roughly double the Fed's target — and represents the last major inflation data point before the December FOMC meeting.</li><li>Consumer confidence (Conference Board) rose to its highest level since early 2025, driven by labor market stability and a roughly $0.50/gallon decline in gasoline prices over the past month.</li><li>The Nasdaq 100 fell 1.99% Tuesday and futures point to a further 2.8% decline Wednesday, as the AI-driven tech selloff deepens despite Jensen Huang's reinstatement at Nvidia.</li></ul>
+<p class="para-title" style="color:#5597cb;">Monetary Policy</p>
+<p class="para-body">The Fed enters its pre-meeting quiet period with a December hike widely treated as a certainty. NY Fed President John Williams offered no pivot signal, stating inflation "has continued to run too high" and declining to exclude consecutive hikes. Market pricing has moderated: one additional hike by September 2027 is now implied, down from three anticipated just weeks ago. Some bond traders are entertaining a tail scenario in which the Fed overshoots, triggering a slowdown that forces rate cuts by late 2027, evidenced by a surge in call options positioned for the Fed funds rate to reach 3% by early 2028.</p>
+<p class="para-title" style="color:#5597cb;">Consumer and Inflation</p>
+<p class="para-body">October retail sales showed underlying demand rising 0.6%, above consensus. However, the resilience rests on increasingly borrowed foundations — consumer credit surged by the most in nearly four years. Real income growth slowed to 1% YoY in September as inflation eroded nominal gains of roughly 4.6%. Food prices are accelerating, with Bloomberg's real-time Price Index showing grocery prices posting their largest monthly increase since April. Red potato prices are up nearly 30% year-on-year, with broader food inflation expected to worsen into early 2027 due to energy cost pass-through, tariffs, and El Niño-related supply disruptions.</p>
+<p class="para-title" style="color:#5597cb;">Markets</p>
+<p class="para-body">Nvidia shed $282 billion in market cap Tuesday after gaining $968 billion Monday following Huang's reinstatement — a sequence that illustrates the degree to which a single company has become a fulcrum for broader risk appetite. Anthropic fell below its IPO price within a week of its record-setting debut. CTAs are positioned short both the S&P 500 and Nasdaq 100, with Goldman Sachs estimating $68 billion in global equity sales over the next five days. Ten-year Treasury yields fell to approximately 4.85% as investors rotated into duration. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Japan's corporate services inflation accelerated to 4.2% — the highest reading since 1990 — reinforcing the Bank of Japan's case for another rate hike.</li><li>South Korea's KOSPI fell 6.1% and Taiwan's Taiex dropped 7.2% in early trading, the steepest single-session declines in a month, as the global AI selloff hit North Asian semiconductor markets hardest.</li><li>India's NSE Nifty 50 rose as much as 2.4% Wednesday, reaching the top of global equity rankings for the month, as investors rotated away from AI-exposed markets; the rupee rallied to an eight-month high.</li></ul>
+<p class="para-title" style="color:#e07b39;">Monetary Policy</p>
+<p class="para-body">The BOJ's faster inflation indicator — corporate services prices at a 34-year high — strengthens the case for policy normalization. The divergence between Japan's tightening trajectory and the market stress emanating from AI-linked equities creates a complex backdrop for yen and JGB positioning. Meanwhile, spot power prices in Japan have risen sharply this month, making LNG imports for gas-fired generation economically viable for the first time since February, adding an energy cost dimension to the inflation picture.</p>
+<p class="para-title" style="color:#e07b39;">Markets and Corporate</p>
+<p class="para-body">The AI selloff's geographic concentration is notable: North Asian markets with heavy semiconductor exposure bore the brunt of the correction, while India — long underweighted by global managers for its limited AI linkage — emerged as a beneficiary of the rotation. Starbucks is separately advancing plans to sell its roughly 2,000-store Japan business for several billion dollars, working with Citigroup and Morgan Stanley, in a broader pivot toward asset-light joint venture structures outside the US. Banks including Citigroup, Standard Chartered, DBS, OCBC, and UOB have launched reviews of data center clients following tighter US chip export rules targeting Chinese firms' access to advanced Nvidia processors in Southeast Asia. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>UK households face a 26% rise in energy bills in January as the Iran war keeps wholesale gas and electricity prices elevated, compounding an existing cost-of-living squeeze.</li><li>European natural gas front-month volatility has surged to its highest since May, with intraday price swings exceeding 5%, as low inventory levels leave the region acutely sensitive to weather forecast revisions.</li><li>UK net migration appears set to fall to its lowest level outside of the Covid period in 29 years, with one estimate placing the 12-month figure through June at just 54,000.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Energy and Macro</p>
+<p class="para-body">Europe entered the winter heating season with gas inventories materially below seasonal norms, a direct consequence of Middle East supply disruptions that hampered summer restocking. The region is now disproportionately reliant on spot LNG purchases, with some tankers diverting from Asia as European prices reached a four-year high. That flow is fragile: a cold snap in Asia could rapidly reverse LNG availability. The cost pressure is already transmitting through utility bills and will filter into CPI readings in coming months, complicating the ECB's inflation outlook.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate</p>
+<p class="para-body">In equity markets, Bureau Veritas surged 12% to a record after Advent International was reported to be considering an acquisition bid. AMS-Osram soared 27% following a partnership announcement with Samsung Display. EDF's Framatome unit is preparing to approve a €1 billion-plus investment in a new forge for nuclear reactor components, positioning for a wave of atomic plant construction in France and beyond. Spain faces a potentially significant political shift: the far-right Vox party appears on course to enter government alongside the conservative People's Party following Sunday's election, which would mark the first far-right participation in Spanish government since the Franco era. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>A Colombian car bomb destroyed the regional government headquarters in Villavicencio, the capital of Meta — the country's largest oil-producing province — prompting President Abelardo de la Espriella to vow retaliation against perpetrators.</li><li>A key political ally of Argentine President Javier Milei has warned that his reelection prospects are at risk unless the economy shows measurable improvement; Brazil's president is under pressure to accelerate central bank nominations.</li></ul>
+<p class="para-title" style="color:#c0392b;">Political Economy</p>
+<p class="para-body">The Villavicencio attack underscores the ongoing security risks overlaying Colombia's oil sector, with potential implications for production in the country's most significant hydrocarbon-producing region. In Argentina, Senator Patricia Bullrich — among Milei's most prominent supporters — is calling for targeted economic adjustments ahead of next year's elections, though she declined to confirm her own presidential ambitions. The framing of "surgical" policy changes reflects the tension between Milei's structural reform agenda and the political imperative for voters to perceive tangible improvement before the ballot.</p>
+<p class="para-title" style="color:#c0392b;">Brazil</p>
+<p class="para-body">Brazil's political establishment is pressing for faster central bank nominations, a signal that the transition of monetary leadership remains a source of uncertainty at a moment when inflation dynamics across the region remain unsettled. No significant macro data releases for the region were reported in this period. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>The US is preparing to announce new tariffs on goods from China, the EU, and more than a dozen other economies, as the Trump administration moves to replace levies struck down by the Supreme Court; Beijing dismissed the prospect as "political maneuvering."</li><li>The Houthis are advancing toward Aden, which would give them potential control over both the Gulf of Aden and the Bab el-Mandeb Strait, expanding the geographic footprint of shipping disruption already affecting global energy and trade flows.</li><li>Bloomberg Economics estimates the Middle East is currently exporting 75%–86% of pre-war oil volumes; for the first time since March, a price decline appears as plausible as a spike, as non-Middle Eastern producers have collectively added 1.6 million barrels per day while demand has fallen 3.7 million barrels per day.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Energy and Geopolitics</p>
+<p class="para-body">Nine months into the US-Iran conflict, the global economy has demonstrated more resilience than initially feared, though adaptation has come at real cost. The Houthi advance toward Aden represents a potential escalation of the conflict's second front, threatening control of two critical waterways for global shipping. Oil slipped Wednesday as signs of rising crude supply outweighed ongoing attacks near the Strait of Hormuz. Saudi Arabia's economy and Crown Prince Mohammed bin Salman's foreign investment agenda are absorbing increasing strain from the Yemen front, even as Riyadh projects an official posture of containment.</p>
+<p class="para-title" style="color:#8b5cf6;">Trade and Technology</p>
+<p class="para-body">The anticipated US tariff announcement — covering China, the EU, and others — would constitute a significant escalation in trade policy and arrives as markets are already under pressure from AI-linked equity volatility. The interaction between tariff risk and technology sector stress is amplifying uncertainty across asset classes. Separately, COP31 negotiations in Antalya broke down without a consensus agreement on accelerating the energy transition, a failure that leaves the global climate policy framework in an uncertain state heading into 2027.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
