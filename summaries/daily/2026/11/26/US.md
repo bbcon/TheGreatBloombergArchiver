@@ -1,0 +1,12 @@
+• Q3 GDP revised upward to 4.3% annualized, above prior estimates, while PCE supercore inflation rose 3.3% YoY — the highest since 2023 — reinforcing expectations for a December Fed rate hike.
+• Trump reimposed tariffs on the EU, China, and multiple trading partners the day before Thanksgiving, with the effective tariff rate potentially returning toward double digits.
+• US consumer spending stalled in October in real terms, creating a tension with the strong GDP print that reflects diverging momentum between the investment and household sectors.
+• Nasdaq 100 opened down nearly 5% Wednesday before recovering to close down just 0.6%, extending a pattern of extreme intraday volatility; US markets closed Thursday for Thanksgiving.
+
+**Economic Data**
+Q3 GDP growth was revised upward to 4.3% annualized — one of the strongest readings in three decades, excluding pandemic-era distortions — leaving little room for the Fed to soften its stance. The PCE price index confirmed that "supercore" inflation (services ex-housing) remains above the Fed's zone of tolerance at 3.3% YoY, its highest since 2023. Critically, oil prices have little direct bearing on this measure, undermining the argument that current stickiness is transitory. Fed funds futures now price a December rate hike as near-certain, with more than two additional increases expected through 2027. Consumer spending, however, stalled in October in real terms — a signal that household demand may be softening even as business investment, particularly in data centers and power generation, remains robust. These two forces are pulling in opposite directions, and the resolution matters for whether growth momentum is sustainable into 2027.
+
+**Markets and Policy**
+Market volatility has been extreme. Wednesday saw the Nasdaq 100 drop nearly 5% intraday before recovering to a modest loss, while the 10-year Treasury yield swung from 4.8% to 4.86%. Gold and Bitcoin ended Wednesday with gains despite the turbulence. The core debate is no longer whether AI transforms the economy, but whether the capital deployed will earn adequate returns — a materially harder question. Strong GDP and above-target inflation constrain the Fed's ability to respond to equity weakness; analysts note that unless the selloff deepens into a financial stability event, intervention remains unlikely.
+
+---

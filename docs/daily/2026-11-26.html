@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thursday, November 26, 2026 — The Macro Brief</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
+
+/* ── Nav ── */
+.nav {
+  background: #040505;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  gap: 8px;
+}
+.nav-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Region filter (left of nav, after logo) ── */
+.rgn-filter { display: flex; gap: 3px; margin-right: auto; }
+.rgn-btn {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #666; padding: 5px 10px; border-radius: 4px;
+  background: none; border: 1px solid transparent; cursor: pointer;
+  transition: all 0.15s; font-family: inherit; white-space: nowrap;
+}
+.rgn-btn:hover { color: #bbb; border-color: #333; }
+.rgn-btn.active { color: #5597cb; border-color: #5597cb; }
+
+/* ── Page nav links (right of nav) ── */
+.nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+.nav-link {
+  font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: #888; padding: 8px 14px; border-radius: 4px;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: #ccc; }
+.nav-link.active { color: #5597cb; }
+
+/* ── Page shell ── */
+.page { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Region section ── */
+.region { border-left: 3px solid; padding-left: 20px; margin-bottom: 32px; }
+.region:last-child { margin-bottom: 0; }
+.region-name {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; margin-bottom: 12px;
+}
+
+/* ── Per-region bullet list ── */
+.region-bullets {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+}
+.region-bullets li {
+  font-size: 13px; line-height: 1.65; color: #333;
+  padding: 3px 0 3px 18px;
+  position: relative;
+}
+.region-bullets li::before {
+  content: '•';
+  position: absolute; left: 0;
+  color: var(--bullet-color, #5597cb);
+  font-weight: bold;
+}
+
+.para-title {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; margin-bottom: 4px; margin-top: 14px;
+}
+.para-title:first-of-type { margin-top: 0; }
+.para-body {
+  font-size: 15px; line-height: 1.8; color: #333; margin-bottom: 14px;
+}
+.para-body:last-child { margin-bottom: 0; }
+
+/* ── Accordion ── */
+.accordion { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.accordion-item {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  overflow: hidden; transition: box-shadow 0.2s;
+}
+.accordion-item:has(.accordion-trigger.open) {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.accordion-trigger {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px; text-align: left; transition: background 0.15s;
+}
+.accordion-trigger:hover { background: #fafbfc; }
+.accordion-trigger.open { background: #f5f8fd; }
+.accordion-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #5597cb; flex-shrink: 0;
+}
+.accordion-date { font-size: 14px; font-weight: 500; color: #1a1a1a; flex: 1; }
+.accordion-meta { font-size: 11px; color: #bbb; }
+.accordion-chevron {
+  font-size: 18px; color: #ccc; flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s; line-height: 1;
+}
+.accordion-trigger.open .accordion-chevron { transform: rotate(90deg); color: #5597cb; }
+.accordion-body { display: none; border-top: 1px solid #f0f0f0; }
+.accordion-body.open { display: block; }
+.accordion-content { padding: 28px 40px 32px; }
+.accordion-content .region { margin-bottom: 24px; }
+.accordion-content .para-body { font-size: 14px; }
+.accordion-content .region-bullets li { font-size: 12px; }
+
+/* ── Archive page header ── */
+.page-title {
+  font-size: 26px; font-weight: 300; color: #111;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+.page-subtitle { font-size: 13px; color: #999; margin-bottom: 28px; }
+.empty-state {
+  color: #999; font-size: 14px; background: #fff; border-radius: 4px;
+  padding: 48px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* ── Landing page ── */
+.landing-hero {
+  background: #040505; padding: 36px 48px 32px;
+  border-radius: 4px 4px 0 0;
+}
+.landing-hero-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600; margin-bottom: 8px;
+}
+.landing-hero-date { font-size: 24px; font-weight: 300; color: #fff; line-height: 1.2; }
+.landing-hero-regions { font-size: 11px; color: #555; margin-top: 6px; }
+.accent { height: 3px; background: linear-gradient(90deg, #5597cb 0%, #aac3e3 100%); }
+.landing-card {
+  background: #fff; border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1); margin-bottom: 32px; overflow: hidden;
+}
+.landing-card-body { padding: 32px 48px; }
+.archive-nav { display: flex; gap: 12px; flex-wrap: wrap; }
+.archive-nav-card {
+  flex: 1; min-width: 160px; background: #fff; border-radius: 4px;
+  padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.archive-nav-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.archive-nav-label {
+  font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  color: #5597cb; font-weight: 600;
+}
+.archive-nav-title { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+.archive-nav-count { font-size: 12px; color: #aaa; }
+
+/* ── Permalink brief pages ── */
+.card {
+  background: #fff; border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 32px; overflow: hidden;
+}
+.brief-hdr { background: #040505; padding: 32px 48px 28px; border-radius: 4px 4px 0 0; }
+.brief-hdr-inner { display: flex; align-items: flex-start; gap: 16px; }
+.brief-logo {
+  font-size: 17px; font-weight: bold; color: #fff;
+  font-family: Georgia, serif; background: #1a1a2e;
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.brief-hdr-text { flex: 1; }
+.brief-label {
+  font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+  color: #5597cb; font-weight: 500; margin-bottom: 4px;
+}
+.brief-date { font-size: 22px; font-weight: 300; color: #fff; line-height: 1.2; }
+.card-body { padding: 36px 48px; }
+
+/* ── Back link ── */
+.back {
+  font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #888; display: inline-flex; align-items: center; gap: 6px;
+  margin-bottom: 24px; padding: 8px 0;
+}
+.back:hover { color: #5597cb; }
+
+@media (max-width: 700px) {
+  .nav { padding: 0 12px; }
+  .rgn-btn { padding: 4px 7px; letter-spacing: 0.8px; }
+  .nav-link { padding: 8px 8px; letter-spacing: 0.8px; }
+  .page { padding: 24px 16px 60px; }
+  .landing-hero { padding: 24px 20px; }
+  .landing-card-body, .card-body { padding: 24px 20px; }
+  .accordion-content { padding: 20px; }
+  .brief-hdr { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">M</a>
+  <div class="rgn-filter"><button class="rgn-btn active" data-filter="all" onclick="setRegion(this,'all')">All</button><button class="rgn-btn" data-filter="US" onclick="setRegion(this,'US')">US</button><button class="rgn-btn" data-filter="Asia" onclick="setRegion(this,'Asia')">Asia</button><button class="rgn-btn" data-filter="Europe" onclick="setRegion(this,'Europe')">Europe</button><button class="rgn-btn" data-filter="Global" onclick="setRegion(this,'Global')">Global</button></div>
+  <div class="nav-links"><a href="../index.html" class="nav-link">Latest</a><a href="#" class="nav-link active">Daily</a><a href="../weekly.html" class="nav-link">Weekly</a><a href="../monthly.html" class="nav-link">Monthly</a></div>
+</nav>
+<div class="page">
+<a class="back" href="../daily.html">‹ Daily archive</a>
+<div class="card">
+  <div class="brief-hdr">
+    <div class="brief-hdr-inner">
+      <div class="brief-logo">M</div>
+      <div class="brief-hdr-text">
+        <p class="brief-label">Daily Brief</p>
+        <p class="brief-date">Thursday, November 26, 2026</p>
+      </div>
+    </div>
+  </div>
+  <div class="accent"></div>
+  <div class="card-body">
+    <div class="region" style="border-color:#5597cb;" data-region="US">
+  <p class="region-name" style="color:#5597cb;">US</p>
+  <ul class="region-bullets" style="--bullet-color:#5597cb;"><li>Q3 GDP revised upward to 4.3% annualized, above prior estimates, while PCE supercore inflation rose 3.3% YoY — the highest since 2023 — reinforcing expectations for a December Fed rate hike.</li><li>Trump reimposed tariffs on the EU, China, and multiple trading partners the day before Thanksgiving, with the effective tariff rate potentially returning toward double digits.</li><li>US consumer spending stalled in October in real terms, creating a tension with the strong GDP print that reflects diverging momentum between the investment and household sectors.</li><li>Nasdaq 100 opened down nearly 5% Wednesday before recovering to close down just 0.6%, extending a pattern of extreme intraday volatility; US markets closed Thursday for Thanksgiving.</li></ul>
+<p class="para-title" style="color:#5597cb;">Economic Data</p>
+<p class="para-body">Q3 GDP growth was revised upward to 4.3% annualized — one of the strongest readings in three decades, excluding pandemic-era distortions — leaving little room for the Fed to soften its stance. The PCE price index confirmed that "supercore" inflation (services ex-housing) remains above the Fed's zone of tolerance at 3.3% YoY, its highest since 2023. Critically, oil prices have little direct bearing on this measure, undermining the argument that current stickiness is transitory. Fed funds futures now price a December rate hike as near-certain, with more than two additional increases expected through 2027. Consumer spending, however, stalled in October in real terms — a signal that household demand may be softening even as business investment, particularly in data centers and power generation, remains robust. These two forces are pulling in opposite directions, and the resolution matters for whether growth momentum is sustainable into 2027.</p>
+<p class="para-title" style="color:#5597cb;">Markets and Policy</p>
+<p class="para-body">Market volatility has been extreme. Wednesday saw the Nasdaq 100 drop nearly 5% intraday before recovering to a modest loss, while the 10-year Treasury yield swung from 4.8% to 4.86%. Gold and Bitcoin ended Wednesday with gains despite the turbulence. The core debate is no longer whether AI transforms the economy, but whether the capital deployed will earn adequate returns — a materially harder question. Strong GDP and above-target inflation constrain the Fed's ability to respond to equity weakness; analysts note that unless the selloff deepens into a financial stability event, intervention remains unlikely. ---</p>
+</div>
+<div class="region" style="border-color:#e07b39;" data-region="Asia">
+  <p class="region-name" style="color:#e07b39;">Asia</p>
+  <ul class="region-bullets" style="--bullet-color:#e07b39;"><li>Bank of Korea hiked its policy rate and sharply revised up its 2027 growth forecast, citing AI-driven investment momentum — a hawkish surprise relative to prior expectations.</li><li>Asian equities rose broadly on Thursday, with the MSCI Asia Pacific Index gaining more than 1% and Taiwan's tech benchmark leading, tracking Wall Street's late Wednesday recovery.</li><li>US chip curbs disrupted AI-related debt financing in Asia, with lenders pausing on billions in loans tied to ByteDance, Alibaba, and Tencent; a $6.6 billion data-center loan is under review.</li><li>Japan's largest life insurers have cut FX hedges on overseas portfolios to record lows, reducing structural yen demand even as authorities intervene to support the currency.</li></ul>
+<p class="para-title" style="color:#e07b39;">Monetary Policy and Capital Markets</p>
+<p class="para-body">The Bank of Korea's rate hike — delivered alongside a materially higher growth forecast — signals that AI-driven investment is generating enough demand-side pressure to warrant tightening, even as global uncertainty rises. The move contrasts with the more cautious posture of other regional central banks. In Japan, the yen faces a structural headwind: life insurers have reduced currency hedges to record lows, reflecting the wide US-Japan rate differential and costly hedging economics. Intervention can smooth volatility but cannot engineer a durable yen recovery when domestic institutional investors are positioned against it.</p>
+<p class="para-title" style="color:#e07b39;">Corporate and Trade</p>
+<p class="para-body">New US chip access restrictions are rippling through Asia's AI financing ecosystem. Lenders have paused or slowed due diligence on billions in loans to Chinese technology firms, with the $6.6 billion Bridge Data Centres facility — whose Malaysian operations reportedly serve ByteDance — a prominent example. Nvidia separately instructed AI hardware manufacturers to halt server shipments to Southeast Asia. These curbs threaten to stall the region's data-center investment cycle. In South Asia, Adani Enterprises is preparing a public bond offering of at least $220 million, deepening India's nascent corporate debt market, while a governance dispute over Tata Sons' potential listing is escalating toward litigation. ---</p>
+</div>
+<div class="region" style="border-color:#4a9e6b;" data-region="Europe">
+  <p class="region-name" style="color:#4a9e6b;">Europe</p>
+  <ul class="region-bullets" style="--bullet-color:#4a9e6b;"><li>Stoxx Europe 600 rose 1.6% Thursday, tracking the late Wall Street recovery, though the AI-driven equity correction continues to weigh on sentiment.</li><li>UniCredit moved to propose CEO Andrea Orcel as chairman of Commerzbank's supervisory board following final regulatory approval of its takeover, escalating the cross-border consolidation.</li><li>Spain faces a pivotal general election Sunday, with polls pointing toward a conservative People's Party victory that could slow — though not reverse — the country's renewable energy transition.</li><li>Poland's political crisis deepened, with S&P signaling a potential downgrade following Moody's, as a feud between Prime Minister Tusk and President Nawrocki destabilizes public finances and institutional credibility.</li></ul>
+<p class="para-title" style="color:#4a9e6b;">Political Economy</p>
+<p class="para-body">Two European political flashpoints are sharpening simultaneously. In Spain, Sunday's election appears likely to shift power to the conservative PP, which supports nuclear retention and a more market-driven energy transition pace, but would likely require far-right Vox support to govern. Vox rejects the human-caused climate change consensus and opposes large-scale renewables development — a posture that could slow permitting even if Spain's underlying energy buildout continues on market fundamentals. In Poland, an escalating feud between the government and presidency has drawn in the constitutional court and central bank, prompting corporate warnings that decades of investor trust could unravel rapidly. S&P's negative signal following Moody's raises the prospect of a sovereign credit deterioration with real financing cost consequences.</p>
+<p class="para-title" style="color:#4a9e6b;">Corporate</p>
+<p class="para-body">UniCredit's move to seat Orcel as Commerzbank's supervisory board chairman marks a decisive step toward effective control of Germany's second-largest lender, following regulatory clearance. The proposal for an extraordinary shareholder meeting to replace all 10 shareholder representatives signals UniCredit's intent to move quickly. London's underground network faces 24-hour strikes disrupting the Circle and Piccadilly lines, adding to operating-environment pressures for UK businesses. ---</p>
+</div>
+<div class="region" style="border-color:#c0392b;" data-region="LatAm">
+  <p class="region-name" style="color:#c0392b;">LatAm</p>
+  <ul class="region-bullets" style="--bullet-color:#c0392b;"><li>Brazil's President Lula sounded out Bradesco Chairman Luiz Carlos Trabuco Cappi about joining the government — potentially as finance minister — in a signal aimed at calming investor concern over the fiscal outlook.</li><li>Brazil formally protested Trump's newly announced tariffs, stating it "will not yield," while the new levies add pressure across a region already navigating commodity price volatility.</li><li>Ethiopia's dollar bond restructuring is set to complete next month, ending a three-year default — a resolution with modest precedent value for other frontier issuers in the region.</li></ul>
+<p class="para-title" style="color:#c0392b;">Political Economy</p>
+<p class="para-body">Brazil's fiscal credibility remains the dominant regional macro theme. The sounding-out of Bradesco's Trabuco Cappi for a government role is best read as a market-management signal from Lula — an acknowledgment that investor concern over fiscal deterioration is reaching a level that requires a credible institutional response. Whether an appointment materializes, and in what capacity, will determine how markets interpret the gesture. Separately, Trump's new tariff structure covers multiple Latin American economies, with Brazil's public pushback the most pointed. The tariffs add an external headwind to a region where domestic demand dynamics are already uneven, and where commodity export revenues remain sensitive to Chinese growth conditions. ---</p>
+</div>
+<div class="region" style="border-color:#8b5cf6;" data-region="Global">
+  <p class="region-name" style="color:#8b5cf6;">Global</p>
+  <ul class="region-bullets" style="--bullet-color:#8b5cf6;"><li>US Q3 GDP of 4.3% and sticky supercore PCE inflation of 3.3% are driving global rate expectations higher, with a December Fed hike now near-certain and spillover tightening implications for emerging markets.</li><li>Trump's new tariff announcements target the EU, China, India, Vietnam, Singapore, and others, with the effective US tariff rate potentially returning toward double digits and threatening to unwind "China+1" supply-chain diversification.</li><li>Houthi strikes hit Saudi Arabia's Jeddah and Jazan Red Sea ports Wednesday, keeping Middle East energy infrastructure risk elevated; OPEC+ is considering rolling current output quotas into January.</li><li>Diesel futures in Europe have fallen nearly 30% from their war-driven peak, offering a deflationary offset to otherwise sticky inflation — but the trajectory remains hostage to Strait of Hormuz developments.</li></ul>
+<p class="para-title" style="color:#8b5cf6;">Trade and Tariffs</p>
+<p class="para-body">Trump's latest tariff round is structurally significant because it targets precisely the countries that attracted manufacturing investment under "China+1" diversification strategies. Vietnam faces a 35% rate; Singapore, Japan, India, and the EU are also affected. Beijing has signaled it can tolerate the announced 20% rate but would retaliate if levels rise further — a threshold that hangs over Trump's forthcoming G20 meeting with Xi. For Southeast Asia specifically, the tariffs risk reversing a record FDI inflow cycle; foreign direct investment into the region reached $246 billion last year, surpassing East Asia for the first time since the early 1990s. The practical question for multinational manufacturers is whether the compliance and uncertainty costs of staying in Vietnam or Malaysia now exceed those of returning production to China.</p>
+<p class="para-title" style="color:#8b5cf6;">Energy</p>
+<p class="para-body">The oil market is navigating competing forces. Houthi strikes on Saudi ports introduce fresh disruption risk to Red Sea crude export recovery, while OPEC+ deliberates whether to extend current quotas into January rather than unwind cuts. Qatar's LNG exports have reached their highest level since the US-Iran conflict began, providing a partial supply cushion for European and Asian winter demand. The near-30% decline in European diesel futures from war-era peaks represents a meaningful disinflationary impulse, though the Fed's supercore focus limits how much comfort central bankers can draw from energy price relief. Copper's sharp intraday rebound — after falling to an 11-month low — reflects conflicting signals: US macro funds unwinding bullish positions as AI capex doubts mount, while China's physical market remains tight even as the country's underlying demand trajectory weakens.</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+function toggleAccordion(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+}
+
+function setRegion(btn, region) {
+  document.querySelectorAll('.rgn-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('[data-region]').forEach(function(el) {
+    el.style.display = (region === 'all' || el.dataset.region === region) ? '' : 'none';
+  });
+  try {
+    history.replaceState(null, '', region === 'all' ? location.pathname : '#' + region);
+  } catch(e) {}
+}
+
+(function() {
+  var h = location.hash.replace('#', '');
+  if (['US', 'Asia', 'Europe', 'Global'].indexOf(h) !== -1) {
+    var btn = document.querySelector('[data-filter="' + h + '"]');
+    if (btn) setRegion(btn, h);
+  }
+})();
+</script>
+</body>
+</html>
