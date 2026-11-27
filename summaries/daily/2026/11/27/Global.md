@@ -1,0 +1,9 @@
+• Oil posted its first weekly gain of November, with WTI futures rising to $86.19 (+3.0%), as escalating Middle East attacks on energy infrastructure heightened supply concerns.
+• COP31 in Antalya ended without an overarching climate agreement; Turkey spent approximately $700 million hosting the summit, now facing domestic political scrutiny amid 30% inflation and a housing cost crisis.
+• Europe's grid infrastructure is proving unable to absorb the continent's rapid renewable buildout — Britain's grid operator issued safety-margin warnings on four consecutive days this week, while Germany spends roughly €3 billion annually on congestion management.
+
+**Oil and Middle East**
+Drone attacks on Italian technicians in Kuwait — blamed by Kuwaiti authorities on Iran — and a Houthi strike on a Saudi oil refinery on the Red Sea are keeping energy markets on edge. Qatar's LNG exports through the Strait of Hormuz are flowing more freely than earlier feared, with Bangladesh importing more than 200,000 tons this month, up from zero in August and September — a supply-chain reconfiguration that is already benefiting South Asian importers facing acute cost pressures.
+
+**Energy Transition Stress**
+Europe's renewable buildout is exposing a structural mismatch: wind and solar farms take two to three years to build while transmission lines require up to a decade. The European Commission estimates €584 billion in grid investment is needed by 2030. Until that capacity arrives, the paradox of paying wind farms to switch off in congested regions while firing up expensive generation elsewhere will persist — and consumers will bear both costs. COP31's failure without agreement deepens uncertainty about the global policy framework underpinning that investment.
